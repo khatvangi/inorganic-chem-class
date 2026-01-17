@@ -1,217 +1,318 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Coordination Nomenclature Sprint</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Space+Grotesk:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="noise"></div>
-    <header class="hero">
-      <div class="hero-content">
-        <p class="eyebrow">Coordination Chemistry I - Chapter 1</p>
-        <h1>Coordination Nomenclature Sprint</h1>
-        <p class="subhead">
-          Master IUPAC naming with structure-first challenges. Build precision,
-          not guesses.
-        </p>
-        <div class="hero-actions">
-          <button id="startBtn" class="primary">Start Sprint</button>
-          <button id="howBtn" class="ghost">How it works</button>
-          <a class="ghost" href="symmetry.html">Symmetry Gallery</a>
-          <a class="ghost" href="lectures/shriver_symmetry.html">Lectures</a>
-          <a class="ghost" href="curriculum_viewer.html">Emergent Curriculum</a>
-          <a class="ghost" href="isomerism.html">Chapter 3: Isomerism</a>
-          <a class="ghost" href="bonding.html">Chapter 4: Bonding + LFT</a>
-          <a class="ghost" href="reactions.html">Chapter 12: Reactions</a>
-          <a class="ghost" href="solids.html">Chapter 7: Solids</a>
-          <a class="ghost" href="lectures/index.html">Lectures</a>
-        </div>
-      </div>
-      <div class="hero-panel">
-        <div class="panel-card">
-          <p class="panel-label">Session mode</p>
-          <div class="panel-row">
-            <span>Streak target</span>
-            <strong id="targetDisplay">10</strong>
-          </div>
-          <div class="panel-row">
-            <span>Timer</span>
-            <strong id="timerDisplay">Off</strong>
-          </div>
-          <div class="panel-row">
-            <span>Geometry cues</span>
-            <strong id="geometryDisplay">On</strong>
-          </div>
-          <div class="panel-row">
-            <span>Adaptive mode</span>
-            <button id="adaptiveToggle" class="toggle">On</button>
-          </div>
-          <div class="panel-row">
-            <span>Rigor mode</span>
-            <button id="rigorToggle" class="toggle">Off</button>
-          </div>
-        </div>
-        <div class="panel-card">
-          <p class="panel-label">Difficulty</p>
-          <div class="difficulty">
-            <button class="chip active" data-difficulty="all">All</button>
-            <button class="chip" data-difficulty="intro">Intro</button>
-            <button class="chip" data-difficulty="core">Core</button>
-            <button class="chip" data-difficulty="advanced">Advanced</button>
-          </div>
-        </div>
-        <div class="panel-card">
-          <p class="panel-label">Skill focus</p>
-          <ul>
-            <li>Ligand ordering and prefixes</li>
-            <li>Oxidation state inference</li>
-            <li>Charge balance and counter ions</li>
-            <li>Geometry recognition</li>
-          </ul>
-        </div>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHEM 361 | Inorganic Chemistry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-tertiary: #1a1a24;
+            --text-primary: #e8e6e3;
+            --text-secondary: #a0a0a0;
+            --text-muted: #6b6b6b;
+            --accent-purple: #8b5cf6;
+            --accent-violet: #a855f7;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { height: 100%; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .bg-animation {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            z-index: -1;
+            background:
+                radial-gradient(ellipse at 30% 30%, rgba(139, 92, 246, 0.12) 0%, transparent 50%),
+                radial-gradient(ellipse at 70% 70%, rgba(168, 85, 247, 0.08) 0%, transparent 50%);
+            animation: bgPulse 20s ease-in-out infinite;
+        }
+
+        @keyframes bgPulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        header {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent-purple), var(--accent-violet));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .welcome {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .welcome h1 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, var(--text-primary), var(--text-secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .welcome p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+        }
+
+        .content-wrapper {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1000px;
+        }
+
+        .course-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--bg-tertiary);
+            border-radius: 20px;
+            padding: 2.5rem;
+            width: 380px;
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .course-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 4px;
+            background: linear-gradient(135deg, var(--accent-purple), var(--accent-violet));
+        }
+
+        .course-code {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--accent-purple);
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.05em;
+        }
+
+        .course-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .course-subtitle {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+
+        .course-desc {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* Navigation card */
+        .nav-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--bg-tertiary);
+            border-radius: 20px;
+            padding: 2rem;
+            width: 480px;
+            max-width: 90vw;
+        }
+
+        .nav-card h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--accent-purple);
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .nav-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem;
+        }
+
+        .nav-link {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.875rem 1rem;
+            background: var(--bg-tertiary);
+            border-radius: 10px;
+            text-decoration: none;
+            color: var(--text-primary);
+            transition: all 0.2s;
+            font-size: 0.9rem;
+        }
+
+        .nav-link:hover {
+            background: rgba(139, 92, 246, 0.2);
+            transform: translateX(4px);
+        }
+
+        .nav-link .chapter {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            color: var(--accent-purple);
+            min-width: 2rem;
+        }
+
+        .nav-link.featured {
+            grid-column: span 2;
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(168, 85, 247, 0.1));
+            border: 1px solid rgba(139, 92, 246, 0.3);
+        }
+
+        .nav-link.featured:hover {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.25), rgba(168, 85, 247, 0.15));
+        }
+
+        footer {
+            padding: 2rem;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        footer a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        footer a:hover {
+            color: var(--accent-purple);
+        }
+
+        @media (max-width: 900px) {
+            .content-wrapper {
+                flex-direction: column;
+                align-items: center;
+            }
+            .course-card, .nav-card {
+                width: 100%;
+                max-width: 420px;
+            }
+            .nav-grid {
+                grid-template-columns: 1fr;
+            }
+            .nav-link.featured {
+                grid-column: span 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-animation"></div>
+
+    <header>
+        <div class="logo">The Beakers</div>
     </header>
 
-    <main class="game">
-      <section class="chapter-intro">
-        <div class="intro-card">
-          <h3>Nomenclature rules at a glance</h3>
-          <ul class="rule-list">
-            <li>List ligands alphabetically by ligand name (ignore prefixes).</li>
-            <li>Neutral ligands keep name; anionic ligands end in -o.</li>
-            <li>Anionic complexes use metal name with -ate ending.</li>
-            <li>Metal oxidation state in Roman numerals.</li>
-            <li>Use cis/trans, fac/mer, kappa, and mu for structure when needed.</li>
-          </ul>
+    <main>
+        <div class="welcome">
+            <h1>CHEM 361</h1>
+            <p>Coordination Chemistry &amp; Beyond</p>
         </div>
-        <div class="chart-grid">
-          <div class="chart-card">
-            <p class="panel-label">Naming workflow</p>
-            <img
-              src="assets/nomenclature/fig-079.png"
-              alt="IUPAC naming workflow for coordination compounds"
-              class="chart-image"
-            />
-          </div>
-          <div class="chart-card">
-            <p class="panel-label">Ligand denticity</p>
-            <img
-              src="assets/nomenclature/fig-005.png"
-              alt="Examples of bi-, tri-, tetra-, penta-, hexa-, hepta-, and octadentate ligands"
-              class="chart-image"
-            />
-          </div>
-        </div>
-      </section>
 
-      <section class="game-board" aria-live="polite">
-        <div class="question-card">
-          <div class="question-header">
-            <span class="badge" id="questionType">2D structure</span>
-            <span class="badge muted" id="difficultyBadge">Core</span>
-            <span class="badge muted" id="geometryHint">Octahedral</span>
-          </div>
-          <h2 id="questionPrompt">[Cr(NH3)4Cl2]Cl</h2>
-          <p class="question-note" id="questionNote">
-            Provide the full IUPAC name. Include oxidation state, ligand order,
-            and counter ion.
-          </p>
-          <div class="diagram-container">
-            <canvas id="chemDoodle2D" width="300" height="300"></canvas>
-          </div>
-          <div class="diagram-actions">
-            <button id="compareBtn" class="ghost small">Compare isomer</button>
-            <span id="compareLabel" class="diagram-label"></span>
-          </div>
-          <div class="viewer-card">
-            <div class="viewer-header">
-              <span class="badge muted">3D model</span>
-              <div class="viewer-controls">
-                <button id="labelToggle" class="chip small active">Labels</button>
-                <button id="colorToggle" class="chip small" data-color-mode="donor">
-                  Color: donor
-                </button>
-              </div>
+        <div class="content-wrapper">
+            <div class="course-card">
+                <div class="course-code">UNDERGRADUATE</div>
+                <h2 class="course-title">Inorganic Chemistry</h2>
+                <p class="course-subtitle">Structure, Bonding &amp; Reactivity</p>
+                <p class="course-desc">
+                    Coordination compounds, symmetry operations, ligand field theory,
+                    spectroscopy, and reaction mechanisms. Interactive 3D models,
+                    nomenclature sprints, and curriculum-connected learning.
+                </p>
             </div>
-            <div id="viewer3d" class="viewer3d"></div>
-            <p class="viewer-note" id="viewerNote">
-              3D view shows coordination geometry and ligand positions.
-            </p>
-          </div>
-        </div>
-        <div class="answer-card">
-          <label class="answer-label" for="answerInput">IUPAC name</label>
-          <input
-            id="answerInput"
-            type="text"
-            placeholder="e.g., tetraammine dichlorochromium(III) chloride"
-            autocomplete="off"
-            spellcheck="false"
-          />
-          <div class="answer-actions">
-            <button id="submitBtn" class="primary">Check</button>
-            <button id="skipBtn" class="ghost">Skip</button>
-          </div>
-          <div class="feedback" id="feedback"></div>
-          <div class="progress">
-            <div>
-              <span class="progress-label">Streak</span>
-              <span id="streak">0</span>
-            </div>
-            <div>
-              <span class="progress-label">Accuracy</span>
-              <span id="accuracy">0%</span>
-            </div>
-            <div>
-              <span class="progress-label">Questions</span>
-              <span id="questionCount">0</span>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <section class="info" id="howItWorks">
-        <div class="info-card">
-          <h3>How the sprint works</h3>
-          <p>
-            Each prompt gives a coordination formula and a visual cue. Type the
-            IUPAC name following ligand ordering, multiplicative prefixes, and
-            oxidation state in parentheses. Adaptive mode queues a similar
-            prompt after a miss.
-          </p>
+            <nav class="nav-card">
+                <h3>Chapters</h3>
+                <div class="nav-grid">
+                    <a href="sprint.html" class="nav-link featured">
+                        <span class="chapter">Ch 1</span>
+                        <span>Nomenclature Sprint</span>
+                    </a>
+                    <a href="coordination.html" class="nav-link">
+                        <span class="chapter">Ch 2</span>
+                        <span>Coordination</span>
+                    </a>
+                    <a href="isomerism.html" class="nav-link">
+                        <span class="chapter">Ch 3</span>
+                        <span>Isomerism</span>
+                    </a>
+                    <a href="bonding.html" class="nav-link">
+                        <span class="chapter">Ch 4</span>
+                        <span>Bonding &amp; LFT</span>
+                    </a>
+                    <a href="symmetry.html" class="nav-link">
+                        <span class="chapter">Ch 5</span>
+                        <span>Symmetry</span>
+                    </a>
+                    <a href="solids.html" class="nav-link">
+                        <span class="chapter">Ch 7</span>
+                        <span>Solids</span>
+                    </a>
+                    <a href="reactions.html" class="nav-link">
+                        <span class="chapter">Ch 12</span>
+                        <span>Reactions</span>
+                    </a>
+                    <a href="quiz.html" class="nav-link">
+                        <span class="chapter">—</span>
+                        <span>Quiz Mode</span>
+                    </a>
+                </div>
+            </nav>
         </div>
-        <div class="info-card">
-          <h3>Scoring</h3>
-          <p>
-            The grader checks ligand order, ligand identity, metal name,
-            oxidation state, and counter ion. Small punctuation differences are
-            forgiven; ordering mistakes are not.
-          </p>
-        </div>
-        <div class="info-card">
-          <h3>Next upgrades</h3>
-          <p>
-            Add the "Build It" mode: drag ligands onto a geometry scaffold and
-            earn points for correct coordination number and naming.
-          </p>
-        </div>
-      </section>
     </main>
 
-    <footer class="footer">
-      <p>Coordination Chemistry - Undergraduate rigor - IUPAC aligned</p>
+    <footer>
+        <p>
+            <a href="https://github.com/khatvangi/inorganic-chem-class" target="_blank">GitHub</a>
+            &nbsp;·&nbsp;
+            <a href="curriculum_viewer.html">Curriculum</a>
+            &nbsp;·&nbsp;
+            <a href="https://thebeakers.com">The Beakers</a>
+        </p>
     </footer>
-
-    <link rel="stylesheet" href="libs/ChemDoodleWeb.css" />
-    <script src="libs/ChemDoodleWeb.js"></script>
-    <script type="module" src="app.js"></script>
-  </body>
+</body>
 </html>
