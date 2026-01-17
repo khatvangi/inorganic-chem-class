@@ -1,11 +1,15 @@
 # Onboarding & Technical Manual
 
 **Target Audience:** LLM Agents, Developers, and Automated Tools.
-**Last Updated:** January 16, 2026
+**Last Updated:** January 17, 2026
 **Status:** Modernized, Data-Driven, ES Modules.
 
 ## 1. Project Overview
-This repository contains a lightweight, interactive web application for an **Inorganic Chemistry Course**. It includes game-based learning modules (drills) and lecture slides. The application runs entirely in the browser using vanilla HTML, CSS, and JavaScript, with **no build step** required.
+This repository contains a lightweight, interactive web application for **CHEM 361: Inorganic Chemistry**. It includes game-based learning modules (drills) and lecture slides. The application runs entirely in the browser using vanilla HTML, CSS, and JavaScript, with **no build step** required.
+
+**Live Site:** https://chem361.thebeakers.com
+**Sister Course:** https://chem291.thebeakers.com (Math for Chemistry)
+**Deployment:** Cloudflare Pages (auto-deploy from GitHub)
 
 ## 2. Technical Stack
 -   **Core:** HTML5, CSS3, JavaScript (ES6+ Modules).
@@ -19,13 +23,16 @@ This repository contains a lightweight, interactive web application for an **Ino
 
 ```text
 /
-├── index.html              # Entry point (Chapter 1: Nomenclature Game)
+├── index.html              # Landing page (single-card, purple theme)
+├── sprint.html             # Chapter 1: Nomenclature Sprint
 ├── coordination.html       # Chapter 2: Structures & Geometry
 ├── isomerism.html          # Chapter 3: Isomerism (Geometric/Optical)
 ├── bonding.html            # Chapter 4: Bonding, LFT, MO Theory
-├── reactions.html          # Chapter 12: Mechanisms & Kinetics
+├── symmetry.html           # Chapter 5: Symmetry Gallery
 ├── solids.html             # Chapter 7: Solid State
-├── styles.css              # Global styles (UI components, layout)
+├── reactions.html          # Chapter 12: Mechanisms & Kinetics
+├── quiz.html               # Quiz mode
+├── styles.css              # Global styles (UI, layout, breadcrumb nav)
 ├── app.js                  # Logic for Nomenclature Sprint
 ├── bonding.js              # Logic for Orbital Builder/MO Match
 ├── coordination.js         # Logic for Geometry Match/3D Viewer
@@ -51,6 +58,24 @@ This repository contains a lightweight, interactive web application for an **Ino
 ├── assets/                 # Static Images & PDFs (Textbook figures)
 └── lectures/               # Standalone Lecture Slides (HTML)
 ```
+
+## 3.1 Navigation Pattern
+
+All chapter pages follow a consistent navigation structure:
+
+```
+┌─────────────────────────────────────┐
+│ CHEM 361 / Ch 4                     │  ← breadcrumb (course-nav)
+├─────────────────────────────────────┤
+│  Chapter 4                          │
+│  Bonding and Ligand Field Theory    │  ← hero content
+│  [Ch 1: Nomenclature] [Ch 3: ...]   │  ← related chapter links
+└─────────────────────────────────────┘
+```
+
+- **Breadcrumb nav**: `styles.css` defines `.course-nav` with `.nav-breadcrumb`
+- **Landing page**: Single-card design with chapter grid navigation
+- **Chapter links**: Hero actions provide quick jumps to related chapters
 
 ## 4. Architectural Patterns
 
