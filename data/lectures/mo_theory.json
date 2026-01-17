@@ -1,0 +1,66 @@
+{
+  "title": "Molecular Orbital Theory: From Waves to Shapes",
+  "source": "Inorganic Chemistry (Atkins & Shriver)",
+  "sections": [
+    {
+      "id": "wave_nature",
+      "title": "1. Orbitals are Probability Clouds, Not Shells",
+      "content": "A common misconception is treating orbitals as hard containers. **They are not.** <br><br> Orbitals are mathematical functions (\u03c8) describing electron standing waves. The shapes we draw are **isosurfaces**—boundaries that enclose 90% of the electron **probability density** (\u03c8^2). <br><br> *Key Insight:* The 'lobes' are just regions where you are most likely to find the electron. Inside the node, the probability is zero.",
+      "visuals": [
+        {
+          "type": "chemDoodle",
+          "molecule": "H2",
+          "note": "H-H Bond: The visual surface encloses 90% probability. It's a cloud, not a skin."
+        }
+      ]
+    },
+    {
+      "id": "interaction_rules",
+      "title": "2. The Rules of Engagement",
+      "content": "Not all orbitals can mix. To form a bond, two conditions must be met: <br>1. **Symmetry Match:** Orbitals must have the same symmetry properties relative to the internuclear axis. <br>2. **Energy Match:** Orbitals must be close in energy. <br><br> *Interactive:* Try mixing a 1s with a 2p_x (side-on). Net overlap is zero!",
+      "visuals": [
+        {
+          "type": "image",
+          "src": "assets/mo/orbital_overlap.png",
+          "note": "s + px (side-on) = 0 Net Overlap (Non-bonding)"
+        }
+      ]
+    },
+    {
+      "id": "diatomic_ladder",
+      "title": "3. The Diatomic Ladder & s-p Mixing",
+      "content": "For homonuclear diatomics ($O_2, F_2$), the \u03c3_p orbital is lower than \u03c0_p. <br> However, for $B_2, C_2, N_2$, **s-p mixing** pushes the \u03c3_p orbital *above* the \u03c0_p. This changes the magnetic properties and bond order. <br><br> *Reality Check:* Liquid Oxygen is magnetic (paramagnetic) because of two unpaired electrons in \u03c0* orbitals!",
+      "visuals": [
+        {
+          "type": "chemDoodle",
+          "molecule": "O2",
+          "note": "Oxygen (O2) is Paramagnetic. Check the pi* orbitals."
+        }
+      ]
+    },
+    {
+      "id": "heteronuclear_co",
+      "title": "4. Heteronuclear: The CO Case Study",
+      "content": "When atoms differ in electronegativity, orbitals tilt. The bonding MO resembles the more electronegative atom (Oxygen). The antibonding MO resembles the less electronegative atom (Carbon). <br><br> **Surprise:** The HOMO of CO is effectively a lone pair on **Carbon**. This explains why CO binds to metals through the C-atom!",
+      "visuals": [
+        {
+          "type": "chemDoodle",
+          "molecule": "CO",
+          "note": "Carbon Monoxide: The HOMO is concentrated on Carbon (Sigma* character)."
+        }
+      ]
+    },
+    {
+      "id": "walsh_diagram",
+      "title": "5. Shapes from Orbitals: Walsh Diagrams",
+      "content": "Why is Water bent? A **Walsh Diagram** plots orbital energy vs. bond angle (90° to 180°). <br> For $XH_2$ (8 valence electrons like Water), bending stabilizes the $2a_1$ orbital significantly more than it destabilizes others, making the bent shape energetically favorable. <br><br> *Misconception:* It's not just 'lone pair repulsion' (VSEPR); it's quantum mechanical stabilization.",
+      "visuals": [
+        {
+          "type": "chemDoodle",
+          "molecule": "H2O",
+          "note": "Water (H2O): Bent geometry stabilizes occupied MOs."
+        }
+      ]
+    }
+  ]
+}

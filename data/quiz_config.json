@@ -1,0 +1,54 @@
+{
+  "modules": [
+    {
+      "id": "symmetry",
+      "title": "Module 1: Molecular Symmetry",
+      "topics": [
+        "molecular symmetry point groups operations",
+        "symmetry elements C2v D3h",
+        "improper rotation Sn methane ethane",
+        "chirality and symmetry elements",
+        "point group assignment flow chart"
+      ],
+      "question_count": 15
+    },
+    {
+      "id": "mo_theory",
+      "title": "Module 2: Molecular Orbital Theory",
+      "topics": [
+        "orbital probability density isosurfaces vs shells",
+        "molecular orbital theory diagrams homonuclear diatomic",
+        "s-p mixing N2 vs O2 energy levels",
+        "molecular orbital theory heteronuclear CO NO bonding",
+        "polyatomic molecular orbitals water ammonia walsh diagrams",
+        "HOMO and LUMO of carbon monoxide metal binding"
+      ],
+      "question_count": 20
+    },
+    {
+      "id": "coordination_core",
+      "title": "Module 3: Coordination Chemistry",
+      "topics": [
+        "coordination nomenclature IUPAC",
+        "isomers geometric optical coordination",
+        "crystal field theory octahedral splitting CFSE",
+        "ligand field theory sigma pi bonding",
+        "electronic spectra term symbols Tanabe-Sugano",
+        "coordination substitution mechanisms",
+        "trans effect square planar substitution"
+      ],
+      "question_count": 25
+    },
+    {
+      "id": "organometallic_ligands",
+      "title": "Module 4: Organometallic Ligands",
+      "topics": [
+        "18 electron rule counting methods",
+        "metal carbonyl bonding back-bonding",
+        "phosphine ligands tolman cone angle",
+        "metallocenes ferrocene bonding structure"
+      ],
+      "question_count": 15
+    }
+  ]
+}

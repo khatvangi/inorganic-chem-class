@@ -1,0 +1,377 @@
+[
+  {
+    "question": "What is the primary difference between the radial distribution function (RDF) of a 1s orbital and that of other shell orbitals?",
+    "options": [
+      "A) The RDF of a 1s orbital increases with distance from the nucleus.",
+      "B) The RDF of a 1s orbital decreases exponentially with distance from the nucleus.",
+      "C) The RDF of a 1s orbital has only one peak, whereas other shell orbitals have n-1 peaks.",
+      "D) The RDF of a 1s orbital has no maxima or minima."
+    ],
+    "answer": "B) The RDF of a 1s orbital decreases exponentially with distance from the nucleus.",
+    "explanation": "The radial distribution function (RDF) of a 1s orbital decreases exponentially with distance from the nucleus, resulting in a most probable distance that is lower than for other shell orbitals. This is due to the increasing factor r^2 in the radial distribution function, which causes the wavefunction to decrease more rapidly at larger distances.",
+    "formula": "[M(L)n]X",
+    "geometry": "octahedral",
+    "diagram": {
+      "central": "M",
+      "ligands": {
+        "top": "L",
+        "bottom": "L",
+        "left": "L",
+        "right": "L"
+      }
+    },
+    "topic": "orbital probability density isosurfaces vs shells",
+    "module": "mo_theory"
+  },
+  {
+    "question": "When comparing the electron density isosurfaces of a s orbital and its corresponding shell in a molecule, which statement is true?",
+    "options": [
+      "A) The isosurface of a s orbital will always be spherical in shape.",
+      "B) The isosurface of a s orbital will never intersect with the isosurface of an adjacent shell.",
+      "C) The density of the s orbital decreases rapidly as you move to shells further away from the nucleus.",
+      "D) The density of the s orbital increases with increasing distance from the nucleus, even in outer shells."
+    ],
+    "answer": "C",
+    "explanation": "The electron density isosurfaces of a s orbital are spherical and centered on the nucleus. In contrast, the density of a shell decreases rapidly as you move to shells further away from the nucleus, due to the increasing distance between atomic orbitals.",
+    "formula": "[M(L)n]X",
+    "geometry": "octahedral",
+    "diagram": {
+      "central": "M",
+      "ligands": {
+        "top": "L",
+        "bottom": "L",
+        "left": "L",
+        "right": "L"
+      }
+    },
+    "topic": "orbital probability density isosurfaces vs shells",
+    "module": "mo_theory"
+  },
+  {
+    "question": "What is the primary difference between orbital probability density isosurfaces and shells in a molecular orbitals context?",
+    "options": [
+      "A) Orbital probability density isosurfaces represent regions of high electron density, while shells represent regions of low electron density.",
+      "B) Orbital probability density isosurfaces are used to visualize the distribution of electrons within specific atomic orbitals, whereas shells represent the overall distribution of electrons in a molecule.",
+      "C) Orbital probability density isosurfaces can be used to predict the bonding patterns in molecules, while shells provide information on the electron configuration of individual atoms.",
+      "D) Orbital probability density isosurfaces are generated from radial distribution functions, whereas shells represent the cumulative probability of finding electrons at different distances from the nucleus."
+    ],
+    "answer": "B",
+    "explanation": "Orbital probability density isosurfaces are used to visualize the distribution of electrons within specific atomic orbitals, while shells represent the overall distribution of electrons in a molecule. This distinction is crucial in understanding the behavior and properties of molecular orbitals.",
+    "topic": "orbital probability density isosurfaces vs shells",
+    "module": "mo_theory"
+  },
+  {
+    "question": "Based on the molecular orbital energy level diagram for Period 2 homonuclear diatomic molecules (Fig. 2.12), what is the arrangement of electrons in the \u03c3g and \u03c0g orbitals?",
+    "options": [
+      "A) 1\u03c3g: 0 electrons, 1\u03c0g: 6 electrons",
+      "B) 1\u03c3g: 2 electrons, 1\u03c0g: 4 electrons",
+      "C) 1\u03c3g: 8 electrons, 1\u03c0g: 0 electrons",
+      "D) 1\u03c3g: 4 electrons, 1\u03c0g: 6 electrons"
+    ],
+    "answer": "B) 1\u03c3g: 2 electrons, 1\u03c0g: 4 electrons",
+    "explanation": "The diagram shows the 1\u03c3g orbital with a higher energy level than the \u03c0g orbitals. According to the molecular orbital theory, the \u03c3g orbital can accommodate 2 electrons and the \u03c0g orbitals can accommodate 4 electrons.",
+    "topic": "molecular orbital theory diagrams homonuclear diatomic",
+    "module": "mo_theory"
+  },
+  {
+    "question": "What is the correct arrangement of molecular orbitals for a homonuclear diatomic molecule such as H2?",
+    "options": [
+      "a \u03c3g + b \u03c3u = bond, c \u03c0g + d \u03c0u = antibonding",
+      "a \u03c3g - b \u03c3u = bond, c \u03c0g + d \u03c0u = bonding and antibonding",
+      "a \u03c3g + b \u03c3u = antibonding, c \u03c0g - d \u03c0u = bonding",
+      "a \u03c3g - b \u03c3u = antibonding, c \u03c0g + d \u03c0u = bonding"
+    ],
+    "answer": "a \u03c3g + b \u03c3u = bond, c \u03c0g - d \u03c0u = bonding",
+    "explanation": "The molecular orbital energy level diagram for H2 shows that the \u03c3g and \u03c3u orbitals are occupied by electrons in a covalent bond, while the \u03c0g and \u03c0u orbitals are empty.",
+    "formula": "[H2]",
+    "geometry": "linear",
+    "diagram": {
+      "central": "H",
+      "ligands": {
+        "top": "",
+        "bottom": "",
+        "left": "",
+        "right": "",
+        "front": "",
+        "back": ""
+      }
+    },
+    "topic": "molecular orbital theory diagrams homonuclear diatomic",
+    "module": "mo_theory"
+  },
+  {
+    "question": "What is the symmetry classification of the molecular orbitals for Period 2 homonuclear diatomic molecules as indicated by the diagram in Figure 2.12?",
+    "options": [
+      "A) Only g and u symmetries",
+      "B) Only 1\u03c3g, 1\u03c0u, and 1\u03c3u orbitals with cylindrical symmetry",
+      "C) 1\u03c3g, 1\u03c0g, 1\u03c0u, and 2\u03c3g orbitals with g symmetry",
+      "D) \u03c3, \u03c0, \u03b4, and \u03c6 orbitals with u symmetry"
+    ],
+    "answer": "B) Only 1\u03c3g, 1\u03c0u, and 1\u03c3u orbitals with cylindrical symmetry",
+    "explanation": "The diagram in Figure 2.12 shows that the molecular orbitals for Period 2 homonuclear diatomic molecules have cylindrical symmetry, which is denoted by the notation \u0190. The 1\u03c3g, 1\u03c0u, and 1\u03c3u orbitals are formed through overlap between atomic orbitals with cylindrical symmetry.",
+    "formula": "[M2]X",
+    "geometry": "linear",
+    "diagram": {
+      "central": "M",
+      "ligands": {
+        "top": null,
+        "bottom": null,
+        "left": null,
+        "right": null,
+        "front": null,
+        "back": null
+      }
+    },
+    "topic": "molecular orbital theory diagrams homonuclear diatomic",
+    "module": "mo_theory"
+  },
+  {
+    "question": "Which molecule has the lowest energy level for its outermost s-orbital electrons between N2 and O2?",
+    "options": [
+      "N2",
+      "O2",
+      "Both have the same energy levels",
+      "Cannot be determined from the given data"
+    ],
+    "answer": "N2",
+    "explanation": "The electron configuration of N2 is  \u03c3(1s)^2, \u03c3*(1s)^2, \u03c0(2s)^2, \u03c0(2p_y)^2, \u03c0(2p_x)^2. The outermost s-orbital electrons are in the 1s orbital, which has a lower energy level compared to O2 ( \u03c3(1s)^2, \u03c3*(1s)^2 )",
+    "formula": "[N2]",
+    "geometry": "linear",
+    "diagram": {
+      "central": "N",
+      "ligands": {
+        "top": null,
+        "bottom": null,
+        "left": null,
+        "right": null,
+        "front": null,
+        "back": null
+      }
+    },
+    "topic": "s-p mixing N2 vs O2 energy levels",
+    "module": "mo_theory"
+  },
+  {
+    "question": "Which molecule has a lower Gibbs energy of formation for its N2O4 state compared to NO2(g)?",
+    "options": [
+      "A) NO2(g)",
+      "B) N2O4",
+      "C) NO(g)",
+      "D) O2(g)"
+    ],
+    "answer": "B",
+    "explanation": "The Gibbs energy of formation for different oxidation states varies with oxidation number, and the most stable oxidation state corresponds to the species that lies lowest in its Frost diagram. In this case, N2O4 has a more negative \u2206rG value compared to NO2(g), indicating a lower Gibbs energy of formation.",
+    "formula": "[N2O4]",
+    "geometry": "octahedral",
+    "diagram": {
+      "central": "N",
+      "ligands": {
+        "top": "O",
+        "bottom": "O",
+        "left": "O",
+        "right": "O",
+        "front": "O",
+        "back": "O"
+      }
+    },
+    "topic": "s-p mixing N2 vs O2 energy levels",
+    "module": "mo_theory"
+  },
+  {
+    "question": "Which molecule has a lower Gibbs energy of formation for its N2+ state compared to N2?",
+    "options": [
+      "N2(g) - 5.14 kJ/mol",
+      "N2O(g) - 51 kJ/mol",
+      "NO2(g) - 51 kJ/mol",
+      "N2O4(l) - 25.6 kJ/mol"
+    ],
+    "answer": "B",
+    "explanation": "The Gibbs energy of formation for N2O(g) is lower than that for N2(g), indicating that the N2+ state in N2O is more stable.",
+    "formula": "[N=O]N2O",
+    "geometry": "linear",
+    "diagram": {
+      "central": "N",
+      "ligands": {
+        "top": "O",
+        "bottom": null,
+        "left": null,
+        "right": null,
+        "front": null,
+        "back": null
+      }
+    },
+    "topic": "s-p mixing N2 vs O2 energy levels",
+    "module": "mo_theory"
+  },
+  {
+    "question": "In a heteronuclear diatomic molecule CO, the less electronegative element is carbon (C). Which type of molecular orbital contributes more to the antibonding orbitals?",
+    "options": [
+      "A"
+    ],
+    "B": "- The greater contribution to a bonding molecular orbital normally comes from the more electronegative atom: the bonding electrons are then likely to be found close to that atom",
+    "C": "- Hybridization is not directly related to this question. The electron density distribution in the promoted atom is equivalent to the electron density in which each electron occupies a hybrid orbital formed by interference between the A2s and the A2p orbitals.",
+    "D": "- Molecular orbital theory does describe the bonding in heteronuclear diatomic molecules but the less electronegative element contributes more to antibonding orbitals.",
+    "answer": "D",
+    "explanation": "The greater contribution to a bonding molecular orbital normally comes from the more electronegative atom: the bonding electrons are then likely to be found close to that atom. In this case, carbon (C), being less electronegative than oxygen (O), contributes more to the antibonding orbitals.",
+    "topic": "molecular orbital theory heteronuclear CO NO bonding",
+    "module": "mo_theory"
+  },
+  {
+    "question": "In a heteronuclear diatomic molecule like CO or NO, which of the following statements accurately describes the contribution to antibonding molecular orbitals?",
+    "options": [
+      "A) The greater electronegative atom makes the lesser contribution.",
+      "B) The less electronegative atom makes the greater contribution.",
+      "C) The more electronegative atom makes the same contribution as the less electronegative atom.",
+      "D) The bond order is determined by the relative electronegativities of the two atoms."
+    ],
+    "answer": "B",
+    "explanation": "In a heteronuclear diatomic molecule like CO or NO, the less electronegative atom makes the greater contribution to antibonding molecular orbitals. This is because the bonding electrons tend to be found on the more electronegative atom and the antibonding electrons are found on the less electronegative atom.",
+    "topic": "molecular orbital theory heteronuclear CO NO bonding",
+    "module": "mo_theory"
+  },
+  {
+    "question": "What is the primary effect of the less electronegative element on heteronuclear CO NO bonding?",
+    "options": [
+      "A) The greater contribution to a bonding molecular orbital comes from the more electronegative atom.",
+      "B) The less electronegative atom has a greater contribution to antibonding orbitals, leading to weaker bonds.",
+      "C) Hybridization schemes have no impact on heteronuclear diatomic molecules.",
+      "D) The electron density distribution in the promoted atom is equivalent to the electron density in which each electron occupies a hybrid orbital formed by interference between A2s and A2p orbitals."
+    ],
+    "answer": "B",
+    "explanation": "According to molecular orbital theory, the less electronegative element makes the greater contribution to the antibonding orbitals, leading to weaker bonds in heteronuclear diatomic molecules such as CO and NO.",
+    "formula": "[CO] [NO]",
+    "geometry": "linear",
+    "diagram": {
+      "central": "O",
+      "ligands": {
+        "top": "C",
+        "bottom": "N"
+      }
+    },
+    "topic": "molecular orbital theory heteronuclear CO NO bonding",
+    "module": "mo_theory"
+  },
+  {
+    "question": "Which of the following polyatomic molecular orbitals is predicted based on a strong dependence on bond angle? ",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": "B",
+    "explanation": "The Walsh diagram for an XH2 molecule shows how one set of orbitals evolves as the bond angle is changed. This indicates that molecular shape in polyatomic molecules can be predicted based on delocalized molecular orbitals and their dependence on bond angles.",
+    "formula": "HX2",
+    "geometry": "linear",
+    "diagram": {
+      "central": "X",
+      "ligands": {
+        "top": "H",
+        "bottom": "H"
+      }
+    },
+    "topic": "polyatomic molecular orbitals water ammonia walsh diagrams",
+    "module": "mo_theory"
+  },
+  {
+    "question": "What type of molecular orbital diagram would be used to predict the shapes of molecules with a strong dependence on bond angle, such as water (H2O) and ammonia (NH3)?",
+    "options": [
+      "A) Walsh Diagram",
+      "B) Correlation Diagram",
+      "C) Hybridization Scheme",
+      "D) Molecular Orbital Energy Level Diagram"
+    ],
+    "answer": "A",
+    "explanation": "The Walsh diagram is a type of correlation diagram that shows how one set of orbitals evolves into another as a parameter (such as bond angle) is changed. It was devised by A.D. Walsh and plays an important role in understanding the shapes, spectra, and reactions of polyatomic molecules. The Walsh diagram is particularly useful for predicting the shapes of molecules like water (H2O) and ammonia (NH3), which have a strong dependence on bond angle.",
+    "formula": "[H2O]",
+    "geometry": "bent",
+    "diagram": {
+      "central": "O",
+      "ligands": {
+        "top": "H",
+        "bottom": "H"
+      }
+    },
+    "topic": "polyatomic molecular orbitals water ammonia walsh diagrams",
+    "module": "mo_theory"
+  },
+  {
+    "question": "Which of the following molecular orbitals would be expected to show a significant change in shape as the bond angle is varied from 90\u00b0 to 180\u00b0?",
+    "options": [
+      "A"
+    ],
+    "topic": "polyatomic molecular orbitals water ammonia walsh diagrams",
+    "module": "mo_theory"
+  },
+  {
+    "question": "What is the relationship between the HOMO and LUMO of carbon monoxide in a metal-carbonyl complex?",
+    "options": [
+      "The HOMO and LUMO are identical.",
+      "The HOMO is a \u03c3 donor and the LUMO is a \u03c0 acceptor.",
+      "The HOMO is a \u03c0 acceptor and the LUMO is a \u03c3 donor.",
+      "There is no relationship between the HOMO and LUMO."
+    ],
+    "answer": "B",
+    "explanation": "According to the molecular orbital scheme for CO, the HOMO has \u03c3 symmetry and is essentially a lobe that projects away from the C atom. The LUMO, on the other hand, has \u03c0 symmetry and consists of the empty \u03c0* orbitals. These two orbitals play a crucial role in the bonding of CO to a metal atom, with the \u03c0 interaction leading to the delocalization of electrons from filled d orbitals on the metal atom into the empty \u03c0* orbitals on the CO ligands.",
+    "formula": "[M(Br)2(CH3)(CO)(PPh3)2]",
+    "geometry": "octahedral",
+    "diagram": {
+      "central": "Ir",
+      "ligands": {
+        "top": "Br",
+        "bottom": "Br",
+        "left": "CH3",
+        "right": "CO",
+        "front": "PPh3",
+        "back": "PPh3"
+      }
+    },
+    "topic": "HOMO and LUMO of carbon monoxide metal binding",
+    "module": "mo_theory"
+  },
+  {
+    "question": "What is the shape of the molecular orbital for HOMO (Highest Occupied Molecular Orbital) of Carbon Monoxide (CO)?",
+    "options": [
+      "\u03c0 symmetry",
+      "\u03c3 symmetry",
+      "Linear",
+      "Trigonal Planar"
+    ],
+    "answer": "B",
+    "explanation": "The molecular orbital structure for CO shows that the HOMO has \u03c3 symmetry. This is essential to its role as a weak donor and \u03c3 bond in metal-CO complexes.",
+    "formula": "[M(L)n]X",
+    "geometry": "none specified",
+    "diagram": {
+      "central": null,
+      "ligands": null
+    },
+    "topic": "HOMO and LUMO of carbon monoxide metal binding",
+    "module": "mo_theory"
+  },
+  {
+    "question": "What is the primary role of the \u03c0* orbitals of carbon monoxide (CO) when it acts as a ligand to metal atoms?",
+    "options": [
+      "A) \u03c3 donor",
+      "B) \u03c0 acceptor",
+      "C) \u03c3 acceptor",
+      "D) \u03c0 donor"
+    ],
+    "answer": "B) \u03c0 acceptor",
+    "explanation": "The \u03c0* orbitals of CO are the primary \u03c0 acceptors when it acts as a ligand to metal atoms, forming a synergistic outcome with \u03c3 bonding that increases the stability of the complex.",
+    "formula": "[MBr2(CH3)(CO)(PPh3)2]",
+    "geometry": "octahedral",
+    "diagram": {
+      "central": "Ir",
+      "ligands": {
+        "top": "Br",
+        "bottom": "Br",
+        "left": "CH3",
+        "right": "CO",
+        "front": "PPh3",
+        "back": "PPh3"
+      }
+    },
+    "topic": "HOMO and LUMO of carbon monoxide metal binding",
+    "module": "mo_theory"
+  }
+]

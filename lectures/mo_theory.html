@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MO Theory Lecture</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../libs/ChemDoodleWeb.css" />
+    <style>
+      :root {
+        --notebook-bg: #ffffff;
+        --notebook-text: #2d2d2d;
+        --accent: #e056fd; /* Different accent for MO */
+      }
+      body {
+        background-color: #f8f9fa;
+        color: var(--notebook-text);
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        overflow: hidden;
+      }
+      header {
+        flex-shrink: 0;
+        background: white;
+        border-bottom: 1px solid #ddd;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .notebook-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        flex-grow: 1;
+        overflow: hidden;
+      }
+      .scroll-content {
+        overflow-y: auto;
+        padding: 2rem;
+        scroll-behavior: smooth;
+      }
+      .slide-card {
+        background: white;
+        border-radius: 8px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        border-left: 4px solid transparent;
+        transition: border-color 0.3s;
+      }
+      .slide-card.active {
+        border-left-color: var(--accent);
+      }
+      .stage {
+        background: #1a1a1a; /* Dark background for Orbitals */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-left: 1px solid #ddd;
+        position: relative;
+      }
+      #chemDoodle3D {
+        width: 100%;
+        height: 100%;
+        max-width: 600px;
+        max-height: 600px;
+      }
+      .stage-note {
+        position: absolute;
+        bottom: 2rem;
+        background: rgba(0,0,0,0.8);
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        font-weight: 500;
+        text-align: center;
+        max-width: 80%;
+      }
+      h2 { margin-top: 0; color: #333; }
+      p { line-height: 1.6; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <strong>Molecular Orbital Theory</strong> | From Waves to Shapes
+      </div>
+      <div class="hero-actions">
+        <a class="primary" href="../quiz.html?id=mo_theory">Take MO Quiz</a>
+        <a class="ghost" href="../index.html">Exit</a>
+      </div>
+    </header>
+
+    <div class="notebook-container">
+      <div class="scroll-content" id="slideContainer">
+        <!-- Slides injected here -->
+      </div>
+      <div class="stage">
+        <canvas id="chemDoodle3D"></canvas>
+        <div id="stageNote" class="stage-note">Interactive Viewer</div>
+      </div>
+    </div>
+
+    <script src="../libs/ChemDoodleWeb.js"></script>
+    <script type="module" src="mo_theory.js"></script>
+  </body>
+</html>

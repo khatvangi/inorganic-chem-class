@@ -1,0 +1,317 @@
+[
+  {
+    "question": "What is the point group of a molecule with an octahedral geometry and four ligands arranged tetrahedrally around a central metal atom?",
+    "options": [
+      "D4h",
+      "C4v",
+      "Oh",
+      "Dn2h"
+    ],
+    "answer": "C4v",
+    "explanation": "The molecule has an octahedral geometry and four ligands arranged tetrahedrally around a central metal atom. This corresponds to the C4v point group, which is characterized by a four-fold axis of rotation (C4) and a horizontal mirror plane (\u03c3h).",
+    "formula": "[MX4]X",
+    "geometry": "octahedral",
+    "diagram": {
+      "central": "M",
+      "ligands": {
+        "top": "L",
+        "bottom": "L",
+        "left": "L",
+        "right": "L"
+      }
+    },
+    "topic": "molecular symmetry point groups operations",
+    "module": "symmetry"
+  },
+  {
+    "question": "Which of the following symmetry operations is associated with a C4 axis?",
+    "options": [
+      "A) E (Identity)",
+      "B) C4 (90\u00b0 rotation about the C4 axis)",
+      "C) 2C3",
+      "D) C2"
+    ],
+    "answer": "B",
+    "explanation": "The symmetry operation associated with a C4 axis is a 90\u00b0 rotation about the axis. This is an example of a Cn (n-fold rotation axis) and corresponds to option B, C4.",
+    "formula": "[Co(NH3)6]SO4",
+    "geometry": "octahedral",
+    "diagram": {
+      "central": "Co",
+      "ligands": {
+        "top": "NH3",
+        "bottom": "NH3",
+        "left": "NH3",
+        "right": "NH3",
+        "front": "NH3",
+        "back": "NH3"
+      }
+    },
+    "topic": "molecular symmetry point groups operations",
+    "module": "symmetry"
+  },
+  {
+    "question": "What is the symmetry point group of the molecule TiF6",
+    "options": [
+      "C6v",
+      "D6h",
+      "O4h",
+      "D3h"
+    ],
+    "answer": "D6h",
+    "explanation": "The symmetry point group D6h is identified by noting its symmetry elements, which include the six \u03c3d planes, three \u03c3v axes, and two C\u221e rotors. The molecule TiF6 has a tetrahedral geometry with six fluorine ligands bonded to titanium, resulting in this specific point group.",
+    "formula": "[TiF6]",
+    "geometry": "tetrahedral",
+    "diagram": {
+      "central": "Ti",
+      "ligands": {
+        "top": "F",
+        "bottom": "F",
+        "left": "F",
+        "right": "F",
+        "front": "F",
+        "back": "F"
+      }
+    },
+    "topic": "molecular symmetry point groups operations",
+    "module": "symmetry"
+  },
+  {
+    "question": "What is the point group of XeF4 molecule?",
+    "options": [
+      "C2v",
+      "D3h",
+      "Td",
+      "C4v"
+    ],
+    "answer": "D3h",
+    "explanation": "XeF4 has a fourfold axis (C4), two pairs of twofold rotation axes, and two sets of vertical reflection planes (v and d), which corresponds to the D4h point group. However, XeF4 is not typically represented as D4h due to the presence of the horizontal reflection plane h. The correct point group for XeF4 is D3h, considering only the symmetry elements listed in Fig. 6.3.",
+    "formula": "[XeF4]",
+    "geometry": "see-see",
+    "diagram": {
+      "central": "Xe",
+      "ligands": {
+        "top": "F",
+        "bottom": "F",
+        "left": "F",
+        "right": "F"
+      }
+    },
+    "topic": "symmetry elements C2v D3h",
+    "module": "symmetry"
+  },
+  {
+    "question": "What is the correct point group for the molecule XeF4?",
+    "options": [
+      "C2v",
+      "D4h",
+      "D3h",
+      "Td"
+    ],
+    "answer": "D4h",
+    "explanation": "XeF4 has a fourfold axis (C4), two pairs of twofold rotation axes, a horizontal reflection plane h, and two sets of vertical reflection planes v and d, which defines the D4h point group.",
+    "formula": "XeF4",
+    "geometry": "square planar",
+    "diagram": {
+      "central": "Xe",
+      "ligands": {
+        "top": "F",
+        "bottom": "F",
+        "left": "F",
+        "right": "F"
+      }
+    },
+    "topic": "symmetry elements C2v D3h",
+    "module": "symmetry"
+  },
+  {
+    "question": "What is the correct symmetry element for a molecule with a fourfold axis of rotation and two pairs of twofold rotation axes that are perpendicular to the principal C4 axis, as well as a horizontal reflection plane h in the plane of the paper?",
+    "options": [
+      "C2v",
+      "D3h",
+      "C4v",
+      "C2h"
+    ],
+    "answer": "D3h",
+    "explanation": "The molecule possesses a fourfold axis of rotation (C4) and two pairs of twofold rotation axes that are perpendicular to the principal C4 axis. Additionally, it has a horizontal reflection plane h in the plane of the paper and two sets of vertical reflection planes. This combination of symmetry elements corresponds to the point group D3h.",
+    "formula": "XeF4",
+    "geometry": "see 3d diagram below (not provided here) but will be rendered using chemdoodle.",
+    "diagram": {
+      "central": "Xe",
+      "ligands": {
+        "top": "F",
+        "bottom": "F",
+        "left": "F",
+        "right": "F",
+        "front": "F",
+        "back": "F"
+      }
+    },
+    "topic": "symmetry elements C2v D3h",
+    "module": "symmetry"
+  },
+  {
+    "question": "For a molecule with an n-fold improper rotation axis (Sn), which of the following symmetry operations results in the same structure as rotating by 180\u00b0?",
+    "options": [
+      "A) Reflection in a plane perpendicular to the axis of rotation",
+      "B) Rotation by 360\u00b0/n followed by reflection in a plane perpendicular to the axis of rotation",
+      "C) Reflection",
+      "D) Inversion"
+    ],
+    "answer": "B",
+    "explanation": "A molecule with an n-fold improper rotation axis (Sn) has a symmetry operation that results in the same structure as rotating by 180\u00b0. This is achieved by rotating by 360\u00b0/n followed by reflection in a plane perpendicular to the axis of rotation, which is option B.",
+    "formula": "[M(L)n]X",
+    "geometry": "trigonal pyramidal",
+    "diagram": {
+      "central": "Sn",
+      "ligands": {
+        "top": "L",
+        "bottom": "L"
+      }
+    },
+    "topic": "improper rotation Sn methane ethane",
+    "module": "symmetry"
+  },
+  {
+    "question": "What type of rotation axis is created when a 180\u00b0 rotation (Sn) followed by a reflection in a perpendicular mirror plane is applied to the molecule?",
+    "options": [
+      "A",
+      "n-fold axis of improper rotation"
+    ],
+    "answer": "B",
+    "explanation": "An n-fold axis of improper rotation (Sn) is created when a 180\u00b0 rotation followed by a reflection in a perpendicular mirror plane is applied to the molecule.",
+    "formula": "[M(L)n]X",
+    "geometry": "trigonal pyramidal",
+    "diagram": {
+      "central": "M",
+      "ligands": {
+        "top": "L",
+        "left": "L"
+      }
+    },
+    "topic": "improper rotation Sn methane ethane",
+    "module": "symmetry"
+  },
+  {
+    "question": "What is the effect of performing a Sn rotation on Sn methane ethane (C2H6), assuming that one of 180\\u00b0 (the C2 operation) leaves it",
+    "options": [
+      "A) The molecule has an n-fold improper axis of rotation"
+    ],
+    "answer": "B",
+    "explanation": "The correct answer is B) Since the Sn operation involves a reflection in a plane perpendicular to the rotation axis, this is equivalent to a 180\\u00b0 rotation about the axis of symmetry (C2). As stated in Table 6.1, the C2 operation leaves the molecule unchanged, so performing an equivalent Sn operation will also leave it unchanged.",
+    "formula": "[CH4][CH3]X",
+    "geometry": "trigonal bipyramidal",
+    "diagram": {
+      "central": "C",
+      "ligands": {
+        "top": "H",
+        "bottom": "H",
+        "left": "H",
+        "right": "H",
+        "front": "H",
+        "back": "H"
+      }
+    },
+    "topic": "improper rotation Sn methane ethane",
+    "module": "symmetry"
+  },
+  {
+    "question": "What is the maximum possible degree of degeneracy for d orbitals in an octahedral SF6 molecule?",
+    "options": [
+      "A"
+    ],
+    "topic": "chirality and symmetry elements",
+    "module": "symmetry"
+  },
+  {
+    "question": "For the SF6 molecule with an octahedral geometry and M=Si (Silicon), what is the maximum possible degree of degeneracy of its orbitals?",
+    "options": [
+      "A"
+    ],
+    "topic": "chirality and symmetry elements",
+    "module": "symmetry"
+  },
+  {
+    "question": "For the SF6 molecule, what is the maximum possible degree of degeneracy of its orbitals if it belongs to the point group D4h?",
+    "options": [
+      "1",
+      "8",
+      "12",
+      "16"
+    ],
+    "answer": "8",
+    "explanation": "The D4h point group has a total of 24 symmetry operations, which can be categorized into 8 x 3 = 24 characters. However, the totally symmetric character (A1g) only corresponds to one irreducible representation. The remaining 23 characters are divided among the other irreducible representations. In the case of SF6, there are six irrep with degeneracy of 2 or higher. Since the total number of orbitals in an octahedral complex is 24 (6 x 4), and some of them belong to equivalent irreps, the maximum possible degree of degeneracy will be less than 24.",
+    "formula": "[S]6",
+    "geometry": "octahedral",
+    "diagram": {
+      "central": "S",
+      "ligands": {
+        "top": "",
+        "bottom": "",
+        "left": "",
+        "right": "",
+        "front": "",
+        "back": ""
+      }
+    },
+    "topic": "chirality and symmetry elements",
+    "module": "symmetry"
+  },
+  {
+    "question": "What is the point group of the CO molecule M(CO)5?",
+    "options": [
+      "D4h",
+      "C2v",
+      "Td",
+      "Cs"
+    ],
+    "answer": "C",
+    "explanation": "The correct answer is C2v because the CO molecule has a linear arrangement of ligands around the central metal atom M, with five CO ligands. This leads to a two-fold axis of symmetry (C\u221e) and a horizontal mirror plane (\u03c3h). Therefore, the point group of the CO molecule M(CO)5 is C2v.",
+    "formula": "[M(CO)5]X",
+    "geometry": "linear",
+    "diagram": {
+      "central": "M",
+      "ligands": {
+        "top": "CO",
+        "bottom": "CO",
+        "left": "CO",
+        "right": "CO",
+        "front": "CO",
+        "back": "CO"
+      }
+    },
+    "topic": "point group assignment flow chart",
+    "module": "symmetry"
+  },
+  {
+    "question": "What is the correct point group assignment for the CO molecule?",
+    "options": [
+      "D\u221eh",
+      "C2v",
+      "C3v",
+      "C4v"
+    ],
+    "answer": "D\u221eh",
+    "explanation": "The D\u221eh point group is assigned to the CO molecule because it has a linear geometry and exhibits the following symmetry elements: \u03c3(v) \u221e, i, and \u03c3(d) \u221e. These symmetry elements are characteristic of the D\u221eh point group.",
+    "topic": "point group assignment flow chart",
+    "module": "symmetry"
+  },
+  {
+    "question": "What point group assignment would result from a linear molecule with two identical ligands (L) arranged around a central metal atom (M), as per the figure 6.9 decision tree for identifying molecular point groups?",
+    "options": [
+      "A"
+    ],
+    "answer": "Dnh",
+    "explanation": "The Dnh point group is assigned to linear molecules with two identical ligands. This is because the molecule has a center of symmetry and C\u221e\u221e rotation axes, which are characteristic of the Dnh point group.",
+    "formula": "[M(L)2]X",
+    "geometry": "linear",
+    "diagram": {
+      "central": "M",
+      "ligands": {
+        "top": "L",
+        "bottom": "L"
+      }
+    },
+    "topic": "point group assignment flow chart",
+    "module": "symmetry"
+  }
+]

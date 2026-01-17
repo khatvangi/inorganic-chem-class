@@ -1,0 +1,97 @@
+{
+  "identify": [
+    {
+      "id": "sc",
+      "prompt": "Identify the unit cell type.",
+      "note": "Corners only.",
+      "answer": "simple cubic",
+      "badge": "Cubic",
+      "image": "assets/solids/lattice-013.png"
+    },
+    {
+      "id": "bcc",
+      "prompt": "Identify the unit cell type.",
+      "note": "One atom in the body center.",
+      "answer": "body-centered cubic",
+      "badge": "Cubic",
+      "image": "assets/solids/lattice-013.png"
+    },
+    {
+      "id": "fcc",
+      "prompt": "Identify the unit cell type.",
+      "note": "Atoms at face centers.",
+      "answer": "face-centered cubic",
+      "badge": "Cubic",
+      "image": "assets/solids/lattice-013.png"
+    }
+  ],
+  "count": [
+    {
+      "id": "count-sc",
+      "prompt": "How many atoms per unit cell in simple cubic?",
+      "note": "Corners only.",
+      "answer": "1",
+      "badge": "Counting"
+    },
+    {
+      "id": "count-bcc",
+      "prompt": "How many atoms per unit cell in BCC?",
+      "note": "Corners + one center.",
+      "answer": "2",
+      "badge": "Counting"
+    },
+    {
+      "id": "count-fcc",
+      "prompt": "How many atoms per unit cell in FCC?",
+      "note": "Corners + six faces.",
+      "answer": "4",
+      "badge": "Counting"
+    }
+  ],
+  "packing": [
+    {
+      "id": "pack-sc",
+      "prompt": "Packing efficiency of simple cubic?",
+      "note": "Select the closest value.",
+      "answer": "52%",
+      "badge": "Packing"
+    },
+    {
+      "id": "pack-bcc",
+      "prompt": "Packing efficiency of BCC?",
+      "note": "Select the closest value.",
+      "answer": "68%",
+      "badge": "Packing"
+    },
+    {
+      "id": "pack-fcc",
+      "prompt": "Packing efficiency of FCC?",
+      "note": "Select the closest value.",
+      "answer": "74%",
+      "badge": "Packing"
+    }
+  ],
+  "lattice": [
+    {
+      "id": "lattice-cubic",
+      "prompt": "Identify the lattice system: a = b = c, alpha = beta = gamma = 90°",
+      "note": "Select the system.",
+      "answer": "cubic",
+      "badge": "Systems"
+    },
+    {
+      "id": "lattice-hex",
+      "prompt": "Identify the lattice system: a = b ≠ c, alpha = beta = 90°, gamma = 120°",
+      "note": "Select the system.",
+      "answer": "hexagonal",
+      "badge": "Systems"
+    },
+    {
+      "id": "lattice-tetra",
+      "prompt": "Identify the lattice system: a = b ≠ c, alpha = beta = gamma = 90°",
+      "note": "Select the system.",
+      "answer": "tetragonal",
+      "badge": "Systems"
+    }
+  ]
+}

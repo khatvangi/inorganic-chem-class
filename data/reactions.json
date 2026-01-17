@@ -1,0 +1,68 @@
+{
+  "rate": [
+    {
+      "id": "rate-d",
+      "prompt": "Rate = k[ML5X]",
+      "note": "Entering ligand does not appear in the rate law.",
+      "answer": "D"
+    },
+    {
+      "id": "rate-a",
+      "prompt": "Rate = k[ML4X][Y]",
+      "note": "Entering ligand appears in the rate law.",
+      "answer": "A"
+    },
+    {
+      "id": "rate-i",
+      "prompt": "Rate = k[ML5X][Y]^0.5",
+      "note": "Partial dependence on entering ligand.",
+      "answer": "I"
+    },
+    {
+      "id": "rate-i2",
+      "prompt": "Rate = k[ML5X][Y]^0.2",
+      "note": "Weak dependence on entering ligand.",
+      "answer": "I"
+    }
+  ],
+  "path": [
+    {
+      "id": "path-sp",
+      "prompt": "Square planar Pt(II) substitution with strong nucleophile.",
+      "note": "Predict dominant pathway.",
+      "answer": "A"
+    },
+    {
+      "id": "path-octa",
+      "prompt": "Octahedral Co(III) complex, inert, rate independent of Y.",
+      "note": "Predict dominant pathway.",
+      "answer": "D"
+    },
+    {
+      "id": "path-inter",
+      "prompt": "Octahedral complex, rate weakly depends on Y.",
+      "note": "Predict dominant pathway.",
+      "answer": "I"
+    }
+  ],
+  "stereo": [
+    {
+      "id": "stereo-ret",
+      "prompt": "Five-coordinate intermediate retains configuration.",
+      "note": "Predict stereochemical outcome.",
+      "answer": "retention"
+    },
+    {
+      "id": "stereo-alt",
+      "prompt": "Five-coordinate intermediate rearranges before substitution.",
+      "note": "Predict stereochemical outcome.",
+      "answer": "alteration"
+    },
+    {
+      "id": "stereo-mix",
+      "prompt": "Both trigonal bipyramidal and square pyramidal pathways available.",
+      "note": "Predict stereochemical outcome.",
+      "answer": "mixture"
+    }
+  ]
+}

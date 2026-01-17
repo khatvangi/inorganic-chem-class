@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Symmetry Gallery</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="libs/ChemDoodleWeb.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Space+Grotesk:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <header class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Module 1 - Symmetry</p>
+        <h1>Symmetry Gallery</h1>
+        <p class="subhead">
+          Explore molecular point groups and symmetry elements.
+        </p>
+        <div class="hero-actions">
+          <a class="primary" href="index.html">Home</a>
+          <a class="ghost" href="bonding.html">Bonding</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="game">
+      <section class="game-board" style="grid-template-columns: 300px 1fr;">
+        <!-- Sidebar -->
+        <div class="panel-card" style="height: fit-content;">
+          <h3>Molecules</h3>
+          <div id="moleculeList" class="option-grid" style="display: flex; flex-direction: column; gap: 0.5rem;">
+            <!-- Buttons injected here -->
+          </div>
+        </div>
+
+        <!-- Viewer -->
+        <div class="question-card">
+          <div class="question-header">
+            <span class="badge" id="pointGroupBadge">Select a molecule</span>
+          </div>
+          <h2 id="molName">...</h2>
+          
+          <div class="viewer-card">
+            <canvas id="chemDoodle3D" width="500" height="400"></canvas>
+            <p class="viewer-note">Rotate to inspect symmetry.</p>
+          </div>
+
+          <div class="intro-card">
+            <h3>Symmetry Elements</h3>
+            <ul id="symmetryList" class="rule-list">
+              <!-- Elements injected here -->
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Powered by ChemDoodle Web Components</p>
+    </footer>
+
+    <script src="libs/ChemDoodleWeb.js"></script>
+    <script type="module" src="symmetry.js"></script>
+  </body>
+</html>

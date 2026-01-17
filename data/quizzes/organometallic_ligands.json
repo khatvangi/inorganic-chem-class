@@ -1,0 +1,280 @@
+[
+  {
+    "question": "What is the key point of the neutral-ligand method for counting electrons in d-metal organometallic compounds?",
+    "options": [
+      "All ligands are treated as anions.",
+      "All ligands are treated as neutral and categorized according to how many electrons they donate.",
+      "All ligands are treated as cations.",
+      "All ligands are treated as molecules and their electron count is not considered."
+    ],
+    "answer": "B",
+    "explanation": "The correct answer is based on the text which states that in the neutral-ligand method, all ligands are treated as neutral and categorized according to how many electrons they donate.",
+    "formula": "[M(L)n]X",
+    "geometry": "octahedral",
+    "diagram": {
+      "central": "Ir",
+      "ligands": {
+        "top": "Cl",
+        "bottom": "CO",
+        "left": "PPh3",
+        "right": "PPh3"
+      }
+    },
+    "topic": "18 electron rule counting methods",
+    "module": "organometallic_ligands"
+  },
+  {
+    "question": "What is the primary assumption used to count electrons for a ligand using the neutral-ligand method in organometallic chemistry?",
+    "options": [
+      "Ligands are always one-electron radical donors.",
+      "All ligands are treated as neutral and categorized according to how many electrons they are considered to donate.",
+      "Ligands are defined as X type if, when they are considered to be neutral, they are one-electron radical donors.",
+      "The number of electrons donated by each ligand is always equal to its atomic number."
+    ],
+    "answer": "C",
+    "explanation": "The correct answer, option C, is the definition used in the neutral-ligand method. Ligands are defined as X type if they are considered one-electron radical donors when treated as neutral.",
+    "formula": "[M(L)n]X",
+    "geometry": "octahedral",
+    "diagram": {
+      "central": "Ir",
+      "ligands": {
+        "top": "Cl",
+        "bottom": "CO",
+        "left": "PPh3",
+        "right": "PPh3"
+      }
+    },
+    "topic": "18 electron rule counting methods",
+    "module": "organometallic_ligands"
+  },
+  {
+    "question": "Which method of counting electrons is used when ligands are considered as neutral two-electron donors (like CO, PMe3) and one-electron radical donors (like halogen atoms, H, CH3)?",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": "A",
+    "explanation": "The neutral-ligand method is used when ligands are categorized according to how many electrons they donate. In this case, the ligands are considered as neutral two-electron donors, which results in an 18-electron count.",
+    "formula": "[M(L)n]X",
+    "geometry": "octahedral",
+    "diagram": {
+      "central": "Ir",
+      "ligands": {
+        "top": "Cl",
+        "bottom": "Cl",
+        "left": "CO",
+        "right": "PPh3"
+      }
+    },
+    "topic": "18 electron rule counting methods",
+    "module": "organometallic_ligands"
+  },
+  {
+    "question": "What is the expected effect on the CO triple bond strength when \u03c0 backbonding from a metal atom to carbon monoxide increases?",
+    "options": [
+      "The CO triple bond becomes stronger.",
+      "The CO triple bond remains unchanged.",
+      "The CO triple bond becomes weaker due to increased electron density in the antibonding orbital.",
+      "The CO triple bond is no longer present."
+    ],
+    "answer": "C",
+    "explanation": "When \u03c0 backbonding from a metal atom to carbon monoxide increases, it pushes electron density into the \u03c0* orbital, weakening the CO triple bond.",
+    "formula": "[M(CO)2]X",
+    "geometry": "octahedral",
+    "diagram": {
+      "central": "M",
+      "ligands": {
+        "top": "CO",
+        "bottom": "CO"
+      }
+    },
+    "topic": "metal carbonyl bonding back-bonding",
+    "module": "organometallic_ligands"
+  },
+  {
+    "question": "What type of backbonding occurs when carbon monoxide is terminal-ly bound to one metal atom and the CO triple bond binds side-on to another metal?",
+    "options": [
+      "A) \u03c3 backbonding",
+      "B) \u03c0 backbonding",
+      "C) Both A and B",
+      "D) Neither A nor B"
+    ],
+    "answer": "C",
+    "explanation": "The correct answer is C) Both A and B. When carbon monoxide binds to one metal atom in a terminal fashion, it forms a \u03c3 bond with the metal (A). At the same time, the CO triple bond binds side-on to another metal, resulting in \u03c0 backbonding (B) through delocalization of electrons from filled d orbitals on the metal atom into the empty \u03c0* orbitals on the CO ligands.",
+    "formula": "[M(L)n]X",
+    "geometry": "square planar",
+    "ligand_arrangement": {
+      "front": "L",
+      "back": "CO"
+    },
+    "topic": "metal carbonyl bonding back-bonding",
+    "module": "organometallic_ligands"
+  },
+  {
+    "question": "What is the effect of \u03c0 backbonding in metal carbonyl complexes?",
+    "options": [
+      "A) Increases the CO bond order",
+      "B) Decreases the CO bond order",
+      "C) Has no effect on the CO bond order",
+      "D) Changes the CO stretching frequency"
+    ],
+    "answer": "B) Decreases the CO bond order",
+    "explanation": "The correct answer is B) Decreases the CO bond order. According to the text, \u03c0 backbonding from the metal to the CO increases the electron density on the CO, which in turn decreases the strength of the CO triple bond.",
+    "formula": "[M(CO)n]X",
+    "geometry": "octahedral",
+    "diagram": {
+      "central": "M",
+      "ligands": {
+        "top": "CO",
+        "bottom": "CO",
+        "left": "CO",
+        "right": "CO",
+        "front": "CO",
+        "back": "CO"
+      }
+    },
+    "topic": "metal carbonyl bonding back-bonding",
+    "module": "organometallic_ligands"
+  },
+  {
+    "question": "What is the Tolman cone angle for PPh3?",
+    "options": [
+      "105",
+      "115",
+      "125",
+      "135"
+    ],
+    "answer": "4",
+    "explanation": "The Tolman cone angle for PPh3 is 145 degrees, which indicates that it has a significant \u03c0-acceptor ability.",
+    "formula": "[M(L)n]X",
+    "geometry": "octahedral",
+    "diagram": {
+      "central": "P",
+      "ligands": {
+        "top": "PPh3",
+        "bottom": "PPh3"
+      }
+    },
+    "topic": "phosphine ligands tolman cone angle",
+    "module": "organometallic_ligands"
+  },
+  {
+    "question": "Which phosphine ligand has the smallest Tolman cone angle?",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": "D",
+    "explanation": "The correct answer is D because P(OC6H5)3 has a larger Tolman cone angle (127 degrees) compared to the other options.",
+    "formula": "[M(L)n]X",
+    "geometry": "octahedral",
+    "diagram": {
+      "central": "P",
+      "ligands": {
+        "top": "OC6H5",
+        "bottom": "OC6H5",
+        "left": "OC6H5",
+        "right": "OC6H5",
+        "front": "OC6H5",
+        "back": "OC6H5"
+      }
+    },
+    "topic": "phosphine ligands tolman cone angle",
+    "module": "organometallic_ligands"
+  },
+  {
+    "question": "What is the Tolman cone angle for the phosphine ligand PPh3?",
+    "options": [
+      "135",
+      "145",
+      "155",
+      "165"
+    ],
+    "answer": "2",
+    "explanation": "The correct answer is based on the given data in Table 21.7, which shows that the Tolman cone angle for PPh3 is 145 degrees.",
+    "formula": "[M(L)n]X",
+    "geometry": "octahedral",
+    "diagram": {
+      "central": "P",
+      "ligands": {
+        "top": "Ph",
+        "bottom": "Ph",
+        "left": "Ph",
+        "right": "Ph",
+        "front": "Ph",
+        "back": "Ph"
+      }
+    },
+    "topic": "phosphine ligands tolman cone angle",
+    "module": "organometallic_ligands"
+  },
+  {
+    "question": "What is the primary bonding arrangement of the iron atom in ferrocene (FeCp2)?",
+    "options": [
+      "A) Octahedral",
+      "B) Tetrahedral",
+      "C) Square Planar",
+      "D) Linear"
+    ],
+    "answer": "A",
+    "explanation": "The correct answer is A) Octahedral. Ferrocene has an octahedral geometry, with the iron atom at the center and two cyclopentadienyl rings (Cp) as ligands on opposite corners of the octahedron.",
+    "formula": "[Fe(Cp)2]",
+    "geometry": "octahedral",
+    "diagram": {
+      "central": "Fe",
+      "ligands": {
+        "top": "Cp",
+        "bottom": "Cp",
+        "left": "Cp",
+        "right": "Cp",
+        "front": "Cp",
+        "back": "Cp"
+      }
+    },
+    "topic": "metallocenes ferrocene bonding structure",
+    "module": "organometallic_ligands"
+  },
+  {
+    "question": "What is the correct bonding structure of ferrocene (h5-C5H5)2Fe?",
+    "options": [
+      "A: \u03c3-bonding only",
+      "B: \u03c0 and \u03c3-bonding",
+      "C: d-d bonding only",
+      "D: \u03c3 and \u03b4-pi bonding"
+    ],
+    "answer": "B",
+    "explanation": "Ferrocene is a metallocene compound that exhibits \u03c0 and \u03c3-bonding interactions between the iron atom and the cyclopentadienyl rings. The \u03c0-bonding interaction is responsible for the stability of the compound, while the \u03c3-bonding interaction provides additional bonding energy.",
+    "formula": "[Fe(Cp)2]X",
+    "geometry": "octahedral",
+    "diagram": {
+      "central": "Fe",
+      "ligands": {
+        "top": "Cp",
+        "bottom": "Cp",
+        "left": "Cp",
+        "right": "Cp",
+        "front": "Cp",
+        "back": "Cp"
+      }
+    },
+    "topic": "metallocenes ferrocene bonding structure",
+    "module": "organometallic_ligands"
+  },
+  {
+    "question": "What is the primary type of bonding involved in ferrocene ((h5-C5H5)2Fe)?",
+    "options": [
+      "sigma bonds only",
+      "pi bonds and sigma bonds",
+      "d-pi bonds and sigma bonds",
+      "coordination bonds"
+    ],
+    "answer": "C",
+    "explanation": "Ferrocene primarily involves the interaction of \u03c0 (and \u03b4, where appropriate) bonding between the metal atom and carbon-containing ligands, rather than solely \u03c3 bonds. The correct answer is C, d-pi bonds and sigma bonds, as the compound's electronic configuration consists of 16 or 18 valence electrons around the iron atom, due to the strong \u03c0 bonding interactions.",
+    "topic": "metallocenes ferrocene bonding structure",
+    "module": "organometallic_ligands"
+  }
+]

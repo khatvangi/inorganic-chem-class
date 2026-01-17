@@ -1,0 +1,181 @@
+{
+  "match": [
+    {
+      "prompt": "[Co(en)2Cl2]+",
+      "note": "en is bidentate. Determine CN and geometry.",
+      "cn": 6,
+      "geometry": "octahedral",
+      "ligands": ["en", "en", "Cl-", "Cl-"]
+    },
+    {
+      "prompt": "[Ni(CN)4]2-",
+      "note": "d8 metal, strong field.",
+      "cn": 4,
+      "geometry": "square planar",
+      "ligands": ["CN-", "CN-", "CN-", "CN-"]
+    },
+    {
+      "prompt": "[ZnCl4]2-",
+      "note": "Main group metal, weak field.",
+      "cn": 4,
+      "geometry": "tetrahedral",
+      "ligands": ["Cl-", "Cl-", "Cl-", "Cl-"]
+    },
+    {
+      "prompt": "[Ag(NH3)2]+",
+      "note": "Coordination number 2.",
+      "cn": 2,
+      "geometry": "linear",
+      "ligands": ["NH3", "NH3"]
+    },
+    {
+      "prompt": "[Fe(CN)6]4-",
+      "note": "Classic octahedral coordination.",
+      "cn": 6,
+      "geometry": "octahedral",
+      "ligands": ["CN-", "CN-", "CN-", "CN-", "CN-", "CN-"]
+    },
+    {
+      "prompt": "[Ni(CO)4]",
+      "note": "Zero oxidation state, tetrahedral.",
+      "cn": 4,
+      "geometry": "tetrahedral",
+      "ligands": ["CO", "CO", "CO", "CO"]
+    },
+    {
+      "prompt": "[Pt(NH3)2Cl2]",
+      "note": "Square planar d8 complex.",
+      "cn": 4,
+      "geometry": "square planar",
+      "ligands": ["NH3", "NH3", "Cl-", "Cl-"]
+    },
+    {
+      "prompt": "[Fe(H2O)6]2+",
+      "note": "Hexaaqua complex.",
+      "cn": 6,
+      "geometry": "octahedral",
+      "ligands": ["H2O", "H2O", "H2O", "H2O", "H2O", "H2O"]
+    }
+  ],
+  "build": [
+    {
+      "prompt": "Ligands: en x2, Cl- x2",
+      "note": "Compute CN from denticity before choosing geometry.",
+      "metal": "Co",
+      "cn": 6,
+      "geometry": "octahedral",
+      "ligands": ["en (bidentate)", "en (bidentate)", "Cl-", "Cl-"]
+    },
+    {
+      "prompt": "Ligands: bpy x3 (each bidentate)",
+      "note": "Each bpy occupies two sites.",
+      "metal": "Fe",
+      "cn": 6,
+      "geometry": "octahedral",
+      "ligands": ["bpy", "bpy", "bpy"]
+    },
+    {
+      "prompt": "Ligands: PPh3 x4",
+      "note": "Neutral monodentate ligands.",
+      "metal": "Ni",
+      "cn": 4,
+      "geometry": "tetrahedral",
+      "ligands": ["PPh3", "PPh3", "PPh3", "PPh3"]
+    },
+    {
+      "prompt": "Ligands: en x2",
+      "note": "Two bidentate ligands.",
+      "metal": "Pt",
+      "cn": 4,
+      "geometry": "square planar",
+      "ligands": ["en", "en"]
+    },
+    {
+      "prompt": "Ligands: EDTA4- (hexadentate)",
+      "note": "Single ligand wraps around the metal.",
+      "metal": "Ca",
+      "cn": 6,
+      "geometry": "octahedral",
+      "ligands": ["EDTA (hexadentate)"]
+    },
+    {
+      "prompt": "Ligands: NO2- x5",
+      "note": "CN 5 candidates: trigonal bipyramidal vs square pyramidal.",
+      "metal": "Fe",
+      "cn": 5,
+      "geometry": "trigonal bipyramidal",
+      "ligands": ["NO2-", "NO2-", "NO2-", "NO2-", "NO2-"]
+    }
+  ],
+  "ambiguity": [
+    {
+      "prompt": "CN = 4, metal = Pt(II), strong field ligands",
+      "note": "Choose geometry and justify.",
+      "metal": "Pt",
+      "cn": 4,
+      "geometry": "square planar",
+      "justification": "d8 strong field favors square planar",
+      "options": ["square planar", "tetrahedral"],
+      "justifications": [
+        "d8 strong field favors square planar",
+        "weak field favors tetrahedral"
+      ]
+    },
+    {
+      "prompt": "CN = 4, metal = Zn(II), halide ligands",
+      "note": "Choose geometry and justify.",
+      "metal": "Zn",
+      "cn": 4,
+      "geometry": "tetrahedral",
+      "justification": "d10 weak field favors tetrahedral",
+      "options": ["square planar", "tetrahedral"],
+      "justifications": [
+        "d8 strong field favors square planar",
+        "d10 weak field favors tetrahedral"
+      ]
+    },
+    {
+      "prompt": "CN = 5, metal = Fe(III) with mixed ligands",
+      "note": "Choose the more common geometry.",
+      "metal": "Fe",
+      "cn": 5,
+      "geometry": "square pyramidal",
+      "justification": "square pyramidal slightly more common for CN 5",
+      "options": ["square pyramidal", "trigonal bipyramidal"],
+      "justifications": [
+        "square pyramidal slightly more common for CN 5",
+        "trigonal bipyramidal dominates for CN 5"
+      ]
+    }
+  ],
+  "rare": [
+    {
+      "prompt": "Identify the geometry for CN 5 model.",
+      "note": "Use the 3D structure cues.",
+      "metal": "Fe",
+      "cn": 5,
+      "geometry": "trigonal bipyramidal"
+    },
+    {
+      "prompt": "Identify the geometry for CN 5 model.",
+      "note": "Use the 3D structure cues.",
+      "metal": "Fe",
+      "cn": 5,
+      "geometry": "square pyramidal"
+    },
+    {
+      "prompt": "Identify the geometry for CN 7 model.",
+      "note": "Two axial + five equatorial.",
+      "metal": "Zr",
+      "cn": 7,
+      "geometry": "pentagonal bipyramidal"
+    },
+    {
+      "prompt": "Identify the geometry for CN 8 model.",
+      "note": "Look for a twisted square antiprism.",
+      "metal": "La",
+      "cn": 8,
+      "geometry": "square antiprismatic"
+    }
+  ]
+}

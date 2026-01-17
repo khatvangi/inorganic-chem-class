@@ -1,0 +1,380 @@
+[
+  {
+    "question": "A molecule has a symmetry element with the formula [M(L)6], where M is the central atom and L is the ligand. What is the point group of this molecule?",
+    "options": [
+      "C4v",
+      "C3v",
+      "D4h",
+      "C4h"
+    ],
+    "answer": "D",
+    "explanation": "The given formula [M(L)6] suggests a trigonal bipyramidal geometry, which is consistent with the D4h point group. The presence of six ligands and the absence of any special symmetry elements (such as a rotation axis or mirror plane) support this assignment.",
+    "formula": "[M(L)6]",
+    "geometry": "trigonal bipyramidal",
+    "diagram": {
+      "central": "M",
+      "ligands": {
+        "top": "L",
+        "bottom": "L",
+        "left": "L",
+        "right": "L"
+      }
+    },
+    "topic": "molecular symmetry point groups operations",
+    "module": "symmetry_mo"
+  },
+  {
+    "question": "What is the point group of a molecule with a C3 axis and three \u03c3v planes perpendicular to this axis?",
+    "options": [
+      "C3h",
+      "C2h",
+      "C1",
+      "D3h"
+    ],
+    "answer": "C3h",
+    "explanation": "A C3 axis means the molecule has a 3-fold rotational axis. Since there are three \u03c3v planes perpendicular to this axis, the point group is C3h.",
+    "formula": "[M(L)4]X",
+    "geometry": "trigonal bipyramidal",
+    "diagram": {
+      "central": "M",
+      "ligands": {
+        "top": "L",
+        "bottom": "L",
+        "left": "L",
+        "right": "L"
+      }
+    },
+    "topic": "molecular symmetry point groups operations",
+    "module": "symmetry_mo"
+  },
+  {
+    "question": "What is the point group of a molecule with the formula [M(L)n]X and an octahedral geometry?",
+    "options": [
+      "D4h",
+      "C4v",
+      "Oh",
+      "Td"
+    ],
+    "answer": "D4h",
+    "explanation": "The molecule has an octahedral geometry, which corresponds to a point group of D4h. This is because the symmetry elements present in this molecule are consistent with the elements defining the D4h group.",
+    "formula": "[M(L)n]X",
+    "geometry": "octahedral",
+    "diagram": {
+      "central": "M",
+      "ligands": {
+        "top": "L",
+        "bottom": "L",
+        "left": "L",
+        "right": "L"
+      }
+    },
+    "topic": "molecular symmetry point groups operations",
+    "module": "symmetry_mo"
+  },
+  {
+    "question": "What is the point group of XeF4, based on its symmetry elements?",
+    "options": [
+      "C2v",
+      "D3h",
+      "C4h",
+      "C4v"
+    ],
+    "answer": "C2v",
+    "explanation": "XeF4 has a horizontal reflection plane (h) and two sets of vertical reflection planes (v and d), but no fourfold axis or threefold axis, which are characteristic of D3h. Therefore, the correct point group is C2v.",
+    "formula": "[XeF4]",
+    "geometry": "see 3d diagram below",
+    "diagram": {
+      "central": "Xe",
+      "ligands": {
+        "top": "F",
+        "bottom": "F",
+        "left": "F",
+        "right": "F",
+        "front": "F",
+        "back": "F"
+      }
+    },
+    "topic": "symmetry elements C2v D3h",
+    "module": "symmetry_mo"
+  },
+  {
+    "question": "Which of the following molecules has a D3h point group symmetry element C2v?",
+    "options": [
+      "A",
+      "BF3 has a C2v point group symmetry element"
+    ],
+    "answer": "C",
+    "explanation": "The question is asking about the point group symmetry element C2v. BF3 has a trigonal planar geometry and belongs to the C2v point group, which includes C2v symmetry elements.",
+    "formula": "[BF3]",
+    "geometry": "trigonal planar",
+    "diagram": {
+      "central": "B",
+      "ligands": {
+        "top": "F",
+        "bottom": "F",
+        "left": "F",
+        "right": "F"
+      }
+    },
+    "topic": "symmetry elements C2v D3h",
+    "module": "symmetry_mo"
+  },
+  {
+    "question": "Which of the following molecules has a D3h point group symmetry element C2v?",
+    "options": [
+      "BF3",
+      "XeF4",
+      "PBr5",
+      "SO42\u2013"
+    ],
+    "answer": "A",
+    "explanation": "D3h point group symmetry elements include C2 rotation axes, which are perpendicular to the principal C3 axis. BF3 has a trigonal-planar geometry with two C2 axes of rotation, making it a molecule with D3h point group symmetry.",
+    "formula": "[BF3]",
+    "geometry": "trigonal planar",
+    "diagram": {
+      "central": "B",
+      "ligands": {
+        "top": "F",
+        "bottom": "F",
+        "left": "F",
+        "right": "F"
+      }
+    },
+    "topic": "symmetry elements C2v D3h",
+    "module": "symmetry_mo"
+  },
+  {
+    "question": "What is the symmetry classification of the 1\u03c0g molecular orbital for a homonuclear diatomic molecule?",
+    "options": [
+      "a cylindrical (no) and g",
+      "b cylindrical (no) and u",
+      "c cylindrical (yes) and g",
+      "d cylindrical (yes) and u"
+    ],
+    "answer": "c",
+    "explanation": "The symmetry classification of the 1\u03c0g molecular orbital for a homonuclear diatomic molecule is cylindrical (yes) and g, indicating that it has cylindrical symmetry about the internuclear axis and is symmetric with respect to inversion.",
+    "topic": "molecular orbital theory diagrams homonuclear diatomic",
+    "module": "symmetry_mo"
+  },
+  {
+    "question": "What is the expected molecular orbital diagram for O2, considering only homonuclear diatomic molecules and based on the Pauli principle?",
+    "options": [
+      "The MO diagram shows a single bonding molecular orbital (1\u03c3g) and two non-bonding molecular orbitals (2\u03c3g and 2\u03c0u) with lower energy than the bonding orbitals.",
+      "The MO diagram shows two bonding molecular orbitals (1\u03c3g and 1\u03c0g), one antibonding molecular orbital (2\u03c3u) with higher energy than the bonding orbitals, and no non-bonding orbitals.",
+      "The MO diagram shows a single bonding molecular orbital (1\u03c3g) with lower energy than the non-bonding molecular orbitals (2\u03c3g and 2\u03c0u), but does not account for the antibonding nature of the 1\u03c0g orbital.",
+      "The MO diagram shows two non-bonding molecular orbitals (2\u03c3g and 2\u03c0u) with lower energy than the bonding orbitals, while ignoring the bonding nature of the 1\u03c3g and 1\u03c0g orbitals."
+    ],
+    "answer": "B",
+    "explanation": "The correct answer is based on the Pauli principle, which states that no two electrons in an atom can have the same set of quantum numbers. In O2, this means that there are two unpaired electrons in the antibonding molecular orbital (1\u03c0g), leading to a linear molecule with a bond order of 2. The other options do not accurately represent the expected MO diagram for O2.",
+    "formula": "O2",
+    "geometry": "linear",
+    "diagram": {
+      "central": "O",
+      "ligands": {
+        "top": null,
+        "bottom": null,
+        "left": null,
+        "right": null,
+        "front": null,
+        "back": null
+      }
+    },
+    "topic": "molecular orbital theory diagrams homonuclear diatomic",
+    "module": "symmetry_mo"
+  },
+  {
+    "question": "What is the correct classification of the molecular orbital in the diagram for Period 2 homonuclear diatomic molecules?",
+    "options": [
+      "A) \u03c3g",
+      "B) \u03c0u",
+      "C) 1\u03c0g",
+      "D) \u03c3u"
+    ],
+    "answer": "C",
+    "explanation": "The molecular orbital is classified as 1\u03c0g because it has cylindrical symmetry around the internuclear axis and combines a p orbital from one atom with a p orbital from the other atom.",
+    "formula": "[M2]X",
+    "geometry": "linear",
+    "diagram": {
+      "central": "O2",
+      "ligands": {
+        "top": "",
+        "bottom": "",
+        "left": "",
+        "right": "",
+        "front": "",
+        "back": ""
+      }
+    },
+    "topic": "molecular orbital theory diagrams homonuclear diatomic",
+    "module": "symmetry_mo"
+  },
+  {
+    "question": "For the heteronuclear CO molecule, which of the following is true regarding the contribution to molecular orbitals?",
+    "options": [
+      "A"
+    ],
+    "topic": "molecular orbital theory heteronuclear CO NO",
+    "module": "symmetry_mo"
+  },
+  {
+    "question": "What is the effect of the less electronegative element on heteronuclear CO NO molecular orbitals?",
+    "options": [
+      "A) The greater contribution to bonding orbitals comes from the more electronegative atom.",
+      "B) The greater contribution to antibonding orbitals comes from the more electronegative atom.",
+      "C) The coefficients cA and cB are equal in magnitude for all molecular orbitals.",
+      "D) The more electronegative element makes a smaller contribution to bonding orbitals."
+    ],
+    "answer": "B",
+    "explanation": "According to the text, 'In heteronuclear diatomic molecules, the more electronegative element makes the larger contribution to bonding orbitals and the less electronegative element makes the greater contribution to the antibonding orbitals.' Therefore, option B is correct.",
+    "formula": "[CO]NO",
+    "geometry": "linear",
+    "diagram": {
+      "central": "N",
+      "ligands": {
+        "top": "O",
+        "bottom": "C",
+        "left": null,
+        "right": null,
+        "front": "Co",
+        "back": "None"
+      }
+    },
+    "topic": "molecular orbital theory heteronuclear CO NO",
+    "module": "symmetry_mo"
+  },
+  {
+    "question": "Which of the following statements is correct regarding heteronuclear CO and NO molecules according to molecular orbital theory?",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": "A",
+    "explanation": "The more electronegative element (oxygen in CO and nitrogen in NO) makes the greater contribution to antibonding orbitals, while the less electronegative element contributes more to bonding orbitals.",
+    "formula": "[C O] and [N O]",
+    "geometry": "linear",
+    "diagram": {
+      "central": "C",
+      "ligands": {
+        "top": "O",
+        "bottom": "O",
+        "left": "None",
+        "right": "None",
+        "front": "None",
+        "back": "None"
+      }
+    },
+    "topic": "molecular orbital theory heteronuclear CO NO",
+    "module": "symmetry_mo"
+  },
+  {
+    "question": "Which of the following polyatomic molecular orbitals will show a strong dependence on bond angle in a Walsh diagram?",
+    "options": [
+      "a1g",
+      "b1u",
+      "e1u",
+      "t2u"
+    ],
+    "answer": "e1u",
+    "explanation": "According to the context, a Walsh diagram is used to analyze molecular shape in terms of delocalized molecular orbitals. The e1u orbital will show a strong dependence on bond angle due to its symmetry characteristics.",
+    "topic": "polyatomic molecular orbitals water ammonia walsh diagrams",
+    "module": "symmetry_mo"
+  },
+  {
+    "question": "What type of molecular orbital diagram is a Walsh diagram?",
+    "options": [
+      "A"
+    ],
+    "topic": "polyatomic molecular orbitals water ammonia walsh diagrams",
+    "module": "symmetry_mo"
+  },
+  {
+    "question": "Which polyatomic molecular orbital diagram illustrates a strong dependence on bond angle and can predict the shapes of even complicated molecules with high reliability?",
+    "options": [
+      "A) Walsh diagram for an XH2 molecule",
+      "B) Molecular orbital diagram for NH3",
+      "C) Correlation diagram for a diatomic molecule",
+      "D) Energy level diagram for polyatomic molecules"
+    ],
+    "answer": "A",
+    "explanation": "The Walsh diagram is a special case of a correlation diagram that shows how one set of orbitals evolves into another as a parameter, such as bond angle, is changed. It plays an important role in understanding the shapes, spectra, and reactions of polyatomic molecules.",
+    "formula": "[XH2]",
+    "geometry": "linear",
+    "diagram": {
+      "central": "X",
+      "ligands": {
+        "top": "H",
+        "bottom": "H"
+      }
+    },
+    "topic": "polyatomic molecular orbitals water ammonia walsh diagrams",
+    "module": "symmetry_mo"
+  },
+  {
+    "question": "What is a characteristic physical property of a semiconductor?",
+    "options": [
+      "A) Electric conductivity decreases with increasing temperature",
+      "B) Electric conductivity increases with increasing temperature",
+      "C) Electric conductivity remains constant with increasing temperature",
+      "D) Electric conductivity cannot be measured"
+    ],
+    "answer": "B",
+    "explanation": "The characteristic physical property of a semiconductor is that its electrical conductivity increases with increasing temperature, as stated in the context. This distinguishes it from metallic conductors, which have an electric conductivity that decreases with increasing temperature.",
+    "formula": "[M(L)n]X",
+    "geometry": "octahedral",
+    "diagram": {
+      "central": "M",
+      "ligands": {
+        "top": "L",
+        "bottom": "L",
+        "left": "L",
+        "right": "L"
+      }
+    },
+    "topic": "band theory solids conductors semiconductors",
+    "module": "symmetry_mo"
+  },
+  {
+    "question": "Which type of solid is characterized by its electrical conductivity increasing with increasing temperature?",
+    "options": [
+      "A"
+    ],
+    "answer": "B",
+    "explanation": "The correct answer is B, as semiconductors are defined by their electrical conductivity increasing with increasing temperature. Metal conductors, on the other hand, have a decreasing conductivity with increasing temperature.",
+    "formula": "",
+    "geometry": "",
+    "diagram": {
+      "central": "",
+      "ligands": {}
+    },
+    "topic": "band theory solids conductors semiconductors",
+    "module": "symmetry_mo"
+  },
+  {
+    "question": "What type of solid conductors are characterized by a full band that is equivalent to a collection of discrete electron densities?",
+    "options": [
+      "A",
+      "Metallic conductor",
+      "B",
+      "Semiconductor",
+      "C",
+      "Insulator"
+    ],
+    "answer": "A",
+    "explanation": "The correct answer is 'A' because the characteristic property of metallic conductors, as described in the provided context, is that their electric conductivity decreases with increasing temperature. This is distinct from semiconductors, which have an electric conductivity that increases with increasing temperature.",
+    "formula": "[NaCl]",
+    "geometry": "rocksalt",
+    "diagram": {
+      "central": "Na",
+      "ligands": {
+        "top": "Cl",
+        "bottom": "Cl",
+        "left": "Cl",
+        "right": "Cl"
+      }
+    },
+    "topic": "band theory solids conductors semiconductors",
+    "module": "symmetry_mo"
+  }
+]

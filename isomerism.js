@@ -1,467 +1,13 @@
-const geometryLayouts = {
-  octahedral: {
-    positions: ["top", "bottom", "left", "right", "front", "back"],
-    coords: {
-      top: [0, 0, 1],
-      bottom: [0, 0, -1],
-      left: [-1, 0, 0],
-      right: [1, 0, 0],
-      front: [0, 1, 0],
-      back: [0, -1, 0],
-    },
-  },
-  "square planar": {
-    positions: ["top", "bottom", "left", "right"],
-    coords: {
-      top: [0, 1, 0],
-      bottom: [0, -1, 0],
-      left: [-1, 0, 0],
-      right: [1, 0, 0],
-    },
-  },
-};
+import {
+  normalizeAnswer,
+  loadSettings,
+  saveSettings,
+  updateUI,
+  createElement
+} from "./js/utils.js";
 
-const geometricQuestions = [
-  {
-    id: "pt-cis",
-    topic: "cis/trans",
-    formula: "[Pt(NH3)2Cl2]",
-    prompt: "Identify the isomer shown.",
-    answer: "cis",
-    geometry: "square planar",
-    diagram: {
-      central: "Pt",
-      ligands: {
-        top: "Cl-",
-        bottom: "NH3",
-        left: "Cl-",
-        right: "NH3",
-      },
-    },
-    compare: {
-      label: "trans",
-      diagram: {
-        central: "Pt",
-        ligands: {
-          top: "NH3",
-          bottom: "NH3",
-          left: "Cl-",
-          right: "Cl-",
-        },
-      },
-    },
-  },
-  {
-    id: "pt-trans",
-    topic: "cis/trans",
-    formula: "[Pt(NH3)2Cl2]",
-    prompt: "Identify the isomer shown.",
-    answer: "trans",
-    geometry: "square planar",
-    diagram: {
-      central: "Pt",
-      ligands: {
-        top: "NH3",
-        bottom: "NH3",
-        left: "Cl-",
-        right: "Cl-",
-      },
-    },
-    compare: {
-      label: "cis",
-      diagram: {
-        central: "Pt",
-        ligands: {
-          top: "Cl-",
-          bottom: "NH3",
-          left: "Cl-",
-          right: "NH3",
-        },
-      },
-    },
-  },
-  {
-    id: "co-cis",
-    topic: "cis/trans",
-    formula: "[Co(NH3)4Cl2]+",
-    prompt: "Identify the isomer shown.",
-    answer: "cis",
-    geometry: "octahedral",
-    diagram: {
-      central: "Co",
-      ligands: {
-        top: "NH3",
-        bottom: "NH3",
-        left: "NH3",
-        right: "Cl-",
-        front: "NH3",
-        back: "Cl-",
-      },
-    },
-    compare: {
-      label: "trans",
-      diagram: {
-        central: "Co",
-        ligands: {
-          top: "NH3",
-          bottom: "NH3",
-          left: "NH3",
-          right: "NH3",
-          front: "Cl-",
-          back: "Cl-",
-        },
-      },
-    },
-  },
-  {
-    id: "co-trans",
-    topic: "cis/trans",
-    formula: "[Co(NH3)4Cl2]+",
-    prompt: "Identify the isomer shown.",
-    answer: "trans",
-    geometry: "octahedral",
-    diagram: {
-      central: "Co",
-      ligands: {
-        top: "NH3",
-        bottom: "NH3",
-        left: "NH3",
-        right: "NH3",
-        front: "Cl-",
-        back: "Cl-",
-      },
-    },
-    compare: {
-      label: "cis",
-      diagram: {
-        central: "Co",
-        ligands: {
-          top: "NH3",
-          bottom: "NH3",
-          left: "NH3",
-          right: "Cl-",
-          front: "NH3",
-          back: "Cl-",
-        },
-      },
-    },
-  },
-  {
-    id: "co-fac",
-    topic: "fac/mer",
-    formula: "[Co(NH3)3Cl3]",
-    prompt: "Identify the isomer shown.",
-    answer: "fac",
-    geometry: "octahedral",
-    diagram: {
-      central: "Co",
-      ligands: {
-        top: "NH3",
-        bottom: "Cl-",
-        left: "NH3",
-        right: "Cl-",
-        front: "NH3",
-        back: "Cl-",
-      },
-    },
-    compare: {
-      label: "mer",
-      diagram: {
-        central: "Co",
-        ligands: {
-          top: "NH3",
-          bottom: "NH3",
-          left: "NH3",
-          right: "Cl-",
-          front: "Cl-",
-          back: "Cl-",
-        },
-      },
-    },
-  },
-  {
-    id: "co-mer",
-    topic: "fac/mer",
-    formula: "[Co(NH3)3Cl3]",
-    prompt: "Identify the isomer shown.",
-    answer: "mer",
-    geometry: "octahedral",
-    diagram: {
-      central: "Co",
-      ligands: {
-        top: "NH3",
-        bottom: "NH3",
-        left: "NH3",
-        right: "Cl-",
-        front: "Cl-",
-        back: "Cl-",
-      },
-    },
-    compare: {
-      label: "fac",
-      diagram: {
-        central: "Co",
-        ligands: {
-          top: "NH3",
-          bottom: "Cl-",
-          left: "NH3",
-          right: "Cl-",
-          front: "NH3",
-          back: "Cl-",
-        },
-      },
-    },
-  },
-  {
-    id: "ma-cis",
-    topic: "cis/trans",
-    formula: "[MA2B2] (square planar)",
-    prompt: "Identify the isomer shown.",
-    answer: "cis",
-    geometry: "square planar",
-    diagram: {
-      central: "M",
-      ligands: {
-        top: "A",
-        bottom: "B",
-        left: "A",
-        right: "B",
-      },
-    },
-    compare: {
-      label: "trans",
-      diagram: {
-        central: "M",
-        ligands: {
-          top: "A",
-          bottom: "A",
-          left: "B",
-          right: "B",
-        },
-      },
-    },
-  },
-  {
-    id: "ma-trans",
-    topic: "cis/trans",
-    formula: "[MA2B2] (square planar)",
-    prompt: "Identify the isomer shown.",
-    answer: "trans",
-    geometry: "square planar",
-    diagram: {
-      central: "M",
-      ligands: {
-        top: "A",
-        bottom: "A",
-        left: "B",
-        right: "B",
-      },
-    },
-    compare: {
-      label: "cis",
-      diagram: {
-        central: "M",
-        ligands: {
-          top: "A",
-          bottom: "B",
-          left: "A",
-          right: "B",
-        },
-      },
-    },
-  },
-  {
-    id: "ma3b3-fac",
-    topic: "fac/mer",
-    formula: "[MA3B3] (octahedral)",
-    prompt: "Identify the isomer shown.",
-    answer: "fac",
-    geometry: "octahedral",
-    diagram: {
-      central: "M",
-      ligands: {
-        top: "A",
-        bottom: "B",
-        left: "A",
-        right: "B",
-        front: "A",
-        back: "B",
-      },
-    },
-    compare: {
-      label: "mer",
-      diagram: {
-        central: "M",
-        ligands: {
-          top: "A",
-          bottom: "A",
-          left: "A",
-          right: "B",
-          front: "B",
-          back: "B",
-        },
-      },
-    },
-  },
-  {
-    id: "ma3b3-mer",
-    topic: "fac/mer",
-    formula: "[MA3B3] (octahedral)",
-    prompt: "Identify the isomer shown.",
-    answer: "mer",
-    geometry: "octahedral",
-    diagram: {
-      central: "M",
-      ligands: {
-        top: "A",
-        bottom: "A",
-        left: "A",
-        right: "B",
-        front: "B",
-        back: "B",
-      },
-    },
-    compare: {
-      label: "fac",
-      diagram: {
-        central: "M",
-        ligands: {
-          top: "A",
-          bottom: "B",
-          left: "A",
-          right: "B",
-          front: "A",
-          back: "B",
-        },
-      },
-    },
-  },
-].map((question) => ({
-  ...question,
-  answer: question.answer.toLowerCase(),
-}));
-
-const opticalQuestions = [
-  {
-    id: "lambda",
-    topic: "Lambda/Delta",
-    formula: "[Co(en)3]3+",
-    prompt: "Identify the enantiomer shown.",
-    answer: "lambda",
-    model: "lambda",
-    compare: "delta",
-  },
-  {
-    id: "delta",
-    topic: "Lambda/Delta",
-    formula: "[Co(en)3]3+",
-    prompt: "Identify the enantiomer shown.",
-    answer: "delta",
-    model: "delta",
-    compare: "lambda",
-  },
-  {
-    id: "lambda-ox",
-    topic: "Lambda/Delta",
-    formula: "[Cr(ox)3]3-",
-    prompt: "Identify the enantiomer shown.",
-    answer: "lambda",
-    model: "lambda",
-    compare: "delta",
-  },
-  {
-    id: "delta-ox",
-    topic: "Lambda/Delta",
-    formula: "[Cr(ox)3]3-",
-    prompt: "Identify the enantiomer shown.",
-    answer: "delta",
-    model: "delta",
-    compare: "lambda",
-  },
-].map((question) => ({
-  ...question,
-  answer: question.answer.toLowerCase(),
-}));
-
-const structuralQuestions = [
-  {
-    id: "ionization",
-    prompt: `Classify the isomer pair:\n[Co(NH3)5Br]SO4 vs [Co(NH3)5SO4]Br`,
-    answer: "ionization",
-    options: ["ionization", "linkage", "coordination", "hydrate/solvate"],
-  },
-  {
-    id: "linkage",
-    prompt: `Classify the isomer pair:\n[Co(NH3)5(NO2)]Cl2 vs [Co(NH3)5(ONO)]Cl2`,
-    answer: "linkage",
-    options: ["ionization", "linkage", "coordination", "hydrate/solvate"],
-  },
-  {
-    id: "coordination",
-    prompt: `Classify the isomer pair:\n[Co(NH3)6][Cr(CN)6] vs [Cr(NH3)6][Co(CN)6]`,
-    answer: "coordination",
-    options: ["ionization", "linkage", "coordination", "hydrate/solvate"],
-  },
-  {
-    id: "hydrate",
-    prompt: `Classify the isomer pair:\n[Cr(H2O)6]Cl3 vs [Cr(H2O)5Cl]Cl2.H2O`,
-    answer: "hydrate/solvate",
-    options: ["ionization", "linkage", "coordination", "hydrate/solvate"],
-  },
-  {
-    id: "linkage-2",
-    prompt: `Classify the isomer pair:\n[Co(NH3)5(NCS)]Cl2 vs [Co(NH3)5(SCN)]Cl2`,
-    answer: "linkage",
-    options: ["ionization", "linkage", "coordination", "hydrate/solvate"],
-  },
-  {
-    id: "hydrate-2",
-    prompt: `Classify the isomer pair:\n[Cr(H2O)4Cl2]Cl.2H2O vs [Cr(H2O)5Cl]Cl2.H2O`,
-    answer: "hydrate/solvate",
-    options: ["ionization", "linkage", "coordination", "hydrate/solvate"],
-  },
-  {
-    id: "ionization-2",
-    prompt: `Classify the isomer pair:\n[Co(NH3)5Cl]Br2 vs [Co(NH3)5Br]Cl2`,
-    answer: "ionization",
-    options: ["ionization", "linkage", "coordination", "hydrate/solvate"],
-  },
-  {
-    id: "coordination-2",
-    prompt: `Classify the isomer pair:\n[Cu(NH3)4][PtCl4] vs [Pt(NH3)4][CuCl4]`,
-    answer: "coordination",
-    options: ["ionization", "linkage", "coordination", "hydrate/solvate"],
-  },
-].map((question) => ({
-  ...question,
-  answer: question.answer.toLowerCase(),
-}));
-
-const modelLibrary = {
-  lambda: {
-    central: "Co",
-    atoms: [
-      { label: "en", element: "N", x: 1.2, y: 0.2, z: 1.1 },
-      { label: "en", element: "N", x: 0.2, y: 1.2, z: 0.9 },
-      { label: "en", element: "N", x: -1.0, y: 0.5, z: 1.0 },
-      { label: "en", element: "N", x: -1.1, y: -0.4, z: -0.9 },
-      { label: "en", element: "N", x: -0.1, y: -1.2, z: -1.0 },
-      { label: "en", element: "N", x: 1.0, y: -0.3, z: -1.1 },
-    ],
-  },
-  delta: {
-    central: "Co",
-    atoms: [
-      { label: "en", element: "N", x: -1.2, y: 0.2, z: 1.1 },
-      { label: "en", element: "N", x: -0.2, y: 1.2, z: 0.9 },
-      { label: "en", element: "N", x: 1.0, y: 0.5, z: 1.0 },
-      { label: "en", element: "N", x: 1.1, y: -0.4, z: -0.9 },
-      { label: "en", element: "N", x: 0.1, y: -1.2, z: -1.0 },
-      { label: "en", element: "N", x: -1.0, y: -0.3, z: -1.1 },
-    ],
-  },
-};
-
+// Global State
+let questionData = {};
 const state = {
   mode: "geometric",
   streak: 0,
@@ -481,469 +27,324 @@ const state = {
 
 const settingsKey = "coordination-isomerism-settings";
 
-const modeButtons = Array.from(document.querySelectorAll(".mode-tabs .chip"));
-const modeBadge = document.getElementById("modeBadge");
-const topicBadge = document.getElementById("topicBadge");
-const promptTitle = document.getElementById("promptTitle");
-const promptNote = document.getElementById("promptNote");
-const answerZone = document.getElementById("answerZone");
-const feedback = document.getElementById("feedback");
-const streak = document.getElementById("streak");
-const accuracy = document.getElementById("accuracy");
-const questionCount = document.getElementById("questionCount");
-const checkBtn = document.getElementById("checkBtn");
-const nextBtn = document.getElementById("nextBtn");
-const adaptiveToggle = document.getElementById("adaptiveToggle");
-const rigorToggle = document.getElementById("rigorToggle");
-const labelToggle = document.getElementById("labelToggle");
-const colorToggle = document.getElementById("colorToggle");
-const compareBtn = document.getElementById("compareBtn");
-const mirrorBtn = document.getElementById("mirrorBtn");
-const viewerNote = document.getElementById("viewerNote");
-const viewerElement = document.getElementById("viewer3d");
-
-let viewer3d = null;
-
-const elementColorMap = {
-  Cl: "#4b6cb7",
-  N: "#1f8a8a",
-  O: "#d06b28",
-  S: "#7a6a5e",
-  C: "#6b5c4b",
-  M: "#0f3d3e",
-};
-
-const chargeColorMap = {
-  metal: "#0f3d3e",
-  neutral: "#d66b2d",
-  anionic: "#2b6cb0",
-};
-
-const saveSettings = () => {
-  const payload = {
-    adaptive: state.adaptive,
-    showLabels: state.showLabels,
-    colorMode: state.colorMode,
-    rigorMode: state.rigorMode,
-    labelsLocked: state.labelsLocked,
-  };
-  localStorage.setItem(settingsKey, JSON.stringify(payload));
-};
-
-const loadSettings = () => {
-  const raw = localStorage.getItem(settingsKey);
-  if (!raw) {
-    return;
-  }
-  try {
-    const data = JSON.parse(raw);
-    if (typeof data.adaptive === "boolean") {
-      state.adaptive = data.adaptive;
-    }
-    if (typeof data.showLabels === "boolean") {
-      state.showLabels = data.showLabels;
-    }
-    if (typeof data.colorMode === "string") {
-      state.colorMode = data.colorMode;
-    }
-    if (typeof data.rigorMode === "boolean") {
-      state.rigorMode = data.rigorMode;
-    }
-    if (typeof data.labelsLocked === "boolean") {
-      state.labelsLocked = data.labelsLocked;
-    }
-  } catch (error) {
-    localStorage.removeItem(settingsKey);
-  }
-};
-
-const updateToggleUI = () => {
-  adaptiveToggle.textContent = state.adaptive ? "On" : "Off";
-  adaptiveToggle.classList.toggle("off", !state.adaptive);
-  rigorToggle.textContent = state.rigorMode ? "On" : "Off";
-  rigorToggle.classList.toggle("off", !state.rigorMode);
-  if (state.labelsLocked) {
-    labelToggle.textContent = "Locked";
-    labelToggle.classList.add("off");
-    labelToggle.disabled = true;
-  } else {
-    labelToggle.textContent = state.showLabels ? "On" : "Off";
-    labelToggle.classList.toggle("off", !state.showLabels);
-    labelToggle.disabled = false;
-  }
-  colorToggle.textContent = `Color: ${state.colorMode}`;
-  if (state.mode === "optical") {
-    mirrorBtn.style.display = "inline-flex";
-  } else {
-    mirrorBtn.style.display = "none";
-  }
-};
-
-const render3DModel = (question) => {
-  if (!viewerElement || !window.$3Dmol) {
-    return;
-  }
-  if (!viewer3d) {
-    viewer3d = window.$3Dmol.createViewer(viewerElement, { backgroundColor: "white" });
-  }
-  viewer3d.clear();
-
-  if (state.mode === "structural") {
-    viewerNote.textContent = "No 3D model for structural isomers.";
-    viewer3d.render();
-    return;
-  }
-
-  if (state.mode === "optical") {
-    const modelKey = state.compareActive ? question.compare : question.model;
-    const modelData = modelLibrary[modelKey];
-    viewerNote.textContent = state.mirrorMode
-      ? "Mirror view enabled. Compare helicity."
-      : "Rotate to observe helicity of chelate rings.";
-    const atoms = [
-      { element: modelData.central, x: 0, y: 0, z: 0, label: modelData.central, role: "metal" },
-      ...modelData.atoms.map((atom) => ({
-        element: atom.element,
-        x: state.mirrorMode ? -atom.x : atom.x,
-        y: atom.y,
-        z: atom.z,
-        label: atom.label,
-        role: "neutral",
-      })),
-    ];
-    const lines = [
-      `${atoms.length}`,
-      `${question.formula} ${modelKey}`,
-      ...atoms.map((atom) => `${atom.element} ${atom.x.toFixed(4)} ${atom.y.toFixed(4)} ${atom.z.toFixed(4)}`),
-    ];
-    viewer3d.addModel(lines.join("\n"), "xyz");
-    viewer3d.setStyle({}, { stick: { radius: 0.12 }, sphere: { scale: 0.5 } });
-    const model = viewer3d.getModel();
-    const selected = model.selectedAtoms({});
-    selected.forEach((atom, index) => {
-      const meta = atoms[index];
-      let color = elementColorMap[meta.element] || elementColorMap.M;
-      if (state.colorMode === "charge") {
-        color = chargeColorMap[meta.role] || chargeColorMap.neutral;
-      }
-      const selector = atom.serial ? { serial: atom.serial } : { index };
-      viewer3d.setStyle(selector, {
-        stick: { radius: 0.12, color },
-        sphere: { scale: meta.role === "metal" ? 0.6 : 0.45, color },
-      });
-      if (state.showLabels && meta.role !== "metal") {
-        viewer3d.addLabel(meta.label, {
-          position: { x: meta.x, y: meta.y, z: meta.z },
-          backgroundColor: "rgba(255,255,255,0.8)",
-          fontColor: "#1c1b1a",
-          fontSize: 11,
-          borderColor: "rgba(28,27,26,0.12)",
-        });
-      }
-    });
-    viewer3d.addLabel(modelData.central, {
-      position: { x: 0, y: 0, z: 0 },
-      backgroundColor: "rgba(15,61,62,0.85)",
-      fontColor: "white",
-      fontSize: 11,
-      borderColor: "transparent",
-    });
-    viewer3d.zoomTo();
-    viewer3d.render();
-    return;
-  }
-
-  const diagram = state.compareActive && question.compare ? question.compare.diagram : question.diagram;
-  const layout = geometryLayouts[question.geometry];
-  if (!layout) {
-    viewerNote.textContent = "3D model not available for this geometry.";
-    viewer3d.render();
-    return;
-  }
-  viewerNote.textContent = "Rotate to inspect ligand positions.";
-  const atoms = [
-    {
-      element: diagram.central.replace(/[^A-Za-z]/g, ""),
-      x: 0,
-      y: 0,
-      z: 0,
-      label: diagram.central,
-      role: "metal",
+// Geometry Layouts (Simplified for Isomerism)
+const geometryLayouts = {
+  octahedral: {
+    positions: ["top", "bottom", "left", "right", "front", "back"],
+    coords: {
+      top: [0, 0, 1], bottom: [0, 0, -1], left: [-1, 0, 0],
+      right: [1, 0, 0], front: [0, 1, 0], back: [0, -1, 0],
     },
-  ];
-  const scale = 2.2;
-  layout.positions.forEach((position) => {
-    const coord = layout.coords[position];
-    if (!coord) {
-      return;
-    }
-    const label = diagram.ligands[position];
-    if (!label) {
-      return;
-    }
-    const [x, y, z] = coord.map((value) => value * scale);
-    let element = "N";
-    if (label.startsWith("Cl")) {
-      element = "Cl";
-    } else if (label.startsWith("NH")) {
-      element = "N";
-    } else if (label.startsWith("O")) {
-      element = "O";
-    }
-    atoms.push({
-      element,
-      x,
-      y,
-      z,
-      label,
-      role: label.includes("-") ? "anionic" : "neutral",
-    });
-  });
-
-  const lines = [
-    `${atoms.length}`,
-    `${question.formula} ${question.answer}`,
-    ...atoms.map((atom) => `${atom.element} ${atom.x.toFixed(4)} ${atom.y.toFixed(4)} ${atom.z.toFixed(4)}`),
-  ];
-  viewer3d.addModel(lines.join("\n"), "xyz");
-  viewer3d.setStyle({}, { stick: { radius: 0.12 }, sphere: { scale: 0.45 } });
-  const model = viewer3d.getModel();
-  const selected = model.selectedAtoms({});
-  selected.forEach((atom, index) => {
-    const meta = atoms[index];
-    let color = elementColorMap[meta.element] || elementColorMap.M;
-    if (state.colorMode === "charge") {
-      color = chargeColorMap[meta.role] || chargeColorMap.neutral;
-    }
-    const selector = atom.serial ? { serial: atom.serial } : { index };
-    viewer3d.setStyle(selector, {
-      stick: { radius: 0.12, color },
-      sphere: { scale: meta.role === "metal" ? 0.55 : 0.45, color },
-    });
-    if (state.showLabels && meta.role !== "metal") {
-      viewer3d.addLabel(meta.label, {
-        position: { x: meta.x, y: meta.y, z: meta.z },
-        backgroundColor: "rgba(255,255,255,0.8)",
-        fontColor: "#1c1b1a",
-        fontSize: 11,
-        borderColor: "rgba(28,27,26,0.12)",
-      });
-    }
-  });
-  viewer3d.addLabel(diagram.central, {
-    position: { x: 0, y: 0, z: 0 },
-    backgroundColor: "rgba(15,61,62,0.85)",
-    fontColor: "white",
-    fontSize: 11,
-    borderColor: "transparent",
-  });
-  viewer3d.zoomTo();
-  viewer3d.render();
+  },
+  "square planar": {
+    positions: ["top", "bottom", "left", "right"],
+    coords: {
+      top: [0, 1, 0], bottom: [0, -1, 0],
+      left: [-1, 0, 0], right: [1, 0, 0],
+    },
+  },
 };
 
-const createOptionButton = (label) => {
-  const button = document.createElement("button");
-  button.type = "button";
-  button.className = "option-button";
-  button.textContent = label;
-  button.addEventListener("click", () => {
-    state.selection = label;
-    const siblings = button.parentElement.querySelectorAll(".option-button");
-    siblings.forEach((sibling) => sibling.classList.remove("active"));
-    button.classList.add("active");
-  });
-  return button;
+// UI Elements
+const ui = {
+  modeButtons: Array.from(document.querySelectorAll(".mode-tabs .chip")),
+  modeBadge: document.getElementById("modeBadge"),
+  topicBadge: document.getElementById("topicBadge"),
+  promptTitle: document.getElementById("promptTitle"),
+  promptNote: document.getElementById("promptNote"),
+  answerZone: document.getElementById("answerZone"),
+  feedback: document.getElementById("feedback"),
+  streak: document.getElementById("streak"),
+  accuracy: document.getElementById("accuracy"),
+  questionCount: document.getElementById("questionCount"),
+  checkBtn: document.getElementById("checkBtn"),
+  nextBtn: document.getElementById("nextBtn"),
+  adaptiveToggle: document.getElementById("adaptiveToggle"),
+  rigorToggle: document.getElementById("rigorToggle"),
+  labelToggle: document.getElementById("labelToggle"),
+  colorToggle: document.getElementById("colorToggle"),
+  compareBtn: document.getElementById("compareBtn"),
+  mirrorBtn: document.getElementById("mirrorBtn"),
+  viewerNote: document.getElementById("viewerNote"),
+  viewerElement: document.getElementById("viewer3d"),
 };
 
-const renderOptions = (question) => {
-  answerZone.innerHTML = "";
-  const block = document.createElement("div");
-  block.className = "answer-block";
-  const heading = document.createElement("h4");
-  heading.textContent = "Select the correct classification";
-  block.appendChild(heading);
-  const grid = document.createElement("div");
-  grid.className = "option-grid";
+let viewer3D = null;
 
-  let options = [];
-  if (state.mode === "geometric") {
-    options = question.topic === "fac/mer" ? ["fac", "mer"] : ["cis", "trans"];
-  } else if (state.mode === "optical") {
-    options = ["lambda", "delta"];
-  } else {
-    options = question.options;
-  }
-
-  options.forEach((option) => grid.appendChild(createOptionButton(option)));
-  block.appendChild(grid);
-  answerZone.appendChild(block);
-};
-
-const updateScore = () => {
-  streak.textContent = state.streak;
-  questionCount.textContent = state.total;
-  const percent = state.total === 0 ? 0 : Math.round((state.correct / state.total) * 100);
-  accuracy.textContent = `${percent}%`;
-};
-
-const checkMastery = () => {
-  if (!state.rigorMode || state.labelsLocked) {
-    return;
-  }
-  const accuracyRate = state.total === 0 ? 0 : state.correct / state.total;
-  if (state.total >= 10 && accuracyRate >= 0.8 && state.streak >= 5) {
-    state.labelsLocked = true;
-    state.showLabels = false;
+// Initialization
+const init = async () => {
+  try {
+    const response = await fetch("./data/isomerism.json");
+    questionData = await response.json();
+    
+    const saved = loadSettings(settingsKey, state);
+    Object.assign(state, saved);
+    
+    initChemDoodle();
+    setupListeners();
     updateToggleUI();
-    saveSettings();
-    render3DModel(state.currentQuestion);
+    updateUI(ui, state);
+    loadQuestion();
+  } catch (error) {
+    console.error("Failed to init isomerism module:", error);
+    ui.promptTitle.textContent = "Error loading content.";
   }
 };
 
-const getPool = () => {
-  if (state.mode === "geometric") {
-    return geometricQuestions;
-  }
-  if (state.mode === "optical") {
-    return opticalQuestions;
-  }
-  return structuralQuestions;
+const initChemDoodle = () => {
+    if (typeof ChemDoodle === "undefined") {
+        ui.viewerNote.textContent = "ChemDoodle library not loaded.";
+        return;
+    }
+    ui.viewerElement.innerHTML = "";
+    const canvas = document.createElement("canvas");
+    canvas.id = "chemDoodle3D";
+    canvas.width = 300;
+    canvas.height = 300;
+    ui.viewerElement.appendChild(canvas);
+    
+    viewer3D = new ChemDoodle.ViewerCanvas3D("chemDoodle3D", 300, 300);
+    viewer3D.styles.backgroundColor = "white";
+    viewer3D.styles.atoms_useJMOLColors = true;
+    viewer3D.styles.bonds_color = "black";
+    viewer3D.styles.atoms_sphereDiameter_3D = 0.6;
 };
 
-const enqueueAdaptive = (question) => {
-  if (!state.adaptive) {
-    return;
-  }
-  const pool = getPool().filter((item) => item.id !== question.id);
-  const pick = pool.find((item) => item.topic === question.topic || item.answer === question.answer);
-  if (pick) {
-    state.adaptiveQueue.push(pick);
-  }
-};
+// Logic
+const getPool = () => questionData[state.mode] || [];
 
 const getNextQuestion = () => {
-  const pool = getPool();
-  if (state.adaptive && state.adaptiveQueue.length > 0) {
-    return state.adaptiveQueue.shift();
-  }
-  return pool[Math.floor(Math.random() * pool.length)];
+    const pool = getPool();
+    if (state.adaptive && state.adaptiveQueue.length) return state.adaptiveQueue.shift();
+    
+    // Simple random
+    return pool[Math.floor(Math.random() * pool.length)];
 };
 
 const loadQuestion = () => {
-  const question = getNextQuestion();
-  state.currentQuestion = question;
-  state.selection = null;
-  state.compareActive = false;
-  state.mirrorMode = false;
-  modeBadge.textContent = state.mode === "geometric" ? "Geometric" : state.mode === "optical" ? "Optical" : "Structural";
-  topicBadge.textContent = question.topic || question.answer;
-  promptTitle.textContent = question.formula || "Classification";
-  promptNote.innerHTML = question.prompt.replace(/\n/g, "<br>");
-  renderOptions(question);
-  feedback.className = "feedback";
-  feedback.textContent = "";
-  if (state.mode === "structural" || !question.compare) {
-    compareBtn.style.display = "none";
-  } else {
-    compareBtn.style.display = "inline-flex";
-    compareBtn.textContent = state.mode === "optical" ? "Compare enantiomer" : "Compare isomer";
-  }
-  updateToggleUI();
-  render3DModel(question);
+    const q = getNextQuestion();
+    state.currentQuestion = q;
+    state.selection = null;
+    state.compareActive = false;
+    state.mirrorMode = false;
+    
+    ui.modeBadge.textContent = state.mode.charAt(0).toUpperCase() + state.mode.slice(1);
+    ui.topicBadge.textContent = q.topic || q.answer;
+    ui.promptTitle.textContent = q.formula || "Classification";
+    ui.promptNote.innerHTML = (q.prompt || "").replace(/\n/g, "<br>");
+    
+    ui.feedback.textContent = "";
+    ui.feedback.className = "feedback";
+    
+    renderOptions(q);
+    
+    ui.compareBtn.style.display = (state.mode === "structural" || !q.compare) ? "none" : "inline-flex";
+    ui.compareBtn.textContent = state.mode === "optical" ? "Compare enantiomer" : "Compare isomer";
+    
+    updateToggleUI();
+    render3DModel(q);
+};
+
+const renderOptions = (q) => {
+    ui.answerZone.innerHTML = "";
+    const block = createElement("div", "answer-block");
+    block.innerHTML = "<h4>Select classification</h4>";
+    const grid = createElement("div", "option-grid");
+    
+    let options = [];
+    if (state.mode === "geometric") options = q.topic === "fac/mer" ? ["fac", "mer"] : ["cis", "trans"];
+    else if (state.mode === "optical") options = ["lambda", "delta"];
+    else options = q.options;
+    
+    options.forEach(opt => {
+        const btn = createElement("button", "option-button", opt);
+        btn.addEventListener("click", () => {
+            state.selection = opt;
+            const siblings = grid.querySelectorAll(".option-button");
+            siblings.forEach(s => s.classList.remove("active"));
+            btn.classList.add("active");
+        });
+        grid.appendChild(btn);
+    });
+    
+    block.appendChild(grid);
+    ui.answerZone.appendChild(block);
+};
+
+// 3D Rendering
+const render3DModel = (q) => {
+    if (!viewer3D) return;
+    viewer3D.emptyContent();
+    
+    if (state.mode === "structural") {
+        ui.viewerNote.textContent = "No 3D model for structural isomers.";
+        viewer3D.repaint();
+        return;
+    }
+    
+    const mol = new ChemDoodle.structures.Molecule();
+    
+    if (state.mode === "optical") {
+        ui.viewerNote.textContent = state.mirrorMode ? "Mirror view enabled." : "Rotate to observe helicity.";
+        const modelKey = state.compareActive ? q.compare : q.model;
+        const modelData = questionData.models[modelKey];
+        if (!modelData) return;
+        
+        // Central
+        const central = new ChemDoodle.structures.Atom(modelData.central || "Co");
+        central.x = 0; central.y = 0; central.z = 0;
+        mol.atoms.push(central);
+        
+        modelData.atoms.forEach(a => {
+            const atom = new ChemDoodle.structures.Atom(a.element || "N");
+            atom.x = state.mirrorMode ? -a.x : a.x;
+            atom.y = a.y;
+            atom.z = a.z;
+            mol.atoms.push(atom);
+            mol.bonds.push(new ChemDoodle.structures.Bond(central, atom));
+        });
+    } else {
+        // Geometric
+        ui.viewerNote.textContent = "Rotate to inspect positions.";
+        const diagram = state.compareActive && q.compare ? q.compare.diagram : q.diagram;
+        const layout = geometryLayouts[q.geometry];
+        if (!layout) return;
+        
+        // Central
+        const centerSym = (diagram.central || "M").replace(/[^A-Za-z]/g, "");
+        const central = new ChemDoodle.structures.Atom(centerSym);
+        mol.atoms.push(central);
+        
+        const scale = 1.5;
+        layout.positions.forEach(pos => {
+            if (!diagram.ligands[pos] || !layout.coords[pos]) return;
+            const label = diagram.ligands[pos];
+            // Element inference
+            let elem = "C";
+            if(label.includes("Cl")) elem = "Cl";
+            else if(label.includes("N")) elem = "N";
+            
+            const atom = new ChemDoodle.structures.Atom(elem);
+            const c = layout.coords[pos];
+            atom.x = c[0] * scale;
+            atom.y = c[1] * scale;
+            atom.z = c[2] * scale;
+            mol.atoms.push(atom);
+            mol.bonds.push(new ChemDoodle.structures.Bond(central, atom));
+        });
+    }
+    
+    // Labels
+    if (state.showLabels) viewer3D.styles.atoms_displayLabels_3D = true;
+    else viewer3D.styles.atoms_displayLabels_3D = false;
+    
+    viewer3D.loadMolecule(mol);
 };
 
 const checkAnswer = () => {
-  const question = state.currentQuestion;
-  if (!question || !state.selection) {
-    return;
-  }
-  const isCorrect = state.selection.toLowerCase() === question.answer;
-  state.total += 1;
-  if (isCorrect) {
-    state.correct += 1;
-    state.streak += 1;
-  } else {
-    state.streak = 0;
-    enqueueAdaptive(question);
-  }
-  feedback.className = `feedback ${isCorrect ? "success" : "error"}`;
-  feedback.textContent = isCorrect
-    ? "Correct."
-    : `Expected: ${question.answer}.`;
-  updateScore();
-  checkMastery();
+    const q = state.currentQuestion;
+    if (!q || !state.selection) return;
+    
+    const isCorrect = state.selection.toLowerCase() === q.answer.toLowerCase();
+    
+    state.total++;
+    if (isCorrect) { state.correct++; state.streak++; checkMastery(); } 
+    else { state.streak = 0; enqueueAdaptive(q); }
+    
+    ui.feedback.className = `feedback ${isCorrect ? "success" : "error"}`;
+    ui.feedback.textContent = isCorrect ? "Correct." : `Expected: ${q.answer}`;
+    updateUI(ui, state);
 };
 
-modeButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    modeButtons.forEach((btn) => btn.classList.remove("active"));
-    button.classList.add("active");
-    state.mode = button.dataset.mode;
-    state.adaptiveQueue = [];
-    loadQuestion();
-  });
-});
+const checkMastery = () => {
+    if (!state.rigorMode || state.labelsLocked) return;
+    if (state.total >= 10 && (state.correct/state.total) >= 0.8 && state.streak >= 5) {
+        state.labelsLocked = true;
+        state.showLabels = false;
+        updateToggleUI();
+        saveSettings(settingsKey, state);
+        render3DModel(state.currentQuestion);
+    }
+};
 
-checkBtn.addEventListener("click", checkAnswer);
-nextBtn.addEventListener("click", loadQuestion);
+const enqueueAdaptive = (q) => {
+    if (!state.adaptive) return;
+    // Simple push back similar logic
+    const pool = getPool();
+    const similar = pool.find(i => i.id !== q.id && i.topic === q.topic);
+    if(similar) state.adaptiveQueue.push(similar);
+};
 
-adaptiveToggle.addEventListener("click", () => {
-  state.adaptive = !state.adaptive;
-  updateToggleUI();
-  state.adaptiveQueue = [];
-  saveSettings();
-});
+// Listeners
+const setupListeners = () => {
+    ui.modeButtons.forEach(btn => {
+        btn.addEventListener("click", () => {
+            ui.modeButtons.forEach(b => b.classList.remove("active"));
+            btn.classList.add("active");
+            state.mode = btn.dataset.mode;
+            state.adaptiveQueue = [];
+            loadQuestion();
+        });
+    });
+    
+    ui.checkBtn.addEventListener("click", checkAnswer);
+    ui.nextBtn.addEventListener("click", loadQuestion);
+    
+    ui.adaptiveToggle.addEventListener("click", () => {
+        state.adaptive = !state.adaptive;
+        updateToggleUI(); saveSettings(settingsKey, state);
+    });
+    
+    ui.rigorToggle.addEventListener("click", () => {
+        state.rigorMode = !state.rigorMode;
+        if(!state.rigorMode) { state.labelsLocked = false; state.showLabels = true; }
+        else checkMastery();
+        updateToggleUI(); saveSettings(settingsKey, state);
+        render3DModel(state.currentQuestion);
+    });
+    
+    ui.labelToggle.addEventListener("click", () => {
+        if(state.labelsLocked) return;
+        state.showLabels = !state.showLabels;
+        updateToggleUI(); saveSettings(settingsKey, state);
+        render3DModel(state.currentQuestion);
+    });
+    
+    ui.colorToggle.addEventListener("click", () => {
+        state.colorMode = state.colorMode === "donor" ? "charge" : "donor";
+        ui.colorToggle.textContent = `Color: ${state.colorMode}`;
+        saveSettings(settingsKey, state);
+        render3DModel(state.currentQuestion);
+    });
+    
+    ui.compareBtn.addEventListener("click", () => {
+        state.compareActive = !state.compareActive;
+        render3DModel(state.currentQuestion);
+    });
+    
+    ui.mirrorBtn.addEventListener("click", () => {
+        state.mirrorMode = !state.mirrorMode;
+        render3DModel(state.currentQuestion);
+    });
+};
 
-rigorToggle.addEventListener("click", () => {
-  state.rigorMode = !state.rigorMode;
-  if (!state.rigorMode) {
-    state.labelsLocked = false;
-    state.showLabels = true;
-  } else {
-    checkMastery();
-  }
-  updateToggleUI();
-  saveSettings();
-  render3DModel(state.currentQuestion);
-});
+const updateToggleUI = () => {
+    ui.adaptiveToggle.textContent = state.adaptive ? "On" : "Off";
+    ui.adaptiveToggle.classList.toggle("off", !state.adaptive);
+    ui.rigorToggle.textContent = state.rigorMode ? "On" : "Off";
+    ui.rigorToggle.classList.toggle("off", !state.rigorMode);
+    
+    if (state.labelsLocked) {
+        ui.labelToggle.textContent = "Locked";
+        ui.labelToggle.classList.add("off");
+        ui.labelToggle.disabled = true;
+    } else {
+        ui.labelToggle.textContent = state.showLabels ? "On" : "Off";
+        ui.labelToggle.classList.toggle("off", !state.showLabels);
+        ui.labelToggle.disabled = false;
+    }
+    
+    ui.mirrorBtn.style.display = state.mode === "optical" ? "inline-flex" : "none";
+};
 
-labelToggle.addEventListener("click", () => {
-  if (state.labelsLocked) {
-    return;
-  }
-  state.showLabels = !state.showLabels;
-  updateToggleUI();
-  saveSettings();
-  render3DModel(state.currentQuestion);
-});
-
-colorToggle.addEventListener("click", () => {
-  state.colorMode = state.colorMode === "donor" ? "charge" : "donor";
-  updateToggleUI();
-  saveSettings();
-  render3DModel(state.currentQuestion);
-});
-
-compareBtn.addEventListener("click", () => {
-  if (state.mode === "structural") {
-    return;
-  }
-  state.compareActive = !state.compareActive;
-  render3DModel(state.currentQuestion);
-});
-
-mirrorBtn.addEventListener("click", () => {
-  if (state.mode !== "optical") {
-    return;
-  }
-  state.mirrorMode = !state.mirrorMode;
-  render3DModel(state.currentQuestion);
-});
-
-loadSettings();
-if (state.labelsLocked) {
-  state.showLabels = false;
-}
-updateToggleUI();
-updateScore();
-loadQuestion();
+init();

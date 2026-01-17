@@ -1,0 +1,1358 @@
+[
+  {
+    "name": "H2O",
+    "pointGroup": "C2v",
+    "elements": [
+      "E (identity)",
+      "C2 axis along z",
+      "sigma_v(xz) plane",
+      "sigma_v(yz) plane"
+    ],
+    "atoms": [
+      {
+        "element": "O",
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "element": "H",
+        "x": 0.757,
+        "y": 0.586,
+        "z": 0
+      },
+      {
+        "element": "H",
+        "x": -0.757,
+        "y": 0.586,
+        "z": 0
+      }
+    ]
+  },
+  {
+    "name": "NH3",
+    "pointGroup": "C3v",
+    "elements": [
+      "E",
+      "C3",
+      "C23",
+      "\u03c3v'",
+      "\u03c3v'', \u03c3v'``, \u03c3v``"
+    ],
+    "atoms": [
+      {
+        "element": "N",
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "element": "H",
+        "x": 1.097,
+        "y": -0.447,
+        "z": 0.447
+      },
+      {
+        "element": "H",
+        "x": -1.097,
+        "y": -0.447,
+        "z": 0.447
+      }
+    ]
+  },
+  {
+    "name": "CH4",
+    "pointGroup": "Td",
+    "elements": [
+      "C2 axis along z",
+      "sigma_v(xz) plane",
+      "sigma_v(yz) plane",
+      "inversion center"
+    ],
+    "atoms": [
+      {
+        "element": "H",
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "element": "H",
+        "x": -0.433,
+        "y": -0.433,
+        "z": -0.433
+      },
+      {
+        "element": "H",
+        "x": 0,
+        "y": 0,
+        "z": -0.433
+      },
+      {
+        "element": "H",
+        "x": 0.433,
+        "y": 0.433,
+        "z": 0.433
+      },
+      {
+        "element": "H",
+        "x": 0.433,
+        "y": 0.433,
+        "z": 0.433
+      }
+    ]
+  },
+  {
+    "name": "SF6",
+    "pointGroup": "Oh",
+    "elements": [
+      "4-fold axis along z",
+      "\u03c3v(xz) plane",
+      "\u03c3v(yz) plane",
+      "\u03c3h(xy) plane"
+    ],
+    "atoms": [
+      {
+        "element": "S",
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "element": "F",
+        "x": -0.757,
+        "y": 0.586,
+        "z": 0.866
+      },
+      {
+        "element": "F",
+        "x": -0.757,
+        "y": -0.586,
+        "z": 0.866
+      },
+      {
+        "element": "F",
+        "x": 0.757,
+        "y": -0.586,
+        "z": 0.866
+      },
+      {
+        "element": "F",
+        "x": 0.757,
+        "y": 0.586,
+        "z": -0.866
+      }
+    ]
+  },
+  {
+    "name": "C6H6",
+    "pointGroup": "D6h",
+    "elements": [
+      "C6 axis along z",
+      "\u03c3(hk) planes (3)",
+      "\u03c3(vk) plane (1)",
+      "2C4 axes along x, y, z",
+      "i plane (1)",
+      "\u03c3d(xy), \u03c3d(xz), \u03c3d(yz) planes (3)",
+      "h and d axes"
+    ],
+    "atoms": [
+      {
+        "element": "C",
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "element": "H",
+        "x": 0.577,
+        "y": -0.577,
+        "z": 0
+      },
+      {
+        "element": "C",
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "element": "H",
+        "x": 0.577,
+        "y": 0.577,
+        "z": 0
+      },
+      {
+        "element": "C",
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "element": "H",
+        "x": -0.577,
+        "y": 0.577,
+        "z": 0
+      },
+      {
+        "element": "C",
+        "x": 1.5,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "element": "H",
+        "x": -0.577,
+        "y": -0.577,
+        "z": 0
+      }
+    ]
+  },
+  {
+    "name": "BF3",
+    "pointGroup": "D3h",
+    "elements": [
+      "C3 axis along z",
+      "sigma_v(xz) plane",
+      "sigma_v(yz) plane",
+      "i and sigma_d planes"
+    ],
+    "atoms": [
+      {
+        "element": "B",
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "element": "F",
+        "x": 0.866,
+        "y": -0.5,
+        "z": 0.866
+      },
+      {
+        "element": "F",
+        "x": 0.866,
+        "y": 0.5,
+        "z": -0.866
+      }
+    ]
+  },
+  {
+    "name": "PCl5",
+    "pointGroup": "D3h",
+    "elements": [
+      "C2 axis along z",
+      "sigma_v(xz) plane",
+      "sigma_v(yz) plane",
+      "E",
+      "3C2 axis along x and y",
+      "i",
+      "3C2 axis along z",
+      "2S3 axis along x",
+      "2 v"
+    ],
+    "atoms": [
+      {
+        "element": "P",
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "element": "Cl",
+        "x": -1.155,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "element": "Cl",
+        "x": -1.215,
+        "y": 0.587,
+        "z": 0.414
+      },
+      {
+        "element": "Cl",
+        "x": -1.215,
+        "y": -0.587,
+        "z": 0.414
+      },
+      {
+        "element": "Cl",
+        "x": -1.155,
+        "y": -0.587,
+        "z": -0.414
+      }
+    ]
+  },
+  {
+    "name": "CO2",
+    "pointGroup": "D\u221eh",
+    "elements": [
+      "C2 axis along z",
+      "\u03c3v(xz) plane",
+      "\u03c3v(yz) plane",
+      "\u221eC2'",
+      "2C \u2218",
+      "i",
+      "\u221ev",
+      "2S \u2218"
+    ],
+    "atoms": [
+      {
+        "element": "O",
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "element": "C",
+        "x": 1.059,
+        "y": -0.438,
+        "z": 0
+      }
+    ]
+  },
+  {
+    "name": "HCN",
+    "pointGroup": "C2v",
+    "elements": [
+      "C2 axis along z",
+      "sigma_v(xz) plane",
+      "sigma_v(yz) plane"
+    ],
+    "atoms": [
+      {
+        "element": "H",
+        "x": -0.386,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "element": "C",
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "element": "N",
+        "x": 0.386,
+        "y": 0,
+        "z": 0
+      }
+    ]
+  },
+  {
+    "name": "C2H4",
+    "pointGroup": "D\u221eh",
+    "elements": [
+      "\u221eC2 axis along z",
+      "\u03c3v(xz) plane",
+      "\u03c3v(yz) plane",
+      "i"
+    ],
+    "atoms": [
+      {
+        "element": "C",
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "element": "H",
+        "x": 1.097,
+        "y": 0,
+        "z": -0.707
+      },
+      {
+        "element": "H",
+        "x": -1.097,
+        "y": 0,
+        "z": -0.707
+      }
+    ]
+  },
+  {
+    "name": "[Co(NH3)6]3+",
+    "pointGroup": "D3h",
+    "elements": [
+      "C3 axis along z",
+      "sigma_v(x) plane",
+      "sigma_v(y) plane",
+      "sigma_d(z) plane"
+    ],
+    "atoms": [
+      {
+        "element": "Co",
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "element": "N",
+        "x": -0.757,
+        "y": 0.586,
+        "z": 0
+      },
+      {
+        "element": "H",
+        "x": -0.757,
+        "y": -0.586,
+        "z": 0
+      },
+      {
+        "element": "H",
+        "x": 0,
+        "y": 0.586,
+        "z": 0
+      },
+      {
+        "element": "H",
+        "x": 0,
+        "y": -0.586,
+        "z": 0
+      },
+      {
+        "element": "H",
+        "x": 0.757,
+        "y": -0.586,
+        "z": 0
+      }
+    ]
+  },
+  {
+    "name": "[PtCl4]2-",
+    "pointGroup": "D4h",
+    "elements": [
+      "C4 axis along z",
+      "\u03c3d(xz) plane",
+      "\u03c3d(yz) plane",
+      "\u03c3v(x+y) plane",
+      "\u03c3v(x-y) plane",
+      "C2 axes along x and y"
+    ],
+    "atoms": [
+      {
+        "element": "Cl",
+        "x": -0.866,
+        "y": 0.5,
+        "z": 0
+      },
+      {
+        "element": "Cl",
+        "x": 0.866,
+        "y": 0.5,
+        "z": 0
+      },
+      {
+        "element": "Cl",
+        "x": 0,
+        "y": 1.732,
+        "z": 0
+      },
+      {
+        "element": "Cl",
+        "x": 0,
+        "y": -1.732,
+        "z": 0
+      }
+    ]
+  },
+  {
+    "name": "[Ni(CN)4]2-",
+    "pointGroup": "C4v",
+    "elements": [
+      "C4 axis along z",
+      "sigma_v(xz) plane",
+      "sigma_v(yx) plane",
+      "i"
+    ],
+    "atoms": [
+      {
+        "element": "Ni",
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "element": "CN",
+        "x": -1.618,
+        "y": -0.309,
+        "z": 0.809
+      },
+      {
+        "element": "CN",
+        "x": 1.618,
+        "y": 0.309,
+        "z": 0.809
+      },
+      {
+        "element": "CN",
+        "x": 0,
+        "y": 1.618,
+        "z": -0.309
+      },
+      {
+        "element": "CN",
+        "x": 0,
+        "y": -1.618,
+        "z": -0.309
+      }
+    ]
+  },
+  {
+    "name": "[Fe(H2O)6]2+",
+    "pointGroup": "C2v",
+    "elements": [
+      "C2 axis along z",
+      "sigma_v(xz) plane",
+      "sigma_v(yz) plane"
+    ],
+    "atoms": [
+      {
+        "element": "Fe",
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "element": "O",
+        "x": 0.757,
+        "y": 0.586,
+        "z": 0
+      },
+      {
+        "element": "H",
+        "x": -0.757,
+        "y": 0.586,
+        "z": 0
+      },
+      {
+        "element": "H",
+        "x": 1.514,
+        "y": 0.586,
+        "z": 0
+      },
+      {
+        "element": "H",
+        "x": 1.514,
+        "y": -0.586,
+        "z": 0
+      },
+      {
+        "element": "O",
+        "x": 1.757,
+        "y": -0.586,
+        "z": 0
+      },
+      {
+        "element": "H",
+        "x": 2.214,
+        "y": -0.586,
+        "z": 0
+      },
+      {
+        "element": "H",
+        "x": 2.214,
+        "y": 0.586,
+        "z": 0
+      },
+      {
+        "element": "O",
+        "x": 1.757,
+        "y": 0.586,
+        "z": 0
+      },
+      {
+        "element": "H",
+        "x": -0.757,
+        "y": 0.586,
+        "z": 0
+      },
+      {
+        "element": "H",
+        "x": -1.514,
+        "y": 0.586,
+        "z": 0
+      },
+      {
+        "element": "H",
+        "x": -1.514,
+        "y": -0.586,
+        "z": 0
+      },
+      {
+        "element": "O",
+        "x": 2.214,
+        "y": -0.586,
+        "z": 0
+      },
+      {
+        "element": "O",
+        "x": 2.214,
+        "y": 0.586,
+        "z": 0
+      }
+    ]
+  },
+  {
+    "name": "cis-[Pt(NH3)2Cl2]",
+    "pointGroup": "C2v",
+    "elements": [
+      "C2 axis along z",
+      "sigma_v(xz) plane",
+      "sigma_v(yz) plane"
+    ],
+    "atoms": [
+      {
+        "element": "Pt",
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "element": "NH3",
+        "x": -0.757,
+        "y": 1.154,
+        "z": 0
+      },
+      {
+        "element": "NH3",
+        "x": 0.757,
+        "y": 1.154,
+        "z": 0
+      },
+      {
+        "element": "Cl",
+        "x": 0,
+        "y": -1.654,
+        "z": 0
+      }
+    ]
+  },
+  {
+    "name": "trans-[Pt(NH3)2Cl2]",
+    "pointGroup": "C2v",
+    "elements": [
+      "C2 axis along z",
+      "sigma_v(xz) plane",
+      "sigma_v(yz) plane"
+    ],
+    "atoms": [
+      {
+        "element": "Pt",
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "element": "N",
+        "x": -0.433,
+        "y": 1.732,
+        "z": 0
+      },
+      {
+        "element": "H",
+        "x": -0.433,
+        "y": 1.732,
+        "z": 0
+      },
+      {
+        "element": "Cl",
+        "x": -0.757,
+        "y": 0.586,
+        "z": 0
+      },
+      {
+        "element": "N",
+        "x": -0.433,
+        "y": -1.732,
+        "z": 0
+      },
+      {
+        "element": "H",
+        "x": -0.433,
+        "y": -1.732,
+        "z": 0
+      }
+    ]
+  },
+  {
+    "name": "fac-[Co(NH3)3Cl3]",
+    "pointGroup": "C2v",
+    "elements": [
+      "C2 axis along z",
+      "sigma_v(xz) plane",
+      "sigma_v(yz) plane"
+    ],
+    "atoms": [
+      {
+        "element": "Co",
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "element": "Cl",
+        "x": 1.0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "element": "NH3",
+        "x": 0.75,
+        "y": 0.33,
+        "z": -0.75
+      }
+    ]
+  },
+  {
+    "name": "mer-[Co(NH3)3Cl3]",
+    "pointGroup": "C2v",
+    "elements": [
+      "C2 axis along z",
+      "sigma_v(xz) plane",
+      "sigma_v(yz) plane"
+    ],
+    "atoms": [
+      {
+        "element": "Cl",
+        "x": 0,
+        "y": 0.866,
+        "z": 0
+      },
+      {
+        "element": "Co",
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "element": "NH3",
+        "x": -0.757,
+        "y": 0.586,
+        "z": 0.433
+      },
+      {
+        "element": "Cl",
+        "x": 1.514,
+        "y": 0.866,
+        "z": 0
+      },
+      {
+        "element": "Co",
+        "x": 0,
+        "y": 0,
+        "z": 0.5
+      },
+      {
+        "element": "NH3",
+        "x": -0.757,
+        "y": -0.586,
+        "z": 0.433
+      }
+    ]
+  },
+  {
+    "name": "[Co(en)3]3+",
+    "pointGroup": "D2h",
+    "elements": [
+      "C2 axis along z",
+      "sigma_v(xz) plane",
+      "sigma_v(yz) plane"
+    ],
+    "atoms": [
+      {
+        "element": "Co",
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "element": "N",
+        "x": -0.5,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "element": "N",
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "element": "O",
+        "x": 1,
+        "y": -0.5,
+        "z": 0
+      },
+      {
+        "element": "O",
+        "x": 1,
+        "y": 0.5,
+        "z": 0
+      },
+      {
+        "element": "N",
+        "x": 1.5,
+        "y": 0,
+        "z": 0
+      }
+    ]
+  },
+  {
+    "name": "[Ru(bipy)3]2+",
+    "pointGroup": "C2v",
+    "elements": [
+      "C2 axis along z",
+      "sigma_v(xz) plane",
+      "sigma_v(yz) plane"
+    ],
+    "atoms": [
+      {
+        "element": "O",
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "element": "H",
+        "x": 0.757,
+        "y": 0.586,
+        "z": 0
+      },
+      {
+        "element": "H",
+        "x": -0.757,
+        "y": 0.586,
+        "z": 0
+      }
+    ]
+  },
+  {
+    "name": "cis-[Co(en)2Cl2]+",
+    "pointGroup": "C2v",
+    "elements": [
+      "C2 axis along z",
+      "sigma_v(xz) plane",
+      "sigma_v(yz) plane"
+    ],
+    "atoms": [
+      {
+        "element": "O",
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "element": "Co",
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "element": "N",
+        "x": -0.757,
+        "y": 0.586,
+        "z": 0
+      },
+      {
+        "element": "C",
+        "x": 0,
+        "y": -0.757,
+        "z": 0
+      },
+      {
+        "element": "Cl",
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      {
+        "element": "N",
+        "x": 0.757,
+        "y": -0.586,
+        "z": 0
+      },
+      {
+        "element": "C",
+        "x": 0,
+        "y": 0.757,
+        "z": 0
+      },
+      {
+        "element": "Cl",
+        "x": 0,
+        "y": 0,
+        "z": -1
+      }
+    ]
+  },
+  {
+    "name": "[Ni(CO)4]",
+    "pointGroup": "Td",
+    "elements": [
+      "C3 axis along x",
+      "C3 axis along y",
+      "C3 axis along z",
+      "sigma_v(xz) plane",
+      "sigma_v(yx) plane",
+      "sigma_v(xy) plane"
+    ],
+    "atoms": [
+      {
+        "element": "Ni",
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "element": "O",
+        "x": 0.866,
+        "y": 0.5,
+        "z": 0
+      },
+      {
+        "element": "O",
+        "x": 1.732,
+        "y": 0.5,
+        "z": 0
+      },
+      {
+        "element": "O",
+        "x": 0,
+        "y": -0.5,
+        "z": 0
+      },
+      {
+        "element": "O",
+        "x": -0.866,
+        "y": -0.5,
+        "z": 0
+      },
+      {
+        "element": "O",
+        "x": -1.732,
+        "y": -0.5,
+        "z": 0
+      }
+    ]
+  },
+  {
+    "name": "[MnO4]-",
+    "pointGroup": "C2v",
+    "elements": [
+      "C2 axis along z",
+      "sigma_v(xz) plane",
+      "sigma_v(yz) plane"
+    ],
+    "atoms": [
+      {
+        "element": "O",
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "multiplicity": 4
+      },
+      {
+        "element": "Mn",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.5,
+        "multiplicity": 1
+      }
+    ]
+  },
+  {
+    "name": "[CoCl4]2-",
+    "pointGroup": "C2v",
+    "elements": [
+      "C2 axis along z",
+      "sigma_v(xz) plane",
+      "sigma_v(yz) plane"
+    ],
+    "atoms": [
+      {
+        "element": "Co",
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "element": "Cl",
+        "x": -1,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "element": "Cl",
+        "x": -2,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "element": "Cl",
+        "x": -3,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "element": "Cl",
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "element": "Cl",
+        "x": 2,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "element": "Cl",
+        "x": 3,
+        "y": 0,
+        "z": 0
+      }
+    ]
+  },
+  {
+    "name": "[B12H12]2-",
+    "pointGroup": "D\u221eh",
+    "elements": [
+      "\u221eC2 axis along z",
+      "\u03c3v(xz) plane",
+      "\u03c3v(yz) plane"
+    ],
+    "atoms": [
+      {
+        "element": "B",
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "element": "H",
+        "x": -1.027,
+        "y": -2.044,
+        "z": 0
+      },
+      {
+        "element": "H",
+        "x": 0.027,
+        "y": -2.044,
+        "z": 0
+      },
+      {
+        "element": "H",
+        "x": 1.027,
+        "y": -2.044,
+        "z": 0
+      },
+      {
+        "element": "H",
+        "x": 1.027,
+        "y": 0.586,
+        "z": 0.757
+      },
+      {
+        "element": "H",
+        "x": 0.027,
+        "y": 0.586,
+        "z": 0.757
+      },
+      {
+        "element": "H",
+        "x": -1.027,
+        "y": 0.586,
+        "z": 0.757
+      }
+    ]
+  },
+  {
+    "name": "C60",
+    "pointGroup": "D6h",
+    "elements": [
+      "C2 axis along z",
+      "sigma_v(xz) plane",
+      "sigma_v(yz) plane",
+      "C\u221ev axis along x",
+      "sigma_v(xy) plane"
+    ],
+    "atoms": [
+      {
+        "element": "C",
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "element": "C",
+        "x": -1.2,
+        "y": -1.1,
+        "z": 0
+      },
+      {
+        "element": "C",
+        "x": -1.2,
+        "y": 1.1,
+        "z": 0
+      },
+      {
+        "element": "C",
+        "x": 1.2,
+        "y": 1.1,
+        "z": 0
+      },
+      {
+        "element": "C",
+        "x": 1.2,
+        "y": -1.1,
+        "z": 0
+      },
+      {
+        "element": "C",
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "element": "C",
+        "x": 1.44,
+        "y": -1.32,
+        "z": 0.7
+      },
+      {
+        "element": "C",
+        "x": 1.44,
+        "y": 1.32,
+        "z": 0.7
+      },
+      {
+        "element": "C",
+        "x": -1.44,
+        "y": -1.32,
+        "z": 0.7
+      },
+      {
+        "element": "C",
+        "x": -1.44,
+        "y": 1.32,
+        "z": 0.7
+      },
+      {
+        "element": "C",
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "element": "C",
+        "x": 1.8,
+        "y": 0.75,
+        "z": -0.5
+      },
+      {
+        "element": "C",
+        "x": 1.8,
+        "y": -0.75,
+        "z": -0.5
+      },
+      {
+        "element": "C",
+        "x": -1.8,
+        "y": 0.75,
+        "z": -0.5
+      },
+      {
+        "element": "C",
+        "x": -1.8,
+        "y": -0.75,
+        "z": -0.5
+      },
+      {
+        "element": "C",
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "element": "C",
+        "x": 2.04,
+        "y": -0.84,
+        "z": 0.35
+      },
+      {
+        "element": "C",
+        "x": 2.04,
+        "y": 0.84,
+        "z": 0.35
+      },
+      {
+        "element": "C",
+        "x": -2.04,
+        "y": -0.84,
+        "z": 0.35
+      },
+      {
+        "element": "C",
+        "x": -2.04,
+        "y": 0.84,
+        "z": 0.35
+      },
+      {
+        "element": "C",
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    ]
+  },
+  {
+    "name": "ferrocene",
+    "pointGroup": "C2v",
+    "elements": [
+      "C2 axis along z",
+      "sigma_v(xz) plane",
+      "sigma_v(yz) plane"
+    ],
+    "atoms": [
+      {
+        "element": "Fe",
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "element": "C",
+        "x": -0.377,
+        "y": 0.866,
+        "z": 0.577
+      },
+      {
+        "element": "C",
+        "x": -0.377,
+        "y": -0.866,
+        "z": 0.577
+      },
+      {
+        "element": "H",
+        "x": -1.074,
+        "y": 0.0,
+        "z": 0
+      },
+      {
+        "element": "C",
+        "x": 0.377,
+        "y": -0.866,
+        "z": 0.577
+      },
+      {
+        "element": "H",
+        "x": 1.074,
+        "y": 0.0,
+        "z": 0
+      }
+    ]
+  },
+  {
+    "name": "[Re2Cl8]2-",
+    "pointGroup": "C2v",
+    "elements": [
+      "C2 axis along z",
+      "sigma_v(xz) plane",
+      "sigma_v(yz) plane"
+    ],
+    "atoms": [
+      {
+        "element": "Re",
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "element": "Cl",
+        "x": -1.0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "element": "Cl",
+        "x": -1.0,
+        "y": 0,
+        "z": 2.0
+      },
+      {
+        "element": "Cl",
+        "x": -1.0,
+        "y": 2.0,
+        "z": 0
+      },
+      {
+        "element": "Cl",
+        "x": -1.0,
+        "y": 2.0,
+        "z": 2.0
+      },
+      {
+        "element": "Cl",
+        "x": 0,
+        "y": 1.0,
+        "z": 0
+      },
+      {
+        "element": "Cl",
+        "x": 0,
+        "y": 1.0,
+        "z": 2.0
+      },
+      {
+        "element": "Cl",
+        "x": 0,
+        "y": -1.0,
+        "z": 0
+      },
+      {
+        "element": "Cl",
+        "x": 0,
+        "y": -1.0,
+        "z": 2.0
+      }
+    ]
+  },
+  {
+    "name": "IF7",
+    "pointGroup": "C2v",
+    "elements": [
+      "E (identity)",
+      "C2 axis along z",
+      "sigma_v(xz) plane",
+      "sigma_v(yz) plane"
+    ],
+    "atoms": [
+      {
+        "element": "I",
+        "x": 0,
+        "y": 0.586,
+        "z": 0
+      },
+      {
+        "element": "F",
+        "x": -0.757,
+        "y": 0.586,
+        "z": 0.757
+      },
+      {
+        "element": "F",
+        "x": 0.757,
+        "y": 0.586,
+        "z": 0.757
+      },
+      {
+        "element": "F",
+        "x": -0.757,
+        "y": 0.586,
+        "z": -0.757
+      }
+    ]
+  }
+]

@@ -1,0 +1,354 @@
+[
+  {
+    "question": "What is the effect of the histidine group in myoglobin on the binding of oxygen to the iron atom?",
+    "options": [
+      "It reduces the ability of the iron atom to bind oxygen due to steric effects.",
+      "It increases the ability of the iron atom to move into the plane of the heme, lowering its affinity for oxygen.",
+      "It has no effect on the binding of oxygen to the iron atom.",
+      "It reverses the direction of electron transfer during the binding of oxygen."
+    ],
+    "answer": "C",
+    "explanation": "The histidine group in myoglobin does not reduce the ability of the iron atom to bind oxygen. Instead, its presence creates a more open structure that allows the iron atom to move more freely and bind with incoming oxygen.",
+    "formula": "[Fe(His)2]O2",
+    "geometry": "square planar",
+    "diagram": {
+      "central": "Fe",
+      "ligands": {
+        "top": "His",
+        "bottom": "His",
+        "front": "O",
+        "back": "O"
+      }
+    },
+    "topic": "bioinorganic oxygen carriers hemoglobin myoglobin",
+    "module": "bioinorganic"
+  },
+  {
+    "question": "Which of the following structural features of hemoglobin allows it to more easily bind oxygen compared to myoglobin?",
+    "options": [
+      "A rigid and compact structure that prevents iron movement",
+      "B a square planar array with four nitrogen atoms coordinated to an Fe2+ cation",
+      "C a tetrahedral geometry with three nitrogen atoms coordinated to an Fe3+ cation",
+      "D a linear arrangement of ligands around the iron atom"
+    ],
+    "answer": "A",
+    "explanation": "The structure of myoglobin allows for more free movement of the iron atom, which enables it to bind oxygen more easily. In contrast, hemoglobin has a more open structure that restricts the movement of the iron atom due to steric effects, thereby lowering its ability to bind oxygen.",
+    "formula": "[Fe(L)4]X",
+    "geometry": "square planar",
+    "diagram": {
+      "central": "Fe",
+      "ligands": {
+        "top": "L",
+        "bottom": "L",
+        "left": "L",
+        "right": "L"
+      }
+    },
+    "topic": "bioinorganic oxygen carriers hemoglobin myoglobin",
+    "module": "bioinorganic"
+  },
+  {
+    "question": "Which structural feature of myoglobin enables it to bind oxygen more easily than deoxygenated hemoglobin?",
+    "options": [
+      "A rigid structure that limits the movement of iron ions",
+      "B a more open structure that allows for greater freedom of motion"
+    ],
+    "answer": "B",
+    "explanation": "Myoglobin has a more open structure compared to deoxygenated hemoglobin, allowing the iron atom to move more freely and bind oxygen more easily. This increased mobility enables efficient oxygen binding and transfer in muscle tissue.",
+    "formula": "[Fe(CO)4]X",
+    "geometry": "octahedral",
+    "diagram": {
+      "central": "Fe",
+      "ligands": {
+        "top": "CO",
+        "bottom": "CO",
+        "left": "CO",
+        "right": "CO",
+        "front": "CO",
+        "back": "CO"
+      }
+    },
+    "topic": "bioinorganic oxygen carriers hemoglobin myoglobin",
+    "module": "bioinorganic"
+  },
+  {
+    "question": "In the mechanism of carbonic anhydrase, which step involves a proton transfer from the enzyme to HCO3-?",
+    "options": [
+      "A) Hydrogenation of CO2",
+      "B) Protonation of Zn-His64 complex",
+      "C) Dehydration of Zn-HCO3 complex",
+      "D) Formation of water and bicarbonate"
+    ],
+    "answer": "B",
+    "explanation": "The mechanism of carbonic anhydrase involves the transfer of a proton from the zinc ion (Zn2+) in His64 to HCO3- (bicarbonate), resulting in the formation of CO2 and water.",
+    "formula": "[Zn(His)4]2+",
+    "geometry": "octahedral",
+    "diagram": {
+      "central": "Zn",
+      "ligands": {
+        "top": "His64",
+        "bottom": "HIs64",
+        "left": "HIs64",
+        "right": "His64",
+        "front": "O2",
+        "back": "O2"
+      }
+    },
+    "topic": "bioinorganic carbonic anhydrase mechanism",
+    "module": "bioinorganic"
+  },
+  {
+    "question": "In the mechanism of carbonic anhydrase, what is the role of the zinc ion (Zn) and which ligand is it directly bound to?",
+    "options": [
+      "A) Zinc is directly bound to the hydroxide (OH-) ligand.",
+      "B) Zinc is directly bound to the water (H2O) ligand.",
+      "C) Zinc is directly bound to the amine (NH+) ligand.",
+      "D) Zinc is not directly involved in the catalytic mechanism."
+    ],
+    "answer": "A",
+    "explanation": "The zinc ion plays a crucial role in stabilizing the negative charge of the carbonate (CO3-) intermediate during the catalytic cycle. It is directly bound to the hydroxide (OH-) ligand, which facilitates the transfer of protons and the coordination of CO2.",
+    "formula": "[Zn(OH)4]",
+    "geometry": "octahedral",
+    "diagram": {
+      "central": "Zn",
+      "ligands": {
+        "top": "OH",
+        "bottom": "OH",
+        "left": "OH",
+        "right": "OH",
+        "front": "OH"
+      }
+    },
+    "topic": "bioinorganic carbonic anhydrase mechanism",
+    "module": "bioinorganic"
+  },
+  {
+    "question": "Which of the following is NOT a product of the proton transfer step in the mechanism of carbonic anhydrase?",
+    "options": [
+      "H2O",
+      "CO2",
+      "NH3",
+      "HO-"
+    ],
+    "answer": "D",
+    "explanation": "In the mechanism of carbonic anhydrase, the proton transfer step involves the conversion of H+ to CO2 and water (H2O). NH3 (ammonia) is not a product of this reaction.",
+    "formula": "[M(L)n]X",
+    "geometry": "octahedral",
+    "diagram": {
+      "central": "His64",
+      "ligands": {
+        "top": "Zn",
+        "bottom": "H"
+      }
+    },
+    "topic": "bioinorganic carbonic anhydrase mechanism",
+    "module": "bioinorganic"
+  },
+  {
+    "question": "Why is Ca2+ more suitable than Mg2+ for fast signalling processes in cells?",
+    "options": [
+      "Because the ligand-exchange rates of s-block metal ions increase down each group.",
+      "Because the ion size of Ca2+ allows it to bind to a larger coordination sphere, increasing its binding constants and facilitating fast signalling.",
+      "Because Mg2+ has a smaller ionic radius and a lower charge density, resulting in slower ligand-exchange rates.",
+      "Because the oxidation state of Ca2+ is more favorable for enzyme recognition."
+    ],
+    "answer": "B",
+    "explanation": "Ca2+ is more suitable than Mg2+ for fast signalling processes in cells because its large, flexible coordination geometry allows it to bind to a larger number of ligands, resulting in faster ligand-exchange rates. This property enables Ca2+ to quickly respond to changes in the cellular environment and facilitate rapid muscle contractions.",
+    "topic": "calcium in biological systems calmodulin",
+    "module": "bioinorganic"
+  },
+  {
+    "question": "Why is Ca2+ more suitable than Mg2+ for fast signalling processes in cells?",
+    "options": [
+      "A) Because the ligand-exchange rates of s-block metal ions decrease down each group.",
+      "B) Because the exchange of coordinated H2O molecules is 103\u2013104 times faster for Ca2+ than for Mg2+.",
+      "C) Because the size of the coordination sphere makes it more difficult for Ca2+ to interact with target proteins.",
+      "D) Because the charge density of Mg2+ is higher than that of Ca2+, making it a better ligand."
+    ],
+    "answer": "B",
+    "explanation": "The correct answer is B) Because the exchange of coordinated H2O molecules is 103\u2013104 times faster for Ca2+ than for Mg2+. This rapid ligand-exchange rate makes Ca2+ more suitable for fast signalling processes in cells.",
+    "topic": "calcium in biological systems calmodulin",
+    "module": "bioinorganic"
+  },
+  {
+    "question": "What is the primary reason calcium ions are more suitable than magnesium ions for fast signaling processes in cells?",
+    "options": [
+      "A"
+    ],
+    "topic": "calcium in biological systems calmodulin",
+    "module": "bioinorganic"
+  },
+  {
+    "question": "Which type of chelate is most effective at binding multiple sites to a single metal ion, making it particularly useful for treating heavy metal poisoning?",
+    "options": [
+      "Soft Acid-Soft Base (SASB)",
+      "Hard Acid-Soft Base (HASB)",
+      "Chelate Effect",
+      "Transition Metal Complex"
+    ],
+    "answer": "C",
+    "explanation": "The Chelate Effect refers to the increased stability of a complex when multiple ligands bind to the same metal ion. This effect is particularly useful for treating heavy metal poisoning, as it allows for more efficient binding and removal of the toxic metal ions from the body.",
+    "formula": "[M(L)n]X",
+    "geometry": "octahedral",
+    "diagram": {
+      "central": "M",
+      "ligands": {
+        "top": "L",
+        "bottom": "L"
+      }
+    },
+    "topic": "metal toxicity chelation therapy",
+    "module": "bioinorganic"
+  },
+  {
+    "question": "What is the primary mechanism by which a chelating agent such as EDDHA (Ethylene diamine tetraacetic acid) binds to lead ions in biological systems?",
+    "options": [
+      "EDDHA forms a one-to-one complex with lead, forming [Pb(EDDA)2].",
+      "EDDHA forms a two-to-one complex with lead, forming [Pb(EDDA)3].",
+      "EDDHA binds to lead ions through hydrogen bonding, forming a weak complex.",
+      "EDDHA chelates lead ions by forming a three-dimensional network of ligands around the metal center."
+    ],
+    "answer": "C",
+    "explanation": "Chelating agents like EDDHA bind to lead ions in biological systems through a multi-pointed interaction, forming a three-dimensional network of ligands around the metal center. This helps to stabilize the complex and prevent it from releasing into the environment.",
+    "topic": "metal toxicity chelation therapy",
+    "module": "bioinorganic"
+  },
+  {
+    "question": "When treating heavy metal poisoning with a chelating agent like EDTA (ethylenediaminetetraacetic acid), what is the primary mechanism of action that allows it to bind to lead ions and neutralize their toxicity?",
+    "options": [
+      "EDTA binds directly to lead ions through coordinate covalent bonds, forming a stable compound that can be easily excreted from the body.",
+      "EDTA forms a stable complex with lead ions by donating its four amine groups to form a chelate ring around the metal center.",
+      "EDTA displaces lead ions from protein binding sites in the body through non-specific interactions, reducing the overall toxicity of lead."
+    ],
+    "answer": "B",
+    "explanation": "The correct answer is B) EDTA forms a stable complex with lead ions by donating its four amine groups to form a chelate ring around the metal center. This mechanism allows EDTA to effectively bind to lead ions and neutralize their toxicity, making it a valuable treatment for heavy metal poisoning.",
+    "topic": "metal toxicity chelation therapy",
+    "module": "bioinorganic"
+  },
+  {
+    "question": "What is the primary mechanism by which cytochrome P450 catalyzes the oxygenation of substrates?",
+    "options": [
+      "Hydrogenation",
+      "Dehydrogenation",
+      "Oxidative cleavage",
+      "Oxygenation"
+    ],
+    "answer": "Oxygenation",
+    "explanation": "Cytochrome P450 catalyzes the oxygenation of substrates by incorporating one atom of oxygen into the substrate, resulting in a hydroxyl group. This process occurs through an intermediate Fe(IV) oxide complex.",
+    "topic": "cytochrome P450 mechanism",
+    "module": "bioinorganic"
+  },
+  {
+    "question": "What is the primary role of cytochrome P450's Fe center in the catalytic cycle?",
+    "options": [
+      "Oxidizing the substrate directly",
+      "Receiving electrons from an external donor",
+      "Forming a high-valent iron-oxo species to facilitate oxidation",
+      "Participating in the electron transfer sequence to reduce O2"
+    ],
+    "answer": "C",
+    "explanation": "The Fe center in cytochrome P450 is involved in the formation of a high-valent iron-oxo species, which plays a crucial role in facilitating the oxidation reaction. This process involves the transfer of electrons from the substrate to O2, and the Fe center acts as a catalyst to drive this reaction forward.",
+    "topic": "cytochrome P450 mechanism",
+    "module": "bioinorganic"
+  },
+  {
+    "question": "What is the result of the electron transfer sequence during the catalytic cycle of cytochrome P450?",
+    "options": [
+      "A free radical and a reduced haem-Fe atom",
+      "B an oxidized haem-Fe atom and a free radical",
+      "C a reduced haem-Fe atom with an adjacent OH group and a free radical",
+      "D an oxidized haem-Fe atom with an adjacent OH group"
+    ],
+    "answer": "A",
+    "explanation": "The electron transfer sequence during the catalytic cycle of cytochrome P450 results in the formation of a free radical and a reduced haem-Fe atom. This process involves the transfer of electrons from a second Fe porphyrin (haem-a) to the dinuclear Fe-Cu site, leading to the reduction of the haem-Fe atom.",
+    "formula": "[Fe(P)(n)]+",
+    "geometry": "octahedral",
+    "diagram": {
+      "central": "Fe",
+      "ligands": {
+        "top": "P",
+        "bottom": "P",
+        "left": "P",
+        "right": "P"
+      }
+    },
+    "topic": "cytochrome P450 mechanism",
+    "module": "bioinorganic"
+  },
+  {
+    "question": "The nitrogenase enzyme catalyzes the reduction of N2 to ammonia in a reaction that is coupled to the hydrolysis of 16 molecules of ATP and the production of H2. What is the total number of electrons required for this reaction?",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": "C",
+    "explanation": "The nitrogenase enzyme catalyzes the reduction of N2 to ammonia in a reaction that requires 8 electrons from hydrogen ions (H+), which is coupled to the hydrolysis of 16 molecules of ATP. Therefore, the total number of electrons required for this reaction is 8 + 8 = 16.",
+    "formula": "[Fe-7S]N2",
+    "geometry": "octahedral",
+    "diagram": {
+      "central": "Fe",
+      "ligands": {
+        "top": "S",
+        "bottom": "S",
+        "left": "S",
+        "right": "S"
+      }
+    },
+    "topic": "nitrogenase enzyme nitrogen fixation",
+    "module": "bioinorganic"
+  },
+  {
+    "question": "The biological nitrogen cycle is primarily carried out by which class of organisms?",
+    "options": [
+      "A",
+      "Bacteria and Archaea",
+      "C",
+      "D"
+    ],
+    "answer": "B",
+    "explanation": "The biological reduction of nitrogen to ammonia is exclusively carried out by prokaryotes, which include both bacteria and archaea.",
+    "formula": "[8Fe-7S] N 2 + 8 H + + 8 e\u2212 + 16 ATP \u2192 2 NH3 + H 2 + 16 ADP + 16 PO4 (OH)2\u2212",
+    "geometry": "octahedral",
+    "diagram": {
+      "central": "[Fe]",
+      "ligands": {
+        "top": "S",
+        "bottom": "S",
+        "left": "S",
+        "right": "S",
+        "front": "N",
+        "back": "N"
+      }
+    },
+    "topic": "nitrogenase enzyme nitrogen fixation",
+    "module": "bioinorganic"
+  },
+  {
+    "question": "What is the reaction catalyzed by nitrogenase enzyme during nitrogen fixation?",
+    "options": [
+      "N2 + 8 H+ + 8 e\u2013 \u2192 2 NH3 + H2",
+      "N2 + 8 OH\u2013 + 8 e\u2013 \u2192 2 NH3 + H2O",
+      "N2 + 8 Cl\u2013 + 8 e\u2013 \u2192 2 NH4+",
+      "N2 + 8 F\u2013 + 8 e\u2013 \u2192 2 HF"
+    ],
+    "answer": "A",
+    "explanation": "The reaction catalyzed by nitrogenase enzyme is the reduction of N2 to ammonia (NH3) in a reaction that is coupled to the hydrolysis of 16 molecules of ATP and the production of H2. This reaction is essential for the biological nitrogen cycle as it provides fixed nitrogen compounds to living organisms.",
+    "formula": "[8Fe-7S]N2",
+    "geometry": "octahedral",
+    "diagram": {
+      "central": "N",
+      "ligands": {
+        "top": "Fe",
+        "bottom": "Fe",
+        "left": "Fe",
+        "right": "Fe",
+        "front": "Fe",
+        "back": "S"
+      }
+    },
+    "topic": "nitrogenase enzyme nitrogen fixation",
+    "module": "bioinorganic"
+  }
+]

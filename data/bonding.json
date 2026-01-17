@@ -1,0 +1,133 @@
+{
+  "builder": [
+    {
+      "id": "d6-octa-weak",
+      "prompt": "[Fe(H2O)6]2+",
+      "badge": "d6 octahedral",
+      "note": "Weak-field ligand; determine high spin filling.",
+      "dCount": 6,
+      "geometry": "octahedral",
+      "spin": "high"
+    },
+    {
+      "id": "d6-octa-strong",
+      "prompt": "[Co(NH3)6]3+",
+      "badge": "d6 octahedral",
+      "note": "Stronger field ligand; decide spin state.",
+      "dCount": 6,
+      "geometry": "octahedral",
+      "spin": "low"
+    },
+    {
+      "id": "d6-octa-weak-2",
+      "prompt": "[CoF6]3-",
+      "badge": "d6 octahedral",
+      "note": "High-spin expected for weak field ligands.",
+      "dCount": 6,
+      "geometry": "octahedral",
+      "spin": "high"
+    },
+    {
+      "id": "d8-square",
+      "prompt": "[Ni(CN)4]2-",
+      "badge": "d8 square planar",
+      "note": "Square planar splitting; low spin.",
+      "dCount": 8,
+      "geometry": "square planar",
+      "spin": "low"
+    },
+    {
+      "id": "d5-tetra",
+      "prompt": "[MnCl4]2-",
+      "badge": "d5 tetrahedral",
+      "note": "Tetrahedral complexes are typically high spin.",
+      "dCount": 5,
+      "geometry": "tetrahedral",
+      "spin": "high"
+    },
+    {
+      "id": "d5-octa-weak",
+      "prompt": "[Mn(H2O)6]2+",
+      "badge": "d5 octahedral",
+      "note": "Weak field; high spin for d5.",
+      "dCount": 5,
+      "geometry": "octahedral",
+      "spin": "high"
+    },
+    {
+      "id": "d5-octa-strong",
+      "prompt": "[Fe(CN)6]3-",
+      "badge": "d5 octahedral",
+      "note": "Strong-field ligand; low spin for d5.",
+      "dCount": 5,
+      "geometry": "octahedral",
+      "spin": "low"
+    },
+    {
+      "id": "d6-octa-strong-2",
+      "prompt": "[Fe(CN)6]4-",
+      "badge": "d6 octahedral",
+      "note": "Strong-field ligand; low spin for d6.",
+      "dCount": 6,
+      "geometry": "octahedral",
+      "spin": "low"
+    }
+  ],
+  "series": [
+    {
+      "id": "series-1",
+      "prompt": "Order ligands by field strength (strong to weak).",
+      "ligands": ["I-", "CN-", "H2O", "NH3", "Cl-"],
+      "answer": ["CN-", "NH3", "H2O", "Cl-", "I-"]
+    },
+    {
+      "id": "series-2",
+      "prompt": "Order ligands by field strength (strong to weak).",
+      "ligands": ["PPh3", "en", "F-", "CO", "NO2-"],
+      "answer": ["CO", "PPh3", "en", "NO2-", "F-"]
+    }
+  ],
+  "mo": [
+    {
+      "id": "mo-sigma",
+      "prompt": "Build the MO diagram for a sigma-donor ligand set (e.g., NH3).",
+      "note": "t2g stays nonbonding, eg is antibonding.",
+      "t2gLevel": "mid",
+      "egLevel": "high"
+    },
+    {
+      "id": "mo-pi-donor",
+      "prompt": "Build the MO diagram for a pi-donor ligand set (e.g., Cl-).",
+      "note": "t2g is raised (antibonding character).",
+      "t2gLevel": "high",
+      "egLevel": "high"
+    },
+    {
+      "id": "mo-pi-acceptor",
+      "prompt": "Build the MO diagram for a pi-acceptor ligand set (e.g., CN-, CO).",
+      "note": "t2g is stabilized (bonding character).",
+      "t2gLevel": "low",
+      "egLevel": "high"
+    }
+  ],
+  "spectra": [
+    {
+      "id": "spectra-1",
+      "prompt": "Given Delta is large, which spin state is favored?",
+      "options": ["high spin", "low spin"],
+      "answer": "low spin"
+    },
+    {
+      "id": "spectra-2",
+      "prompt": "A complex absorbs at longer wavelength (lower energy). What does that imply about Delta?",
+      "options": ["small Delta", "large Delta"],
+      "answer": "small delta"
+    },
+    {
+      "id": "spectra-3",
+      "prompt": "Square planar d8 complexes typically show which spin state?",
+      "options: ": ["high spin", "low spin"],
+      "answer": "low spin"
+    }
+  ]
+}

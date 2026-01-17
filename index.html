@@ -25,7 +25,9 @@
         <div class="hero-actions">
           <button id="startBtn" class="primary">Start Sprint</button>
           <button id="howBtn" class="ghost">How it works</button>
-          <a class="ghost" href="coordination.html">Chapter 2: Structures</a>
+          <a class="ghost" href="symmetry.html">Symmetry Gallery</a>
+          <a class="ghost" href="lectures/shriver_symmetry.html">Lectures</a>
+          <a class="ghost" href="curriculum_viewer.html">Emergent Curriculum</a>
           <a class="ghost" href="isomerism.html">Chapter 3: Isomerism</a>
           <a class="ghost" href="bonding.html">Chapter 4: Bonding + LFT</a>
           <a class="ghost" href="reactions.html">Chapter 12: Reactions</a>
@@ -122,14 +124,8 @@
             Provide the full IUPAC name. Include oxidation state, ligand order,
             and counter ion.
           </p>
-          <div class="diagram" id="diagram">
-            <div class="central">Cr</div>
-            <div class="ligand top">NH3</div>
-            <div class="ligand bottom">NH3</div>
-            <div class="ligand left">NH3</div>
-            <div class="ligand right">NH3</div>
-            <div class="ligand front">Cl-</div>
-            <div class="ligand back">Cl-</div>
+          <div class="diagram-container">
+            <canvas id="chemDoodle2D" width="300" height="300"></canvas>
           </div>
           <div class="diagram-actions">
             <button id="compareBtn" class="ghost small">Compare isomer</button>
@@ -214,7 +210,8 @@
       <p>Coordination Chemistry - Undergraduate rigor - IUPAC aligned</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/3dmol@2.0.4/build/3Dmol-min.js"></script>
-    <script src="app.js"></script>
+    <link rel="stylesheet" href="libs/ChemDoodleWeb.css" />
+    <script src="libs/ChemDoodleWeb.js"></script>
+    <script type="module" src="app.js"></script>
   </body>
 </html>

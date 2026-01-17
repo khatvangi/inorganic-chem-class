@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Inorganic Quiz</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="libs/ChemDoodleWeb.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Space+Grotesk:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <header class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Module Quiz</p>
+        <h1 id="quizTitle">...</h1>
+        <p class="subhead" id="quizTopic">Loading...</p>
+        <div class="hero-actions">
+          <a class="primary" href="index.html">Home</a>
+          <a class="ghost" href="#" id="nextModuleBtn">Next Module</a>
+        </div>
+      </div>
+      <div class="hero-panel">
+        <div class="panel-card">
+          <p class="panel-label">Progress</p>
+          <div class="panel-row">
+            <span>Score</span>
+            <strong id="scoreDisplay">0 / 0</strong>
+          </div>
+          <div class="panel-row">
+            <span>Streak</span>
+            <strong id="streakDisplay">0</strong>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="game">
+      <section class="game-board" aria-live="polite">
+        <div class="question-card">
+          <div class="question-header">
+            <span class="badge" id="qNumBadge">Question 1</span>
+            <span class="badge muted" id="topicBadge">...</span>
+          </div>
+          <h2 id="questionText">...</h2>
+          
+          <div class="viewer-card" id="viewerContainer" style="display:none;">
+            <div class="viewer-header">
+              <span class="badge muted">3D Visualization</span>
+            </div>
+            <canvas id="chemDoodle3D" width="400" height="350"></canvas>
+            <p class="viewer-note">Rotate to inspect the structure.</p>
+          </div>
+        </div>
+
+        <div class="answer-card">
+          <div id="optionsGrid" class="option-grid">
+            <!-- Options injected here -->
+          </div>
+          <div class="feedback" id="feedback"></div>
+          <div class="answer-actions">
+            <button id="nextBtn" class="primary" disabled>Next Question</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="libs/ChemDoodleWeb.js"></script>
+    <script type="module" src="quiz.js"></script>
+  </body>
+</html>

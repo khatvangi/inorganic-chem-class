@@ -1,0 +1,430 @@
+{
+  "geometric": [
+    {
+      "id": "pt-cis",
+      "topic": "cis/trans",
+      "formula": "[Pt(NH3)2Cl2]",
+      "prompt": "Identify the isomer shown.",
+      "answer": "cis",
+      "geometry": "square planar",
+      "diagram": {
+        "central": "Pt",
+        "ligands": {
+          "top": "Cl-",
+          "bottom": "NH3",
+          "left": "Cl-",
+          "right": "NH3"
+        }
+      },
+      "compare": {
+        "label": "trans",
+        "diagram": {
+          "central": "Pt",
+          "ligands": {
+            "top": "NH3",
+            "bottom": "NH3",
+            "left": "Cl-",
+            "right": "Cl-"
+          }
+        }
+      }
+    },
+    {
+      "id": "pt-trans",
+      "topic": "cis/trans",
+      "formula": "[Pt(NH3)2Cl2]",
+      "prompt": "Identify the isomer shown.",
+      "answer": "trans",
+      "geometry": "square planar",
+      "diagram": {
+        "central": "Pt",
+        "ligands": {
+          "top": "NH3",
+          "bottom": "NH3",
+          "left": "Cl-",
+          "right": "Cl-"
+        }
+      },
+      "compare": {
+        "label": "cis",
+        "diagram": {
+          "central": "Pt",
+          "ligands": {
+            "top": "Cl-",
+            "bottom": "NH3",
+            "left": "Cl-",
+            "right": "NH3"
+          }
+        }
+      }
+    },
+    {
+      "id": "co-cis",
+      "topic": "cis/trans",
+      "formula": "[Co(NH3)4Cl2]+",
+      "prompt": "Identify the isomer shown.",
+      "answer": "cis",
+      "geometry": "octahedral",
+      "diagram": {
+        "central": "Co",
+        "ligands": {
+          "top": "NH3",
+          "bottom": "NH3",
+          "left": "NH3",
+          "right": "Cl-",
+          "front": "NH3",
+          "back": "Cl-"
+        }
+      },
+      "compare": {
+        "label": "trans",
+        "diagram": {
+          "central": "Co",
+          "ligands": {
+            "top": "NH3",
+            "bottom": "NH3",
+            "left": "NH3",
+            "right": "NH3",
+            "front": "Cl-",
+            "back": "Cl-"
+          }
+        }
+      }
+    },
+    {
+      "id": "co-trans",
+      "topic": "cis/trans",
+      "formula": "[Co(NH3)4Cl2]+",
+      "prompt": "Identify the isomer shown.",
+      "answer": "trans",
+      "geometry": "octahedral",
+      "diagram": {
+        "central": "Co",
+        "ligands": {
+          "top": "NH3",
+          "bottom": "NH3",
+          "left": "NH3",
+          "right": "NH3",
+          "front": "Cl-",
+          "back": "Cl-"
+        }
+      },
+      "compare": {
+        "label": "cis",
+        "diagram": {
+          "central": "Co",
+          "ligands": {
+            "top": "NH3",
+            "bottom": "NH3",
+            "left": "NH3",
+            "right": "Cl-",
+            "front": "NH3",
+            "back": "Cl-"
+          }
+        }
+      }
+    },
+    {
+      "id": "co-fac",
+      "topic": "fac/mer",
+      "formula": "[Co(NH3)3Cl3]",
+      "prompt": "Identify the isomer shown.",
+      "answer": "fac",
+      "geometry": "octahedral",
+      "diagram": {
+        "central": "Co",
+        "ligands": {
+          "top": "NH3",
+          "bottom": "Cl-",
+          "left": "NH3",
+          "right": "Cl-",
+          "front": "NH3",
+          "back": "Cl-"
+        }
+      },
+      "compare": {
+        "label": "mer",
+        "diagram": {
+          "central": "Co",
+          "ligands": {
+            "top": "NH3",
+            "bottom": "NH3",
+            "left": "NH3",
+            "right": "Cl-",
+            "front": "Cl-",
+            "back": "Cl-"
+          }
+        }
+      }
+    },
+    {
+      "id": "co-mer",
+      "topic": "fac/mer",
+      "formula": "[Co(NH3)3Cl3]",
+      "prompt": "Identify the isomer shown.",
+      "answer": "mer",
+      "geometry": "octahedral",
+      "diagram": {
+        "central": "Co",
+        "ligands": {
+          "top": "NH3",
+          "bottom": "NH3",
+          "left": "NH3",
+          "right": "Cl-",
+          "front": "Cl-",
+          "back": "Cl-"
+        }
+      },
+      "compare": {
+        "label": "fac",
+        "diagram": {
+          "central": "Co",
+          "ligands": {
+            "top": "NH3",
+            "bottom": "Cl-",
+            "left": "NH3",
+            "right": "Cl-",
+            "front": "NH3",
+            "back": "Cl-"
+          }
+        }
+      }
+    },
+    {
+      "id": "ma-cis",
+      "topic": "cis/trans",
+      "formula": "[MA2B2] (square planar)",
+      "prompt": "Identify the isomer shown.",
+      "answer": "cis",
+      "geometry": "square planar",
+      "diagram": {
+        "central": "M",
+        "ligands": {
+          "top": "A",
+          "bottom": "B",
+          "left": "A",
+          "right": "B"
+        }
+      },
+      "compare": {
+        "label": "trans",
+        "diagram": {
+          "central": "M",
+          "ligands": {
+            "top": "A",
+            "bottom": "A",
+            "left": "B",
+            "right": "B"
+          }
+        }
+      }
+    },
+    {
+      "id": "ma-trans",
+      "topic": "cis/trans",
+      "formula": "[MA2B2] (square planar)",
+      "prompt": "Identify the isomer shown.",
+      "answer": "trans",
+      "geometry": "square planar",
+      "diagram": {
+        "central": "M",
+        "ligands": {
+          "top": "A",
+          "bottom": "A",
+          "left": "B",
+          "right": "B"
+        }
+      },
+      "compare": {
+        "label": "cis",
+        "diagram": {
+          "central": "M",
+          "ligands": {
+            "top": "A",
+            "bottom": "B",
+            "left": "A",
+            "right": "B"
+          }
+        }
+      }
+    },
+    {
+      "id": "ma3b3-fac",
+      "topic": "fac/mer",
+      "formula": "[MA3B3] (octahedral)",
+      "prompt": "Identify the isomer shown.",
+      "answer": "fac",
+      "geometry": "octahedral",
+      "diagram": {
+        "central": "M",
+        "ligands": {
+          "top": "A",
+          "bottom": "B",
+          "left": "A",
+          "right": "B",
+          "front": "A",
+          "back": "B"
+        }
+      },
+      "compare": {
+        "label": "mer",
+        "diagram": {
+          "central": "M",
+          "ligands": {
+            "top": "A",
+            "bottom": "A",
+            "left": "A",
+            "right": "B",
+            "front": "B",
+            "back": "B"
+          }
+        }
+      }
+    },
+    {
+      "id": "ma3b3-mer",
+      "topic": "fac/mer",
+      "formula": "[MA3B3] (octahedral)",
+      "prompt": "Identify the isomer shown.",
+      "answer": "mer",
+      "geometry": "octahedral",
+      "diagram": {
+        "central": "M",
+        "ligands": {
+          "top": "A",
+          "bottom": "A",
+          "left": "A",
+          "right": "B",
+          "front": "B",
+          "back": "B"
+        }
+      },
+      "compare": {
+        "label": "fac",
+        "diagram": {
+          "central": "M",
+          "ligands": {
+            "top": "A",
+            "bottom": "B",
+            "left": "A",
+            "right": "B",
+            "front": "A",
+            "back": "B"
+          }
+        }
+      }
+    }
+  ],
+  "optical": [
+    {
+      "id": "lambda",
+      "topic": "Lambda/Delta",
+      "formula": "[Co(en)3]3+",
+      "prompt": "Identify the enantiomer shown.",
+      "answer": "lambda",
+      "model": "lambda",
+      "compare": "delta"
+    },
+    {
+      "id": "delta",
+      "topic": "Lambda/Delta",
+      "formula": "[Co(en)3]3+",
+      "prompt": "Identify the enantiomer shown.",
+      "answer": "delta",
+      "model": "delta",
+      "compare": "lambda"
+    },
+    {
+      "id": "lambda-ox",
+      "topic": "Lambda/Delta",
+      "formula": "[Cr(ox)3]3-",
+      "prompt": "Identify the enantiomer shown.",
+      "answer": "lambda",
+      "model": "lambda",
+      "compare": "delta"
+    },
+    {
+      "id": "delta-ox",
+      "topic": "Lambda/Delta",
+      "formula": "[Cr(ox)3]3-",
+      "prompt": "Identify the enantiomer shown.",
+      "answer": "delta",
+      "model": "delta",
+      "compare": "lambda"
+    }
+  ],
+  "structural": [
+    {
+      "id": "ionization",
+      "prompt": "Classify the isomer pair:\n[Co(NH3)5Br]SO4 vs [Co(NH3)5SO4]Br",
+      "answer": "ionization",
+      "options": ["ionization", "linkage", "coordination", "hydrate/solvate"]
+    },
+    {
+      "id": "linkage",
+      "prompt": "Classify the isomer pair:\n[Co(NH3)5(NO2)]Cl2 vs [Co(NH3)5(ONO)]Cl2",
+      "answer": "linkage",
+      "options": ["ionization", "linkage", "coordination", "hydrate/solvate"]
+    },
+    {
+      "id": "coordination",
+      "prompt": "Classify the isomer pair:\n[Co(NH3)6][Cr(CN)6] vs [Cr(NH3)6][Co(CN)6]",
+      "answer": "coordination",
+      "options": ["ionization", "linkage", "coordination", "hydrate/solvate"]
+    },
+    {
+      "id": "hydrate",
+      "prompt": "Classify the isomer pair:\n[Cr(H2O)6]Cl3 vs [Cr(H2O)5Cl]Cl2.H2O",
+      "answer": "hydrate/solvate",
+      "options": ["ionization", "linkage", "coordination", "hydrate/solvate"]
+    },
+    {
+      "id": "linkage-2",
+      "prompt": "Classify the isomer pair:\n[Co(NH3)5(NCS)]Cl2 vs [Co(NH3)5(SCN)]Cl2",
+      "answer": "linkage",
+      "options": ["ionization", "linkage", "coordination", "hydrate/solvate"]
+    },
+    {
+      "id": "hydrate-2",
+      "prompt": "Classify the isomer pair:\n[Cr(H2O)4Cl2]Cl.2H2O vs [Cr(H2O)5Cl]Cl2.H2O",
+      "answer": "hydrate/solvate",
+      "options": ["ionization", "linkage", "coordination", "hydrate/solvate"]
+    },
+    {
+      "id": "ionization-2",
+      "prompt": "Classify the isomer pair:\n[Co(NH3)5Cl]Br2 vs [Co(NH3)5Br]Cl2",
+      "answer": "ionization",
+      "options": ["ionization", "linkage", "coordination", "hydrate/solvate"]
+    },
+    {
+      "id": "coordination-2",
+      "prompt": "Classify the isomer pair:\n[Cu(NH3)4][PtCl4] vs [Pt(NH3)4][CuCl4]",
+      "answer": "coordination",
+      "options": ["ionization", "linkage", "coordination", "hydrate/solvate"]
+    }
+  ],
+  "models": {
+    "lambda": {
+      "central": "Co",
+      "atoms": [
+        { "label": "en", "element": "N", "x": 1.2, "y": 0.2, "z": 1.1 },
+        { "label": "en", "element": "N", "x": 0.2, "y": 1.2, "z": 0.9 },
+        { "label": "en", "element": "N", "x": -1.0, "y": 0.5, "z": 1.0 },
+        { "label": "en", "element": "N", "x": -1.1, "y": -0.4, "z": -0.9 },
+        { "label": "en", "element": "N", "x": -0.1, "y": -1.2, "z": -1.0 },
+        { "label": "en", "element": "N", "x": 1.0, "y": -0.3, "z": -1.1 }
+      ]
+    },
+    "delta": {
+      "central": "Co",
+      "atoms": [
+        { "label": "en", "element": "N", "x": -1.2, "y": 0.2, "z": 1.1 },
+        { "label": "en", "element": "N", "x": -0.2, "y": 1.2, "z": 0.9 },
+        { "label": "en", "element": "N", "x": 1.0, "y": 0.5, "z": 1.0 },
+        { "label": "en", "element": "N", "x": 1.1, "y": -0.4, "z": -0.9 },
+        { "label": "en", "element": "N", "x": 0.1, "y": -1.2, "z": -1.0 },
+        { "label": "en", "element": "N", "x": -1.0, "y": -0.3, "z": -1.1 }
+      ]
+    }
+  }
+}

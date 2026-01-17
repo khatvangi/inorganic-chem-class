@@ -1,0 +1,75 @@
+{
+  "nodes": [
+    {
+      "title": "Atomic Properties"
+    },
+    {
+      "title": "X-ray Diffraction"
+    },
+    {
+      "title": "Coordination Complexes"
+    },
+    {
+      "title": "Crystal Field Theory"
+    },
+    {
+      "title": "Group 14 Elements"
+    },
+    {
+      "title": "Acid-Base Hard Soft Theory"
+    },
+    {
+      "title": "Molecular Orbital Theory"
+    },
+    {
+      "title": "Periodic Trends"
+    },
+    {
+      "title": "Fluorine Chemistry"
+    },
+    {
+      "title": "Atomic Structure and Spectroscopy"
+    },
+    {
+      "title": "Crystal Field Theory"
+    },
+    {
+      "title": "Crystal Field Theory"
+    },
+    {
+      "title": "Group Theory in Spectroscopy"
+    },
+    {
+      "title": "Crystal Structures"
+    },
+    {
+      "title": "Ionic Bonding and Crystals"
+    }
+  ],
+  "edges": [
+    {
+      "source": "Periodic Trends",
+      "target": "Group 14 Elements"
+    },
+    {
+      "source": "Periodic Trends",
+      "target": "Fluorine Chemistry"
+    },
+    {
+      "source": "Molecular Orbital Theory",
+      "target": "Coordination Complexes"
+    },
+    {
+      "source": "Coordination Complexes",
+      "target": "Crystal Field Theory"
+    },
+    {
+      "source": "Crystal Field Theory",
+      "target": "Group Theory in Spectroscopy"
+    },
+    {
+      "source": "Atomic Structure and Spectroscopy",
+      "target": "X-ray Diffraction"
+    }
+  ]
+}

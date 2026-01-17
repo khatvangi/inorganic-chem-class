@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Inorganic Learning Tree</title>
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      #mynetwork {
+        width: 100%;
+        height: 80vh;
+        background: #ffffff;
+        border: 1px solid #e0e0e0;
+      }
+      .legend {
+        padding: 1rem;
+        background: #f4f4f9;
+        font-family: sans-serif;
+        border-bottom: 1px solid #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="legend">
+      <strong>The Learning Path</strong><br>
+      Start at the top. Arrows indicate "Required For".
+    </div>
+    <div id="mynetwork"></div>
+
+    <script type="module">
+      const init = async () => {
+        try {
+          const response = await fetch("./data/learning_tree.json");
+          const treeData = await response.json();
+          renderTree(treeData);
+        } catch (e) {
+          console.error(e);
+        }
+      };
+
+      const renderTree = (data) => {
+        // Prepare Nodes
+        // Assign levels manually or let Vis.js do it? Vis.js hierarchical is good.
+        const nodes = new vis.DataSet(
+          data.nodes.map((mod, index) => ({
+            id: mod.title,
+            label: mod.title,
+            shape: 'box',
+            font: { face: 'sans-serif', size: 16 },
+            color: {
+              background: index < 2 ? '#e0f2fe' : '#ffffff', // Highlight roots
+              border: '#2563eb'
+            },
+            margin: 10
+          }))
+        );
+
+        // Prepare Edges
+        const edges = new vis.DataSet(
+          data.edges.map(edge => ({
+            from: edge.source,
+            to: edge.target,
+            arrows: 'to',
+            label: 'unlocks',
+            font: { align: 'horizontal', size: 10 },
+            color: { color: '#94a3b8' }
+          }))
+        );
+
+        const container = document.getElementById('mynetwork');
+        const options = {
+          layout: {
+            hierarchical: {
+              direction: 'UD', // Up-Down
+              sortMethod: 'directed',
+              levelSeparation: 150,
+              nodeSpacing: 200
+            }
+          },
+          physics: false, // Static tree is easier to read
+          interaction: { dragNodes: false }
+        };
+
+        new vis.Network(container, { nodes, edges }, options);
+      };
+
+      init();
+    </script>
+  </body>
+</html>

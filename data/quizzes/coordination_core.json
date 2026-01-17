@@ -1,0 +1,485 @@
+[
+  {
+    "question": "What is the correct formula for the coordination compound [H2O]3[Cr(CN)(NH3)2]Cl2?",
+    "options": [
+      "A) [Cr(H2O)6](CN)(NH3)2Cl",
+      "B) [Cr(H2O)4(CN)(NH3)2]Cl",
+      "C) [Cr(CN)(H2O)2(NH3)2]Cl2",
+      "D) [Cr(H2O)3(CN)(NH3)2]Cl"
+    ],
+    "answer": "B) [Cr(H2O)4(CN)(NH3)2]Cl",
+    "explanation": "This compound follows the common practice of writing ligand formulas in alphabetical order by the first letter of the name. In this case, water (H2O) is abbreviated as 'w', and the cyanide ligand is abbreviated as 'CN'. The correct formula should reflect the correct order of these ligands, which is CN-H2O-NH3.",
+    "formula": "[Cr(H2O)4(CN)(NH3)2]Cl",
+    "geometry": "octahedral",
+    "diagram": {
+      "central": "Cr",
+      "ligands": {
+        "top": "CN",
+        "bottom": "H2O",
+        "left": "NH3",
+        "right": "H2O",
+        "front": "H2O",
+        "back": "H2O"
+      }
+    },
+    "topic": "coordination nomenclature IUPAC",
+    "module": "coordination_core"
+  },
+  {
+    "question": "For the coordination compound [Co(H2O)5]NO3, what is the oxidation state of the central metal atom?",
+    "options": [
+      "+1",
+      "+3",
+      "+4",
+      "+6"
+    ],
+    "answer": "+3",
+    "explanation": "The correct answer can be determined by applying IUPAC rules for coordination compounds. According to Rule 2, the name of the coordination compound begins with the names of the ligands, followed by the metal, and in parentheses by the oxidation state of the metal. In this case, the ligand 'H2O' implies a neutral oxygen atom, and there are five such atoms bound to the central metal atom. Therefore, the oxidation state of the central metal atom is +3.",
+    "formula": "[Co(H2O)5]NO3",
+    "geometry": "octahedral",
+    "diagram": {
+      "central": "Co",
+      "ligands": {
+        "top": "H2O",
+        "bottom": "H2O",
+        "left": "H2O",
+        "right": "H2O",
+        "front": "H2O",
+        "back": "H2O"
+      }
+    },
+    "topic": "coordination nomenclature IUPAC",
+    "module": "coordination_core"
+  },
+  {
+    "question": "What is the correct nomenclature for the coordination compound (ethylenediamine)triaquaammoniumcobalt(III)?",
+    "options": [
+      "A) Triamminecobalt(II)(NH2CH2CH2NH3)2NO3",
+      "B) Ammoniumtriaquacobalt(III)(NH2CH2CH2NH3)2",
+      "C) Tetraamminecobalt(III)Cl",
+      "D) Triamminecobalt(II)(NH2CH2CH2NH3)2Cl"
+    ],
+    "answer": "A",
+    "explanation": "The correct nomenclature follows IUPAC rules. The name of the coordination compound begins with the names of the ligands, followed by the metal, and then its oxidation state in parentheses. In this case, 'ethylenediamine' is a bidentate ligand, but for simplicity, we follow the common practice of writing ligand formulas in alphabetical order. The central atom is cobalt (Co), with an oxidation state of +3. The four waters form the coordination sphere.",
+    "formula": "[NH2CH2CH2NH3]3Co(NO3)4",
+    "geometry": "octahedral",
+    "diagram": {
+      "central": "Co",
+      "ligands": {
+        "top": "NH2CH2CH2NH3",
+        "bottom": "H2O",
+        "left": "H2O",
+        "right": "H2O",
+        "front": "H2O",
+        "back": "H2O"
+      }
+    },
+    "topic": "coordination nomenclature IUPAC",
+    "module": "coordination_core"
+  },
+  {
+    "question": "What is the correct classification for the hexagonal planar coordination sphere shown in Table 2.2?",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": "C",
+    "explanation": "The hexagonal planar coordination sphere represents a geometric isomer because it differs in spatial arrangement of the ligands, resulting in different geometries. However, since all four ligands are arranged symmetrically and equally, there is no chirality or optical activity.",
+    "formula": "[M(L)n]X",
+    "geometry": "square planar",
+    "diagram": {
+      "central": "M",
+      "ligands": {
+        "top": "L",
+        "bottom": "L",
+        "left": "L",
+        "right": "L"
+      }
+    },
+    "topic": "isomers geometric optical coordination",
+    "module": "coordination_core"
+  },
+  {
+    "question": "The hexagonal planar and trigonal prismatic coordination spheres shown in Table 2.2 are structural isomers or stereoisomers? Briefly justify your answer.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": "D",
+    "explanation": "The hexagonal planar and trigonal prismatic coordination spheres are geometric isomers because they have the same number and types of chemical bonds, but differ in their spatial arrangement. Geometric isomerism occurs when a molecule has the same molecular formula and bonding sequence, but differs in its three-dimensional structure. In this case, the hexagonal planar and trigonal prismatic coordination spheres are structural isomers because they have different geometries due to the arrangement of ligands around the central metal atom.",
+    "formula": "[M(L)6]X",
+    "geometry": "hexagonal planar",
+    "ligand_arrangement": {
+      "top": "L",
+      "bottom": "L",
+      "left": "L",
+      "right": "L",
+      "front": "L",
+      "back": "L"
+    },
+    "diagram": {
+      "central": "M",
+      "ligands": {
+        "top": "L",
+        "bottom": "L",
+        "left": "L",
+        "right": "L",
+        "front": "L",
+        "back": "L"
+      }
+    },
+    "topic": "isomers geometric optical coordination",
+    "module": "coordination_core"
+  },
+  {
+    "question": "Are the hexagonal planar coordination sphere isomers shown in Table 2.2 structural isomers or stereoisomers?",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": "B",
+    "explanation": "These isomers are stereoisomers because they have the same number and types of chemical bonds, but differ in their spatial arrangement. They are not structural isomers as they do not have different numbers and types of bonds.",
+    "formula": "[M(L)6]X",
+    "geometry": "octahedral",
+    "diagram": {
+      "central": "M",
+      "ligands": {
+        "top": "L",
+        "bottom": "L",
+        "left": "L",
+        "right": "L",
+        "front": "L",
+        "back": "L"
+      }
+    },
+    "topic": "isomers geometric optical coordination",
+    "module": "coordination_core"
+  },
+  {
+    "question": "What is the correct energy level difference (\u0394) between the A and P orbitals for an octahedral d6 ion in a strong field ligand environment?",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": "C",
+    "explanation": "The CFSE for an octahedral d6 ion is \u0394 = 10Dq. For a strong field ligand, the P orbitals are completely filled and do not interact with the ligands. As a result, only the A orbitals are affected by the crystal field splitting, resulting in a smaller energy level difference (\u0394) between the A and P orbitals.",
+    "formula": "[M(L)n]X",
+    "geometry": "octahedral",
+    "diagram": {
+      "central": "M",
+      "ligands": {
+        "top": "L",
+        "bottom": "L",
+        "left": "L",
+        "right": "L",
+        "front": "L",
+        "back": "L"
+      }
+    },
+    "topic": "crystal field theory octahedral splitting CFSE",
+    "module": "coordination_core"
+  },
+  {
+    "question": "Which of the following d orbitals is primarily responsible for the A term in a crystal field splitting diagram for an octahedral complex?",
+    "options": [
+      "A",
+      "dxy",
+      "dz^2",
+      "dx^2-y^2"
+    ],
+    "answer": "C",
+    "explanation": "The A term in an octahedral crystal field splitting diagram arises primarily from the interaction between the dz^2 and dx^2-y^2 orbitals, which have the same energy and are degenerate. Therefore, the correct answer is C, dz^2.",
+    "formula": "[Fe(CN)6]3-",
+    "geometry": "octahedral",
+    "diagram": {
+      "central": "Fe",
+      "ligands": {
+        "top": "CN",
+        "bottom": "CN",
+        "left": "CN",
+        "right": "CN",
+        "front": "CN",
+        "back": "CN"
+      }
+    },
+    "topic": "crystal field theory octahedral splitting CFSE",
+    "module": "coordination_core"
+  },
+  {
+    "question": "What is the expected Crystal Field Splitting Energy (CFSE) for [Cr(H2O)6]3+ in terms of A and P orbitals?",
+    "options": [
+      "A: -300 cm-1 + 0",
+      "B: -200 cm-1 + 0",
+      "C: -400 cm-1 + 0",
+      "D: -500 cm-1 + 0"
+    ],
+    "answer": "B",
+    "explanation": "The CFSE for [Cr(H2O)6]3+ is expected to be around -200 cm-1, which is half of the value obtained in the octahedral case. This is due to the lower symmetry of the octahedral field compared to the tetrahedral field.",
+    "formula": "[Cr(H2O)6]3+",
+    "geometry": "octahedral",
+    "diagram": {
+      "central": "Cr",
+      "ligands": {
+        "top": "H2O",
+        "bottom": "H2O",
+        "left": "H2O",
+        "right": "H2O",
+        "front": "H2O",
+        "back": "H2O"
+      }
+    },
+    "topic": "crystal field theory octahedral splitting CFSE",
+    "module": "coordination_core"
+  },
+  {
+    "question": "What type of bonding occurs when a ligand with low-energy filled p orbitals overlaps with the t2g (dxy, dxz, dyz) metal orbitals in an octahedral complex?",
+    "options": [
+      "A"
+    ],
+    "topic": "ligand field theory sigma pi bonding",
+    "module": "coordination_core"
+  },
+  {
+    "question": "What type of bonding is expected to occur between a metal center and a ligand that has vacant high-energy p orbitals?",
+    "options": [
+      "\u03c3 + \u03c0 bonding",
+      "\u03c3 bonding",
+      "\u03c0 bonding",
+      "vacant \u03c0 bonding"
+    ],
+    "answer": "\u03c3 + \u03c0 bonding",
+    "explanation": "According to the molecular orbital diagram in Fig. 6.13, when a ligand has vacant high-energy p orbitals, the resulting low-energy p MOs will resemble the t2g orbitals, and the high-energy p* MOs will resemble the ligand orbitals. This leads to an increase in D and results in \u03c3 + \u03c0 bonding.",
+    "formula": "[M(L)n]X",
+    "geometry": "octahedral",
+    "diagram": {
+      "central": "M",
+      "ligands": {
+        "top": null,
+        "bottom": null,
+        "left": null,
+        "right": null,
+        "front": null,
+        "back": "L"
+      }
+    },
+    "topic": "ligand field theory sigma pi bonding",
+    "module": "coordination_core"
+  },
+  {
+    "question": "What is the type of bonding that occurs between a metal center and a ligand with low-energy filled p orbitals?",
+    "options": [
+      "\u03c3+\u03c0 bonding",
+      "\u03c3 bonding",
+      "\u03c0 bonding",
+      "sigma pi bonding"
+    ],
+    "answer": "sigma pi bonding",
+    "explanation": "The correct answer is sigma pi bonding because when a metal center and a ligand with low-energy filled p orbitals interact, the resulting bonding is a combination of both \u03c3 and \u03c0 bonds.",
+    "formula": "[MLn]X",
+    "geometry": "octahedral",
+    "diagram": {
+      "central": "M",
+      "ligands": {
+        "top": "L",
+        "bottom": "L",
+        "left": "L",
+        "right": "L"
+      }
+    },
+    "topic": "ligand field theory sigma pi bonding",
+    "module": "coordination_core"
+  },
+  {
+    "question": "Based on the Tanabe-Sugano diagram for a d2 configuration with C = 4.428B, which term will have the lowest energy when \u2206O/B = 0?",
+    "options": [
+      "A1g",
+      "E1u",
+      "T1u",
+      "T2g"
+    ],
+    "answer": "A1g",
+    "explanation": "The Tanabe-Sugano diagram for d2 configuration with C = 4.428B shows that the A1g term has the lowest energy when \u2206O/B = 0.",
+    "formula": "[M(L)n]X",
+    "geometry": "octahedral",
+    "diagram": {
+      "central": "M",
+      "ligands": {
+        "top": "L",
+        "bottom": "L",
+        "left": "L",
+        "right": "L",
+        "front": "L",
+        "back": "L"
+      }
+    },
+    "topic": "electronic spectra term symbols Tanabe-Sugano",
+    "module": "coordination_core"
+  },
+  {
+    "question": "What is the term symbol for the lowest energy state of a d2 configuration with high-spin electrons and no electron-electron repulsions?",
+    "options": [
+      "A1g",
+      "A2g",
+      "T1g",
+      "Eg"
+    ],
+    "answer": "A1g",
+    "explanation": "For a d2 configuration, the possible term symbols are T2g and Eg. However, since there is no electron-electron repulsion, the ground state will be a high-spin state with the two electrons in the t2g orbitals. The lowest energy state of this configuration is A1g.",
+    "topic": "electronic spectra term symbols Tanabe-Sugano",
+    "module": "coordination_core"
+  },
+  {
+    "question": "What is the Tanabe-Sugano diagram for a d3 configuration with C = 4.502B?",
+    "options": [
+      "d1",
+      "d2",
+      "T1g",
+      "T2g"
+    ],
+    "answer": "d2",
+    "explanation": "The correct answer is d2 because the Tanabe-Sugano diagram for a d3 configuration with C = 4.502B shows a splitting of the atomic terms, resulting in two low-spin and one high-spin term. The d2 term corresponds to the ground state term in this case.",
+    "formula": "[ML3]X",
+    "geometry": "octahedral",
+    "diagram": {
+      "central": "M",
+      "ligands": {
+        "top": "L",
+        "bottom": "L",
+        "left": "L",
+        "right": "L"
+      }
+    },
+    "topic": "electronic spectra term symbols Tanabe-Sugano",
+    "module": "coordination_core"
+  },
+  {
+    "question": "What is the characteristic of the intimate mechanism for coordination substitution reactions?",
+    "options": [
+      "The nucleophile will begin to form a bond with M, leading to an intermediate or transition state of decreased coordination number.",
+      "The nucleophile will begin to form a bond with M, leading to an intermediate or transition state of increased coordination number.",
+      "The YeM bond is almost fully developed before the MeX bond begins to break.",
+      "Bond making is more important than bond breaking."
+    ],
+    "answer": "B",
+    "explanation": "According to the text, in the intimate mechanism (also known as SN2), the YeM bond is almost fully developed before the MeX bond begins to break. This indicates that the nucleophile forms a strong bond with the metal center before the old ligand is replaced.",
+    "formula": "[ML5]X",
+    "geometry": "octahedral",
+    "diagram": {
+      "central": "M",
+      "ligands": {
+        "top": "L1",
+        "bottom": "L2",
+        "left": "L3",
+        "right": "L4"
+      }
+    },
+    "topic": "coordination substitution mechanisms",
+    "module": "coordination_core"
+  },
+  {
+    "question": "Which of the following coordination substitution mechanisms is characterized by an intermediate species with a sufficient lifetime to be detected?",
+    "options": [
+      "A",
+      "Associative mode (a) or intimate mechanism"
+    ],
+    "answer": "B",
+    "explanation": "The correct answer is B, Limiting Mechanism or SN2. This mechanism is characterized by the formation of an intermediate species with a sufficient lifetime to be detected, as described in Figure 7.1.",
+    "formula": "[M(L)n]X",
+    "geometry": "octahedral",
+    "diagram": {
+      "central": "M",
+      "ligands": {
+        "top": "L",
+        "bottom": "L",
+        "left": "L",
+        "right": "L"
+      }
+    },
+    "topic": "coordination substitution mechanisms",
+    "module": "coordination_core"
+  },
+  {
+    "question": "For the associative mode of substitution reaction, what is the primary factor that determines the mechanism?",
+    "options": [
+      "The nucleophile will begin to form a bond with M immediately.",
+      "Bond making is more important than bond breaking.",
+      "The YeM bond must be completely broken before the MeX bond begins to break.",
+      "The trans-directing ability of non-labile ligands determines whether Reaction I or II occurs."
+    ],
+    "answer": "B",
+    "explanation": "For the associative mode of substitution, bond making is more important than bond breaking. One aspect is how developed the YeM bond is before MeX bond rupture begins.",
+    "formula": "[ML5]X",
+    "geometry": "octahedral",
+    "diagram": {
+      "central": "M",
+      "ligands": {
+        "top": "L",
+        "bottom": "L",
+        "left": "L",
+        "right": "L",
+        "front": "L",
+        "back": "X"
+      }
+    },
+    "topic": "coordination substitution mechanisms",
+    "module": "coordination_core"
+  },
+  {
+    "question": "Which ligand is a better trans director than I in the square planar complex [M(I)n]X?",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": "B",
+    "explanation": "The text states that 'If B is the better trans director, reaction II occurs.' Therefore, B is a better trans director than I.",
+    "formula": "[M(I)n]X",
+    "geometry": "square planar",
+    "diagram": {
+      "central": "M",
+      "ligands": {
+        "top": "I",
+        "bottom": "I",
+        "left": "I",
+        "right": "I",
+        "front": "I",
+        "back": "I"
+      }
+    },
+    "topic": "trans effect square planar substitution",
+    "module": "coordination_core"
+  },
+  {
+    "question": "What is the order of trans directing strength for ligands A and B in a square planar complex?",
+    "options": [
+      "A: L > T",
+      "B: L < T",
+      "C: T < L",
+      "D: L = T"
+    ],
+    "answer": "B",
+    "explanation": "The correct answer is B because if ligand B is a better trans director than ligand A, then reaction II occurs. This implies that the ligand trans to B (T) has a stronger trans effect than the ligand trans to A (L).",
+    "topic": "trans effect square planar substitution",
+    "module": "coordination_core"
+  },
+  {
+    "question": "Which ligand is a better trans director than Br in the substitution reaction of a square planar complex?",
+    "options": [
+      "I",
+      "CN"
+    ],
+    "answer": "I",
+    "explanation": "According to the text, if nonlabile ligand I is a better trans director than Br, then reaction I occurs. This means that in the presence of Br, I will preferentially displace the ligand trans to it, making it easier for reaction II to occur.",
+    "topic": "trans effect square planar substitution",
+    "module": "coordination_core"
+  }
+]

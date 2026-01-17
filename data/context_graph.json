@@ -1,0 +1,3561 @@
+{
+  "nodes": [
+    {
+      "id": "ionic crystal",
+      "label": "ionic crystal",
+      "group": "chemistry"
+    },
+    {
+      "id": "Reactivity of molecules",
+      "label": "Reactivity of molecules",
+      "group": "chemistry"
+    },
+    {
+      "id": "Reducible Representation GR",
+      "label": "Reducible Representation GR",
+      "group": "chemistry"
+    },
+    {
+      "id": "[Co(NH3)5SCN]^+",
+      "label": "[Co(NH3)5SCN]^+",
+      "group": "chemistry"
+    },
+    {
+      "id": "Reactivity",
+      "label": "Reactivity",
+      "group": "chemistry"
+    },
+    {
+      "id": "3d-series elements",
+      "label": "3d-series elements",
+      "group": "chemistry"
+    },
+    {
+      "id": "M-X bond breaking to form ML intermediate",
+      "label": "M-X bond breaking to form ML intermediate",
+      "group": "chemistry"
+    },
+    {
+      "id": "Molecules",
+      "label": "Molecules",
+      "group": "chemistry"
+    },
+    {
+      "id": "Cell Potential",
+      "label": "Cell Potential",
+      "group": "chemistry"
+    },
+    {
+      "id": "Slater\u2019s Rules",
+      "label": "Slater\u2019s Rules",
+      "group": "chemistry"
+    },
+    {
+      "id": "Zn role in animals",
+      "label": "Zn role in animals",
+      "group": "chemistry"
+    },
+    {
+      "id": "Fig. 10.7",
+      "label": "Fig. 10.7",
+      "group": "chemistry"
+    },
+    {
+      "id": "Mg",
+      "label": "Mg",
+      "group": "chemistry"
+    },
+    {
+      "id": "Atomic Oxygen",
+      "label": "Atomic Oxygen",
+      "group": "chemistry"
+    },
+    {
+      "id": "Energy Levels of d2 configuration",
+      "label": "Energy Levels of d2 configuration",
+      "group": "chemistry"
+    },
+    {
+      "id": "Boiling point (\u00b0C)",
+      "label": "Boiling point (\u00b0C)",
+      "group": "chemistry"
+    },
+    {
+      "id": "Electron Pair Bonds",
+      "label": "Electron Pair Bonds",
+      "group": "chemistry"
+    },
+    {
+      "id": "Compounds",
+      "label": "Compounds",
+      "group": "chemistry"
+    },
+    {
+      "id": "Set of atomic orbitals on the central atom that are symmetry allowed for s and p bonding",
+      "label": "Set of atomic orbitals on the central atom that are symmetry allowed for s and p bonding",
+      "group": "chemistry"
+    },
+    {
+      "id": "Organometallic Reactions and Catalysis",
+      "label": "Organometallic Reactions and Catalysis",
+      "group": "chemistry"
+    },
+    {
+      "id": "Phosphorus (P) reaction with water",
+      "label": "Phosphorus (P) reaction with water",
+      "group": "chemistry"
+    },
+    {
+      "id": "Physical State at Room Temperature",
+      "label": "Physical State at Room Temperature",
+      "group": "chemistry"
+    },
+    {
+      "id": "C32",
+      "label": "C32",
+      "group": "chemistry"
+    },
+    {
+      "id": "Electronegativity",
+      "label": "Electronegativity",
+      "group": "chemistry"
+    },
+    {
+      "id": "dxy, dxz, dyz orbitals",
+      "label": "dxy, dxz, dyz orbitals",
+      "group": "chemistry"
+    },
+    {
+      "id": "[B6H6]",
+      "label": "[B6H6]",
+      "group": "chemistry"
+    },
+    {
+      "id": "Geometry of molecules",
+      "label": "Geometry of molecules",
+      "group": "chemistry"
+    },
+    {
+      "id": "Biomineralization",
+      "label": "Biomineralization",
+      "group": "chemistry"
+    },
+    {
+      "id": "Tethered nanowheels",
+      "label": "Tethered nanowheels",
+      "group": "chemistry"
+    },
+    {
+      "id": "K",
+      "label": "K",
+      "group": "chemistry"
+    },
+    {
+      "id": "Molecular vibrations",
+      "label": "Molecular vibrations",
+      "group": "chemistry"
+    },
+    {
+      "id": "Term name",
+      "label": "Term name",
+      "group": "chemistry"
+    },
+    {
+      "id": "Blood plasma free ions",
+      "label": "Blood plasma free ions",
+      "group": "chemistry"
+    },
+    {
+      "id": "Ramsay and Travers",
+      "label": "Ramsay and Travers",
+      "group": "chemistry"
+    },
+    {
+      "id": "Solvent molecules (S)",
+      "label": "Solvent molecules (S)",
+      "group": "chemistry"
+    },
+    {
+      "id": "[XeF]+",
+      "label": "[XeF]+",
+      "group": "chemistry"
+    },
+    {
+      "id": "Coordination chemistry between transition metals and ligands",
+      "label": "Coordination chemistry between transition metals and ligands",
+      "group": "chemistry"
+    },
+    {
+      "id": "Triel family (Group 13)",
+      "label": "Triel family (Group 13)",
+      "group": "chemistry"
+    },
+    {
+      "id": "Inert-PAIR EFFECT",
+      "label": "Inert-PAIR EFFECT",
+      "group": "chemistry"
+    },
+    {
+      "id": "Group 4A",
+      "label": "Group 4A",
+      "group": "chemistry"
+    },
+    {
+      "id": "[ML.Y] formation",
+      "label": "[ML.Y] formation",
+      "group": "chemistry"
+    },
+    {
+      "id": "Ansitions",
+      "label": "Ansitions",
+      "group": "chemistry"
+    },
+    {
+      "id": "Reducibility of Point Group C3v",
+      "label": "Reducibility of Point Group C3v",
+      "group": "chemistry"
+    },
+    {
+      "id": "AsF5",
+      "label": "AsF5",
+      "group": "chemistry"
+    },
+    {
+      "id": "Ca",
+      "label": "Ca",
+      "group": "chemistry"
+    },
+    {
+      "id": "E( P)3",
+      "label": "E( P)3",
+      "group": "chemistry"
+    },
+    {
+      "id": "Steam",
+      "label": "Steam",
+      "group": "chemistry"
+    },
+    {
+      "id": "Wilkinson\u2019s catalyst",
+      "label": "Wilkinson\u2019s catalyst",
+      "group": "chemistry"
+    },
+    {
+      "id": "closo-polyhedral cage",
+      "label": "closo-polyhedral cage",
+      "group": "chemistry"
+    },
+    {
+      "id": "Coordination Chemistry",
+      "label": "Coordination Chemistry",
+      "group": "chemistry"
+    },
+    {
+      "id": "Unit Cells 1 and 4",
+      "label": "Unit Cells 1 and 4",
+      "group": "chemistry"
+    },
+    {
+      "id": "Diffraction",
+      "label": "Diffraction",
+      "group": "chemistry"
+    },
+    {
+      "id": "Transfer of electrons",
+      "label": "Transfer of electrons",
+      "group": "chemistry"
+    },
+    {
+      "id": "Sophomore Student Audience",
+      "label": "Sophomore Student Audience",
+      "group": "chemistry"
+    },
+    {
+      "id": "s bonding (A01: s; az2, E0: \u00f0px; py; \u00f0dxy; dx2 \u0192y2)",
+      "label": "s bonding (A01: s; az2, E0: \u00f0px; py; \u00f0dxy; dx2 \u0192y2)",
+      "group": "chemistry"
+    },
+    {
+      "id": "Pnictogen family (Group 15)",
+      "label": "Pnictogen family (Group 15)",
+      "group": "chemistry"
+    },
+    {
+      "id": "Multiplicity",
+      "label": "Multiplicity",
+      "group": "chemistry"
+    },
+    {
+      "id": "10^-1",
+      "label": "10^-1",
+      "group": "chemistry"
+    },
+    {
+      "id": "Breaking of the M-X bond",
+      "label": "Breaking of the M-X bond",
+      "group": "chemistry"
+    },
+    {
+      "id": "the electronegative effect of F on H-F bonds",
+      "label": "the electronegative effect of F on H-F bonds",
+      "group": "chemistry"
+    },
+    {
+      "id": "derivative of a function equals zero",
+      "label": "derivative of a function equals zero",
+      "group": "chemistry"
+    },
+    {
+      "id": "Late-Night Study Groups",
+      "label": "Late-Night Study Groups",
+      "group": "chemistry"
+    },
+    {
+      "id": "Electronic Structure of Molecules",
+      "label": "Electronic Structure of Molecules",
+      "group": "chemistry"
+    },
+    {
+      "id": "Arachno structure",
+      "label": "Arachno structure",
+      "group": "chemistry"
+    },
+    {
+      "id": "+2 oxidation state",
+      "label": "+2 oxidation state",
+      "group": "chemistry"
+    },
+    {
+      "id": "Ramsay (from uranium mineral)",
+      "label": "Ramsay (from uranium mineral)",
+      "group": "chemistry"
+    },
+    {
+      "id": "Water-Gas Shift Reaction",
+      "label": "Water-Gas Shift Reaction",
+      "group": "chemistry"
+    },
+    {
+      "id": "Electrolysis",
+      "label": "Electrolysis",
+      "group": "chemistry"
+    },
+    {
+      "id": "Ligands (PPh3)",
+      "label": "Ligands (PPh3)",
+      "group": "chemistry"
+    },
+    {
+      "id": "Terminal CO donates two electrons",
+      "label": "Terminal CO donates two electrons",
+      "group": "chemistry"
+    },
+    {
+      "id": "Euro V Emission Standards",
+      "label": "Euro V Emission Standards",
+      "group": "chemistry"
+    },
+    {
+      "id": "Cl",
+      "label": "Cl",
+      "group": "chemistry"
+    },
+    {
+      "id": "X-ray beam",
+      "label": "X-ray beam",
+      "group": "chemistry"
+    },
+    {
+      "id": "Charge tr",
+      "label": "Charge tr",
+      "group": "chemistry"
+    },
+    {
+      "id": "2",
+      "label": "2",
+      "group": "chemistry"
+    },
+    {
+      "id": "Physical and Chemical Explanations",
+      "label": "Physical and Chemical Explanations",
+      "group": "chemistry"
+    },
+    {
+      "id": "t2g orbital",
+      "label": "t2g orbital",
+      "group": "chemistry"
+    },
+    {
+      "id": "Anions",
+      "label": "Anions",
+      "group": "chemistry"
+    },
+    {
+      "id": "Noble Gases (Helium, Argon, Krypton, Neon, Xenon)",
+      "label": "Noble Gases (Helium, Argon, Krypton, Neon, Xenon)",
+      "group": "chemistry"
+    },
+    {
+      "id": "Chemistry of Nonmetallic Elements",
+      "label": "Chemistry of Nonmetallic Elements",
+      "group": "chemistry"
+    },
+    {
+      "id": "Transport of calcium ions",
+      "label": "Transport of calcium ions",
+      "group": "chemistry"
+    },
+    {
+      "id": "Animals biology",
+      "label": "Animals biology",
+      "group": "chemistry"
+    },
+    {
+      "id": "Rate-determining step",
+      "label": "Rate-determining step",
+      "group": "chemistry"
+    },
+    {
+      "id": "Increased risk for radon-related hazards",
+      "label": "Increased risk for radon-related hazards",
+      "group": "chemistry"
+    },
+    {
+      "id": "Aluminum compounds",
+      "label": "Aluminum compounds",
+      "group": "chemistry"
+    },
+    {
+      "id": "the hydrogen bonding between NH3 molecules",
+      "label": "the hydrogen bonding between NH3 molecules",
+      "group": "chemistry"
+    },
+    {
+      "id": "Stability of Compounds",
+      "label": "Stability of Compounds",
+      "group": "chemistry"
+    },
+    {
+      "id": "Formation of ML.Y from ML and Y",
+      "label": "Formation of ML.Y from ML and Y",
+      "group": "chemistry"
+    },
+    {
+      "id": "Cage Atom",
+      "label": "Cage Atom",
+      "group": "chemistry"
+    },
+    {
+      "id": "IOACTIVE CO IS INSERTED",
+      "label": "IOACTIVE CO IS INSERTED",
+      "group": "chemistry"
+    },
+    {
+      "id": "Trigonal prismatic structure",
+      "label": "Trigonal prismatic structure",
+      "group": "chemistry"
+    },
+    {
+      "id": "Atomic Radius",
+      "label": "Atomic Radius",
+      "group": "chemistry"
+    },
+    {
+      "id": "Argon",
+      "label": "Argon",
+      "group": "chemistry"
+    },
+    {
+      "id": "c. 10^-2",
+      "label": "c. 10^-2",
+      "group": "chemistry"
+    },
+    {
+      "id": "Main Group Elements",
+      "label": "Main Group Elements",
+      "group": "chemistry"
+    },
+    {
+      "id": "3",
+      "label": "3",
+      "group": "chemistry"
+    },
+    {
+      "id": "SnH",
+      "label": "SnH",
+      "group": "chemistry"
+    },
+    {
+      "id": "Inorganic chemistry course",
+      "label": "Inorganic chemistry course",
+      "group": "chemistry"
+    },
+    {
+      "id": "Energy of the System",
+      "label": "Energy of the System",
+      "group": "chemistry"
+    },
+    {
+      "id": "d-metal atoms",
+      "label": "d-metal atoms",
+      "group": "chemistry"
+    },
+    {
+      "id": "Standard Potentials of Redox Couples",
+      "label": "Standard Potentials of Redox Couples",
+      "group": "chemistry"
+    },
+    {
+      "id": "Group 6A",
+      "label": "Group 6A",
+      "group": "chemistry"
+    },
+    {
+      "id": "Mn2(CO)10 structure",
+      "label": "Mn2(CO)10 structure",
+      "group": "chemistry"
+    },
+    {
+      "id": "Four symmetry elements",
+      "label": "Four symmetry elements",
+      "group": "chemistry"
+    },
+    {
+      "id": "ACS accreditation for BS degree graduation",
+      "label": "ACS accreditation for BS degree graduation",
+      "group": "chemistry"
+    },
+    {
+      "id": "Krypton, Neon, Xenon",
+      "label": "Krypton, Neon, Xenon",
+      "group": "chemistry"
+    },
+    {
+      "id": "DZ2 orbital",
+      "label": "DZ2 orbital",
+      "group": "chemistry"
+    },
+    {
+      "id": "Diffraction patterns",
+      "label": "Diffraction patterns",
+      "group": "chemistry"
+    },
+    {
+      "id": "Antiperspirant deodorants",
+      "label": "Antiperspirant deodorants",
+      "group": "chemistry"
+    },
+    {
+      "id": "Coordination Chemistry I - Structure and Isomers",
+      "label": "Coordination Chemistry I - Structure and Isomers",
+      "group": "chemistry"
+    },
+    {
+      "id": "Ferrodoxins, Hydrogenases, and Nitrogenases - Metal-Sulfide Proteins",
+      "label": "Ferrodoxins, Hydrogenases, and Nitrogenases - Metal-Sulfide Proteins",
+      "group": "chemistry"
+    },
+    {
+      "id": "Specific temperatures (TC 4.8 K for Fe, 6.2 K for Mn)",
+      "label": "Specific temperatures (TC 4.8 K for Fe, 6.2 K for Mn)",
+      "group": "chemistry"
+    },
+    {
+      "id": "A (Racah Parameter), B (Racah Parameter)",
+      "label": "A (Racah Parameter), B (Racah Parameter)",
+      "group": "chemistry"
+    },
+    {
+      "id": "arachno-polyhedral cage",
+      "label": "arachno-polyhedral cage",
+      "group": "chemistry"
+    },
+    {
+      "id": "Lithium and magnesium",
+      "label": "Lithium and magnesium",
+      "group": "chemistry"
+    },
+    {
+      "id": "Co2(CO)8 structure",
+      "label": "Co2(CO)8 structure",
+      "group": "chemistry"
+    },
+    {
+      "id": "Coordination chemistry",
+      "label": "Coordination chemistry",
+      "group": "chemistry"
+    },
+    {
+      "id": "Molecular Orbitals",
+      "label": "Molecular Orbitals",
+      "group": "chemistry"
+    },
+    {
+      "id": "Cotton, F. A.",
+      "label": "Cotton, F. A.",
+      "group": "chemistry"
+    },
+    {
+      "id": "Radon Isotope (Rn-222)",
+      "label": "Radon Isotope (Rn-222)",
+      "group": "chemistry"
+    },
+    {
+      "id": "Vibrations",
+      "label": "Vibrations",
+      "group": "chemistry"
+    },
+    {
+      "id": "Polonium-218",
+      "label": "Polonium-218",
+      "group": "chemistry"
+    },
+    {
+      "id": "Calcium in Biological Systems",
+      "label": "Calcium in Biological Systems",
+      "group": "chemistry"
+    },
+    {
+      "id": "Set of atomic orbitals on the central atom that are symmetry allowed for p bonding",
+      "label": "Set of atomic orbitals on the central atom that are symmetry allowed for p bonding",
+      "group": "chemistry"
+    },
+    {
+      "id": "Bragg's equation",
+      "label": "Bragg's equation",
+      "group": "chemistry"
+    },
+    {
+      "id": "700\u00b0C \u2014 1000\u00b0C",
+      "label": "700\u00b0C \u2014 1000\u00b0C",
+      "group": "chemistry"
+    },
+    {
+      "id": "Temperature",
+      "label": "Temperature",
+      "group": "chemistry"
+    },
+    {
+      "id": "Symmetry Breaking in Chemistry",
+      "label": "Symmetry Breaking in Chemistry",
+      "group": "chemistry"
+    },
+    {
+      "id": "Analogous manganese compound",
+      "label": "Analogous manganese compound",
+      "group": "chemistry"
+    },
+    {
+      "id": "Phosphorus",
+      "label": "Phosphorus",
+      "group": "chemistry"
+    },
+    {
+      "id": "G1 Irreducible Representation",
+      "label": "G1 Irreducible Representation",
+      "group": "chemistry"
+    },
+    {
+      "id": "ML values for parallel electrons",
+      "label": "ML values for parallel electrons",
+      "group": "chemistry"
+    },
+    {
+      "id": "CO",
+      "label": "CO",
+      "group": "chemistry"
+    },
+    {
+      "id": "Soft acids",
+      "label": "Soft acids",
+      "group": "chemistry"
+    },
+    {
+      "id": "Completion of the mechanism",
+      "label": "Completion of the mechanism",
+      "group": "chemistry"
+    },
+    {
+      "id": "Melting Point",
+      "label": "Melting Point",
+      "group": "chemistry"
+    },
+    {
+      "id": "Metal/Nucleic Acid Interactions",
+      "label": "Metal/Nucleic Acid Interactions",
+      "group": "chemistry"
+    },
+    {
+      "id": "[IrCl6]^-",
+      "label": "[IrCl6]^-",
+      "group": "chemistry"
+    },
+    {
+      "id": "Basement of a house",
+      "label": "Basement of a house",
+      "group": "chemistry"
+    },
+    {
+      "id": "Electronic Configuration",
+      "label": "Electronic Configuration",
+      "group": "chemistry"
+    },
+    {
+      "id": "Higher L value terms",
+      "label": "Higher L value terms",
+      "group": "chemistry"
+    },
+    {
+      "id": "Cp* (C5Me5)",
+      "label": "Cp* (C5Me5)",
+      "group": "chemistry"
+    },
+    {
+      "id": "Olefin",
+      "label": "Olefin",
+      "group": "chemistry"
+    },
+    {
+      "id": "standard reduction potentials",
+      "label": "standard reduction potentials",
+      "group": "chemistry"
+    },
+    {
+      "id": "Valence-bond concepts",
+      "label": "Valence-bond concepts",
+      "group": "chemistry"
+    },
+    {
+      "id": "Alpha decay",
+      "label": "Alpha decay",
+      "group": "chemistry"
+    },
+    {
+      "id": "Gs, At, G=",
+      "label": "Gs, At, G=",
+      "group": "chemistry"
+    },
+    {
+      "id": "Coordination Number",
+      "label": "Coordination Number",
+      "group": "chemistry"
+    },
+    {
+      "id": "boron and silicon",
+      "label": "boron and silicon",
+      "group": "chemistry"
+    },
+    {
+      "id": "Tethered nanorods",
+      "label": "Tethered nanorods",
+      "group": "chemistry"
+    },
+    {
+      "id": "Rhodium",
+      "label": "Rhodium",
+      "group": "chemistry"
+    },
+    {
+      "id": "The Reaction Pathways of Zinc Enzymes and Related Biological Catalysts",
+      "label": "The Reaction Pathways of Zinc Enzymes and Related Biological Catalysts",
+      "group": "chemistry"
+    },
+    {
+      "id": "Group 7A",
+      "label": "Group 7A",
+      "group": "chemistry"
+    },
+    {
+      "id": "Density of states",
+      "label": "Density of states",
+      "group": "chemistry"
+    },
+    {
+      "id": "Aluminum ion (Al3+)",
+      "label": "Aluminum ion (Al3+)",
+      "group": "chemistry"
+    },
+    {
+      "id": "Na",
+      "label": "Na",
+      "group": "chemistry"
+    },
+    {
+      "id": "Organometallic Chemistry",
+      "label": "Organometallic Chemistry",
+      "group": "chemistry"
+    },
+    {
+      "id": "Term with L and S",
+      "label": "Term with L and S",
+      "group": "chemistry"
+    },
+    {
+      "id": "Hund's rule",
+      "label": "Hund's rule",
+      "group": "chemistry"
+    },
+    {
+      "id": "Lewis bases",
+      "label": "Lewis bases",
+      "group": "chemistry"
+    },
+    {
+      "id": "d (distance between planes)",
+      "label": "d (distance between planes)",
+      "group": "chemistry"
+    },
+    {
+      "id": "Book",
+      "label": "Book",
+      "group": "chemistry"
+    },
+    {
+      "id": "Fe(III)",
+      "label": "Fe(III)",
+      "group": "chemistry"
+    },
+    {
+      "id": "Manganese",
+      "label": "Manganese",
+      "group": "chemistry"
+    },
+    {
+      "id": "Reactions",
+      "label": "Reactions",
+      "group": "chemistry"
+    },
+    {
+      "id": "Hydrogenation catalysts (e.g. RhCl(PPh3)3, RuHCl(PPh3)3)",
+      "label": "Hydrogenation catalysts (e.g. RhCl(PPh3)3, RuHCl(PPh3)3)",
+      "group": "chemistry"
+    },
+    {
+      "id": "Orbital angular momentum and spin angular momentum",
+      "label": "Orbital angular momentum and spin angular momentum",
+      "group": "chemistry"
+    },
+    {
+      "id": "Free ions in cytoplasm",
+      "label": "Free ions in cytoplasm",
+      "group": "chemistry"
+    },
+    {
+      "id": "Ligand Field Strength (\u2206O/B)",
+      "label": "Ligand Field Strength (\u2206O/B)",
+      "group": "chemistry"
+    },
+    {
+      "id": "Redox Couples",
+      "label": "Redox Couples",
+      "group": "chemistry"
+    },
+    {
+      "id": "Quartet term",
+      "label": "Quartet term",
+      "group": "chemistry"
+    },
+    {
+      "id": "Atomic Mass",
+      "label": "Atomic Mass",
+      "group": "chemistry"
+    },
+    {
+      "id": "phosphorus",
+      "label": "phosphorus",
+      "group": "chemistry"
+    },
+    {
+      "id": "Aunt Emily",
+      "label": "Aunt Emily",
+      "group": "chemistry"
+    },
+    {
+      "id": "A (Racah Parameter)",
+      "label": "A (Racah Parameter)",
+      "group": "chemistry"
+    },
+    {
+      "id": "Bridging carbonyl in Co2(CO)8",
+      "label": "Bridging carbonyl in Co2(CO)8",
+      "group": "chemistry"
+    },
+    {
+      "id": "Alkane",
+      "label": "Alkane",
+      "group": "chemistry"
+    },
+    {
+      "id": "Fig. 10.6",
+      "label": "Fig. 10.6",
+      "group": "chemistry"
+    },
+    {
+      "id": "Group 5A",
+      "label": "Group 5A",
+      "group": "chemistry"
+    },
+    {
+      "id": "Alkane Conversion",
+      "label": "Alkane Conversion",
+      "group": "chemistry"
+    },
+    {
+      "id": "H,Te",
+      "label": "H,Te",
+      "group": "chemistry"
+    },
+    {
+      "id": "Bond length",
+      "label": "Bond length",
+      "group": "chemistry"
+    },
+    {
+      "id": "lowest energy transitions",
+      "label": "lowest energy transitions",
+      "group": "chemistry"
+    },
+    {
+      "id": "Delivering oxygen to tissues",
+      "label": "Delivering oxygen to tissues",
+      "group": "chemistry"
+    },
+    {
+      "id": "Hydrogen bonding",
+      "label": "Hydrogen bonding",
+      "group": "chemistry"
+    },
+    {
+      "id": "E( F)",
+      "label": "E( F)",
+      "group": "chemistry"
+    },
+    {
+      "id": "Atomic Number",
+      "label": "Atomic Number",
+      "group": "chemistry"
+    },
+    {
+      "id": "Molecular solids",
+      "label": "Molecular solids",
+      "group": "chemistry"
+    },
+    {
+      "id": "Symmetry",
+      "label": "Symmetry",
+      "group": "chemistry"
+    },
+    {
+      "id": "Zn availability",
+      "label": "Zn availability",
+      "group": "chemistry"
+    },
+    {
+      "id": "Dorn",
+      "label": "Dorn",
+      "group": "chemistry"
+    },
+    {
+      "id": "Physical Chemistry",
+      "label": "Physical Chemistry",
+      "group": "chemistry"
+    },
+    {
+      "id": "X-rays",
+      "label": "X-rays",
+      "group": "chemistry"
+    },
+    {
+      "id": "Polymers",
+      "label": "Polymers",
+      "group": "chemistry"
+    },
+    {
+      "id": "Coal",
+      "label": "Coal",
+      "group": "chemistry"
+    },
+    {
+      "id": "Point within Hexagonal Close Packed Unit Cell",
+      "label": "Point within Hexagonal Close Packed Unit Cell",
+      "group": "chemistry"
+    },
+    {
+      "id": "silicon",
+      "label": "silicon",
+      "group": "chemistry"
+    },
+    {
+      "id": "Point Group C3v",
+      "label": "Point Group C3v",
+      "group": "chemistry"
+    },
+    {
+      "id": "C2",
+      "label": "C2",
+      "group": "chemistry"
+    },
+    {
+      "id": "nd6",
+      "label": "nd6",
+      "group": "chemistry"
+    },
+    {
+      "id": "Lithium and magnesium, beryllium and aluminum, and boron and silicon",
+      "label": "Lithium and magnesium, beryllium and aluminum, and boron and silicon",
+      "group": "chemistry"
+    },
+    {
+      "id": "Racah Parameter (B)",
+      "label": "Racah Parameter (B)",
+      "group": "chemistry"
+    },
+    {
+      "id": "XeF2",
+      "label": "XeF2",
+      "group": "chemistry"
+    },
+    {
+      "id": "Human Being Who Loves Inorganic Chemistry",
+      "label": "Human Being Who Loves Inorganic Chemistry",
+      "group": "chemistry"
+    },
+    {
+      "id": "equilibrium interionic distance",
+      "label": "equilibrium interionic distance",
+      "group": "chemistry"
+    },
+    {
+      "id": "Decamethylferrocene tetracyanoethenide (TCNE) compound",
+      "label": "Decamethylferrocene tetracyanoethenide (TCNE) compound",
+      "group": "chemistry"
+    },
+    {
+      "id": "Synthesis Gas",
+      "label": "Synthesis Gas",
+      "group": "chemistry"
+    },
+    {
+      "id": "Temperature (\u00b0C)",
+      "label": "Temperature (\u00b0C)",
+      "group": "chemistry"
+    },
+    {
+      "id": "nido-polyhedral cage",
+      "label": "nido-polyhedral cage",
+      "group": "chemistry"
+    },
+    {
+      "id": "Closo-Boranes",
+      "label": "Closo-Boranes",
+      "group": "chemistry"
+    },
+    {
+      "id": "Tetrel family (Group 14)",
+      "label": "Tetrel family (Group 14)",
+      "group": "chemistry"
+    },
+    {
+      "id": "Author",
+      "label": "Author",
+      "group": "chemistry"
+    },
+    {
+      "id": "[CH3CNXe]",
+      "label": "[CH3CNXe]",
+      "group": "chemistry"
+    },
+    {
+      "id": "Ligand properties",
+      "label": "Ligand properties",
+      "group": "chemistry"
+    },
+    {
+      "id": "Radon national environmental health problem",
+      "label": "Radon national environmental health problem",
+      "group": "chemistry"
+    },
+    {
+      "id": "NaCl",
+      "label": "NaCl",
+      "group": "chemistry"
+    },
+    {
+      "id": "Iron(II) ion formation",
+      "label": "Iron(II) ion formation",
+      "group": "chemistry"
+    },
+    {
+      "id": "F2",
+      "label": "F2",
+      "group": "chemistry"
+    },
+    {
+      "id": "Trigonal pyramidal structure",
+      "label": "Trigonal pyramidal structure",
+      "group": "chemistry"
+    },
+    {
+      "id": "carbon",
+      "label": "carbon",
+      "group": "chemistry"
+    },
+    {
+      "id": "Point Group",
+      "label": "Point Group",
+      "group": "chemistry"
+    },
+    {
+      "id": "4 \u00d0 10^-3",
+      "label": "4 \u00d0 10^-3",
+      "group": "chemistry"
+    },
+    {
+      "id": "the hydrogen bonding between H2O molecules",
+      "label": "the hydrogen bonding between H2O molecules",
+      "group": "chemistry"
+    },
+    {
+      "id": "Transition metals and nitrogen atoms",
+      "label": "Transition metals and nitrogen atoms",
+      "group": "chemistry"
+    },
+    {
+      "id": "Interstitial nitrides",
+      "label": "Interstitial nitrides",
+      "group": "chemistry"
+    },
+    {
+      "id": "Solvents",
+      "label": "Solvents",
+      "group": "chemistry"
+    },
+    {
+      "id": "E(1G)",
+      "label": "E(1G)",
+      "group": "chemistry"
+    },
+    {
+      "id": "Nido-Structures",
+      "label": "Nido-Structures",
+      "group": "chemistry"
+    },
+    {
+      "id": "Hard acids",
+      "label": "Hard acids",
+      "group": "chemistry"
+    },
+    {
+      "id": "Nature\u2019s use of elements",
+      "label": "Nature\u2019s use of elements",
+      "group": "chemistry"
+    },
+    {
+      "id": "Kapustinskii equation",
+      "label": "Kapustinskii equation",
+      "group": "chemistry"
+    },
+    {
+      "id": "Orbital angular momentum",
+      "label": "Orbital angular momentum",
+      "group": "chemistry"
+    },
+    {
+      "id": "Bases",
+      "label": "Bases",
+      "group": "chemistry"
+    },
+    {
+      "id": "Strong-field ligand properties",
+      "label": "Strong-field ligand properties",
+      "group": "chemistry"
+    },
+    {
+      "id": "Spin quantum number",
+      "label": "Spin quantum number",
+      "group": "chemistry"
+    },
+    {
+      "id": "Dissociative (D) mechanism",
+      "label": "Dissociative (D) mechanism",
+      "group": "chemistry"
+    },
+    {
+      "id": "G1",
+      "label": "G1",
+      "group": "chemistry"
+    },
+    {
+      "id": "Table 16.2 - Ammonia",
+      "label": "Table 16.2 - Ammonia",
+      "group": "chemistry"
+    },
+    {
+      "id": "nonmetal line",
+      "label": "nonmetal line",
+      "group": "chemistry"
+    },
+    {
+      "id": "72\u00b0C",
+      "label": "72\u00b0C",
+      "group": "chemistry"
+    },
+    {
+      "id": "Cluster Chemistry",
+      "label": "Cluster Chemistry",
+      "group": "chemistry"
+    },
+    {
+      "id": "Transition-Metal Storage, Transport, and Biomineralization",
+      "label": "Transition-Metal Storage, Transport, and Biomineralization",
+      "group": "chemistry"
+    },
+    {
+      "id": "Ammonia (NH3)",
+      "label": "Ammonia (NH3)",
+      "group": "chemistry"
+    },
+    {
+      "id": "Multiple bonds",
+      "label": "Multiple bonds",
+      "group": "chemistry"
+    },
+    {
+      "id": "use of s and p orbitals or d orbitals",
+      "label": "use of s and p orbitals or d orbitals",
+      "group": "chemistry"
+    },
+    {
+      "id": "XY plane",
+      "label": "XY plane",
+      "group": "chemistry"
+    },
+    {
+      "id": "Reduction Catalyst",
+      "label": "Reduction Catalyst",
+      "group": "chemistry"
+    },
+    {
+      "id": "C2'",
+      "label": "C2'",
+      "group": "chemistry"
+    },
+    {
+      "id": "Different biological zones",
+      "label": "Different biological zones",
+      "group": "chemistry"
+    },
+    {
+      "id": "experimental lattice enthalpies",
+      "label": "experimental lattice enthalpies",
+      "group": "chemistry"
+    },
+    {
+      "id": "Water (H2O)",
+      "label": "Water (H2O)",
+      "group": "chemistry"
+    },
+    {
+      "id": "Group Theory",
+      "label": "Group Theory",
+      "group": "chemistry"
+    },
+    {
+      "id": "oxides",
+      "label": "oxides",
+      "group": "chemistry"
+    },
+    {
+      "id": "Period",
+      "label": "Period",
+      "group": "chemistry"
+    },
+    {
+      "id": "Discipline",
+      "label": "Discipline",
+      "group": "chemistry"
+    },
+    {
+      "id": "Smokers",
+      "label": "Smokers",
+      "group": "chemistry"
+    },
+    {
+      "id": "amines/phosphines",
+      "label": "amines/phosphines",
+      "group": "chemistry"
+    },
+    {
+      "id": "Coordination Chemistry II - Bonding",
+      "label": "Coordination Chemistry II - Bonding",
+      "group": "chemistry"
+    },
+    {
+      "id": "Radon gas",
+      "label": "Radon gas",
+      "group": "chemistry"
+    },
+    {
+      "id": "12",
+      "label": "12",
+      "group": "chemistry"
+    },
+    {
+      "id": "Boron nitrides",
+      "label": "Boron nitrides",
+      "group": "chemistry"
+    },
+    {
+      "id": "Tethered nanoplates",
+      "label": "Tethered nanoplates",
+      "group": "chemistry"
+    },
+    {
+      "id": "Entropy Contributions to Standard Potentials",
+      "label": "Entropy Contributions to Standard Potentials",
+      "group": "chemistry"
+    },
+    {
+      "id": "Chemistry",
+      "label": "Chemistry",
+      "group": "chemistry"
+    },
+    {
+      "id": "Characteristics of the ML intermediate",
+      "label": "Characteristics of the ML intermediate",
+      "group": "chemistry"
+    },
+    {
+      "id": "Color of alum crystals",
+      "label": "Color of alum crystals",
+      "group": "chemistry"
+    },
+    {
+      "id": "Boiling Point",
+      "label": "Boiling Point",
+      "group": "chemistry"
+    },
+    {
+      "id": "Tethered nanospheres",
+      "label": "Tethered nanospheres",
+      "group": "chemistry"
+    },
+    {
+      "id": "Molecular Orbitals (MOs)",
+      "label": "Molecular Orbitals (MOs)",
+      "group": "chemistry"
+    },
+    {
+      "id": "Periodic trend",
+      "label": "Periodic trend",
+      "group": "chemistry"
+    },
+    {
+      "id": "Electron transfer is mediated by metal centers",
+      "label": "Electron transfer is mediated by metal centers",
+      "group": "chemistry"
+    },
+    {
+      "id": "Point Group Assignment",
+      "label": "Point Group Assignment",
+      "group": "chemistry"
+    },
+    {
+      "id": "B (Racah Parameter)",
+      "label": "B (Racah Parameter)",
+      "group": "chemistry"
+    },
+    {
+      "id": "Helium",
+      "label": "Helium",
+      "group": "chemistry"
+    },
+    {
+      "id": "Bond order",
+      "label": "Bond order",
+      "group": "chemistry"
+    },
+    {
+      "id": "RhH(CO)(PPh3)3",
+      "label": "RhH(CO)(PPh3)3",
+      "group": "chemistry"
+    },
+    {
+      "id": "Sets of X orbitals that can form s and p bonds with A in AX3",
+      "label": "Sets of X orbitals that can form s and p bonds with A in AX3",
+      "group": "chemistry"
+    },
+    {
+      "id": "nido-structure",
+      "label": "nido-structure",
+      "group": "chemistry"
+    },
+    {
+      "id": "Concentration of the original complex [ML;X]",
+      "label": "Concentration of the original complex [ML;X]",
+      "group": "chemistry"
+    },
+    {
+      "id": "SnH, 200\u00b0C",
+      "label": "SnH, 200\u00b0C",
+      "group": "chemistry"
+    },
+    {
+      "id": "E(1D)",
+      "label": "E(1D)",
+      "group": "chemistry"
+    },
+    {
+      "id": "Symmetry and Group Theory",
+      "label": "Symmetry and Group Theory",
+      "group": "chemistry"
+    },
+    {
+      "id": "experimental lattice enthalpies of d-metal oxides",
+      "label": "experimental lattice enthalpies of d-metal oxides",
+      "group": "chemistry"
+    },
+    {
+      "id": "NH3",
+      "label": "NH3",
+      "group": "chemistry"
+    },
+    {
+      "id": "MO diagram for all six ligands",
+      "label": "MO diagram for all six ligands",
+      "group": "chemistry"
+    },
+    {
+      "id": "Hexagonal Faces of the Unit Cell",
+      "label": "Hexagonal Faces of the Unit Cell",
+      "group": "chemistry"
+    },
+    {
+      "id": "lead",
+      "label": "lead",
+      "group": "chemistry"
+    },
+    {
+      "id": "Problem 9.21 Results",
+      "label": "Problem 9.21 Results",
+      "group": "chemistry"
+    },
+    {
+      "id": "HYDROGENATION CATALYSTS",
+      "label": "HYDROGENATION CATALYSTS",
+      "group": "chemistry"
+    },
+    {
+      "id": "Bridging carbonyl provides one electron",
+      "label": "Bridging carbonyl provides one electron",
+      "group": "chemistry"
+    },
+    {
+      "id": "calculus",
+      "label": "calculus",
+      "group": "chemistry"
+    },
+    {
+      "id": "Carbon Monoxide (CO)",
+      "label": "Carbon Monoxide (CO)",
+      "group": "chemistry"
+    },
+    {
+      "id": "Vector model",
+      "label": "Vector model",
+      "group": "chemistry"
+    },
+    {
+      "id": "theoretical predictions of lattice enthalpies",
+      "label": "theoretical predictions of lattice enthalpies",
+      "group": "chemistry"
+    },
+    {
+      "id": "Small-Group Activities",
+      "label": "Small-Group Activities",
+      "group": "chemistry"
+    },
+    {
+      "id": "Ground state energy",
+      "label": "Ground state energy",
+      "group": "chemistry"
+    },
+    {
+      "id": "halides",
+      "label": "halides",
+      "group": "chemistry"
+    },
+    {
+      "id": "contraction of electron cloud across a period",
+      "label": "contraction of electron cloud across a period",
+      "group": "chemistry"
+    },
+    {
+      "id": "Inorganic Chemistry",
+      "label": "Inorganic Chemistry",
+      "group": "chemistry"
+    },
+    {
+      "id": "Introductory Courses",
+      "label": "Introductory Courses",
+      "group": "chemistry"
+    },
+    {
+      "id": "Square planar complexes",
+      "label": "Square planar complexes",
+      "group": "chemistry"
+    },
+    {
+      "id": "Lewis acids",
+      "label": "Lewis acids",
+      "group": "chemistry"
+    },
+    {
+      "id": "Crystalline compound",
+      "label": "Crystalline compound",
+      "group": "chemistry"
+    },
+    {
+      "id": "Orbital type",
+      "label": "Orbital type",
+      "group": "chemistry"
+    },
+    {
+      "id": "Platinum, Rhodium, Palladium",
+      "label": "Platinum, Rhodium, Palladium",
+      "group": "chemistry"
+    },
+    {
+      "id": "Self-assembled nanostructures",
+      "label": "Self-assembled nanostructures",
+      "group": "chemistry"
+    },
+    {
+      "id": "Molecular inorganic magnetic materials",
+      "label": "Molecular inorganic magnetic materials",
+      "group": "chemistry"
+    },
+    {
+      "id": "Stabilizes protein structure",
+      "label": "Stabilizes protein structure",
+      "group": "chemistry"
+    },
+    {
+      "id": "C (Racah Parameter)",
+      "label": "C (Racah Parameter)",
+      "group": "chemistry"
+    },
+    {
+      "id": "Catalytic Converter",
+      "label": "Catalytic Converter",
+      "group": "chemistry"
+    },
+    {
+      "id": "t4g splitting in tetrahedral complexes",
+      "label": "t4g splitting in tetrahedral complexes",
+      "group": "chemistry"
+    },
+    {
+      "id": "E",
+      "label": "E",
+      "group": "chemistry"
+    },
+    {
+      "id": "Hydrocarbons (propane, C3H8)",
+      "label": "Hydrocarbons (propane, C3H8)",
+      "group": "chemistry"
+    },
+    {
+      "id": "The highest energy set is assigned to n4",
+      "label": "The highest energy set is assigned to n4",
+      "group": "chemistry"
+    },
+    {
+      "id": "Figure 11.6",
+      "label": "Figure 11.6",
+      "group": "chemistry"
+    },
+    {
+      "id": "Mediating biological processes with metal ions",
+      "label": "Mediating biological processes with metal ions",
+      "group": "chemistry"
+    },
+    {
+      "id": "Unburnt Hydrocarbons (HC)",
+      "label": "Unburnt Hydrocarbons (HC)",
+      "group": "chemistry"
+    },
+    {
+      "id": "Tanabe Sugano Diagrams",
+      "label": "Tanabe Sugano Diagrams",
+      "group": "chemistry"
+    },
+    {
+      "id": "Fuel Cell",
+      "label": "Fuel Cell",
+      "group": "chemistry"
+    },
+    {
+      "id": "C3 axis",
+      "label": "C3 axis",
+      "group": "chemistry"
+    },
+    {
+      "id": "Elements and Periodicity",
+      "label": "Elements and Periodicity",
+      "group": "chemistry"
+    },
+    {
+      "id": "Ferromagnetism and antiferromagnetism",
+      "label": "Ferromagnetism and antiferromagnetism",
+      "group": "chemistry"
+    },
+    {
+      "id": "Carbon-Steaming",
+      "label": "Carbon-Steaming",
+      "group": "chemistry"
+    },
+    {
+      "id": "E(1S)",
+      "label": "E(1S)",
+      "group": "chemistry"
+    },
+    {
+      "id": "Hydrogen Fluoride (HF)",
+      "label": "Hydrogen Fluoride (HF)",
+      "group": "chemistry"
+    },
+    {
+      "id": "Effective Nuclear Charge",
+      "label": "Effective Nuclear Charge",
+      "group": "chemistry"
+    },
+    {
+      "id": "Astringent properties",
+      "label": "Astringent properties",
+      "group": "chemistry"
+    },
+    {
+      "id": "External fluids (sea water)",
+      "label": "External fluids (sea water)",
+      "group": "chemistry"
+    },
+    {
+      "id": "t2g(M)",
+      "label": "t2g(M)",
+      "group": "chemistry"
+    },
+    {
+      "id": "C2 axis",
+      "label": "C2 axis",
+      "group": "chemistry"
+    },
+    {
+      "id": "lattice energy",
+      "label": "lattice energy",
+      "group": "chemistry"
+    },
+    {
+      "id": "Ligand-ligand repulsion",
+      "label": "Ligand-ligand repulsion",
+      "group": "chemistry"
+    },
+    {
+      "id": "\u0394Td",
+      "label": "\u0394Td",
+      "group": "chemistry"
+    },
+    {
+      "id": "Detailed Chapters",
+      "label": "Detailed Chapters",
+      "group": "chemistry"
+    },
+    {
+      "id": "Heat",
+      "label": "Heat",
+      "group": "chemistry"
+    },
+    {
+      "id": "Structures based on chains of alternating [M(\u03b75-Cp*)2] and TCNE ions",
+      "label": "Structures based on chains of alternating [M(\u03b75-Cp*)2] and TCNE ions",
+      "group": "chemistry"
+    },
+    {
+      "id": "One of four mirror planes",
+      "label": "One of four mirror planes",
+      "group": "chemistry"
+    },
+    {
+      "id": "low energy transitions",
+      "label": "low energy transitions",
+      "group": "chemistry"
+    },
+    {
+      "id": "Interference between waves",
+      "label": "Interference between waves",
+      "group": "chemistry"
+    },
+    {
+      "id": "Sweat gland closure",
+      "label": "Sweat gland closure",
+      "group": "chemistry"
+    },
+    {
+      "id": "n3",
+      "label": "n3",
+      "group": "chemistry"
+    },
+    {
+      "id": "[Cr(H2O)6]4-[V][SCN]^(+)-",
+      "label": "[Cr(H2O)6]4-[V][SCN]^(+)-",
+      "group": "chemistry"
+    },
+    {
+      "id": "[Cr(H2O)6]3*[Cr(H2O)6]4+-V][SCN]^+",
+      "label": "[Cr(H2O)6]3*[Cr(H2O)6]4+-V][SCN]^+",
+      "group": "chemistry"
+    },
+    {
+      "id": "Horizontal plane (sh)",
+      "label": "Horizontal plane (sh)",
+      "group": "chemistry"
+    },
+    {
+      "id": "Long-range interaction of electron spins",
+      "label": "Long-range interaction of electron spins",
+      "group": "chemistry"
+    },
+    {
+      "id": "L value",
+      "label": "L value",
+      "group": "chemistry"
+    },
+    {
+      "id": "Correlation Diagrams",
+      "label": "Correlation Diagrams",
+      "group": "chemistry"
+    },
+    {
+      "id": "The lowest energy set of transitions for the nd6 complexes",
+      "label": "The lowest energy set of transitions for the nd6 complexes",
+      "group": "chemistry"
+    },
+    {
+      "id": "[Ge9]4-",
+      "label": "[Ge9]4-",
+      "group": "chemistry"
+    },
+    {
+      "id": "Symmetries of orbitals that A must furnish to bond with X's",
+      "label": "Symmetries of orbitals that A must furnish to bond with X's",
+      "group": "chemistry"
+    },
+    {
+      "id": "p bonding (tA002: pz, E00: \u00f0dxz; dyz)",
+      "label": "p bonding (tA002: pz, E00: \u00f0dxz; dyz)",
+      "group": "chemistry"
+    },
+    {
+      "id": "Racah Parameters",
+      "label": "Racah Parameters",
+      "group": "chemistry"
+    },
+    {
+      "id": "Splitting Energy of Reducible Representation GR",
+      "label": "Splitting Energy of Reducible Representation GR",
+      "group": "chemistry"
+    },
+    {
+      "id": "Nitrogen (N) reaction with water",
+      "label": "Nitrogen (N) reaction with water",
+      "group": "chemistry"
+    },
+    {
+      "id": "Anhydrous mixture of potassium fluoride and hydrogen fluoride becomes molten",
+      "label": "Anhydrous mixture of potassium fluoride and hydrogen fluoride becomes molten",
+      "group": "chemistry"
+    },
+    {
+      "id": "Boron and silicon",
+      "label": "Boron and silicon",
+      "group": "chemistry"
+    },
+    {
+      "id": "10^17",
+      "label": "10^17",
+      "group": "chemistry"
+    },
+    {
+      "id": "Mixed Metal Platinum/Palladium Catalyst",
+      "label": "Mixed Metal Platinum/Palladium Catalyst",
+      "group": "chemistry"
+    },
+    {
+      "id": "Phase at Room Temperature",
+      "label": "Phase at Room Temperature",
+      "group": "chemistry"
+    },
+    {
+      "id": "atomization enthalpy",
+      "label": "atomization enthalpy",
+      "group": "chemistry"
+    },
+    {
+      "id": "Hot Steam",
+      "label": "Hot Steam",
+      "group": "chemistry"
+    },
+    {
+      "id": "Lord Rayleigh and William Ramsay",
+      "label": "Lord Rayleigh and William Ramsay",
+      "group": "chemistry"
+    },
+    {
+      "id": "Challenge of Inorganic Chemistry",
+      "label": "Challenge of Inorganic Chemistry",
+      "group": "chemistry"
+    },
+    {
+      "id": "[Cr(H2O)6]3+",
+      "label": "[Cr(H2O)6]3+",
+      "group": "chemistry"
+    },
+    {
+      "id": "Biochemistry majors",
+      "label": "Biochemistry majors",
+      "group": "chemistry"
+    },
+    {
+      "id": "Explanation of radon's daughters",
+      "label": "Explanation of radon's daughters",
+      "group": "chemistry"
+    },
+    {
+      "id": "Terminal CO in Co2(CO)8",
+      "label": "Terminal CO in Co2(CO)8",
+      "group": "chemistry"
+    },
+    {
+      "id": "Crystallography",
+      "label": "Crystallography",
+      "group": "chemistry"
+    },
+    {
+      "id": "Charge carriers",
+      "label": "Charge carriers",
+      "group": "chemistry"
+    },
+    {
+      "id": "Transition metal cations (e.g., NH4+)",
+      "label": "Transition metal cations (e.g., NH4+)",
+      "group": "chemistry"
+    },
+    {
+      "id": "ionization potential of the halogen",
+      "label": "ionization potential of the halogen",
+      "group": "chemistry"
+    },
+    {
+      "id": "Triblock nanobuilding blocks",
+      "label": "Triblock nanobuilding blocks",
+      "group": "chemistry"
+    },
+    {
+      "id": "Dissociative mechanism",
+      "label": "Dissociative mechanism",
+      "group": "chemistry"
+    },
+    {
+      "id": "Simple Bonding Theory",
+      "label": "Simple Bonding Theory",
+      "group": "chemistry"
+    },
+    {
+      "id": "Metals in Medicine",
+      "label": "Metals in Medicine",
+      "group": "chemistry"
+    },
+    {
+      "id": "Bonding and Structure",
+      "label": "Bonding and Structure",
+      "group": "chemistry"
+    },
+    {
+      "id": "Organometallic chemistry",
+      "label": "Organometallic chemistry",
+      "group": "chemistry"
+    },
+    {
+      "id": "Irreducible Representations",
+      "label": "Irreducible Representations",
+      "group": "chemistry"
+    },
+    {
+      "id": "eg orbital",
+      "label": "eg orbital",
+      "group": "chemistry"
+    },
+    {
+      "id": "Textbooks Typically Encountered",
+      "label": "Textbooks Typically Encountered",
+      "group": "chemistry"
+    },
+    {
+      "id": "RhCl(PPh3)3",
+      "label": "RhCl(PPh3)3",
+      "group": "chemistry"
+    },
+    {
+      "id": "Dioxygen Reactions",
+      "label": "Dioxygen Reactions",
+      "group": "chemistry"
+    },
+    {
+      "id": "tin",
+      "label": "tin",
+      "group": "chemistry"
+    },
+    {
+      "id": "Hexagonal Close-Packed Unit Cell",
+      "label": "Hexagonal Close-Packed Unit Cell",
+      "group": "chemistry"
+    },
+    {
+      "id": "4",
+      "label": "4",
+      "group": "chemistry"
+    },
+    {
+      "id": "Iron(III) Oxide Catalyst",
+      "label": "Iron(III) Oxide Catalyst",
+      "group": "chemistry"
+    },
+    {
+      "id": "Hydrogen fluoride",
+      "label": "Hydrogen fluoride",
+      "group": "chemistry"
+    },
+    {
+      "id": "New Period Started",
+      "label": "New Period Started",
+      "group": "chemistry"
+    },
+    {
+      "id": "Condition for A to be a main group element or transition metal",
+      "label": "Condition for A to be a main group element or transition metal",
+      "group": "chemistry"
+    },
+    {
+      "id": "[ML;Y] formation",
+      "label": "[ML;Y] formation",
+      "group": "chemistry"
+    },
+    {
+      "id": "[AsF6]",
+      "label": "[AsF6]",
+      "group": "chemistry"
+    },
+    {
+      "id": "Soft bases",
+      "label": "Soft bases",
+      "group": "chemistry"
+    },
+    {
+      "id": "Isolobal Fragments",
+      "label": "Isolobal Fragments",
+      "group": "chemistry"
+    },
+    {
+      "id": "Coordination Chemistry IV - Reactions and Mechanisms",
+      "label": "Coordination Chemistry IV - Reactions and Mechanisms",
+      "group": "chemistry"
+    },
+    {
+      "id": "Decamethylferrocene tetracyanoethenide (TCNE)",
+      "label": "Decamethylferrocene tetracyanoethenide (TCNE)",
+      "group": "chemistry"
+    },
+    {
+      "id": "Atomic Structure",
+      "label": "Atomic Structure",
+      "group": "chemistry"
+    },
+    {
+      "id": "Bond enthalpy",
+      "label": "Bond enthalpy",
+      "group": "chemistry"
+    },
+    {
+      "id": "Potassium fluoride",
+      "label": "Potassium fluoride",
+      "group": "chemistry"
+    },
+    {
+      "id": "Molecules of O2",
+      "label": "Molecules of O2",
+      "group": "chemistry"
+    },
+    {
+      "id": "Nitrogen Oxides (NOx)",
+      "label": "Nitrogen Oxides (NOx)",
+      "group": "chemistry"
+    },
+    {
+      "id": "P-P single bonds",
+      "label": "P-P single bonds",
+      "group": "chemistry"
+    },
+    {
+      "id": "[Cr(H2O)6]3+*",
+      "label": "[Cr(H2O)6]3+*",
+      "group": "chemistry"
+    },
+    {
+      "id": "Atomic Radii",
+      "label": "Atomic Radii",
+      "group": "chemistry"
+    },
+    {
+      "id": "Hard bases",
+      "label": "Hard bases",
+      "group": "chemistry"
+    },
+    {
+      "id": "Tethered nanocubes",
+      "label": "Tethered nanocubes",
+      "group": "chemistry"
+    },
+    {
+      "id": "10^-7",
+      "label": "10^-7",
+      "group": "chemistry"
+    },
+    {
+      "id": "Concentration of [ML;X]",
+      "label": "Concentration of [ML;X]",
+      "group": "chemistry"
+    },
+    {
+      "id": "Atomic Orbital (AO)",
+      "label": "Atomic Orbital (AO)",
+      "group": "chemistry"
+    },
+    {
+      "id": "Term Symbols",
+      "label": "Term Symbols",
+      "group": "chemistry"
+    },
+    {
+      "id": "n",
+      "label": "n",
+      "group": "chemistry"
+    },
+    {
+      "id": "4d-series elements",
+      "label": "4d-series elements",
+      "group": "chemistry"
+    },
+    {
+      "id": "Fig. 8.11",
+      "label": "Fig. 8.11",
+      "group": "chemistry"
+    },
+    {
+      "id": "Elevated Temperatures",
+      "label": "Elevated Temperatures",
+      "group": "chemistry"
+    },
+    {
+      "id": "Cytoplasm free ions",
+      "label": "Cytoplasm free ions",
+      "group": "chemistry"
+    },
+    {
+      "id": "ionization energy",
+      "label": "ionization energy",
+      "group": "chemistry"
+    },
+    {
+      "id": "Binding of nucleic acids to metals",
+      "label": "Binding of nucleic acids to metals",
+      "group": "chemistry"
+    },
+    {
+      "id": "Two nano-objects with a polymer tether",
+      "label": "Two nano-objects with a polymer tether",
+      "group": "chemistry"
+    },
+    {
+      "id": "Chemical Applications of Group Theory",
+      "label": "Chemical Applications of Group Theory",
+      "group": "chemistry"
+    },
+    {
+      "id": "Radon Isotope (Rn-220)",
+      "label": "Radon Isotope (Rn-220)",
+      "group": "chemistry"
+    },
+    {
+      "id": "[Cr(H2O)6]3+*[Cr(H2O)6]4+-V][SCN]^+",
+      "label": "[Cr(H2O)6]3+*[Cr(H2O)6]4+-V][SCN]^+",
+      "group": "chemistry"
+    },
+    {
+      "id": "Crystal",
+      "label": "Crystal",
+      "group": "chemistry"
+    },
+    {
+      "id": "[Ge9]2-",
+      "label": "[Ge9]2-",
+      "group": "chemistry"
+    },
+    {
+      "id": "Strong-field ligand properties (CN, CO)",
+      "label": "Strong-field ligand properties (CN, CO)",
+      "group": "chemistry"
+    },
+    {
+      "id": "Biological and Synthetic Dioxygen Carriers",
+      "label": "Biological and Synthetic Dioxygen Carriers",
+      "group": "chemistry"
+    },
+    {
+      "id": "Individual molecules, clusters, or linked chains of molecules",
+      "label": "Individual molecules, clusters, or linked chains of molecules",
+      "group": "chemistry"
+    },
+    {
+      "id": "The boiling points of the hydrides of the Group 4A, 5A, 6A, and 7A elements",
+      "label": "The boiling points of the hydrides of the Group 4A, 5A, 6A, and 7A elements",
+      "group": "chemistry"
+    },
+    {
+      "id": "Table 9.8",
+      "label": "Table 9.8",
+      "group": "chemistry"
+    },
+    {
+      "id": "Electron configuration",
+      "label": "Electron configuration",
+      "group": "chemistry"
+    },
+    {
+      "id": "Character Table of C3v Point Group",
+      "label": "Character Table of C3v Point Group",
+      "group": "chemistry"
+    },
+    {
+      "id": "Borazine",
+      "label": "Borazine",
+      "group": "chemistry"
+    },
+    {
+      "id": "Spin angular momentum",
+      "label": "Spin angular momentum",
+      "group": "chemistry"
+    },
+    {
+      "id": "Diesel Engine",
+      "label": "Diesel Engine",
+      "group": "chemistry"
+    },
+    {
+      "id": "Rutherford",
+      "label": "Rutherford",
+      "group": "chemistry"
+    },
+    {
+      "id": "Anhydrous mixture of potassium fluoride and hydrogen fluoride",
+      "label": "Anhydrous mixture of potassium fluoride and hydrogen fluoride",
+      "group": "chemistry"
+    },
+    {
+      "id": "Tetrahedral complexes",
+      "label": "Tetrahedral complexes",
+      "group": "chemistry"
+    },
+    {
+      "id": "Fe and Zn in biological zones",
+      "label": "Fe and Zn in biological zones",
+      "group": "chemistry"
+    }
+  ],
+  "links": [
+    {
+      "source": "Irreducible Representations",
+      "target": "Gs, At, G=",
+      "label": "are defined as"
+    },
+    {
+      "source": "Sets of X orbitals that can form s and p bonds with A in AX3",
+      "target": "Symmetries of orbitals that A must furnish to bond with X's",
+      "label": "are the same as"
+    },
+    {
+      "source": "Set of atomic orbitals on the central atom that are symmetry allowed for s and p bonding",
+      "target": "s bonding (A01: s; az2, E0: \u00f0px; py; \u00f0dxy; dx2 \u0192y2)",
+      "label": "includes"
+    },
+    {
+      "source": "Set of atomic orbitals on the central atom that are symmetry allowed for p bonding",
+      "target": "p bonding (tA002: pz, E00: \u00f0dxz; dyz)",
+      "label": "includes"
+    },
+    {
+      "source": "Condition for A to be a main group element or transition metal",
+      "target": "use of s and p orbitals or d orbitals",
+      "label": "affects the type of orbitals used"
+    },
+    {
+      "source": "Iron(II) ion formation",
+      "target": "Atomic Oxygen",
+      "label": "is measured by"
+    },
+    {
+      "source": "Atomic Oxygen",
+      "target": "Molecules of O2",
+      "label": "splits energy of"
+    },
+    {
+      "source": "Cotton, F. A.",
+      "target": "Chemical Applications of Group Theory",
+      "label": "applies Group Theory to"
+    },
+    {
+      "source": "Group Theory",
+      "target": "Symmetry Breaking in Chemistry",
+      "label": "is used by"
+    },
+    {
+      "source": "Symmetry Breaking in Chemistry",
+      "target": "Molecular Orbitals",
+      "label": "results in"
+    },
+    {
+      "source": "Molecular Orbitals",
+      "target": "Electronic Structure of Molecules",
+      "label": "describe"
+    },
+    {
+      "source": "Geometry of molecules",
+      "target": "Reactivity of molecules",
+      "label": "dictates intermolecular forces of attractions"
+    },
+    {
+      "source": "Reactivity of molecules",
+      "target": "Coordination chemistry between transition metals and ligands",
+      "label": "Leads to complex formation via various mechanisms"
+    },
+    {
+      "source": "Coordination chemistry",
+      "target": "Strong-field ligand properties (CN, CO)",
+      "label": "Correlates with cyanide or carbon monoxide poisoning"
+    },
+    {
+      "source": "Strong-field ligand properties",
+      "target": "Biochemistry majors",
+      "label": "Has a direct correlation with the reactivity of molecules"
+    },
+    {
+      "source": "Organometallic chemistry",
+      "target": "ACS accreditation for BS degree graduation",
+      "label": "Applies to catalysis and chemical synthesis"
+    },
+    {
+      "source": "Electron Pair Bonds",
+      "target": "Cage Atom",
+      "label": "Form bonds with borons using 2c-2e electron pair bonds."
+    },
+    {
+      "source": "Atomic Orbital (AO)",
+      "target": "Molecular Orbitals (MOs)",
+      "label": "Involves atomic orbitals in bonding."
+    },
+    {
+      "source": "Cluster Chemistry",
+      "target": "Isolobal Fragments",
+      "label": "Explores the chemistry of clusters like [B6H6]."
+    },
+    {
+      "source": "Closo-Boranes",
+      "target": "[B6H6]",
+      "label": "Has closo-borane structures with formula [BnHn]2-."
+    },
+    {
+      "source": "Nido-Structures",
+      "target": "[B6H6]",
+      "label": "Includes nido-structures of anionic [B6H6]."
+    },
+    {
+      "source": "Triel family (Group 13)",
+      "target": "[Ge9]4-",
+      "label": "can adopt nido-structure with certain anions"
+    },
+    {
+      "source": "Tetrel family (Group 14)",
+      "target": "Trigonal prismatic structure",
+      "label": "can exhibit closo, nido, and arachno structures"
+    },
+    {
+      "source": "Pnictogen family (Group 15)",
+      "target": "[Ge9]2-",
+      "label": "can split energy of certain clusters with different charges"
+    },
+    {
+      "source": "Trigonal pyramidal structure",
+      "target": "nido-structure",
+      "label": "is stabilized by certain anions in Trel and Tetrel families"
+    },
+    {
+      "source": "Arachno structure",
+      "target": "[Ge9]4-",
+      "label": "is related to the splitting of energy in Pnictogen family clusters"
+    },
+    {
+      "source": "C2",
+      "target": "3",
+      "label": "is measured by"
+    },
+    {
+      "source": "C32",
+      "target": "4",
+      "label": "splits energy of"
+    },
+    {
+      "source": "3",
+      "target": "C2'",
+      "label": "stabilizes"
+    },
+    {
+      "source": "4",
+      "target": "3",
+      "label": "is measured by"
+    },
+    {
+      "source": "C2'",
+      "target": "2",
+      "label": "is related to"
+    },
+    {
+      "source": "CO",
+      "target": "IOACTIVE CO IS INSERTED",
+      "label": "is inserted"
+    },
+    {
+      "source": "amines/phosphines",
+      "target": "CO",
+      "label": "can cause the migration of CO"
+    },
+    {
+      "source": "RhCl(PPh3)3",
+      "target": "HYDROGENATION CATALYSTS",
+      "label": "can add H2 by oxidative addition"
+    },
+    {
+      "source": "RhH(CO)(PPh3)3",
+      "target": "HYDROGENATION CATALYSTS",
+      "label": "does not add H2 but allows for a later step in the catalytic process"
+    },
+    {
+      "source": "Solvent molecules (S)",
+      "target": "Solvents",
+      "label": "form higher coordinated solvated species by complexation with the lower coordinated soluto-complexes"
+    },
+    {
+      "source": "Ligands (PPh3)",
+      "target": "Wilkinson\u2019s catalyst",
+      "label": "stabilize Wilkinson\u2019s catalyst"
+    },
+    {
+      "source": "Olefin",
+      "target": "Alkane",
+      "label": "is converted to an alkane by hydrogenation catalysis"
+    },
+    {
+      "source": "Hydrogenation catalysts (e.g. RhCl(PPh3)3, RuHCl(PPh3)3)",
+      "target": "Alkane Conversion",
+      "label": "are used for conversion of olefin to alkane"
+    },
+    {
+      "source": "Ansitions",
+      "target": "t2g(M)",
+      "label": "should not be present in the low-spin nd6 complexes"
+    },
+    {
+      "source": "ionization potential of the halogen",
+      "target": "lowest energy transitions",
+      "label": "increase in energy should"
+    },
+    {
+      "source": "The lowest energy set of transitions for the nd6 complexes",
+      "target": "nd6",
+      "label": "assigned to n2"
+    },
+    {
+      "source": "The highest energy set is assigned to n4",
+      "target": "n3",
+      "label": "present in the nd6 complexes, which would rule out n3"
+    },
+    {
+      "source": "MO diagram for all six ligands",
+      "target": "Fig. 8.11",
+      "label": "is more complex than"
+    },
+    {
+      "source": "Charge tr",
+      "target": "low energy transitions",
+      "label": "involves an electron in a metal-based orbital making a transition to a low lying, vacant ligand-based orbital"
+    },
+    {
+      "source": "Term Symbols",
+      "target": "Hund's rule",
+      "label": "are used to identify the states of an atom or molecule"
+    },
+    {
+      "source": "Orbital angular momentum",
+      "target": "Spin angular momentum",
+      "label": "is affected by the presence of other electrons (electron-electron correlation)"
+    },
+    {
+      "source": "Term Symbols",
+      "target": "Vector model",
+      "label": "are used to designate each state"
+    },
+    {
+      "source": "Hund's rule",
+      "target": "Orbital angular momentum and spin angular momentum",
+      "label": "selects the lowest energy state (ground state) based on term symbols"
+    },
+    {
+      "source": "closo-polyhedral cage",
+      "target": "nido-polyhedral cage",
+      "label": "has a similar structure to"
+    },
+    {
+      "source": "arachno-polyhedral cage",
+      "target": "nido-polyhedral cage",
+      "label": "is structurally similar to"
+    },
+    {
+      "source": "closo-polyhedral cage",
+      "target": "arachno-polyhedral cage",
+      "label": "shares structural characteristics with"
+    },
+    {
+      "source": "Point Group Assignment",
+      "target": "C3 axis",
+      "label": "taken as the main symmetry element"
+    },
+    {
+      "source": "C2 axis",
+      "target": "E",
+      "label": "generates only one unique operation"
+    },
+    {
+      "source": "C3 axis",
+      "target": "Four symmetry elements",
+      "label": "defines the intersection of mirror planes"
+    },
+    {
+      "source": "Horizontal plane (sh)",
+      "target": "One of four mirror planes",
+      "label": "perpendicular to the C3 axis"
+    },
+    {
+      "source": "Tetrahedral complexes",
+      "target": "\u0394Td",
+      "label": "split energy of d orbitals into t2g and eg"
+    },
+    {
+      "source": "t2g orbital",
+      "target": "\u0394Td",
+      "label": "destabilized by 2/5DTd"
+    },
+    {
+      "source": "eg orbital",
+      "target": "\u0394Td",
+      "label": "stabilized by 3/5DTd"
+    },
+    {
+      "source": "Square planar complexes",
+      "target": "t4g splitting in tetrahedral complexes",
+      "label": "result from distortion of octahedral complex"
+    },
+    {
+      "source": "Ligand-ligand repulsion",
+      "target": "Square planar complexes",
+      "label": "reduces energy of d orbitals"
+    },
+    {
+      "source": "XY plane",
+      "target": "dxy, dxz, dyz orbitals",
+      "label": "move closer to modify energy of d orbitals"
+    },
+    {
+      "source": "DZ2 orbital",
+      "target": "Square planar complexes",
+      "label": "falls below dxz and dyz orbitals in some complexes"
+    },
+    {
+      "source": "Point Group",
+      "target": "Reducible Representation GR",
+      "label": "contains three irreducible representations: G1, G2, and G3"
+    },
+    {
+      "source": "G1",
+      "target": "Character Table of C3v Point Group",
+      "label": "has the same character table as point group C3v"
+    },
+    {
+      "source": "Point Group C3v",
+      "target": "Reducibility of Point Group C3v",
+      "label": "is a reducible representation with 5 characters in its character table"
+    },
+    {
+      "source": "G1",
+      "target": "Splitting Energy of Reducible Representation GR",
+      "label": "splits energy of reducible representation GR into two separate irreducible representations: G1 and another one"
+    },
+    {
+      "source": "Character Table of C3v Point Group",
+      "target": "G1 Irreducible Representation",
+      "label": "lists the characters of the point group's irreducible representations, including G1, G2, and G3"
+    },
+    {
+      "source": "Mn2(CO)10 structure",
+      "target": "Fig. 10.6",
+      "label": "features two octahedra sharing a vertex"
+    },
+    {
+      "source": "Co2(CO)8 structure",
+      "target": "Fig. 10.7",
+      "label": "has two observed structures A and B"
+    },
+    {
+      "source": "Bridging carbonyl in Co2(CO)8",
+      "target": "Terminal CO donates two electrons",
+      "label": "provides one electron to each metal"
+    },
+    {
+      "source": "Terminal CO in Co2(CO)8",
+      "target": "Bridging carbonyl provides one electron",
+      "label": "is a formal two-electron donor"
+    },
+    {
+      "source": "Atomic Structure",
+      "target": "Molecular Orbitals",
+      "label": "is measured by"
+    },
+    {
+      "source": "Simple Bonding Theory",
+      "target": "Symmetry and Group Theory",
+      "label": "leads to"
+    },
+    {
+      "source": "Coordination Chemistry I - Structure and Isomers",
+      "target": "Coordination Chemistry II - Bonding",
+      "label": "relates to"
+    },
+    {
+      "source": "Organometallic Reactions and Catalysis",
+      "target": "Coordination Chemistry IV - Reactions and Mechanisms",
+      "label": "builds upon"
+    },
+    {
+      "source": "Main Group Elements",
+      "target": "Organometallic Chemistry",
+      "label": "shares parallels with"
+    },
+    {
+      "source": "Biomineralization",
+      "target": "Transition-Metal Storage, Transport, and Biomineralization",
+      "label": "involves the formation of minerals in living organisms."
+    },
+    {
+      "source": "Stabilizes protein structure",
+      "target": "The Reaction Pathways of Zinc Enzymes and Related Biological Catalysts",
+      "label": "biological catalysts rely on metal centers to stabilize their activity."
+    },
+    {
+      "source": "Transport of calcium ions",
+      "target": "Calcium in Biological Systems",
+      "label": "calcium plays a crucial role in cellular signaling."
+    },
+    {
+      "source": "Delivering oxygen to tissues",
+      "target": "Biological and Synthetic Dioxygen Carriers",
+      "label": "dioxygen carriers facilitate the transport of oxygen in the body."
+    },
+    {
+      "source": "Transfer of electrons",
+      "target": "Dioxygen Reactions",
+      "label": "electron transfer reactions are essential for biological energy transformations."
+    },
+    {
+      "source": "Electron transfer is mediated by metal centers",
+      "target": "Ferrodoxins, Hydrogenases, and Nitrogenases - Metal-Sulfide Proteins",
+      "label": "ferrodoxins, hydrogenases, and nitrogenases rely on electron transfer to function."
+    },
+    {
+      "source": "Binding of nucleic acids to metals",
+      "target": "Metal/Nucleic Acid Interactions",
+      "label": "metal ions can bind to DNA or RNA, influencing gene expression."
+    },
+    {
+      "source": "Mediating biological processes with metal ions",
+      "target": "Metals in Medicine",
+      "label": "metals in medicine have various applications including diagnostic and therapeutic uses."
+    },
+    {
+      "source": "Group 6A",
+      "target": "H,Te",
+      "label": "contains element Te"
+    },
+    {
+      "source": "Group 7A",
+      "target": "H,Te",
+      "label": "contains element H"
+    },
+    {
+      "source": "Group 5A",
+      "target": "SnH",
+      "label": "contains element SbH"
+    },
+    {
+      "source": "Boiling point (\u00b0C)",
+      "target": "SnH, 200\u00b0C",
+      "label": "measures boiling temperature of"
+    },
+    {
+      "source": "Period",
+      "target": "Group 4A",
+      "label": "includes elements in Group 4A and 5A"
+    },
+    {
+      "source": "Figure 11.6",
+      "target": "The boiling points of the hydrides of the Group 4A, 5A, 6A, and 7A elements",
+      "label": "displays data on boiling points of hydrides"
+    },
+    {
+      "source": "Hydrogen Fluoride (HF)",
+      "target": "the electronegative effect of F on H-F bonds",
+      "label": "has elevated boiling point due to"
+    },
+    {
+      "source": "Water (H2O)",
+      "target": "the hydrogen bonding between H2O molecules",
+      "label": "has elevated boiling point due to"
+    },
+    {
+      "source": "Ammonia (NH3)",
+      "target": "the hydrogen bonding between NH3 molecules",
+      "label": "has elevated boiling point due to"
+    },
+    {
+      "source": "Hexagonal Close-Packed Unit Cell",
+      "target": "Coordination Number",
+      "label": "contains"
+    },
+    {
+      "source": "Coordination Number",
+      "target": "12",
+      "label": "equals to"
+    },
+    {
+      "source": "Point within Hexagonal Close Packed Unit Cell",
+      "target": "Unit Cells 1 and 4",
+      "label": "is located in"
+    },
+    {
+      "source": "Point within Hexagonal Close Packed Unit Cell",
+      "target": "Hexagonal Faces of the Unit Cell",
+      "label": "is located in"
+    },
+    {
+      "source": "Coordination Number",
+      "target": "Energy of the System",
+      "label": "stabilizes"
+    },
+    {
+      "source": "Radon Isotope (Rn-220)",
+      "target": "Rutherford",
+      "label": "is found by"
+    },
+    {
+      "source": "Radon Isotope (Rn-222)",
+      "target": "Dorn",
+      "label": "is found by"
+    },
+    {
+      "source": "Argon",
+      "target": "Lord Rayleigh and William Ramsay",
+      "label": "is isolated by and formally named by"
+    },
+    {
+      "source": "Helium",
+      "target": "Ramsay (from uranium mineral)",
+      "label": "is first observed in the solar spectrum and later isolated from"
+    },
+    {
+      "source": "Krypton, Neon, Xenon",
+      "target": "Ramsay and Travers",
+      "label": "are obtained by fractionation of liquid air"
+    },
+    {
+      "source": "Effective Nuclear Charge",
+      "target": "Noble Gases (Helium, Argon, Krypton, Neon, Xenon)",
+      "label": "explains the properties of Noble Gases"
+    },
+    {
+      "source": "Nitrogen (N) reaction with water",
+      "target": "NH3",
+      "label": "donates electrons to form a Bronsted-Lowry base"
+    },
+    {
+      "source": "Boron nitrides",
+      "target": "Borazine",
+      "label": "consists of pu-pt B=N bonds"
+    },
+    {
+      "source": "Borazine",
+      "target": "Valence-bond concepts",
+      "label": "can be described using two resonance structures"
+    },
+    {
+      "source": "Transition metals and nitrogen atoms",
+      "target": "Interstitial nitrides",
+      "label": "form nonstoichiometric nitrides by occupying holes in metal lattices"
+    },
+    {
+      "source": "Phosphorus (P) reaction with water",
+      "target": "Table 16.2 - Ammonia",
+      "label": "indicated in phosphazenes"
+    },
+    {
+      "source": "Inorganic Chemistry",
+      "target": "Chemistry",
+      "label": "subdiscipline of"
+    },
+    {
+      "source": "Sophomore Student Audience",
+      "target": "Book",
+      "label": "designed for"
+    },
+    {
+      "source": "Human Being Who Loves Inorganic Chemistry",
+      "target": "Author",
+      "label": "is"
+    },
+    {
+      "source": "Challenge of Inorganic Chemistry",
+      "target": "Discipline",
+      "label": "called"
+    },
+    {
+      "source": "Physical and Chemical Explanations",
+      "target": "Detailed Chapters",
+      "label": "includes"
+    },
+    {
+      "source": "Textbooks Typically Encountered",
+      "target": "Introductory Courses",
+      "label": "typically encountered in"
+    },
+    {
+      "source": "Late-Night Study Groups",
+      "target": "Small-Group Activities",
+      "label": "involves"
+    },
+    {
+      "source": "Atomic Radius",
+      "target": "Atomic Number",
+      "label": "<"
+    },
+    {
+      "source": "Atomic Radius",
+      "target": "Electronegativity",
+      "label": "decreases from left to right"
+    },
+    {
+      "source": "Electronic Configuration",
+      "target": "Atomic Radius",
+      "label": "fills in the p-orbital"
+    },
+    {
+      "source": "Atomic Mass",
+      "target": "Atomic Number",
+      "label": "<"
+    },
+    {
+      "source": "Reactivity",
+      "target": "Electronegativity",
+      "label": "increases down group"
+    },
+    {
+      "source": "Stability of Compounds",
+      "target": "Atomic Radius",
+      "label": "generally unstable"
+    },
+    {
+      "source": "Physical State at Room Temperature",
+      "target": "Reactivity",
+      "label": "all except chlorine are gases"
+    },
+    {
+      "source": "Boiling Point",
+      "target": "Atomic Mass",
+      "label": "increases down group"
+    },
+    {
+      "source": "Melting Point",
+      "target": "Boiling Point",
+      "label": "<"
+    },
+    {
+      "source": "Phase at Room Temperature",
+      "target": "Reactivity",
+      "label": "all except bromine are solids"
+    },
+    {
+      "source": "Dissociative mechanism",
+      "target": "Breaking of the M-X bond",
+      "label": "provides the rate-determining step for the substitution of one ligand for another in an octahedral complex"
+    },
+    {
+      "source": "Concentration of the original complex [ML;X]",
+      "target": "Rate-determining step",
+      "label": "determines the rate of the reaction"
+    },
+    {
+      "source": "M-X bond breaking to form ML intermediate",
+      "target": "Rate-determining step",
+      "label": "is crucial for the rate-determining step"
+    },
+    {
+      "source": "Concentration of [ML;X]",
+      "target": "[ML;Y] formation",
+      "label": "is necessary for the reaction to proceed"
+    },
+    {
+      "source": "Formation of ML.Y from ML and Y",
+      "target": "Completion of the mechanism",
+      "label": "completes the substitution reaction"
+    },
+    {
+      "source": "Dissociative (D) mechanism",
+      "target": "Characteristics of the ML intermediate",
+      "label": "describes a five-coordinate intermediate formed during the reaction"
+    },
+    {
+      "source": "Concentration of [ML;X]",
+      "target": "[ML.Y] formation",
+      "label": "affects the rate of the reaction"
+    },
+    {
+      "source": "ionic crystal",
+      "target": "lattice energy",
+      "label": "stabilizes energy of"
+    },
+    {
+      "source": "lattice energy",
+      "target": "equilibrium interionic distance",
+      "label": "is measured by"
+    },
+    {
+      "source": "lattice energy",
+      "target": "equilibrium interionic distance",
+      "label": "can be minimized at"
+    },
+    {
+      "source": "equilibrium interionic distance",
+      "target": "lattice energy",
+      "label": "results in lattice energy"
+    },
+    {
+      "source": "calculus",
+      "target": "derivative of a function equals zero",
+      "label": "explains concept of minimum"
+    },
+    {
+      "source": "NaCl",
+      "target": "ionic crystal",
+      "label": "is an example of"
+    },
+    {
+      "source": "Synthesis Gas",
+      "target": "Hydrocarbons (propane, C3H8)",
+      "label": "produced from"
+    },
+    {
+      "source": "Water-Gas Shift Reaction",
+      "target": "Elevated Temperatures",
+      "label": "carried out at"
+    },
+    {
+      "source": "Iron(III) Oxide Catalyst",
+      "target": "Water-Gas Shift Reaction",
+      "label": "used for"
+    },
+    {
+      "source": "Carbon-Steaming",
+      "target": "Synthesis Gas",
+      "label": "produced in"
+    },
+    {
+      "source": "Coal",
+      "target": "Hot Steam",
+      "label": "reacted with"
+    },
+    {
+      "source": "Steam",
+      "target": "700\u00b0C \u2014 1000\u00b0C",
+      "label": "heated to"
+    },
+    {
+      "source": "Heat",
+      "target": "Temperature (\u00b0C)",
+      "label": "measured by"
+    },
+    {
+      "source": "Coordination Chemistry",
+      "target": "[IrCl6]^-",
+      "label": "describes mechanism of"
+    },
+    {
+      "source": "[Cr(H2O)6]3+*",
+      "target": "[Co(NH3)5SCN]^+",
+      "label": "reacts with"
+    },
+    {
+      "source": "[Cr(H2O)6]3+",
+      "target": "[Co(NH3)5SCN]^+",
+      "label": "donates electrons to"
+    },
+    {
+      "source": "[IrCl6]^-",
+      "target": "[Co(NH3)5SCN]^+",
+      "label": "accepts electrons from"
+    },
+    {
+      "source": "[Cr(H2O)6]3+",
+      "target": "[Cr(H2O)6]3+*[Cr(H2O)6]4+-V][SCN]^+",
+      "label": "forms pentaaqua-V-thiocyanatochromium(II)"
+    },
+    {
+      "source": "[Co(NH3)5SCN]^+",
+      "target": "[Cr(H2O)6]3*[Cr(H2O)6]4+-V][SCN]^+",
+      "label": "can form S-linked isomer of [Cr(H2O)6]3+[Cr(H2O)6]4+-V]"
+    },
+    {
+      "source": "[Cr(H2O)6]4-[V][SCN]^(+)-",
+      "target": "[Cr(H2O)6]3*[Cr(H2O)6]4+-V][SCN]^+",
+      "label": "can be formed from S-linked isomer of [Co(NH3)5SCN]^+"
+    },
+    {
+      "source": "nonmetal line",
+      "target": "carbon",
+      "label": "runs through the heart of the group"
+    },
+    {
+      "source": "carbon",
+      "target": "lead",
+      "label": "is a bona fide nonmetal"
+    },
+    {
+      "source": "lead",
+      "target": "tin",
+      "label": "is a bona fide metal"
+    },
+    {
+      "source": "silicon",
+      "target": "carbon",
+      "label": "is similar to boron"
+    },
+    {
+      "source": "carbon",
+      "target": "phosphorus",
+      "label": "is not similar to phosphorus"
+    },
+    {
+      "source": "standard reduction potentials",
+      "target": "halides",
+      "label": "reinforces the importance of +2 oxidation state"
+    },
+    {
+      "source": "+2 oxidation state",
+      "target": "oxides",
+      "label": "increases in importance down the group"
+    },
+    {
+      "source": "Radon gas",
+      "target": "Basement of a house",
+      "label": "tends to collect due to lower density than surrounding air"
+    },
+    {
+      "source": "Alpha decay",
+      "target": "Polonium-218",
+      "label": "results in the emission of an alpha particle (helium nucleus) from radon-218"
+    },
+    {
+      "source": "Smokers",
+      "target": "Increased risk for radon-related hazards",
+      "label": "expose themselves to higher levels of radon gas due to lung damage and impaired gas exchange"
+    },
+    {
+      "source": "Inorganic chemistry course",
+      "target": "Radon national environmental health problem",
+      "label": "introduces the concept of radon as a key component in discussions of environmental health"
+    },
+    {
+      "source": "Aunt Emily",
+      "target": "Explanation of radon's daughters",
+      "label": "is intrigued by the term 'daughters of radon' and seeks clarification on its meaning"
+    },
+    {
+      "source": "Aluminum ion (Al3+)",
+      "target": "Astringent properties",
+      "label": "is a hydrated cation that closes sweat gland openings by altering hydrogen bonding among protein molecules"
+    },
+    {
+      "source": "Hydrogen bonding",
+      "target": "Sweat gland closure",
+      "label": "is altered by aluminum ions in alums"
+    },
+    {
+      "source": "Aluminum compounds",
+      "target": "Antiperspirant deodorants",
+      "label": "utilize the astringent property to close sweat gland openings"
+    },
+    {
+      "source": "Transition metal cations (e.g., NH4+)",
+      "target": "Color of alum crystals",
+      "label": "can partially substitute for aluminum in alums"
+    },
+    {
+      "source": "Inert-PAIR EFFECT",
+      "target": "Lithium and magnesium, beryllium and aluminum, and boron and silicon",
+      "label": "causes similar properties in"
+    },
+    {
+      "source": "Lithium and magnesium",
+      "target": "boron and silicon",
+      "label": "are diagonally located and share similar electronic configurations"
+    },
+    {
+      "source": "Boron and silicon",
+      "target": "Lithium and magnesium",
+      "label": "are diagonally located and share similar electronic configurations"
+    },
+    {
+      "source": "Atomic Radii",
+      "target": "contraction of electron cloud across a period",
+      "label": "increases as the positive effective nuclear charge in the center increases"
+    },
+    {
+      "source": "Effective Nuclear Charge",
+      "target": "Atomic Radii",
+      "label": "causes contraction of electron cloud across a period"
+    },
+    {
+      "source": "Slater\u2019s Rules",
+      "target": "Problem 9.21 Results",
+      "label": "calculates effective nuclear charge across a period"
+    },
+    {
+      "source": "New Period Started",
+      "target": "Atomic Radii",
+      "label": "returns to still larger atomic radius value due to increased effective nuclear charge"
+    },
+    {
+      "source": "Hard acids",
+      "target": "Bases",
+      "label": "form and stabilize hard acid-base complexes."
+    },
+    {
+      "source": "Soft acids",
+      "target": "Bases",
+      "label": "break and stabilize soft acid-base complexes."
+    },
+    {
+      "source": "Lewis acids",
+      "target": "Lewis bases",
+      "label": "donate electron pairs to accept a Lewis base."
+    },
+    {
+      "source": "Hard acids",
+      "target": "Anions",
+      "label": "form and break hard acid-anion complexes."
+    },
+    {
+      "source": "Soft acids",
+      "target": "Anions",
+      "label": "form and break soft acid-anion complexes."
+    },
+    {
+      "source": "Lewis acids",
+      "target": "Molecules",
+      "label": "split energy of molecules by accepting a Lewis base."
+    },
+    {
+      "source": "Hard bases",
+      "target": "Hard acids",
+      "label": "neutralize hard acids and form hard acid-base complexes."
+    },
+    {
+      "source": "Soft bases",
+      "target": "Soft acids",
+      "label": "neutralize soft acids and form soft acid-base complexes."
+    },
+    {
+      "source": "Lewis bases",
+      "target": "Lewis acids",
+      "label": "accept electron pairs donated by Lewis acids."
+    },
+    {
+      "source": "Molecules",
+      "target": "Vibrations",
+      "label": "vibrate due to the interaction of their constituent atoms."
+    },
+    {
+      "source": "Symmetry",
+      "target": "Molecular vibrations",
+      "label": "is used to classify molecular vibrations."
+    },
+    {
+      "source": "Nitrogen Oxides (NOx)",
+      "target": "Reduction Catalyst",
+      "label": "can be reduced by"
+    },
+    {
+      "source": "Reduction Catalyst",
+      "target": "Rhodium",
+      "label": "is composed of platinum and rhodium"
+    },
+    {
+      "source": "Rhodium",
+      "target": "Nitrogen Oxides (NOx)",
+      "label": "is highly reactive towards NOx"
+    },
+    {
+      "source": "Unburnt Hydrocarbons (HC)",
+      "target": "Mixed Metal Platinum/Palladium Catalyst",
+      "label": "can be oxidized by"
+    },
+    {
+      "source": "Carbon Monoxide (CO)",
+      "target": "Mixed Metal Platinum/Palladium Catalyst",
+      "label": "can be oxidized by"
+    },
+    {
+      "source": "Mixed Metal Platinum/Palladium Catalyst",
+      "target": "Diesel Engine",
+      "label": "is used in conjunction with most diesel engines to only perform oxidation reactions"
+    },
+    {
+      "source": "Euro V Emission Standards",
+      "target": "Catalytic Converter",
+      "label": "demand limits of 0.50 (CO), 0.23 (NOx/HC) and 0.18 (HC) g km^-1 in exhaust gases"
+    },
+    {
+      "source": "Catalytic Converter",
+      "target": "Platinum, Rhodium, Palladium",
+      "label": "consists of a honeycomb stainless steel or ceramic structure with deposited silica, alumina, platinum, rhodium and palladium"
+    },
+    {
+      "source": "Zn availability",
+      "target": "Nature\u2019s use of elements",
+      "label": "is measured by"
+    },
+    {
+      "source": "Fe and Zn in biological zones",
+      "target": "Different biological zones",
+      "label": "part of"
+    },
+    {
+      "source": "Zn role in animals",
+      "target": "Animals biology",
+      "label": "no direct evidence"
+    },
+    {
+      "source": "Cytoplasm free ions",
+      "target": "Free ions in cytoplasm",
+      "label": "contains"
+    },
+    {
+      "source": "Zn availability",
+      "target": "External fluids (sea water)",
+      "label": "is measured by"
+    },
+    {
+      "source": "Cytoplasm free ions",
+      "target": "Blood plasma free ions",
+      "label": "contains"
+    },
+    {
+      "source": "Tethered nanospheres",
+      "target": "Self-assembled nanostructures",
+      "label": "is measured by"
+    },
+    {
+      "source": "Density of states",
+      "target": "Charge carriers",
+      "label": "stabilizes"
+    },
+    {
+      "source": "Tethered nanorods",
+      "target": "Self-assembled nanostructures",
+      "label": "is measured by"
+    },
+    {
+      "source": "Tethered nanoplates",
+      "target": "Charge carriers",
+      "label": "stabilizes"
+    },
+    {
+      "source": "Tethered nanowheels",
+      "target": "Self-assembled nanostructures",
+      "label": "is measured by"
+    },
+    {
+      "source": "Tethered nanocubes",
+      "target": "Charge carriers",
+      "label": "stabilizes"
+    },
+    {
+      "source": "Triblock nanobuilding blocks",
+      "target": "Two nano-objects with a polymer tether",
+      "label": "is composed of"
+    },
+    {
+      "source": "Orbital type",
+      "target": "Spin quantum number",
+      "label": "determines spin multiplicity"
+    },
+    {
+      "source": "Spin quantum number",
+      "target": "Multiplicity",
+      "label": "ranges from 0 to L + 1"
+    },
+    {
+      "source": "Electron configuration",
+      "target": "Quartet term",
+      "label": "gives ML values that must be different for parallel electrons"
+    },
+    {
+      "source": "ML values for parallel electrons",
+      "target": "Term with L and S",
+      "label": "must add up to L + S + 1"
+    },
+    {
+      "source": "L value",
+      "target": "Term name",
+      "label": "determines term type (e.g., F, D, P)"
+    },
+    {
+      "source": "Ground state energy",
+      "target": "Higher L value terms",
+      "label": "is stabilized by term with lower L value"
+    },
+    {
+      "source": "Cell Potential",
+      "target": "Standard Potentials of Redox Couples",
+      "label": "is measured by"
+    },
+    {
+      "source": "Redox Couples",
+      "target": "Entropy Contributions to Standard Potentials",
+      "label": "involves the same change in charge"
+    },
+    {
+      "source": "Fuel Cell",
+      "target": "Cell Potential",
+      "label": "produces a high resistance load that leads to negligible current flow"
+    },
+    {
+      "source": "Molecular solids",
+      "target": "Individual molecules, clusters, or linked chains of molecules",
+      "label": "can show bulk magnetic effects such as ferromagnetism"
+    },
+    {
+      "source": "d-metal atoms",
+      "target": "Molecular inorganic magnetic materials",
+      "label": "contain unpaired electrons"
+    },
+    {
+      "source": "Ferromagnetism and antiferromagnetism",
+      "target": "Long-range interaction of electron spins",
+      "label": "are much weaker in molecular systems due to short superexchange-type pathways"
+    },
+    {
+      "source": "Ligand properties",
+      "target": "Molecular inorganic magnetic materials",
+      "label": "can tune interactions between metal centres"
+    },
+    {
+      "source": "Decamethylferrocene tetracyanoethenide (TCNE)",
+      "target": "Structures based on chains of alternating [M(\u03b75-Cp*)2] and TCNE ions",
+      "label": "is an example of ferromagnetic molecular inorganic compounds"
+    },
+    {
+      "source": "Temperature",
+      "target": "Specific temperatures (TC 4.8 K for Fe, 6.2 K for Mn)",
+      "label": "below which ferromagnetism is observed"
+    },
+    {
+      "source": "Cp* (C5Me5)",
+      "target": "Decamethylferrocene tetracyanoethenide (TCNE) compound",
+      "label": "is a ligand used in decamethylferrocene tetracyanoethenide (TCNE)"
+    },
+    {
+      "source": "Manganese",
+      "target": "Analogous manganese compound",
+      "label": "has an analogous ferromagnetic molecular inorganic compound"
+    },
+    {
+      "source": "Diffraction patterns",
+      "target": "X-rays",
+      "label": "gives quantitative structural information"
+    },
+    {
+      "source": "X-rays",
+      "target": "Diffraction",
+      "label": "scattered elastically by the electrons in atoms with no change in energy"
+    },
+    {
+      "source": "Diffraction",
+      "target": "Interference between waves",
+      "label": "occurs as a result of an object in their path"
+    },
+    {
+      "source": "X-rays",
+      "target": "Diffraction",
+      "label": "scattered by the electrons in atoms"
+    },
+    {
+      "source": "Diffraction",
+      "target": "Crystal",
+      "label": "can occur for a periodic array of scattering centres separated by distances similar to the wavelength of the radiation"
+    },
+    {
+      "source": "Crystal",
+      "target": "Diffraction",
+      "label": "has a periodic array of atoms with distances similar to the wavelength of the radiation"
+    },
+    {
+      "source": "Crystalline compound",
+      "target": "X-ray beam",
+      "label": "produces a set of diffrac"
+    },
+    {
+      "source": "Crystallography",
+      "target": "Diffraction patterns",
+      "label": "is used to determine the ordered array of atoms in a crystalline compound"
+    },
+    {
+      "source": "Bragg's equation",
+      "target": "d (distance between planes)",
+      "label": "describes the angle at which constructive interference occurs between waves of wavelength "
+    },
+    {
+      "source": "X-rays",
+      "target": "Bragg's equation",
+      "label": "has a wavelength"
+    },
+    {
+      "source": "n",
+      "target": "d (distance between planes)",
+      "label": "is an integer"
+    },
+    {
+      "source": "Electrolysis",
+      "target": "F2",
+      "label": "is performed on"
+    },
+    {
+      "source": "Anhydrous mixture of potassium fluoride and hydrogen fluoride",
+      "target": "F2",
+      "label": "is used to prepare"
+    },
+    {
+      "source": "Potassium fluoride",
+      "target": "Anhydrous mixture of potassium fluoride and hydrogen fluoride",
+      "label": "is present in"
+    },
+    {
+      "source": "Hydrogen fluoride",
+      "target": "Anhydrous mixture of potassium fluoride and hydrogen fluoride",
+      "label": "is present in"
+    },
+    {
+      "source": "72\u00b0C",
+      "target": "Anhydrous mixture of potassium fluoride and hydrogen fluoride becomes molten",
+      "label": "is the temperature above which"
+    },
+    {
+      "source": "Energy Levels of d2 configuration",
+      "target": "Racah Parameters",
+      "label": "the energy levels split into three categories: E(1S), E(1G) and E(1D)"
+    },
+    {
+      "source": "E(1S)",
+      "target": "A (Racah Parameter)",
+      "label": "is stabilized by the Racah parameter A"
+    },
+    {
+      "source": "E(1G)",
+      "target": "B (Racah Parameter)",
+      "label": "is stabilized by the Racah parameter B"
+    },
+    {
+      "source": "E(1D)",
+      "target": "C (Racah Parameter)",
+      "label": "is stabilized by the Racah parameter C"
+    },
+    {
+      "source": "E( P)3",
+      "target": "A (Racah Parameter), B (Racah Parameter)",
+      "label": "has a stabilizing effect on the Racah parameter A and B with a value of 7B"
+    },
+    {
+      "source": "E( F)",
+      "target": "A (Racah Parameter)",
+      "label": "is measured by the Racah parameter A with a value of 8B"
+    },
+    {
+      "source": "Tanabe Sugano Diagrams",
+      "target": "Correlation Diagrams",
+      "label": "depicts the energies of electronic states as a function of ligand field strength"
+    },
+    {
+      "source": "Racah Parameter (B)",
+      "target": "Tanabe Sugano Diagrams",
+      "label": "is measured by to plot term energies E/B against \u2206O/B"
+    },
+    {
+      "source": "Ligand Field Strength (\u2206O/B)",
+      "target": "Tanabe Sugano Diagrams",
+      "label": "causes energy splittings for atomic terms like 3F, 1D, and 1G"
+    },
+    {
+      "source": "Na",
+      "target": "10^-1",
+      "label": "free in solution"
+    },
+    {
+      "source": "K",
+      "target": "4 \u00d0 10^-3",
+      "label": "free in solution"
+    },
+    {
+      "source": "Mg",
+      "target": "c. 10^-2",
+      "label": "weakly bound to ATP complex"
+    },
+    {
+      "source": "Ca",
+      "target": "10^-7",
+      "label": "concentrated in some vesicles"
+    },
+    {
+      "source": "Cl",
+      "target": "10^-1",
+      "label": "free in solution"
+    },
+    {
+      "source": "Fe(III)",
+      "target": "10^17",
+      "label": "unstable and toxic"
+    },
+    {
+      "source": "Periodic trend",
+      "target": "Table 9.8",
+      "label": "opposes ionization energy and atomization enthalpy trends across the d-series metals"
+    },
+    {
+      "source": "Kapustinskii equation",
+      "target": "experimental lattice enthalpies of d-metal oxides",
+      "label": "is used to calculate lattice enthalpies of d-metal oxides"
+    },
+    {
+      "source": "4d-series elements",
+      "target": "3d-series elements",
+      "label": "have lower ionization energy than their 3d-series congeners, but higher atomization enthalpy"
+    },
+    {
+      "source": "ionization energy",
+      "target": "atomization enthalpy",
+      "label": "increases across the d-series metals, stabilizing the +2 oxidation state"
+    },
+    {
+      "source": "experimental lattice enthalpies",
+      "target": "theoretical predictions of lattice enthalpies",
+      "label": "deviate from calculated values using the Kapustinskii equation"
+    },
+    {
+      "source": "Bond order",
+      "target": "Bond enthalpy",
+      "label": "is measured by"
+    },
+    {
+      "source": "Phosphorus",
+      "target": "P-P single bonds",
+      "label": "exists in multiple solid forms with"
+    },
+    {
+      "source": "Polymers",
+      "target": "Compounds",
+      "label": "are stable relative to"
+    },
+    {
+      "source": "Multiple bonds",
+      "target": "Phosphorus",
+      "label": "can split energy of P-P single bonds"
+    },
+    {
+      "source": "Bond length",
+      "target": "Bond enthalpy",
+      "label": "decreases with"
+    },
+    {
+      "source": "XeF2",
+      "target": "AsF5",
+      "label": "reacts with a strong Lewis acid to form XeF+ and AsF6\u2212"
+    },
+    {
+      "source": "[XeF]+",
+      "target": "[CH3CNXe]",
+      "label": "is stabilized by the introduction of a Lewis base, such as CH3CN"
+    },
+    {
+      "source": "AsF5",
+      "target": "XeF2",
+      "label": "reacts with XeF2 to form XeF+ and AsF6\u2212"
+    },
+    {
+      "source": "[CH3CNXe]",
+      "target": "[AsF6]",
+      "label": "is stabilized by the introduction of a Lewis base, such as CH3CN"
+    },
+    {
+      "source": "Elements and Periodicity",
+      "target": "Physical Chemistry",
+      "label": "Provides foundational knowledge for understanding periodic trends in chemistry."
+    },
+    {
+      "source": "Chemistry of Nonmetallic Elements",
+      "target": "Inorganic Chemistry",
+      "label": "Explores the properties and reactions of nonmetallic elements through the lens of inorganic chemistry."
+    },
+    {
+      "source": "Bonding and Structure",
+      "target": "Physical Chemistry",
+      "label": "Describes the formation and characteristics of bonds and structures in inorganic compounds."
+    },
+    {
+      "source": "Reactions",
+      "target": "Inorganic Chemistry",
+      "label": "Explains the mechanisms and conditions of chemical reactions involving inorganic compounds."
+    }
+  ]
+}

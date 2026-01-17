@@ -1,3 +1,13 @@
+import {
+  normalizeAnswer,
+  loadSettings,
+  saveSettings,
+  updateUI,
+  createElement
+} from "./js/utils.js";
+
+// Global State
+let questionData = {};
 const state = {
   mode: "rate",
   streak: 0,
@@ -12,193 +22,52 @@ const state = {
 
 const settingsKey = "coordination-reactions-settings";
 
-const modeButtons = Array.from(document.querySelectorAll(".mode-tabs .chip"));
-const modeBadge = document.getElementById("modeBadge");
-const promptBadge = document.getElementById("promptBadge");
-const promptTitle = document.getElementById("promptTitle");
-const promptNote = document.getElementById("promptNote");
-const diagramPanel = document.getElementById("diagramPanel");
-const answerZone = document.getElementById("answerZone");
-const feedback = document.getElementById("feedback");
-const streak = document.getElementById("streak");
-const accuracy = document.getElementById("accuracy");
-const questionCount = document.getElementById("questionCount");
-const checkBtn = document.getElementById("checkBtn");
-const nextBtn = document.getElementById("nextBtn");
-const adaptiveToggle = document.getElementById("adaptiveToggle");
-const rigorToggle = document.getElementById("rigorToggle");
-
-const rateQuestions = [
-  {
-    id: "rate-d",
-    prompt: "Rate = k[ML5X]",
-    note: "Entering ligand does not appear in the rate law.",
-    answer: "D",
-  },
-  {
-    id: "rate-a",
-    prompt: "Rate = k[ML4X][Y]",
-    note: "Entering ligand appears in the rate law.",
-    answer: "A",
-  },
-  {
-    id: "rate-i",
-    prompt: "Rate = k[ML5X][Y]^0.5",
-    note: "Partial dependence on entering ligand.",
-    answer: "I",
-  },
-  {
-    id: "rate-i2",
-    prompt: "Rate = k[ML5X][Y]^0.2",
-    note: "Weak dependence on entering ligand.",
-    answer: "I",
-  },
-];
-
-const pathQuestions = [
-  {
-    id: "path-sp",
-    prompt: "Square planar Pt(II) substitution with strong nucleophile.",
-    note: "Predict dominant pathway.",
-    answer: "A",
-  },
-  {
-    id: "path-octa",
-    prompt: "Octahedral Co(III) complex, inert, rate independent of Y.",
-    note: "Predict dominant pathway.",
-    answer: "D",
-  },
-  {
-    id: "path-inter",
-    prompt: "Octahedral complex, rate weakly depends on Y.",
-    note: "Predict dominant pathway.",
-    answer: "I",
-  },
-];
-
-const stereoQuestions = [
-  {
-    id: "stereo-ret",
-    prompt: "Five-coordinate intermediate retains configuration.",
-    note: "Predict stereochemical outcome.",
-    answer: "retention",
-  },
-  {
-    id: "stereo-alt",
-    prompt: "Five-coordinate intermediate rearranges before substitution.",
-    note: "Predict stereochemical outcome.",
-    answer: "alteration",
-  },
-  {
-    id: "stereo-mix",
-    prompt: "Both trigonal bipyramidal and square pyramidal pathways available.",
-    note: "Predict stereochemical outcome.",
-    answer: "mixture",
-  },
-];
-
-const saveSettings = () => {
-  const payload = {
-    adaptive: state.adaptive,
-    rigorMode: state.rigorMode,
-  };
-  localStorage.setItem(settingsKey, JSON.stringify(payload));
+// UI Elements
+const ui = {
+  modeButtons: Array.from(document.querySelectorAll(".mode-tabs .chip")),
+  modeBadge: document.getElementById("modeBadge"),
+  promptBadge: document.getElementById("promptBadge"),
+  promptTitle: document.getElementById("promptTitle"),
+  promptNote: document.getElementById("promptNote"),
+  diagramPanel: document.getElementById("diagramPanel"),
+  answerZone: document.getElementById("answerZone"),
+  feedback: document.getElementById("feedback"),
+  streak: document.getElementById("streak"),
+  accuracy: document.getElementById("accuracy"),
+  questionCount: document.getElementById("questionCount"),
+  checkBtn: document.getElementById("checkBtn"),
+  nextBtn: document.getElementById("nextBtn"),
+  adaptiveToggle: document.getElementById("adaptiveToggle"),
+  rigorToggle: document.getElementById("rigorToggle"),
 };
 
-const loadSettings = () => {
-  const raw = localStorage.getItem(settingsKey);
-  if (!raw) {
-    return;
-  }
+// Initialization
+const init = async () => {
   try {
-    const data = JSON.parse(raw);
-    if (typeof data.adaptive === "boolean") {
-      state.adaptive = data.adaptive;
-    }
-    if (typeof data.rigorMode === "boolean") {
-      state.rigorMode = data.rigorMode;
-    }
+    const response = await fetch("./data/reactions.json");
+    questionData = await response.json();
+    
+    const saved = loadSettings(settingsKey, state);
+    Object.assign(state, saved);
+    
+    updateToggleUI();
+    updateUI(ui, state);
+    setupListeners();
+    loadQuestion();
   } catch (error) {
-    localStorage.removeItem(settingsKey);
+    console.error("Failed to init reactions module:", error);
+    ui.promptTitle.textContent = "Error loading content.";
   }
 };
 
 const updateToggleUI = () => {
-  adaptiveToggle.textContent = state.adaptive ? "On" : "Off";
-  adaptiveToggle.classList.toggle("off", !state.adaptive);
-  rigorToggle.textContent = state.rigorMode ? "On" : "Off";
-  rigorToggle.classList.toggle("off", !state.rigorMode);
+  ui.adaptiveToggle.textContent = state.adaptive ? "On" : "Off";
+  ui.adaptiveToggle.classList.toggle("off", !state.adaptive);
+  ui.rigorToggle.textContent = state.rigorMode ? "On" : "Off";
+  ui.rigorToggle.classList.toggle("off", !state.rigorMode);
 };
 
-const updateScore = () => {
-  streak.textContent = state.streak;
-  questionCount.textContent = state.total;
-  const percent = state.total === 0 ? 0 : Math.round((state.correct / state.total) * 100);
-  accuracy.textContent = `${percent}%`;
-};
-
-const renderDiagramPanel = (question) => {
-  diagramPanel.innerHTML = "";
-  if (state.mode === "rate") {
-    diagramPanel.innerHTML = `<p class="question-note">${question.note}</p>`;
-  } else if (state.mode === "path") {
-    diagramPanel.innerHTML = `<p class="question-note">Use kinetics + geometry clues.</p>`;
-  } else {
-    diagramPanel.innerHTML = `<p class="question-note">Retention vs alteration depends on pathway.</p>`;
-  }
-};
-
-const renderOptions = (question) => {
-  answerZone.innerHTML = "";
-  const block = document.createElement("div");
-  block.className = "answer-block";
-  const heading = document.createElement("h4");
-  heading.textContent = "Select the best answer";
-  block.appendChild(heading);
-  const grid = document.createElement("div");
-  grid.className = "option-grid";
-  let options = [];
-  if (state.mode === "rate" || state.mode === "path") {
-    options = ["D", "I", "A"];
-  } else {
-    options = ["retention", "alteration", "mixture"];
-  }
-  options.forEach((option) => {
-    const button = document.createElement("button");
-    button.type = "button";
-    button.className = "option-button";
-    button.textContent = option;
-    button.addEventListener("click", () => {
-      state.selection = option;
-      const siblings = button.parentElement.querySelectorAll(".option-button");
-      siblings.forEach((sibling) => sibling.classList.remove("active"));
-      button.classList.add("active");
-    });
-    grid.appendChild(button);
-  });
-  block.appendChild(grid);
-  answerZone.appendChild(block);
-};
-
-const getPool = () => {
-  if (state.mode === "rate") {
-    return rateQuestions;
-  }
-  if (state.mode === "path") {
-    return pathQuestions;
-  }
-  return stereoQuestions;
-};
-
-const enqueueAdaptive = (question) => {
-  if (!state.adaptive) {
-    return;
-  }
-  const pool = getPool().filter((item) => item.id !== question.id);
-  if (pool.length) {
-    state.adaptiveQueue.push(pool[Math.floor(Math.random() * pool.length)]);
-  }
-};
+const getPool = () => questionData[state.mode] || [];
 
 const getNextQuestion = () => {
   const pool = getPool();
@@ -212,60 +81,102 @@ const loadQuestion = () => {
   const question = getNextQuestion();
   state.currentQuestion = question;
   state.selection = null;
-  modeBadge.textContent = modeButtons.find((btn) => btn.dataset.mode === state.mode)?.textContent || "Module";
-  promptBadge.textContent = state.mode === "rate" ? "Rate law" : state.mode === "path" ? "Mechanism" : "Stereochemistry";
-  promptTitle.textContent = question.prompt;
-  promptNote.textContent = question.note;
-  feedback.className = "feedback";
-  feedback.textContent = "";
+  
+  ui.modeBadge.textContent = ui.modeButtons.find((btn) => btn.dataset.mode === state.mode)?.textContent || "Module";
+  ui.promptBadge.textContent = state.mode === "rate" ? "Rate law" : state.mode === "path" ? "Mechanism" : "Stereochemistry";
+  ui.promptTitle.textContent = question.prompt;
+  ui.promptNote.textContent = question.note;
+  
+  ui.feedback.className = "feedback";
+  ui.feedback.textContent = "";
+  
   renderDiagramPanel(question);
-  renderOptions(question);
+  renderOptions();
+};
+
+const renderDiagramPanel = (question) => {
+  ui.diagramPanel.innerHTML = "";
+  let note = "";
+  if (state.mode === "rate") note = question.note;
+  else if (state.mode === "path") note = "Use kinetics + geometry clues.";
+  else note = "Retention vs alteration depends on pathway.";
+  
+  ui.diagramPanel.appendChild(createElement("p", "question-note", note));
+};
+
+const renderOptions = () => {
+  ui.answerZone.innerHTML = "";
+  const block = createElement("div", "answer-block");
+  block.appendChild(createElement("h4", "", "Select the best answer"));
+  
+  const grid = createElement("div", "option-grid");
+  const options = (state.mode === "rate" || state.mode === "path") ? ["D", "I", "A"] : ["retention", "alteration", "mixture"];
+  
+  options.forEach((opt) => {
+    const btn = createElement("button", "option-button", opt);
+    btn.addEventListener("click", () => {
+      state.selection = opt;
+      grid.querySelectorAll(".option-button").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+    });
+    grid.appendChild(btn);
+  });
+  
+  block.appendChild(grid);
+  ui.answerZone.appendChild(block);
 };
 
 const checkAnswer = () => {
-  if (!state.currentQuestion || !state.selection) {
-    return;
-  }
+  if (!state.currentQuestion || !state.selection) return;
+  
   const isCorrect = state.selection.toLowerCase() === state.currentQuestion.answer.toLowerCase();
-  state.total += 1;
+  
+  state.total++;
   if (isCorrect) {
-    state.correct += 1;
-    state.streak += 1;
+    state.correct++;
+    state.streak++;
   } else {
     state.streak = 0;
     enqueueAdaptive(state.currentQuestion);
   }
-  feedback.className = `feedback ${isCorrect ? "success" : "error"}`;
-  feedback.textContent = isCorrect ? "Correct." : `Expected: ${state.currentQuestion.answer}.`;
-  updateScore();
+  
+  ui.feedback.className = `feedback ${isCorrect ? "success" : "error"}`;
+  ui.feedback.textContent = isCorrect ? "Correct." : `Expected: ${state.currentQuestion.answer}.`;
+  
+  updateUI(ui, state);
 };
 
-modeButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    modeButtons.forEach((btn) => btn.classList.remove("active"));
-    button.classList.add("active");
-    state.mode = button.dataset.mode;
-    state.adaptiveQueue = [];
-    loadQuestion();
+const enqueueAdaptive = (q) => {
+  if (!state.adaptive) return;
+  const pool = getPool().filter(i => i.id !== q.id);
+  if (pool.length) {
+    state.adaptiveQueue.push(pool[Math.floor(Math.random() * pool.length)]);
+  }
+};
+
+const setupListeners = () => {
+  ui.modeButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      ui.modeButtons.forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+      state.mode = btn.dataset.mode;
+      state.adaptiveQueue = [];
+      loadQuestion();
+    });
   });
-});
+  
+  ui.checkBtn.addEventListener("click", checkAnswer);
+  ui.nextBtn.addEventListener("click", loadQuestion);
+  
+  ui.adaptiveToggle.addEventListener("click", () => {
+    state.adaptive = !state.adaptive;
+    updateToggleUI(); saveSettings(settingsKey, state);
+  });
+  
+  ui.rigorToggle.addEventListener("click", () => {
+    state.rigorMode = !state.rigorMode;
+    updateToggleUI(); saveSettings(settingsKey, state);
+  });
+};
 
-checkBtn.addEventListener("click", checkAnswer);
-nextBtn.addEventListener("click", loadQuestion);
-
-adaptiveToggle.addEventListener("click", () => {
-  state.adaptive = !state.adaptive;
-  updateToggleUI();
-  saveSettings();
-});
-
-rigorToggle.addEventListener("click", () => {
-  state.rigorMode = !state.rigorMode;
-  updateToggleUI();
-  saveSettings();
-});
-
-loadSettings();
-updateToggleUI();
-updateScore();
-loadQuestion();
+init();

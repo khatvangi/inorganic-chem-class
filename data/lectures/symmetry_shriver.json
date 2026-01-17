@@ -1,0 +1,83 @@
+{
+  "title": "Molecular Symmetry & Group Theory",
+  "source": "Inorganic Chemistry (Atkins & Shriver)",
+  "sections": [
+    {
+      "id": "intro",
+      "title": "1. Symmetry Elements & Operations",
+      "content": "Symmetry analysis provides a rigorous way to describe the shape of molecules. A **symmetry operation** is an action that leaves the molecule apparently unchanged. Each operation is associated with a **symmetry element** (point, line, or plane).",
+      "visuals": [
+        {
+          "type": "chemDoodle",
+          "molecule": "H2O",
+          "note": "Water has C2v symmetry: E, C2, and two mirror planes."
+        }
+      ]
+    },
+    {
+      "id": "cn_axis",
+      "title": "2. Proper Rotation (Cn)",
+      "content": "A rotation by $360^\circ/n$ about an axis. The highest 'n' is the principal axis. <br><br>Example: **Ammonia (NH3)** has a $C_3$ axis ($120^\circ$ rotation).",
+      "visuals": [
+        {
+          "type": "chemDoodle",
+          "molecule": "NH3",
+          "note": "Rotate to see the 3-fold symmetry."
+        }
+      ]
+    },
+    {
+      "id": "sigma_plane",
+      "title": "3. Mirror Planes (σ)",
+      "content": "Reflection through a plane. <br>- $\sigma_v$ (vertical): Contains the principal axis. <br>- $\sigma_h$ (horizontal): Perpendicular to the principal axis. <br><br>Example: **Benzene** has both $\sigma_v$ and a unique $\sigma_h$ plane.",
+      "visuals": [
+        {
+          "type": "chemDoodle",
+          "molecule": "C6H6",
+          "note": "Benzene (D6h) has a horizontal plane slicing the ring."
+        }
+      ]
+    },
+    {
+      "id": "sn_axis_deep_dive",
+      "title": "4. Improper Rotation (Sn) - Deep Dive",
+      "content": "The **Improper Rotation ($S_n$)** is often the hardest to visualize. It consists of two steps performed in sequence: <br>1. **Rotation** by $360^\circ/n$ ($C_n$) <br>2. **Reflection** ($\\sigma_h$) perpendicular to that axis. <br><br>Neither step needs to be a valid symmetry operation on its own, but the *combination* must be. <br><br> **Key Rule:** A molecule with *any* $S_n$ axis (including $S_1=\sigma$ and $S_2=i$) is **achiral**.",
+      "visuals": [
+        {
+          "type": "chemDoodle",
+          "molecule": "CH4",
+          "note": "Methane has 3 S4 axes. Rotate 90° bisecting H-C-H, then reflect."
+        },
+        {
+          "type": "chemDoodle",
+          "molecule": "ferrocene",
+          "note": "Staggered Ferrocene has an S10 axis!"
+        }
+      ]
+    },
+    {
+      "id": "inversion",
+      "title": "5. Inversion (i)",
+      "content": "Projection through the center of the molecule to the opposite side. This is mathematically equivalent to an $S_2$ improper rotation. <br><br>Example: **SF6** and **Staggered Ethane** have centers of inversion.",
+      "visuals": [
+        {
+          "type": "chemDoodle",
+          "molecule": "SF6",
+          "note": "Sulfur Hexafluoride (Oh) has a center of inversion."
+        }
+      ]
+    },
+    {
+      "id": "point_groups",
+      "title": "6. Point Groups & Flowchart",
+      "content": "We classify molecules into **Point Groups** based on their complete set of symmetry elements. <br>- **Low Symmetry:** C1, Cs, Ci <br>- **High Symmetry:** Td, Oh, Ih <br>- **D Groups:** Have $n$ $C_2$ axes perpendicular to principal $C_n$.",
+      "visuals": [
+        {
+          "type": "image",
+          "src": "assets/symmetry/flowchart_shriver.png",
+          "note": "Standard Shriver Point Group Flowchart"
+        }
+      ]
+    }
+  ]
+}
