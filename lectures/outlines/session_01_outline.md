@@ -1,273 +1,256 @@
-# Session 1: Periodic Trends - LECTURE OUTLINE
+# Session 1: The Periodic Table - A Complete Inorganic Perspective
 
-## Source Strategy (from 9-Dimension Matrix)
-
-| Role | Source | Why |
-|------|--------|-----|
-| **Narrative backbone** | JD Lee | Flesch 51.2 (most readable), 50% why:what ratio, short sentences (14 words avg) |
-| **Visuals & diagrams** | Housecroft | 74 figures, high visual density, famous arrow diagrams for trends |
-| **Worked examples** | Douglas | Many worked examples, occasional analogies |
-| **Readable explanations** | House | Low jargon (13.7/1000), occasional analogies |
-| **Quantitative depth** | Atkins | When we need rigor for Slater's rules calculations |
+**Level:** CHEM 361 Inorganic Chemistry (NOT Gen Chem!)
+**Duration:** 90 minutes (expanded)
+**Philosophy:** The periodic table isn't 4 trends to memorize—it's a map of electron behavior that explains ALL of inorganic chemistry.
 
 ---
 
-## The Story Arc (NOT bullet points)
+## What Gen Chem Teaches vs. What IC Requires
 
-### Act I: The Mystery (5 min)
-**Opening hook:** Why can a chemist look at the periodic table and PREDICT that francium will explode more violently than sodium in water, without ever having seen francium react?
-
-The periodic table isn't a filing cabinet—it's a prediction machine. Mendeleev predicted gallium's properties before it was discovered. How?
-
-**Source:** JD Lee's historical narrative on Mendeleev's predictions
-
----
-
-### Act II: The Hidden Variable (15 min)
-
-#### Scene 1: Nuclear Charge Isn't the Whole Story
-
-Start with the naive expectation: "More protons = stronger pull on electrons = smaller atom."
-
-But wait—why is sodium (11 protons) LARGER than lithium (3 protons)? If more protons meant tighter grip, every element should be smaller than the one before.
-
-**The reveal:** Electrons shield each other. The outer electron doesn't feel all 11 protons—it feels an *effective* nuclear charge.
-
-**Visual (Housecroft):**
-- Diagram showing inner electrons as a "shield" between nucleus and outer electron
-- The famous "onion layer" model of electron shells
-
-#### Scene 2: Slater's Rules - Quantifying the Shield
-
-**Narrative (JD Lee):** Slater didn't guess—he analyzed thousands of experimental measurements and found patterns in how much each electron shields.
-
-**The rules as a story, not a list:**
-- Electrons in your own shell? Partial traitors—they shield a little (0.35)
-- Electrons one shell deeper? Serious blockers (0.85)
-- Electrons two or more shells in? Complete walls (1.00)
-
-**Worked Example (Douglas style):**
-
-*Calculate Z_eff for the outermost electron in oxygen.*
-
-Not: "Apply formula."
-
-Instead: "Let's trace what that 2p electron actually experiences..."
-
-1. The nucleus screams "+8!"
-2. But two 1s electrons stand in the way, each blocking 0.85 → that's 1.70 of charge absorbed
-3. Five other electrons share the 2nd shell, each partially blocking (0.35 × 5 = 1.75)
-4. What gets through? 8 - 1.70 - 1.75 = **4.55**
-
-That electron feels less than half the nuclear charge. The shield is real.
-
-**Visual (create):** Side-by-side comparison
-- Left: "Naive view" - electron sees Z=8
-- Right: "Reality" - electron sees Z_eff=4.55
+| Gen Chem (insufficient) | Inorganic Chemistry (this lecture) |
+|------------------------|-----------------------------------|
+| 4 trends: radius, IE, EA, EN | Why trends BREAK and what that reveals |
+| s and p block only | d-block anomalies, f-block behavior |
+| Slater's rules (approximate) | Why Slater fails for d/f electrons |
+| -- | Lanthanide contraction |
+| -- | Relativistic effects |
+| -- | Inert pair effect |
+| -- | Why Hg is liquid, Au is golden |
+| -- | Why lanthanides are nearly identical |
+| -- | Periodicity of oxidation states |
 
 ---
 
-### Act III: The Four Trends (25 min)
+## The Story Arc
 
-**Transition:** Now that we have Z_eff, we can explain EVERYTHING.
+### Part I: The Electronic Architecture (20 min)
 
-#### Trend 1: Atomic Radius
+**Opening:** Every element's chemistry is written in its electron configuration. But the aufbau principle lies to you.
 
-**Visual (Housecroft):** The famous arrow diagram
+#### 1.1 The Aufbau "Exceptions" Aren't Exceptions
+
+The standard teaching: electrons fill orbitals in order of increasing energy (1s → 2s → 2p → 3s → 3p → 4s → 3d...).
+
+Reality: **21 elements** don't follow this "rule." They're not exceptions—the rule is wrong.
+
+**d-block anomalies:**
+| Element | Expected | Actual | Why |
+|---------|----------|--------|-----|
+| Cr | [Ar] 3d⁴ 4s² | [Ar] 3d⁵ 4s¹ | Half-filled d subshell |
+| Cu | [Ar] 3d⁹ 4s² | [Ar] 3d¹⁰ 4s¹ | Filled d subshell |
+| Mo | [Kr] 4d⁴ 5s² | [Kr] 4d⁵ 5s¹ | Same pattern |
+| Ag | [Kr] 4d⁹ 5s² | [Kr] 4d¹⁰ 5s¹ | Same pattern |
+| Au | [Xe] 4f¹⁴ 5d⁹ 6s² | [Xe] 4f¹⁴ 5d¹⁰ 6s¹ | + relativistic contraction |
+
+**The deeper truth:** d-d exchange energy and pairing energy compete. When the exchange energy gain from having parallel spins exceeds the orbital energy cost, electrons rearrange.
+
+#### 1.2 The f-block Configuration Chaos
+
+Lanthanides and actinides are even messier:
+- La: [Xe] 5d¹ 6s² (no 4f!)
+- Ce: [Xe] 4f¹ 5d¹ 6s²
+- Gd: [Xe] 4f⁷ 5d¹ 6s² (half-filled f + one d)
+- Lu: [Xe] 4f¹⁴ 5d¹ 6s²
+
+**Visual:** Full periodic table with actual electron configurations, color-coded by anomaly type.
+
+---
+
+### Part II: The Three Contractions (25 min)
+
+**The Big Idea:** Three "contractions" shape the periodic table, and understanding them explains most of inorganic chemistry.
+
+#### 2.1 The Scandide Contraction (3d)
+
+Moving across the first transition series (Sc → Zn), atoms get smaller even though electrons are being added. Why?
+
+**3d electrons are poor shielders.** They spend most of their time far from the nucleus and can't effectively block nuclear charge from the 4s electrons.
+
+Result: Ga (Z=31) is almost the same size as Al (Z=13), even with 18 more protons.
+
+**Data (covalent radii, pm):**
 ```
-        ← DECREASING radius across period →
-    ↓
-    I
-    N   Li  Be  B   C   N   O   F   Ne
-    C   152 112 85  77  75  73  72  --  (pm)
-    R
-    E   Na  Mg  Al  Si  P   S   Cl  Ar
-    A   186 160 143 118 110 103 99  --
-    S
-    I   K   Ca  ...
-    N   227 197
-    G
-    ↓
+Al: 121    Ga: 122    (only 1 pm difference!)
+Si: 111    Ge: 120
+P:  107    As: 119
 ```
 
-**The story:**
-- Across: More protons, same shell → Z_eff increases → electrons pulled in → SMALLER
-- Down: New shell each row → electrons farther out → LARGER (even though Z_eff also increases!)
+#### 2.2 The Lanthanide Contraction (4f)
 
-**The competition:** Z_eff vs. principal quantum number. Down a group, n wins.
+**The most important contraction for understanding heavy element chemistry.**
 
-**Analogy (House):** "Adding a floor to a building makes it taller, even if you also strengthen the foundation."
+4f orbitals shield even worse than 3d. As we fill the 4f subshell (Ce → Lu), the nuclear charge felt by outer electrons increases dramatically.
 
-#### Trend 2: Ionization Energy
+Result: The 5d elements (Hf → Hg) are almost the same size as the 4d elements (Zr → Cd).
 
-**Hook:** Which is easier—stealing a wallet from someone's back pocket, or from a safe?
+**Data (covalent radii, pm):**
+| 4d | r | 5d | r | Difference |
+|----|---|----|----|------------|
+| Zr | 175 | Hf | 175 | 0 pm! |
+| Nb | 164 | Ta | 170 | 6 pm |
+| Mo | 154 | W | 162 | 8 pm |
 
-**Visual (Housecroft):** IE vs atomic number graph showing the sawtooth pattern
+**Consequences:**
+- Zr/Hf and Nb/Ta are nearly impossible to separate chemically
+- 5d metals are denser than expected (W, Os, Ir, Pt)
+- Explains the "uniqueness" of the first row transition metals
 
-**The main story:**
-- High Z_eff = tight grip = high IE
-- Across period: Z_eff increases → IE increases
-- Down group: electron farther away → IE decreases
+#### 2.3 The Relativistic Contraction (6s)
 
-**The anomalies (this is where it gets interesting):**
+**Here's where it gets wild.**
 
-*Why is IE(O) < IE(N)?*
+For heavy elements (Z > 70), electrons move so fast that relativistic effects become significant. The 1s electron in gold moves at ~58% the speed of light.
 
-**Visual (create):** Orbital box diagrams
+**Einstein's special relativity:** As velocity approaches c, mass increases:
 ```
-N: [↑↓] [↑][↑][↑]     ← Half-filled 2p, stable
-    2s    2p
-
-O: [↑↓] [↑↓][↑][↑]   ← One orbital has paired electrons, repulsion!
-    2s    2p
+m_rel = m₀ / √(1 - v²/c²)
 ```
 
-**Narrative:** Nitrogen's half-filled 2p is unusually stable (exchange energy). Oxygen has to cram two electrons into one orbital—they repel each other. Easier to remove.
+Heavier electrons orbit closer to the nucleus → **6s orbital contracts**.
 
-*Why is IE(B) < IE(Be)?*
+But it gets weirder: the contracted 6s orbital shields the nucleus better, so **5d and 4f orbitals expand**.
 
-Beryllium's electron is in a 2s orbital (penetrates closer to nucleus). Boron's is in 2p (farther out, less penetrating). Even though B has more protons, that 2p electron is easier to grab.
+**The consequences are spectacular:**
 
-**Real-world connection (Housecroft):** This is why alkaline earth metals can form +2 ions easily—losing two electrons empties their s orbital completely.
+| Element | Effect | Observable Result |
+|---------|--------|-------------------|
+| Au | 6s contracts, 5d expands | Gold is GOLD (5d→6s transition in visible) |
+| Hg | 6s² very stable | Mercury is LIQUID (weak Hg-Hg bonds) |
+| Pb | 6s² inert | Lead is +2, not +4 like C, Si, Ge, Sn |
+| W | 5d expanded | Highest melting point of any element |
 
-#### Trend 3: Electron Affinity
-
-**Setup:** Ionization energy is about losing electrons. Electron affinity is about gaining them.
-
-**The surprise:** Chlorine has higher EA than fluorine.
-
-Wait—fluorine is MORE electronegative. Shouldn't it want electrons more?
-
-**Visual (create):** Electron density maps
-- F: tiny atom, electrons already crowded
-- Cl: larger atom, more room for incoming electron
-
-**Narrative (JD Lee):** Fluorine is SO small that adding another electron creates intense repulsion with the existing electrons. Chlorine has more space. Sometimes being too eager backfires.
-
-**Data table (Basset):**
-| Element | EA (kJ/mol) | Explanation |
-|---------|-------------|-------------|
-| F | 328 | Small size, electron crowding |
-| Cl | 349 | Optimal size, highest EA |
-| Br | 325 | Larger, lower Z_eff |
-| I | 295 | Even larger |
-
-#### Trend 4: Electronegativity
-
-**Narrative:** Pauling invented electronegativity because he noticed something strange about bond energies.
-
-H-H bond: 436 kJ/mol
-F-F bond: 158 kJ/mol
-H-F bond: 568 kJ/mol (way more than average!)
-
-**The insight:** When atoms share electrons unequally, the bond is strengthened by ionic character. Pauling quantified how much each atom "pulls."
-
-**Visual (Housecroft):** Electronegativity periodic table with color gradient
-
-**The formula:**
-χA - χB = 0.102√Δ
-
-where Δ = D(A-B) - ½[D(A-A) + D(B-B)]
-
-**Worked example (Douglas):** Calculate electronegativity difference for HCl...
-
-**Connection:** Electronegativity combines IE and EA—it's the atom's total "electron hunger."
+**Visual:** Orbital contraction/expansion diagram showing relativistic vs non-relativistic radii.
 
 ---
 
-### Act IV: The Diagonal Relationships (10 min)
+### Part III: The Inert Pair Effect (15 min)
 
-**Hook:** Lithium doesn't act like sodium. It acts like MAGNESIUM. Why?
+**The puzzle:** Why does Tl prefer +1 over +3? Why is Pb²⁺ more stable than Pb⁴⁺?
 
-**Visual (Housecroft):** Diagonal relationship arrows on periodic table
+Down a group, the ns² electrons become increasingly reluctant to participate in bonding.
+
+| Group 13 | Common oxidation state |
+|----------|----------------------|
+| Al | +3 only |
+| Ga | +3 (some +1) |
+| In | +3 (more +1) |
+| Tl | +1 preferred, +3 oxidizing |
+
+**Two explanations (both contribute):**
+
+1. **Relativistic stabilization** of the 6s orbital makes it energetically costly to use those electrons.
+
+2. **Poor orbital overlap:** 6s orbitals are contracted; 6p orbitals are expanded. The size mismatch with ligand orbitals makes bonds weaker.
+
+**Real chemistry:**
+- TlCl is stable; TlCl₃ decomposes above 40°C
+- PbO₂ is a powerful oxidizer (wants to become PbO)
+- Bi₂O₅ doesn't exist; Bi₂O₃ is stable
+
+---
+
+### Part IV: The f-Block - Why Lanthanides Are "Boring" (15 min)
+
+**The paradox:** 15 elements (La-Lu) with remarkably similar chemistry. Why?
+
+**4f orbitals are buried.** They're shielded by filled 5s, 5p, and partially filled 5d/6s orbitals. The 4f electrons rarely participate directly in bonding.
+
+**Consequences:**
+- All lanthanides favor +3 oxidation state
+- Ionic radii decrease smoothly (lanthanide contraction)
+- Similar coordination chemistry
+- Hard to separate (requires ion exchange chromatography)
+
+**The few exceptions reveal what matters:**
+- Ce⁴⁺ exists (one 4f electron easily removed → noble gas core)
+- Eu²⁺ exists (half-filled 4f⁷ is stable)
+- Yb²⁺ exists (filled 4f¹⁴ is stable)
+
+**Actinides are different:**
+- 5f orbitals extend further, participate more in bonding
+- Multiple oxidation states common (U: +3 to +6)
+- More covalent character
+
+---
+
+### Part V: Periodicity of Oxidation States (10 min)
+
+**Maximum oxidation state:**
+- Equals group number up to Mn/Re (Group 7)
+- Then decreases (Fe: max +6, Co: max +5, Ni: max +4)
+- Noble metals resist oxidation (Pt, Au)
+
+**Pattern across periods:**
+
+Period 4 (3d):
 ```
-Li ----→ Mg
-   ↘
-Be ----→ Al
-   ↘
-B  ----→ Si
+Sc  Ti  V   Cr  Mn  Fe  Co  Ni  Cu  Zn
++3  +4  +5  +6  +7  +6  +4  +4  +2  +2
+        (maximum oxidation states)
 ```
 
-**The explanation:** Moving right increases Z_eff (smaller, more polarizing). Moving down decreases it (larger, less polarizing). Moving diagonally RIGHT-DOWN, these effects CANCEL.
+**Why the decrease after Mn?**
 
-Li and Mg have similar:
-- Charge density (charge/radius ratio)
-- Polarizing power
-- Therefore similar chemistry
-
-**Examples:**
-- Li and Mg both form nitrides directly (Na doesn't)
-- Li and Mg carbonates decompose on heating (Na's doesn't)
-- Li and Mg hydroxides are weakly basic (Na's is strong)
+Exchange energy stabilization. More d electrons = more stability from parallel spins = harder to remove electrons.
 
 ---
 
-### Act V: Why This Matters (5 min)
+### Part VI: Why Mercury Is Liquid (5 min)
 
-**Return to the opening:** Now you can do what Mendeleev did.
+**The question every student asks.**
 
-**Challenge:** Predict properties of element 119 (not yet synthesized):
-- Atomic radius? (larger than Fr)
-- Ionization energy? (lower than Fr)
-- Reactivity with water? (more violent than Fr, if it's stable enough to observe)
+Mercury melts at -39°C. The next lowest melting metal is cesium at 28°C. What's special about Hg?
 
-**The periodic table as a roadmap:** Every prediction in chemistry starts here. Crystal field theory? Need to know ligand electronegativities. Acid-base chemistry? Need to know oxide basicity trends. Redox? Need to know ionization energies.
+**The answer combines everything:**
 
----
+1. **Relativistic 6s contraction:** Hg's 6s² electrons are pulled very close to the nucleus.
 
-## Visual Assets Needed
+2. **Filled d-shell:** 5d¹⁰ provides no bonding orbitals.
 
-| Visual | Source | Description |
-|--------|--------|-------------|
-| Fig 1 | Housecroft | Arrow diagram showing radius/IE/EN trends |
-| Fig 2 | Create | Z_eff shielding diagram |
-| Fig 3 | Housecroft | IE vs atomic number sawtooth graph |
-| Fig 4 | Create | Orbital diagrams for N vs O anomaly |
-| Fig 5 | Housecroft | Electronegativity color map |
-| Fig 6 | Housecroft | Diagonal relationship arrows |
+3. **Weak metallic bonding:** The contracted 6s orbital overlaps poorly with neighbors.
+
+4. **No d-band contribution:** Unlike other metals where d orbitals strengthen the metallic bond, Hg's filled 5d contributes nothing.
+
+Result: Hg atoms barely stick together → liquid at room temperature.
+
+**Comparison:**
+- Cd (same group, no relativistic effect): melts at 321°C
+- Au (one less electron, 5d¹⁰ 6s¹): excellent metallic bonding, melts at 1064°C
 
 ---
 
-## Interactive Elements
+## Interactive Elements Needed
 
 | Element | Purpose |
 |---------|---------|
-| Slater's rules calculator | Input element → see Z_eff calculation step by step |
-| Periodic table hover | Show all properties for any element |
-| Trend prediction quiz | "Which is larger: S or Cl?" with explanation |
-| Anomaly explorer | Click on any "exception" to see why |
+| Full periodic table | Hover for electron config, click for anomalies |
+| Radii comparison | Side-by-side 4d vs 5d elements |
+| Relativistic calculator | Show how v/c affects orbital size |
+| Oxidation state explorer | Click element → show all known oxidation states |
+| Lanthanide separation | Animate ion exchange chromatography |
 
 ---
 
-## Estimated Length
+## Visual Assets
 
-| Section | Time | Words (prose) |
-|---------|------|---------------|
-| Act I: Mystery | 5 min | 400 |
-| Act II: Z_eff | 15 min | 1200 |
-| Act III: Four Trends | 25 min | 2000 |
-| Act IV: Diagonal | 10 min | 800 |
-| Act V: Why It Matters | 5 min | 400 |
-| **Total** | **60 min** | **~4800 words** |
+1. **Periodic table with electron configurations** - color-coded by anomaly type
+2. **Orbital radial distribution** - showing 4f vs 5d penetration
+3. **Relativistic vs non-relativistic orbital sizes** - for Au, Hg, Pb
+4. **Lanthanide contraction graph** - ionic radii La³⁺ → Lu³⁺
+5. **Gold absorption spectrum** - why it's golden
+6. **Oxidation state heatmap** - periodic table colored by max ox state
 
 ---
 
-## Tone Guide
+## Data Sources
 
-**DO:**
-- Tell a story with tension and resolution
-- Use analogies (House, Douglas style)
-- Show calculations as detective work, not formulas
-- Explain anomalies as the interesting part, not exceptions to memorize
-- Connect to real chemistry (why this matters for coordination, acids, etc.)
-
-**DON'T:**
-- Bullet point lists of facts
-- "The trend is X because Y" without building to it
-- Skip the anomalies
-- Assume students know why they should care
-- Use jargon without earning it
+- Atomic radii: Cordero et al. 2008
+- Electron configurations: NIST
+- Relativistic calculations: Pyykkö 1988, Chem. Rev.
+- Ionization energies: NIST ASD
+- Oxidation states: Greenwood & Earnshaw
 
 ---
 
-*This outline produces a lecture that reads like a chapter, not a summary.*
+*This is what a CHEM 361 lecture on periodicity should cover.*
