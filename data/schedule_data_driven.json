@@ -1,0 +1,278 @@
+{
+  "course": {
+    "code": "CHEM 361",
+    "name": "Inorganic Chemistry",
+    "term": "Spring 2025",
+    "instructor": "Kiran Boggavarapu",
+    "schedule": "TR 8:00-9:15 AM",
+    "location": "TBD"
+  },
+  "methodology": {
+    "approach": "data-driven",
+    "source": "Knowledge graph from 7 textbooks (5,380 nodes)",
+    "ordering": "PageRank centrality + coverage analysis",
+    "decision_date": "2026-01-18",
+    "rationale": "Main Group has highest PageRank (foundational); periodic trends are prerequisites for CFT"
+  },
+  "units": [
+    {
+      "id": 1,
+      "name": "Main Group Chemistry",
+      "weeks": "1-5",
+      "color": "#06b6d4",
+      "sessions": 10,
+      "rationale": "Highest PageRank (0.0432), 40% coverage, foundational"
+    },
+    {
+      "id": 2,
+      "name": "Coordination Chemistry",
+      "weeks": "6-10",
+      "color": "#8b5cf6",
+      "sessions": 9,
+      "rationale": "Depends on periodic trends, 43% coverage"
+    },
+    {
+      "id": 3,
+      "name": "Solid State Chemistry",
+      "weeks": "11-15",
+      "color": "#f59e0b",
+      "sessions": 4,
+      "rationale": "17% coverage, builds on both prior units"
+    }
+  ],
+  "classes": [
+    {
+      "week": 1,
+      "day": "Tue",
+      "topic": "Periodic trends: atomic properties",
+      "unit": 1,
+      "scale": "DESCRIPTIVE"
+    },
+    {
+      "week": 1,
+      "day": "Thu",
+      "topic": "Periodic trends: ionization, electronegativity",
+      "unit": 1,
+      "scale": "DESCRIPTIVE",
+      "quiz": 1
+    },
+    {
+      "week": 2,
+      "day": "Tue",
+      "topic": "Hydrogen; hydrides",
+      "unit": 1,
+      "scale": "DESCRIPTIVE"
+    },
+    {
+      "week": 2,
+      "day": "Thu",
+      "topic": "Groups 1 & 2: alkali/alkaline earth",
+      "unit": 1,
+      "scale": "DESCRIPTIVE",
+      "quiz": 2
+    },
+    {
+      "week": 3,
+      "day": "Tue",
+      "topic": "Groups 13-14: B, Al, C, Si",
+      "unit": 1,
+      "scale": "DESCRIPTIVE"
+    },
+    {
+      "week": 3,
+      "day": "Thu",
+      "topic": "Groups 15-16: N, P, O, S",
+      "unit": 1,
+      "scale": "DESCRIPTIVE",
+      "quiz": 3
+    },
+    {
+      "week": 4,
+      "day": "Tue",
+      "topic": "Group 17: Halogens",
+      "unit": 1,
+      "scale": "DESCRIPTIVE"
+    },
+    {
+      "week": 4,
+      "day": "Thu",
+      "topic": "Group 18: Noble gases; periodic review",
+      "unit": 1,
+      "scale": "DESCRIPTIVE",
+      "quiz": 4
+    },
+    {
+      "week": 5,
+      "day": "Tue",
+      "topic": "Redox chemistry; oxidation states",
+      "unit": 1,
+      "scale": "DESCRIPTIVE"
+    },
+    {
+      "week": 5,
+      "day": "Thu",
+      "topic": "MIDTERM EXAM 1",
+      "unit": 1,
+      "exam": true
+    },
+    {
+      "week": 6,
+      "day": "Tue",
+      "topic": "Introduction to coordination compounds",
+      "unit": 2,
+      "scale": "STRUCTURAL"
+    },
+    {
+      "week": 6,
+      "day": "Thu",
+      "topic": "Ligands; coordination number",
+      "unit": 2,
+      "scale": "STRUCTURAL",
+      "quiz": 5
+    },
+    {
+      "week": 7,
+      "day": "Tue",
+      "topic": "MARDI GRAS - NO CLASS",
+      "unit": 2,
+      "noClass": true
+    },
+    {
+      "week": 7,
+      "day": "Thu",
+      "topic": "IUPAC nomenclature",
+      "unit": 2,
+      "scale": "STRUCTURAL"
+    },
+    {
+      "week": 8,
+      "day": "Tue",
+      "topic": "Isomerism: geometric, optical",
+      "unit": 2,
+      "scale": "STRUCTURAL",
+      "quiz": 6
+    },
+    {
+      "week": 8,
+      "day": "Thu",
+      "topic": "Crystal Field Theory: octahedral",
+      "unit": 2,
+      "scale": "ELECTRONIC"
+    },
+    {
+      "week": 9,
+      "day": "Tue",
+      "topic": "CFT: tetrahedral, square planar",
+      "unit": 2,
+      "scale": "ELECTRONIC",
+      "quiz": 7
+    },
+    {
+      "week": 9,
+      "day": "Thu",
+      "topic": "CFSE; high-spin vs low-spin",
+      "unit": 2,
+      "scale": "ELECTRONIC"
+    },
+    {
+      "week": 10,
+      "day": "Tue",
+      "topic": "Color and magnetism",
+      "unit": 2,
+      "scale": "ELECTRONIC",
+      "quiz": 8
+    },
+    {
+      "week": 10,
+      "day": "Thu",
+      "topic": "MIDTERM EXAM 2",
+      "unit": 2,
+      "exam": true
+    },
+    {
+      "week": 11,
+      "day": "Tue",
+      "topic": "Solid-state intro: unit cells",
+      "unit": 3,
+      "scale": "STRUCTURAL"
+    },
+    {
+      "week": 11,
+      "day": "Thu",
+      "topic": "Ionic structures; lattice energy",
+      "unit": 3,
+      "scale": "STRUCTURAL",
+      "quiz": 9
+    },
+    {
+      "week": 12,
+      "day": "Tue",
+      "topic": "Band theory; conductors, semiconductors",
+      "unit": 3,
+      "scale": "ELECTRONIC"
+    },
+    {
+      "week": 12,
+      "day": "Thu",
+      "topic": "Applications: materials, catalysis",
+      "unit": 3,
+      "scale": "DESCRIPTIVE",
+      "quiz": 10
+    },
+    {
+      "week": 13,
+      "day": "Tue",
+      "topic": "Course synthesis; cross-unit connections",
+      "unit": 3,
+      "scale": "all"
+    },
+    {
+      "week": 13,
+      "day": "Thu",
+      "topic": "Review session",
+      "unit": 3
+    },
+    {
+      "week": 14,
+      "day": "Tue",
+      "topic": "STUDENT PRESENTATIONS",
+      "unit": 3,
+      "presentations": true
+    },
+    {
+      "week": 14,
+      "day": "Thu",
+      "topic": "STUDENT PRESENTATIONS",
+      "unit": 3,
+      "presentations": true
+    },
+    {
+      "week": 15,
+      "day": "Tue",
+      "topic": "Review session",
+      "unit": 3
+    },
+    {
+      "week": 15,
+      "day": "Thu",
+      "topic": "COMPREHENSIVE FINAL EXAM",
+      "unit": 3,
+      "exam": true,
+      "final": true
+    }
+  ],
+  "slos": {
+    "1": "Explain periodic trends (electronegativity, ionization energy, atomic/ionic radius)",
+    "2": "Predict geometry, magnetism, and color of coordination compounds using CFT",
+    "3": "Name coordination compounds using IUPAC nomenclature",
+    "4": "Calculate lattice energy using Born-Haber cycle",
+    "5": "Compare reactivity patterns across main group elements",
+    "6": "Analyze structure-property relationships in real applications"
+  },
+  "scale_model": {
+    "QUANTUM": "Wave functions, orbitals, spin (rarely needed at 300-level)",
+    "ELECTRONIC": "Crystal Field Theory, MO diagrams, bonding",
+    "STRUCTURAL": "Coordination geometry, crystal structures, isomers",
+    "DESCRIPTIVE": "Periodic trends, element properties, reactions"
+  }
+}

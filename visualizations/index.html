@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Funnel - Interactive Chemistry Learning</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'JetBrains Mono', monospace;
+            background: linear-gradient(135deg, #030712 0%, #0f172a 50%, #1e1b4b 100%);
+            color: #e5e7eb;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #374151;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, #60a5fa, #a78bfa, #f472b6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: #9ca3af;
+            font-size: 1rem;
+        }
+
+        .views-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .view-card {
+            background: rgba(31, 41, 55, 0.5);
+            border: 1px solid #374151;
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s;
+        }
+
+        .view-card:hover {
+            border-color: #60a5fa;
+            transform: translateY(-4px);
+            box-shadow: 0 10px 40px rgba(96, 165, 250, 0.2);
+        }
+
+        .view-card h3 {
+            color: #60a5fa;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .view-card p {
+            color: #9ca3af;
+            font-size: 0.85rem;
+            line-height: 1.5;
+        }
+
+        .view-icon {
+            font-size: 1.5rem;
+        }
+
+        h2 {
+            color: #a78bfa;
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+
+        .examples-section {
+            margin-bottom: 3rem;
+        }
+
+        .example-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .example-card {
+            background: rgba(31, 41, 55, 0.3);
+            border: 1px solid #374151;
+            border-radius: 8px;
+            padding: 1rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .example-card:hover {
+            background: rgba(31, 41, 55, 0.6);
+            border-color: #4b5563;
+        }
+
+        .example-card h4 {
+            color: #fbbf24;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .example-card .question {
+            color: #e5e7eb;
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .example-card .meta {
+            color: #6b7280;
+            font-size: 0.75rem;
+        }
+
+        .try-btn {
+            display: inline-block;
+            margin-top: 0.5rem;
+            padding: 0.3rem 0.8rem;
+            background: #374151;
+            border-radius: 4px;
+            color: #60a5fa;
+            font-size: 0.75rem;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+
+        .try-btn:hover {
+            background: #4b5563;
+        }
+
+        .how-to-section {
+            margin-bottom: 3rem;
+        }
+
+        .steps {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .step {
+            display: flex;
+            gap: 1rem;
+            padding: 1rem;
+            background: rgba(31, 41, 55, 0.3);
+            border-radius: 8px;
+            border-left: 3px solid #60a5fa;
+        }
+
+        .step-num {
+            background: #60a5fa;
+            color: #030712;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .step-content h4 {
+            color: #e5e7eb;
+            margin-bottom: 0.3rem;
+        }
+
+        .step-content p {
+            color: #9ca3af;
+            font-size: 0.85rem;
+        }
+
+        .scale-legend {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: rgba(31, 41, 55, 0.3);
+            border-radius: 8px;
+        }
+
+        .scale-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .scale-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+        }
+
+        .scale-dot.quantum { background: #ef4444; }
+        .scale-dot.electronic { background: #8b5cf6; }
+        .scale-dot.structural { background: #06b6d4; }
+        .scale-dot.descriptive { background: #22c55e; }
+
+        .api-section {
+            background: rgba(31, 41, 55, 0.3);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .api-section h3 {
+            color: #34d399;
+            margin-bottom: 1rem;
+        }
+
+        code {
+            background: #1f2937;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+        }
+
+        pre {
+            background: #1f2937;
+            padding: 1rem;
+            border-radius: 6px;
+            overflow-x: auto;
+            margin-top: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #374151;
+            color: #6b7280;
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 768px) {
+            .views-grid, .example-grid { grid-template-columns: 1fr; }
+            h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Knowledge Funnel</h1>
+            <p class="subtitle">Interactive prerequisite visualization for chemistry learning</p>
+        </header>
+
+        <!-- View Cards -->
+        <div class="views-grid">
+            <a href="scales.html" class="view-card">
+                <h3><span class="view-icon">📊</span> Scale View</h3>
+                <p>Concepts organized in horizontal bands by knowledge scale. See how QUANTUM foundations support ELECTRONIC, STRUCTURAL, and DESCRIPTIVE levels.</p>
+            </a>
+            <a href="hierarchy.html" class="view-card">
+                <h3><span class="view-icon">🌳</span> Hierarchy View</h3>
+                <p>Radial tree showing prerequisite depth. Target at center, prerequisites expand outward. Toggle between radial and vertical layouts.</p>
+            </a>
+            <a href="../funnel.html" class="view-card">
+                <h3><span class="view-icon">🔻</span> Funnel View</h3>
+                <p>Classic funnel visualization. Wide at foundation (many basic concepts), narrowing to the specific answer you're seeking.</p>
+            </a>
+        </div>
+
+        <!-- Scale Legend -->
+        <div class="scale-legend">
+            <div class="scale-item"><div class="scale-dot quantum"></div> <span>QUANTUM - Orbitals, wave functions</span></div>
+            <div class="scale-item"><div class="scale-dot electronic"></div> <span>ELECTRONIC - Bonding, CFT, MO theory</span></div>
+            <div class="scale-item"><div class="scale-dot structural"></div> <span>STRUCTURAL - Geometry, symmetry</span></div>
+            <div class="scale-item"><div class="scale-dot descriptive"></div> <span>DESCRIPTIVE - Trends, properties</span></div>
+        </div>
+
+        <!-- How to Use -->
+        <section class="how-to-section">
+            <h2>How to Use</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-num">1</div>
+                    <div class="step-content">
+                        <h4>Enter a Question</h4>
+                        <p>Type any chemistry question in the search box. Examples: "Why is copper sulfate blue?", "How does magnetism work in complexes?", "What is crystal field splitting?"</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-num">2</div>
+                    <div class="step-content">
+                        <h4>Explore the Graph</h4>
+                        <p>The system traces all prerequisite concepts needed to answer your question. Nodes are colored by scale. Edges show prerequisite relationships.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-num">3</div>
+                    <div class="step-content">
+                        <h4>Click to Dive Deeper</h4>
+                        <p>Click any node to re-trace prerequisites from that concept. Hover for details. Drag to rearrange. Zoom and pan to navigate.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-num">4</div>
+                    <div class="step-content">
+                        <h4>Follow the Path</h4>
+                        <p>The learning path shows you what to study in order. Start from the deepest prerequisites (QUANTUM), work up through ELECTRONIC and STRUCTURAL to the DESCRIPTIVE answer.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Example Questions -->
+        <section class="examples-section">
+            <h2>Example Questions to Try</h2>
+            <div class="example-grid">
+                <div class="example-card">
+                    <h4>Color & Spectroscopy</h4>
+                    <div class="question">"Why is copper sulfate blue?"</div>
+                    <div class="meta">→ Crystal Field Theory → d-d transitions → 124 concepts</div>
+                    <a href="scales.html?q=Why%20is%20copper%20sulfate%20blue" class="try-btn">Try in Scales View →</a>
+                </div>
+                <div class="example-card">
+                    <h4>Magnetism</h4>
+                    <div class="question">"How do unpaired electrons cause magnetism?"</div>
+                    <div class="meta">→ Magnetic Properties → Spin states → electron config</div>
+                    <a href="hierarchy.html?q=magnetic%20properties" class="try-btn">Try in Hierarchy View →</a>
+                </div>
+                <div class="example-card">
+                    <h4>Bonding Theory</h4>
+                    <div class="question">"What is molecular orbital theory?"</div>
+                    <div class="meta">→ MO diagrams → atomic orbitals → bonding/antibonding</div>
+                    <a href="../funnel.html?q=molecular%20orbital%20theory" class="try-btn">Try in Funnel View →</a>
+                </div>
+                <div class="example-card">
+                    <h4>Symmetry</h4>
+                    <div class="question">"How do point groups relate to spectroscopy?"</div>
+                    <div class="meta">→ Point groups → symmetry operations → selection rules</div>
+                    <a href="scales.html?q=point%20group%20symmetry" class="try-btn">Try in Scales View →</a>
+                </div>
+                <div class="example-card">
+                    <h4>Crystal Structures</h4>
+                    <div class="question">"What determines ionic crystal structure?"</div>
+                    <div class="meta">→ Crystal structures → radius ratio → lattice energy</div>
+                    <a href="hierarchy.html?q=crystal%20structures" class="try-btn">Try in Hierarchy View →</a>
+                </div>
+                <div class="example-card">
+                    <h4>Coordination Chemistry</h4>
+                    <div class="question">"Why do chelates form more stable complexes?"</div>
+                    <div class="meta">→ Chelate effect → coordination → thermodynamics</div>
+                    <a href="../funnel.html?q=coordination%20chemistry" class="try-btn">Try in Funnel View →</a>
+                </div>
+                <div class="example-card">
+                    <h4>Electronic Structure</h4>
+                    <div class="question">"What is crystal field stabilization energy?"</div>
+                    <div class="meta">→ CFSE → d-orbital splitting → high/low spin</div>
+                    <a href="scales.html?q=crystal%20field%20stabilization" class="try-btn">Try in Scales View →</a>
+                </div>
+                <div class="example-card">
+                    <h4>Periodic Trends</h4>
+                    <div class="question">"Why does electronegativity increase across a period?"</div>
+                    <div class="meta">→ Periodic trends → effective nuclear charge → shielding</div>
+                    <a href="hierarchy.html?q=periodic%20trends" class="try-btn">Try in Hierarchy View →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- API Section -->
+        <section class="api-section">
+            <h3>API Access</h3>
+            <p>You can also query the system programmatically:</p>
+            <pre><code># Trace prerequisites for a question
+curl "http://localhost:8361/api/trace?q=Why%20is%20copper%20sulfate%20blue"
+
+# Get list of all concepts
+curl "http://localhost:8361/api/concepts"
+
+# Health check
+curl "http://localhost:8361/api/health"</code></pre>
+            <p style="margin-top:1rem;color:#9ca3af;font-size:0.85rem;">
+                Response includes: target concept, all prerequisite nodes, edges, and layer distribution by scale.
+            </p>
+        </section>
+
+        <!-- Data Stats -->
+        <section class="api-section">
+            <h3>Knowledge Graph Statistics</h3>
+            <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:1rem;">
+                <div style="text-align:center;">
+                    <div style="font-size:2rem;color:#60a5fa;font-weight:700;">8,753</div>
+                    <div style="color:#9ca3af;font-size:0.8rem;">Textbook Chunks</div>
+                </div>
+                <div style="text-align:center;">
+                    <div style="font-size:2rem;color:#a78bfa;font-weight:700;">5,380</div>
+                    <div style="color:#9ca3af;font-size:0.8rem;">Concepts</div>
+                </div>
+                <div style="text-align:center;">
+                    <div style="font-size:2rem;color:#34d399;font-weight:700;">2,885</div>
+                    <div style="color:#9ca3af;font-size:0.8rem;">Connections</div>
+                </div>
+                <div style="text-align:center;">
+                    <div style="font-size:2rem;color:#fbbf24;font-weight:700;">7</div>
+                    <div style="color:#9ca3af;font-size:0.8rem;">Textbooks</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>CHEM 361 Inorganic Chemistry | Knowledge Graph Pedagogy Project | 2026</p>
+        </footer>
+    </div>
+
+    <script>
+    // Handle URL query parameter to auto-load examples
+    document.querySelectorAll('.try-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            // Let the link work naturally
+        });
+    });
+    </script>
+</body>
+</html>

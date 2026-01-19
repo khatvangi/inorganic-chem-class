@@ -1,0 +1,2566 @@
+[
+  {
+    "book": "ic_tina.pdf",
+    "chunk_idx": 1251,
+    "text_preview": "e light p-block elements are\nsent react immediately with the Au3+ ions formed to produce                  more electronegative than the elements immediately below\n464          15 The Group 15 elements",
+    "extraction": {
+      "topic": "Main Group Chemistry",
+      "subtopic": "Oxidation States and Redox Behavior of Group 15 Elements",
+      "key_concepts": [
+        "Oxidizing agents",
+        "Alternation effect",
+        "Inert-pair effect",
+        "Disproportionation reactions",
+        "Periodic trends"
+      ],
+      "prerequisites": [
+        "Periodic trends",
+        "Redox reactions",
+        "Oxidation states"
+      ],
+      "leads_to": [
+        "Environmental chemistry",
+        "Coordination chemistry"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "ic_basset.pdf",
+    "chunk_idx": 390,
+    "text_preview": "reactions may be expressed as ionic equations of the type :\n                     2       +\n               O - + 2 H 30 = 3 H 20 (salt formation)\n                   2\n                 0 - + H 20 = 20H-",
+    "extraction": {
+      "topic": "Oxides and Their Chemical Behavior",
+      "subtopic": "Acid-Base Character of Metal and Non-Metal Oxides",
+      "key_concepts": [
+        "Metal oxides",
+        "Basic character",
+        "Oxidation state",
+        "Acidic oxides",
+        "Salt formation"
+      ],
+      "prerequisites": [
+        "Periodic trends",
+        "Oxidation states",
+        "Acid-base reactions"
+      ],
+      "leads_to": [
+        "Coordination chemistry",
+        "Oxidation-reduction reactions"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "concise_ic_jd_lee.pdf",
+    "chunk_idx": 462,
+    "text_preview": "reactions in aqueous solution , in non-\n aqueous solution, or in a fused melt, and whether we require a measure of\n the strengths of acids and bases. For this reason we need to know several\n theories.",
+    "extraction": {
+      "topic": "Main Group Chemistry",
+      "subtopic": "Hydrides and Their Properties",
+      "key_concepts": [
+        "Hydrides",
+        "Boiling Points",
+        "Melting Points",
+        "Enthalpies of Vaporization"
+      ],
+      "prerequisites": [
+        "Understanding of periodic trends",
+        "Basic knowledge of intermolecular forces"
+      ],
+      "leads_to": [
+        "Comparative analysis of hydrides",
+        "Acid-Base Behavior in Different Solvents"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "advancex_ic_applicaionts.pdf",
+    "chunk_idx": 200,
+    "text_preview": "possible. All evidence indicates that, in aqueous solution, substitution\n  5. Examples of Different Coordination Numbers With Geometries and Factors In\ufb02uencing Reaction Mechanism 135\n\nTable 7.12 Inner",
+    "extraction": {
+      "topic": "Coordination Compounds",
+      "subtopic": "Coordination Chemistry and Reaction Mechanisms",
+      "key_concepts": [
+        "Coordination number",
+        "Labile and inert complexes",
+        "d-electron configuration",
+        "Inner orbital complexes",
+        "Reaction mechanism"
+      ],
+      "prerequisites": [
+        "Coordination chemistry basics",
+        "Electronic configuration of transition metals",
+        "Ligand field theory"
+      ],
+      "leads_to": [
+        "Crystal Field Theory",
+        "Ligand Field Theory"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "concise_ic_jd_lee.pdf",
+    "chunk_idx": 363,
+    "text_preview": "3              6NH-'       = 6\n [Co(NH~)sCl)2+ 2e1-              4                  2              5NH3 + lCI-  =6\n [Co(NH3)4Cl2)+ c1-               2                  1              4NH3 + 2c1- = 6\n\n",
+    "extraction": {
+      "topic": "Coordination Compounds",
+      "subtopic": "Colligative Properties and Structure Determination",
+      "key_concepts": [
+        "Cryoscopic measurements",
+        "Freezing point depression",
+        "Particle dissociation"
+      ],
+      "prerequisites": [
+        "Understanding of colligative properties",
+        "Basic knowledge of ionic dissociation"
+      ],
+      "leads_to": [
+        "Structure determination techniques",
+        "Electron configuration analysis"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "concise_ic_jd_lee.pdf",
+    "chunk_idx": 198,
+    "text_preview": "AtOmic\nEnergy       orbitals             orbitals                    orbitals           Energy\n\na2s\n                                        NO\n                                      molecule\n\nFigure 4.",
+    "extraction": {
+      "topic": "Molecular Orbital Theory",
+      "subtopic": "Molecular Orbital Diagrams and Bonding in Diatomic Molecules",
+      "key_concepts": [
+        "Molecular Orbital Theory",
+        "Bond Order",
+        "Antibonding Orbitals",
+        "Electron Configuration",
+        "Homonuclear Diatomic Molecules"
+      ],
+      "prerequisites": [
+        "Atomic Orbitals",
+        "Electron Configuration",
+        "Bonding in Molecules"
+      ],
+      "leads_to": [
+        "Molecular Orbital Calculations",
+        "Electronic Structure of Molecules"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "concise_ic_jd_lee.pdf",
+    "chunk_idx": 165,
+    "text_preview": "y\nforming four bonds\n                                  ~       ~      lt.;.!1.;.lt~I\n                                                , .\u00b7~\n                                           a bonds   it bonds",
+    "extraction": {
+      "topic": "Molecular Structure and Bonding",
+      "subtopic": "Valence Bond Theory and Molecular Geometry",
+      "key_concepts": [
+        "Sigma bonds",
+        "Pi bonds",
+        "Hybridization",
+        "VSEPR theory",
+        "Bond angle"
+      ],
+      "prerequisites": [
+        "Hybridization concepts",
+        "Valence bond theory",
+        "Molecular geometry principles"
+      ],
+      "leads_to": [
+        "Molecular orbital theory",
+        "Coordination chemistry"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "ic_basset.pdf",
+    "chunk_idx": 260,
+    "text_preview": "or sulphuric acids\nin the absence of air or other oxidizing agents. Oxidizing acids,\nsuch as nitric acid and hot concentrated sulphuric acid, attack the\nmetal as indicated in the following equations :",
+    "extraction": {
+      "topic": "Inorganic Chemistry of Transition Metals",
+      "subtopic": "Reactivity of Transition Metals with Acids and Complexing Agents",
+      "key_concepts": [
+        "Oxidizing acids",
+        "Complexing agents",
+        "Aqua regia",
+        "Cyanide leaching",
+        "Tetrachloroaurate(III) ion"
+      ],
+      "prerequisites": [
+        "Basic acid-base reactions",
+        "Redox chemistry",
+        "Coordination chemistry"
+      ],
+      "leads_to": [
+        "Extraction of metals from ores",
+        "Coordination complex formation"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "ic_tina.pdf",
+    "chunk_idx": 417,
+    "text_preview": "e dependence of its equilibrium constant, Kw).\ntronegativity (Section 1.7), the gas-phase acidity of HA                              The value found is 1188 kJ mol\u22121.\n156             5 Acids and bases",
+    "extraction": {
+      "topic": "Acid-Base Chemistry",
+      "subtopic": "Acid-Base Equilibria and Thermodynamics",
+      "key_concepts": [
+        "Gibbs energy of hydration",
+        "proton affinity",
+        "equilibrium constant (Kw)"
+      ],
+      "prerequisites": [
+        "Thermodynamics",
+        "Acid-base reactions"
+      ],
+      "leads_to": [
+        "pH calculations",
+        "Electrochemistry"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "advancex_ic_applicaionts.pdf",
+    "chunk_idx": 160,
+    "text_preview": "iagram for Fe(CO)5.\n                                                                                   4. Molecular Orbital Theory 107\n\nn FIGURE 6.15 Molecular orbital correlation diagram for Cr(CO)6.",
+    "extraction": {
+      "topic": "Coordination Compounds",
+      "subtopic": "Molecular Orbital Theory in Metal Carbonyls",
+      "key_concepts": [
+        "Molecular Orbital Theory",
+        "Metal-Carbonyl Bonding",
+        "Electron Count",
+        "Backbonding",
+        "Ligand-Centered Orbitals"
+      ],
+      "prerequisites": [
+        "Molecular Orbital Theory basics",
+        "Coordination chemistry concepts",
+        "Electron configuration of transition metals"
+      ],
+      "leads_to": [
+        "Organometallic Chemistry",
+        "Crystal Field Theory"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "ic_tina.pdf",
+    "chunk_idx": 1668,
+    "text_preview": "1.5 \u00d7 103\n                   (a)                       Nuclear coordinates\n                                                                              * \u0394d is the change in mean M\u2013L bond length.\n\nan",
+    "extraction": {
+      "topic": "Electrochemical Reactions",
+      "subtopic": "Electron Transfer Mechanisms",
+      "key_concepts": [
+        "Electron transfer reactions",
+        "Gibbs free energy change (\u2206rG)",
+        "Activation energy (\u2206\u2021G)",
+        "Rate equations",
+        "Transition state theory"
+      ],
+      "prerequisites": [
+        "Thermodynamics of chemical reactions",
+        "Transition state theory",
+        "Electrochemical kinetics"
+      ],
+      "leads_to": [
+        "Electrochemical kinetics",
+        "Reaction mechanisms in inorganic chemistry"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "ic_tina.pdf",
+    "chunk_idx": 834,
+    "text_preview": "SiCl4    PCl3     S2Cl2   Cl2\n\nPCl5     SCl2\n KCl     CaCl2    ScCl3    TiCl2    VCl2     CrCl2   MnCl2       FeCl2   CoCl2     NiCl2       CuCl    ZnCl2        GaCl3    GeCl4    AsCl3    SeCl4   BrCl",
+    "extraction": {
+      "topic": "Main Group Chemistry",
+      "subtopic": "Binary Compounds of Chlorine with Metals and Nonmetals",
+      "key_concepts": [
+        "Binary chlorides",
+        "Metal chlorides",
+        "Nonmetal chlorides",
+        "Periodic trends in chloride compounds"
+      ],
+      "prerequisites": [
+        "Periodic trends",
+        "Chemical bonding",
+        "Oxidation states"
+      ],
+      "leads_to": [
+        "Coordination chemistry",
+        "Crystal field theory"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "ic_basset.pdf",
+    "chunk_idx": 286,
+    "text_preview": "ation of mercury (II) oxide. Cor-\nresponding tetrachloro and tetrabromo complexes of mercury (I I)\nare also readily formed, but they are less stable than the iodo\ncomplex; no fluoro complex is formed.",
+    "extraction": {
+      "topic": "Main Group Chemistry",
+      "subtopic": "Oxy-acid Salts and Hydrolysis",
+      "key_concepts": [
+        "Oxy-acid salts",
+        "Hydrolysis of mercury(II) salts",
+        "Basic carbonate formation",
+        "Thermal decomposition of oxy-salts",
+        "Disproportionation reaction"
+      ],
+      "prerequisites": [
+        "Understanding of basic salt formation",
+        "Knowledge of hydrolysis reactions",
+        "Familiarity with thermal decomposition reactions"
+      ],
+      "leads_to": [
+        "Coordination chemistry of transition metals",
+        "Thermal stability of inorganic compounds"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "advancex_ic_applicaionts.pdf",
+    "chunk_idx": 60,
+    "text_preview": "4\n                             5                                    1\n                                                                                      5                         5\n\n1              ",
+    "extraction": {
+      "topic": "Symmetry and Molecular Structure",
+      "subtopic": "Point Groups and Symmetry Elements",
+      "key_concepts": [
+        "mirror plane of symmetry",
+        "\u03c3v",
+        "\u03c3v'"
+      ],
+      "prerequisites": [
+        "basic understanding of molecular symmetry",
+        "knowledge of point group classification"
+      ],
+      "leads_to": [
+        "determination of molecular point groups",
+        "application of symmetry in spectroscopy"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "Inorganic_Chemistry_Atkins_Shriver.pdf",
+    "chunk_idx": 876,
+    "text_preview": "Hg\n                                                                                                         Ionization energy, I/(kJ mol\u20131)\n\nis most readily understood in terms of the Mulliken definit",
+    "extraction": {
+      "topic": "Periodic Trends",
+      "subtopic": "Electronegativity and Periodic Trends",
+      "key_concepts": [
+        "Electronegativity",
+        "Ionization Energy",
+        "Electron Affinity",
+        "Pauling Electronegativity Scale"
+      ],
+      "prerequisites": [
+        "Understanding of periodic trends",
+        "Basic knowledge of atomic structure"
+      ],
+      "leads_to": [
+        "Chemical Bonding",
+        "Reactivity Trends"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "descriptive_ic.pdf",
+    "chunk_idx": 783,
+    "text_preview": "nue to release it to\n           the atmosphere in increasing quantities, may be responsible for the radiative forcing\n           that threatens to warm Earth and produce a variety of dramatic effects.",
+    "extraction": {
+      "topic": "Environmental Chemistry",
+      "subtopic": "Greenhouse Gases and Atmospheric Chemistry",
+      "key_concepts": [
+        "radiative forcing",
+        "greenhouse gases",
+        "oxygen cycle",
+        "nitrogen dioxide"
+      ],
+      "prerequisites": [
+        "basic understanding of atmospheric composition",
+        "knowledge of chemical reactions and stoichiometry"
+      ],
+      "leads_to": [
+        "Climate Change Mechanisms",
+        "Air Pollution Chemistry"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "advancex_ic_applicaionts.pdf",
+    "chunk_idx": 300,
+    "text_preview": "d\nsolvated species (solvo-complexes) by complexation with the lower\ncoordinated catalyst as shown in Fig. 11.4.\n\nSolvent\n\nSolvent\n\nSolvent\n\nn FIGURE 11.4 Formation of higher coordinated solvo-complex.",
+    "extraction": {
+      "topic": "Catalysis with Organometallics",
+      "subtopic": "Catalytic Mechanisms and Complex Behavior",
+      "key_concepts": [
+        "solvo-complexes",
+        "oxidative addition",
+        "reductive elimination",
+        "monohydride complexes",
+        "hydroformylation"
+      ],
+      "prerequisites": [
+        "coordination chemistry",
+        "organometallic chemistry",
+        "catalytic mechanisms"
+      ],
+      "leads_to": [
+        "homologation processes",
+        "hydrogenolysis reactions"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "Inorganic_Chemistry_Atkins_Shriver.pdf",
+    "chunk_idx": 292,
+    "text_preview": "in terms of the energetics of crystal formation. The structures described have\nbeen obtained by using X-ray diffraction (Section 8.1), and were among the first sub-\nstances to be examined in this way.",
+    "extraction": {
+      "topic": "Solid State Chemistry",
+      "subtopic": "Ionic Crystal Structures",
+      "key_concepts": [
+        "Close-packed structures",
+        "Hole-filling in ionic lattices",
+        "Rock-salt structure",
+        " ccp (cubic close-packed) arrangement",
+        "hcp (hexagonal close-packed) arrangement"
+      ],
+      "prerequisites": [
+        "Crystal field theory basics",
+        "Understanding of ionic bonding",
+        "Knowledge of X-ray diffraction techniques"
+      ],
+      "leads_to": [
+        "Crystal field stabilization energy calculations",
+        "Coordination complexes and their geometries"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "ic_basset.pdf",
+    "chunk_idx": 78,
+    "text_preview": "al values for\nthe elements in the first row of the Periodic Table. Table 111.2\ngives some electronegativity values calculated on this basis.\n\nTABLE I I I . 2 . ELECTRONEGATIVITY VALUES (PAULING SCALE)",
+    "extraction": {
+      "topic": "Main Group Chemistry",
+      "subtopic": "Electronegativity and Chemical Bonding",
+      "key_concepts": [
+        "Electronegativity",
+        "Pauling Scale",
+        "Chemical Bond Types"
+      ],
+      "prerequisites": [
+        "Understanding of periodic trends",
+        "Basic knowledge of atomic structure"
+      ],
+      "leads_to": [
+        "Predicting molecular polarity",
+        "Understanding ionic vs covalent bonding"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "ic_basset.pdf",
+    "chunk_idx": 312,
+    "text_preview": "Silicon\ndissolves in hot solutions of alkali metal hydroxide with liberation\nof hydrogen:\n                                                    2\n                   S i + 2 0 H - + H 20 =     Si03 -+2H2",
+    "extraction": {
+      "topic": "Main Group Chemistry",
+      "subtopic": "Reactions and Oxidation States of Group 14 Elements",
+      "key_concepts": [
+        "Silicon's reaction with alkali metal hydroxide",
+        "Oxidation states of tin and lead",
+        "Formation of SiF6^2- ion",
+        "Carbides as binary compounds of carbon",
+        "Reactions of tin and lead with acids"
+      ],
+      "prerequisites": [
+        "Understanding of oxidation states",
+        "Knowledge of acid-base reactions",
+        "Basic knowledge of periodic trends"
+      ],
+      "leads_to": [
+        "Coordination chemistry of Group 14 elements",
+        "Reactivity patterns in main group elements"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "concise_ic_jd_lee.pdf",
+    "chunk_idx": 132,
+    "text_preview": "o-\n        \"thetical reaction;\n                            Ca(s) + 1Cl 2 (g)-+ CaCl(s)\n        Explain why . CaCl(s) has never been made even though the\n        enthalpy for this reaction is negative.",
+    "extraction": {
+      "topic": "Solid State Chemistry and Bonding",
+      "subtopic": "Defects in Solids and Electrical Conduction",
+      "key_concepts": [
+        "Point defects",
+        "Electrical conduction mechanisms",
+        "Born-Haber cycle",
+        "Oxidation states",
+        "Standard enthalpy change"
+      ],
+      "prerequisites": [
+        "Understanding of thermodynamic concepts",
+        "Knowledge of crystal structures",
+        "Familiarity with oxidation states"
+      ],
+      "leads_to": [
+        "Electrochemical processes",
+        "Materials science applications"
+      ],
+      "confidence": 0.9
+    }
+  },
+  {
+    "book": "advancex_ic_applicaionts.pdf",
+    "chunk_idx": 260,
+    "text_preview": "10H12 and\n                                    closo-MeGaC2B4H6, where a MeGa replaces a BH unit in a pentagonal\n                                    bipyramidal closo-C2B5H7 cage, as shown in Fig. 9.7.",
+    "extraction": {
+      "topic": "Main Group Chemistry",
+      "subtopic": "Heteroboranes and Metallacarboranes",
+      "key_concepts": [
+        "closo structures",
+        "nido structures",
+        "arachno structures",
+        "metallacarboranes",
+        "isoelectronic fragments"
+      ],
+      "prerequisites": [
+        "cluster chemistry concepts",
+        "isoelectronic series understanding"
+      ],
+      "leads_to": [
+        "metallorganic chemistry",
+        "cluster synthesis techniques"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "Inorganic_Chemistry_Atkins_Shriver.pdf",
+    "chunk_idx": 2190,
+    "text_preview": "PPh 3\n                                                                                    C\n             R\n                                                                                            R",
+    "extraction": {
+      "topic": "Coordination Chemistry",
+      "subtopic": "Catalytic Mechanisms",
+      "key_concepts": [
+        "Wilkinson\u2019s catalyst",
+        "Hydrogenation reaction",
+        "Catalytic cycle"
+      ],
+      "prerequisites": [
+        "Coordination complexes",
+        "Reaction mechanisms",
+        "Transition metals"
+      ],
+      "leads_to": [
+        "Homogeneous catalysis",
+        "Organometallic chemistry"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "Inorganic_Chemistry_Atkins_Shriver.pdf",
+    "chunk_idx": 146,
+    "text_preview": "s an octet.\nEach bonding pair (:) is then represented by a single line (\u0001). The net charge of a polyat-\nomic ion is supposed to be possessed by the ion as a whole, not by a particular individual\natom.",
+    "extraction": {
+      "topic": "Chemical Bonding",
+      "subtopic": "Lewis Structures and Electron Distribution",
+      "key_concepts": [
+        "Lewis structures",
+        "octet rule",
+        "resonance"
+      ],
+      "prerequisites": [
+        "Valence electrons",
+        "ionic charge"
+      ],
+      "leads_to": [
+        "Molecular geometry",
+        "resonance stabilization"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "concise_ic_jd_lee.pdf",
+    "chunk_idx": 33,
+    "text_preview": ".\n                                                           mv\n                   (where h is Planck's constant, m is the mass of an electron and v its\n                   velocity); hence:\n\nor\n\n(1.5)",
+    "extraction": {
+      "topic": "Quantum Mechanics",
+      "subtopic": "Schrodinger Equation",
+      "key_concepts": [
+        "Wave equation",
+        "Probability density",
+        "Energy levels",
+        "Kinetic energy",
+        "Potential energy"
+      ],
+      "prerequisites": [
+        "Classical mechanics",
+        "Wave-particle duality",
+        "Electron behavior"
+      ],
+      "leads_to": [
+        "Quantum chemical calculations",
+        "Atomic structure theory"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "ic_tina.pdf",
+    "chunk_idx": 556,
+    "text_preview": "\u03bdE / V\n\n(explicitly, \u03bd E\u2212\u2212\u25cb = \u2212\u0394rG /F, where \u0394rG is the standard reac-\n                          \u29b5             \u29b5\n\nOH\u2013\ntion Gibbs energy for the half-reaction given above), a Frost                     ",
+    "extraction": {
+      "topic": "Electrochemistry",
+      "subtopic": "Electrochemical Potential and Frost Diagrams",
+      "key_concepts": [
+        "Frost diagram",
+        "standard reaction Gibbs energy",
+        "exergonic reactions"
+      ],
+      "prerequisites": [
+        "Gibbs free energy",
+        "electrochemical cells"
+      ],
+      "leads_to": [
+        "Electrochemical series",
+        "Redox reactions in aqueous solutions"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "concise_ic_jd_lee.pdf",
+    "chunk_idx": 99,
+    "text_preview": "+     0.96    0.73   0.68    0.61\n\n\u2022Indicates reciprocal value of ,- Ir+ since the normal ratio is greater than unity.\n '--~~~~~~-A_C_A_U_T_IO~N_A_RY~W_O_R_D~O_N~\u00b7R__A_D_IU_S_R_A_T_I_O_S~~~~~~--''[}IJ",
+    "extraction": {
+      "topic": "Inorganic Solid State Chemistry",
+      "subtopic": "Radius Ratio and Crystal Structure Prediction",
+      "key_concepts": [
+        "Radius ratio",
+        "Ionic radii",
+        "Coordination number",
+        "Electrostatic attraction",
+        "Crystal lattice distortion"
+      ],
+      "prerequisites": [
+        "Understanding of ionic bonding",
+        "Basic crystal structure concepts",
+        "Knowledge of coordination numbers"
+      ],
+      "leads_to": [
+        "Crystal field theory",
+        "Lattice energy calculations"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "advancex_ic_applicaionts.pdf",
+    "chunk_idx": 40,
+    "text_preview": "further examples of the nonstereochemically active s orbital in the\n                                         heavier main group complexes (the so-called inert pair effect).\n\n3.  NONRIGID SHAPES OF MOL",
+    "extraction": {
+      "topic": "Main Group Chemistry",
+      "subtopic": "Stereochemistry and Molecular Dynamics",
+      "key_concepts": [
+        "stereochemically nonrigid molecules",
+        "tautomerism",
+        "fluxional structures",
+        "inert pair effect",
+        "NMR spectroscopy"
+      ],
+      "prerequisites": [
+        "basic molecular structure concepts",
+        "understanding of molecular vibrations",
+        "knowledge of NMR spectroscopy"
+      ],
+      "leads_to": [
+        "Coordination Chemistry",
+        "Molecular Spectroscopy"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "ic_basset.pdf",
+    "chunk_idx": 364,
+    "text_preview": "Na[Sb(OH) 6]) salts. The greater difficulty of achieving the penta-\npositive state for these elements (compared with phosphorus) is\n                     THE NITROGEN         FAMILY                 279",
+    "extraction": {
+      "topic": "Main Group Chemistry",
+      "subtopic": "Oxides and Oxyacids of the Nitrogen Family",
+      "key_concepts": [
+        "Arsenic (V) oxide",
+        "Antimony (V) oxide",
+        "Bismuth (V) oxide",
+        "Oxy-acids of Phosphorus",
+        "Oxidation states"
+      ],
+      "prerequisites": [
+        "Oxidation states of main group elements",
+        "Preparation of oxides",
+        "Hydrolysis reactions"
+      ],
+      "leads_to": [
+        "Oxidation-reduction reactions",
+        "Acid-base chemistry"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "concise_ic_jd_lee.pdf",
+    "chunk_idx": 330,
+    "text_preview": "2% oxygen and\n    traces of the noble gases argotl, helium and tteon. These may be\n    separated by fractional distillation of liquid air. Helium is also obtained\n    from some natural gas deposits ..",
+    "extraction": {
+      "topic": "Main Group Chemistry",
+      "subtopic": "Preparation and Properties of Elements and Compounds",
+      "key_concepts": [
+        "Fractional distillation of liquid air",
+        "Thermal decomposition",
+        "Hydrides",
+        "Azides",
+        "Nickel carbonyl"
+      ],
+      "prerequisites": [
+        "Basic knowledge of element properties",
+        "Understanding of chemical reactions and decomposition",
+        "Familiarity with gas-phase reactions"
+      ],
+      "leads_to": [
+        "Industrial chemical processes",
+        "Purification techniques for metals"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "descriptive_ic.pdf",
+    "chunk_idx": 1305,
+    "text_preview": "nately, World War I was the only\nmajor conflict in which chemical warfare played any significant role. Sodium chloride\nremains the principal source of chlorine and, ultimately, all chlorine compounds.",
+    "extraction": {
+      "topic": "Main Group Chemistry",
+      "subtopic": "Discovery and Properties of Iodine",
+      "key_concepts": [
+        "Iodine",
+        "Sodium chloride",
+        "Chlorine compounds",
+        "Sulfuric acid",
+        "Element discovery"
+      ],
+      "prerequisites": [
+        "Basic knowledge of chemical elements and their properties",
+        "Understanding of acid-base reactions",
+        "Familiarity with historical context of chemical discoveries"
+      ],
+      "leads_to": [
+        "Periodic table trends",
+        "Chemical warfare history"
+      ],
+      "confidence": 0.9
+    }
+  },
+  {
+    "book": "ic_tina.pdf",
+    "chunk_idx": 278,
+    "text_preview": "+ (6 + 21 ) = 4.   Self-test 4.5 Show that the ratio of close-packed spheres to\n       The octahedral holes are sited along each edge of the cube                      tetrahedral holes in ccp is 1:2.\n",
+    "extraction": {
+      "topic": "Crystal Structures and Packing",
+      "subtopic": "Close-Packed Structures in Metals",
+      "key_concepts": [
+        "Close-packed structures",
+        "Octahedral holes",
+        "Tetrahedral holes",
+        "Cubic close-packed (ccp)",
+        "Hexagonal close-packed (hcp)"
+      ],
+      "prerequisites": [
+        "Understanding of crystal lattices",
+        "Knowledge of coordination numbers",
+        "Basic concepts of atomic packing"
+      ],
+      "leads_to": [
+        "Crystal field theory",
+        "Coordination compounds"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "Inorganic_Chemistry_Atkins_Shriver.pdf",
+    "chunk_idx": 1314,
+    "text_preview": "l2S3(s)\n 2 Fe3+ ( aq) + H2O2 ( aq) \u2192 2 Fe2+ ( aq) + O2 ( g) + 2 H+ ( aq)\n and then be regenerated in the reaction                                              Al2S3(s) \b 3 H2O(l) \u2192 Al2O3(s) \b 3 H2S(g)",
+    "extraction": {
+      "topic": "Redox Reactions and Electrochemistry",
+      "subtopic": "Oxidation-Reduction Reactions in Aqueous Solutions",
+      "key_concepts": [
+        "Redox reactions",
+        "Oxidation states",
+        "Hydrogen peroxide decomposition",
+        "Ferric and ferrous ions",
+        "Acid-base equilibria"
+      ],
+      "prerequisites": [
+        "Balancing redox reactions",
+        "Understanding oxidation states",
+        "Basic acid-base chemistry"
+      ],
+      "leads_to": [
+        "Electrochemical cells",
+        "Corrosion processes"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "descriptive_ic.pdf",
+    "chunk_idx": 957,
+    "text_preview": "eb                                and 5                            for        tl\n                                                                                 ilt to rem\n\n1]4    qt Co\n\norbital pen\n",
+    "extraction": {
+      "topic": "Main Group Chemistry",
+      "subtopic": "Group 13 Elements and Their Properties",
+      "key_concepts": [
+        "electron density",
+        "oxidation states",
+        "metallic character",
+        "Z-effective"
+      ],
+      "prerequisites": [
+        "periodic trends",
+        "electron configuration",
+        "oxidation states"
+      ],
+      "leads_to": [
+        "Coordination Compounds",
+        "Reactivity of Main Group Elements"
+      ],
+      "confidence": 0.85
+    }
+  },
+  {
+    "book": "ic_basset.pdf",
+    "chunk_idx": 26,
+    "text_preview": "al value. From this defi-\nnition it follows that after a time \u03a4 the number of radioactive atoms\nremaining will be JV 0/2, SO that NTjNQSubstituting          this value in\nequation (14) it is seen that",
+    "extraction": {
+      "topic": "Radioactivity and Nuclear Chemistry",
+      "subtopic": "Radioactive Decay and Half-Life",
+      "key_concepts": [
+        "Radioactive decay",
+        "Half-life period",
+        "Decay series",
+        "Isotopes",
+        "Logarithmic equations"
+      ],
+      "prerequisites": [
+        "Basic understanding of atomic structure",
+        "Concept of isotopes",
+        "Logarithmic functions"
+      ],
+      "leads_to": [
+        "Radiometric dating techniques",
+        "Nuclear reaction kinetics"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "descriptive_ic.pdf",
+    "chunk_idx": 435,
+    "text_preview": "Body-centered              Face-centered\nF = face-centered;                                                           cubic (1)                cubic (F)\nC = base-centered.)\n\nSimple               Body-",
+    "extraction": {
+      "topic": "Crystal Structures and Lattices",
+      "subtopic": "Crystal Systems and Bravais Lattices",
+      "key_concepts": [
+        "Body-centered cubic",
+        "Face-centered cubic",
+        "Base-centered orthorhombic",
+        "Face-centered orthorhombic",
+        "Hexagonal close packing"
+      ],
+      "prerequisites": [
+        "Understanding of crystal lattices",
+        "Knowledge of unit cells",
+        "Familiarity with crystal systems"
+      ],
+      "leads_to": [
+        "Crystallography",
+        "Solid-state chemistry"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "advancex_ic_applicaionts.pdf",
+    "chunk_idx": 180,
+    "text_preview": "attract and orient more water molecules. Just the opposite would be\n     5. Examples of Different Coordination Numbers With Geometries and Factors In\ufb02uencing Reaction Mechanism 123\n\nexpected if there ",
+    "extraction": {
+      "topic": "Coordination Compounds",
+      "subtopic": "Coordination Numbers and Reaction Mechanisms",
+      "key_concepts": [
+        "Coordination number",
+        "Associative mechanism",
+        "Polarizability",
+        "Steric bulk",
+        "Transition metal complexes"
+      ],
+      "prerequisites": [
+        "Coordination chemistry basics",
+        "Reaction mechanisms",
+        "Nucleophilic substitution"
+      ],
+      "leads_to": [
+        "Reaction mechanisms in coordination chemistry",
+        "Coordination sphere effects"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "ic_tina.pdf",
+    "chunk_idx": 0,
+    "text_preview": "The elements\nName                   Symbol   Atomic   Molar mass   Name            Symbol   Atomic   Molar mass\n                                number   (g mol\u22121)                             number   ",
+    "extraction": {
+      "topic": "Periodic Table and Elemental Properties",
+      "subtopic": "Elemental Data and Classification",
+      "key_concepts": [
+        "Atomic number",
+        "Molar mass",
+        "Symbol",
+        "Elemental classification"
+      ],
+      "prerequisites": [
+        "Basic understanding of periodic table organization",
+        "Knowledge of atomic structure basics"
+      ],
+      "leads_to": [
+        "Chemical bonding and reactivity patterns",
+        "Periodic trends and properties"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "descriptive_ic.pdf",
+    "chunk_idx": 348,
+    "text_preview": "then exposing it to sun for several hours produced a dark-blue coating on the paper.\n                            If an object was placed on the paper before eae a negative print of the object\n\nd produ",
+    "extraction": {
+      "topic": "Coordination Compounds",
+      "subtopic": "Applications of Coordination Compounds",
+      "key_concepts": [
+        "Coordination compounds in photography",
+        "Iron(III) hexacyanoferrate(II) (Turnbull's blue)",
+        "Cyanide ligands",
+        "Photographic sensitization",
+        "Coordination compound structure"
+      ],
+      "prerequisites": [
+        "Understanding of coordination compounds",
+        "Basic knowledge of chemical reactions",
+        "Familiarity with ligand field theory"
+      ],
+      "leads_to": [
+        "Photographic chemistry",
+        "Coordination compound synthesis"
+      ],
+      "confidence": 0.9
+    }
+  },
+  {
+    "book": "ic_basset.pdf",
+    "chunk_idx": 416,
+    "text_preview": ".g. C F 4 , GC1 4 and NF 3, are relatively resistant to hydro-\nlysis. The hydrolysis of a covalent halide involves, as a first step, the\n322             GROUP    CHEMISTRY         OF T H E    ELEMENTS",
+    "extraction": {
+      "topic": "Main Group Chemistry",
+      "subtopic": "Hydrolysis and Covalent Nature of Halides",
+      "key_concepts": [
+        "Hydrolysis of covalent halides",
+        "Octet expansion limitations",
+        "Covalent vs. ionic character of metal halides",
+        "Stabilization of high oxidation states by fluorine",
+        "Formation of high oxidation state fluorides"
+      ],
+      "prerequisites": [
+        "Understanding of covalent and ionic bonding",
+        "Knowledge of oxidation states and electronegativity",
+        "Basic knowledge of hydrolysis reactions"
+      ],
+      "leads_to": [
+        "Coordination chemistry of halides",
+        "Electrochemical properties of metal halides"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "ic_tina.pdf",
+    "chunk_idx": 2085,
+    "text_preview": "be deposited within the mesostructured channels (Section\n\n8\n                                                                                  MCM-41 stands for Mobil Crystalline Material type 41.\n\nFUR",
+    "extraction": {
+      "topic": "Solid-State Chemistry",
+      "subtopic": "Mesostructured Materials and MCM-41",
+      "key_concepts": [
+        "Mesostructured channels",
+        "MCM-41",
+        "Sol\u2013gel process",
+        "Structural inorganic chemistry",
+        "Solid-state applications"
+      ],
+      "prerequisites": [
+        "Fundamentals of solid-state chemistry",
+        "Materials chemistry basics",
+        "Structural chemistry principles"
+      ],
+      "leads_to": [
+        "Advanced structural solid-state chemistry",
+        "Applications of mesostructured materials"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "advancex_ic_applicaionts.pdf",
+    "chunk_idx": 80,
+    "text_preview": "1X\n                                                                  aj \u00bc       c     \u00f0R\u00decj \u00f0R\u00de\n                                                                         h R \u00f0Red\u00de\n\n1\n                  ",
+    "extraction": {
+      "topic": "Group Theory and Molecular Symmetry",
+      "subtopic": "Character Tables and Point Groups",
+      "key_concepts": [
+        "C3v point group",
+        "Character tables",
+        "Reduction of representations"
+      ],
+      "prerequisites": [
+        "Understanding of molecular symmetry operations",
+        "Basics of group theory"
+      ],
+      "leads_to": [
+        "Analysis of molecular vibrations",
+        "Determination of molecular orbitals"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "ic_basset.pdf",
+    "chunk_idx": 0,
+    "text_preview": "Inorganic\n   Chemistry\n   A CONCISE TEXT\n\nj . BASSETT\n              M . S c , F.R.I.G.\n      Senior Lecturer in Inorganic Chemistry\n            The Woolwich Polytechnic\n\nPERGAMON                PRESS\n",
+    "extraction": {
+      "topic": "Inorganic Chemistry",
+      "subtopic": "Textbook Introduction and Publication Information",
+      "key_concepts": [
+        "Pergamon Press",
+        "Copyright",
+        "Library of Congress Catalog Card"
+      ],
+      "prerequisites": [
+        "Basic understanding of textbook structure"
+      ],
+      "leads_to": [
+        "Textbook content chapters",
+        "Publication details"
+      ],
+      "confidence": 0.8
+    }
+  },
+  {
+    "book": "concise_ic_jd_lee.pdf",
+    "chunk_idx": 264,
+    "text_preview": "v Cr Mn Fe Co Ni Cu Zn Ga Ge As Se\n                                                  Ti                                                                                                       Br      Kr",
+    "extraction": {
+      "topic": "Periodic Trends and Atomic Properties",
+      "subtopic": "Electron Affinity and Ionization Energy Trends",
+      "key_concepts": [
+        "Electron Affinity",
+        "Ionization Energy",
+        "Atomic Radius"
+      ],
+      "prerequisites": [
+        "Periodic Table Organization",
+        "Atomic Structure Basics"
+      ],
+      "leads_to": [
+        "Chemical Bonding",
+        "Reactivity Patterns"
+      ],
+      "confidence": 0.85
+    }
+  },
+  {
+    "book": "concise_ic_jd_lee.pdf",
+    "chunk_idx": 231,
+    "text_preview": "operties remain even when the metal is\nin the liquid state (for example mercury), or when dissolved in a suitable\n\nTable 5.6 Comparison of enthalpies of subli-\n               mation and dissociation \u00b7",
+    "extraction": {
+      "topic": "Metallic Bonding",
+      "subtopic": "Properties and Behavior of Metallic Bonds",
+      "key_concepts": [
+        "Metallic bond",
+        "Enthalpy of sublimation",
+        "Enthalpy of dissociation",
+        "Electron mobility"
+      ],
+      "prerequisites": [
+        "Understanding of bonding theories",
+        "Knowledge of enthalpy concepts"
+      ],
+      "leads_to": [
+        "Electron behavior in metals",
+        "Metallic conductivity"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "ic_tina.pdf",
+    "chunk_idx": 1529,
+    "text_preview": "number S is\n\nEXAMPLE 20.1          Calculating the LFSE                                      \u00b5 = 2 S(S + 1) \u00b5B                                     (20.1)\n\nDetermine the LFSE for the following octahedr",
+    "extraction": {
+      "topic": "Crystal Field Theory",
+      "subtopic": "Ligand Field Stabilization Energy (LFSE)",
+      "key_concepts": [
+        "LFSE",
+        "high-spin",
+        "low-spin",
+        "d-orbital splitting",
+        "magnetic moment"
+      ],
+      "prerequisites": [
+        "Crystal Field Theory basics",
+        "Electron configuration in transition metals",
+        "Magnetic properties of ions"
+      ],
+      "leads_to": [
+        "Magnetic properties of transition metal complexes",
+        "Electronic structure of coordination compounds"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "concise_ic_jd_lee.pdf",
+    "chunk_idx": 297,
+    "text_preview": "I   Xe\n\nc\n\nw\n              6\n                       . .\n                      Cs\n\n0. 7\n                                Ba\n\n0 .9\n                                       La\n                              ",
+    "extraction": {
+      "topic": "Main Group Chemistry",
+      "subtopic": "Periodic Trends and Atomic Properties",
+      "key_concepts": [
+        "Atomic radius",
+        "Electron affinity",
+        "Ionization energy",
+        "Electronegativity",
+        "Periodic trends"
+      ],
+      "prerequisites": [
+        "Understanding of periodic table trends",
+        "Basic knowledge of atomic structure",
+        "Concept of periodic properties"
+      ],
+      "leads_to": [
+        "Chemical bonding",
+        "Reactivity patterns of elements"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "Inorganic_Chemistry_Atkins_Shriver.pdf",
+    "chunk_idx": 1460,
+    "text_preview": "nd iron are a result of the very stable d5 configura-\n                                                                                                                                                30",
+    "extraction": {
+      "topic": "Coordination Chemistry",
+      "subtopic": "Electronic Structure and Color of Transition Metal Complexes",
+      "key_concepts": [
+        "d-d transitions",
+        "oxidation states",
+        "aqua ions"
+      ],
+      "prerequisites": [
+        "d-block elements",
+        "electronic configuration"
+      ],
+      "leads_to": [
+        "Crystal Field Theory",
+        "Electrochemical Series"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "Inorganic_Chemistry_Atkins_Shriver.pdf",
+    "chunk_idx": 2336,
+    "text_preview": "S\n\n29a Oxidized plastocyanin                                   29b Reduced plastocyanin                                                   30\n746   27 Biological inorganic chemistry\n\n27.9 Acid\u2013base cat",
+    "extraction": {
+      "topic": "Biological Inorganic Chemistry",
+      "subtopic": "Acid-Base Catalysis",
+      "key_concepts": [
+        "Metal ion catalysis",
+        "Zinc in acid-base catalysis",
+        "Iron(II)/Iron(III) enzymes",
+        "Magnesium(II) in pyruvate kinase",
+        "Manganese in arginase",
+        "Nickel(II) in urease"
+      ],
+      "prerequisites": [
+        "Basic knowledge of enzyme mechanisms",
+        "Understanding of metal ion properties",
+        "Familiarity with biological catalytic processes"
+      ],
+      "leads_to": [
+        "Enzyme mechanism studies",
+        "Metalloenzyme function analysis"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "descriptive_ic.pdf",
+    "chunk_idx": 261,
+    "text_preview": "Nobel Prize in\n           chemistry for his work in the kinetics of coordination compounds, secstcd ate\n           terms labile and inert. If we consider a ui1 Maaqueous \u2018seller 2                 iti\n",
+    "extraction": {
+      "topic": "Coordination Chemistry",
+      "subtopic": "Kinetics of Coordination Compounds",
+      "key_concepts": [
+        "labile and inert",
+        "energy of activation",
+        "free energy",
+        "enthalpy",
+        "entropy"
+      ],
+      "prerequisites": [
+        "kinetics",
+        "thermodynamics",
+        "free energy change"
+      ],
+      "leads_to": [
+        "reaction mechanisms",
+        "coordination complex reactivity"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "descriptive_ic.pdf",
+    "chunk_idx": 1392,
+    "text_preview": "g                 isolate krypton, neon, and\n                                5                 xenon from liquid air\n                                \u00a7    60\n                                o\n\n\u00a9       ",
+    "extraction": {
+      "topic": "History of Inorganic Chemistry",
+      "subtopic": "Discovery of Noble Gases",
+      "key_concepts": [
+        "Noble gases",
+        "Isolation techniques",
+        "Historical discoveries"
+      ],
+      "prerequisites": [
+        "Basic understanding of elemental discovery history",
+        "Knowledge of gas properties"
+      ],
+      "leads_to": [
+        "Modern noble gas applications",
+        "Gas spectroscopy"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "ic_tina.pdf",
+    "chunk_idx": 139,
+    "text_preview": "hows the resulting energy-level diagram. The\n                                                                        1\u03c3 bonding orbital is predominantly F2s in character as the\n                 Energy",
+    "extraction": {
+      "topic": "Molecular Structure and Bonding",
+      "subtopic": "Molecular Orbital Theory",
+      "key_concepts": [
+        "Molecular orbital energy-level diagram",
+        "Bonding and antibonding orbitals",
+        "Valence electrons distribution"
+      ],
+      "prerequisites": [
+        "Atomic orbitals",
+        "Electron configuration"
+      ],
+      "leads_to": [
+        "Chemical bonding in molecules",
+        "Molecular orbital theory applications"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "descriptive_ic.pdf",
+    "chunk_idx": 87,
+    "text_preview": "modern format. Note that in this case the series is extended to include anionic\n                                     Chapter 2: An Introduction to Coordination Chemistry   19\n\ncomplex ions. The counte",
+    "extraction": {
+      "topic": "Coordination Chemistry",
+      "subtopic": "Coordination Compounds and Ligands",
+      "key_concepts": [
+        "Coordination compounds",
+        "Ligands",
+        "Denticity",
+        "Monodentate ligands",
+        "Ethylenediamine"
+      ],
+      "prerequisites": [
+        "Basic concepts of chemical bonding",
+        "Understanding of ions and their charges",
+        "Knowledge of molecular structure"
+      ],
+      "leads_to": [
+        "Crystal Field Theory",
+        "Ligand Field Theory"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "advancex_ic_applicaionts.pdf",
+    "chunk_idx": 100,
+    "text_preview": "A1g \u00fe B1g \u00fe Eu          Gpt \u00bc A2u \u00fe B2u \u00fe Eg             Gp\u00f0==\u00de \u00bc A2g \u00fe B2g \u00fe Eu\n\n4. The M orbitals that could bond:\n       s: \u00bc s; px ; py ; dz2 ; dx2 \u0003y2   pt \u00bc pz ; dxz ; dyx    p== \u00bc px ; py ; dxy",
+    "extraction": {
+      "topic": "Coordination Compounds",
+      "subtopic": "Molecular Orbital Theory and Ligand Orbitals",
+      "key_concepts": [
+        "SALC orbitals",
+        "Molecular orbitals",
+        "Ligand orbitals"
+      ],
+      "prerequisites": [
+        "Group theory basics",
+        "Molecular orbital theory"
+      ],
+      "leads_to": [
+        "Crystal Field Theory",
+        "Ligand Field Theory"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "concise_ic_jd_lee.pdf",
+    "chunk_idx": 66,
+    "text_preview": "e stable noble gas configuration of argon\n                ls 2 2s2 2p 6 3s2 3p 6 , and when chlorine a.toms react, they gain an electron.\n                Thus chlorine is an electronegative elem.e nt.",
+    "extraction": {
+      "topic": "Main Group Chemistry",
+      "subtopic": "Ionic Bonding and Electron Transfer",
+      "key_concepts": [
+        "Electron transfer",
+        "Ionic bonding",
+        "Electronegativity",
+        "Crystal lattice",
+        "Noble gas configuration"
+      ],
+      "prerequisites": [
+        "Electron configuration",
+        "Periodic trends"
+      ],
+      "leads_to": [
+        "Covalent bonding",
+        "Metallic bonding"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "ic_basset.pdf",
+    "chunk_idx": 156,
+    "text_preview": "al on the cathode of an electrolytic cell. To illustrate this\nmethod we will consider the refining of copper which, being more\n       EXTRACTION          AND   PURIFICATION        OF M E T A L S   125",
+    "extraction": {
+      "topic": "Electrochemical Processes",
+      "subtopic": "Electrolysis and Metal Refining",
+      "key_concepts": [
+        "Electrolysis",
+        "Copper Refining",
+        "Anode Dissolution",
+        "Cathode Deposition",
+        "Anode Slimes"
+      ],
+      "prerequisites": [
+        "Electrochemical Cells",
+        "Redox Reactions",
+        "Electrode Potentials"
+      ],
+      "leads_to": [
+        "Electroplating",
+        "Corrosion Mechanisms"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "concise_ic_jd_lee.pdf",
+    "chunk_idx": 396,
+    "text_preview": "f\nthey are asymmetrically filled then this degeneracy is destroyed, and the\ntwo orbitals are no longer equal in energy. If the dz2 orbital contains one\n\nTable 7.15 Asymmetrical electronic arrangements",
+    "extraction": {
+      "topic": "Coordination Compounds",
+      "subtopic": "Ligand Field Theory",
+      "key_concepts": [
+        "Crystal Field Theory",
+        "d-orbital splitting",
+        "high-spin complex",
+        "low-spin complex",
+        "ligand field"
+      ],
+      "prerequisites": [
+        "Electronic configuration",
+        "Orbital filling",
+        "Crystal Field Theory basics"
+      ],
+      "leads_to": [
+        "Spectrochemical series",
+        "Crystal Field Stabilization Energy (CFSE)"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "ic_tina.pdf",
+    "chunk_idx": 1112,
+    "text_preview": "tetrahydridoborate ion, BH 4\u2212 (Section 13.6). The sodium salt\n      13.19 Zintl phases                                               can be obtained by a simple addition reaction:\n\nKEY POINT Group 13 ",
+    "extraction": {
+      "topic": "Main Group Chemistry",
+      "subtopic": "Zintl Phases and Organometallic Compounds",
+      "key_concepts": [
+        "Zintl phases",
+        "Zintl ions",
+        "organometallic compounds",
+        "transmetallation"
+      ],
+      "prerequisites": [
+        "electronic structure of p-block elements",
+        "ionic bonding concepts",
+        "coordination chemistry basics"
+      ],
+      "leads_to": [
+        "solid-state chemistry",
+        "organometallic catalysis"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "ic_tina.pdf",
+    "chunk_idx": 2224,
+    "text_preview": "N\n                                                                           OMe\n                           N           O                    N\n                                                 N\n\nMeO\n ",
+    "extraction": {
+      "topic": "Coordination Chemistry",
+      "subtopic": "Electronic Structure of Metal Complexes",
+      "key_concepts": [
+        "d-orbital splitting",
+        "spin state",
+        "oxoiron(IV) centres",
+        "synthetic analogues",
+        "natural occurring complexes"
+      ],
+      "prerequisites": [
+        "Crystal Field Theory",
+        "Electronic configurations of transition metals",
+        "Spin states in coordination complexes"
+      ],
+      "leads_to": [
+        "Magnetic properties of coordination complexes",
+        "Reactivity of metal centers in enzymes"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "ic_basset.pdf",
+    "chunk_idx": 208,
+    "text_preview": "es),\n                           2\nwhich contain the ( C = C ) ~ anion and which yield acetylene on\nhydrolysis :\n                           2\n                 ( C = C ) - + 2 H 20 = H C = C H + 2 0 H -",
+    "extraction": {
+      "topic": "Main Group Chemistry",
+      "subtopic": "Alkaline Earth Elements and Their Compounds",
+      "key_concepts": [
+        "Acetylide anions",
+        "Calcium carbide",
+        "Beryllium carbide",
+        "Hydrides of alkaline earth metals",
+        "Calcium cyanamide"
+      ],
+      "prerequisites": [
+        "Basic understanding of ionic bonding",
+        "Knowledge of periodic trends",
+        "Familiarity with basic chemical reactions"
+      ],
+      "leads_to": [
+        "Coordination chemistry",
+        "Industrial chemical processes"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "ic_tina.pdf",
+    "chunk_idx": 695,
+    "text_preview": "UV\n      (a) Measuring a spectrum\n                                                                                                                       589 nm\n\nThe sample for a UV\u2013visible spectrum de",
+    "extraction": {
+      "topic": "Spectroscopy",
+      "subtopic": "UV-Visible Spectroscopy",
+      "key_concepts": [
+        "UV-Visible spectroscopy",
+        "Absorbance",
+        "Cuvette",
+        "Optically transparent materials",
+        "Wavelength"
+      ],
+      "prerequisites": [
+        "Basic understanding of electromagnetic spectrum",
+        "Fundamentals of light interaction with matter",
+        "Knowledge of spectroscopic instruments"
+      ],
+      "leads_to": [
+        "Infrared spectroscopy",
+        "Electronic transitions in molecules"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "descriptive_ic.pdf",
+    "chunk_idx": 0,
+    "text_preview": "elvomteliiveyn\n\nDescriptive\n                                                         Take)cef=lalces\n                                                         Yolo) collar-1i(eyaP\n                     ",
+    "extraction": {
+      "topic": "Periodic Trends",
+      "subtopic": "Periodic Law and Trends",
+      "key_concepts": [
+        "effective nuclear charge (Za)",
+        "atomic radii (r)",
+        "ionization energies (IE)",
+        "electron affinities (EA)",
+        "electronegativities (EN)"
+      ],
+      "prerequisites": [
+        "basic understanding of atomic structure",
+        "knowledge of periodic table trends"
+      ],
+      "leads_to": [
+        "chemical bonding",
+        "molecular structure"
+      ],
+      "confidence": 0.85
+    }
+  },
+  {
+    "book": "descriptive_ic.pdf",
+    "chunk_idx": 696,
+    "text_preview": "NaH        107.3        495.9     218.2    \u201473    \u2014808\n                                                            NaCl       107.3        AO5tOe*   121       349     787.\n\n10.57     Calcium hydride i",
+    "extraction": {
+      "topic": "Inorganic Chemistry",
+      "subtopic": "Hydrogen Compounds and Their Reactions",
+      "key_concepts": [
+        "Hydrogen compounds",
+        "Thermochemical cycles",
+        "Reduction reactions"
+      ],
+      "prerequisites": [
+        "Thermochemistry",
+        "Redox reactions",
+        "Hydrogen chemistry"
+      ],
+      "leads_to": [
+        "Thermochemistry applications",
+        "Redox chemistry"
+      ],
+      "confidence": 0.85
+    }
+  },
+  {
+    "book": "ic_basset.pdf",
+    "chunk_idx": 234,
+    "text_preview": "ive chromium and aluminium\n     3 +            3 +\n( C r , 0-55 \u00c2 ; A l , 0 4 5 \u00c2) results in certain of their compounds,\n                    THE    TRANSITION         ELEMENTS                     185",
+    "extraction": {
+      "topic": "Coordination Compounds",
+      "subtopic": "Complex Ion Formation and Structure",
+      "key_concepts": [
+        "Coordination number",
+        "Ligands (NH3, CN-, SCN-)",
+        "Crystal field theory (bond stability)",
+        "Octahedral geometry",
+        "Complex cations (e.g., [Cr(NH3)6]\u00b3+)",
+        "Double salts (alum type)"
+      ],
+      "prerequisites": [
+        "Coordination chemistry basics",
+        "Understanding of ligand field theory",
+        "Knowledge of transition metal chemistry"
+      ],
+      "leads_to": [
+        "Crystal Field Theory",
+        "Ligand Field Theory"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "descriptive_ic.pdf",
+    "chunk_idx": 1131,
+    "text_preview": "e corresponding oxoan-\n       ions) involving N=O bonds\n    3. Hydrocyanic acid, H\u2014C=N, and the corresponding cyanides, C=N7\n    4. Thiocyanic acid, H-S\u2014C=N, and the corresponding thiocyanates, S-C=N~",
+    "extraction": {
+      "topic": "Main Group Chemistry",
+      "subtopic": "Nitrogen Compounds and Bonding",
+      "key_concepts": [
+        "N=O bonds",
+        "C=N bonds",
+        "da-pa bonding",
+        "sulfur nitrides",
+        "phosphorus nitrides"
+      ],
+      "prerequisites": [
+        "Understanding of bonding types",
+        "Knowledge of oxoanions",
+        "Familiarity with periodic trends"
+      ],
+      "leads_to": [
+        "Group 5A chemistry",
+        "Bonding in transition metals"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "Inorganic_Chemistry_Atkins_Shriver.pdf",
+    "chunk_idx": 438,
+    "text_preview": "e methanoic (formic) acid,\n HCOOH, and hydrofluoric acid, HF.\n Self-test 4.4 Which of the solvents given in Fig. 4.4 could be used to discriminate the acidities of PH3\n (pKa \u2248 27) and GeH4 (pKa \u2248 25)?",
+    "extraction": {
+      "topic": "Acids and Bases",
+      "subtopic": "Solvent System Definition of Acids and Bases",
+      "key_concepts": [
+        "Solvent system definition",
+        "Autoprotolysis reaction",
+        "Autoionization of aprotic solvents"
+      ],
+      "prerequisites": [
+        "Br\u00f8nsted\u2013Lowry definition of acids and bases",
+        "Concept of proton transfer"
+      ],
+      "leads_to": [
+        "Non-aqueous solvents",
+        "Acid-base reactions in different solvents"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "descriptive_ic.pdf",
+    "chunk_idx": 870,
+    "text_preview": "Briefly discuss your answer.\n                             12.16    Write a balanced equation representing the reaction between potassium oxide and\n                                      water.\n\n12.17  ",
+    "extraction": {
+      "topic": "Inorganic Chemistry Fundamentals",
+      "subtopic": "Reactions and Synthesis of Alkali Metal Compounds",
+      "key_concepts": [
+        "alkali metal compounds",
+        "synthesis of metal iodides",
+        "reaction with water",
+        "standard reduction potentials",
+        "hygroscopicity"
+      ],
+      "prerequisites": [
+        "basic stoichiometry",
+        "knowledge of alkali metals",
+        "understanding of redox reactions"
+      ],
+      "leads_to": [
+        "electrochemical processes",
+        "coordination chemistry"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "ic_basset.pdf",
+    "chunk_idx": 52,
+    "text_preview": "M                                         0              \u03a1\n            \"Mo\n            \u0393\u039d\u039f.\n                                                    4J 4p 4d        4/    5s 5p 5d     5f   6s\n\nGa          ",
+    "extraction": {
+      "topic": "Electronic Structure and Periodicity",
+      "subtopic": "Electron Configuration of Elements",
+      "key_concepts": [
+        "Electron configuration",
+        "Atomic structure",
+        "Subshell filling order"
+      ],
+      "prerequisites": [
+        "Quantum numbers",
+        "Periodic table organization"
+      ],
+      "leads_to": [
+        "Periodic trends",
+        "Chemical bonding"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "Inorganic_Chemistry_Atkins_Shriver.pdf",
+    "chunk_idx": 1606,
+    "text_preview": "om the Greek words for \u2018cloud expanding\u2019.                                               complex.\n498                                           20 d-Metal complexes: electronic structure and properties",
+    "extraction": {
+      "topic": "Coordination Compounds",
+      "subtopic": "Charge-Transfer Transitions",
+      "key_concepts": [
+        "LMCT transitions",
+        "ligand-to-metal charge-transfer",
+        "optical electronegativities"
+      ],
+      "prerequisites": [
+        "Electronic structure of transition metals",
+        "Spectroscopy basics"
+      ],
+      "leads_to": [
+        "Electron transfer mechanisms",
+        "Photochemistry of coordination complexes"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "Inorganic_Chemistry_Atkins_Shriver.pdf",
+    "chunk_idx": 1898,
+    "text_preview": ") ligand. It was, however, nearly 40 years after the original Ln(Cp)3\n                                                                                                Lanthanoid chemistry           591",
+    "extraction": {
+      "topic": "Coordination Compounds",
+      "subtopic": "Lanthanide Complexes and Ligand Behavior",
+      "key_concepts": [
+        "Lanthanide compounds",
+        "Cp ligands",
+        "Equilibrium between different ligand binding modes",
+        "Cp* ligand",
+        "Isolation of compounds"
+      ],
+      "prerequisites": [
+        "Understanding of coordination chemistry",
+        "Knowledge of lanthanide elements",
+        "Basic knowledge of ligand types and their bonding modes"
+      ],
+      "leads_to": [
+        "Ligand field theory",
+        "Electronic structure of lanthanide complexes"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "ic_tina.pdf",
+    "chunk_idx": 973,
+    "text_preview": "Encyclopedia of inorganic and bioinorganic chemistry. John\n      V.K. Grigorovich, The metallic bond and the structure of metals.    Wiley and Sons (1999\u20132014).\n        Nova Science Publishers (1989).",
+    "extraction": {
+      "topic": "Main Group Chemistry",
+      "subtopic": "Group 1 Elements and Their Properties",
+      "key_concepts": [
+        "Group 1 elements",
+        "Reducing agents",
+        "Complexing agents",
+        "Diagonal relationship",
+        "Standard electrode potentials"
+      ],
+      "prerequisites": [
+        "Periodic trends",
+        "Electrochemical series",
+        "Coordination chemistry"
+      ],
+      "leads_to": [
+        "Coordination chemistry",
+        "Electrochemistry"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "concise_ic_jd_lee.pdf",
+    "chunk_idx": 528,
+    "text_preview": "cules of water\n                                                                   six orbitals - octahedral\n                                                                     (d 2 sp3 hybridization)",
+    "extraction": {
+      "topic": "Coordination Compounds",
+      "subtopic": "Hydration and Crystal Field Theory",
+      "key_concepts": [
+        "Hydration of ions",
+        "Octahedral geometry",
+        "d-orbital splitting",
+        "Cation-exchange columns"
+      ],
+      "prerequisites": [
+        "Hybridization concepts",
+        "Crystal field theory basics",
+        "Coordination chemistry fundamentals"
+      ],
+      "leads_to": [
+        "Crystal field stabilization energy (CFSE)",
+        "Spectrochemical series"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "concise_ic_jd_lee.pdf",
+    "chunk_idx": 429,
+    "text_preview": "m how the pattertl of d orbital splitting\n    changes as\u00b7an octahedral complex undergoes tetragonal distortion and\n    eventually becomes a square planar complex.\n             \u00b7 COORDINATION COMPOUNDS",
+    "extraction": {
+      "topic": "Coordination Compounds",
+      "subtopic": "Crystal Field Theory and Electronic Transitions",
+      "key_concepts": [
+        "d-d electronic transitions",
+        "spectrochemical series",
+        "crystal field stabilization energy (CFSE)",
+        "Jahn-Teller effect",
+        "tetragonal distortion"
+      ],
+      "prerequisites": [
+        "Crystal Field Theory basics",
+        "Electronic configurations of transition metals",
+        "Coordination geometry"
+      ],
+      "leads_to": [
+        "Magnetic properties of complexes",
+        "Ligand field theory"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "ic_tina.pdf",
+    "chunk_idx": 1807,
+    "text_preview": "One important observation that the mechanism must\n  C2H4 + O2 \u2192 CH3CHO\u2003\u2003\u0394rG = \u2212197 kJ mol\u22121\n                                                    \u29b5\n\naccount for is that, when the reaction is carried out",
+    "extraction": {
+      "topic": "Catalytic Chemistry and Industrial Processes",
+      "subtopic": "Mechanisms of Oxidation Reactions",
+      "key_concepts": [
+        "Wacker process",
+        "Palladium catalysis",
+        "Deuterium incorporation",
+        "Pd(II) complexes",
+        "Pt(II) complexes"
+      ],
+      "prerequisites": [
+        "Basic knowledge of catalytic mechanisms",
+        "Understanding of oxidation reactions",
+        "Familiarity with transition metals"
+      ],
+      "leads_to": [
+        "Mechanistic studies of catalytic reactions",
+        "Comparative analysis of transition metal catalysis"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "advancex_ic_applicaionts.pdf",
+    "chunk_idx": 220,
+    "text_preview": "of\nelectron transfer is also similar to the rate of water exchange for\n[V(H2O)6]2\u00fe. Nonetheless, the rate does not vary much when a different\nbridging ligand is present on the Co(III) ammine complex.\n",
+    "extraction": {
+      "topic": "Coordination Chemistry",
+      "subtopic": "Electron Transfer Mechanisms",
+      "key_concepts": [
+        "electron transfer",
+        "outer sphere mechanisms",
+        "bridging ligands"
+      ],
+      "prerequisites": [
+        "coordination complexes",
+        "redox reactions"
+      ],
+      "leads_to": [
+        "inert vs. reactive ligands",
+        "electronic structure of transition metals"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "advancex_ic_applicaionts.pdf",
+    "chunk_idx": 280,
+    "text_preview": "isolobal. The symbol       o is used to indicate isolobal fragments.\n\nThe following are some isolobal relationships:\n       Ni(CO)3      o     Fe(CO)4      o    Cr(CO)5       o    Ti(CO)6    o   CH3+\n",
+    "extraction": {
+      "topic": "Cluster Chemistry",
+      "subtopic": "Isolobal Fragments and Their Relationships",
+      "key_concepts": [
+        "Isolobal fragments",
+        "Transition metal carbonyls",
+        "Electron count relationships"
+      ],
+      "prerequisites": [
+        "Understanding of coordination compounds",
+        "Knowledge of electron configurations in transition metals",
+        "Familiarity with Wade's rules"
+      ],
+      "leads_to": [
+        "Predicting cluster geometries",
+        "Designing new inorganic compounds"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "advancex_ic_applicaionts.pdf",
+    "chunk_idx": 240,
+    "text_preview": "2   3   7    8\n                                                                                2. Electronic Spectra 163\n\nThe transitions are:\n                  8                              8\n      ",
+    "extraction": {
+      "topic": "Crystal Field Theory",
+      "subtopic": "Electronic Spectra and Transitions",
+      "key_concepts": [
+        "Crystal Field Splitting",
+        "Electronic Transitions",
+        "d-orbital splitting",
+        "T1g and T2g states",
+        "Dq parameter"
+      ],
+      "prerequisites": [
+        "Crystal Field Theory basics",
+        "Electronic configurations of transition metals",
+        "Understanding of molecular symmetry"
+      ],
+      "leads_to": [
+        "Spectrochemical series",
+        "Crystal Field Stabilization Energy (CFSE)"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "descriptive_ic.pdf",
+    "chunk_idx": 522,
+    "text_preview": "lectrons of Ca** should not produce a particularly large effect, Ca** should\n                                    be only slightly smaller than Ca\u2019*, so we use a value of 1.1 A. The calculation of Uxap",
+    "extraction": {
+      "topic": "Solid-State Chemistry",
+      "subtopic": "Born-Haber Cycles and Lattice Energy Calculations",
+      "key_concepts": [
+        "Born-Haber cycles",
+        "Lattice energy (U)",
+        "Ionization energy (IE)",
+        "Electron affinity (EA)",
+        "Kapustinskii equation"
+      ],
+      "prerequisites": [
+        "Understanding of ionic bonding",
+        "Knowledge of thermodynamic cycles",
+        "Familiarity with periodic trends"
+      ],
+      "leads_to": [
+        "Crystal field theory",
+        "Solid-state energetics calculations"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "Inorganic_Chemistry_Atkins_Shriver.pdf",
+    "chunk_idx": 730,
+    "text_preview": "the N and an O atom of gly\u0001 coordinate and two Co(III) nonelectrolyte mer and fac isomers of\n                                                   [Co(gly)3] are formed. Sketch the two isomers.\n     PMe3",
+    "extraction": {
+      "topic": "Coordination Compounds",
+      "subtopic": "Stereochemistry and Isomerism",
+      "key_concepts": [
+        "Coordination isomerism",
+        "Chirality in coordination complexes",
+        "Ligand chirality",
+        "Fac and mer isomers",
+        "Enantiomers"
+      ],
+      "prerequisites": [
+        "Coordination chemistry basics",
+        "Isomerism in coordination compounds",
+        "Concept of chirality and enantiomers"
+      ],
+      "leads_to": [
+        "Advanced stereochemistry of coordination complexes",
+        "Chiral ligand design in catalysis"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "advancex_ic_applicaionts.pdf",
+    "chunk_idx": 320,
+    "text_preview": "mately one-third of all MRI scans,\nnamely, Gd(DTPA)(H2O)]2\u0002, Gd3\u00fe-diethylenetriaminepentaacetic, and\n[Gd(DOTA)(H2O)]\u0002, Gd3\u00fe-tetraazacyclododecanetetraacetic acid, two of\nwhich are shown in Fig. 12.10.",
+    "extraction": {
+      "topic": "Bioinorganic Chemistry and Applications",
+      "subtopic": "MRI Contrast Agents",
+      "key_concepts": [
+        "Gd-DOTA",
+        "Gd-DPTA",
+        "MRI scans"
+      ],
+      "prerequisites": [
+        "Coordination chemistry",
+        "Magnetic resonance imaging principles"
+      ],
+      "leads_to": [
+        "MRI contrast agent design",
+        "Paramagnetic complexes in biology"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "ic_basset.pdf",
+    "chunk_idx": 182,
+    "text_preview": "li metals in\nexcess of air or oxygen vary with the radius of the metal ion, the\nend products being shown schematically below:\n                         Li            Na           \u039a            Rb     Cs",
+    "extraction": {
+      "topic": "Main Group Chemistry",
+      "subtopic": "Oxidation States and Oxides of Alkali Metals",
+      "key_concepts": [
+        "Peroxide formation",
+        "Superoxide formation",
+        "Anti-fluorite structure",
+        "Monoxide preparation via reduction"
+      ],
+      "prerequisites": [
+        "Periodic trends in alkali metals",
+        "Oxidation states of metals",
+        "Crystal structures of ionic compounds"
+      ],
+      "leads_to": [
+        "Reactivity of alkali metals",
+        "Oxidation-reduction reactions"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "advancex_ic_applicaionts.pdf",
+    "chunk_idx": 20,
+    "text_preview": "6\u00045\n                                                        No. of combinations \u00bc       \u00bc 15\n                                                                                 2\n\nb. What are the charact",
+    "extraction": {
+      "topic": "Quantum Mechanics in Chemistry",
+      "subtopic": "Term Symbols and Electron Configuration",
+      "key_concepts": [
+        "Term Symbols",
+        "Hund's Rule",
+        "Orbital Angular Momentum",
+        "Spin Angular Momentum",
+        "Vector Model"
+      ],
+      "prerequisites": [
+        "Quantum Numbers",
+        "Electron Configuration",
+        "Angular Momentum Quantities"
+      ],
+      "leads_to": [
+        "Molecular Orbital Theory",
+        "Electronic Spectroscopy"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "ic_tina.pdf",
+    "chunk_idx": 1390,
+    "text_preview": "D                                           To pump\n       shorter than that in Cl2.\n\nAnswer The Cl2+ species has a total of 13 valence electrons              FIGURE 17.9 A typical metal vacuum system",
+    "extraction": {
+      "topic": "Chemical Bonding",
+      "subtopic": "Bond Order and Molecular Structure",
+      "key_concepts": [
+        "bond order",
+        "electron configuration",
+        "valence electrons"
+      ],
+      "prerequisites": [
+        "molecular orbital theory",
+        "bond order calculation"
+      ],
+      "leads_to": [
+        "molecular orbital diagrams",
+        "reactivity of diatomic molecules"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "advancex_ic_applicaionts.pdf",
+    "chunk_idx": 0,
+    "text_preview": "Advanced Inorganic Chemistry\n          Applications in Everyday Life",
+    "extraction": {
+      "topic": "Applications in Everyday Life",
+      "subtopic": "Advanced Inorganic Chemistry Applications",
+      "key_concepts": [
+        "Inorganic chemistry applications",
+        "Everyday life relevance"
+      ],
+      "prerequisites": [
+        "Basic understanding of inorganic chemistry principles",
+        "Knowledge of chemical bonding and reactivity"
+      ],
+      "leads_to": [
+        "Industrial applications of inorganic chemistry",
+        "Environmental chemistry"
+      ],
+      "confidence": 0.8
+    }
+  },
+  {
+    "book": "ic_basset.pdf",
+    "chunk_idx": 104,
+    "text_preview": "npaired electrons of the chlorine atoms.\n                   NON-TRANSITION          ELEMENTS                           85\n\ns\nAtom in excited state:                                  jj j         |f | |",
+    "extraction": {
+      "topic": "Main Group Chemistry",
+      "subtopic": "Stereochemistry of Covalent Compounds",
+      "key_concepts": [
+        "Valence bond theory",
+        "Electron pair repulsion",
+        "Linear molecular geometry",
+        "sp hybridization",
+        "Boron trifluoride structure"
+      ],
+      "prerequisites": [
+        "Valence shell electron pair repulsion (VSEPR) theory",
+        "Hybridization concepts",
+        "Electronic configurations of atoms"
+      ],
+      "leads_to": [
+        "Molecular orbital theory",
+        "Coordination chemistry"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "descriptive_ic.pdf",
+    "chunk_idx": 609,
+    "text_preview": "effect at work in the Group 3A elements.\n                                              The seer) rece of the fee                    oeof eng inert-ay Be is the trends\n\nenergies for Cs,\n               ",
+    "extraction": {
+      "topic": "Main Group Chemistry",
+      "subtopic": "Inert-Pair Effect",
+      "key_concepts": [
+        "Inert-pair effect",
+        "Bonding energy",
+        "Thallium(I) compounds",
+        "Group 3A elements",
+        "Atomic radii trends"
+      ],
+      "prerequisites": [
+        "Periodic trends",
+        "Bonding theories",
+        "Electron configuration"
+      ],
+      "leads_to": [
+        "Coordination chemistry",
+        "Transition metal chemistry"
+      ],
+      "confidence": 0.85
+    }
+  },
+  {
+    "book": "advancex_ic_applicaionts.pdf",
+    "chunk_idx": 140,
+    "text_preview": "3d                    sp hybrids\n\nConsequently, [NiCl4]2\u0002 complex and all tetrahedral d8 complexes\n                                        are paramagnetic.\n\n3.     CRYSTAL FIELD THEORY\n              ",
+    "extraction": {
+      "topic": "Coordination Compounds",
+      "subtopic": "Crystal Field Theory",
+      "key_concepts": [
+        "Crystal Field Theory",
+        "d-orbital splitting",
+        "paramagnetism",
+        "ligands",
+        "octahedral complexes"
+      ],
+      "prerequisites": [
+        "Electron configuration",
+        "Coordination chemistry basics"
+      ],
+      "leads_to": [
+        "Magnetic properties of complexes",
+        "Crystal Field Stabilization Energy"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "Inorganic_Chemistry_Atkins_Shriver.pdf",
+    "chunk_idx": 2044,
+    "text_preview": "ars.\n  combine together to give an effective white light.\n                                                                                                        Inorganic pigments                 643",
+    "extraction": {
+      "topic": "Inorganic Pigments and Color Chemistry",
+      "subtopic": "Electronic Transitions and Color Origin",
+      "key_concepts": [
+        "d-d transitions",
+        "charge transfer",
+        "band gap",
+        "valence band",
+        "conduction band",
+        "Laporte selection rule",
+        "noncentrosymmetric sites"
+      ],
+      "prerequisites": [
+        "Electronic structure of transition metals",
+        "Crystal field theory",
+        "Band theory of solids"
+      ],
+      "leads_to": [
+        "Color chemistry in materials science",
+        "Electronic structure of solids"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "Inorganic_Chemistry_Atkins_Shriver.pdf",
+    "chunk_idx": 1022,
+    "text_preview": "NaF is the more negative and therefore the\n    fluoride is expected to be more stable than the chloride. In this case, the\n    most important term in the expression for \u2206 fH is the lattice enthalpy, O",
+    "extraction": {
+      "topic": "Ionic Compounds and Lattice Energy",
+      "subtopic": "Lattice Enthalpy and Solubility of Halides",
+      "key_concepts": [
+        "Lattice enthalpy",
+        "Enthalpy of hydration",
+        "Solubility of ionic compounds",
+        "Ionic radii",
+        "Formation enthalpy"
+      ],
+      "prerequisites": [
+        "Understanding of ionic bonding",
+        "Knowledge of enthalpy concepts",
+        "Basic understanding of periodic trends"
+      ],
+      "leads_to": [
+        "Prediction of solubility trends",
+        "Calculation of formation enthalpies"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "descriptive_ic.pdf",
+    "chunk_idx": 174,
+    "text_preview": "to demonstrate the more general nature of the Lewis definition is the gas-phase\n                             reaction between boron trifluoride and ammonia, as represented in Equation (4.1):\n\nBF;(g)  ",
+    "extraction": {
+      "topic": "Coordination Compounds",
+      "subtopic": "Lewis Acids and Bases in Coordination Chemistry",
+      "key_concepts": [
+        "Lewis acid",
+        "Lewis base",
+        "coordinate-covalent bond",
+        "adduct",
+        "electron-pair acceptor",
+        "electron-pair donor"
+      ],
+      "prerequisites": [
+        "Lewis acid-base theory",
+        "gas-phase reactions",
+        "coordination bond concepts"
+      ],
+      "leads_to": [
+        "Complex ion formation",
+        "coordination polymer chemistry"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "ic_basset.pdf",
+    "chunk_idx": 338,
+    "text_preview": "duct is used extensively as a nitrogen fertilizer, while free\nammonia may be obtained by treating calcium cyanamide with\nsuperheated steam:\n                                                           2",
+    "extraction": {
+      "topic": "Main Group Chemistry",
+      "subtopic": "Nitrogen and Its Compounds",
+      "key_concepts": [
+        "Nitrogen molecule (N2)",
+        "Dissociation energy",
+        "Isomerism",
+        "Ammonia production",
+        "Calcium cyanamide"
+      ],
+      "prerequisites": [
+        "Chemical bonding concepts",
+        "Thermochemistry basics",
+        "Basic knowledge of nitrogen compounds"
+      ],
+      "leads_to": [
+        "Nitrogen chemistry applications",
+        "Industrial chemical processes"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "advancex_ic_applicaionts.pdf",
+    "chunk_idx": 120,
+    "text_preview": "5\n                                                        (a)\n                                                            CH2               CH2\n\nN             N       H2N                              ",
+    "extraction": {
+      "topic": "Coordination Compounds",
+      "subtopic": "Polydentate Ligands",
+      "key_concepts": [
+        "polydentate ligands",
+        "bidentate ligands",
+        "tridentate ligands",
+        "tetradentate ligands",
+        "coordination complexes"
+      ],
+      "prerequisites": [
+        "basic concepts of coordination chemistry",
+        "ligand classification",
+        "metal-ligand bonding"
+      ],
+      "leads_to": [
+        "coordination polymer structures",
+        "ligand field theory"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "Inorganic_Chemistry_Atkins_Shriver.pdf",
+    "chunk_idx": 0,
+    "text_preview": "The elements\nName                   Symbol   Atomic   Molar mass   Name            Symbol   Atomic   Molar mass\n                                number   (g mol\u2afa1)                             number   ",
+    "extraction": {
+      "topic": "Periodic Table and Elemental Properties",
+      "subtopic": "Element Classification and Properties",
+      "key_concepts": [
+        "Atomic number",
+        "Molar mass",
+        "Symbol"
+      ],
+      "prerequisites": [
+        "Basic understanding of periodic table structure"
+      ],
+      "leads_to": [
+        "Periodic trends",
+        "Elemental properties"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "descriptive_ic.pdf",
+    "chunk_idx": 1218,
+    "text_preview": "standard-state conditions.\n\n* Problems marked with an asterisk (*) are more challenging.\n                                                      Chapter 16: Group 5A: The Pnicogens           495\n\nN Of  ",
+    "extraction": {
+      "topic": "Main Group Chemistry",
+      "subtopic": "Group 5A: The Pnicogens",
+      "key_concepts": [
+        "Pnicogens",
+        "Hybridization",
+        "Bond Angles",
+        "Oxidation States",
+        "Redox Reactions"
+      ],
+      "prerequisites": [
+        "Lewis Structures",
+        "VSEPR Theory",
+        "Valence Bond Theory",
+        "Electrochemical Concepts"
+      ],
+      "leads_to": [
+        "Coordination Chemistry",
+        "Electrochemistry"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "Inorganic_Chemistry_Atkins_Shriver.pdf",
+    "chunk_idx": 1752,
+    "text_preview": "tal atom. In this picture, the bonding can be considered to\n                                                                                                                            Ligands      541",
+    "extraction": {
+      "topic": "Coordination Compounds",
+      "subtopic": "Metal-Ligand Bonding and Electronic Structure",
+      "key_concepts": [
+        "\u03c3 bond",
+        "\u03c0 backbonding",
+        "synergistic bonding",
+        "HOMO",
+        "LUMO"
+      ],
+      "prerequisites": [
+        "Molecular orbital theory",
+        "Coordination chemistry basics"
+      ],
+      "leads_to": [
+        "Crystal Field Theory",
+        "Molecular Orbital Theory in Coordination Chemistry"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "concise_ic_jd_lee.pdf",
+    "chunk_idx": 495,
+    "text_preview": "tron from a closed shell. A second ele.ctron is never removed under\nnormal conditions, as the energy required is greater than that needed to\nionize the noble gases. The elements commonly form M+ ions.",
+    "extraction": {
+      "topic": "Main Group Chemistry",
+      "subtopic": "Alkali Metals and Ionic Bonding",
+      "key_concepts": [
+        "Ionization energy",
+        "Electronegativity",
+        "Ionic bonding",
+        "Alkali metals",
+        "Electron configuration"
+      ],
+      "prerequisites": [
+        "Periodic trends",
+        "Electron configuration",
+        "Bonding theories"
+      ],
+      "leads_to": [
+        "Periodic trends in alkali metals",
+        "Ionic compound formation"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "ic_tina.pdf",
+    "chunk_idx": 1946,
+    "text_preview": "various construction materials, such as concrete.\n                                                                                                   Metal oxides, nitrides, and fluorides        737\n\n(",
+    "extraction": {
+      "topic": "Inorganic Solid State Chemistry",
+      "subtopic": "Perovskite Structures and Properties",
+      "key_concepts": [
+        "Perovskite structure (ABX3)",
+        "Ferroelectric and piezoelectric properties",
+        "Anti-perovskites (XX\u2032A3)",
+        "Solid solutions in perovskites",
+        "Crystal structure of BaTiO3"
+      ],
+      "prerequisites": [
+        "Crystal structures and unit cells",
+        "Ionic bonding and lattice structures",
+        "Ferroelectricity and piezoelectricity concepts"
+      ],
+      "leads_to": [
+        "Photovoltaic materials and applications",
+        "Solid-state materials synthesis"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "Inorganic_Chemistry_Atkins_Shriver.pdf",
+    "chunk_idx": 584,
+    "text_preview": "dynamic stabilities; all oxoanions are stronger oxidizing agents in acidic than in basic solution.\n\nE X A M PL E 5 .12 Application of Frost diagrams at different pH\n\nPotassium nitrite is stable in bas",
+    "extraction": {
+      "topic": "Oxidation-Reduction Chemistry",
+      "subtopic": "Frost Diagrams and Redox Reactions",
+      "key_concepts": [
+        "Frost diagrams",
+        "oxidizing agents",
+        "disproportionation",
+        "acidic vs. basic solutions",
+        "redox reactions"
+      ],
+      "prerequisites": [
+        "Redox reactions",
+        "acid-base chemistry",
+        "oxidation states"
+      ],
+      "leads_to": [
+        "Electrochemical series",
+        "Electrochemistry"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "concise_ic_jd_lee.pdf",
+    "chunk_idx": 0,
+    "text_preview": ":   \u00b7\n                                                             \u00b7 .\u00b70\n                                                                 . ' .DRS. SOEOIJO \u00b7..  :  '\n                                  ",
+    "extraction": {
+      "topic": "Inorganic Chemistry",
+      "subtopic": "Textbook Introduction and Publisher Information",
+      "key_concepts": [
+        "Inorganic Chemistry",
+        "Textbook",
+        "Publisher Information"
+      ],
+      "prerequisites": [
+        "Basic understanding of chemistry concepts"
+      ],
+      "leads_to": [
+        "Chapter content understanding",
+        "Textbook usage"
+      ],
+      "confidence": 0.8
+    }
+  },
+  {
+    "book": "Inorganic_Chemistry_Atkins_Shriver.pdf",
+    "chunk_idx": 1168,
+    "text_preview": ". Group 1 and 2 met-\nals form ionic saline carbides, d-block metals form metallic carbides and boron and silicon\nform covalent solids. Silicon carbide, SiC, is widely used as the abrasive carborundum.",
+    "extraction": {
+      "topic": "Main Group Chemistry",
+      "subtopic": "Extended Silicon-Oxygen Compounds",
+      "key_concepts": [
+        "Aluminosilicates",
+        "Zeolite aluminosilicates",
+        "Silicon carbide (SiC)",
+        "Extended network solids",
+        "Molecular sieves"
+      ],
+      "prerequisites": [
+        "Periodic trends in Group 14 elements",
+        "Basic understanding of ionic and covalent bonding",
+        "Knowledge of common oxides and their properties"
+      ],
+      "leads_to": [
+        "Applications of inorganic solids in industry",
+        "Structure and properties of silicate minerals"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "ic_basset.pdf",
+    "chunk_idx": 130,
+    "text_preview": "ate ion does not, however, oxidize the chloride ion in a\ndilute hydrochloric acid solution, so that potassium dichromate is\nof particular value in the determination of ferrous iron in such a\nsolution.",
+    "extraction": {
+      "topic": "Electrochemistry",
+      "subtopic": "Electrolysis and Redox Reactions",
+      "key_concepts": [
+        "Electrolysis",
+        "Reduction",
+        "Oxidation",
+        "Cathode",
+        "Anode",
+        "Discharge Potential",
+        "Overvoltage"
+      ],
+      "prerequisites": [
+        "Basic redox reactions",
+        "Electrode potentials",
+        "Ion behavior in solutions"
+      ],
+      "leads_to": [
+        "Electrochemical cells",
+        "Corrosion processes"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "book": "descriptive_ic.pdf",
+    "chunk_idx": 1044,
+    "text_preview": "ydrides to partially covalent amphoteric and\n                            finally to covalent acidic anhydrides.\n                                                 Chapter 15: The Group 4A Elements   421",
+    "extraction": {
+      "topic": "Main Group Chemistry",
+      "subtopic": "Group 4A Elements and Their Oxides",
+      "key_concepts": [
+        "carbon dioxide",
+        "silicon dioxide",
+        "amphoteric",
+        "inert-pair effect",
+        "tetrahydroxides"
+      ],
+      "prerequisites": [
+        "periodic trends",
+        "oxidation states",
+        "acid-base chemistry"
+      ],
+      "leads_to": [
+        "silicate structures",
+        "coordination chemistry"
+      ],
+      "confidence": 0.95
+    }
+  }
+]

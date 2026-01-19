@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novel Pedagogy Prototype - Why is CuSO₄ Blue?</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono&display=swap');
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'IBM Plex Sans', sans-serif;
+            background: #0a0a0f;
+            color: #e0e0e0;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        h1 {
+            color: #60a5fa;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+
+        .question-box {
+            background: linear-gradient(135deg, #1e3a5f 0%, #1a1a2e 100%);
+            border: 2px solid #3b82f6;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .question-box h2 {
+            color: #93c5fd;
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .question-box p {
+            color: #cbd5e1;
+        }
+
+        /* Scale Selector */
+        .scale-section {
+            margin-bottom: 2rem;
+        }
+
+        .scale-section h3 {
+            color: #a78bfa;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+
+        .scale-buttons {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .scale-btn {
+            padding: 0.6rem 1.2rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+
+        .scale-btn[data-scale="descriptive"] { background: #059669; color: white; }
+        .scale-btn[data-scale="structural"] { background: #0891b2; color: white; }
+        .scale-btn[data-scale="electronic"] { background: #7c3aed; color: white; }
+        .scale-btn[data-scale="quantum"] { background: #dc2626; color: white; }
+
+        .scale-btn:hover { transform: translateY(-2px); filter: brightness(1.1); }
+        .scale-btn.active { box-shadow: 0 0 0 3px white; }
+
+        .scale-label {
+            font-size: 0.7rem;
+            opacity: 0.7;
+            display: block;
+            margin-top: 0.2rem;
+        }
+
+        .explanation-box {
+            background: #1a1a2e;
+            border-radius: 12px;
+            padding: 1.5rem;
+            min-height: 150px;
+            border-left: 4px solid #6b7280;
+            transition: border-color 0.3s;
+        }
+
+        .explanation-box[data-active="descriptive"] { border-left-color: #059669; }
+        .explanation-box[data-active="structural"] { border-left-color: #0891b2; }
+        .explanation-box[data-active="electronic"] { border-left-color: #7c3aed; }
+        .explanation-box[data-active="quantum"] { border-left-color: #dc2626; }
+
+        .explanation-box h4 {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .explanation-box p {
+            line-height: 1.6;
+        }
+
+        /* Bridge Section */
+        .bridge-section {
+            margin-bottom: 2rem;
+        }
+
+        .bridge-section h3 {
+            color: #fbbf24;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+
+        .bridge-card {
+            background: linear-gradient(135deg, #292524 0%, #1c1917 100%);
+            border: 1px solid #78716c;
+            border-radius: 12px;
+            padding: 1rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .bridge-card .from {
+            color: #a8a29e;
+            font-size: 0.8rem;
+        }
+
+        .bridge-card .arrow {
+            color: #fbbf24;
+            margin: 0.5rem 0;
+        }
+
+        .bridge-card .to {
+            color: #fef3c7;
+            font-weight: 500;
+        }
+
+        .bridge-card .explanation {
+            color: #d6d3d1;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+            padding-top: 0.5rem;
+            border-top: 1px solid #44403c;
+        }
+
+        /* Path Section */
+        .path-section {
+            margin-bottom: 2rem;
+        }
+
+        .path-section h3 {
+            color: #34d399;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+
+        .path-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .path-step {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.75rem 1rem;
+            background: #1a1a2e;
+            border-radius: 8px;
+            border-left: 3px solid #6b7280;
+        }
+
+        .path-step.known { border-left-color: #22c55e; opacity: 0.6; }
+        .path-step.current { border-left-color: #f59e0b; background: #292524; }
+        .path-step.future { border-left-color: #6b7280; }
+
+        .step-num {
+            background: #374151;
+            color: #9ca3af;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .path-step.known .step-num { background: #22c55e; color: white; }
+        .path-step.current .step-num { background: #f59e0b; color: black; }
+
+        .step-content {
+            flex: 1;
+        }
+
+        .step-title {
+            font-weight: 500;
+        }
+
+        .step-time {
+            font-size: 0.75rem;
+            color: #6b7280;
+        }
+
+        /* Comparison */
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .comparison-box {
+            padding: 1rem;
+            border-radius: 8px;
+        }
+
+        .comparison-box.traditional {
+            background: #1f1f1f;
+            border: 1px solid #404040;
+        }
+
+        .comparison-box.novel {
+            background: #1a2e1a;
+            border: 1px solid #22c55e;
+        }
+
+        .comparison-box h4 {
+            font-size: 0.85rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .comparison-box ul {
+            font-size: 0.8rem;
+            padding-left: 1.2rem;
+            color: #a1a1aa;
+        }
+
+        .comparison-box.novel ul { color: #86efac; }
+
+        @media (max-width: 768px) {
+            .comparison { grid-template-columns: 1fr; }
+            .scale-buttons { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Novel Pedagogy Prototype</h1>
+    <p class="subtitle">Graph-based learning with bridges, scales, and paths</p>
+
+    <div class="question-box">
+        <h2>Student Question: "Why is CuSO₄ blue?"</h2>
+        <p>Instead of "see Chapter 21", the system traces prerequisites and offers multiple explanation depths.</p>
+    </div>
+
+    <!-- FEATURE 1: Scale Zoom -->
+    <div class="scale-section">
+        <h3>Feature 1: SCALE ZOOM — Choose Your Depth</h3>
+        <div class="scale-buttons">
+            <button class="scale-btn active" data-scale="descriptive" onclick="showScale('descriptive')">
+                DESCRIPTIVE
+                <span class="scale-label">What happens</span>
+            </button>
+            <button class="scale-btn" data-scale="structural" onclick="showScale('structural')">
+                STRUCTURAL
+                <span class="scale-label">How arranged</span>
+            </button>
+            <button class="scale-btn" data-scale="electronic" onclick="showScale('electronic')">
+                ELECTRONIC
+                <span class="scale-label">Why it happens</span>
+            </button>
+            <button class="scale-btn" data-scale="quantum" onclick="showScale('quantum')">
+                QUANTUM
+                <span class="scale-label">Deep why</span>
+            </button>
+        </div>
+
+        <div class="explanation-box" id="explanation" data-active="descriptive">
+            <div id="exp-descriptive">
+                <h4>DESCRIPTIVE: What happens</h4>
+                <p>Copper(II) compounds are typically blue or green. When you dissolve copper sulfate in water, you get a blue solution. When you heat it, it turns white (loses water). This is a characteristic property used to identify copper ions.</p>
+            </div>
+            <div id="exp-structural" style="display:none;">
+                <h4>STRUCTURAL: How it's arranged</h4>
+                <p>In solution, Cu²⁺ forms [Cu(H₂O)₆]²⁺ — an octahedral complex with 6 water molecules as ligands. The copper sits at the center with water molecules at the vertices of an octahedron. This geometry is key to understanding the color.</p>
+            </div>
+            <div id="exp-electronic" style="display:none;">
+                <h4>ELECTRONIC: Why it happens</h4>
+                <p>Cu²⁺ is d⁹ — it has 9 d-electrons. In octahedral [Cu(H₂O)₆]²⁺, the d-orbitals split into t₂g (lower) and eg (higher) sets. Light absorption promotes an electron from t₂g to eg. This d-d transition absorbs orange light (~600-700 nm), so the complementary color (blue) is transmitted.</p>
+            </div>
+            <div id="exp-quantum" style="display:none;">
+                <h4>QUANTUM: Deep why</h4>
+                <p>The d-d transition is formally Laporte-forbidden (no change in parity: d→d), but it occurs weakly due to vibronic coupling — molecular vibrations momentarily break the centrosymmetric geometry, mixing some p-character into the d-orbitals. The spin-allowed nature (no spin change) makes it stronger than spin-forbidden transitions. This is why Cu²⁺ complexes are pale blue, not intensely colored.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FEATURE 2: Bridge Explanations -->
+    <div class="bridge-section">
+        <h3>Feature 2: BRIDGE EXPLANATIONS — Connect to What You Know</h3>
+
+        <div class="bridge-card">
+            <div class="from">You learned: d-orbitals have different shapes (dxy, dxz, dyz, dx²-y², dz²)</div>
+            <div class="arrow">↓ connects to ↓</div>
+            <div class="to">Now: Why some orbitals go up in energy</div>
+            <div class="explanation">The eg orbitals (dx²-y² and dz²) point directly at the ligands. When ligands approach, their electrons repel these orbitals more strongly, raising their energy. The t₂g orbitals (dxy, dxz, dyz) point between ligands, so they're repelled less.</div>
+        </div>
+
+        <div class="bridge-card">
+            <div class="from">You learned: Electronegativity affects bond polarity</div>
+            <div class="arrow">↓ connects to ↓</div>
+            <div class="to">Now: Why different ligands cause different splitting (Δ)</div>
+            <div class="explanation">More electronegative ligands like F⁻ are weak-field (small Δ) because they hold their electrons tightly. π-acceptor ligands like CN⁻ are strong-field (large Δ) because they can accept electron density from metal d-orbitals, stabilizing t₂g.</div>
+        </div>
+
+        <div class="bridge-card">
+            <div class="from">You learned: Complementary colors on the color wheel</div>
+            <div class="arrow">↓ connects to ↓</div>
+            <div class="to">Now: Predicting complex color from absorption</div>
+            <div class="explanation">If a complex absorbs orange (~600nm), it transmits the complementary color: blue. If it absorbs yellow-green (~550nm), it appears violet. The absorption wavelength depends on Δ, which depends on ligand field strength.</div>
+        </div>
+    </div>
+
+    <!-- FEATURE 3: Question-Driven Path -->
+    <div class="path-section">
+        <h3>Feature 3: PERSONALIZED PATH — From What You Know to What You Asked</h3>
+        <p style="color:#6b7280; font-size:0.85rem; margin-bottom:1rem;">System traced prerequisites and built minimal path:</p>
+
+        <div class="path-list">
+            <div class="path-step known">
+                <div class="step-num">✓</div>
+                <div class="step-content">
+                    <div class="step-title">Atomic orbitals & shapes</div>
+                    <div class="step-time">Already known (Gen Chem)</div>
+                </div>
+            </div>
+            <div class="path-step known">
+                <div class="step-num">✓</div>
+                <div class="step-content">
+                    <div class="step-title">Electron configuration</div>
+                    <div class="step-time">Already known (Gen Chem)</div>
+                </div>
+            </div>
+            <div class="path-step known">
+                <div class="step-num">✓</div>
+                <div class="step-content">
+                    <div class="step-title">Coordination compounds basics</div>
+                    <div class="step-time">Learned in Session 16</div>
+                </div>
+            </div>
+            <div class="path-step current">
+                <div class="step-num">→</div>
+                <div class="step-content">
+                    <div class="step-title">Crystal Field Theory: d-orbital splitting</div>
+                    <div class="step-time">Learn now (15 min)</div>
+                </div>
+            </div>
+            <div class="path-step future">
+                <div class="step-num">5</div>
+                <div class="step-content">
+                    <div class="step-title">d-d transitions & selection rules</div>
+                    <div class="step-time">Next (10 min)</div>
+                </div>
+            </div>
+            <div class="path-step future">
+                <div class="step-num">6</div>
+                <div class="step-content">
+                    <div class="step-title">Color from absorption spectrum</div>
+                    <div class="step-time">Final (5 min)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Comparison -->
+    <div class="comparison">
+        <div class="comparison-box traditional">
+            <h4>❌ Traditional Approach</h4>
+            <ul>
+                <li>"See Chapter 21"</li>
+                <li>Linear: must complete Sessions 1-20 first</li>
+                <li>One explanation depth</li>
+                <li>Connections implicit</li>
+                <li>Student wonders "why do I need this?"</li>
+            </ul>
+        </div>
+        <div class="comparison-box novel">
+            <h4>✓ Novel Approach</h4>
+            <ul>
+                <li>Start from student's question</li>
+                <li>Trace prerequisites, skip what's known</li>
+                <li>Four explanation depths (zoom)</li>
+                <li>Explicit bridges to prior knowledge</li>
+                <li>Student sees connections immediately</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function showScale(scale) {
+            // Update buttons
+            document.querySelectorAll('.scale-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.scale === scale);
+            });
+
+            // Update explanation box border
+            document.getElementById('explanation').dataset.active = scale;
+
+            // Show/hide explanations
+            ['descriptive', 'structural', 'electronic', 'quantum'].forEach(s => {
+                document.getElementById('exp-' + s).style.display = s === scale ? 'block' : 'none';
+            });
+        }
+    </script>
+</body>
+</html>

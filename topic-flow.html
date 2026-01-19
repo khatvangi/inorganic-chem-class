@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHEM 361 Topic Flow - Knowledge Graph</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'JetBrains Mono', 'Fira Code', monospace;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #e2e8f0;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 1.8rem;
+            color: #38bdf8;
+        }
+        .subtitle {
+            text-align: center;
+            color: #94a3b8;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+        }
+        .legend {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.8rem;
+        }
+        .legend-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 4px;
+        }
+        #graph-container {
+            width: 100%;
+            height: 70vh;
+            border: 1px solid #334155;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #0f172a;
+        }
+        svg { width: 100%; height: 100%; }
+        .node rect {
+            stroke-width: 2px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .node rect:hover {
+            filter: brightness(1.2);
+        }
+        .node text {
+            font-size: 10px;
+            fill: #fff;
+            pointer-events: none;
+        }
+        .link {
+            fill: none;
+            stroke: #475569;
+            stroke-width: 1.5px;
+            stroke-opacity: 0.6;
+        }
+        .link:hover {
+            stroke: #38bdf8;
+            stroke-opacity: 1;
+        }
+        .tooltip {
+            position: absolute;
+            background: #1e293b;
+            border: 1px solid #38bdf8;
+            border-radius: 6px;
+            padding: 12px;
+            font-size: 12px;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.2s;
+            max-width: 300px;
+            z-index: 1000;
+        }
+        .flow-section {
+            margin-top: 20px;
+            padding: 15px;
+            background: #1e293b;
+            border-radius: 8px;
+        }
+        .flow-section h3 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+        .flow-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .flow-item {
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .flow-item .rank {
+            font-weight: bold;
+            opacity: 0.7;
+        }
+        .DESCRIPTIVE { background: #059669; }
+        .STRUCTURAL { background: #0891b2; }
+        .ELECTRONIC { background: #7c3aed; }
+        .QUANTUM { background: #dc2626; }
+        .APPLICATION { background: #64748b; }
+    </style>
+</head>
+<body>
+    <h1>CHEM 361 Topic Flow</h1>
+    <p class="subtitle">Knowledge Graph: 67 topics, 675 prerequisite edges | Data-driven curriculum order</p>
+
+    <div class="legend">
+        <div class="legend-item"><div class="legend-color DESCRIPTIVE"></div> DESCRIPTIVE (What happens)</div>
+        <div class="legend-item"><div class="legend-color STRUCTURAL"></div> STRUCTURAL (How arranged)</div>
+        <div class="legend-item"><div class="legend-color ELECTRONIC"></div> ELECTRONIC (Why happens)</div>
+        <div class="legend-item"><div class="legend-color QUANTUM"></div> QUANTUM (Fundamental)</div>
+        <div class="legend-item"><div class="legend-color APPLICATION"></div> APPLICATION (Applied)</div>
+    </div>
+
+    <div id="graph-container">
+        <svg></svg>
+    </div>
+
+    <div class="tooltip" id="tooltip"></div>
+
+    <div class="flow-section">
+        <h3>Linear Topic Flow (Prerequisite → PageRank Order)</h3>
+        <div class="flow-list" id="flow-list"></div>
+    </div>
+
+    <script>
+    // topic flow data (embedded)
+    const flowData = [
+        {rank: 1, topic: "Atomic Structure", scale: "QUANTUM", pr: 0.0030, enables: ["Main Group Chemistry", "Nuclear Chemistry"]},
+        {rank: 2, topic: "Periodic Trends", scale: "DESCRIPTIVE", pr: 0.0120, enables: ["Main Group Chemistry", "Acid-Base Chemistry"]},
+        {rank: 3, topic: "Main Group Chemistry", scale: "DESCRIPTIVE", pr: 0.0204, enables: ["Coordination Chemistry", "Solid State Chemistry"]},
+        {rank: 4, topic: "Chemical Bonding", scale: "ELECTRONIC", pr: 0.0029, enables: ["Crystal Field Theory", "Molecular Orbital Theory"]},
+        {rank: 5, topic: "Redox Chemistry", scale: "DESCRIPTIVE", pr: 0.0079, enables: ["Electrochemistry", "Main Group Chemistry"]},
+        {rank: 6, topic: "Coordination Chemistry", scale: "STRUCTURAL", pr: 0.0049, enables: ["Crystal Field Theory", "Bioinorganic Chemistry"]},
+        {rank: 7, topic: "Molecular Orbital Theory", scale: "ELECTRONIC", pr: 0.0030, enables: ["Crystal Field Theory", "Organometallic Chemistry"]},
+        {rank: 8, topic: "Crystal Field Theory", scale: "ELECTRONIC", pr: 0.0017, enables: ["Color", "Magnetism"]},
+        {rank: 9, topic: "Solid State Chemistry", scale: "STRUCTURAL", pr: 0.0039, enables: ["Band Theory", "Materials"]},
+        {rank: 10, topic: "Acid-Base Chemistry", scale: "DESCRIPTIVE", pr: 0.0025, enables: ["Coordination Chemistry"]},
+        {rank: 11, topic: "Electrochemistry", scale: "APPLICATION", pr: 0.0014, enables: ["Applications"]},
+        {rank: 12, topic: "Organometallic Chemistry", scale: "APPLICATION", pr: 0.0008, enables: ["Catalysis"]},
+        {rank: 13, topic: "Bioinorganic Chemistry", scale: "APPLICATION", pr: 0.0007, enables: ["Enzymes"]},
+        {rank: 14, topic: "Catalysis", scale: "APPLICATION", pr: 0.0007, enables: ["Industrial"]},
+        {rank: 15, topic: "Thermochemistry", scale: "APPLICATION", pr: 0.0011, enables: ["Solid State Chemistry"]},
+    ];
+
+    // create flow list
+    const flowList = document.getElementById('flow-list');
+    flowData.forEach(d => {
+        const item = document.createElement('div');
+        item.className = `flow-item ${d.scale}`;
+        item.innerHTML = `<span class="rank">${d.rank}.</span> ${d.topic}`;
+        item.title = `PageRank: ${d.pr.toFixed(4)}\nEnables: ${d.enables.join(', ')}`;
+        flowList.appendChild(item);
+    });
+
+    // D3 force-directed graph
+    const svg = d3.select("svg");
+    const width = document.getElementById('graph-container').clientWidth;
+    const height = document.getElementById('graph-container').clientHeight;
+
+    const nodes = flowData.map(d => ({
+        id: d.topic,
+        scale: d.scale,
+        pr: d.pr,
+        rank: d.rank
+    }));
+
+    const links = [];
+    flowData.forEach(d => {
+        d.enables.forEach(target => {
+            const targetNode = nodes.find(n => n.id === target);
+            if (targetNode) {
+                links.push({source: d.topic, target: target});
+            }
+        });
+    });
+
+    const scaleColors = {
+        DESCRIPTIVE: '#059669',
+        STRUCTURAL: '#0891b2',
+        ELECTRONIC: '#7c3aed',
+        QUANTUM: '#dc2626',
+        APPLICATION: '#64748b'
+    };
+
+    const simulation = d3.forceSimulation(nodes)
+        .force("link", d3.forceLink(links).id(d => d.id).distance(100))
+        .force("charge", d3.forceManyBody().strength(-300))
+        .force("center", d3.forceCenter(width / 2, height / 2))
+        .force("collision", d3.forceCollide().radius(50));
+
+    const link = svg.append("g")
+        .selectAll("line")
+        .data(links)
+        .join("line")
+        .attr("class", "link")
+        .attr("marker-end", "url(#arrowhead)");
+
+    // arrowhead marker
+    svg.append("defs").append("marker")
+        .attr("id", "arrowhead")
+        .attr("viewBox", "-0 -5 10 10")
+        .attr("refX", 25)
+        .attr("refY", 0)
+        .attr("orient", "auto")
+        .attr("markerWidth", 6)
+        .attr("markerHeight", 6)
+        .append("path")
+        .attr("d", "M 0,-5 L 10,0 L 0,5")
+        .attr("fill", "#475569");
+
+    const node = svg.append("g")
+        .selectAll("g")
+        .data(nodes)
+        .join("g")
+        .attr("class", "node")
+        .call(d3.drag()
+            .on("start", dragstarted)
+            .on("drag", dragged)
+            .on("end", dragended));
+
+    node.append("rect")
+        .attr("width", d => Math.max(80, d.id.length * 6))
+        .attr("height", 24)
+        .attr("x", d => -Math.max(80, d.id.length * 6) / 2)
+        .attr("y", -12)
+        .attr("rx", 4)
+        .attr("fill", d => scaleColors[d.scale])
+        .attr("stroke", d => d3.color(scaleColors[d.scale]).brighter(0.5));
+
+    node.append("text")
+        .attr("text-anchor", "middle")
+        .attr("dy", 4)
+        .text(d => d.id.length > 20 ? d.id.slice(0, 18) + '...' : d.id);
+
+    // tooltip
+    const tooltip = document.getElementById('tooltip');
+    node.on("mouseover", (event, d) => {
+        tooltip.style.opacity = 1;
+        tooltip.style.left = (event.pageX + 10) + 'px';
+        tooltip.style.top = (event.pageY + 10) + 'px';
+        tooltip.innerHTML = `
+            <strong>${d.id}</strong><br>
+            Scale: ${d.scale}<br>
+            PageRank: ${d.pr.toFixed(4)}<br>
+            Curriculum Rank: ${d.rank}
+        `;
+    }).on("mouseout", () => {
+        tooltip.style.opacity = 0;
+    });
+
+    simulation.on("tick", () => {
+        link
+            .attr("x1", d => d.source.x)
+            .attr("y1", d => d.source.y)
+            .attr("x2", d => d.target.x)
+            .attr("y2", d => d.target.y);
+
+        node.attr("transform", d => `translate(${d.x},${d.y})`);
+    });
+
+    function dragstarted(event) {
+        if (!event.active) simulation.alphaTarget(0.3).restart();
+        event.subject.fx = event.subject.x;
+        event.subject.fy = event.subject.y;
+    }
+
+    function dragged(event) {
+        event.subject.fx = event.x;
+        event.subject.fy = event.y;
+    }
+
+    function dragended(event) {
+        if (!event.active) simulation.alphaTarget(0);
+        event.subject.fx = null;
+        event.subject.fy = null;
+    }
+    </script>
+</body>
+</html>

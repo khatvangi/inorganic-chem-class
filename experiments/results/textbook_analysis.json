@@ -1,0 +1,924 @@
+{
+  "Inorganic_Chemistry_Atkins_Shriver.pdf": {
+    "book_name": "Inorganic_Chemistry_Atkins_Shriver.pdf",
+    "total_chunks": 2494,
+    "analyzed_at": "2026-01-18T18:46:23.726962",
+    "pedagogy": {
+      "teaching_philosophy": "The textbook adopts an example-driven and applications-focused approach, emphasizing the integration of thermodynamic principles with real-world problems such as environmental chemistry and electrochemistry. It also incorporates theoretical concepts and mathematical formulations, particularly in relation to Gibbs energy, electrochemical potentials, and spectroscopy.",
+      "difficulty_level": "advanced",
+      "assumed_prerequisites": [
+        "A strong foundation in general chemistry",
+        "Understanding of basic thermodynamics and electrochemistry",
+        "Familiarity with quantum mechanics and molecular structure",
+        "Knowledge of chemical bonding and periodic trends"
+      ],
+      "learning_progression": "The book builds concepts in a linear fashion, starting with foundational topics such as electrochemical processes, thermodynamics, and molecular structure, and gradually progressing to more complex topics like spectroscopy, coordination chemistry, and solid-state chemistry. It also includes a spiral approach by revisiting concepts in different contexts, such as through examples and applications.",
+      "cognitive_load": "high",
+      "active_learning": "The textbook includes a variety of worked examples, self-test questions, and exercises at the end of each chapter to reinforce understanding. These are designed to help students apply theoretical knowledge to practical problems and to monitor their progress. The inclusion of detailed problem-solving steps and thermodynamic cycles supports active learning.",
+      "scaffolding": "The book supports learner understanding through the use of thermodynamic cycles, mathematical formulations, and clear explanations of complex concepts. It also provides context through real-world applications and historical references, which help to ground abstract theories in practical scenarios. The inclusion of self-test questions and exercises allows learners to gradually build their knowledge and skills."
+    },
+    "presentation_style": {
+      "writing_tone": "formal/academic",
+      "sentence_complexity": "complex",
+      "use_of_analogies": "none",
+      "narrative_style": "explanatory",
+      "use_of_examples": "concrete",
+      "visual_references": "does it reference figures, diagrams, structures frequently?",
+      "mathematical_rigor": "semi-quantitative",
+      "distinctive_features": [
+        "Integration of exercises and self-tests within the text",
+        "Use of chemical notation and formulas throughout",
+        "Frequent references to molecular structures and symmetry elements"
+      ],
+      "sample_characteristic_sentence": "The short bond lengths in vanadyl complexes, together with high VO stretching wavenumbers (9"
+    },
+    "strengths_weaknesses": {
+      "raw_response": "<think>\n\n</think>\n\n{\n    \"strengths\": [\n        \"The textbook provides detailed coverage of coordination chemistry, including examples of vanadyl complexes and their geometries, which is essential for understanding transition metal chemistry (e.g., 'Vanadyl complexes generally contain four additional ligands and are square pyramidal').\",\n        \"It includes a variety of problems and exercises, such as calculating Gibbs free energy for disproportionation reactions, which helps students apply theoretical knowledge to real-world scenarios (e.g., 'calculate \u0007 rG for the disproportionation of hydrogen superoxide').\",\n        \"The textbook covers a wide range of topics, including lanthanoid properties and their optical and magnetic behaviors, which are crucial for advanced inorganic chemistry (e.g., 'Much of the commercial and technological value of the lanthanoids stems from their optical and magnetic properties').\"\n    ],\n    \"weaknesses\": [\n        \"The text contains fragmented and poorly formatted passages, making it difficult to follow complex concepts and equations (e.g., the inconsistent formatting of chemical formulas and diagrams).\",\n        \"Some sections lack clear explanations or context, such as the Frost diagram for chromium, which could be more elaborated for better student understanding.\"\n    ],\n    \"best_used_for\": \"deep dive into coordination chemistry and lanthanoid properties\",\n    \"complements_well_with\": \"a textbook on physical chemistry for thermodynamic calculations and a resource on spectroscopy for understanding electronic transitions\",\n    \"topic_coverage_quality\": {\n        \"coordination_chemistry\": \"excellent\",\n        \"main_group\": \"good\",\n        \"solid_state\": \"fair\",\n        \"thermodynamics\": \"good\"\n    },\n    \"overall_rating\": \"8\"\n}"
+    },
+    "visual_elements": {
+      "visual_density": "medium",
+      "figure_types": [
+        "UV\u2013visible spectra",
+        "energy level diagrams",
+        "reaction cycles",
+        "orbital diagrams"
+      ],
+      "integration_quality": "high",
+      "visual_pedagogy": "essential for understanding",
+      "notable_visual_approaches": [
+        "use of UV\u2013visible spectra to explain molecular transitions",
+        "energy level diagrams to illustrate thermodynamic cycles",
+        "integration of visual data with quantitative calculations"
+      ],
+      "visual_reference_count": 29
+    },
+    "explanation_depth": {
+      "explanation_type": "mixed",
+      "causal_reasoning": "moderate",
+      "molecular_level_detail": "yes",
+      "conceptual_depth": "moderate",
+      "why_vs_what_ratio": "40",
+      "example_of_deep_explanation": "The short bond lengths in vanadyl complexes, together with high VO stretching wavenumbers (9... indicate the electronic and structural properties of these complexes.",
+      "example_of_shallow_explanation": "The most common constituent of fireworks is gunpowder or black powder, a mixture of potassium nitrate, sulfur, and charcoal."
+    },
+    "problem_solving": {
+      "worked_examples": "many",
+      "step_by_step_solutions": true,
+      "scaffolded_practice": "moderate",
+      "problem_types": [
+        "numerical",
+        "conceptual",
+        "prediction",
+        "comparison"
+      ],
+      "self_check_questions": true,
+      "answer_availability": "partial solutions",
+      "problem_solving_strategy": true,
+      "problem_keyword_count": 31
+    },
+    "real_world": {
+      "application_density": "frequent",
+      "application_domains": [
+        "environmental",
+        "industrial",
+        "materials"
+      ],
+      "specific_examples": [
+        "Plutonium waste leaking from nuclear facilities",
+        "Electrolysis of potassium fluoride and hydrogen fluoride for F2 production",
+        "Autoionization of dinitrogen tetroxide in solvents"
+      ],
+      "integration_style": "woven into main text",
+      "career_relevance": true,
+      "current_research": false,
+      "societal_impact": true,
+      "application_keyword_count": 13
+    },
+    "historical": {
+      "historical_content": "moderate",
+      "discovery_narratives": "does it tell stories of how concepts were discovered?",
+      "scientist_mentions": [
+        "J. Emsley",
+        "M. Pourbaix",
+        "A.J. Bard",
+        "R. Parsons",
+        "R. Jordan",
+        "P. Zanello",
+        "J.-M. Sav\u00e9ant",
+        "R.M. Dell",
+        "D.A.J. Rand",
+        "A.G. Howard"
+      ],
+      "evolution_of_ideas": "does it show how understanding evolved over time?",
+      "contextual_motivation": "does history help explain WHY we study certain topics?",
+      "notable_historical_passages": "FURTHER READING section includes references to historical figures and texts that provide context on the development of electrochemical concepts, such as M. Pourbaix's Atlas of electrochemical equilibria and J. Emsley's The elements, which offer historical insights into the study of elements and their standard potentials.",
+      "historical_keyword_count": 2
+    },
+    "readability": {
+      "total_words_sampled": 23768,
+      "total_sentences": 1231,
+      "avg_sentence_length": 19.3,
+      "avg_syllables_per_word": 1.78,
+      "flesch_reading_ease": 36.4,
+      "flesch_interpretation": "fairly difficult",
+      "jargon_density_per_1000": 18.6
+    }
+  },
+  "ic_basset.pdf": {
+    "book_name": "ic_basset.pdf",
+    "total_chunks": 446,
+    "analyzed_at": "2026-01-18T18:47:04.348490",
+    "pedagogy": {
+      "teaching_philosophy": "The textbook adopts a theoretical-first approach, emphasizing the fundamental principles of inorganic chemistry through detailed explanations of chemical bonding, crystal structures, and redox reactions. It integrates examples and real-world applications, such as the extraction of metals and the behavior of radioactive substances, to illustrate theoretical concepts.",
+      "difficulty_level": "intermediate",
+      "assumed_prerequisites": [
+        "A foundational understanding of atomic structure, chemical bonding, and basic stoichiometry",
+        "Familiarity with the periodic table and basic chemical equations"
+      ],
+      "learning_progression": "The book builds concepts in a linear fashion, starting with fundamental topics like chemical bonding and atomic structure, and progressively moving to more complex areas such as crystal structures, redox reactions, and complex compounds. It also includes summaries and structured sections to reinforce learning.",
+      "cognitive_load": "medium",
+      "active_learning": "The textbook includes worked examples, such as the oxidation-reduction reactions of potassium dichromate and ferrous iron, and provides detailed explanations of concepts like ionic bonding and crystal structures. However, it does not explicitly include exercises or questions for the reader to solve, making it more of a reference than an interactive learning tool.",
+      "scaffolding": "The book supports learner understanding through clear explanations, visual aids like diagrams of crystal structures, and summaries of key concepts. It also organizes information into sections and subsections, helping learners navigate complex topics systematically."
+    },
+    "presentation_style": {
+      "writing_tone": "formal/academic",
+      "sentence_complexity": "complex",
+      "use_of_analogies": "none",
+      "narrative_style": "explanatory",
+      "use_of_examples": "concrete",
+      "visual_references": "frequent",
+      "mathematical_rigor": "highly quantitative",
+      "distinctive_features": [
+        "Use of equations and mathematical notation",
+        "Frequent references to diagrams and figures",
+        "Precise and technical terminology"
+      ],
+      "sample_characteristic_sentence": "The kinetic energy of an ion of mass m and charge e when it is accelerated through a potential difference V is given by Ve = \u00bdmv\u00b2."
+    },
+    "strengths_weaknesses": {
+      "strengths": [
+        "The textbook provides a clear and structured explanation of coordination chemistry, including detailed discussions on the splitting of d-orbitals in octahedral complexes and the use of hybrid orbitals (e.g., sp hybridization in boron trihalides), which is essential for understanding bonding in transition metal complexes.",
+        "It offers a thorough coverage of nomenclature rules for coordination compounds, with specific examples such as [Co(NH3)4Cl2]Cl and K2[Ni(CN)4], which are valuable for students learning how to name and write formulas for such compounds.",
+        "The book includes practical examples of chemical reactions, such as the preparation of boron from its oxide and the hydrolysis of covalent halides, which help students connect theoretical concepts with real-world applications."
+      ],
+      "weaknesses": [
+        "The textbook lacks detailed explanations of more advanced theories of metal-ligand bonding, such as crystal field theory and molecular orbital theory, which are typically covered in more advanced inorganic chemistry courses.",
+        "Some sections, such as the discussion on the crystal structures of elements like silicon and graphite, are presented in a fragmented manner without sufficient context or visual aids, which could hinder comprehension for undergraduate students."
+      ],
+      "best_used_for": "introduction to coordination chemistry and main group elements",
+      "complements_well_with": "a textbook that covers advanced topics like molecular orbital theory, crystal field theory, and solid-state chemistry",
+      "topic_coverage_quality": {
+        "coordination_chemistry": "excellent",
+        "main_group": "good",
+        "solid_state": "fair",
+        "thermodynamics": "limited"
+      },
+      "overall_rating": "7"
+    },
+    "visual_elements": {
+      "visual_density": "high",
+      "figure_types": [
+        "crystal structures",
+        "chemical bond diagrams",
+        "reaction schemes",
+        "periodic table subdivisions"
+      ],
+      "integration_quality": "high",
+      "visual_pedagogy": "essential for understanding",
+      "notable_visual_approaches": [
+        "use of periodic table subdivisions to explain metal occurrence",
+        "detailed crystal structure diagrams to illustrate ionic bonding",
+        "visual representation of chemical reactions and stoichiometry"
+      ],
+      "visual_reference_count": 54
+    },
+    "explanation_depth": {
+      "explanation_type": "mixed",
+      "causal_reasoning": "moderate",
+      "molecular_level_detail": "yes",
+      "conceptual_depth": "moderate",
+      "why_vs_what_ratio": "40",
+      "example_of_deep_explanation": "The carbon atoms in graphite are sp\u00b2 (2s\u00b2 2p\u2093 2p\u1d67) hybridized, the remaining 2p_z orbital of each atom projecting above and below the plane of the carbon atoms. Each 2p_z orbital contains one electron and these electrons can be regarded as imparting some double bond character to all carbon-carbon linkages in a layer; these electrons also confer on graphite the marked electrical conductivity which it exhibits in the direction parallel to the layers.",
+      "example_of_shallow_explanation": "The Free Metals have no characteristic ending, e.g. NH3, ammine; H2O, aquo; and CO, carbonyl."
+    },
+    "problem_solving": {
+      "worked_examples": "few",
+      "step_by_step_solutions": true,
+      "scaffolded_practice": true,
+      "problem_types": [
+        "conceptual",
+        "prediction",
+        "comparison",
+        "numerical"
+      ],
+      "self_check_questions": true,
+      "answer_availability": "partial solutions",
+      "problem_solving_strategy": true,
+      "problem_keyword_count": 22
+    },
+    "real_world": {
+      "application_density": "frequent",
+      "application_domains": [
+        "industrial",
+        "medical",
+        "environmental",
+        "materials"
+      ],
+      "specific_examples": [
+        "Extraction and purification of metals from sea water",
+        "Use of ionic compounds in solvents for dissolution",
+        "Radioisotopes in medical and industrial applications"
+      ],
+      "integration_style": "woven into main text",
+      "career_relevance": "does it mention careers or professional applications?",
+      "current_research": "does it reference recent discoveries or ongoing research?",
+      "societal_impact": "does it discuss broader impacts of chemistry?",
+      "application_keyword_count": 4
+    },
+    "historical": {
+      "historical_content": "none",
+      "discovery_narratives": "no",
+      "scientist_mentions": [],
+      "evolution_of_ideas": "no",
+      "contextual_motivation": "no",
+      "notable_historical_passages": [],
+      "historical_keyword_count": 0
+    },
+    "readability": {
+      "total_words_sampled": 25331,
+      "total_sentences": 818,
+      "avg_sentence_length": 31.0,
+      "avg_syllables_per_word": 1.71,
+      "flesch_reading_ease": 30.5,
+      "flesch_interpretation": "fairly difficult",
+      "jargon_density_per_1000": 12.6
+    }
+  },
+  "descriptive_ic.pdf": {
+    "book_name": "descriptive_ic.pdf",
+    "total_chunks": 1495,
+    "analyzed_at": "2026-01-18T18:47:45.111644",
+    "pedagogy": {
+      "teaching_philosophy": "example-driven and applications-focused, with an emphasis on connecting theoretical concepts to real-world phenomena and practical uses of inorganic chemistry.",
+      "difficulty_level": "intermediate",
+      "assumed_prerequisites": [
+        "basic knowledge of general chemistry",
+        "fundamental concepts of chemical bonding",
+        "an introductory understanding of periodic trends and atomic structure"
+      ],
+      "learning_progression": "linear, with concepts introduced in a structured manner, building from foundational topics like coordination chemistry to more complex areas such as solid-state structures and metallurgical applications.",
+      "cognitive_load": "medium",
+      "active_learning": "the textbook includes a variety of exercises, problems, and questions, such as isomerization examples, reaction mechanisms, and problem-solving tasks. It also features worked examples and figures to illustrate complex concepts, supporting active learning through practice and application.",
+      "scaffolding": "the book supports learner understanding through detailed explanations, visual aids (such as figures and diagrams), and a conversational tone that makes complex topics more accessible. It also integrates concepts from earlier chapters, reinforcing prior knowledge and building upon it systematically."
+    },
+    "presentation_style": {
+      "writing_tone": "formal/academic",
+      "sentence_complexity": "complex",
+      "use_of_analogies": "occasional",
+      "narrative_style": "explanatory",
+      "use_of_examples": "real-world applications",
+      "visual_references": "does it reference figures, diagrams, structures frequently?",
+      "mathematical_rigor": "semi-quantitative",
+      "distinctive_features": [
+        "Integration of figures and diagrams throughout the text",
+        "Use of real-world applications to explain chemical concepts",
+        "Combination of theoretical and practical examples"
+      ],
+      "sample_characteristic_sentence": "The six components of the interconnected network of ideas"
+    },
+    "strengths_weaknesses": {
+      "strengths": [
+        "The textbook provides practical and real-world applications of inorganic chemistry, such as the use of magnesium alloys in car engines and the role of Group 2A metals in fireworks, which helps students connect theoretical concepts to everyday life.",
+        "It includes a variety of exercises and problems, such as rationalizing solubility and discussing entropy changes, which are excellent for reinforcing understanding and critical thinking.",
+        "The textbook integrates visual aids and diagrams, such as molecular-level diagrams and semitopological diagrams, which are useful for visual learners and for illustrating complex chemical interactions."
+      ],
+      "weaknesses": [
+        "Some sections contain formatting issues and incomplete text, such as the corrupted passage about the Big Bang and the partially missing periodic table, which may hinder readability and comprehension.",
+        "The textbook lacks a consistent structure and organization, with some topics appearing disjointed and others being presented in a non-linear fashion, which may confuse students."
+      ],
+      "best_used_for": "introduction to topic X",
+      "complements_well_with": "a textbook with a strong focus on theoretical inorganic chemistry and quantum mechanics",
+      "topic_coverage_quality": {
+        "coordination_chemistry": "fair",
+        "main_group": "excellent",
+        "solid_state": "limited",
+        "thermodynamics": "good"
+      },
+      "overall_rating": "6"
+    },
+    "visual_elements": {
+      "visual_density": "high",
+      "figure_types": [
+        "crystal structures",
+        "geometric isomers",
+        "coordination compounds",
+        "lattice structures"
+      ],
+      "integration_quality": "high",
+      "visual_pedagogy": "essential for understanding",
+      "notable_visual_approaches": [
+        "use of figures to illustrate geometric isomerism",
+        "visual representation of coordination compounds",
+        "lattice structures for solid-state chemistry"
+      ],
+      "visual_reference_count": 68
+    },
+    "explanation_depth": {
+      "explanation_type": "mixed",
+      "causal_reasoning": "moderate",
+      "molecular_level_detail": "yes",
+      "conceptual_depth": "moderate",
+      "why_vs_what_ratio": "40",
+      "example_of_deep_explanation": "The aquation reactions involve the replacement of a ligand (other than water itself) with a water molecule. A considerable amount of work has been done on reactions of this type involving a variety of inert cobalt(III) complexes. For example, Equation (5.32) represents the aquation reactions of various cobalt(III) cations:",
+      "example_of_shallow_explanation": "Fireworks and X Rays Group 2A metals play an important role in fireworks and related applications. Fireworks consist of an oxidizer, a fuel, colorizers, and various types of binding agents."
+    },
+    "problem_solving": {
+      "worked_examples": "many",
+      "step_by_step_solutions": true,
+      "scaffolded_practice": "moderate",
+      "problem_types": [
+        "conceptual",
+        "prediction",
+        "comparison",
+        "numerical"
+      ],
+      "self_check_questions": true,
+      "answer_availability": "partial solutions",
+      "problem_solving_strategy": true,
+      "problem_keyword_count": 20
+    },
+    "real_world": {
+      "application_density": "occasional",
+      "application_domains": [
+        "industrial",
+        "medical",
+        "environmental",
+        "materials"
+      ],
+      "specific_examples": [
+        "Calcium compounds in bone and teeth structure",
+        "Calcium carbide and calcium carbonate structures",
+        "Metallurgical uses of inorganic compounds"
+      ],
+      "integration_style": "woven into main text",
+      "career_relevance": true,
+      "current_research": false,
+      "societal_impact": true,
+      "application_keyword_count": 8
+    },
+    "historical": {
+      "historical_content": "moderate",
+      "discovery_narratives": "does it tell stories of how concepts were discovered?",
+      "scientist_mentions": [
+        "Bodie Douglas",
+        "Darl H. McDaniel",
+        "John J. Alexander"
+      ],
+      "evolution_of_ideas": "does it show how understanding evolved over time?",
+      "contextual_motivation": "does history help explain WHY we study certain topics?",
+      "notable_historical_passages": "The structures of spinels, AUB3\"O,, are determined not only by the radius of the ions involved but also by the crystal field stabilization energies of the cations that occupy octahedral or tetrahedral holes in the cubic close-packed lattice of oxide ions. These structures offer an opportunity to combine a knowledge of crystal field theory obtained in earlier chapters with the knowledge of solid-state",
+      "historical_keyword_count": 7
+    },
+    "readability": {
+      "total_words_sampled": 21843,
+      "total_sentences": 1295,
+      "avg_sentence_length": 16.9,
+      "avg_syllables_per_word": 1.79,
+      "flesch_reading_ease": 38.6,
+      "flesch_interpretation": "fairly difficult",
+      "jargon_density_per_1000": 16.2
+    }
+  },
+  "descriptive_ic_house.pdf": {
+    "book_name": "descriptive_ic_house.pdf",
+    "total_chunks": 1027,
+    "analyzed_at": "2026-01-18T18:48:21.566373",
+    "pedagogy": {
+      "teaching_philosophy": "The textbook adopts an example-driven and applications-focused approach, emphasizing chemical reactions, real-world uses of inorganic compounds, and practical synthesis methods. It integrates theoretical concepts with concrete examples and reactions, making the material accessible and relevant to students.",
+      "difficulty_level": "intermediate",
+      "assumed_prerequisites": [
+        "Fundamental knowledge of chemical bonding and reactions",
+        "Basic understanding of periodic trends and properties of elements",
+        "Knowledge of basic stoichiometry and chemical equations"
+      ],
+      "learning_progression": "The book builds concepts in a linear fashion, starting with foundational topics like oxides, nitrides, and solubility rules, then progressing to more complex topics such as nonaqueous solvents, molten salts, and complex formation. It gradually introduces more advanced concepts like polymeric structures and cluster anions.",
+      "cognitive_load": "medium",
+      "active_learning": "The textbook includes worked examples, reaction equations, and descriptions of chemical processes, which help students understand how to apply theoretical knowledge. It also provides context through real-world applications and mentions of industrial uses, which can aid in active learning. However, it lacks explicit exercises or questions for students to solve independently.",
+      "scaffolding": "The book supports learner understanding by starting with simple reactions and gradually introducing more complex chemical systems. It provides explanations of reaction mechanisms, structural features, and the behavior of ions in different environments, which help students build a conceptual framework. The use of figures and descriptions of molecular structures also aids in visualizing complex concepts."
+    },
+    "presentation_style": {
+      "writing_tone": "formal/academic",
+      "sentence_complexity": "complex",
+      "use_of_analogies": "occasional",
+      "narrative_style": "explanatory",
+      "use_of_examples": "real-world applications",
+      "visual_references": "does it reference figures, diagrams, structures frequently?",
+      "mathematical_rigor": "semi-quantitative",
+      "distinctive_features": [
+        "Integration of chemical equations with textual explanations",
+        "Frequent use of chemical notation and formulas",
+        "Discussion of industrial relevance and real-world applications"
+      ],
+      "sample_characteristic_sentence": "The ability of compounds to function as Br\u00f8nsted acids or bases is not limited to aqueous solutions, and the reaction of gaseous HCl and NH3 has already been described."
+    },
+    "strengths_weaknesses": {
+      "strengths": [
+        "The textbook provides detailed examples of isomerism and reaction mechanisms, such as the isomerization of [Co(NH3)5ONO]2\u00fe to [Co(NH3)5NO2]2\u00fe, which is excellent for illustrating coordination chemistry concepts.",
+        "It covers a wide range of topics including boron compounds, carbon oxides, and metal chemistry, with specific examples like B12H12^2- and the inert pair effect, which are ideal for deepening understanding of main group chemistry.",
+        "The inclusion of magnetic properties and molecular orbital diagrams, such as for O2, helps students grasp the electronic structure and reactivity of inorganic compounds."
+      ],
+      "weaknesses": [
+        "The text occasionally lacks clarity in explaining complex structures, such as the incorrect Lewis structure of O2, which could confuse students trying to understand paramagnetism.",
+        "Some sections are too brief, such as the description of carbon halides, which only mentions CCl4 without sufficient detail on other halogenated compounds."
+      ],
+      "best_used_for": "deep dive into main group chemistry and coordination chemistry",
+      "complements_well_with": "a textbook on physical inorganic chemistry or quantum chemistry for a more theoretical understanding",
+      "topic_coverage_quality": {
+        "coordination_chemistry": "excellent",
+        "main_group": "excellent",
+        "solid_state": "fair",
+        "thermodynamics": "good"
+      },
+      "overall_rating": "8"
+    },
+    "visual_elements": {
+      "visual_density": "medium",
+      "figure_types": [
+        "reaction schemes",
+        "polymeric structures",
+        "molecular geometries",
+        "diagrams illustrating dipole interactions"
+      ],
+      "integration_quality": "high",
+      "visual_pedagogy": "essential for understanding",
+      "notable_visual_approaches": [
+        "use of diagrams to illustrate molecular structures and interactions",
+        "visual representation of complex chemical reactions and bonding"
+      ],
+      "visual_reference_count": 61
+    },
+    "explanation_depth": {
+      "explanation_type": "mixed",
+      "causal_reasoning": "moderate",
+      "molecular_level_detail": true,
+      "conceptual_depth": "moderate",
+      "why_vs_what_ratio": "40",
+      "example_of_deep_explanation": "The actual bond energy in the O2 molecule is very close to the double bond energy, which is consistent with the bond order of 2 found from the MO diagram above.",
+      "example_of_shallow_explanation": "The O2 molecule is paramagnetic, having two unpaired electrons per molecule."
+    },
+    "problem_solving": {
+      "worked_examples": "many",
+      "step_by_step_solutions": true,
+      "scaffolded_practice": "moderate",
+      "problem_types": [
+        "conceptual",
+        "reaction prediction",
+        "comparison",
+        "mechanism explanation"
+      ],
+      "self_check_questions": true,
+      "answer_availability": "partial solutions",
+      "problem_solving_strategy": true,
+      "problem_keyword_count": 23
+    },
+    "real_world": {
+      "application_density": "occasional",
+      "application_domains": [
+        "industrial",
+        "environmental",
+        "materials"
+      ],
+      "specific_examples": [
+        "Use of sodium sulfide in tanning leather and dye manufacturing",
+        "Production of barium sulfate and zinc sulfide in lithopone pigment",
+        "Formation of phosphoric acid from phosphorus pentoxide"
+      ],
+      "integration_style": "woven into main text",
+      "career_relevance": "does it mention careers or professional applications?",
+      "current_research": "does it reference recent discoveries or ongoing research?",
+      "societal_impact": "does it discuss broader impacts of chemistry?",
+      "application_keyword_count": 5
+    },
+    "historical": {
+      "historical_content": "minimal",
+      "discovery_narratives": "does not tell stories of how concepts were discovered?",
+      "scientist_mentions": [],
+      "evolution_of_ideas": "does not show how understanding evolved over time?",
+      "contextual_motivation": "does not help explain WHY we study certain topics?",
+      "notable_historical_passages": "none",
+      "historical_keyword_count": 1
+    },
+    "readability": {
+      "total_words_sampled": 22982,
+      "total_sentences": 1383,
+      "avg_sentence_length": 16.6,
+      "avg_syllables_per_word": 1.67,
+      "flesch_reading_ease": 48.8,
+      "flesch_interpretation": "fairly difficult",
+      "jargon_density_per_1000": 13.7
+    }
+  },
+  "ic_tina.pdf": {
+    "book_name": "ic_tina.pdf",
+    "total_chunks": 2375,
+    "analyzed_at": "2026-01-18T18:49:00.575282",
+    "pedagogy": {
+      "teaching_philosophy": "The textbook adopts an applications-focused and theoretical approach, integrating electrochemical data, real-world environmental chemistry, and molecular modeling. It emphasizes the use of diagrams (like Pourbaix diagrams) and energy-level diagrams to explain complex concepts, while also providing foundational knowledge through quantum theory and symmetry principles.",
+      "difficulty_level": "intermediate",
+      "assumed_prerequisites": [
+        "Basic knowledge of atomic structure and periodic trends",
+        "Understanding of chemical bonding and molecular structure",
+        "Familiarity with thermodynamics and electrochemistry concepts"
+      ],
+      "learning_progression": "The book follows a linear progression, starting with foundational topics like atomic structure and bonding, then moving to more complex areas such as symmetry, molecular orbitals, and electrochemical systems. It builds from basic principles to more advanced applications in environmental and inorganic chemistry.",
+      "cognitive_load": "medium",
+      "active_learning": "The textbook includes worked examples, problem-solving sections, and diagrams to aid understanding. It also references figures and tables, and encourages the use of external resources like chemtube3d.com for visual learning. However, it does not include extensive exercises or end-of-chapter questions.",
+      "scaffolding": "The book supports learner understanding through the use of diagrams, tables, and references to external resources. It gradually introduces complex topics by linking them to foundational concepts, such as using symmetry to explain molecular structure and using electrochemical data to predict chemical behavior in different environments."
+    },
+    "presentation_style": {
+      "writing_tone": "technical",
+      "sentence_complexity": "complex",
+      "use_of_analogies": "none",
+      "narrative_style": "explanatory",
+      "use_of_examples": "real-world applications",
+      "visual_references": "does it reference figures, diagrams, structures frequently?",
+      "mathematical_rigor": "semi-quantitative",
+      "distinctive_features": [
+        "Integration of diagrams and figures with textual explanations",
+        "Use of boxed sections for key concepts and additional information",
+        "Frequent inclusion of chemical equations and data tables"
+      ],
+      "sample_characteristic_sentence": "The binding energy of 56Fe, for example, is the difference in energy between the 56Fe nucleus and 26 protons and 30 neutrons."
+    },
+    "strengths_weaknesses": {
+      "strengths": [
+        "The textbook provides detailed coverage of main group elements, including their properties, reactions, and synthesis methods, such as the synthesis of germane, stannane, and plumbane (e.g., 'Germane (GeH4) and stannane (SnH4) can be synthesized by the reaction of the appropriate tetrachloride with LiAlH4 in tetrahydrofuran solution').",
+        "It includes comprehensive sections on coordination chemistry, such as the formation of metal\u2013organic frameworks (MOFs) and the role of lanthanoid ions in constructing three-dimensional structures (e.g., 'Lanthanoid 3+ ions can be used to construct three-dimensional metal\u2013organic frameworks, abbreviated MOFs').",
+        "The textbook integrates real-world applications and historical context, such as the discovery of graphene and its properties, as well as the industrial importance of elements like lithium and nitrogen (e.g., 'Graphene is often referred to as the wonder material...')."
+      ],
+      "weaknesses": [
+        "The textbook contains some formatting and typographical errors, such as incomplete equations and missing punctuation, which may confuse readers (e.g., '6SCl2 (l) + 16 NH3 (g) \u2192 S4 N 4 (s) + 41 S8 (s) + 12 NH 4Cl(sol)').",
+        "Some sections lack clarity and depth, particularly in thermodynamics and reaction mechanisms, which are essential for undergraduate understanding (e.g., 'The nitrate ion is a strong but slow oxidizing agent at room temperature; strong acid and heating accelerate the reaction')."
+      ],
+      "best_used_for": "introduction to inorganic chemistry concepts and main group elements",
+      "complements_well_with": "a textbook that provides detailed theoretical foundations in coordination chemistry and thermodynamics",
+      "topic_coverage_quality": {
+        "coordination_chemistry": "good",
+        "main_group": "excellent",
+        "solid_state": "fair",
+        "thermodynamics": "good"
+      },
+      "overall_rating": "7"
+    },
+    "visual_elements": {
+      "visual_density": "high",
+      "figure_types": [
+        "Pourbaix diagrams",
+        "Born\u2013Haber cycles",
+        "tables",
+        "schematic diagrams",
+        "character tables",
+        "orbital diagrams"
+      ],
+      "integration_quality": "high",
+      "visual_pedagogy": "essential for understanding",
+      "notable_visual_approaches": [
+        "Use of electrochemical diagrams to explain redox behavior",
+        "Energy-level diagrams for thermodynamic cycles",
+        "Symmetry-related visual tools like character tables"
+      ],
+      "visual_reference_count": 74
+    },
+    "explanation_depth": {
+      "explanation_type": "mixed",
+      "causal_reasoning": "moderate",
+      "molecular_level_detail": "yes",
+      "conceptual_depth": "moderate",
+      "why_vs_what_ratio": "40",
+      "example_of_deep_explanation": "BOX 14.2 What is graphene? Graphene is monolayer graphite: a single layer of hexagonally arranged carbon atoms completely separated from other such layers (Fig. B14.1). Ground-breaking work on graphene won the 2010 Nobel Prize for Physics for Andre Geim and Konstantin Novoselov of the University of Manchester, UK. Graphene is often referred to as the wonder material, and it does have remarkable properties. It is the strongest known material, with a breaking strength of approximately 40 N m\u22121, which is 200 times greater than structural steel. It has the highest recorded thermal conductivity and shows more elasticity than any other crystal, stretching by up to 20 per cent.",
+      "example_of_shallow_explanation": "KEY POINTS The nitrate ion is a strong but slow oxidizing agent at room temperature; strong acid and heating accelerate the reaction."
+    },
+    "problem_solving": {
+      "worked_examples": "many",
+      "step_by_step_solutions": true,
+      "scaffolded_practice": "moderate",
+      "problem_types": [
+        "numerical",
+        "conceptual",
+        "prediction",
+        "comparison",
+        "diagram interpretation"
+      ],
+      "self_check_questions": true,
+      "answer_availability": "partial solutions",
+      "problem_solving_strategy": "does it teach HOW to approach problems, not just solve them?",
+      "problem_keyword_count": 17
+    },
+    "real_world": {
+      "application_density": "frequent",
+      "application_domains": [
+        "environmental",
+        "medical",
+        "materials"
+      ],
+      "specific_examples": [
+        "Use of 99mTc in medical imaging",
+        "Role of Fe2+ in natural waters and its environmental implications",
+        "Formation of KCl(s) and its enthalpy changes in industrial processes"
+      ],
+      "integration_style": "woven into main text",
+      "career_relevance": "does it mention careers or professional applications?",
+      "current_research": "does it reference recent discoveries or ongoing research?",
+      "societal_impact": "does it discuss broader impacts of chemistry?",
+      "application_keyword_count": 21
+    },
+    "historical": {
+      "historical_content": "none",
+      "discovery_narratives": "does it tell stories of how concepts were discovered?",
+      "scientist_mentions": [],
+      "evolution_of_ideas": "does it show how understanding evolved over time?",
+      "contextual_motivation": "does history help explain WHY we study certain topics?",
+      "notable_historical_passages": [],
+      "historical_keyword_count": 2
+    },
+    "readability": {
+      "total_words_sampled": 23164,
+      "total_sentences": 1105,
+      "avg_sentence_length": 21.0,
+      "avg_syllables_per_word": 1.78,
+      "flesch_reading_ease": 35.3,
+      "flesch_interpretation": "fairly difficult",
+      "jargon_density_per_1000": 20.2
+    }
+  },
+  "advancex_ic_applicaionts.pdf": {
+    "book_name": "advancex_ic_applicaionts.pdf",
+    "total_chunks": 351,
+    "analyzed_at": "2026-01-18T18:49:41.283284",
+    "pedagogy": {
+      "teaching_philosophy": "The textbook adopts a theoretical-first approach, emphasizing the use of group theory and molecular orbital theory to explain molecular structure and bonding. It integrates mathematical formalism with chemical concepts, often using symmetry and quantum mechanics to describe molecular behavior. The approach is also applications-focused, as it includes discussions on ligand interactions, molecular vibrations, and spectroscopy.",
+      "difficulty_level": "advanced",
+      "assumed_prerequisites": [
+        "A strong foundation in general chemistry",
+        "Basic understanding of quantum mechanics and atomic structure",
+        "Familiarity with symmetry and group theory concepts",
+        "Knowledge of molecular orbital theory and electronic configurations"
+      ],
+      "learning_progression": "The book builds concepts in a linear fashion, starting with fundamental topics like molecular vibrations and symmetry, then progressing to more complex ideas such as molecular orbital theory, ligand interactions, and spectroscopy. It gradually increases in complexity, linking theoretical concepts to real-world applications.",
+      "cognitive_load": "high",
+      "active_learning": "The textbook includes worked examples, equations, and figures to illustrate concepts. However, it does not explicitly include exercises, questions, or interactive elements. The focus is on presenting information and theory rather than engaging the learner through practice or problem-solving.",
+      "scaffolding": "The book provides a structured progression from basic concepts to more advanced topics, using mathematical formalism and symmetry principles as scaffolding. It supports understanding by linking molecular vibrations to group theory, and molecular orbital theory to ligand interactions, thereby building a cohesive framework for inorganic chemistry."
+    },
+    "presentation_style": {
+      "writing_tone": "formal/academic",
+      "sentence_complexity": "complex",
+      "use_of_analogies": "occasional",
+      "narrative_style": "explanatory",
+      "use_of_examples": "concrete",
+      "visual_references": "frequent",
+      "mathematical_rigor": "highly quantitative",
+      "distinctive_features": [
+        "Detailed mathematical formulations",
+        "Integration of diagrams and figures",
+        "Use of chemical notation and terminology"
+      ],
+      "sample_characteristic_sentence": "The following results can be expected. The sequence of energy levels encountered follows the aufbau principle: 1s < 2s < 2p < 3s < 3p < 4s < 3d < 4p < 5s < 4d < 5p < 6s < 4f z 5d < 6p < 7s."
+    },
+    "strengths_weaknesses": {
+      "strengths": [
+        "The textbook provides a detailed explanation of crystal field theory with clear diagrams, such as the splitting of d-orbitals in octahedral and tetrahedral complexes (Fig. 6.4), which is essential for understanding coordination chemistry.",
+        "It covers advanced topics like isomerism in coordination compounds with specific examples, such as cis and trans isomers of [PtCl2Br2]2\u2212, which is useful for students learning about structural and stereochemistry.",
+        "The book includes a comprehensive discussion on reaction mechanisms and activation parameters, including the Arrhenius equation and the relationship between activation energy and reaction rates, which is valuable for understanding inorganic reaction kinetics."
+      ],
+      "weaknesses": [
+        "The text lacks consistent formatting and clear sectioning, making it difficult to navigate, especially for students who are new to the subject.",
+        "Some passages are incomplete or cut off, such as the section on activation volume and the bibliography, which may hinder a complete understanding of the material."
+      ],
+      "best_used_for": "introduction to coordination chemistry and inorganic reaction mechanisms",
+      "complements_well_with": "a textbook on physical chemistry for thermodynamics and quantum mechanics, or a lab manual for practical coordination chemistry experiments",
+      "topic_coverage_quality": {
+        "coordination_chemistry": "excellent",
+        "main_group": "limited",
+        "solid_state": "limited",
+        "thermodynamics": "good"
+      },
+      "overall_rating": "7"
+    },
+    "visual_elements": {
+      "visual_density": "medium",
+      "figure_types": [
+        "molecular structures",
+        "symmetry operations",
+        "normal modes of vibration",
+        "character tables"
+      ],
+      "integration_quality": "high",
+      "visual_pedagogy": "essential for understanding",
+      "notable_visual_approaches": [
+        "use of symmetry operations to explain molecular vibrations",
+        "integration of character tables with molecular geometry",
+        "visual representation of normal modes of vibration"
+      ],
+      "visual_reference_count": 43
+    },
+    "explanation_depth": {
+      "raw_response": "<think>\n\n</think>\n\n{\n    \"explanation_type\": \"mixed\",\n    \"causal_reasoning\": \"moderate\",\n    \"molecular_level_detail\": true,\n    \"conceptual_depth\": \"moderate\",\n    \"why_vs_what_ratio\": \"50\",\n    \"example_of_deep_explanation\": \"The effect of 6L\u0002 ligands on the energies of the d orbitals of an M2\u00fe ion in an octahedral complex is such that the energies of all the d orbitals increase and their degeneracy is lifted as shown in Fig. 6.1.\",\n    \"example_of_shallow_explanation\": \"The k2 increases as the polarizability of the nucleophile increases.\"\n}"
+    },
+    "problem_solving": {
+      "worked_examples": "few",
+      "step_by_step_solutions": true,
+      "scaffolded_practice": true,
+      "problem_types": [
+        "conceptual",
+        "prediction",
+        "comparison"
+      ],
+      "self_check_questions": true,
+      "answer_availability": "partial solutions",
+      "problem_solving_strategy": true,
+      "problem_keyword_count": 5
+    },
+    "real_world": {
+      "application_density": "occasional",
+      "application_domains": [
+        "materials",
+        "environmental",
+        "industrial"
+      ],
+      "specific_examples": [
+        "Molecular Orbital Theory for Transition Metal Complexes",
+        "Spectroscopic Studies of Molecular Motion in Liquids",
+        "Ligands and d-Block Metal Complexes"
+      ],
+      "integration_style": "woven into main text",
+      "career_relevance": true,
+      "current_research": true,
+      "societal_impact": false,
+      "application_keyword_count": 10
+    },
+    "historical": {
+      "historical_content": "moderate",
+      "discovery_narratives": "does it tell stories of how concepts were discovered?",
+      "scientist_mentions": [
+        "Hall, M. B.",
+        "Garrett, A. B.",
+        "Dushman, S.",
+        "Hazlehu, T. H.",
+        "Michalak, A.",
+        "DeKock, R. L.",
+        "Ziegler, T.",
+        "Shenkuan, N.",
+        "Campbell, M. L.",
+        "Walls, J. D.",
+        "Heller, E. J.",
+        "Remenyi, C.",
+        "Reviakine, R.",
+        "Arbuznikov, A. V.",
+        "Vaara, J.",
+        "Kaupp, M."
+      ],
+      "evolution_of_ideas": "does it show how understanding evolved over time?",
+      "contextual_motivation": "does history help explain WHY we study certain topics?",
+      "notable_historical_passages": "The textbook includes references to historical figures and their contributions to the field, such as the development of quantum theory and molecular orbital theory. For example, it references works by Hall, M. B., Dushman, S., and others, which provide insight into the historical development of concepts like group theory and molecular orbital theory.",
+      "historical_keyword_count": 4
+    },
+    "readability": {
+      "total_words_sampled": 19435,
+      "total_sentences": 1227,
+      "avg_sentence_length": 15.8,
+      "avg_syllables_per_word": 1.76,
+      "flesch_reading_ease": 41.9,
+      "flesch_interpretation": "fairly difficult",
+      "jargon_density_per_1000": 28.1
+    }
+  },
+  "concise_ic_jd_lee.pdf": {
+    "book_name": "concise_ic_jd_lee.pdf",
+    "total_chunks": 565,
+    "analyzed_at": "2026-01-18T18:50:24.756552",
+    "pedagogy": {
+      "teaching_philosophy": "The textbook adopts a theoretical-first approach, emphasizing fundamental concepts in inorganic chemistry such as molecular orbital theory, atomic structure, and bonding. It integrates examples and applications to illustrate theoretical principles, but the primary focus is on building a strong conceptual foundation.",
+      "difficulty_level": "intermediate",
+      "assumed_prerequisites": [
+        "Basic knowledge of atomic structure and chemical bonding",
+        "Familiarity with quantum mechanics concepts",
+        "Understanding of periodic trends and properties"
+      ],
+      "learning_progression": "Linear progression, moving from basic atomic structure and bonding to more complex topics such as molecular orbitals, metallic bonding, and applications in materials science.",
+      "cognitive_load": "medium",
+      "active_learning": "The textbook includes worked examples and diagrams to explain complex concepts, but it lacks explicit exercises or questions for the reader to engage with directly. It is more of a reference and explanation text than an interactive learning tool.",
+      "scaffolding": "The book supports learner understanding through clear explanations, diagrams, and the gradual introduction of concepts. It builds on foundational knowledge of atomic structure and quantum mechanics, leading to more advanced topics like molecular orbital theory and metallic bonding."
+    },
+    "presentation_style": {
+      "writing_tone": "technical",
+      "sentence_complexity": "complex",
+      "use_of_analogies": "none",
+      "narrative_style": "explanatory",
+      "use_of_examples": "concrete",
+      "visual_references": "does it reference figures, diagrams, structures frequently?",
+      "mathematical_rigor": "semi-quantitative",
+      "distinctive_features": [
+        "Use of bullet points and numbered lists for clarity",
+        "Integration of chemical equations and data tables",
+        "Frequent mention of experimental and theoretical values"
+      ],
+      "sample_characteristic_sentence": "The attraction between ions is electrostatic, and is non-directional, extending equally in all directions."
+    },
+    "strengths_weaknesses": {
+      "strengths": [
+        "The textbook provides clear and concise explanations of fundamental concepts such as lattice energy, Born-Haber cycles, and electrochemical series, supported by tables and examples (e.g., Table 6.7 comparing theoretical and experimental lattice energies).",
+        "It includes detailed diagrams and visual representations, such as the crystal field splitting diagram (Figure 7.9) and reduction potential diagrams, which aid in understanding complex topics like coordination compounds and redox reactions.",
+        "The book covers a wide range of topics, including main group elements, transition metals, and thermodynamics, with practical examples like the solubility of salts and the behavior of metals, making it suitable for a broad undergraduate curriculum."
+      ],
+      "weaknesses": [
+        "Some sections contain formatting and typographical errors, such as unclear symbols, missing characters, and inconsistent notation, which may confuse students (e.g., 'llHd' and 'llHs' in the Born-Haber cycle).",
+        "The coverage of coordination chemistry, while present, lacks depth in some areas, such as the detailed discussion of crystal field theory and ligand field effects, which are essential for advanced understanding."
+      ],
+      "best_used_for": "introduction to inorganic chemistry concepts and foundational knowledge",
+      "complements_well_with": "a textbook with detailed theoretical explanations and problem-solving exercises, such as 'Inorganic Chemistry' by Miessler, Tarr, and Glaser",
+      "topic_coverage_quality": {
+        "coordination_chemistry": "good",
+        "main_group": "excellent",
+        "solid_state": "good",
+        "thermodynamics": "good"
+      },
+      "overall_rating": "7"
+    },
+    "visual_elements": {
+      "visual_density": "medium",
+      "figure_types": [
+        "orbital diagrams",
+        "molecular orbital energy level diagrams",
+        "crystal structures",
+        "hybridization diagrams"
+      ],
+      "integration_quality": "high",
+      "visual_pedagogy": "essential for understanding",
+      "notable_visual_approaches": [
+        "use of molecular orbital diagrams to explain bonding and antibonding interactions",
+        "hybridization diagrams to illustrate atomic orbital mixing",
+        "energy level diagrams to show stabilization and bonding"
+      ],
+      "visual_reference_count": 46
+    },
+    "explanation_depth": {
+      "explanation_type": "mixed",
+      "causal_reasoning": "moderate",
+      "molecular_level_detail": true,
+      "conceptual_depth": "moderate",
+      "why_vs_what_ratio": "50",
+      "example_of_deep_explanation": "The size of the energy gap \u0394 between the t2g and eg levels can be measured easily by recording the UV-visible spectrum of the complex. Consider a complex like [Ti(H2O)6]3+. The Ti3+ ion has one d electron. In the complex this will occupy the orbital with the lowest energy, that is one of the t2g orbitals (Figure 7.10a). The complex absorbs light of the correct wavelength (energy) to promote the electron from the t2g level to the eg level (Figure 7.10b).",
+      "example_of_shallow_explanation": "The sulphide ion acts as a base since it accepts protons. The reaction is reversible, and it will proceed in the direction that produces the weaker species, in this case HS- and NH3."
+    },
+    "problem_solving": {
+      "worked_examples": "few",
+      "step_by_step_solutions": true,
+      "scaffolded_practice": true,
+      "problem_types": [
+        "conceptual",
+        "prediction",
+        "comparison",
+        "numerical"
+      ],
+      "self_check_questions": true,
+      "answer_availability": "partial solutions",
+      "problem_solving_strategy": true,
+      "problem_keyword_count": 12
+    },
+    "real_world": {
+      "application_density": "occasional",
+      "application_domains": [
+        "materials",
+        "industrial",
+        "medical"
+      ],
+      "specific_examples": [
+        "Metallic bonding in alloys and transition metal compounds",
+        "Metal carbonyls and their role in catalysis"
+      ],
+      "integration_style": "woven into main text",
+      "career_relevance": "does it mention careers or professional applications?",
+      "current_research": "does it reference recent discoveries or ongoing research?",
+      "societal_impact": "does it discuss broader impacts of chemistry?",
+      "application_keyword_count": 5
+    },
+    "historical": {
+      "historical_content": "none",
+      "discovery_narratives": "does it tell stories of how concepts were discovered?",
+      "scientist_mentions": [],
+      "evolution_of_ideas": "does it show how understanding evolved over time?",
+      "contextual_motivation": "does history help explain WHY we study certain topics?",
+      "notable_historical_passages": [],
+      "historical_keyword_count": 1
+    },
+    "readability": {
+      "total_words_sampled": 22173,
+      "total_sentences": 1580,
+      "avg_sentence_length": 14.0,
+      "avg_syllables_per_word": 1.67,
+      "flesch_reading_ease": 51.2,
+      "flesch_interpretation": "standard",
+      "jargon_density_per_1000": 29.0
+    }
+  }
+}

@@ -1,0 +1,427 @@
+{
+  "total_topics": 67,
+  "flow": [
+    {
+      "rank": 1,
+      "topic": "Atomic Structure And Electronic Configuration",
+      "pagerank": 0.0018817743669472663,
+      "mentions": 42,
+      "scale": "QUANTUM",
+      "enables": [
+        "Periodic Trends",
+        "Chemical Bonding",
+        "Molecular Orbital Theory"
+      ]
+    },
+    {
+      "rank": 2,
+      "topic": "Thermodynamics",
+      "pagerank": 0.000866104795390483,
+      "mentions": 10,
+      "scale": "APPLICATION",
+      "enables": [
+        "Electrochemistry",
+        "Coordination Chemistry",
+        "Solid State Chemistry"
+      ]
+    },
+    {
+      "rank": 3,
+      "topic": "Molecular Symmetry And Group Theory",
+      "pagerank": 0.00041037998965059606,
+      "mentions": 27,
+      "scale": "STRUCTURAL",
+      "enables": [
+        "Crystal Field Theory",
+        "Molecular Orbital Theory",
+        "Spectroscopy"
+      ]
+    },
+    {
+      "rank": 4,
+      "topic": "Quantum Mechanics In Atomic Structure",
+      "pagerank": 0.0004053181268737875,
+      "mentions": 27,
+      "scale": "QUANTUM",
+      "enables": [
+        "Spectroscopy",
+        "Molecular Orbital Theory",
+        "Periodic Trends"
+      ]
+    },
+    {
+      "rank": 5,
+      "topic": "Hydrogen And Hydrides",
+      "pagerank": 0.00029075769412565983,
+      "mentions": 11,
+      "scale": "APPLICATION",
+      "enables": [
+        "Nuclear Chemistry"
+      ]
+    },
+    {
+      "rank": 6,
+      "topic": "Atomic Structure And Spectroscopy",
+      "pagerank": 0.00025820624209255366,
+      "mentions": 19,
+      "scale": "QUANTUM",
+      "enables": []
+    },
+    {
+      "rank": 7,
+      "topic": "Inorganic Crystal Structures",
+      "pagerank": 0.00024001142114342335,
+      "mentions": 11,
+      "scale": "STRUCTURAL",
+      "enables": [
+        "Crystal Field Theory",
+        "Coordination Chemistry",
+        "Solid State Chemistry"
+      ]
+    },
+    {
+      "rank": 8,
+      "topic": "Actinide Chemistry",
+      "pagerank": 0.0002280733283439489,
+      "mentions": 10,
+      "scale": "APPLICATION",
+      "enables": [
+        "Radiochemistry",
+        "Nuclear Chemistry"
+      ]
+    },
+    {
+      "rank": 9,
+      "topic": "Symmetry And Molecular Point Groups",
+      "pagerank": 0.00022757340327059396,
+      "mentions": 12,
+      "scale": "STRUCTURAL",
+      "enables": [
+        "Crystal Field Theory",
+        "Molecular Orbital Theory"
+      ]
+    },
+    {
+      "rank": 10,
+      "topic": "Symmetry And Point Groups",
+      "pagerank": 0.00021146348825724464,
+      "mentions": 16,
+      "scale": "STRUCTURAL",
+      "enables": [
+        "Spectroscopy",
+        "Crystal Field Theory",
+        "Molecular Orbital Theory"
+      ]
+    },
+    {
+      "rank": 11,
+      "topic": "Electronic Structure And Spectroscopy",
+      "pagerank": 0.00019440876394584888,
+      "mentions": 13,
+      "scale": "STRUCTURAL",
+      "enables": [
+        "Crystal Field Theory",
+        "Molecular Orbital Theory"
+      ]
+    },
+    {
+      "rank": 12,
+      "topic": "Group Theory",
+      "pagerank": 0.00018825894543613965,
+      "mentions": 15,
+      "scale": "APPLICATION",
+      "enables": [
+        "Spectroscopy",
+        "Spectroscopy",
+        "Molecular Orbital Theory"
+      ]
+    },
+    {
+      "rank": 13,
+      "topic": "Metal Organometallic Chemistry",
+      "pagerank": 0.00017091310948045847,
+      "mentions": 19,
+      "scale": "APPLICATION",
+      "enables": []
+    },
+    {
+      "rank": 14,
+      "topic": "Descriptive Inorganic Chemistry",
+      "pagerank": 0.0001474926253687316,
+      "mentions": 65,
+      "scale": "APPLICATION",
+      "enables": []
+    },
+    {
+      "rank": 15,
+      "topic": "F-Block Elements",
+      "pagerank": 0.0001474926253687316,
+      "mentions": 12,
+      "scale": "APPLICATION",
+      "enables": []
+    },
+    {
+      "rank": 16,
+      "topic": "Radiochemistry",
+      "pagerank": 0.0001474926253687316,
+      "mentions": 11,
+      "scale": "APPLICATION",
+      "enables": []
+    },
+    {
+      "rank": 17,
+      "topic": "Nuclear Magnetic Resonance (Nmr) Spectroscopy",
+      "pagerank": 0.0001474926253687316,
+      "mentions": 20,
+      "scale": "APPLICATION",
+      "enables": []
+    },
+    {
+      "rank": 18,
+      "topic": "Physical Chemistry",
+      "pagerank": 0.0001474926253687316,
+      "mentions": 10,
+      "scale": "APPLICATION",
+      "enables": []
+    },
+    {
+      "rank": 19,
+      "topic": "Mass Spectrometry",
+      "pagerank": 0.0001474926253687316,
+      "mentions": 10,
+      "scale": "APPLICATION",
+      "enables": []
+    },
+    {
+      "rank": 20,
+      "topic": "Main Group Chemistry",
+      "pagerank": 0.020405392741623108,
+      "mentions": 1570,
+      "scale": "DESCRIPTIVE",
+      "enables": [
+        "Redox Reactions",
+        "Solid State Chemistry",
+        "Coordination Chemistry"
+      ]
+    },
+    {
+      "rank": 21,
+      "topic": "Thermochemistry",
+      "pagerank": 0.0010935141074769968,
+      "mentions": 28,
+      "scale": "APPLICATION",
+      "enables": [
+        "Solid State Chemistry",
+        "Main Group Chemistry"
+      ]
+    },
+    {
+      "rank": 22,
+      "topic": "Crystal Structures",
+      "pagerank": 0.00091426772879846,
+      "mentions": 11,
+      "scale": "STRUCTURAL",
+      "enables": [
+        "Solid State Chemistry",
+        "Solid State Chemistry",
+        "Coordination Chemistry"
+      ]
+    },
+    {
+      "rank": 23,
+      "topic": "Solid-State Structures",
+      "pagerank": 0.0002869155442025492,
+      "mentions": 10,
+      "scale": "STRUCTURAL",
+      "enables": [
+        "Solid State Chemistry",
+        "Crystal Field Theory",
+        "Solid-State And Materials Chemistry"
+      ]
+    },
+    {
+      "rank": 24,
+      "topic": "Solid-State And Materials Chemistry",
+      "pagerank": 0.0002839233038348083,
+      "mentions": 40,
+      "scale": "APPLICATION",
+      "enables": []
+    },
+    {
+      "rank": 25,
+      "topic": "Industrial Chemistry",
+      "pagerank": 0.0001474926253687316,
+      "mentions": 23,
+      "scale": "APPLICATION",
+      "enables": []
+    },
+    {
+      "rank": 26,
+      "topic": "Periodic Trends",
+      "pagerank": 0.01203050059789048,
+      "mentions": 74,
+      "scale": "DESCRIPTIVE",
+      "enables": [
+        "Acid-Base Chemistry",
+        "Main Group Chemistry",
+        "Crystal Field Theory"
+      ]
+    },
+    {
+      "rank": 27,
+      "topic": "Atomic Structure",
+      "pagerank": 0.0029611543535774136,
+      "mentions": 38,
+      "scale": "QUANTUM",
+      "enables": [
+        "Nuclear Chemistry",
+        "Main Group Chemistry",
+        "Periodic Trends"
+      ]
+    },
+    {
+      "rank": 28,
+      "topic": "Atomic Structure And Periodicity",
+      "pagerank": 0.0006796363704301863,
+      "mentions": 17,
+      "scale": "QUANTUM",
+      "enables": [
+        "Chemical Bonding",
+        "Periodic Trends",
+        "Coordination Chemistry"
+      ]
+    },
+    {
+      "rank": 29,
+      "topic": "Descriptive Chemistry Of The Representative Elements",
+      "pagerank": 0.00043618603739119103,
+      "mentions": 32,
+      "scale": "APPLICATION",
+      "enables": [
+        "Coordination Chemistry",
+        "Crystal Field Theory",
+        "Periodic Trends"
+      ]
+    },
+    {
+      "rank": 30,
+      "topic": "Analytical Chemistry",
+      "pagerank": 0.0002227138643067847,
+      "mentions": 19,
+      "scale": "APPLICATION",
+      "enables": []
+    },
+    {
+      "rank": 31,
+      "topic": "Nuclear Chemistry",
+      "pagerank": 0.00018948979550094543,
+      "mentions": 56,
+      "scale": "APPLICATION",
+      "enables": [
+        "Main Group Chemistry"
+      ]
+    },
+    {
+      "rank": 32,
+      "topic": "Physical Techniques In Inorganic Chemistry",
+      "pagerank": 0.0001474926253687316,
+      "mentions": 20,
+      "scale": "APPLICATION",
+      "enables": []
+    },
+    {
+      "rank": 33,
+      "topic": "Redox Chemistry",
+      "pagerank": 0.007949847241380162,
+      "mentions": 31,
+      "scale": "DESCRIPTIVE",
+      "enables": [
+        "Main Group Chemistry",
+        "Electrochemistry",
+        "Electrochemistry"
+      ]
+    },
+    {
+      "rank": 34,
+      "topic": "Oxidation And Reduction",
+      "pagerank": 0.00023501078596737968,
+      "mentions": 20,
+      "scale": "APPLICATION",
+      "enables": [
+        "Electrochemistry"
+      ]
+    },
+    {
+      "rank": 35,
+      "topic": "Transition Metals",
+      "pagerank": 0.00022418454521521954,
+      "mentions": 19,
+      "scale": "DESCRIPTIVE",
+      "enables": [
+        "Bioinorganic Chemistry",
+        "Crystal Field Theory",
+        "Coordination Chemistry"
+      ]
+    },
+    {
+      "rank": 36,
+      "topic": "Inorganic Chemistry Applications",
+      "pagerank": 0.00016960238235060136,
+      "mentions": 11,
+      "scale": "APPLICATION",
+      "enables": [
+        "Bioinorganic Chemistry",
+        "Environmental Chemistry"
+      ]
+    },
+    {
+      "rank": 37,
+      "topic": "Hydrogen Chemistry",
+      "pagerank": 0.00016678012253233494,
+      "mentions": 20,
+      "scale": "APPLICATION",
+      "enables": [
+        "Hydrogen Storage Materials"
+      ]
+    },
+    {
+      "rank": 38,
+      "topic": "Hydrogen Storage Materials",
+      "pagerank": 0.0001474926253687316,
+      "mentions": 11,
+      "scale": "APPLICATION",
+      "enables": []
+    },
+    {
+      "rank": 39,
+      "topic": "Coordination Chemistry",
+      "pagerank": 0.0048860817031320765,
+      "mentions": 1271,
+      "scale": "STRUCTURAL",
+      "enables": [
+        "Crystal Field Theory",
+        "Electrochemistry",
+        "Transition Metal Chemistry"
+      ]
+    },
+    {
+      "rank": 40,
+      "topic": "Solid State Chemistry",
+      "pagerank": 0.0038781808007243247,
+      "mentions": 427,
+      "scale": "APPLICATION",
+      "enables": [
+        "Crystal Field Theory",
+        "Coordination Chemistry",
+        "Chemical Bonding"
+      ]
+    }
+  ],
+  "scales": [
+    "DESCRIPTIVE",
+    "STRUCTURAL",
+    "ELECTRONIC",
+    "QUANTUM",
+    "APPLICATION"
+  ]
+}

@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance | CHEM 361</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+    <style>
+        :root {
+            --bg-primary: #0f0f14;
+            --bg-secondary: #16161d;
+            --bg-tertiary: #1e1e28;
+            --text-primary: #e8e6e3;
+            --text-secondary: #a0a0a0;
+            --text-muted: #6b6b6b;
+            --accent-purple: #8b5cf6;
+            --accent-cyan: #06b6d4;
+            --accent-amber: #f59e0b;
+            --success: #10b981;
+            --error: #ef4444;
+            --unit-1: #8b5cf6;
+            --unit-2: #06b6d4;
+            --unit-3: #f59e0b;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        /* navigation */
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--bg-tertiary);
+        }
+
+        .nav-brand {
+            font-weight: 600;
+            color: var(--accent-purple);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .nav-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            transition: all 0.2s;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            background: var(--bg-tertiary);
+            color: var(--text-primary);
+        }
+
+        /* main layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            color: var(--text-secondary);
+        }
+
+        /* views */
+        .view { display: none; }
+        .view.active { display: block; }
+
+        /* login form */
+        .login-card {
+            max-width: 400px;
+            margin: 0 auto;
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            padding: 2rem;
+            border: 1px solid var(--bg-tertiary);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            background: var(--bg-tertiary);
+            border: 1px solid transparent;
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-family: inherit;
+            font-size: 1rem;
+            transition: border-color 0.2s;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: var(--accent-purple);
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background: var(--accent-purple);
+            color: white;
+            width: 100%;
+        }
+
+        .btn-primary:hover {
+            background: #7c4ee4;
+        }
+
+        .btn-secondary {
+            background: var(--bg-tertiary);
+            color: var(--text-primary);
+        }
+
+        .btn-success {
+            background: var(--success);
+            color: white;
+        }
+
+        /* dashboard */
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 2rem;
+        }
+
+        @media (max-width: 900px) {
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .card {
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            padding: 1.5rem;
+            border: 1px solid var(--bg-tertiary);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        /* today's class */
+        .today-class {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .today-date {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .today-topic {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .unit-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .unit-1 { background: rgba(139, 92, 246, 0.2); color: var(--unit-1); }
+        .unit-2 { background: rgba(6, 182, 212, 0.2); color: var(--unit-2); }
+        .unit-3 { background: rgba(245, 158, 11, 0.2); color: var(--unit-3); }
+
+        /* QR code */
+        .qr-section {
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        #qrcode {
+            background: white;
+            padding: 1rem;
+            border-radius: 12px;
+            display: inline-block;
+            margin: 1rem 0;
+        }
+
+        .qr-status {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            font-weight: 500;
+        }
+
+        .status-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        .status-dot.active { background: var(--success); }
+        .status-dot.expired { background: var(--error); }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        /* check in button */
+        .checkin-btn {
+            width: 100%;
+            padding: 1rem;
+            font-size: 1.1rem;
+            margin-top: 1rem;
+        }
+
+        .checkin-success {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .checkmark {
+            width: 80px;
+            height: 80px;
+            background: var(--success);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 2rem;
+        }
+
+        /* schedule list */
+        .schedule-list {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+
+        .schedule-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.75rem;
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+            background: var(--bg-tertiary);
+        }
+
+        .schedule-item.today {
+            border: 1px solid var(--accent-purple);
+        }
+
+        .schedule-item.past {
+            opacity: 0.5;
+        }
+
+        .schedule-item.no-class {
+            opacity: 0.3;
+            text-decoration: line-through;
+        }
+
+        .schedule-date {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            min-width: 70px;
+        }
+
+        .schedule-topic {
+            flex: 1;
+            font-size: 0.9rem;
+        }
+
+        .attendance-mark {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+        }
+
+        .attendance-mark.present { background: var(--success); }
+        .attendance-mark.absent { background: var(--error); }
+        .attendance-mark.pending { background: var(--bg-primary); border: 2px dashed var(--text-muted); }
+
+        /* stats */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .stat-card {
+            background: var(--bg-tertiary);
+            border-radius: 12px;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        /* instructor view */
+        .instructor-tools {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+
+        .student-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .student-table th,
+        .student-table td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid var(--bg-tertiary);
+        }
+
+        .student-table th {
+            background: var(--bg-tertiary);
+            font-weight: 500;
+            color: var(--text-secondary);
+        }
+
+        /* mode toggle */
+        .mode-toggle {
+            display: flex;
+            background: var(--bg-tertiary);
+            border-radius: 8px;
+            padding: 4px;
+        }
+
+        .mode-toggle button {
+            padding: 0.5rem 1rem;
+            border: none;
+            background: transparent;
+            color: var(--text-secondary);
+            font-family: inherit;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: all 0.2s;
+        }
+
+        .mode-toggle button.active {
+            background: var(--accent-purple);
+            color: white;
+        }
+
+        /* hidden */
+        .hidden { display: none !important; }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <a href="index.html" class="nav-brand">CHEM 361</a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="attendance.html" class="nav-link active">Attendance</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- login view -->
+        <div id="loginView" class="view active">
+            <div class="header">
+                <h1>Check In</h1>
+                <p>Enter your student information to record attendance</p>
+            </div>
+            <div class="login-card">
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="studentId">Student ID</label>
+                        <input type="text" id="studentId" placeholder="e.g., M12345678" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="studentName">Full Name</label>
+                        <input type="text" id="studentName" placeholder="Your full name" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Continue</button>
+                </form>
+                <div style="text-align: center; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--bg-tertiary);">
+                    <button id="instructorBtn" class="btn btn-secondary">Instructor Login</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- student dashboard -->
+        <div id="studentView" class="view">
+            <div class="header">
+                <h1>Welcome, <span id="welcomeName">Student</span></h1>
+                <p>Your attendance dashboard</p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value" id="statPresent">0</div>
+                    <div class="stat-label">Present</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="statAbsent">0</div>
+                    <div class="stat-label">Absent</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="statRate">0%</div>
+                    <div class="stat-label">Rate</div>
+                </div>
+            </div>
+
+            <div class="dashboard-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-title">Today's Class</span>
+                        <span id="todayBadge" class="unit-badge unit-1">Unit 1</span>
+                    </div>
+                    <div class="today-class" id="todayClass">
+                        <div class="today-date" id="todayDate">Thu, Jan 16</div>
+                        <div class="today-topic" id="todayTopic">Ligands; coordination number</div>
+
+                        <div id="checkinArea">
+                            <div class="qr-section">
+                                <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                                    Scan the instructor's QR code or enter the code below
+                                </p>
+                                <div class="form-group" style="max-width: 200px; margin: 0 auto;">
+                                    <input type="text" id="checkinCode" placeholder="Enter code" style="text-align: center; font-family: 'JetBrains Mono', monospace; font-size: 1.2rem; letter-spacing: 0.2em;">
+                                </div>
+                                <button id="checkinBtn" class="btn btn-success checkin-btn">Check In</button>
+                            </div>
+                        </div>
+
+                        <div id="checkedInArea" class="hidden">
+                            <div class="checkin-success">
+                                <div class="checkmark">✓</div>
+                                <h3 style="color: var(--success);">Checked In!</h3>
+                                <p style="color: var(--text-secondary);" id="checkinTime">at 8:05 AM</p>
+                            </div>
+                        </div>
+
+                        <div id="noClassArea" class="hidden">
+                            <p style="color: var(--text-secondary);">No class today</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-title">Schedule</span>
+                    </div>
+                    <div class="schedule-list" id="scheduleList">
+                        <!-- populated by JS -->
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 2rem;">
+                <button id="logoutBtn" class="btn btn-secondary">Sign Out</button>
+            </div>
+        </div>
+
+        <!-- instructor dashboard -->
+        <div id="instructorView" class="view">
+            <div class="header">
+                <h1>Instructor Dashboard</h1>
+                <p>Manage attendance for CHEM 361</p>
+            </div>
+
+            <div class="card" style="margin-bottom: 2rem;">
+                <div class="card-header">
+                    <span class="card-title">Today's Attendance Code</span>
+                    <div class="mode-toggle">
+                        <button id="showQRBtn" class="active">QR Code</button>
+                        <button id="showCodeBtn">Code Only</button>
+                    </div>
+                </div>
+                <div class="qr-section">
+                    <div class="today-date" id="instrTodayDate">Thu, Jan 16</div>
+                    <div class="today-topic" id="instrTodayTopic">Ligands; coordination number</div>
+
+                    <div id="qrcode"></div>
+
+                    <div style="font-family: 'JetBrains Mono', monospace; font-size: 2rem; letter-spacing: 0.3em; margin: 1rem 0;" id="todayCode">
+                        ABC123
+                    </div>
+
+                    <div class="qr-status">
+                        <span class="status-dot active"></span>
+                        <span>Code valid for <span id="codeTimer">15:00</span></span>
+                    </div>
+
+                    <button id="regenerateBtn" class="btn btn-secondary" style="margin-top: 1rem;">
+                        Generate New Code
+                    </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">Attendance Records</span>
+                    <div class="instructor-tools">
+                        <select id="classSelect" class="form-group" style="margin: 0; padding: 0.5rem;">
+                            <!-- populated by JS -->
+                        </select>
+                        <button id="exportBtn" class="btn btn-secondary">Export CSV</button>
+                    </div>
+                </div>
+                <table class="student-table" id="attendanceTable">
+                    <thead>
+                        <tr>
+                            <th>Student ID</th>
+                            <th>Name</th>
+                            <th>Check-in Time</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="attendanceBody">
+                        <!-- populated by JS -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div style="text-align: center; margin-top: 2rem;">
+                <button id="instrLogoutBtn" class="btn btn-secondary">Sign Out</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="attendance.js"></script>
+</body>
+</html>

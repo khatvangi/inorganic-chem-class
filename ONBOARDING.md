@@ -1,8 +1,8 @@
 # Onboarding & Technical Manual
 
 **Target Audience:** LLM Agents, Developers, and Automated Tools.
-**Last Updated:** January 17, 2026
-**Status:** Modernized, Data-Driven, ES Modules.
+**Last Updated:** January 18, 2026
+**Status:** Modernized, Data-Driven, ES Modules, Knowledge Graph Pipeline Active.
 
 ## 1. Project Overview
 This repository contains a lightweight, interactive web application for **CHEM 361: Inorganic Chemistry**. It includes game-based learning modules (drills) and lecture slides. The application runs entirely in the browser using vanilla HTML, CSS, and JavaScript, with **no build step** required.
@@ -40,13 +40,19 @@ This repository contains a lightweight, interactive web application for **CHEM 3
 ├── reactions.js            # Logic for Kinetics/Mechanisms
 ├── solids.js               # Logic for Unit Cell drills
 │
-├── data/                   # [CRITICAL] Question banks (JSON)
+├── attendance.html         # Student attendance check-in (QR codes)
+├── attendance.js           # Attendance logic & instructor dashboard
+├── topics.html             # Knowledge graph topic explorer (D3.js)
+├── topics.js               # Topic visualization & navigation
+│
+├── data/                   # [CRITICAL] Question banks & course data (JSON)
 │   ├── nomenclature.json
 │   ├── coordination.json
 │   ├── isomerism.json
 │   ├── bonding.json
 │   ├── reactions.json
-│   └── solids.json
+│   ├── solids.json
+│   └── schedule.json       # 30 class sessions from Spring 2025 syllabus
 │
 ├── js/                     # Shared Logic
 │   └── utils.js            # State management, UI helpers, Normalization
@@ -136,7 +142,52 @@ The project includes a pipeline for generating high-quality quizzes from the tex
         3. Prompts the LLM (Qwen3 or Gemma2) to generate a JSON-formatted question based *only* on that context.
 *   **Output:** Generated quizzes are saved to `data/quizzes/*.json`.
 
-## 9. Quick Start for Agents
+## 9. Attendance System
+
+A QR-code based attendance tracking system for the course.
+
+### Student Flow
+1. Go to `attendance.html`
+2. Enter Student ID + Name
+3. Enter the 6-character code displayed by instructor
+4. Attendance recorded with timestamp
+
+### Instructor Flow
+1. Go to `attendance.html` → "Instructor Login"
+2. Password: `chem361` (change for production!)
+3. Display QR code or 6-char code to class
+4. Codes expire after 15 minutes (regenerate as needed)
+5. Export attendance to CSV
+
+### Data Storage
+- Uses `localStorage` for persistence
+- Schedule loaded from `data/schedule.json` (30 class sessions)
+- Could be extended to backend API for production
+
+## 10. Knowledge Graph & Topic Explorer
+
+### Topic Explorer (`topics.html`)
+Interactive D3.js visualization of the inorganic chemistry knowledge graph.
+- **Sidebar:** Searchable list of topics
+- **Graph:** Force-directed network showing relationships
+- **Panel:** Topic details with prerequisites and "leads to"
+
+### Knowledge Graph Pipeline (`experiments/`)
+Bottom-up extraction of topics, concepts, and relationships from textbooks.
+
+| Script | Purpose |
+|--------|---------|
+| `normalizer.py` | Canonical names, synonym handling, garbage filtering |
+| `full_extraction.py` | Extract topics from all 8,756 chunks |
+| `analyze_textbooks.py` | Analyze each book's pedagogy, style, strengths |
+
+### Qdrant Integration
+- **Collection:** `textbooks_chunks` (8,756 points)
+- **Textbooks:** Atkins/Shriver, JD Lee, ic_tina, descriptive_ic, House, basset, etc.
+- **Query:** Use `/storage/RAG/src/query.py` or `chat.py` for RAG
+
+## 11. Quick Start for Agents
+
 If asked to "fix a bug in scoring":
 1.  Read `js/utils.js` (shared scoring logic often lives here or is called from here).
 2.  Read the specific game script (e.g., `app.js`).
@@ -145,3 +196,13 @@ If asked to "add a new question":
 1.  Read the relevant schema in `data/`.
 2.  Generate JSON entry.
 3.  Write to file. No JS changes needed.
+
+If asked to "update attendance system":
+1.  Read `attendance.js` for logic
+2.  Schedule data in `data/schedule.json`
+3.  Student/instructor views share the same HTML
+
+If asked to "work on knowledge graph":
+1.  Check `experiments/results/` for extraction progress
+2.  Normalizer rules in `experiments/normalizer.py`
+3.  Graph will be at `experiments/results/knowledge_graph.json`

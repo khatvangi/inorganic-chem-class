@@ -1,0 +1,1555 @@
+{
+  "method": "breadth_first",
+  "min_count": 10,
+  "total_topics": 67,
+  "topics": [
+    {
+      "rank": 1,
+      "topic": "Main Group Chemistry",
+      "mentions": 1570,
+      "pagerank": 0.020405392741623108,
+      "prerequisites": [
+        "Lewis Acids And Bases",
+        "Redox Chemistry",
+        "Valence Bond Theory",
+        "Ionic Bonding",
+        "Periodic Trends",
+        "Periodic Table Organization",
+        "Molecular Orbital Theory",
+        "Covalent Bonding",
+        "Atomic Structure",
+        "Periodic Table Structure",
+        "Crystal Structures",
+        "Organometallic Chemistry",
+        "Chemical Bonding",
+        "Reaction Mechanisms",
+        "Hydrogen Bonding",
+        "Acid-Base Chemistry",
+        "Cluster Chemistry",
+        "Acid-Base Equilibria",
+        "Electronic Structure Of Atoms",
+        "Electrochemical Series",
+        "Molecular Structure",
+        "Catalysis",
+        "Molecular Geometry",
+        "Oxidation Reactions",
+        "Effective Nuclear Charge",
+        "Intermolecular Forces",
+        "Thermodynamics",
+        "Transition Metal Chemistry",
+        "Nuclear Chemistry",
+        "Thermodynamics Of Chemical Reactions",
+        "Organometallic Compounds",
+        "Thermochemistry",
+        "Electronegativity",
+        "Crystal Structures Of Metals",
+        "Polymer Chemistry",
+        "Organic Chemistry",
+        "Crystal Field Theory",
+        "Chemical Bonding Theories",
+        "Solubility Rules"
+      ],
+      "leads_to": [
+        "Redox Reactions",
+        "Solid State Chemistry",
+        "Coordination Chemistry",
+        "Organosilicon Chemistry",
+        "Structural Analysis Of Inorganic Compounds",
+        "Catalytic Mechanisms",
+        "Periodic Trends",
+        "Crystal Field Theory",
+        "Environmental Chemistry",
+        "Green Chemistry",
+        "Catalytic Processes",
+        "Ionic Bonding",
+        "Oxidation-Reduction Reactions",
+        "Organometallic Chemistry",
+        "Green Chemistry Principles",
+        "Electrochemical Series",
+        "Bioinorganic Chemistry",
+        "Chemical Bonding",
+        "Redox Chemistry",
+        "Transition Metal Chemistry",
+        "Inorganic Reaction Mechanisms",
+        "Non-Aqueous Solvents",
+        "Acid-Base Chemistry",
+        "Reactivity Trends",
+        "Electrochemistry",
+        "Acid-Base Equilibria",
+        "Spectroscopy Techniques",
+        "Organic Chemistry",
+        "Crystal Structure Analysis",
+        "Electronic Structure Of Transition Metals",
+        "Cluster Chemistry",
+        "Molecular Orbital Theory",
+        "Hydrogen Storage Materials",
+        "Molecular Geometry",
+        "Polymer Chemistry",
+        "Chemical Bonding Theories",
+        "Supramolecular Chemistry",
+        "Semiconductor Technology",
+        "Materials Science",
+        "Atmospheric Chemistry",
+        "Synthesis Of Inorganic Compounds",
+        "Spectroscopy",
+        "Crystal Structures",
+        "Industrial Chemistry",
+        "Electrochemical Applications",
+        "Coordination Chemistry Applications",
+        "Reaction Mechanisms",
+        "Crystal Chemistry",
+        "Intermolecular Forces",
+        "Biogeochemical Cycles",
+        "Nuclear Chemistry",
+        "Enzyme Mechanisms",
+        "Analytical Chemistry Techniques",
+        "Oxoanion Chemistry",
+        "Quantum Mechanics",
+        "Oxidation Reactions",
+        "Hydrogen Bonding",
+        "Advanced Inorganic Chemistry",
+        "Catalysis",
+        "Stereochemistry",
+        "Thermochemistry",
+        "Organometallic Compounds",
+        "Metallurgical Processes",
+        "Photochemical Reactions",
+        "Quantitative Analysis",
+        "Interhalogen Compounds"
+      ]
+    },
+    {
+      "rank": 2,
+      "topic": "Periodic Trends",
+      "mentions": 74,
+      "pagerank": 0.01203050059789048,
+      "prerequisites": [
+        "Atomic Structure And Electronic Configuration",
+        "Main Group Chemistry",
+        "Atomic Structure",
+        "Electronic Structure Of Atoms",
+        "Electronic Structure Of Atoms",
+        "Periodic Table Structure",
+        "Periodic Table And Electronic Structure",
+        "Atomic Structure And Periodicity",
+        "Atomic Structure",
+        "Periodic Trends",
+        "Quantum Mechanics In Atomic Structure",
+        "Periodic Trends",
+        "Periodic Table Organization",
+        "Descriptive Chemistry Of The Representative Elements",
+        "Electronic Structure And Periodic Trends",
+        "Periodic Table And Elements"
+      ],
+      "leads_to": [
+        "Acid-Base Chemistry",
+        "Main Group Chemistry",
+        "Crystal Field Theory",
+        "Coordination Chemistry",
+        "D-Block Elements",
+        "Solid State Chemistry",
+        "Coordination Chemistry",
+        "Atomic Structure And Periodicity",
+        "Periodic Trends And Electronic Structure",
+        "Chemical Bonding",
+        "Chemical Bonding",
+        "Transition Metal Chemistry",
+        "Descriptive Chemistry Of The Representative Elements",
+        "Transition Metals",
+        "Electronegativity",
+        "Hydrogen Compounds And Their Properties",
+        "Periodic Trends And Atomic Structure",
+        "Periodic Table And Electronic Configurations",
+        "Atomic Structure",
+        "Periodic Trends",
+        "Transition Metal Chemistry",
+        "Periodic Trends",
+        "Bonding And Molecular Structure",
+        "Electronegativity",
+        "Molecular Geometry",
+        "Periodic Table And Elements"
+      ]
+    },
+    {
+      "rank": 3,
+      "topic": "Redox Chemistry",
+      "mentions": 31,
+      "pagerank": 0.007949847241380162,
+      "prerequisites": [
+        "Electrochemical Series",
+        "Redox Chemistry",
+        "Main Group Chemistry"
+      ],
+      "leads_to": [
+        "Main Group Chemistry",
+        "Enzymatic Catalysis",
+        "Electrochemistry",
+        "Electrochemistry",
+        "Coordination Chemistry",
+        "Metallurgy",
+        "Bioinorganic Chemistry",
+        "Enzymology And Bioinorganic Chemistry",
+        "Oxidation States And Redox Chemistry",
+        "Catalysis And Environmental Chemistry",
+        "Oxidation States And Redox Reactions",
+        "Transition Elements",
+        "Redox Chemistry",
+        "Metallurgical Processes",
+        "Oxidation And Redox Chemistry",
+        "Metallurgy And Metal Extraction",
+        "Electrochemical Series",
+        "Industrial Inorganic Chemistry",
+        "Transition Metals And Their Compounds",
+        "Environmental Chemistry",
+        "Oxidation-Reduction Reactions",
+        "Transition Metals",
+        "Oxidation And Reduction",
+        "Lanthanoid Chemistry",
+        "Metallurgy And Extraction Of Metals",
+        "Inorganic Chemistry Applications",
+        "Acid-Base Chemistry",
+        "Hydrogen Chemistry",
+        "Electron Transfer And Redox Reactions",
+        "Electrochemical Series",
+        "Electrochemical Techniques",
+        "Transition Metal Chemistry",
+        "Enzyme Catalysis",
+        "Bioenergetics And Electron Transport",
+        "Electrolysis And Industrial Chemistry",
+        "Reaction Mechanisms",
+        "Oxidation And Redox Reactions",
+        "Coordination Chemistry"
+      ]
+    },
+    {
+      "rank": 4,
+      "topic": "Coordination Chemistry",
+      "mentions": 1271,
+      "pagerank": 0.0048860817031320765,
+      "prerequisites": [
+        "Solid State Chemistry",
+        "Reaction Mechanisms",
+        "Main Group Chemistry",
+        "Ionic Bonding",
+        "Crystal Structures",
+        "Crystal Field Theory",
+        "Reaction Kinetics",
+        "Lewis Acids And Bases",
+        "Inorganic Crystal Structures",
+        "Transition Metal Chemistry",
+        "Redox Chemistry",
+        "Periodic Trends",
+        "Crystal Field Theory",
+        "Stereochemistry",
+        "Electronic Configurations",
+        "Electrochemical Series",
+        "Magnetic Properties Of Transition Metals",
+        "Acid-Base Chemistry",
+        "D-Block Elements",
+        "Chemical Bonding",
+        "Transition Metals",
+        "Ligand Substitution Reactions",
+        "Periodic Trends",
+        "Molecular Orbital Theory",
+        "Electronic Structure Of Transition Metals",
+        "Acid-Base Equilibria",
+        "Electronic Structure Of Atoms",
+        "Atomic Structure",
+        "Isomerism",
+        "Transition Metals And Their Compounds",
+        "Descriptive Chemistry Of The Representative Elements",
+        "Valence Bond Theory",
+        "Hybridization And Molecular Geometry",
+        "Transition Metal Chemistry",
+        "Thermodynamics",
+        "Electrochemistry",
+        "Transition Metals",
+        "Molecular Geometry",
+        "Chemical Bonding",
+        "Spectroscopy",
+        "Acid-Base Chemistry",
+        "Lewis Acids And Bases",
+        "Periodic Trends And Atomic Structure",
+        "Point Group Symmetry",
+        "Molecular Geometry",
+        "Organometallic Chemistry",
+        "Transition Metals And D-Block Elements",
+        "Coordination Chemistry",
+        "Quantum Mechanics",
+        "D-Block Elements",
+        "Enzyme Mechanisms",
+        "Transition Elements",
+        "Solid-State Structures",
+        "Organometallic Chemistry",
+        "Stereochemistry",
+        "Atomic Structure And Periodic Trends",
+        "Electronic Spectroscopy",
+        "Atomic Structure And Periodicity",
+        "Metallic Bonding And Crystal Structures",
+        "Molecular Orbital Theory",
+        "Redox Chemistry"
+      ],
+      "leads_to": [
+        "Crystal Field Theory",
+        "Ligand Substitution Reactions",
+        "Reaction Mechanisms",
+        "Stereochemistry",
+        "Electronic Structure Of Transition Metals",
+        "Electrochemistry",
+        "Transition Metal Chemistry",
+        "Molecular Orbital Theory",
+        "Electron Transfer Reactions",
+        "Organometallic Chemistry",
+        "Electrochemical Applications",
+        "Catalytic Processes",
+        "Electronic Structure Of Transition Metal Complexes",
+        "Reaction Mechanisms In Coordination Chemistry",
+        "Electronic Spectroscopy",
+        "Catalytic Mechanisms",
+        "Bioinorganic Chemistry",
+        "Inorganic Reaction Mechanisms",
+        "Reaction Kinetics",
+        "Electronic Structure Of Metal Complexes",
+        "Magnetic Properties Of Coordination Compounds",
+        "Coordination Chemistry Applications",
+        "Magnetic Properties Of Transition Metals",
+        "Electrochemical Series",
+        "Homogeneous Catalysis",
+        "Coordination Chemistry Reactions",
+        "Enzyme Mechanisms",
+        "Supramolecular Chemistry",
+        "Analytical Chemistry Techniques",
+        "Photochemical Reactions",
+        "Coordination Chemistry",
+        "Catalysis",
+        "Redox Reactions",
+        "Cluster Chemistry",
+        "Spectroscopy",
+        "Environmental Chemistry",
+        "Solid State Chemistry"
+      ]
+    },
+    {
+      "rank": 5,
+      "topic": "Solid State Chemistry",
+      "mentions": 427,
+      "pagerank": 0.0038781808007243247,
+      "prerequisites": [
+        "Crystal Structures",
+        "Main Group Chemistry",
+        "Crystal Structures",
+        "Crystal Structure Analysis",
+        "Solid State Chemistry",
+        "Crystal Structures And Ionic Bonding",
+        "Ionic Bonding",
+        "Crystal Field Theory",
+        "Crystallography And Structural Analysis",
+        "Crystal Structure Analysis",
+        "Molecular Orbital Theory",
+        "Thermodynamics Of Phase Transitions",
+        "Solid-State Structures",
+        "Atomic Structure",
+        "Crystal Structures Of Ionic Compounds",
+        "Periodic Trends",
+        "Thermochemistry",
+        "Crystal Structures Of Metals",
+        "Magnetic Properties Of Materials",
+        "Electronic Structure Of Atoms",
+        "Quantum Mechanics",
+        "Crystal Structure",
+        "Inorganic Crystal Structures",
+        "X-Ray Diffraction Techniques",
+        "Thermodynamics",
+        "Semiconductor Physics",
+        "Magnetic Properties Of Transition Metals",
+        "Defects In Crystals",
+        "Coordination Chemistry",
+        "Electronegativity",
+        "Chemical Bonding"
+      ],
+      "leads_to": [
+        "Crystal Field Theory",
+        "Coordination Chemistry",
+        "Crystallography",
+        "Chemical Bonding",
+        "Solid State Chemistry",
+        "Crystal Chemistry",
+        "Phase Diagrams",
+        "Crystal Structure Analysis",
+        "Semiconductor Physics",
+        "Electrochemistry",
+        "Crystal Structures Of Metals",
+        "Electrochemical Applications",
+        "Magnetic Properties Of Transition Metals",
+        "Materials Science",
+        "Electrical Conductivity In Materials",
+        "Solid-State Energetics",
+        "Magnetic Properties Of Materials",
+        "Thermodynamics Of Ionic Compounds",
+        "Fuel Cell Technology",
+        "Solid Electrolytes",
+        "Nonstoichiometric Compounds",
+        "Ionic Crystal Structures",
+        "Semiconductor Devices",
+        "Ionic Bonding"
+      ]
+    },
+    {
+      "rank": 6,
+      "topic": "Molecular Orbital Theory",
+      "mentions": 143,
+      "pagerank": 0.002971080161168136,
+      "prerequisites": [
+        "Symmetry and Group Theory",
+        "Coordination Chemistry",
+        "Electronic Structure And Spectroscopy",
+        "Symmetry And Group Theory",
+        "Chemical Bonding",
+        "Quantum Theory And Atomic Structure",
+        "Chemical Bonding",
+        "Atomic Structure And Electronic Configuration",
+        "Atomic Structure And Electronic States",
+        "Crystal Field Theory",
+        "Group Theory In Inorganic Chemistry",
+        "Molecular Symmetry And Group Theory",
+        "Molecular Symmetry",
+        "Valence Bond Theory",
+        "Main Group Chemistry",
+        "Hybridization And Molecular Geometry",
+        "Molecular Symmetry And Point Groups",
+        "Symmetry And Molecular Point Groups",
+        "Quantum Mechanics In Atomic Structure",
+        "Photoelectron Spectroscopy",
+        "Valence Bond Theory",
+        "Crystal Field Theory",
+        "Group Theory",
+        "Group Theory",
+        "Organometallic Chemistry",
+        "Atomic Structure And Quantum Mechanics",
+        "Symmetry And Point Groups",
+        "Atomic Structure",
+        "Point Group Symmetry",
+        "Atomic Structure And Bonding",
+        "Quantum Mechanics",
+        "Symmetry And Molecular Orbitals",
+        "Atomic Structure And Electronic Configurations"
+      ],
+      "leads_to": [
+        "Crystal Field Theory",
+        "Main Group Chemistry",
+        "Chemical Bonding",
+        "Solid State Chemistry",
+        "Actinoid Chemistry",
+        "Photoelectron Spectroscopy",
+        "Coordination Chemistry",
+        "Crystal Field Theory",
+        "Metal-Metal Bonding",
+        "Molecular Symmetry",
+        "Molecular Symmetry And Spectroscopy",
+        "D-Metal Organometallic Chemistry",
+        "Organometallic Chemistry",
+        "Spectroscopy",
+        "Chemical Bonding And Molecular Structure",
+        "Electronic Structure Of Transition Metal Complexes",
+        "Molecular Spectroscopy",
+        "Valence Bond Theory",
+        "Organometallic Chemistry",
+        "Ligand-Field Theory",
+        "Coordination Chemistry"
+      ]
+    },
+    {
+      "rank": 7,
+      "topic": "Chemical Bonding",
+      "mentions": 129,
+      "pagerank": 0.0029013229866688512,
+      "prerequisites": [
+        "Atomic Structure And Electronic Configuration",
+        "Solid State Chemistry",
+        "Periodic Table And Electronic Structure",
+        "Electronegativity",
+        "Molecular Orbital Theory",
+        "Molecular Geometry",
+        "Electronic Structure Of Atoms",
+        "Main Group Chemistry",
+        "Ionic Bonding",
+        "Electronegativity",
+        "Atomic Structure And Periodicity",
+        "Valence Bond Theory",
+        "Periodic Trends",
+        "Atomic Structure",
+        "Periodic Trends",
+        "Periodic Trends And Atomic Structure",
+        "Atomic Structure",
+        "Electronic Configurations",
+        "Crystal Structures",
+        "Crystal Structures Of Metals",
+        "Covalent Bonding"
+      ],
+      "leads_to": [
+        "Molecular Geometry",
+        "Molecular Orbital Theory",
+        "Intermolecular Forces",
+        "Molecular Orbital Theory",
+        "Main Group Chemistry",
+        "Coordination Chemistry",
+        "Reaction Mechanisms",
+        "Coordination Chemistry",
+        "Crystal Field Theory",
+        "Molecular Structure",
+        "Electrochemistry",
+        "Molecular Spectroscopy",
+        "Crystal Structure Analysis",
+        "Electronic Structure Of Transition Metals",
+        "Solid State Chemistry",
+        "Valence Bond Theory",
+        "Chemical Bonding Theories"
+      ]
+    },
+    {
+      "rank": 8,
+      "topic": "Acid-Base Chemistry",
+      "mentions": 194,
+      "pagerank": 0.0025137268249206075,
+      "prerequisites": [
+        "Periodic Trends",
+        "Main Group Chemistry",
+        "Hydrogen Bonding",
+        "Non-Aqueous Solvents",
+        "Acid-Base Chemistry",
+        "Redox Chemistry",
+        "Lewis Acids And Bases",
+        "Acid-Base Equilibria",
+        "Thermodynamics",
+        "Electronegativity"
+      ],
+      "leads_to": [
+        "Acid-Base Equilibria",
+        "Electrochemistry",
+        "Coordination Chemistry",
+        "Main Group Chemistry",
+        "Oxidation-Reduction Reactions",
+        "Coordination Chemistry",
+        "Acid-Base Chemistry",
+        "Electrochemistry",
+        "Transition Elements",
+        "Reaction Mechanisms",
+        "Redox Reactions",
+        "Bioinorganic Chemistry"
+      ]
+    },
+    {
+      "rank": 9,
+      "topic": "Crystal Field Theory",
+      "mentions": 165,
+      "pagerank": 0.0016602967303817671,
+      "prerequisites": [
+        "Solid State Chemistry",
+        "Lanthanide Chemistry",
+        "Coordination Chemistry",
+        "Crystal Field Theory",
+        "Symmetry And Point Groups",
+        "Inorganic Crystal Structures",
+        "Molecular Orbital Theory",
+        "Point Group Symmetry",
+        "Periodic Trends",
+        "Ionic Bonding",
+        "Main Group Chemistry",
+        "Molecular Symmetry",
+        "Electronic Structure And Spectroscopy",
+        "Point Group Symmetry",
+        "Molecular Symmetry And Group Theory",
+        "Electronic Structure Of Transition Metals",
+        "Atomic Structure And Electronic Configuration",
+        "Crystal Field Theory",
+        "Solid-State Structures",
+        "Transition Metals",
+        "Crystal Structures",
+        "Molecular Orbital Theory",
+        "Symmetry And Molecular Point Groups",
+        "Lattice Enthalpy And Ionic Bonding",
+        "Atomic Structure And Electronic Configurations",
+        "Transition Metal Chemistry",
+        "Descriptive Chemistry Of The Representative Elements",
+        "Symmetry And Group Theory",
+        "Electronic Structure Of Transition Metals",
+        "Chemical Bonding",
+        "Organometallic Chemistry",
+        "D-Block Elements",
+        "Symmetry and Group Theory",
+        "Crystal Structures Of Metals",
+        "Transition Metals And D-Block Elements",
+        "Inorganic Crystal Chemistry",
+        "Solid-State Energetics",
+        "Hydrides",
+        "Magnetic Properties Of Transition Metals",
+        "Electrochemistry",
+        "Atomic Structure And Periodic Trends",
+        "Group Theory",
+        "Ionic Crystal Structures",
+        "Transition Elements",
+        "Spectroscopy",
+        "Group Theory In Inorganic Chemistry",
+        "Atomic Structure And Periodicity",
+        "Electronic Configurations",
+        "Metallic Bonding And Crystal Structures",
+        "Ionic Bonding And Crystal Structures",
+        "Crystal Structures And Coordination Chemistry"
+      ],
+      "leads_to": [
+        "Crystal Field Theory",
+        "Coordination Chemistry",
+        "Coordination Chemistry Applications",
+        "Solid State Chemistry",
+        "Coordination Chemistry",
+        "Magnetic Properties Of Transition Metals",
+        "Electronic Structure Of Transition Metal Complexes",
+        "Magnetic Properties Of Transition Metal Complexes",
+        "Crystal Field Theory",
+        "Molecular Orbital Theory",
+        "Materials Chemistry",
+        "Magnetic Properties Of Transition Metals",
+        "Magnetic Properties Of Transition Metal Complexes",
+        "Solid-State Energetics",
+        "Lanthanoid Chemistry",
+        "Electronic Spectroscopy",
+        "Molecular Orbital Theory",
+        "Electronic Spectroscopy",
+        "Electronic Spectra And Crystal Field Theory",
+        "Reaction Mechanisms In Coordination Chemistry",
+        "Magnetic Properties Of Coordination Compounds",
+        "Main Group Chemistry"
+      ]
+    },
+    {
+      "rank": 10,
+      "topic": "Electrochemistry",
+      "mentions": 255,
+      "pagerank": 0.0014458509994602015,
+      "prerequisites": [
+        "Acid-Base Chemistry",
+        "Oxidation And Reduction",
+        "Redox Chemistry",
+        "Redox Chemistry",
+        "Coordination Chemistry",
+        "Redox Reactions",
+        "Thermodynamics",
+        "Solid State Chemistry",
+        "Electrochemical Series",
+        "Main Group Chemistry",
+        "Oxidation-Reduction Reactions",
+        "Redox Reactions And Oxidation States",
+        "Acid-Base Chemistry",
+        "Electrolysis",
+        "Chemical Bonding",
+        "Electrochemistry",
+        "Reaction Mechanisms",
+        "Descriptive Chemistry Of The Representative Elements",
+        "Electron Transfer"
+      ],
+      "leads_to": [
+        "Electrochemical Series",
+        "Electrochemical Applications",
+        "Fuel Cell Technology",
+        "Environmental Chemistry",
+        "Bioinorganic Chemistry",
+        "Redox Reactions",
+        "Electrochemical Kinetics",
+        "Oxidation-Reduction Reactions",
+        "Coordination Chemistry",
+        "Electrochemical Measurements",
+        "Crystal Field Theory",
+        "Electrochemistry",
+        "Bioinorganic Chemistry",
+        "Electrolysis",
+        "Catalytic Processes"
+      ]
+    },
+    {
+      "rank": 11,
+      "topic": "Thermochemistry",
+      "mentions": 28,
+      "pagerank": 0.0010935141074769968,
+      "prerequisites": [
+        "Main Group Chemistry",
+        "Ionic Bonding"
+      ],
+      "leads_to": [
+        "Hydrogen Production And Utilization",
+        "Solid State Chemistry",
+        "Ionic Bonding",
+        "Main Group Chemistry"
+      ]
+    },
+    {
+      "rank": 12,
+      "topic": "Crystal Structures",
+      "mentions": 11,
+      "pagerank": 0.00091426772879846,
+      "prerequisites": [
+        "Ionic Bonding",
+        "Main Group Chemistry"
+      ],
+      "leads_to": [
+        "Solid State Chemistry",
+        "Solid State Chemistry",
+        "Coordination Chemistry",
+        "Metallic Bonding And Structures",
+        "Main Group Chemistry",
+        "Solid-State Structures",
+        "Crystal Field Theory",
+        "Solid-State And Materials Chemistry",
+        "Chemical Bonding"
+      ]
+    },
+    {
+      "rank": 13,
+      "topic": "Organometallic Chemistry",
+      "mentions": 102,
+      "pagerank": 0.000799614961380097,
+      "prerequisites": [
+        "Coordination Chemistry",
+        "Main Group Chemistry",
+        "Valence Bond Theory",
+        "Reaction Mechanisms",
+        "Transition Metal Chemistry",
+        "Electronic Structure Of Transition Metals",
+        "Lanthanoid Chemistry",
+        "Molecular Orbital Theory",
+        "Molecular Orbital Theory",
+        "Organic Chemistry",
+        "Organometallic Compounds"
+      ],
+      "leads_to": [
+        "Electronic Structure Of Transition Metals",
+        "Catalysis",
+        "Main Group Chemistry",
+        "Metal Complexes And Cluster Chemistry",
+        "Transition Metal Chemistry",
+        "Crystal Field Theory",
+        "Catalytic Processes",
+        "Coordination Chemistry",
+        "Catalytic Mechanisms",
+        "Molecular Orbital Theory",
+        "Reaction Mechanisms",
+        "Catalysis",
+        "Coordination Chemistry",
+        "Cluster Chemistry",
+        "Ligand Substitution Reactions"
+      ]
+    },
+    {
+      "rank": 14,
+      "topic": "Catalysis",
+      "mentions": 66,
+      "pagerank": 0.0007313991211398991,
+      "prerequisites": [
+        "Catalytic Mechanisms",
+        "Surface Chemistry",
+        "Organometallic Chemistry",
+        "Reaction Mechanisms",
+        "Reaction Kinetics",
+        "Nanoparticle Synthesis",
+        "Homogeneous Catalysis",
+        "Coordination Chemistry",
+        "Main Group Chemistry",
+        "Heterogeneous Catalysis",
+        "Organometallic Chemistry",
+        "Organometallic Compounds",
+        "Transition Metal Chemistry",
+        "Thermodynamics"
+      ],
+      "leads_to": [
+        "Catalytic Mechanisms",
+        "Homogeneous Catalysis",
+        "Main Group Chemistry",
+        "Reaction Mechanisms",
+        "Reaction Kinetics",
+        "Oxidation Reactions",
+        "Heterogeneous Catalysis"
+      ]
+    },
+    {
+      "rank": 15,
+      "topic": "Transition Metal Chemistry",
+      "mentions": 30,
+      "pagerank": 0.0006877456853680477,
+      "prerequisites": [
+        "Coordination Chemistry",
+        "Main Group Chemistry",
+        "Periodic Trends And Electronic Structure",
+        "Reaction Mechanisms",
+        "Periodic Trends",
+        "Electronic Structure And Periodic Trends",
+        "D-Block Elements",
+        "Organometallic Chemistry",
+        "Periodic Trends",
+        "Electronic Structure Of Transition Metals",
+        "Atomic Structure And Electronic Configuration",
+        "Redox Chemistry"
+      ],
+      "leads_to": [
+        "Coordination Chemistry",
+        "Organometallic Chemistry",
+        "Crystal Field Theory",
+        "Coordination Chemistry",
+        "Redox Reactions",
+        "D-Block Elements",
+        "Cluster Chemistry",
+        "Catalytic Processes",
+        "Main Group Chemistry",
+        "Organic Chemistry",
+        "Polymer Chemistry",
+        "Electrochemical Series",
+        "Catalysis",
+        "Electrochemical Applications"
+      ]
+    },
+    {
+      "rank": 16,
+      "topic": "Bioinorganic Chemistry",
+      "mentions": 167,
+      "pagerank": 0.0006767738800015222,
+      "prerequisites": [
+        "Transition Metals",
+        "Enzyme Mechanisms",
+        "Redox Chemistry",
+        "Coordination Chemistry",
+        "Inorganic Chemistry Applications",
+        "Main Group Chemistry",
+        "Electrochemistry",
+        "Enzyme Catalysis",
+        "Electron Transfer And Coordination Chemistry",
+        "Electrochemistry",
+        "Electronic Structure Of Transition Metals",
+        "Acid-Base Chemistry",
+        "Enzyme Catalysis"
+      ],
+      "leads_to": [
+        "Electron Transport Chain",
+        "Enzyme Mechanisms",
+        "Inorganic Chemistry In Medicine",
+        "Enzyme Catalysis"
+      ]
+    },
+    {
+      "rank": 17,
+      "topic": "Polymer Chemistry",
+      "mentions": 12,
+      "pagerank": 0.00036500601968973603,
+      "prerequisites": [
+        "Polymerization Mechanisms",
+        "Main Group Chemistry",
+        "Transition Metal Chemistry"
+      ],
+      "leads_to": [
+        "Nanomaterials And Nanotechnology",
+        "Polyphosphazenes",
+        "Main Group Chemistry"
+      ]
+    },
+    {
+      "rank": 18,
+      "topic": "Atmospheric Chemistry",
+      "mentions": 15,
+      "pagerank": 0.0002868041406668227,
+      "prerequisites": [
+        "Main Group Chemistry",
+        "Photochemical Reactions",
+        "Environmental Chemistry"
+      ],
+      "leads_to": [
+        "Environmental Chemistry",
+        "Climate Change"
+      ]
+    },
+    {
+      "rank": 19,
+      "topic": "Environmental Chemistry",
+      "mentions": 42,
+      "pagerank": 0.00024604912472945797,
+      "prerequisites": [
+        "Main Group Chemistry",
+        "Electrochemistry",
+        "Carbon Cycle",
+        "Atmospheric Chemistry",
+        "Redox Chemistry",
+        "Inorganic Chemistry Applications",
+        "Thermodynamics",
+        "Coordination Chemistry",
+        "Descriptive Chemistry Of The Representative Elements"
+      ],
+      "leads_to": [
+        "Green Chemistry",
+        "Atmospheric Chemistry"
+      ]
+    },
+    {
+      "rank": 20,
+      "topic": "Organic Chemistry",
+      "mentions": 30,
+      "pagerank": 0.00023382269680907757,
+      "prerequisites": [
+        "Main Group Chemistry",
+        "Transition Metal Chemistry"
+      ],
+      "leads_to": [
+        "Catalytic Processes",
+        "Catalytic Mechanisms",
+        "Organometallic Chemistry",
+        "Main Group Chemistry"
+      ]
+    },
+    {
+      "rank": 21,
+      "topic": "Redox Reactions",
+      "mentions": 11,
+      "pagerank": 0.00020337985534501813,
+      "prerequisites": [
+        "Main Group Chemistry",
+        "Electrochemistry",
+        "Transition Metal Chemistry",
+        "Transition Metals",
+        "Coordination Chemistry",
+        "Acid-Base Chemistry"
+      ],
+      "leads_to": [
+        "Electrochemistry",
+        "Electrochemical Applications"
+      ]
+    },
+    {
+      "rank": 22,
+      "topic": "Cluster Chemistry",
+      "mentions": 20,
+      "pagerank": 0.00018948979550094543,
+      "prerequisites": [
+        "Main Group Chemistry",
+        "Electronic Structure Of Transition Metals",
+        "Transition Metal Chemistry",
+        "Coordination Chemistry",
+        "Organometallic Chemistry"
+      ],
+      "leads_to": [
+        "Main Group Chemistry"
+      ]
+    },
+    {
+      "rank": 23,
+      "topic": "Nuclear Chemistry",
+      "mentions": 56,
+      "pagerank": 0.00018948979550094543,
+      "prerequisites": [
+        "Atomic Structure",
+        "Actinoid Chemistry",
+        "Hydrogen And Hydrides",
+        "Atomic Structure",
+        "Main Group Chemistry",
+        "Actinide Chemistry"
+      ],
+      "leads_to": [
+        "Main Group Chemistry"
+      ]
+    },
+    {
+      "rank": 24,
+      "topic": "Spectroscopy",
+      "mentions": 31,
+      "pagerank": 0.00016367094036011913,
+      "prerequisites": [
+        "Molecular Symmetry",
+        "Symmetry And Point Groups",
+        "Symmetry And Group Theory",
+        "Symmetry And Molecular Orbitals",
+        "Quantum Mechanics In Atomic Structure",
+        "Group Theory",
+        "Symmetry and Group Theory",
+        "Quantum Mechanics",
+        "Molecular Symmetry And Group Theory",
+        "Group Theory",
+        "Electronic Spectra",
+        "Main Group Chemistry",
+        "Point Group Symmetry",
+        "Molecular Orbital Theory",
+        "Atomic Structure And Electronic Configurations",
+        "Atomic Structure",
+        "Atomic Structure And Electronic Configuration",
+        "Coordination Chemistry",
+        "Electronic Structure Of Atoms"
+      ],
+      "leads_to": [
+        "Coordination Chemistry",
+        "Crystal Field Theory"
+      ]
+    },
+    {
+      "rank": 25,
+      "topic": "Oxidation-Reduction Reactions",
+      "mentions": 12,
+      "pagerank": 0.00016366349160468156,
+      "prerequisites": [
+        "Main Group Chemistry",
+        "Electrochemistry",
+        "Acid-Base Chemistry",
+        "Electrochemical Series",
+        "Acid-Base Equilibria",
+        "Redox Chemistry"
+      ],
+      "leads_to": [
+        "Electrochemistry"
+      ]
+    },
+    {
+      "rank": 26,
+      "topic": "Green Chemistry",
+      "mentions": 14,
+      "pagerank": 0.0001474926253687316,
+      "prerequisites": [
+        "Main Group Chemistry",
+        "Environmental Chemistry"
+      ],
+      "leads_to": []
+    },
+    {
+      "rank": 27,
+      "topic": "Hydrogen Storage Materials",
+      "mentions": 11,
+      "pagerank": 0.0001474926253687316,
+      "prerequisites": [
+        "Main Group Chemistry",
+        "Intermetallic Compounds",
+        "Hydrogen And Its Compounds",
+        "Hydrogen Chemistry"
+      ],
+      "leads_to": []
+    },
+    {
+      "rank": 28,
+      "topic": "Industrial Chemistry",
+      "mentions": 23,
+      "pagerank": 0.0001474926253687316,
+      "prerequisites": [
+        "Main Group Chemistry"
+      ],
+      "leads_to": []
+    },
+    {
+      "rank": 29,
+      "topic": "Atomic Structure",
+      "mentions": 38,
+      "pagerank": 0.0029611543535774136,
+      "prerequisites": [
+        "Periodic Trends",
+        "Periodic Table Organization"
+      ],
+      "leads_to": [
+        "Nuclear Chemistry",
+        "Main Group Chemistry",
+        "Periodic Trends",
+        "Solid State Chemistry",
+        "Coordination Chemistry",
+        "Chemical Bonding",
+        "Quantum Mechanics",
+        "Nuclear Chemistry",
+        "Chemical Bonding",
+        "Electronegativity",
+        "Periodic Trends",
+        "Analytical Chemistry",
+        "Spectroscopy",
+        "Periodic Trends And Properties",
+        "Physical Techniques In Inorganic Chemistry",
+        "Molecular Orbital Theory"
+      ]
+    },
+    {
+      "rank": 30,
+      "topic": "Atomic Structure And Periodicity",
+      "mentions": 17,
+      "pagerank": 0.0006796363704301863,
+      "prerequisites": [
+        "Periodic Trends"
+      ],
+      "leads_to": [
+        "Chemical Bonding",
+        "Periodic Trends",
+        "Coordination Chemistry",
+        "Crystal Field Theory"
+      ]
+    },
+    {
+      "rank": 31,
+      "topic": "Descriptive Chemistry Of The Representative Elements",
+      "mentions": 32,
+      "pagerank": 0.00043618603739119103,
+      "prerequisites": [
+        "Periodic Trends"
+      ],
+      "leads_to": [
+        "Coordination Chemistry",
+        "Crystal Field Theory",
+        "Metallurgical Processes",
+        "Periodic Trends",
+        "Electrochemistry",
+        "Environmental Chemistry"
+      ]
+    },
+    {
+      "rank": 32,
+      "topic": "D-Block Elements",
+      "mentions": 10,
+      "pagerank": 0.0002743160085166553,
+      "prerequisites": [
+        "Periodic Trends",
+        "Transition Metal Chemistry"
+      ],
+      "leads_to": [
+        "Electrochemical Series",
+        "Coordination Chemistry",
+        "Transition Metal Chemistry",
+        "Crystal Field Theory",
+        "Coordination Chemistry"
+      ]
+    },
+    {
+      "rank": 33,
+      "topic": "Transition Metals",
+      "mentions": 19,
+      "pagerank": 0.00022418454521521954,
+      "prerequisites": [
+        "Periodic Trends",
+        "Redox Chemistry"
+      ],
+      "leads_to": [
+        "Bioinorganic Chemistry",
+        "Crystal Field Theory",
+        "Coordination Chemistry",
+        "Coordination Chemistry",
+        "Redox Reactions"
+      ]
+    },
+    {
+      "rank": 34,
+      "topic": "Oxidation And Reduction",
+      "mentions": 20,
+      "pagerank": 0.00023501078596737968,
+      "prerequisites": [
+        "Redox Chemistry",
+        "Electrochemical Series"
+      ],
+      "leads_to": [
+        "Electrochemistry",
+        "Metallurgical Processes"
+      ]
+    },
+    {
+      "rank": 35,
+      "topic": "Transition Elements",
+      "mentions": 11,
+      "pagerank": 0.00017574107656811422,
+      "prerequisites": [
+        "Redox Chemistry",
+        "Acid-Base Chemistry"
+      ],
+      "leads_to": [
+        "Coordination Chemistry",
+        "Crystal Field Theory"
+      ]
+    },
+    {
+      "rank": 36,
+      "topic": "Inorganic Chemistry Applications",
+      "mentions": 11,
+      "pagerank": 0.00016960238235060136,
+      "prerequisites": [
+        "Redox Chemistry"
+      ],
+      "leads_to": [
+        "Bioinorganic Chemistry",
+        "Environmental Chemistry"
+      ]
+    },
+    {
+      "rank": 37,
+      "topic": "Hydrogen Chemistry",
+      "mentions": 20,
+      "pagerank": 0.00016678012253233494,
+      "prerequisites": [
+        "Redox Chemistry"
+      ],
+      "leads_to": [
+        "Hydrogen Storage Materials"
+      ]
+    },
+    {
+      "rank": 38,
+      "topic": "Lanthanoid Chemistry",
+      "mentions": 11,
+      "pagerank": 0.0001603167373029806,
+      "prerequisites": [
+        "Redox Chemistry",
+        "Crystal Field Theory"
+      ],
+      "leads_to": [
+        "Organometallic Chemistry"
+      ]
+    },
+    {
+      "rank": 39,
+      "topic": "Enzyme Catalysis",
+      "mentions": 10,
+      "pagerank": 0.00015758486877842168,
+      "prerequisites": [
+        "Redox Chemistry",
+        "Bioinorganic Chemistry"
+      ],
+      "leads_to": [
+        "Bioinorganic Chemistry",
+        "Bioinorganic Chemistry"
+      ]
+    },
+    {
+      "rank": 40,
+      "topic": "Molecular Symmetry",
+      "mentions": 44,
+      "pagerank": 0.0006895202412901509,
+      "prerequisites": [
+        "Molecular Orbital Theory"
+      ],
+      "leads_to": [
+        "Spectroscopy",
+        "Crystal Field Theory",
+        "Symmetry And Group Theory",
+        "Vibrational Spectroscopy",
+        "Molecular Orbital Theory",
+        "Molecular Spectroscopy",
+        "Electronic Transitions And Spectroscopy"
+      ]
+    },
+    {
+      "rank": 41,
+      "topic": "Materials Chemistry",
+      "mentions": 25,
+      "pagerank": 0.0003982300884955753,
+      "prerequisites": [
+        "Crystal Field Theory",
+        "Magnetic Properties Of Transition Metals"
+      ],
+      "leads_to": [
+        "Nanomaterials Synthesis",
+        "Nanomaterial Synthesis"
+      ]
+    },
+    {
+      "rank": 42,
+      "topic": "Solid-State Structures",
+      "mentions": 10,
+      "pagerank": 0.0002869155442025492,
+      "prerequisites": [
+        "Crystal Structures"
+      ],
+      "leads_to": [
+        "Solid State Chemistry",
+        "Crystal Field Theory",
+        "Solid-State And Materials Chemistry",
+        "Coordination Chemistry"
+      ]
+    },
+    {
+      "rank": 43,
+      "topic": "Solid-State And Materials Chemistry",
+      "mentions": 40,
+      "pagerank": 0.0002839233038348083,
+      "prerequisites": [
+        "Crystal Structures",
+        "Solid-State Structures",
+        "Semiconductor Physics",
+        "Ionic Bonding"
+      ],
+      "leads_to": [
+        "Materials Synthesis",
+        "Electrochemical Applications"
+      ]
+    },
+    {
+      "rank": 44,
+      "topic": "Inorganic Chemistry In Medicine",
+      "mentions": 14,
+      "pagerank": 0.0001474926253687316,
+      "prerequisites": [
+        "Bioinorganic Chemistry"
+      ],
+      "leads_to": []
+    },
+    {
+      "rank": 45,
+      "topic": "Nanomaterials And Nanotechnology",
+      "mentions": 30,
+      "pagerank": 0.0001474926253687316,
+      "prerequisites": [
+        "Nanoparticle Synthesis",
+        "Polymer Chemistry"
+      ],
+      "leads_to": []
+    },
+    {
+      "rank": 46,
+      "topic": "Analytical Chemistry",
+      "mentions": 19,
+      "pagerank": 0.0002227138643067847,
+      "prerequisites": [
+        "Atomic Structure"
+      ],
+      "leads_to": [
+        "Quantitative Analysis"
+      ]
+    },
+    {
+      "rank": 47,
+      "topic": "Physical Techniques In Inorganic Chemistry",
+      "mentions": 20,
+      "pagerank": 0.0001474926253687316,
+      "prerequisites": [
+        "Atomic Structure"
+      ],
+      "leads_to": []
+    },
+    {
+      "rank": 48,
+      "topic": "Symmetry And Group Theory",
+      "mentions": 36,
+      "pagerank": 0.00026408764316438957,
+      "prerequisites": [
+        "Molecular Symmetry"
+      ],
+      "leads_to": [
+        "Spectroscopy",
+        "Molecular Orbital Theory",
+        "Molecular Spectroscopy",
+        "Crystal Field Theory"
+      ]
+    },
+    {
+      "rank": 49,
+      "topic": "Mass Spectrometry",
+      "mentions": 10,
+      "pagerank": 0.0001474926253687316,
+      "prerequisites": [],
+      "leads_to": []
+    },
+    {
+      "rank": 50,
+      "topic": "Atomic Structure And Electronic Configuration",
+      "mentions": 42,
+      "pagerank": 0.0018817743669472663,
+      "prerequisites": [],
+      "leads_to": [
+        "Periodic Trends",
+        "Chemical Bonding",
+        "Molecular Orbital Theory",
+        "Crystal Field Theory",
+        "Spectroscopy",
+        "Transition Metal Chemistry"
+      ]
+    },
+    {
+      "rank": 51,
+      "topic": "Symmetry And Point Groups",
+      "mentions": 16,
+      "pagerank": 0.00021146348825724464,
+      "prerequisites": [],
+      "leads_to": [
+        "Spectroscopy",
+        "Crystal Field Theory",
+        "Molecular Spectroscopy",
+        "Molecular Orbital Theory"
+      ]
+    },
+    {
+      "rank": 52,
+      "topic": "Quantum Mechanics In Atomic Structure",
+      "mentions": 27,
+      "pagerank": 0.0004053181268737875,
+      "prerequisites": [],
+      "leads_to": [
+        "Spectroscopy",
+        "Molecular Orbital Theory",
+        "Periodic Trends"
+      ]
+    },
+    {
+      "rank": 53,
+      "topic": "Inorganic Crystal Structures",
+      "mentions": 11,
+      "pagerank": 0.00024001142114342335,
+      "prerequisites": [
+        "Ionic Bonding"
+      ],
+      "leads_to": [
+        "Crystal Field Theory",
+        "Coordination Chemistry",
+        "Solid State Chemistry"
+      ]
+    },
+    {
+      "rank": 54,
+      "topic": "Molecular Symmetry And Group Theory",
+      "mentions": 27,
+      "pagerank": 0.00041037998965059606,
+      "prerequisites": [],
+      "leads_to": [
+        "Crystal Field Theory",
+        "Molecular Spectroscopy",
+        "Molecular Orbital Theory",
+        "Spectroscopy",
+        "Vibrational Spectroscopy"
+      ]
+    },
+    {
+      "rank": 55,
+      "topic": "Electronic Structure And Spectroscopy",
+      "mentions": 13,
+      "pagerank": 0.00019440876394584888,
+      "prerequisites": [],
+      "leads_to": [
+        "Crystal Field Theory",
+        "Molecular Orbital Theory",
+        "Molecular Spectroscopy"
+      ]
+    },
+    {
+      "rank": 56,
+      "topic": "Hydrogen And Hydrides",
+      "mentions": 11,
+      "pagerank": 0.00029075769412565983,
+      "prerequisites": [
+        "Covalent Bonding",
+        "Hydrogen Bonding"
+      ],
+      "leads_to": [
+        "Nuclear Chemistry",
+        "Hydrogen Storage"
+      ]
+    },
+    {
+      "rank": 57,
+      "topic": "Nuclear Magnetic Resonance (Nmr) Spectroscopy",
+      "mentions": 20,
+      "pagerank": 0.0001474926253687316,
+      "prerequisites": [],
+      "leads_to": []
+    },
+    {
+      "rank": 58,
+      "topic": "Atomic Structure And Spectroscopy",
+      "mentions": 19,
+      "pagerank": 0.00025820624209255366,
+      "prerequisites": [],
+      "leads_to": [
+        "Spectroscopy Techniques",
+        "Quantum Mechanics"
+      ]
+    },
+    {
+      "rank": 59,
+      "topic": "Symmetry And Molecular Point Groups",
+      "mentions": 12,
+      "pagerank": 0.00022757340327059396,
+      "prerequisites": [],
+      "leads_to": [
+        "Molecular Spectroscopy",
+        "Crystal Field Theory",
+        "Molecular Orbital Theory"
+      ]
+    },
+    {
+      "rank": 60,
+      "topic": "Metal Organometallic Chemistry",
+      "mentions": 19,
+      "pagerank": 0.00017091310948045847,
+      "prerequisites": [],
+      "leads_to": [
+        "Catalytic Mechanisms"
+      ]
+    },
+    {
+      "rank": 61,
+      "topic": "Actinide Chemistry",
+      "mentions": 10,
+      "pagerank": 0.0002280733283439489,
+      "prerequisites": [],
+      "leads_to": [
+        "Radiochemistry",
+        "Nuclear Chemistry"
+      ]
+    },
+    {
+      "rank": 62,
+      "topic": "Radiochemistry",
+      "mentions": 11,
+      "pagerank": 0.0001474926253687316,
+      "prerequisites": [
+        "Actinoid Chemistry",
+        "Actinide Chemistry"
+      ],
+      "leads_to": []
+    },
+    {
+      "rank": 63,
+      "topic": "Group Theory",
+      "mentions": 15,
+      "pagerank": 0.00018825894543613965,
+      "prerequisites": [],
+      "leads_to": [
+        "Spectroscopy",
+        "Spectroscopy",
+        "Molecular Orbital Theory",
+        "Crystal Field Theory",
+        "Molecular Orbital Theory"
+      ]
+    },
+    {
+      "rank": 64,
+      "topic": "Physical Chemistry",
+      "mentions": 10,
+      "pagerank": 0.0001474926253687316,
+      "prerequisites": [],
+      "leads_to": []
+    },
+    {
+      "rank": 65,
+      "topic": "F-Block Elements",
+      "mentions": 12,
+      "pagerank": 0.0001474926253687316,
+      "prerequisites": [
+        "Periodic Table Organization"
+      ],
+      "leads_to": []
+    },
+    {
+      "rank": 66,
+      "topic": "Descriptive Inorganic Chemistry",
+      "mentions": 65,
+      "pagerank": 0.0001474926253687316,
+      "prerequisites": [],
+      "leads_to": []
+    },
+    {
+      "rank": 67,
+      "topic": "Thermodynamics",
+      "mentions": 10,
+      "pagerank": 0.000866104795390483,
+      "prerequisites": [],
+      "leads_to": [
+        "Electrochemistry",
+        "Electrochemical Kinetics",
+        "Coordination Chemistry",
+        "Solid State Chemistry",
+        "Main Group Chemistry",
+        "Environmental Chemistry",
+        "Acid-Base Chemistry",
+        "Defects In Crystals",
+        "Catalysis"
+      ]
+    }
+  ]
+}

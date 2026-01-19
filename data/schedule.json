@@ -1,0 +1,57 @@
+{
+  "course": {
+    "code": "CHEM 361",
+    "name": "Inorganic Chemistry",
+    "term": "Spring 2025",
+    "instructor": "Kiran Boggavarapu",
+    "schedule": "TR 8:00-9:15 AM",
+    "location": "TBD"
+  },
+  "classes": [
+    {"week": 1, "day": "Tue", "date": "2025-01-14", "topic": "Introduction; coordination compounds", "unit": 1, "quiz": false},
+    {"week": 1, "day": "Thu", "date": "2025-01-16", "topic": "Ligands; coordination number", "unit": 1, "quiz": false, "slo": [3]},
+    {"week": 2, "day": "Tue", "date": "2025-01-21", "topic": "IUPAC nomenclature", "unit": 1, "quiz": false, "slo": [3]},
+    {"week": 2, "day": "Thu", "date": "2025-01-23", "topic": "Isomerism: geometric, optical", "unit": 1, "quiz": 1, "slo": [3]},
+    {"week": 3, "day": "Tue", "date": "2025-01-28", "topic": "Crystal Field Theory: octahedral", "unit": 1, "quiz": false, "slo": [2]},
+    {"week": 3, "day": "Thu", "date": "2025-01-30", "topic": "CFT: tetrahedral, square planar", "unit": 1, "quiz": 2, "slo": [2]},
+    {"week": 4, "day": "Tue", "date": "2025-02-04", "topic": "CFSE; high-spin vs low-spin", "unit": 1, "quiz": false, "slo": [2]},
+    {"week": 4, "day": "Thu", "date": "2025-02-06", "topic": "Color and magnetism", "unit": 1, "quiz": 3, "slo": [2]},
+    {"week": 5, "day": "Tue", "date": "2025-02-11", "topic": "Applications: catalysis, medicine", "unit": 1, "quiz": false, "slo": [6]},
+    {"week": 5, "day": "Thu", "date": "2025-02-13", "topic": "MIDTERM EXAM 1", "unit": 1, "quiz": false, "exam": true, "slo": [2, 3]},
+
+    {"week": 6, "day": "Tue", "date": "2025-02-18", "topic": "Periodic trends: atomic properties", "unit": 2, "quiz": false, "slo": [1]},
+    {"week": 6, "day": "Thu", "date": "2025-02-20", "topic": "Hydrogen; hydrides", "unit": 2, "quiz": 4, "slo": [1, 5], "due": "Case Analysis 1 (Friday)"},
+    {"week": 7, "day": "Tue", "date": "2025-02-25", "topic": "MARDI GRAS - NO CLASS", "unit": 2, "quiz": false, "noClass": true},
+    {"week": 7, "day": "Thu", "date": "2025-02-27", "topic": "Groups 1 & 2: alkali/alkaline earth", "unit": 2, "quiz": false, "slo": [1, 5]},
+    {"week": 8, "day": "Tue", "date": "2025-03-04", "topic": "Groups 13-14: B, Al, C, Si", "unit": 2, "quiz": 5, "slo": [5]},
+    {"week": 8, "day": "Thu", "date": "2025-03-06", "topic": "Groups 15-16: N, P, O, S", "unit": 2, "quiz": 6, "slo": [5]},
+    {"week": 9, "day": "Tue", "date": "2025-03-11", "topic": "Group 17: Halogens", "unit": 2, "quiz": 7, "slo": [5]},
+    {"week": 9, "day": "Thu", "date": "2025-03-13", "topic": "Group 18 & periodic review", "unit": 2, "quiz": 8, "slo": [1, 5]},
+    {"week": 10, "day": "Tue", "date": "2025-03-18", "topic": "MIDTERM EXAM 2", "unit": 2, "quiz": false, "exam": true, "slo": [1, 4, 5]},
+    {"week": 10, "day": "Thu", "date": "2025-03-20", "topic": "Solid-state intro: unit cells", "unit": 3, "quiz": false, "slo": [4]},
+
+    {"week": 11, "day": "Tue", "date": "2025-03-25", "topic": "Ionic structures; radius ratio", "unit": 3, "quiz": 9, "slo": [4]},
+    {"week": 11, "day": "Thu", "date": "2025-03-27", "topic": "Lattice energy; Born-Haber", "unit": 3, "quiz": 10, "slo": [4]},
+    {"week": 12, "day": "Tue", "date": "2025-04-01", "topic": "Defects; nonstoichiometry", "unit": 3, "quiz": 11, "slo": [4, 6]},
+    {"week": 12, "day": "Thu", "date": "2025-04-03", "topic": "Band theory; conductors", "unit": 3, "quiz": 12, "slo": [4, 6], "due": "Case Analysis 2 (Friday)"},
+    {"week": 13, "day": "Tue", "date": "2025-04-08", "topic": "Semiconductors; applications", "unit": 3, "quiz": false, "slo": [6]},
+    {"week": 13, "day": "Thu", "date": "2025-04-10", "topic": "Course synthesis; connections", "unit": 3, "quiz": false, "slo": "all"},
+    {"week": 14, "day": "Tue", "date": "2025-04-15", "topic": "STUDENT PRESENTATIONS", "unit": 3, "quiz": false, "presentations": true, "slo": [6]},
+    {"week": 14, "day": "Thu", "date": "2025-04-17", "topic": "STUDENT PRESENTATIONS", "unit": 3, "quiz": false, "presentations": true, "slo": [6]},
+    {"week": 15, "day": "Tue", "date": "2025-04-22", "topic": "Review session", "unit": 3, "quiz": false, "slo": "all"},
+    {"week": 15, "day": "Thu", "date": "2025-04-24", "topic": "COMPREHENSIVE FINAL EXAM", "unit": 3, "quiz": false, "exam": true, "final": true, "slo": "all"}
+  ],
+  "units": [
+    {"id": 1, "name": "Coordination Chemistry", "weeks": "1-5", "color": "#8b5cf6"},
+    {"id": 2, "name": "Main Group Chemistry", "weeks": "6-10", "color": "#06b6d4"},
+    {"id": 3, "name": "Solid State Chemistry", "weeks": "10-15", "color": "#f59e0b"}
+  ],
+  "slos": {
+    "1": "Explain periodic trends (electronegativity, ionization energy, atomic/ionic radius)",
+    "2": "Predict geometry, magnetism, and color of coordination compounds using CFT",
+    "3": "Name coordination compounds using IUPAC nomenclature",
+    "4": "Calculate lattice energy using Born-Haber cycle",
+    "5": "Compare reactivity patterns across main group elements",
+    "6": "Analyze structure-property relationships in real applications"
+  }
+}

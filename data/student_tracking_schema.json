@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Track student learning progress for data-driven curriculum validation",
+  "created": "2026-01-18",
+
+  "assessments": {
+    "pretest": {
+      "description": "Baseline periodic trends knowledge from Gen Chem",
+      "week": 1,
+      "scales": ["DESCRIPTIVE"],
+      "topics": ["periodic_trends", "atomic_structure", "electronegativity"]
+    },
+    "quizzes": [
+      {"id": 1, "week": 1, "unit": 1, "scale": "DESCRIPTIVE", "topics": ["periodic_trends"]},
+      {"id": 2, "week": 2, "unit": 1, "scale": "DESCRIPTIVE", "topics": ["alkali_alkaline"]},
+      {"id": 3, "week": 3, "unit": 1, "scale": "DESCRIPTIVE", "topics": ["main_group_13_16"]},
+      {"id": 4, "week": 4, "unit": 1, "scale": "DESCRIPTIVE", "topics": ["halogens_noble"]},
+      {"id": 5, "week": 6, "unit": 2, "scale": "STRUCTURAL", "topics": ["ligands_coord_number"]},
+      {"id": 6, "week": 8, "unit": 2, "scale": "STRUCTURAL", "topics": ["isomerism"]},
+      {"id": 7, "week": 9, "unit": 2, "scale": "ELECTRONIC", "topics": ["cft_geometry"]},
+      {"id": 8, "week": 10, "unit": 2, "scale": "ELECTRONIC", "topics": ["color_magnetism"]},
+      {"id": 9, "week": 11, "unit": 3, "scale": "STRUCTURAL", "topics": ["lattice_energy"]},
+      {"id": 10, "week": 12, "unit": 3, "scale": "ELECTRONIC", "topics": ["band_theory"]}
+    ],
+    "exams": [
+      {"id": "midterm1", "week": 5, "units": [1], "scales": ["DESCRIPTIVE"]},
+      {"id": "midterm2", "week": 10, "units": [1, 2], "scales": ["DESCRIPTIVE", "STRUCTURAL", "ELECTRONIC"]},
+      {"id": "final", "week": 15, "units": [1, 2, 3], "scales": ["DESCRIPTIVE", "STRUCTURAL", "ELECTRONIC"]}
+    ]
+  },
+
+  "student_record_template": {
+    "student_id": "string",
+    "pretest_score": "number (0-100)",
+    "quiz_scores": {
+      "1": "number", "2": "number", "3": "number", "4": "number",
+      "5": "number", "6": "number", "7": "number", "8": "number",
+      "9": "number", "10": "number"
+    },
+    "exam_scores": {
+      "midterm1": "number",
+      "midterm2": "number",
+      "final": "number"
+    },
+    "scale_performance": {
+      "DESCRIPTIVE": "avg of quizzes 1-4",
+      "STRUCTURAL": "avg of quizzes 5-6, 9",
+      "ELECTRONIC": "avg of quizzes 7-8, 10"
+    }
+  },
+
+  "metrics_to_compute": {
+    "scale_difficulty": "Compare avg scores across DESCRIPTIVE, STRUCTURAL, ELECTRONIC",
+    "prerequisite_effectiveness": "Correlation(Unit1_score, Unit2_score)",
+    "transfer_success": "Performance on cross-unit questions in midterm2/final",
+    "retention": "Compare final exam unit scores vs corresponding midterm",
+    "learning_gain": "(posttest - pretest) / (100 - pretest)"
+  },
+
+  "research_questions": [
+    "Does Main Group first improve CFT understanding?",
+    "Which scale level is most challenging for students?",
+    "Do students with strong pretest scores show better transfer?",
+    "Where do prerequisite gaps manifest?"
+  ]
+}

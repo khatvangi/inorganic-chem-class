@@ -1,0 +1,311 @@
+{
+  "meta_book": {
+    "title": "CHEM 361 Synthesized Inorganic Chemistry",
+    "subtitle": "Data-driven synthesis from 7 textbooks",
+    "created": "2026-01-18",
+    "methodology": "Best source per topic based on textbook style analysis"
+  },
+
+  "source_books": {
+    "atkins": {"name": "Atkins/Shriver", "chunks": 2494, "rating": 8, "best_for": ["coordination deep theory", "thermodynamics", "historical context"]},
+    "basset": {"name": "Basset", "chunks": 446, "rating": 7, "best_for": ["nomenclature", "crystal structures", "quantitative"]},
+    "douglas": {"name": "Douglas/McDaniel", "chunks": 1495, "rating": 6, "best_for": ["real-world applications", "worked examples", "visuals"]},
+    "house": {"name": "House", "chunks": 1027, "rating": 8, "best_for": ["main group", "coordination practical", "readable"]},
+    "housecroft": {"name": "Housecroft/Sharpe", "chunks": 2375, "rating": 7, "best_for": ["main group", "visuals", "Pourbaix diagrams"]},
+    "advanced": {"name": "Advanced IC", "chunks": 351, "rating": 7, "best_for": ["group theory", "reaction mechanisms", "MO theory"]},
+    "lee": {"name": "JD Lee", "chunks": 565, "rating": 7, "best_for": ["solid state", "lattice energy", "tables", "most readable"]}
+  },
+
+  "unit_1_main_group": {
+    "primary_source": "house",
+    "secondary_sources": ["douglas", "housecroft", "lee"],
+    "sessions": [
+      {
+        "session": 1,
+        "topic": "Periodic trends: atomic properties",
+        "scale": "DESCRIPTIVE",
+        "sources": {
+          "theory": "lee (clear explanation of trends)",
+          "examples": "house (practical applications)",
+          "visuals": "housecroft (periodic diagrams)"
+        },
+        "key_concepts": ["atomic radius", "ionization energy", "electron affinity", "electronegativity"],
+        "learning_objectives": ["Explain trends across periods and down groups", "Predict properties from position"]
+      },
+      {
+        "session": 2,
+        "topic": "Ionization energy, electronegativity",
+        "scale": "DESCRIPTIVE",
+        "sources": {
+          "theory": "lee (quantitative data)",
+          "examples": "douglas (real-world connections)",
+          "visuals": "housecroft (Pauling scale)"
+        },
+        "key_concepts": ["Pauling electronegativity", "Mulliken scale", "effective nuclear charge"],
+        "learning_objectives": ["Calculate effective nuclear charge", "Explain periodic anomalies"]
+      },
+      {
+        "session": 3,
+        "topic": "Hydrogen and hydrides",
+        "scale": "DESCRIPTIVE",
+        "sources": {
+          "theory": "house (H unique position)",
+          "examples": "housecroft (industrial H2)",
+          "visuals": "douglas (hydride types)"
+        },
+        "key_concepts": ["ionic hydrides", "covalent hydrides", "metallic hydrides", "hydrogen bonding"],
+        "learning_objectives": ["Classify hydrides by bonding type", "Explain H bonding importance"]
+      },
+      {
+        "session": 4,
+        "topic": "Groups 1 & 2: alkali/alkaline earth",
+        "scale": "DESCRIPTIVE",
+        "sources": {
+          "theory": "house (excellent coverage)",
+          "examples": "douglas (flame tests, fireworks)",
+          "visuals": "housecroft (ionic radii)"
+        },
+        "key_concepts": ["diagonal relationships", "solubility trends", "reactivity", "flame colors"],
+        "learning_objectives": ["Predict reactivity patterns", "Explain diagonal relationship Li-Mg"]
+      },
+      {
+        "session": 5,
+        "topic": "Groups 13-14: B, Al, C, Si",
+        "scale": "DESCRIPTIVE",
+        "sources": {
+          "theory": "house (boron chemistry)",
+          "examples": "douglas (semiconductors)",
+          "visuals": "housecroft (allotropes)"
+        },
+        "key_concepts": ["metalloid behavior", "allotropes", "inert pair effect", "Lewis acids"],
+        "learning_objectives": ["Explain metalloid properties", "Describe inert pair effect"]
+      },
+      {
+        "session": 6,
+        "topic": "Groups 15-16: N, P, O, S",
+        "scale": "DESCRIPTIVE",
+        "sources": {
+          "theory": "house (excellent)",
+          "examples": "housecroft (environmental)",
+          "visuals": "douglas (structures)"
+        },
+        "key_concepts": ["multiple bonding", "catenation", "oxides", "oxyacids"],
+        "learning_objectives": ["Compare N vs P bonding", "Explain oxyacid strength trends"]
+      },
+      {
+        "session": 7,
+        "topic": "Group 17: Halogens",
+        "scale": "DESCRIPTIVE",
+        "sources": {
+          "theory": "house (reactions)",
+          "examples": "housecroft (industrial)",
+          "visuals": "lee (tables)"
+        },
+        "key_concepts": ["oxidizing power", "interhalogen compounds", "pseudohalogens", "HX acids"],
+        "learning_objectives": ["Rank halogen reactivity", "Predict interhalogen formulas"]
+      },
+      {
+        "session": 8,
+        "topic": "Group 18: Noble gases",
+        "scale": "DESCRIPTIVE",
+        "sources": {
+          "theory": "house (Xe chemistry)",
+          "examples": "douglas (discovery story)",
+          "visuals": "housecroft (structures)"
+        },
+        "key_concepts": ["noble gas compounds", "XeF2/XeF4/XeF6", "VSEPR predictions"],
+        "learning_objectives": ["Explain why noble gases form compounds", "Predict geometries"]
+      },
+      {
+        "session": 9,
+        "topic": "Redox chemistry; periodic review",
+        "scale": "DESCRIPTIVE",
+        "sources": {
+          "theory": "atkins (Frost diagrams)",
+          "examples": "housecroft (Pourbaix)",
+          "visuals": "lee (electrode potentials)"
+        },
+        "key_concepts": ["standard potentials", "Frost diagrams", "disproportionation", "Latimer diagrams"],
+        "learning_objectives": ["Construct and interpret Frost diagrams", "Predict redox stability"]
+      }
+    ]
+  },
+
+  "unit_2_coordination": {
+    "primary_source": "atkins",
+    "secondary_sources": ["house", "basset", "advanced"],
+    "sessions": [
+      {
+        "session": 11,
+        "topic": "Introduction to coordination compounds",
+        "scale": "STRUCTURAL",
+        "sources": {
+          "theory": "atkins (Werner's theory)",
+          "examples": "house (common complexes)",
+          "visuals": "basset (structures)"
+        },
+        "key_concepts": ["coordination sphere", "Werner's theory", "primary/secondary valence"],
+        "learning_objectives": ["Define coordination compound", "Identify coordination sphere"]
+      },
+      {
+        "session": 12,
+        "topic": "Ligands and coordination number",
+        "scale": "STRUCTURAL",
+        "sources": {
+          "theory": "atkins (ligand types)",
+          "examples": "house (chelates)",
+          "visuals": "basset (denticity)"
+        },
+        "key_concepts": ["monodentate", "bidentate", "polydentate", "chelate effect", "macrocycles"],
+        "learning_objectives": ["Classify ligands by denticity", "Explain chelate effect thermodynamically"]
+      },
+      {
+        "session": 13,
+        "topic": "IUPAC nomenclature",
+        "scale": "STRUCTURAL",
+        "sources": {
+          "theory": "basset (systematic rules)",
+          "examples": "house (practice)",
+          "visuals": "lee (tables)"
+        },
+        "key_concepts": ["naming ligands", "naming complexes", "oxidation state notation", "bridging ligands"],
+        "learning_objectives": ["Name any coordination compound", "Write formula from name"]
+      },
+      {
+        "session": 14,
+        "topic": "Isomerism: geometric, optical",
+        "scale": "STRUCTURAL",
+        "sources": {
+          "theory": "atkins (stereochemistry)",
+          "examples": "house (cis-trans)",
+          "visuals": "basset (diagrams)"
+        },
+        "key_concepts": ["geometric isomers", "optical isomers", "fac/mer", "Δ/Λ notation"],
+        "learning_objectives": ["Identify all isomers of a complex", "Assign absolute configuration"]
+      },
+      {
+        "session": 15,
+        "topic": "Crystal Field Theory: octahedral",
+        "scale": "ELECTRONIC",
+        "sources": {
+          "theory": "atkins (CFT derivation)",
+          "examples": "advanced (splitting diagrams)",
+          "visuals": "lee (d-orbital diagrams)"
+        },
+        "key_concepts": ["d-orbital splitting", "Δo", "t2g/eg", "spectrochemical series"],
+        "learning_objectives": ["Explain origin of crystal field splitting", "Order ligands by field strength"]
+      },
+      {
+        "session": 16,
+        "topic": "CFT: tetrahedral, square planar",
+        "scale": "ELECTRONIC",
+        "sources": {
+          "theory": "atkins (geometry dependence)",
+          "examples": "advanced (comparison)",
+          "visuals": "lee (splitting diagrams)"
+        },
+        "key_concepts": ["Δt = 4/9 Δo", "square planar preference", "d8 configuration"],
+        "learning_objectives": ["Compare splitting in different geometries", "Predict geometry from d-count"]
+      },
+      {
+        "session": 17,
+        "topic": "CFSE and spin states",
+        "scale": "ELECTRONIC",
+        "sources": {
+          "theory": "atkins (CFSE calculations)",
+          "examples": "advanced (worked problems)",
+          "visuals": "house (energy diagrams)"
+        },
+        "key_concepts": ["crystal field stabilization energy", "high-spin", "low-spin", "pairing energy"],
+        "learning_objectives": ["Calculate CFSE", "Predict spin state from Δ and P"]
+      },
+      {
+        "session": 18,
+        "topic": "Color and magnetism",
+        "scale": "ELECTRONIC",
+        "sources": {
+          "theory": "atkins (d-d transitions)",
+          "examples": "house (colored complexes)",
+          "visuals": "lee (spectra)"
+        },
+        "key_concepts": ["d-d transitions", "selection rules", "magnetic moment", "spin-only formula"],
+        "learning_objectives": ["Explain color from d-d transitions", "Calculate magnetic moment"]
+      }
+    ]
+  },
+
+  "unit_3_solid_state": {
+    "primary_source": "lee",
+    "secondary_sources": ["atkins", "house"],
+    "sessions": [
+      {
+        "session": 20,
+        "topic": "Solid-state intro: unit cells",
+        "scale": "STRUCTURAL",
+        "sources": {
+          "theory": "lee (crystal systems)",
+          "examples": "house (common structures)",
+          "visuals": "basset (unit cells)"
+        },
+        "key_concepts": ["unit cell", "Bravais lattices", "close packing", "coordination number"],
+        "learning_objectives": ["Identify crystal systems", "Calculate packing efficiency"]
+      },
+      {
+        "session": 21,
+        "topic": "Ionic structures and lattice energy",
+        "scale": "STRUCTURAL",
+        "sources": {
+          "theory": "lee (Born-Haber)",
+          "examples": "atkins (calculations)",
+          "visuals": "basset (cycles)"
+        },
+        "key_concepts": ["lattice energy", "Born-Haber cycle", "Madelung constant", "radius ratio rules"],
+        "learning_objectives": ["Calculate lattice energy", "Predict structure from radius ratio"]
+      },
+      {
+        "session": 22,
+        "topic": "Band theory and conductivity",
+        "scale": "ELECTRONIC",
+        "sources": {
+          "theory": "atkins (band formation)",
+          "examples": "lee (metals vs insulators)",
+          "visuals": "house (band diagrams)"
+        },
+        "key_concepts": ["band gap", "conductor", "semiconductor", "insulator", "doping"],
+        "learning_objectives": ["Explain band formation from MO theory", "Classify by band gap"]
+      },
+      {
+        "session": 23,
+        "topic": "Applications: materials, catalysis",
+        "scale": "DESCRIPTIVE",
+        "sources": {
+          "theory": "atkins (catalysis)",
+          "examples": "housecroft (industrial)",
+          "visuals": "douglas (real-world)"
+        },
+        "key_concepts": ["heterogeneous catalysis", "zeolites", "superconductors", "battery materials"],
+        "learning_objectives": ["Connect structure to function", "Explain catalytic mechanisms"]
+      },
+      {
+        "session": 24,
+        "topic": "Course synthesis: cross-unit connections",
+        "scale": "ALL",
+        "sources": {
+          "theory": "all (integration)",
+          "examples": "all (comparative)",
+          "visuals": "knowledge graph"
+        },
+        "key_concepts": ["periodic trends → coordination → solid state", "scale navigation", "big picture"],
+        "learning_objectives": ["Connect concepts across units", "Navigate hierarchical knowledge"]
+      }
+    ]
+  },
+
+  "meta_book_principles": {
+    "source_selection": "Best source per concept, not per chapter",
+    "voice_preservation": "Maintain distinctive voice of each author",
+    "synthesis_not_blend": "Juxtapose perspectives, don't homogenize",
+    "scale_awareness": "Tag every concept with DESCRIPTIVE/STRUCTURAL/ELECTRONIC/QUANTUM",
+    "prerequisite_tracking": "Explicit links to prior knowledge from graph"
+  }
+}

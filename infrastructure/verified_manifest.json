@@ -1,0 +1,70 @@
+{
+  "status": "VERIFIED",
+  "verification_timestamp": "2026-01-18T22:44:22.303054",
+  "collection": "textbooks_chunks",
+  "total_points": 8756,
+  "scanned_points": 8756,
+  "unique_sources": 10,
+  "sources": {
+    "Inorganic_Chemistry_Atkins_Shriver.pdf": {
+      "chunk_count": 2494,
+      "percentage": 28.48,
+      "sample_text": "Free ions in           Cytoplasm         Comments on status\n                (sea water)          ext",
+      "verified": true
+    },
+    "ic_tina.pdf": {
+      "chunk_count": 2375,
+      "percentage": 27.12,
+      "sample_text": "a                                   a\n                                                              ",
+      "verified": true
+    },
+    "descriptive_ic.pdf": {
+      "chunk_count": 1495,
+      "percentage": 17.07,
+      "sample_text": "ify the stronger in\n           each case. For each pair, briefly rationalize your answer.\n          ",
+      "verified": true
+    },
+    "descriptive_ic_house.pdf": {
+      "chunk_count": 1027,
+      "percentage": 11.73,
+      "sample_text": "arance. As in the case of interstitial hydrides, the composition\nof these materials may approach a s",
+      "verified": true
+    },
+    "concise_ic_jd_lee.pdf": {
+      "chunk_count": 565,
+      "percentage": 6.45,
+      "sample_text": "and so on for six ions Figure 3.1 Sizes of ions for\nround one. and eight ions round one. Coordinatio",
+      "verified": true
+    },
+    "ic_basset.pdf": {
+      "chunk_count": 446,
+      "percentage": 5.09,
+      "sample_text": "metals and hydrogen. Such an\narrangement of metals in order of their standard electrode poten-\ntials",
+      "verified": true
+    },
+    "advancex_ic_applicaionts.pdf": {
+      "chunk_count": 351,
+      "percentage": 4.01,
+      "sample_text": ", and\n    the structure will be with two octahedra sharing a vertex as shown\n    in Fig. 10.6.\n\nn FI",
+      "verified": true
+    },
+    "bioinorganic_chemistry_bertini_et_al.pdf": {
+      "chunk_count": 1,
+      "percentage": 0.01,
+      "sample_text": "This text covers material that could be included in a one-quarter or one-semester course in bioinorg",
+      "verified": true
+    },
+    "inorganic_chemistry_saito.pdf": {
+      "chunk_count": 1,
+      "percentage": 0.01,
+      "sample_text": "Inorganic chemistry is of fundamental importance not only as a basic science but also as one of the ",
+      "verified": true
+    },
+    "inorganic_chemistry_libretexts.pdf": {
+      "chunk_count": 1,
+      "percentage": 0.01,
+      "sample_text": "This text follows the organization around Miessler, Fischer and Tarr's textbook, but with content bu",
+      "verified": true
+    }
+  }
+}

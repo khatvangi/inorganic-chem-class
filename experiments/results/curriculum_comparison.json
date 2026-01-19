@@ -1,0 +1,70 @@
+{
+  "existing": {
+    "order": [
+      "Coordination Chemistry",
+      "Main Group Chemistry",
+      "Solid State Chemistry"
+    ],
+    "sessions": [
+      9,
+      7,
+      7
+    ]
+  },
+  "data_driven": {
+    "order": [
+      "Main Group Chemistry",
+      "Coordination Chemistry",
+      "Solid State Chemistry"
+    ],
+    "sessions": [
+      9,
+      10,
+      4
+    ],
+    "method": "coverage-proportional",
+    "rationale": "PageRank shows Main Group as most fundamental; Coverage suggests 43% time allocation"
+  },
+  "unit_stats": {
+    "main_group": {
+      "mentions": 1937,
+      "pagerank": 0.043723078365336294,
+      "topics": [
+        "Main Group Chemistry",
+        "Periodic Trends",
+        "Hydrogen And Hydrides",
+        "Acid-Base Chemistry",
+        "Redox Chemistry",
+        "Atmospheric Chemistry",
+        "Environmental Chemistry"
+      ]
+    },
+    "coordination": {
+      "mentions": 2073,
+      "pagerank": 0.015314315229240398,
+      "topics": [
+        "Coordination Chemistry",
+        "Crystal Field Theory",
+        "Molecular Orbital Theory",
+        "Chemical Bonding",
+        "Organometallic Chemistry",
+        "Catalysis",
+        "Transition Metal Chemistry",
+        "Bioinorganic Chemistry"
+      ]
+    },
+    "solid_state": {
+      "mentions": 809,
+      "pagerank": 0.00807579924715161,
+      "topics": [
+        "Solid State Chemistry",
+        "Electrochemistry",
+        "Crystal Structures",
+        "Thermochemistry",
+        "Polymer Chemistry",
+        "Nuclear Chemistry",
+        "Cluster Chemistry"
+      ]
+    }
+  }
+}

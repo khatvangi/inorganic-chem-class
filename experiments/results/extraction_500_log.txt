@@ -1,0 +1,460 @@
+============================================================
+GRANULARITY EXPERIMENT
+============================================================
+
+[1/3] Sampling diverse chunks...
+Found 6 books:
+  Inorganic_Chemistry_Atkins_Shriver.pdf: 2494 chunks
+  ic_basset.pdf: 446 chunks
+  descriptive_ic.pdf: 1495 chunks
+  ic_tina.pdf: 2375 chunks
+  advancex_ic_applicaionts.pdf: 351 chunks
+  concise_ic_jd_lee.pdf: 565 chunks
+Got 102 samples
+
+[2/3] Extracting at three levels with Qwen3...
+  [1/102] concise_ic_jd_lee.pdf... chunk 264
+       Topic: Periodic Trends and Atomic Properties
+       Subtopic: Electron Affinity and Ionization Energy Trends
+  [2/102] concise_ic_jd_lee.pdf... chunk 363
+       Topic: Coordination Compounds
+       Subtopic: Colligative Properties and Structure Determination
+  [3/102] ic_basset.pdf... chunk 0
+       Topic: Inorganic Chemistry
+       Subtopic: Textbook Introduction and Publication Information
+  [4/102] concise_ic_jd_lee.pdf... chunk 132
+       Topic: Solid State Chemistry
+       Subtopic: Defects in Solids and Electrical Conduction
+  [5/102] advancex_ic_applicaionts.pdf... chunk 100
+       Topic: Coordination Compounds
+       Subtopic: Molecular Orbital Theory and Ligand Orbitals
+  [6/102] ic_basset.pdf... chunk 234
+       Topic: Coordination Compounds
+       Subtopic: Complex Ion Formation and Structure
+  [7/102] ic_tina.pdf... chunk 1668
+       Topic: Electrochemical Reactions
+       Subtopic: Electron Transfer and Thermodynamics
+  [8/102] Inorganic_Chemistry_Atkins_Shr... chunk 1314
+       Topic: Redox Reactions and Electrochemistry
+       Subtopic: Oxidation-Reduction Mechanisms
+  [9/102] concise_ic_jd_lee.pdf... chunk 198
+       Topic: Molecular Orbital Theory
+       Subtopic: Molecular Orbital Diagrams and Bonding in Diatomic Molecules
+  [10/102] ic_tina.pdf... chunk 2085
+       Topic: Solid-State Chemistry
+       Subtopic: Mesostructured Materials and MCM-41
+  [11/102] descriptive_ic.pdf... chunk 348
+       Topic: Coordination Compounds
+       Subtopic: Applications of Coordination Compounds
+  [12/102] Inorganic_Chemistry_Atkins_Shr... chunk 730
+       Topic: Coordination Compounds
+       Subtopic: Stereochemistry and Isomerism
+  [13/102] ic_basset.pdf... chunk 416
+       Topic: Main Group Chemistry
+       Subtopic: Hydrolysis and Covalent Nature of Halides
+  [14/102] Inorganic_Chemistry_Atkins_Shr... chunk 584
+       Topic: Oxidation-Reduction Chemistry
+       Subtopic: Frost Diagrams and Redox Reactions
+  [15/102] ic_tina.pdf... chunk 1529
+       Topic: Crystal Field Theory
+       Subtopic: Ligand Field Stabilization Energy (LFSE)
+  [16/102] concise_ic_jd_lee.pdf... chunk 462
+       Topic: Main Group Chemistry
+       Subtopic: Hydrides and Their Properties
+  [17/102] descriptive_ic.pdf... chunk 1392
+       Topic: History of Inorganic Chemistry
+       Subtopic: Discovery of Noble Gases
+  [18/102] ic_tina.pdf... chunk 139
+       Topic: Molecular Structure and Bonding
+       Subtopic: Molecular Orbital Theory
+  [19/102] advancex_ic_applicaionts.pdf... chunk 120
+       Topic: Coordination Compounds
+       Subtopic: Polydentate Ligands
+  [20/102] advancex_ic_applicaionts.pdf... chunk 40
+       Topic: Main Group Chemistry
+       Subtopic: Stereochemistry and Molecular Dynamics
+  [21/102] descriptive_ic.pdf... chunk 957
+       Topic: Main Group Chemistry
+       Subtopic: Group 13 Elements and Their Properties
+  [22/102] concise_ic_jd_lee.pdf... chunk 396
+       Topic: Coordination Compounds
+       Subtopic: Ligand Field Theory
+  [23/102] concise_ic_jd_lee.pdf... chunk 231
+       Topic: Metallic Bonding
+       Subtopic: Properties and Behavior of Metallic Bonds
+  [24/102] concise_ic_jd_lee.pdf... chunk 330
+       Topic: Main Group Chemistry
+       Subtopic: Preparation and Properties of Elements and Compounds
+  [25/102] Inorganic_Chemistry_Atkins_Shr... chunk 2336
+       Topic: Biological Inorganic Chemistry
+       Subtopic: Acid-Base Catalysis
+  [26/102] advancex_ic_applicaionts.pdf... chunk 140
+       Topic: Coordination Compounds
+       Subtopic: Crystal Field Theory
+  [27/102] Inorganic_Chemistry_Atkins_Shr... chunk 2190
+       Topic: Coordination Chemistry
+       Subtopic: Catalytic Mechanisms
+  [28/102] Inorganic_Chemistry_Atkins_Shr... chunk 0
+       Topic: Periodic Table and Elemental Properties
+       Subtopic: Element Classification and Properties
+  [29/102] descriptive_ic.pdf... chunk 1044
+       Topic: Main Group Chemistry
+       Subtopic: Group 4A Elements and Their Oxides
+  [30/102] ic_tina.pdf... chunk 556
+       Topic: Electrochemistry
+       Subtopic: Frost Diagrams and Gibbs Energy
+  [31/102] descriptive_ic.pdf... chunk 0
+       Topic: Periodic Trends
+       Subtopic: Periodic Law and Trends
+  [32/102] ic_basset.pdf... chunk 104
+       Topic: Main Group Chemistry
+       Subtopic: Stereochemistry of Covalent Molecules
+  [33/102] Inorganic_Chemistry_Atkins_Shr... chunk 292
+       Topic: Solid State Chemistry
+       Subtopic: Ionic Crystal Structures
+  [34/102] advancex_ic_applicaionts.pdf... chunk 20
+       Topic: Quantum Mechanics in Chemistry
+       Subtopic: Term Symbols and Electron Configuration
+  [35/102] descriptive_ic.pdf... chunk 435
+       Topic: Crystal Structures and Lattices
+       Subtopic: Crystal Systems and Bravais Lattices
+  [36/102] ic_tina.pdf... chunk 834
+       Topic: Main Group Chemistry
+       Subtopic: Halides of Transition Metals and Post-Transition Metals
+  [37/102] descriptive_ic.pdf... chunk 174
+       Topic: Coordination Compounds
+       Subtopic: Lewis Acids and Bases in Coordination Chemistry
+  [38/102] advancex_ic_applicaionts.pdf... chunk 60
+       Topic: Symmetry and Molecular Structure
+       Subtopic: Point Groups and Symmetry Elements
+  [39/102] Inorganic_Chemistry_Atkins_Shr... chunk 146
+       Topic: Chemical Bonding
+       Subtopic: Lewis Structures and Electron Distribution
+  [40/102] ic_tina.pdf... chunk 695
+       Topic: Spectroscopy
+       Subtopic: UV-Visible Spectroscopy
+  [41/102] ic_tina.pdf... chunk 278
+       Topic: Crystal Structures and Packing
+       Subtopic: Close-Packed Structures in Metals
+  [42/102] descriptive_ic.pdf... chunk 870
+       Topic: Inorganic Chemistry Fundamentals
+       Subtopic: Reactions and Synthesis of Alkali Metal Compounds
+  [43/102] Inorganic_Chemistry_Atkins_Shr... chunk 1606
+       Topic: Coordination Compounds
+       Subtopic: Charge-Transfer Transitions
+  [44/102] ic_basset.pdf... chunk 208
+       Topic: Main Group Chemistry
+       Subtopic: Alkaline Earth Elements and Their Compounds
+  [45/102] descriptive_ic.pdf... chunk 261
+       Topic: Coordination Chemistry
+       Subtopic: Kinetics of Coordination Compounds
+  [46/102] ic_basset.pdf... chunk 338
+       Topic: Main Group Chemistry
+       Subtopic: Nitrogen and Its Compounds
+  [47/102] concise_ic_jd_lee.pdf... chunk 0
+       Topic: Inorganic Chemistry
+       Subtopic: Textbook Introduction and Publisher Information
+  [48/102] ic_tina.pdf... chunk 1946
+       Topic: Inorganic Solid State Chemistry
+       Subtopic: Perovskite Structures and Properties
+  [49/102] ic_basset.pdf... chunk 390
+       Topic: Oxides and Their Chemical Behavior
+       Subtopic: Acid-Base Character of Metal and Non-Metal Oxides
+  [50/102] advancex_ic_applicaionts.pdf... chunk 160
+       Topic: Coordination Chemistry
+       Subtopic: Molecular Orbital Theory in Metal Carbonyls
+  [51/102] advancex_ic_applicaionts.pdf... chunk 0
+       Topic: Applications in Everyday Life
+       Subtopic: Advanced Inorganic Chemistry Applications
+  [52/102] ic_basset.pdf... chunk 312
+       Topic: Main Group Chemistry
+       Subtopic: Reactions and Oxidation States of Group 14 Elements
+  [53/102] ic_basset.pdf... chunk 260
+       Topic: Inorganic Chemistry of Transition Metals
+       Subtopic: Reactivity of Coinage Metals with Acids and Complexing Agents
+  [54/102] descriptive_ic.pdf... chunk 1218
+       Topic: Main Group Chemistry
+       Subtopic: Group 5A: The Pnicogens
+  [55/102] advancex_ic_applicaionts.pdf... chunk 200
+       Topic: Coordination Compounds
+       Subtopic: Coordination Chemistry and Reaction Mechanisms
+  [56/102] advancex_ic_applicaionts.pdf... chunk 220
+       Topic: Coordination Chemistry
+       Subtopic: Electron Transfer Mechanisms
+  [57/102] descriptive_ic.pdf... chunk 87
+       Topic: Coordination Chemistry
+       Subtopic: Coordination Compounds and Ligands
+  [58/102] ic_tina.pdf... chunk 2224
+       Topic: Coordination Chemistry
+       Subtopic: Electronic Structure of Metal Complexes
+  [59/102] ic_basset.pdf... chunk 130
+       Topic: Electrochemistry
+       Subtopic: Electrolysis and Redox Reactions
+  [60/102] ic_basset.pdf... chunk 156
+       Topic: Electrochemical Processes
+       Subtopic: Electrolysis and Metal Refining
+  [61/102] ic_tina.pdf... chunk 1251
+       Topic: Main Group Chemistry
+       Subtopic: Oxidation States and Redox Behavior of Group 15 Elements
+  [62/102] advancex_ic_applicaionts.pdf... chunk 240
+       Topic: Crystal Field Theory
+       Subtopic: Electronic Spectra and Transitions
+  [63/102] Inorganic_Chemistry_Atkins_Shr... chunk 438
+       Topic: Acids and Bases
+       Subtopic: Solvent System Definition of Acids and Bases
+  [64/102] concise_ic_jd_lee.pdf... chunk 528
+       Topic: Coordination Compounds
+       Subtopic: Hydration and Crystal Field Theory
+  [65/102] ic_tina.pdf... chunk 0
+       Topic: Periodic Table and Elemental Properties
+       Subtopic: Elemental Data and Classification
+  [66/102] Inorganic_Chemistry_Atkins_Shr... chunk 1898
+       Topic: Coordination Compounds
+       Subtopic: Lanthanide Complexes and Ligand Behavior
+  [67/102] Inorganic_Chemistry_Atkins_Shr... chunk 1022
+       Topic: Ionic Bonding and Lattice Energy
+       Subtopic: Lattice Enthalpy and Solubility of Salts
+  [68/102] concise_ic_jd_lee.pdf... chunk 99
+       Topic: Inorganic Solid State Chemistry
+       Subtopic: Radius Ratio and Crystal Structure Prediction
+  [69/102] ic_basset.pdf... chunk 52
+       Topic: Electronic Structure and Periodicity
+       Subtopic: Electron Configuration Patterns
+  [70/102] advancex_ic_applicaionts.pdf... chunk 260
+       Topic: Main Group Chemistry
+       Subtopic: Heteroboranes and Metallacarboranes
+  [71/102] descriptive_ic.pdf... chunk 609
+       Topic: Main Group Chemistry
+       Subtopic: Inert-Pair Effect
+  [72/102] advancex_ic_applicaionts.pdf... chunk 80
+       Topic: Group Theory and Molecular Symmetry
+       Subtopic: Character Tables and Point Groups
+  [73/102] concise_ic_jd_lee.pdf... chunk 165
+       Topic: Molecular Structure and Bonding
+       Subtopic: VSEPR Theory and Molecular Geometry
+  [74/102] Inorganic_Chemistry_Atkins_Shr... chunk 876
+       Topic: Periodic Trends
+       Subtopic: Electronegativity and Periodic Trends
+  [75/102] descriptive_ic.pdf... chunk 522
+       Topic: Solid-State Chemistry
+       Subtopic: Born-Haber Cycles and Lattice Energy Calculations
+  [76/102] ic_tina.pdf... chunk 417
+       Topic: Acid-Base Chemistry
+       Subtopic: Acid-Base Equilibria and Thermodynamics
+  [77/102] Inorganic_Chemistry_Atkins_Shr... chunk 2044
+       Topic: Inorganic Pigments and Color Chemistry
+       Subtopic: Electronic Transitions and Color Formation
+  [78/102] concise_ic_jd_lee.pdf... chunk 495
+       Topic: Main Group Chemistry
+       Subtopic: Alkali Metals and Ionic Bonding
+  [79/102] advancex_ic_applicaionts.pdf... chunk 180
+       Topic: Coordination Compounds
+       Subtopic: Coordination Number and Reaction Mechanism
+  [80/102] ic_basset.pdf... chunk 78
+       Topic: Main Group Chemistry
+       Subtopic: Electronegativity and Chemical Bonding
+  [81/102] ic_basset.pdf... chunk 26
+       Topic: Radioactivity and Nuclear Chemistry
+       Subtopic: Radioactive Decay and Half-Life
+  [82/102] descriptive_ic.pdf... chunk 1305
+       Topic: Main Group Chemistry
+       Subtopic: Discovery and Properties of Iodine
+  [83/102] ic_basset.pdf... chunk 182
+       Topic: Main Group Chemistry
+       Subtopic: Oxidation States and Oxides of Alkali Metals
+  [84/102] descriptive_ic.pdf... chunk 1131
+       Topic: Main Group Chemistry
+       Subtopic: Nitrogen Compounds and Bonding
+  [85/102] ic_tina.pdf... chunk 973
+       Topic: Main Group Chemistry
+       Subtopic: Group 1 Elements and Their Properties
+  [86/102] Inorganic_Chemistry_Atkins_Shr... chunk 1460
+       Topic: Coordination Chemistry
+       Subtopic: Electronic Structure and Color of Transition Metal Complexes
+  [87/102] advancex_ic_applicaionts.pdf... chunk 280
+       Topic: Cluster Chemistry
+       Subtopic: Isolobal Fragments and Their Relationships
+  [88/102] descriptive_ic.pdf... chunk 783
+       Topic: Environmental Chemistry
+       Subtopic: Greenhouse Gases and Atmospheric Chemistry
+  [89/102] concise_ic_jd_lee.pdf... chunk 429
+       Topic: Coordination Compounds
+       Subtopic: Crystal Field Theory and Electronic Transitions
+  [90/102] ic_tina.pdf... chunk 1390
+       Topic: Chemical Bonding
+       Subtopic: Bond Order and Molecular Structure
+  [91/102] Inorganic_Chemistry_Atkins_Shr... chunk 1752
+       Topic: Coordination Compounds
+       Subtopic: Metal-Ligand Bonding and Electronic Structure
+  [92/102] advancex_ic_applicaionts.pdf... chunk 300
+       Topic: Catalysis with Organometallics
+       Subtopic: Mechanisms of Catalytic Reactions
+  [93/102] ic_basset.pdf... chunk 364
+       Topic: Main Group Chemistry
+       Subtopic: Oxides and Oxyacids of the Nitrogen Family
+  [94/102] ic_tina.pdf... chunk 1112
+       Topic: Main Group Chemistry
+       Subtopic: Zintl Phases and Organometallic Compounds
+  [95/102] descriptive_ic.pdf... chunk 696
+       Topic: Inorganic Chemistry
+       Subtopic: Hydrogen Compounds and Their Reactions
+  [96/102] Inorganic_Chemistry_Atkins_Shr... chunk 1168
+       Topic: Main Group Chemistry
+       Subtopic: Extended Silicon-Oxygen Compounds
+  [97/102] ic_tina.pdf... chunk 1807
+       Topic: Catalytic Chemistry
+       Subtopic: Mechanisms of Oxidation Reactions
+  [98/102] concise_ic_jd_lee.pdf... chunk 66
+       Topic: Main Group Chemistry
+       Subtopic: Ionic Bonding and Electron Transfer
+  [99/102] ic_basset.pdf... chunk 286
+       Topic: Main Group Chemistry
+       Subtopic: Oxy-acid Salts and Hydrolysis
+  [100/102] concise_ic_jd_lee.pdf... chunk 33
+       Topic: Quantum Mechanics
+       Subtopic: Schrodinger Equation
+  [101/102] advancex_ic_applicaionts.pdf... chunk 320
+       Topic: Bioinorganic Chemistry and Applications
+       Subtopic: MRI Contrast Agents
+  [102/102] concise_ic_jd_lee.pdf... chunk 297
+       Topic: Main Group Chemistry
+       Subtopic: Periodic Trends and Atomic Properties
+
+Saved 102 extractions to experiments/results/granularity_experiment_500.json
+
+[3/3] Analyzing results...
+
+============================================================
+ANALYSIS RESULTS
+============================================================
+
+📊 LEVEL 1 - TOPICS (44 unique)
+----------------------------------------
+   27x | Main Group Chemistry
+   16x | Coordination Compounds
+    7x | Coordination Chemistry
+    3x | Inorganic Chemistry
+    2x | Solid State Chemistry
+    2x | Solid-State Chemistry
+    2x | Crystal Field Theory
+    2x | Molecular Structure and Bonding
+    2x | Periodic Table and Elemental Properties
+    2x | Electrochemistry
+    2x | Periodic Trends
+    2x | Chemical Bonding
+    2x | Inorganic Solid State Chemistry
+    1x | Periodic Trends and Atomic Properties
+    1x | Electrochemical Reactions
+    1x | Redox Reactions and Electrochemistry
+    1x | Molecular Orbital Theory
+    1x | Oxidation-Reduction Chemistry
+    1x | History of Inorganic Chemistry
+    1x | Metallic Bonding
+
+📊 LEVEL 2 - SUBTOPICS (102 unique)
+----------------------------------------
+    1x | Electron Affinity and Ionization Energy Trends
+    1x | Colligative Properties and Structure Determination
+    1x | Textbook Introduction and Publication Information
+    1x | Defects in Solids and Electrical Conduction
+    1x | Molecular Orbital Theory and Ligand Orbitals
+    1x | Complex Ion Formation and Structure
+    1x | Electron Transfer and Thermodynamics
+    1x | Oxidation-Reduction Mechanisms
+    1x | Molecular Orbital Diagrams and Bonding in Diatomic Molecules
+    1x | Mesostructured Materials and MCM-41
+    1x | Applications of Coordination Compounds
+    1x | Stereochemistry and Isomerism
+    1x | Hydrolysis and Covalent Nature of Halides
+    1x | Frost Diagrams and Redox Reactions
+    1x | Ligand Field Stabilization Energy (LFSE)
+    1x | Hydrides and Their Properties
+    1x | Discovery of Noble Gases
+    1x | Molecular Orbital Theory
+    1x | Polydentate Ligands
+    1x | Stereochemistry and Molecular Dynamics
+    1x | Group 13 Elements and Their Properties
+    1x | Ligand Field Theory
+    1x | Properties and Behavior of Metallic Bonds
+    1x | Preparation and Properties of Elements and Compounds
+    1x | Acid-Base Catalysis
+
+📊 LEVEL 3 - KEY CONCEPTS (408 unique)
+----------------------------------------
+    6x | d-orbital splitting
+    5x | Electronegativity
+    4x | Coordination number
+    4x | Oxidation states
+    3x | Electron Affinity
+    3x | Inert-pair effect
+    3x | Electron configuration
+    3x | Ionization energy
+    2x | Ionization Energy
+    2x | Ligands
+    2x | Octahedral geometry
+    2x | Electron transfer
+    2x | Molecular Orbital Theory
+    2x | Hydrides
+    2x | oxidation states
+    2x | Crystal Field Theory
+    2x | Atomic number
+    2x | Molar mass
+    2x | Close-packed structures
+    2x | Complexing agents
+    2x | Hybridization
+    2x | Electrolysis
+    2x | Electron affinity
+    2x | d-d transitions
+    2x | Ionic bonding
+    1x | Atomic Radius
+    1x | Cryoscopic measurements
+    1x | Freezing point depression
+    1x | Electrolytic dissociation
+    1x | Pergamon Press
+
+🔗 PREREQUISITES (209 unique)
+----------------------------------------
+    7x | Redox reactions
+    7x | Periodic trends
+    6x | Coordination chemistry basics
+    6x | Electron configuration
+    4x | Basic knowledge of atomic structure
+    4x | Coordination chemistry
+    4x | Understanding of ionic bonding
+    4x | Electronic configurations of transition metals
+    3x | Understanding of periodic table trends
+    3x | Crystal Field Theory basics
+    3x | Understanding of periodic trends
+    3x | Acid-base reactions
+    2x | Understanding of crystal structures
+    2x | Basic knowledge of ionic bonding
+    2x | Molecular orbital theory
+
+➡️  LEADS TO (165 unique)
+----------------------------------------
+    9x | Coordination chemistry
+    7x | Crystal Field Theory
+    5x | Crystal field theory
+    4x | Ligand Field Theory
+    3x | Electrochemical cells
+    3x | Electrochemistry
+    3x | Periodic trends
+    3x | Oxidation-reduction reactions
+    2x | Chemical Bonding
+    2x | Electrochemical processes
+    2x | Coordination Chemistry
+    2x | Spectrochemical series
+    2x | Crystal Field Stabilization Energy (CFSE)
+    2x | Industrial chemical processes
+    2x | Magnetic properties of complexes
+
+============================================================
+SUMMARY
+============================================================
+  Topics:       44 unique (target: 15-25)
+  Subtopics:   102 unique (target: 100-200)
+  Concepts:    408 unique (target: 500-1000)
+  Prereqs:     209 unique
+  Leads-to:    165 unique
+
+Analysis saved to experiments/results/granularity_analysis_500.json

@@ -1,0 +1,513 @@
+{
+  "metadata": {
+    "subfield": "inorganic",
+    "course_code": "CHEM 361",
+    "course_title": "Inorganic Chemistry",
+    "level": "300",
+    "credits": 3,
+    "generated_at": "2026-01-18",
+    "source_manifest": "verified_manifest.json",
+    "knowledge_graph": "chemkg_enhanced.json",
+    "methodology": "Data-driven: PageRank centrality + prerequisite topology from 8,756 textbook chunks"
+  },
+
+  "verified_sources": [
+    {"short": "Atkins", "pdf": "Inorganic_Chemistry_Atkins_Shriver.pdf", "chunks": 2494, "strength": "coordination theory, thermodynamics"},
+    {"short": "Housecroft", "pdf": "ic_tina.pdf", "chunks": 2375, "strength": "main group, visuals, applications"},
+    {"short": "Douglas", "pdf": "descriptive_ic.pdf", "chunks": 1495, "strength": "descriptive, worked examples"},
+    {"short": "House", "pdf": "descriptive_ic_house.pdf", "chunks": 1027, "strength": "main group, coordination practical"},
+    {"short": "JD Lee", "pdf": "concise_ic_jd_lee.pdf", "chunks": 565, "strength": "solid state, readability"},
+    {"short": "Basset", "pdf": "ic_basset.pdf", "chunks": 446, "strength": "nomenclature, quantitative"},
+    {"short": "Advanced", "pdf": "advancex_ic_applicaionts.pdf", "chunks": 351, "strength": "group theory, mechanisms"}
+  ],
+
+  "units": [
+    {
+      "unit": 1,
+      "title": "Atomic Structure & Periodicity",
+      "description": "Foundation: quantum basis of periodic properties",
+      "scale_focus": "QUANTUM → DESCRIPTIVE",
+      "primary_source": "JD Lee",
+      "secondary_sources": ["Housecroft", "House"],
+      "pagerank_basis": ["Atomic Structure (0.0030)", "Periodic Trends (0.0120)"],
+      "sessions": [
+        {
+          "session": 1,
+          "title": "Atomic Structure Review",
+          "scale": "QUANTUM",
+          "topics": ["Quantum numbers", "Orbital shapes", "Electron configuration", "Shielding"],
+          "learning_objectives": [
+            "Write electron configurations for any element",
+            "Explain shielding and penetration effects",
+            "Relate quantum numbers to orbital properties"
+          ],
+          "sources": {"theory": "JD Lee", "visuals": "Housecroft"}
+        },
+        {
+          "session": 2,
+          "title": "Periodic Trends: Size & Ionization",
+          "scale": "DESCRIPTIVE",
+          "topics": ["Atomic radius trends", "Ionic radii", "Ionization energy", "Effective nuclear charge"],
+          "learning_objectives": [
+            "Predict atomic/ionic radii across periods and down groups",
+            "Explain ionization energy trends and anomalies",
+            "Calculate effective nuclear charge (Slater's rules)"
+          ],
+          "sources": {"theory": "JD Lee", "examples": "House", "data": "Housecroft"}
+        },
+        {
+          "session": 3,
+          "title": "Periodic Trends: Electronegativity & Electron Affinity",
+          "scale": "DESCRIPTIVE",
+          "topics": ["Pauling electronegativity", "Mulliken scale", "Electron affinity", "Diagonal relationships"],
+          "learning_objectives": [
+            "Compare electronegativity scales and their basis",
+            "Explain electron affinity trends",
+            "Identify and explain diagonal relationships"
+          ],
+          "sources": {"theory": "JD Lee", "examples": "Douglas"}
+        }
+      ]
+    },
+
+    {
+      "unit": 2,
+      "title": "Main Group Chemistry",
+      "description": "Descriptive chemistry of s- and p-block elements",
+      "scale_focus": "DESCRIPTIVE",
+      "primary_source": "House",
+      "secondary_sources": ["Douglas", "Housecroft", "JD Lee"],
+      "pagerank_basis": ["Main Group Chemistry (0.0204) - highest centrality"],
+      "sessions": [
+        {
+          "session": 4,
+          "title": "Hydrogen & Hydrides",
+          "scale": "DESCRIPTIVE",
+          "topics": ["Hydrogen unique position", "Ionic hydrides", "Covalent hydrides", "Metallic hydrides", "Hydrogen bonding"],
+          "learning_objectives": [
+            "Classify hydrides by bonding type",
+            "Explain hydrogen's unique periodic position",
+            "Describe hydrogen bonding and its importance"
+          ],
+          "sources": {"theory": "House", "applications": "Housecroft"}
+        },
+        {
+          "session": 5,
+          "title": "Groups 1 & 2: Alkali & Alkaline Earth",
+          "scale": "DESCRIPTIVE",
+          "topics": ["s-block reactivity", "Flame tests", "Solubility trends", "Diagonal relationship Li-Mg"],
+          "learning_objectives": [
+            "Predict reactivity patterns in Groups 1 and 2",
+            "Explain solubility and thermal stability trends",
+            "Describe the Li-Mg diagonal relationship"
+          ],
+          "sources": {"theory": "House", "examples": "Douglas", "visuals": "Housecroft"}
+        },
+        {
+          "session": 6,
+          "title": "Group 13: Boron & Aluminum",
+          "scale": "DESCRIPTIVE",
+          "topics": ["Boron chemistry", "Boranes", "Aluminum amphotericity", "Lewis acidity"],
+          "learning_objectives": [
+            "Describe borane bonding (3-center-2-electron)",
+            "Explain aluminum's amphoteric behavior",
+            "Predict Lewis acid behavior"
+          ],
+          "sources": {"theory": "House", "structures": "Douglas"}
+        },
+        {
+          "session": 7,
+          "title": "Group 14: Carbon & Silicon",
+          "scale": "DESCRIPTIVE",
+          "topics": ["Carbon allotropes", "Silicon chemistry", "Silicates", "Inert pair effect introduction"],
+          "learning_objectives": [
+            "Compare carbon and silicon bonding",
+            "Describe silicate structures",
+            "Introduce inert pair effect concept"
+          ],
+          "sources": {"theory": "House", "applications": "Housecroft"}
+        },
+        {
+          "session": 8,
+          "title": "Group 15: Nitrogen & Phosphorus",
+          "scale": "DESCRIPTIVE",
+          "topics": ["N2 triple bond strength", "Phosphorus allotropes", "Oxides and oxyacids", "N vs P multiple bonding"],
+          "learning_objectives": [
+            "Explain why N2 is so stable",
+            "Compare nitrogen and phosphorus chemistry",
+            "Predict oxyacid strengths"
+          ],
+          "sources": {"theory": "House", "examples": "Douglas"}
+        },
+        {
+          "session": 9,
+          "title": "Group 16: Oxygen & Sulfur",
+          "scale": "DESCRIPTIVE",
+          "topics": ["Oxygen reactivity", "Sulfur allotropes", "Catenation", "Oxyacids of sulfur"],
+          "learning_objectives": [
+            "Explain oxygen's high electronegativity effects",
+            "Describe sulfur catenation",
+            "Compare sulfur oxyacids"
+          ],
+          "sources": {"theory": "House", "visuals": "Housecroft"}
+        },
+        {
+          "session": 10,
+          "title": "Group 17: Halogens",
+          "scale": "DESCRIPTIVE",
+          "topics": ["Halogen reactivity trends", "Interhalogen compounds", "Pseudohalogens", "HX acid strength"],
+          "learning_objectives": [
+            "Rank halogen oxidizing power",
+            "Predict interhalogen formulas",
+            "Explain HX acid strength trends"
+          ],
+          "sources": {"theory": "House", "data": "JD Lee"}
+        },
+        {
+          "session": 11,
+          "title": "Group 18: Noble Gases",
+          "scale": "DESCRIPTIVE",
+          "topics": ["Noble gas compounds", "XeF2, XeF4, XeF6", "VSEPR predictions", "Bonding in noble gas compounds"],
+          "learning_objectives": [
+            "Explain why noble gases form compounds",
+            "Predict geometries of noble gas compounds",
+            "Describe bonding in XeF compounds"
+          ],
+          "sources": {"theory": "House", "examples": "Douglas"}
+        }
+      ]
+    },
+
+    {
+      "unit": 3,
+      "title": "Symmetry & Group Theory",
+      "description": "Mathematical framework for molecular structure analysis",
+      "scale_focus": "STRUCTURAL",
+      "primary_source": "Advanced",
+      "secondary_sources": ["Atkins", "Housecroft"],
+      "pagerank_basis": ["Molecular Symmetry (0.0007)", "Symmetry And Group Theory (0.0003)"],
+      "sessions": [
+        {
+          "session": 12,
+          "title": "Symmetry Elements & Operations",
+          "scale": "STRUCTURAL",
+          "topics": ["Identity E", "Rotation axes Cn", "Mirror planes σ", "Inversion center i", "Improper rotation Sn"],
+          "learning_objectives": [
+            "Identify all symmetry elements in a molecule",
+            "Perform symmetry operations",
+            "Distinguish σv, σh, σd planes"
+          ],
+          "sources": {"theory": "Advanced", "examples": "Atkins"}
+        },
+        {
+          "session": 13,
+          "title": "Point Groups",
+          "scale": "STRUCTURAL",
+          "topics": ["Point group assignment", "C groups", "D groups", "Special groups (Td, Oh, etc.)", "Flowchart method"],
+          "learning_objectives": [
+            "Assign point groups to any molecule",
+            "Use the systematic flowchart",
+            "Recognize common point groups"
+          ],
+          "sources": {"theory": "Advanced", "practice": "Housecroft"}
+        },
+        {
+          "session": 14,
+          "title": "Character Tables & Representations",
+          "scale": "STRUCTURAL",
+          "topics": ["Character tables", "Irreducible representations", "Reducible representations", "Mulliken symbols"],
+          "learning_objectives": [
+            "Read and interpret character tables",
+            "Identify irreducible representations",
+            "Use Mulliken notation"
+          ],
+          "sources": {"theory": "Advanced", "tables": "Atkins"}
+        },
+        {
+          "session": 15,
+          "title": "Applications of Group Theory",
+          "scale": "STRUCTURAL → ELECTRONIC",
+          "topics": ["Symmetry-adapted orbitals", "IR/Raman selection rules", "Orbital symmetry in bonding"],
+          "learning_objectives": [
+            "Predict IR and Raman activity",
+            "Construct symmetry-adapted linear combinations",
+            "Apply group theory to MO diagrams"
+          ],
+          "sources": {"theory": "Advanced", "applications": "Atkins"}
+        }
+      ]
+    },
+
+    {
+      "unit": 4,
+      "title": "Coordination Chemistry",
+      "description": "Structure, nomenclature, and isomerism of metal complexes",
+      "scale_focus": "STRUCTURAL",
+      "primary_source": "Atkins",
+      "secondary_sources": ["House", "Basset"],
+      "pagerank_basis": ["Coordination Chemistry (0.0049)"],
+      "sessions": [
+        {
+          "session": 16,
+          "title": "Introduction to Coordination Compounds",
+          "scale": "STRUCTURAL",
+          "topics": ["Werner's theory", "Coordination sphere", "Primary/secondary valence", "Coordination number"],
+          "learning_objectives": [
+            "Define coordination compound terminology",
+            "Identify coordination sphere and counter ions",
+            "Determine coordination number and geometry"
+          ],
+          "sources": {"theory": "Atkins", "history": "House"}
+        },
+        {
+          "session": 17,
+          "title": "Ligands & Denticity",
+          "scale": "STRUCTURAL",
+          "topics": ["Monodentate ligands", "Bidentate/polydentate", "Chelate effect", "Macrocyclic effect"],
+          "learning_objectives": [
+            "Classify ligands by denticity",
+            "Explain chelate effect thermodynamically",
+            "Identify common ligand abbreviations"
+          ],
+          "sources": {"theory": "Atkins", "examples": "House", "tables": "Basset"}
+        },
+        {
+          "session": 18,
+          "title": "IUPAC Nomenclature",
+          "scale": "STRUCTURAL",
+          "topics": ["Naming ligands", "Naming complexes", "Oxidation state notation", "Bridging ligands μ"],
+          "learning_objectives": [
+            "Name any coordination compound",
+            "Write formula from name",
+            "Handle bridging and ambidentate ligands"
+          ],
+          "sources": {"theory": "Basset", "practice": "House"}
+        },
+        {
+          "session": 19,
+          "title": "Geometric Isomerism",
+          "scale": "STRUCTURAL",
+          "topics": ["cis-trans isomers", "fac-mer isomers", "Square planar isomerism", "Octahedral isomerism"],
+          "learning_objectives": [
+            "Identify all geometric isomers",
+            "Assign cis/trans and fac/mer labels",
+            "Count isomers for complex formulas"
+          ],
+          "sources": {"theory": "Atkins", "diagrams": "Basset"}
+        },
+        {
+          "session": 20,
+          "title": "Optical Isomerism",
+          "scale": "STRUCTURAL",
+          "topics": ["Chirality in complexes", "Δ and Λ notation", "Optical activity", "Resolution methods"],
+          "learning_objectives": [
+            "Identify chiral complexes",
+            "Assign absolute configuration (Δ/Λ)",
+            "Explain optical resolution"
+          ],
+          "sources": {"theory": "Atkins", "examples": "House"}
+        }
+      ]
+    },
+
+    {
+      "unit": 5,
+      "title": "Electronic Structure of Complexes",
+      "description": "Crystal field theory, MO theory, and spectroscopic properties",
+      "scale_focus": "ELECTRONIC",
+      "primary_source": "Atkins",
+      "secondary_sources": ["Advanced", "JD Lee"],
+      "pagerank_basis": ["Crystal Field Theory (0.0017)", "Molecular Orbital Theory (0.0030)"],
+      "sessions": [
+        {
+          "session": 21,
+          "title": "Crystal Field Theory: Octahedral",
+          "scale": "ELECTRONIC",
+          "topics": ["d-orbital splitting", "Δo (10Dq)", "t2g and eg orbitals", "Electrostatic model"],
+          "learning_objectives": [
+            "Explain origin of crystal field splitting",
+            "Draw d-orbital splitting diagrams",
+            "Define Δo and its units"
+          ],
+          "sources": {"theory": "Atkins", "diagrams": "JD Lee"}
+        },
+        {
+          "session": 22,
+          "title": "Spectrochemical Series & Field Strength",
+          "scale": "ELECTRONIC",
+          "topics": ["Spectrochemical series", "Strong vs weak field ligands", "Factors affecting Δ"],
+          "learning_objectives": [
+            "Order ligands by field strength",
+            "Predict relative Δ values",
+            "Explain factors affecting field strength"
+          ],
+          "sources": {"theory": "Atkins", "data": "Advanced"}
+        },
+        {
+          "session": 23,
+          "title": "CFT: Other Geometries",
+          "scale": "ELECTRONIC",
+          "topics": ["Tetrahedral splitting", "Δt = 4/9 Δo", "Square planar splitting", "d8 preference for square planar"],
+          "learning_objectives": [
+            "Draw splitting diagrams for Td and D4h",
+            "Explain why Δt < Δo",
+            "Predict geometry from d-electron count"
+          ],
+          "sources": {"theory": "Atkins", "comparison": "Advanced"}
+        },
+        {
+          "session": 24,
+          "title": "CFSE & Spin States",
+          "scale": "ELECTRONIC",
+          "topics": ["Crystal field stabilization energy", "High-spin vs low-spin", "Pairing energy", "Spin crossover"],
+          "learning_objectives": [
+            "Calculate CFSE for any d configuration",
+            "Predict spin state from Δ and P",
+            "Explain spin crossover phenomenon"
+          ],
+          "sources": {"theory": "Atkins", "calculations": "Advanced"}
+        },
+        {
+          "session": 25,
+          "title": "Color & d-d Transitions",
+          "scale": "ELECTRONIC",
+          "topics": ["d-d transitions", "Selection rules", "Laporte rule", "Complementary colors"],
+          "learning_objectives": [
+            "Explain color from d-d transitions",
+            "Apply selection rules",
+            "Predict color from absorption spectrum"
+          ],
+          "sources": {"theory": "Atkins", "spectra": "House"}
+        },
+        {
+          "session": 26,
+          "title": "Magnetism",
+          "scale": "ELECTRONIC",
+          "topics": ["Paramagnetism vs diamagnetism", "Spin-only formula", "Magnetic moment μ", "Magnetic susceptibility"],
+          "learning_objectives": [
+            "Calculate magnetic moment",
+            "Determine number of unpaired electrons",
+            "Distinguish high-spin and low-spin magnetically"
+          ],
+          "sources": {"theory": "Atkins", "examples": "JD Lee"}
+        },
+        {
+          "session": 27,
+          "title": "MO Theory for Complexes",
+          "scale": "ELECTRONIC",
+          "topics": ["σ-bonding in octahedral", "π-bonding effects", "π-donor vs π-acceptor ligands", "Nephelauxetic effect"],
+          "learning_objectives": [
+            "Construct MO diagrams for ML6",
+            "Explain π-bonding effects on Δ",
+            "Relate MO theory to spectrochemical series"
+          ],
+          "sources": {"theory": "Atkins", "advanced": "Advanced"}
+        }
+      ]
+    },
+
+    {
+      "unit": 6,
+      "title": "Solid State Chemistry",
+      "description": "Crystal structures, bonding, and electronic properties of solids",
+      "scale_focus": "STRUCTURAL → ELECTRONIC",
+      "primary_source": "JD Lee",
+      "secondary_sources": ["Atkins", "Housecroft"],
+      "pagerank_basis": ["Solid State Chemistry (0.0039)"],
+      "sessions": [
+        {
+          "session": 28,
+          "title": "Crystal Systems & Unit Cells",
+          "scale": "STRUCTURAL",
+          "topics": ["7 crystal systems", "14 Bravais lattices", "Unit cell parameters", "Miller indices"],
+          "learning_objectives": [
+            "Identify crystal systems",
+            "Describe unit cell types",
+            "Assign Miller indices to planes"
+          ],
+          "sources": {"theory": "JD Lee", "visuals": "Housecroft"}
+        },
+        {
+          "session": 29,
+          "title": "Close Packing & Holes",
+          "scale": "STRUCTURAL",
+          "topics": ["hcp and ccp packing", "Packing efficiency", "Tetrahedral holes", "Octahedral holes"],
+          "learning_objectives": [
+            "Distinguish hcp from ccp",
+            "Calculate packing efficiency",
+            "Locate and count interstitial holes"
+          ],
+          "sources": {"theory": "JD Lee", "diagrams": "Housecroft"}
+        },
+        {
+          "session": 30,
+          "title": "Ionic Crystal Structures",
+          "scale": "STRUCTURAL",
+          "topics": ["NaCl structure", "CsCl structure", "Fluorite/antifluorite", "Radius ratio rules"],
+          "learning_objectives": [
+            "Describe common ionic structures",
+            "Apply radius ratio rules",
+            "Predict structure from ion sizes"
+          ],
+          "sources": {"theory": "JD Lee", "examples": "House"}
+        },
+        {
+          "session": 31,
+          "title": "Lattice Energy",
+          "scale": "ELECTRONIC",
+          "topics": ["Born-Landé equation", "Madelung constant", "Born-Haber cycle", "Kapustinskii equation"],
+          "learning_objectives": [
+            "Calculate lattice energy",
+            "Construct Born-Haber cycles",
+            "Explain factors affecting lattice energy"
+          ],
+          "sources": {"theory": "JD Lee", "calculations": "Atkins"}
+        },
+        {
+          "session": 32,
+          "title": "Defects & Nonstoichiometry",
+          "scale": "STRUCTURAL",
+          "topics": ["Point defects", "Schottky defects", "Frenkel defects", "Nonstoichiometric compounds"],
+          "learning_objectives": [
+            "Identify defect types",
+            "Explain defect formation",
+            "Relate defects to properties"
+          ],
+          "sources": {"theory": "JD Lee", "applications": "Housecroft"}
+        },
+        {
+          "session": 33,
+          "title": "Band Theory",
+          "scale": "ELECTRONIC",
+          "topics": ["Band formation from MOs", "Band gap", "Conductors/semiconductors/insulators", "Doping"],
+          "learning_objectives": [
+            "Explain band formation",
+            "Classify materials by band gap",
+            "Describe n-type and p-type doping"
+          ],
+          "sources": {"theory": "Atkins", "examples": "JD Lee"}
+        }
+      ]
+    }
+  ],
+
+  "summary": {
+    "total_units": 6,
+    "total_sessions": 33,
+    "scale_distribution": {
+      "QUANTUM": 1,
+      "DESCRIPTIVE": 11,
+      "STRUCTURAL": 13,
+      "ELECTRONIC": 8
+    },
+    "unit_sequence": [
+      "Unit 1: Atomic Structure & Periodicity (3 sessions) - QUANTUM foundation",
+      "Unit 2: Main Group Chemistry (8 sessions) - DESCRIPTIVE core",
+      "Unit 3: Symmetry & Group Theory (4 sessions) - STRUCTURAL tools",
+      "Unit 4: Coordination Chemistry (5 sessions) - STRUCTURAL complexes",
+      "Unit 5: Electronic Structure (7 sessions) - ELECTRONIC properties",
+      "Unit 6: Solid State Chemistry (6 sessions) - STRUCTURAL/ELECTRONIC solids"
+    ],
+    "data_driven_rationale": "Sequence follows PageRank centrality: Main Group (0.020) most central, supports Coordination (0.005) and Solid State (0.004). Symmetry positioned before Coordination as prerequisite for understanding molecular geometry and spectroscopy."
+  }
+}

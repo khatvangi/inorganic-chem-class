@@ -1,0 +1,233 @@
+{
+  "course": {
+    "code": "CHEM 361",
+    "name": "Inorganic Chemistry",
+    "term": "Spring 2025",
+    "type": "one_semester_condensed",
+    "instructor": "Kiran Boggavarapu",
+    "schedule": "TR 8:00-9:15 AM",
+    "note": "Condensed version - most universities teach this over 2 semesters"
+  },
+  "methodology": {
+    "approach": "data-driven",
+    "source": "Knowledge graph from 7 textbooks",
+    "ordering": "Main Group \u2192 Coordination \u2192 Solid State (by PageRank)"
+  },
+  "units": [
+    {
+      "id": 1,
+      "name": "Main Group Chemistry",
+      "weeks": "1-5",
+      "sessions": 9,
+      "scale": "DESCRIPTIVE",
+      "coverage": "40%"
+    },
+    {
+      "id": 2,
+      "name": "Coordination Chemistry",
+      "weeks": "6-10",
+      "sessions": 8,
+      "scale": "STRUCTURAL\u2192ELECTRONIC",
+      "coverage": "43%"
+    },
+    {
+      "id": 3,
+      "name": "Solid State Chemistry",
+      "weeks": "11-15",
+      "sessions": 5,
+      "scale": "STRUCTURAL+ELECTRONIC",
+      "coverage": "17%"
+    }
+  ],
+  "classes": [
+    {
+      "week": 1,
+      "session": 1,
+      "topic": "Periodic trends: atomic properties",
+      "scale": "DESCRIPTIVE"
+    },
+    {
+      "week": 1,
+      "session": 2,
+      "topic": "Ionization energy, electronegativity",
+      "scale": "DESCRIPTIVE",
+      "quiz": 1
+    },
+    {
+      "week": 2,
+      "session": 3,
+      "topic": "Hydrogen; hydrides",
+      "scale": "DESCRIPTIVE"
+    },
+    {
+      "week": 2,
+      "session": 4,
+      "topic": "Groups 1 & 2: alkali/alkaline earth",
+      "scale": "DESCRIPTIVE",
+      "quiz": 2
+    },
+    {
+      "week": 3,
+      "session": 5,
+      "topic": "Groups 13-14: B, Al, C, Si",
+      "scale": "DESCRIPTIVE"
+    },
+    {
+      "week": 3,
+      "session": 6,
+      "topic": "Groups 15-16: N, P, O, S",
+      "scale": "DESCRIPTIVE",
+      "quiz": 3
+    },
+    {
+      "week": 4,
+      "session": 7,
+      "topic": "Group 17: Halogens",
+      "scale": "DESCRIPTIVE"
+    },
+    {
+      "week": 4,
+      "session": 8,
+      "topic": "Group 18: Noble gases",
+      "scale": "DESCRIPTIVE",
+      "quiz": 4
+    },
+    {
+      "week": 5,
+      "session": 9,
+      "topic": "Redox chemistry; periodic review",
+      "scale": "DESCRIPTIVE"
+    },
+    {
+      "week": 5,
+      "session": 10,
+      "topic": "MIDTERM EXAM 1",
+      "exam": true
+    },
+    {
+      "week": 6,
+      "session": 11,
+      "topic": "Coordination compounds introduction",
+      "scale": "STRUCTURAL"
+    },
+    {
+      "week": 6,
+      "session": 12,
+      "topic": "Ligands; coordination number",
+      "scale": "STRUCTURAL",
+      "quiz": 5
+    },
+    {
+      "week": 7,
+      "session": 13,
+      "topic": "IUPAC nomenclature",
+      "scale": "STRUCTURAL"
+    },
+    {
+      "week": 7,
+      "session": 14,
+      "topic": "Isomerism: geometric, optical",
+      "scale": "STRUCTURAL",
+      "quiz": 6
+    },
+    {
+      "week": 8,
+      "session": 15,
+      "topic": "Crystal Field Theory: octahedral",
+      "scale": "ELECTRONIC"
+    },
+    {
+      "week": 8,
+      "session": 16,
+      "topic": "CFT: tetrahedral, square planar",
+      "scale": "ELECTRONIC",
+      "quiz": 7
+    },
+    {
+      "week": 9,
+      "session": 17,
+      "topic": "CFSE; high-spin vs low-spin",
+      "scale": "ELECTRONIC"
+    },
+    {
+      "week": 9,
+      "session": 18,
+      "topic": "Color and magnetism",
+      "scale": "ELECTRONIC",
+      "quiz": 8
+    },
+    {
+      "week": 10,
+      "session": 19,
+      "topic": "MIDTERM EXAM 2",
+      "exam": true
+    },
+    {
+      "week": 10,
+      "session": 20,
+      "topic": "Solid-state intro: unit cells",
+      "scale": "STRUCTURAL"
+    },
+    {
+      "week": 11,
+      "session": 21,
+      "topic": "Ionic structures; lattice energy",
+      "scale": "STRUCTURAL",
+      "quiz": 9
+    },
+    {
+      "week": 11,
+      "session": 22,
+      "topic": "Band theory; semiconductors",
+      "scale": "ELECTRONIC"
+    },
+    {
+      "week": 12,
+      "session": 23,
+      "topic": "Applications: materials, catalysis",
+      "scale": "DESCRIPTIVE",
+      "quiz": 10
+    },
+    {
+      "week": 12,
+      "session": 24,
+      "topic": "Course synthesis; connections",
+      "scale": "ALL"
+    },
+    {
+      "week": 13,
+      "session": 25,
+      "topic": "Review session"
+    },
+    {
+      "week": 14,
+      "session": 26,
+      "topic": "STUDENT PRESENTATIONS",
+      "presentations": true
+    },
+    {
+      "week": 14,
+      "session": 27,
+      "topic": "STUDENT PRESENTATIONS",
+      "presentations": true
+    },
+    {
+      "week": 15,
+      "session": 28,
+      "topic": "Review session"
+    },
+    {
+      "week": 15,
+      "session": 29,
+      "topic": "COMPREHENSIVE FINAL EXAM",
+      "exam": true,
+      "final": true
+    }
+  ],
+  "totals": {
+    "teaching_sessions": 22,
+    "quizzes": 10,
+    "exams": 3,
+    "presentations": 2
+  }
+}
