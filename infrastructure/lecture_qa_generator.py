@@ -24,6 +24,28 @@ QDRANT_URL = "http://localhost:6333"
 COLLECTION = "textbooks_chunks"
 OLLAMA_URL = "http://localhost:11434"
 MODEL = "qwen3:latest"
+EMBED_MODEL = "nomic-embed-text:latest"  # embedding model
+
+
+def embed_query(text: str) -> list:
+    """
+    convert text to embedding vector using Ollama
+    """
+    payload = json.dumps({"model": EMBED_MODEL, "prompt": text}).encode("utf-8")
+    req = urllib.request.Request(
+        f"{OLLAMA_URL}/api/embeddings",
+        data=payload,
+        headers={"Content-Type": "application/json"},
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=120) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+        if "embedding" not in data:
+            raise RuntimeError(f"Ollama embedding error: {data}")
+        return data["embedding"]
+    except Exception as e:
+        print(f"  Embedding error: {e}")
+        return None
 
 BASE_DIR = Path(__file__).parent.parent
 META_BOOK_FILE = BASE_DIR / "data" / "meta_book.json"
@@ -87,6 +109,7 @@ class LectureQAGenerator:
     def _query_qdrant(self, concepts: list, source_keys: list, limit: int = 20) -> list:
         """
         query qdrant for chunks matching concepts from specified sources
+        uses vector embeddings for semantic search
         """
         # map source keys to PDF names
         pdf_names = [SOURCE_PDF_MAP.get(k.lower()) for k in source_keys if k.lower() in SOURCE_PDF_MAP]
@@ -95,20 +118,26 @@ class LectureQAGenerator:
             print(f"  Warning: no valid sources found for {source_keys}")
             return []
 
-        # build query text from concepts
+        # build query text from concepts and get embedding
         query_text = " ".join(concepts)
+        query_vector = embed_query(query_text)
 
-        # search with source filter
+        if query_vector is None:
+            print("  Warning: failed to get embedding")
+            return []
+
+        # search with source filter using vector
         results = []
         for pdf_name in pdf_names:
             try:
                 hits = self.qdrant.query_points(
                     collection_name=COLLECTION,
-                    query=query_text,
+                    query=query_vector,
+                    using="dense",  # named vector
                     query_filter=Filter(
                         must=[
                             FieldCondition(
-                                key="source",
+                                key="pdf_name",  # correct field name
                                 match=MatchValue(value=pdf_name)
                             )
                         ]
