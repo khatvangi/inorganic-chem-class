@@ -715,5 +715,69 @@ Actual graph statistics:
 
 ---
 
+## 2026-01-19 (Session 4): Hub Curriculum + Textbook Analysis v2
+
+### Core Refocus
+
+Returned to the core goal: **Given a question, trace the logical prerequisite chain back through essential concepts.**
+
+Not PageRank. Not paper metrics. **A curriculum that shows how knowledge connects.**
+
+### Hub-Based Curriculum Created
+
+Created `docs/HUB_CURRICULUM.md` with:
+
+```
+FOUNDATIONS (no IC prerequisites, out-degree ≥ 5)
+       │
+       ▼
+    HUBS (knowledge bottlenecks) ← 13 critical concepts
+       │
+       ▼
+   CAPSTONES (integration endpoints)
+```
+
+**5 Example Question Traces:**
+1. "Why is Cu²⁺ blue?" → Crystal Field Theory → Electron Config
+2. "How do batteries work?" → Redox Chemistry → Oxidation States
+3. "Why are TM colored?" → CFT + MO Theory → Electron Config
+4. "How do MRI contrast agents work?" → Coordination → CFT → Electron Config
+5. "Why is O₂ paramagnetic?" → MO Theory → Atomic Orbitals
+
+### Enhanced Textbook Analysis v2
+
+Created `experiments/analyze_textbooks_v2.py` (784 lines) with:
+
+**5 Analysis Dimensions:**
+1. Topic coverage (20 topics, rated 1-5)
+2. Worked examples (quantified counts, not "many/few")
+3. Conceptual density (thread completeness, derivation ratio)
+4. Visual analysis (MO diagrams, crystal structures, etc.)
+5. Pedagogy (scaffolding score, misconception addressing)
+
+**Status:** Running on 10 textbooks
+- Book 1/10 (Atkins): Phase 2/5 (Worked Examples)
+- Estimated completion: 6-7 hours
+
+### Files Created
+
+| File | Purpose |
+|------|---------|
+| `docs/HUB_CURRICULUM.md` | Practical hub-based curriculum (595 lines) |
+| `experiments/analyze_textbooks_v2.py` | Enhanced analysis script (784 lines) |
+
+### Key Insight
+
+The 13 hubs are the key:
+1. Acid-Base Chemistry (62 connections)
+2. Crystal Field Theory (58)
+3. Molecular Orbital Theory (56)
+4. Redox Chemistry (41)
+5. Periodic Trends (36)
+
+Every prerequisite chain passes through at least one of these hubs.
+
+---
+
 *Log maintained by: Claude Code*
 *Review frequency: End of each work session*
