@@ -1,0 +1,252 @@
+[
+  {
+    "topic": "Acid-Base Chemistry",
+    "in_degree": 55,
+    "out_degree": 7,
+    "total_degree": 62,
+    "predecessors": [
+      "Periodic Trends",
+      "Acid Dissociation",
+      "Acid-Base Theory",
+      "Lewis Structures",
+      "Acid-Base Equilibrium"
+    ],
+    "successors": [
+      "Main Group Chemistry",
+      "Coordination Chemistry",
+      "Acid-Base Chemistry",
+      "Electrochemistry",
+      "Transition Elements"
+    ]
+  },
+  {
+    "topic": "Crystal Field Theory",
+    "in_degree": 46,
+    "out_degree": 12,
+    "total_degree": 58,
+    "predecessors": [
+      "Crystal Field Theory",
+      "Lattice Energy Calculations",
+      "Electronic Configuration Of Transition Metals",
+      "Spectroscopy Basics",
+      "Molecular Orbital Theory"
+    ],
+    "successors": [
+      "Crystal Field Theory",
+      "Coordination Chemistry",
+      "Solid State Chemistry",
+      "Materials Chemistry",
+      "Magnetic Properties Of Transition Metals"
+    ]
+  },
+  {
+    "topic": "Molecular Orbital Theory",
+    "in_degree": 43,
+    "out_degree": 13,
+    "total_degree": 56,
+    "predecessors": [
+      "Atomic Orbitals",
+      "Electron Configuration",
+      "Chemical Bonding",
+      "Orbital Hybridization",
+      "Symmetry Operations"
+    ],
+    "successors": [
+      "Crystal Field Theory",
+      "Main Group Chemistry",
+      "Chemical Bonding",
+      "Solid State Chemistry",
+      "Actinoid Chemistry"
+    ]
+  },
+  {
+    "topic": "Redox Chemistry",
+    "in_degree": 7,
+    "out_degree": 34,
+    "total_degree": 41,
+    "predecessors": [
+      "Electrochemical Series",
+      "Oxidation States",
+      "Basic Redox Reactions",
+      "Redox Chemistry",
+      "Understanding Of Oxidation-Reduction Reactions"
+    ],
+    "successors": [
+      "Main Group Chemistry",
+      "Enzymatic Catalysis",
+      "Electrochemistry",
+      "Coordination Chemistry",
+      "Metallurgy"
+    ]
+  },
+  {
+    "topic": "Periodic Trends",
+    "in_degree": 17,
+    "out_degree": 19,
+    "total_degree": 36,
+    "predecessors": [
+      "Understanding Of Periodic Table Structure",
+      "Atomic Structure",
+      "Periodic Table Trends",
+      "Periodic Table",
+      "Electronic Structure Of Atoms"
+    ],
+    "successors": [
+      "Acid-Base Chemistry",
+      "Main Group Chemistry",
+      "D-Block Elements",
+      "Solid State Chemistry",
+      "Coordination Chemistry"
+    ]
+  },
+  {
+    "topic": "Chemical Bonding",
+    "in_degree": 32,
+    "out_degree": 3,
+    "total_degree": 35,
+    "predecessors": [
+      "Understanding Of Atomic Structure",
+      "Periodic Table Trends",
+      "Lewis Structures",
+      "Molecular Orbital Theory",
+      "Atomic Orbitals"
+    ],
+    "successors": [
+      "Molecular Orbital Theory",
+      "Main Group Chemistry",
+      "Coordination Chemistry"
+    ]
+  },
+  {
+    "topic": "Organometallic Chemistry",
+    "in_degree": 24,
+    "out_degree": 5,
+    "total_degree": 29,
+    "predecessors": [
+      "Coordination Chemistry Fundamentals",
+      "Ligand Field Theory",
+      "Metal-Ligand Bonding",
+      "Valence Bond Theory",
+      "Transition Metal Electron Configuration"
+    ],
+    "successors": [
+      "Catalysis",
+      "Main Group Chemistry",
+      "Metal Complexes And Cluster Chemistry",
+      "Transition Metal Chemistry",
+      "Coordination Chemistry"
+    ]
+  },
+  {
+    "topic": "Atomic Structure",
+    "in_degree": 13,
+    "out_degree": 12,
+    "total_degree": 25,
+    "predecessors": [
+      "Quantum Numbers",
+      "Wavefunctions",
+      "Atomic Structure Basics",
+      "Periodic Table Trends",
+      "Electron Configuration Basics"
+    ],
+    "successors": [
+      "Nuclear Chemistry",
+      "Main Group Chemistry",
+      "Periodic Trends",
+      "Solid State Chemistry",
+      "Coordination Chemistry"
+    ]
+  },
+  {
+    "topic": "Transition Metal Chemistry",
+    "in_degree": 11,
+    "out_degree": 7,
+    "total_degree": 18,
+    "predecessors": [
+      "Coordination Chemistry Fundamentals",
+      "Reaction Mechanisms",
+      "Periodic Trends",
+      "D-Block Elements",
+      "Organometallic Chemistry"
+    ],
+    "successors": [
+      "Coordination Chemistry",
+      "Organometallic Chemistry",
+      "D-Block Elements",
+      "Main Group Chemistry",
+      "Organic Chemistry"
+    ]
+  },
+  {
+    "topic": "Crystal Structures",
+    "in_degree": 5,
+    "out_degree": 7,
+    "total_degree": 12,
+    "predecessors": [
+      "Crystal Lattice Structures",
+      "Ionic Bonding",
+      "Crystal Systems",
+      "Symmetry Operations",
+      "Unit Cell Geometry"
+    ],
+    "successors": [
+      "Solid State Chemistry",
+      "Coordination Chemistry",
+      "Metallic Bonding And Structures",
+      "Main Group Chemistry",
+      "Solid-State Structures"
+    ]
+  },
+  {
+    "topic": "Thermochemistry",
+    "in_degree": 7,
+    "out_degree": 3,
+    "total_degree": 10,
+    "predecessors": [
+      "Understanding Of Enthalpy Concepts",
+      "Ionization Energy",
+      "Enthalpy Of Sublimation",
+      "Enthalpy Changes",
+      "Born-Haber Cycle"
+    ],
+    "successors": [
+      "Hydrogen Production And Utilization",
+      "Solid State Chemistry",
+      "Main Group Chemistry"
+    ]
+  },
+  {
+    "topic": "Electronegativity",
+    "in_degree": 3,
+    "out_degree": 4,
+    "total_degree": 7,
+    "predecessors": [
+      "Atomic Structure",
+      "Periodic Trends",
+      "Ionization Energy"
+    ],
+    "successors": [
+      "Chemical Bonding",
+      "Main Group Chemistry",
+      "Solid State Chemistry",
+      "Acid-Base Chemistry"
+    ]
+  },
+  {
+    "topic": "Polymer Chemistry",
+    "in_degree": 4,
+    "out_degree": 3,
+    "total_degree": 7,
+    "predecessors": [
+      "Polymerization Mechanisms",
+      "Polymerization Reactions",
+      "Transition Metal Chemistry",
+      "Organic Chemistry Fundamentals"
+    ],
+    "successors": [
+      "Nanomaterials And Nanotechnology",
+      "Polyphosphazenes",
+      "Main Group Chemistry"
+    ]
+  }
+]

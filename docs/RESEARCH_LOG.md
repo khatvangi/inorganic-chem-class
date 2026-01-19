@@ -644,5 +644,76 @@ Created schema to track:
 
 ---
 
+## 2026-01-19 (Session 3): Extended Analysis
+
+### Context
+Continued analysis session to validate methodology and prepare for JCE paper.
+
+### Task 1: Hub Identification
+
+Identified 13 hub nodes (in_degree > 2 AND out_degree > 2):
+
+| Rank | Topic | In | Out | Total |
+|------|-------|----|----|-------|
+| 1 | Acid-Base Chemistry | 55 | 7 | 62 |
+| 2 | Crystal Field Theory | 46 | 12 | 58 |
+| 3 | Molecular Orbital Theory | 43 | 13 | 56 |
+| 4 | Redox Chemistry | 7 | 34 | 41 |
+| 5 | Periodic Trends | 17 | 19 | 36 |
+| 6 | Chemical Bonding | 32 | 3 | 35 |
+| 7 | Organometallic Chemistry | 24 | 5 | 29 |
+
+**Finding:** These 13 concepts are critical "bottleneck" topics connecting foundations to capstones.
+
+### Task 2: Foundation Robustness
+
+Most foundations appear in all 6 textbooks (robust):
+- Coordination Chemistry Fundamentals: 6/6 books
+- Electron Configuration: 6/6 books
+- Oxidation States: 6/6 books
+
+Exception: Group Theory Basics appears in only 3/6 books (Atkins, Housecroft, Advanced IC).
+
+### Task 3: Pure Source Classification
+
+5,176 pure sources (in_degree = 0):
+- Gen Chem prerequisites: 1,492 (28.8%)
+- IC-specific entry points: 3,684 (71.2%)
+
+5,000 nodes have out_degree ≤ 1 (potential noise).
+
+### Task 4: Expert Validation Survey
+
+Created `docs/expert_validation_survey.md` for IC faculty validation.
+
+### Task 5: Multi-Question Funnel Comparison
+
+Average funnel size: 79.3 nodes
+- DESCRIPTIVE dominates (58.3%)
+- High variability (1-171 nodes)
+- Some targets poorly connected (VSEPR = 1 node)
+
+### Graph Statistics Update
+
+Actual graph statistics:
+- Nodes: 5,374
+- Edges: 1,458 (prerequisite_for only)
+- Mean degree: **1.05** (even sparser than documented 1.5)
+- In-degree = 0: **86.9%**
+
+**Conclusion:** Strong confirmation that degree-based analysis is appropriate.
+
+### Files Created/Updated
+
+| File | Action |
+|------|---------|
+| `experiments/results/hub_analysis.json` | Created |
+| `experiments/dual_pagerank_analysis.py` | Created |
+| `docs/expert_validation_survey.md` | Created |
+| `docs/JCE_PAPER_PACKAGE.md` | Updated (hub table, sparsity section) |
+| `docs/DUAL_PAGERANK_MODEL.md` | Updated (sparsity analysis) |
+
+---
+
 *Log maintained by: Claude Code*
 *Review frequency: End of each work session*

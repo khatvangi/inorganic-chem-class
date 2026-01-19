@@ -485,6 +485,28 @@ The CHEM 361 graph (mean degree 1.5) is clearly sparse. For such graphs:
 3. Use **in-degree** directly to identify integration capstones
 4. Reserve PageRank for denser knowledge graphs
 
+### Hub Analysis: Critical Bridge Concepts
+
+The degree-based analysis identified 13 **hub nodes** (in_degree > 2 AND out_degree > 2). These are critical bridge concepts that connect foundations to capstones:
+
+| Rank | Topic | In | Out | Total | Key Predecessors | Key Successors |
+|------|-------|----|----|-------|------------------|----------------|
+| 1 | Acid-Base Chemistry | 55 | 7 | 62 | Periodic Trends, Acid Dissociation | Main Group Chemistry, Coordination |
+| 2 | Crystal Field Theory | 46 | 12 | 58 | Atomic Orbitals, Electron Config | Coordination Chemistry |
+| 3 | Molecular Orbital Theory | 43 | 13 | 56 | Atomic Orbitals, Electron Config | Crystal Field Theory, Main Group |
+| 4 | Redox Chemistry | 7 | 34 | 41 | Electrochemical Series, Oxidation | Main Group, Enzymatic Catalysis |
+| 5 | Periodic Trends | 17 | 19 | 36 | Periodic Table Structure | Acid-Base, Main Group Chemistry |
+| 6 | Chemical Bonding | 32 | 3 | 35 | Atomic Structure, Periodic Trends | Molecular Orbital Theory |
+| 7 | Organometallic Chemistry | 24 | 5 | 29 | Coordination Fundamentals, Ligands | Catalysis, Main Group |
+| 8 | Atomic Structure | 13 | 12 | 25 | Quantum Numbers, Wavefunctions | Nuclear Chemistry, Main Group |
+| 9 | Transition Metal Chemistry | 11 | 7 | 18 | Coordination Fundamentals | Coordination, Organometallic |
+| 10 | Crystal Structures | 5 | 7 | 12 | Lattice Structures, Ionic Bonding | Solid State Chemistry |
+| 11 | Thermochemistry | 7 | 3 | 10 | Enthalpy Concepts, Ionic Bonding | Hydrogen Production, Solid State |
+| 12 | Electronegativity | 3 | 4 | 7 | Atomic Structure, Periodic Trends | Chemical Bonding, Main Group |
+| 13 | Polymer Chemistry | 4 | 3 | 7 | Polymerization Mechanisms | Nanomaterials |
+
+**Pedagogical implication:** These 13 hubs should receive extra attention in curriculum design—they are the "bottleneck" concepts where student understanding can break down.
+
 ---
 
 # 5. Novel Pedagogical Features
