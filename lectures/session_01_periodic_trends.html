@@ -18,8 +18,6 @@
             --accent-yellow: #fdd663;
             --accent-red: #f28b82;
             --accent-purple: #c58af9;
-            --accent-orange: #fcad70;
-            --accent-cyan: #78d9ec;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -29,16 +27,15 @@
             background: var(--bg);
             color: var(--text);
             font-size: 1.15rem;
-            line-height: 1.9;
+            line-height: 1.95;
         }
 
         .lecture {
-            max-width: 1100px;
+            max-width: 950px;
             margin: 0 auto;
             padding: 3rem 2rem 6rem;
         }
 
-        /* Header */
         .lecture-header {
             text-align: center;
             margin-bottom: 4rem;
@@ -47,463 +44,163 @@
         }
 
         .lecture-header h1 {
-            font-size: 2.8rem;
+            font-size: 2.6rem;
             font-weight: 500;
             margin-bottom: 0.5rem;
-            background: linear-gradient(135deg, var(--accent), var(--accent-purple));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: var(--accent);
         }
 
         .lecture-header .subtitle {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             color: var(--text-dim);
             font-style: italic;
         }
 
-        .course-level {
-            display: inline-block;
-            background: var(--accent-purple);
-            color: #000;
-            padding: 0.3rem 1rem;
-            border-radius: 20px;
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.8rem;
-            margin-top: 1rem;
-        }
+        .section { margin-bottom: 3.5rem; }
 
-        /* Sections */
-        .section {
-            margin-bottom: 4rem;
-        }
-
-        h2.section-title {
-            font-size: 1.8rem;
+        h2 {
+            font-size: 1.6rem;
             color: var(--accent-purple);
             margin-bottom: 1.5rem;
             font-weight: 500;
         }
 
-        h3.subsection {
-            font-size: 1.3rem;
+        h3 {
+            font-size: 1.25rem;
             color: var(--accent-green);
-            margin: 2rem 0 1rem;
+            margin: 2.5rem 0 1rem;
             font-weight: 500;
         }
 
-        p {
-            margin-bottom: 1.5rem;
-            text-align: justify;
-        }
+        p { margin-bottom: 1.4rem; text-align: justify; }
 
-        .highlight {
-            background: rgba(138, 180, 248, 0.15);
-            padding: 0.1em 0.3em;
-            border-radius: 3px;
-        }
-
-        .key-insight {
-            background: var(--bg-elevated);
-            border-left: 4px solid var(--accent-yellow);
-            padding: 1.5rem 2rem;
+        .figure {
+            background: var(--bg-card);
+            border-radius: 10px;
+            padding: 1.5rem;
             margin: 2rem 0;
+        }
+
+        .figure canvas { width: 100%; display: block; }
+
+        .figure-caption {
+            text-align: center;
+            color: var(--text-dim);
+            font-size: 0.9rem;
+            margin-top: 1rem;
             font-style: italic;
         }
 
-        .warning {
-            background: rgba(242, 139, 130, 0.1);
-            border-left: 4px solid var(--accent-red);
-            padding: 1.5rem 2rem;
+        .equation {
+            text-align: center;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.2rem;
             margin: 2rem 0;
+            padding: 1rem;
+            background: var(--bg-elevated);
+            border-radius: 6px;
         }
 
-        /* Learning objectives */
-        .objectives {
-            background: var(--bg-card);
-            border-radius: 12px;
-            padding: 2rem;
-            margin-bottom: 3rem;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            font-size: 0.95rem;
         }
 
-        .objectives h2 {
-            font-size: 1.1rem;
+        th {
+            background: var(--bg-elevated);
+            padding: 0.8rem;
+            text-align: left;
             color: var(--accent);
             font-family: 'JetBrains Mono', monospace;
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
+            font-size: 0.85rem;
         }
 
-        .objectives ul { list-style: none; }
-
-        .objectives li {
-            padding: 0.5rem 0;
-            padding-left: 2rem;
-            position: relative;
+        td {
+            padding: 0.7rem 0.8rem;
+            border-bottom: 1px solid #2a3a5a;
         }
 
-        .objectives li::before {
-            content: '○';
-            position: absolute;
-            left: 0;
+        .source-note {
+            font-size: 0.85rem;
             color: var(--text-dim);
-        }
-
-        /* Historical Mendeleev Table */
-        .mendeleev-container {
-            background: #1a1812;
-            border: 3px solid #3d3526;
-            border-radius: 8px;
-            padding: 2rem;
-            margin: 2rem 0;
-            font-family: 'JetBrains Mono', monospace;
-        }
-
-        .mendeleev-title {
-            text-align: center;
-            font-size: 1.2rem;
-            color: #c4a35a;
+            margin-top: -0.5rem;
             margin-bottom: 1.5rem;
-            font-family: 'Crimson Pro', serif;
-            font-style: italic;
         }
 
-        .mendeleev-table {
-            display: grid;
-            grid-template-columns: repeat(8, 1fr);
-            gap: 4px;
-            font-size: 0.75rem;
-        }
-
-        .mend-cell {
-            padding: 0.5rem;
-            text-align: center;
-            background: #252015;
-            border: 1px solid #3d3526;
-            min-height: 50px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .mend-cell.header {
-            background: #3d3526;
-            color: #c4a35a;
-            font-weight: 600;
-        }
-
-        .mend-cell.gap {
-            background: rgba(253, 214, 99, 0.2);
-            border: 2px dashed var(--accent-yellow);
-            color: var(--accent-yellow);
-            font-style: italic;
-        }
-
-        .mend-cell .symbol { font-weight: 600; font-size: 1rem; }
-        .mend-cell .mass { font-size: 0.65rem; color: var(--text-dim); }
-
-        .prediction-box {
+        .periodic-container {
             background: var(--bg-card);
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin: 1.5rem 0;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 1rem;
-        }
-
-        .prediction-col h4 {
-            font-size: 0.9rem;
-            color: var(--accent-yellow);
-            margin-bottom: 0.5rem;
-            font-family: 'JetBrains Mono', monospace;
-        }
-
-        .prediction-col.actual h4 { color: var(--accent-green); }
-
-        /* Full Periodic Table */
-        .pt-container {
-            background: var(--bg-card);
-            border-radius: 12px;
-            padding: 1.5rem;
+            border-radius: 10px;
+            padding: 1rem;
             margin: 2rem 0;
             overflow-x: auto;
         }
 
-        .pt-controls {
-            display: flex;
-            gap: 1rem;
-            margin-bottom: 1rem;
-            flex-wrap: wrap;
-        }
-
-        .pt-btn {
-            padding: 0.5rem 1rem;
-            background: var(--bg-elevated);
-            border: 1px solid #3a4a6a;
-            border-radius: 6px;
-            color: var(--text);
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.8rem;
-            cursor: pointer;
-            transition: all 0.2s;
-        }
-
-        .pt-btn:hover, .pt-btn.active {
-            border-color: var(--accent);
-            background: rgba(138, 180, 248, 0.1);
-        }
-
         .periodic-table {
             display: grid;
-            grid-template-columns: repeat(18, minmax(52px, 1fr));
+            grid-template-columns: repeat(18, minmax(42px, 1fr));
             gap: 2px;
             font-family: 'JetBrains Mono', monospace;
-            font-size: 0.65rem;
+            font-size: 0.6rem;
         }
 
-        .pt-element {
+        .el {
             aspect-ratio: 1;
-            padding: 3px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             background: var(--bg-elevated);
-            border-radius: 4px;
-            cursor: pointer;
-            transition: all 0.2s;
-            position: relative;
-            border: 2px solid transparent;
-        }
-
-        .pt-element:hover {
-            transform: scale(1.3);
-            z-index: 100;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
-        }
-
-        .pt-element .z { font-size: 0.5rem; color: var(--text-dim); }
-        .pt-element .sym { font-weight: 600; font-size: 0.9rem; }
-        .pt-element .config { font-size: 0.45rem; color: var(--text-dim); display: none; }
-
-        .pt-element.empty { background: transparent; pointer-events: none; }
-
-        /* Block colors */
-        .pt-element.s-block { background: #2d4a3d; }
-        .pt-element.p-block { background: #3d4a2d; }
-        .pt-element.d-block { background: #4a3d2d; }
-        .pt-element.f-block { background: #4a2d4a; }
-
-        /* Anomaly highlighting */
-        .pt-element.anomaly { border-color: var(--accent-yellow); }
-        .pt-element.lanthanide { border-color: var(--accent-purple); }
-        .pt-element.actinide { border-color: var(--accent-red); }
-
-        .pt-legend {
-            display: flex;
-            gap: 1.5rem;
-            margin-top: 1rem;
-            flex-wrap: wrap;
-            font-size: 0.8rem;
-        }
-
-        .legend-item {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .legend-color {
-            width: 16px;
-            height: 16px;
             border-radius: 3px;
+            cursor: pointer;
+            transition: transform 0.15s;
         }
 
-        /* Element detail popup */
-        .element-detail {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: var(--bg-card);
-            border: 1px solid var(--accent);
-            border-radius: 12px;
-            padding: 2rem;
-            z-index: 1000;
-            min-width: 350px;
-            display: none;
-        }
+        .el:hover { transform: scale(1.2); z-index: 10; }
+        .el.empty { background: transparent; pointer-events: none; }
+        .el .sym { font-weight: 600; font-size: 0.8rem; }
+        .el .z { font-size: 0.5rem; color: var(--text-dim); }
 
-        .element-detail.show { display: block; }
+        .el.s-block { background: #2d4a3d; }
+        .el.p-block { background: #3d4a2d; }
+        .el.d-block { background: #4a3d2d; }
+        .el.f-block { background: #4a2d4a; }
 
-        .element-detail h3 {
-            color: var(--accent);
-            margin-bottom: 1rem;
-        }
-
-        .detail-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 0.5rem;
-            font-size: 0.9rem;
-        }
-
-        .detail-label { color: var(--text-dim); }
-
-        .overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.7);
-            z-index: 999;
-            display: none;
-        }
-
-        .overlay.show { display: block; }
-
-        /* Data tables */
-        .data-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1.5rem 0;
-            font-size: 0.9rem;
-        }
-
-        .data-table th {
-            background: var(--bg-elevated);
-            padding: 0.75rem;
-            text-align: left;
-            color: var(--accent);
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.8rem;
-        }
-
-        .data-table td {
-            padding: 0.6rem 0.75rem;
-            border-bottom: 1px solid #2a3a5a;
-        }
-
-        .data-table tr:hover td {
-            background: rgba(138, 180, 248, 0.05);
-        }
-
-        /* Canvas visualizations */
-        .visual-container {
-            background: var(--bg-card);
-            border-radius: 12px;
-            padding: 1.5rem;
-            margin: 2rem 0;
-        }
-
-        .visual-container canvas {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .caption {
-            text-align: center;
-            color: var(--text-dim);
-            font-size: 0.9rem;
-            margin-top: 1rem;
-        }
-
-        /* Electron config diagrams */
-        .config-comparison {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
-
-        .config-box {
-            background: var(--bg-card);
-            border-radius: 12px;
-            padding: 1.5rem;
-        }
-
-        .config-box h4 {
-            color: var(--accent);
-            font-family: 'JetBrains Mono', monospace;
-            margin-bottom: 1rem;
-            font-size: 1rem;
-        }
-
-        .config-box.anomaly {
-            border: 2px solid var(--accent-yellow);
-        }
-
-        .config-box .expected {
-            color: var(--text-dim);
-            text-decoration: line-through;
-            font-size: 0.9rem;
-        }
-
-        .config-box .actual {
-            color: var(--accent-green);
-            font-size: 1.1rem;
-            font-weight: 600;
-        }
-
-        .config-box .reason {
-            margin-top: 0.5rem;
-            font-size: 0.85rem;
-            color: var(--accent-yellow);
-        }
-
-        /* Contraction graph */
-        .contraction-graph {
-            height: 300px;
-            position: relative;
-        }
-
-        /* Quiz sections */
-        .check-understanding {
+        .check-box {
             background: linear-gradient(135deg, #1a2a4a, #2a1a4a);
-            border-radius: 12px;
-            padding: 2rem;
-            margin: 3rem 0;
+            border-radius: 10px;
+            padding: 1.5rem 2rem;
+            margin: 2.5rem 0;
         }
 
-        .check-understanding h3 {
+        .check-box h4 {
             color: var(--accent-yellow);
             font-family: 'JetBrains Mono', monospace;
-            margin-bottom: 1.5rem;
-        }
-
-        .quiz-q { margin-bottom: 2rem; }
-
-        .quiz-q p {
-            font-weight: 500;
+            font-size: 0.9rem;
             margin-bottom: 1rem;
         }
 
-        .quiz-options {
-            display: grid;
-            gap: 0.5rem;
-        }
-
-        .quiz-opt {
-            padding: 1rem 1.5rem;
+        .quiz-btn {
+            display: block;
+            width: 100%;
+            padding: 0.8rem 1.2rem;
+            margin: 0.4rem 0;
             background: var(--bg-card);
             border: 1px solid #3a4a6a;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: all 0.2s;
-            text-align: left;
+            border-radius: 6px;
+            color: var(--text);
             font-family: inherit;
             font-size: inherit;
-            color: var(--text);
+            text-align: left;
+            cursor: pointer;
         }
 
-        .quiz-opt:hover { border-color: var(--accent); }
-        .quiz-opt.correct { background: rgba(129, 201, 149, 0.2); border-color: var(--accent-green); }
-        .quiz-opt.wrong { background: rgba(242, 139, 130, 0.2); border-color: var(--accent-red); }
+        .quiz-btn:hover { border-color: var(--accent); }
+        .quiz-btn.correct { background: rgba(129, 201, 149, 0.2); border-color: var(--accent-green); }
+        .quiz-btn.wrong { background: rgba(242, 139, 130, 0.2); border-color: var(--accent-red); }
 
-        .quiz-explain {
+        .quiz-answer {
             margin-top: 1rem;
             padding: 1rem;
             background: var(--bg);
@@ -511,9 +208,8 @@
             display: none;
         }
 
-        .quiz-explain.show { display: block; }
+        .quiz-answer.show { display: block; }
 
-        /* Navigation */
         .nav-bottom {
             display: flex;
             justify-content: space-between;
@@ -530,21 +226,14 @@
             color: var(--text);
             text-decoration: none;
             font-family: 'JetBrains Mono', monospace;
-            font-size: 0.9rem;
-            transition: all 0.2s;
+            font-size: 0.85rem;
         }
 
-        .nav-btn:hover {
-            border-color: var(--accent);
-            background: var(--bg-elevated);
-        }
+        .nav-btn:hover { border-color: var(--accent); }
 
-        /* Responsive */
-        @media (max-width: 900px) {
+        @media (max-width: 768px) {
             .lecture { padding: 2rem 1rem; }
-            .lecture-header h1 { font-size: 2rem; }
-            .periodic-table { font-size: 0.5rem; grid-template-columns: repeat(18, minmax(30px, 1fr)); }
-            .prediction-box { grid-template-columns: 1fr; }
+            .periodic-table { grid-template-columns: repeat(18, minmax(28px, 1fr)); }
         }
     </style>
 </head>
@@ -552,661 +241,266 @@
     <article class="lecture">
         <header class="lecture-header">
             <h1>The Periodic Table</h1>
-            <p class="subtitle">Beyond the Basics: What Gen Chem Didn't Tell You</p>
-            <span class="course-level">CHEM 361 - Inorganic Chemistry</span>
+            <p class="subtitle">Session 1 · CHEM 361 Inorganic Chemistry</p>
         </header>
 
-        <section class="objectives">
-            <h2>After this lecture, you will be able to:</h2>
-            <ul>
-                <li>Explain why 21 elements violate the aufbau principle—and why the "rule" is wrong</li>
-                <li>Predict properties of heavy elements using the three contractions (scandide, lanthanide, relativistic)</li>
-                <li>Explain why mercury is liquid and gold is golden using relativistic effects</li>
-                <li>Apply the inert pair effect to predict stability of oxidation states</li>
-                <li>Explain why all lanthanides have similar chemistry (and why Ce, Eu, Yb are exceptions)</li>
-                <li>Predict maximum oxidation states across the d-block</li>
-            </ul>
+        <!-- THE PREDICTION -->
+        <section class="section">
+            <h2>The Prediction Machine</h2>
+
+            <p>In 1871, Dmitri Mendeleev published his periodic table with several gaps. Where element 31 should have been, he wrote "eka-aluminum" and listed its properties: atomic weight around 68, density near 5.9 g/cm³, a metal that would melt at low temperature and form a volatile chloride. Four years later, Paul Emile Lecoq de Boisbaudran isolated gallium from zinc ore. Its atomic weight was 69.7. Its density was 5.91 g/cm³. It melted at 29.8°C, warm enough to liquefy in your hand.</p>
+
+            <p>Mendeleev had never seen this element, never measured its properties, never performed a single experiment with it. He predicted its behavior from its position in the table alone. The periodic table encodes patterns so reliable that chemists can deduce properties of elements before they are discovered. Understanding why those patterns exist transforms the table from a filing system into a prediction engine.</p>
         </section>
 
-        <!-- PART I: MENDELEEV'S PREDICTION -->
+        <!-- EFFECTIVE NUCLEAR CHARGE -->
         <section class="section">
-            <h2 class="section-title">The Prediction Machine</h2>
+            <h2>Effective Nuclear Charge</h2>
 
-            <p>In 1871, Dmitri Mendeleev published a periodic table with gaps. These weren't admissions of ignorance—they were predictions. Look at his original table:</p>
+            <p>A lithium atom has three protons pulling on its electrons. A sodium atom has eleven. If nuclear charge alone determined atomic properties, sodium should grip its electrons more tightly and be smaller than lithium. It is not. Sodium is larger, and its outer electron is easier to remove. Something reduces the pull that outer electrons feel.</p>
 
-            <div class="mendeleev-container">
-                <p class="mendeleev-title">Mendeleev's Periodic Table (1871) — Showing Predicted Elements</p>
-                <div class="mendeleev-table" id="mendeleev-table">
-                    <!-- Row headers -->
-                    <div class="mend-cell header">Group</div>
-                    <div class="mend-cell header">I</div>
-                    <div class="mend-cell header">II</div>
-                    <div class="mend-cell header">III</div>
-                    <div class="mend-cell header">IV</div>
-                    <div class="mend-cell header">V</div>
-                    <div class="mend-cell header">VI</div>
-                    <div class="mend-cell header">VII</div>
+            <p>The field arising from a spherical distribution of charge is equivalent to the field generated by a single point charge at the center. Inner electrons create such a distribution between the nucleus and the outer electron. Their negative charge reduces the nuclear charge from Z to an effective value, Z<sub>eff</sub>. This reduction is called shielding.</p>
 
-                    <!-- Period 2 -->
-                    <div class="mend-cell header">2</div>
-                    <div class="mend-cell"><span class="symbol">Li</span><span class="mass">7</span></div>
-                    <div class="mend-cell"><span class="symbol">Be</span><span class="mass">9</span></div>
-                    <div class="mend-cell"><span class="symbol">B</span><span class="mass">11</span></div>
-                    <div class="mend-cell"><span class="symbol">C</span><span class="mass">12</span></div>
-                    <div class="mend-cell"><span class="symbol">N</span><span class="mass">14</span></div>
-                    <div class="mend-cell"><span class="symbol">O</span><span class="mass">16</span></div>
-                    <div class="mend-cell"><span class="symbol">F</span><span class="mass">19</span></div>
-
-                    <!-- Period 3 -->
-                    <div class="mend-cell header">3</div>
-                    <div class="mend-cell"><span class="symbol">Na</span><span class="mass">23</span></div>
-                    <div class="mend-cell"><span class="symbol">Mg</span><span class="mass">24</span></div>
-                    <div class="mend-cell"><span class="symbol">Al</span><span class="mass">27</span></div>
-                    <div class="mend-cell"><span class="symbol">Si</span><span class="mass">28</span></div>
-                    <div class="mend-cell"><span class="symbol">P</span><span class="mass">31</span></div>
-                    <div class="mend-cell"><span class="symbol">S</span><span class="mass">32</span></div>
-                    <div class="mend-cell"><span class="symbol">Cl</span><span class="mass">35</span></div>
-
-                    <!-- Period 4 -->
-                    <div class="mend-cell header">4</div>
-                    <div class="mend-cell"><span class="symbol">K</span><span class="mass">39</span></div>
-                    <div class="mend-cell"><span class="symbol">Ca</span><span class="mass">40</span></div>
-                    <div class="mend-cell gap"><span class="symbol">?=68</span><span class="mass">"eka-Al"</span></div>
-                    <div class="mend-cell gap"><span class="symbol">?=72</span><span class="mass">"eka-Si"</span></div>
-                    <div class="mend-cell"><span class="symbol">As</span><span class="mass">75</span></div>
-                    <div class="mend-cell"><span class="symbol">Se</span><span class="mass">79</span></div>
-                    <div class="mend-cell"><span class="symbol">Br</span><span class="mass">80</span></div>
-
-                    <!-- Period 5 -->
-                    <div class="mend-cell header">5</div>
-                    <div class="mend-cell"><span class="symbol">Rb</span><span class="mass">85</span></div>
-                    <div class="mend-cell"><span class="symbol">Sr</span><span class="mass">88</span></div>
-                    <div class="mend-cell"><span class="symbol">Y</span><span class="mass">89</span></div>
-                    <div class="mend-cell"><span class="symbol">Zr</span><span class="mass">90</span></div>
-                    <div class="mend-cell"><span class="symbol">Nb</span><span class="mass">94</span></div>
-                    <div class="mend-cell"><span class="symbol">Mo</span><span class="mass">96</span></div>
-                    <div class="mend-cell gap"><span class="symbol">?=100</span><span class="mass">"eka-Mn"</span></div>
-                </div>
+            <div class="equation">
+                Z<sub>eff</sub> = Z − σ
             </div>
 
-            <p>Mendeleev called the gap below aluminum <span class="highlight">"eka-aluminum"</span> (Sanskrit for "one beyond aluminum"). He predicted its properties with remarkable precision:</p>
+            <p>The shielding constant σ depends on which orbitals the inner electrons occupy. An electron in a 2s orbital can penetrate through the 1s shell, approaching the nucleus closely and experiencing nearly the full nuclear charge. A 2p electron cannot penetrate as effectively because its wavefunction goes to zero at the nucleus. The 2p electron is more fully shielded by the core and experiences a lower Z<sub>eff</sub>.</p>
 
-            <div class="prediction-box">
-                <div class="prediction-col">
-                    <h4>Mendeleev's Prediction (1871)</h4>
-                    <p>Atomic weight: ~68</p>
-                    <p>Density: 5.9 g/cm³</p>
-                    <p>Melting point: Low</p>
-                    <p>Oxide formula: Ea₂O₃</p>
-                    <p>Chloride: EaCl₃, volatile</p>
-                </div>
-                <div class="prediction-col actual">
-                    <h4>Gallium (discovered 1875)</h4>
-                    <p>Atomic weight: 69.7</p>
-                    <p>Density: 5.91 g/cm³</p>
-                    <p>Melting point: 29.8°C</p>
-                    <p>Oxide formula: Ga₂O₃</p>
-                    <p>Chloride: GaCl₃, volatile</p>
-                </div>
-                <div class="prediction-col actual">
-                    <h4>Accuracy</h4>
-                    <p>✓ 2.5% error</p>
-                    <p>✓ 0.2% error</p>
-                    <p>✓ Melts in hand!</p>
-                    <p>✓ Exact</p>
-                    <p>✓ Exact</p>
-                </div>
-            </div>
+            <p>This explains why, in a many-electron atom, a 2s electron has lower energy than a 2p electron despite both having the same principal quantum number. The 2s penetrates the core, feels more nuclear charge, and is bound more tightly.</p>
 
-            <div class="key-insight">
-                Mendeleev didn't just organize elements—he created a <strong>prediction engine</strong>. The periodic table encodes patterns so reliable that you can deduce properties of elements never seen. That power comes from understanding <em>why</em> the patterns exist.
+            <h3>Slater's Rules</h3>
+
+            <p>John Slater analyzed experimental data and found consistent patterns in shielding. His rules assign contributions to σ based on which shells electrons occupy relative to the electron of interest:</p>
+
+            <table>
+                <tr>
+                    <th>Electrons in...</th>
+                    <th>Contribution to σ</th>
+                </tr>
+                <tr>
+                    <td>Same group (ns, np together)</td>
+                    <td>0.35 each</td>
+                </tr>
+                <tr>
+                    <td>Shell n−1 (for s,p electron)</td>
+                    <td>0.85 each</td>
+                </tr>
+                <tr>
+                    <td>Shell n−2 and below</td>
+                    <td>1.00 each</td>
+                </tr>
+            </table>
+            <p class="source-note">For d and f electrons, different values apply. See Slater, Phys. Rev. 1930.</p>
+
+            <p>Consider oxygen. Its nuclear charge is 8. The outermost 2p electron sees five other electrons in the second shell (each contributing 0.35) and two 1s electrons (each contributing 0.85). The shielding constant is 5×0.35 + 2×0.85 = 3.45. The effective nuclear charge is 8 − 3.45 = 4.55. The outer electron feels barely half the true nuclear charge.</p>
+
+            <div class="check-box">
+                <h4>Calculate Z<sub>eff</sub></h4>
+                <p>Use Slater's rules to find Z<sub>eff</sub> for the outermost electron in chlorine (Z=17, configuration [Ne] 3s² 3p⁵).</p>
+                <button class="quiz-btn" onclick="showAnswer('slater-ans')">Show calculation</button>
+                <div class="quiz-answer" id="slater-ans">
+                    <p>Same shell (3s, 3p): 6 electrons × 0.35 = 2.10</p>
+                    <p>Shell n−1 (2s, 2p): 8 electrons × 0.85 = 6.80</p>
+                    <p>Shell n−2 (1s): 2 electrons × 1.00 = 2.00</p>
+                    <p>σ = 10.90, so Z<sub>eff</sub> = 17 − 10.90 = <strong>6.10</strong></p>
+                </div>
             </div>
         </section>
 
-        <!-- PART II: THE MODERN PERIODIC TABLE -->
+        <!-- ATOMIC RADII -->
         <section class="section">
-            <h2 class="section-title">The Modern Periodic Table: Electron Configurations</h2>
+            <h2>Atomic Radii</h2>
 
-            <p>Every element's chemistry is encoded in its electron configuration. But here's what Gen Chem glossed over: <strong>the aufbau principle is a useful lie</strong>. Twenty-one elements "violate" it—not because they're exceptions, but because the rule oversimplifies reality.</p>
+            <p>Atomic radii increase down a group and decrease from left to right across a period. Across a period, the combined effects of penetration and shielding produce an increase in effective nuclear charge. Each added proton increases Z, but each added electron enters the same shell and shields imperfectly. The growing Z<sub>eff</sub> draws electrons inward, producing smaller atoms. Descending a group, electrons occupy successive shells outside a completed core. Even though Z increases, the new shell extends further from the nucleus, and radii increase.</p>
 
-            <div class="pt-container">
-                <div class="pt-controls">
-                    <button class="pt-btn active" onclick="showPTMode('blocks')">Blocks (s/p/d/f)</button>
-                    <button class="pt-btn" onclick="showPTMode('anomalies')">Config Anomalies</button>
-                    <button class="pt-btn" onclick="showPTMode('oxidation')">Max Oxidation State</button>
-                    <button class="pt-btn" onclick="showPTMode('radii')">Atomic Radii</button>
-                </div>
-                <div class="periodic-table" id="periodic-table">
-                    <!-- Generated by JavaScript -->
-                </div>
-                <div class="pt-legend" id="pt-legend">
-                    <div class="legend-item"><span class="legend-color" style="background: #2d4a3d;"></span> s-block</div>
-                    <div class="legend-item"><span class="legend-color" style="background: #3d4a2d;"></span> p-block</div>
-                    <div class="legend-item"><span class="legend-color" style="background: #4a3d2d;"></span> d-block</div>
-                    <div class="legend-item"><span class="legend-color" style="background: #4a2d4a;"></span> f-block</div>
-                    <div class="legend-item"><span class="legend-color" style="background: transparent; border: 2px solid var(--accent-yellow);"></span> Anomalous config</div>
-                </div>
+            <div class="figure">
+                <canvas id="trend-canvas" width="800" height="420"></canvas>
+                <p class="figure-caption">Covalent radii (pm) for periods 2 and 3. Arrows indicate direction of increase. Data from Cordero et al. 2008.</p>
             </div>
 
-            <p style="font-size: 0.85rem; color: var(--text-dim);">Click any element for details. Data: NIST Atomic Spectra Database</p>
+            <p>The competition between increasing nuclear charge and increasing principal quantum number is won by the latter when moving down a group. Cesium is enormous compared to lithium, not because its nucleus is weak (55 protons), but because its valence electron occupies the sixth shell.</p>
 
-            <h3 class="subsection">The "Exceptions" That Reveal the Truth</h3>
+            <h3>The Scandide Contraction</h3>
 
-            <p>Chromium and copper don't follow the aufbau filling order. Neither do silver, gold, molybdenum, and 16 other elements. These aren't anomalies to memorize—they reveal what <em>actually</em> determines electron configuration.</p>
+            <p>Crossing the first transition series from scandium to zinc, we fill the 3d orbitals. These d electrons screen the 4s electrons poorly. The 3d orbitals are relatively diffuse and do not penetrate close to the nucleus. They fail to shield the outer electrons effectively from the growing nuclear charge. The result appears in period 4: gallium (Z=31) has nearly the same covalent radius as aluminum (Z=13), despite having 18 more protons.</p>
 
-            <div class="config-comparison">
-                <div class="config-box anomaly">
-                    <h4>Chromium (Z = 24)</h4>
-                    <p class="expected">Expected: [Ar] 3d⁴ 4s²</p>
-                    <p class="actual">Actual: [Ar] 3d⁵ 4s¹</p>
-                    <p class="reason">Half-filled d subshell is extra stable (exchange energy)</p>
-                </div>
-                <div class="config-box anomaly">
-                    <h4>Copper (Z = 29)</h4>
-                    <p class="expected">Expected: [Ar] 3d⁹ 4s²</p>
-                    <p class="actual">Actual: [Ar] 3d¹⁰ 4s¹</p>
-                    <p class="reason">Filled d subshell is extra stable</p>
-                </div>
-                <div class="config-box anomaly">
-                    <h4>Silver (Z = 47)</h4>
-                    <p class="expected">Expected: [Kr] 4d⁹ 5s²</p>
-                    <p class="actual">Actual: [Kr] 4d¹⁰ 5s¹</p>
-                    <p class="reason">Same pattern repeats in Period 5</p>
-                </div>
-                <div class="config-box anomaly">
-                    <h4>Gold (Z = 79)</h4>
-                    <p class="expected">Expected: [Xe] 4f¹⁴ 5d⁹ 6s²</p>
-                    <p class="actual">Actual: [Xe] 4f¹⁴ 5d¹⁰ 6s¹</p>
-                    <p class="reason">Filled d + relativistic 6s contraction</p>
-                </div>
-            </div>
-
-            <p><strong>The real rule:</strong> Electrons arrange themselves to minimize total energy. This includes:</p>
-            <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
-                <li><strong>Orbital energy</strong> (aufbau addresses this)</li>
-                <li><strong>Electron-electron repulsion</strong> (pairing energy)</li>
-                <li><strong>Exchange energy</strong> (stabilization from parallel spins)</li>
-            </ul>
-
-            <p>When exchange energy from a half-filled or filled subshell exceeds the cost of promoting an electron, the configuration changes.</p>
-        </section>
-
-        <!-- PART III: THE THREE CONTRACTIONS -->
-        <section class="section">
-            <h2 class="section-title">The Three Contractions</h2>
-
-            <p>Three "contraction" effects shape the entire periodic table. Understanding them explains why:</p>
-            <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
-                <li>Gallium is nearly the same size as aluminum</li>
-                <li>Hafnium and zirconium are almost impossible to separate</li>
-                <li>Gold is golden and mercury is liquid</li>
-                <li>Lead prefers +2 over +4</li>
-            </ul>
-
-            <h3 class="subsection">1. The Scandide Contraction (3d block)</h3>
-
-            <p>As we fill the 3d orbitals from Sc to Zn, atoms get <em>smaller</em> even though we're adding electrons. Why? <strong>3d electrons are terrible shielders.</strong></p>
-
-            <p>The 3d orbitals are relatively diffuse and don't penetrate close to the nucleus. They fail to screen the 4s electrons from nuclear charge effectively. The result: elements after the 3d block (Ga, Ge, As...) are barely larger than their lighter congeners.</p>
-
-            <table class="data-table">
+            <table>
                 <tr>
                     <th>Period 3</th>
-                    <th>r (pm)</th>
+                    <th>Radius (pm)</th>
                     <th>Period 4</th>
-                    <th>r (pm)</th>
-                    <th>Difference</th>
+                    <th>Radius (pm)</th>
                 </tr>
-                <tr>
-                    <td>Al (Z=13)</td>
-                    <td>121</td>
-                    <td>Ga (Z=31)</td>
-                    <td>122</td>
-                    <td style="color: var(--accent-yellow);">+1 pm only!</td>
-                </tr>
-                <tr>
-                    <td>Si (Z=14)</td>
-                    <td>111</td>
-                    <td>Ge (Z=32)</td>
-                    <td>120</td>
-                    <td>+9 pm</td>
-                </tr>
-                <tr>
-                    <td>P (Z=15)</td>
-                    <td>107</td>
-                    <td>As (Z=33)</td>
-                    <td>119</td>
-                    <td>+12 pm</td>
-                </tr>
+                <tr><td>Al</td><td>121</td><td>Ga</td><td>122</td></tr>
+                <tr><td>Si</td><td>111</td><td>Ge</td><td>120</td></tr>
+                <tr><td>P</td><td>107</td><td>As</td><td>119</td></tr>
             </table>
-            <p style="font-size: 0.85rem; color: var(--text-dim);">Covalent radii, Cordero et al. 2008</p>
-
-            <h3 class="subsection">2. The Lanthanide Contraction (4f block)</h3>
-
-            <p>This is the most important contraction for understanding heavy element chemistry.</p>
-
-            <p>4f orbitals shield even <em>worse</em> than 3d. They're buried deep inside the atom, with almost no electron density near the nucleus. As we fill the 4f subshell (Ce → Lu), the effective nuclear charge felt by outer electrons steadily increases.</p>
-
-            <div class="visual-container">
-                <canvas id="lanthanide-canvas" width="900" height="350"></canvas>
-                <p class="caption">Ionic radii of M³⁺ ions across the lanthanide series. The steady decrease is the lanthanide contraction.</p>
-            </div>
-
-            <p><strong>The stunning consequence:</strong> 5d elements (Hf → Hg) are almost identical in size to 4d elements (Zr → Cd).</p>
-
-            <table class="data-table">
-                <tr>
-                    <th>4d (Period 5)</th>
-                    <th>r (pm)</th>
-                    <th>5d (Period 6)</th>
-                    <th>r (pm)</th>
-                    <th>Difference</th>
-                </tr>
-                <tr>
-                    <td>Zr (Z=40)</td>
-                    <td>175</td>
-                    <td>Hf (Z=72)</td>
-                    <td>175</td>
-                    <td style="color: var(--accent-yellow);">0 pm!</td>
-                </tr>
-                <tr>
-                    <td>Nb (Z=41)</td>
-                    <td>164</td>
-                    <td>Ta (Z=73)</td>
-                    <td>170</td>
-                    <td>+6 pm</td>
-                </tr>
-                <tr>
-                    <td>Mo (Z=42)</td>
-                    <td>154</td>
-                    <td>W (Z=74)</td>
-                    <td>162</td>
-                    <td>+8 pm</td>
-                </tr>
-                <tr>
-                    <td>Pd (Z=46)</td>
-                    <td>139</td>
-                    <td>Pt (Z=78)</td>
-                    <td>136</td>
-                    <td style="color: var(--accent-yellow);">-3 pm!</td>
-                </tr>
-            </table>
-
-            <p>Zirconium and hafnium have <em>identical</em> covalent radii. Their chemistry is so similar that they weren't separated until 1923—and it required thousands of fractional crystallizations.</p>
-
-            <h3 class="subsection">3. The Relativistic Contraction (6s orbital)</h3>
-
-            <p>Here's where chemistry gets weird. For heavy elements (Z > 70), electrons move fast enough that <strong>special relativity matters</strong>.</p>
-
-            <p>The 1s electron in gold moves at about 58% the speed of light. At these speeds, Einstein's relativity kicks in: the electron's relativistic mass increases, which pulls it closer to the nucleus. This contracts the 1s orbital—and, through orthogonality requirements, contracts all s orbitals.</p>
-
-            <div class="visual-container">
-                <canvas id="relativistic-canvas" width="900" height="400"></canvas>
-                <p class="caption">Relativistic effects on orbital energies. The 6s contracts and stabilizes; 5d and 4f expand and destabilize.</p>
-            </div>
-
-            <p>But the effect doesn't stop there. The contracted 6s orbital <em>shields the nucleus better</em>, which causes the 5d and 4f orbitals to <strong>expand</strong>. This has spectacular consequences:</p>
-
-            <table class="data-table">
-                <tr>
-                    <th>Element</th>
-                    <th>Relativistic Effect</th>
-                    <th>Observable Consequence</th>
-                </tr>
-                <tr>
-                    <td style="color: var(--accent-yellow);">Gold (Au)</td>
-                    <td>6s contracted, 5d expanded</td>
-                    <td>Gold is golden! The 5d→6s transition falls in the visible range (absorbs blue)</td>
-                </tr>
-                <tr>
-                    <td style="color: var(--accent-cyan);">Mercury (Hg)</td>
-                    <td>6s² extremely stable</td>
-                    <td>Mercury is liquid! Weak Hg-Hg bonds (contracted 6s overlaps poorly)</td>
-                </tr>
-                <tr>
-                    <td style="color: var(--text-dim);">Lead (Pb)</td>
-                    <td>6s² reluctant to bond</td>
-                    <td>Lead is +2, not +4 (inert pair effect)</td>
-                </tr>
-                <tr>
-                    <td style="color: var(--accent-orange);">Tungsten (W)</td>
-                    <td>5d expanded, better bonding</td>
-                    <td>Highest melting point of any element (3422°C)</td>
-                </tr>
-            </table>
-
-            <div class="key-insight">
-                Without relativistic effects, gold would be silver-colored, and mercury would be solid at room temperature. Einstein's physics is essential for understanding the chemistry of heavy elements.
-            </div>
+            <p class="source-note">Covalent radii from Cordero et al., Dalton Trans. 2008</p>
         </section>
 
-        <!-- PART IV: WHY MERCURY IS LIQUID -->
+        <!-- LANTHANIDE CONTRACTION -->
         <section class="section">
-            <h2 class="section-title">Why Is Mercury Liquid?</h2>
+            <h2>The Lanthanide Contraction</h2>
 
-            <p>Mercury melts at -39°C. The next lowest-melting metal is cesium at 28°C—a difference of 67°C. What makes mercury so special?</p>
+            <p>The elements of the third transition series (period 6) are preceded by the lanthanoids, in which fourteen 4f electrons are added. These 4f orbitals have poor shielding properties. The f electrons lie deep within the atom and do not effectively screen outer electrons from the nuclear charge. As we cross from lanthanum to lutetium, Z<sub>eff</sub> experienced by the outer electrons increases steadily.</p>
 
-            <p>The answer combines everything we've learned:</p>
+            <p>The consequence is remarkable. Atomic radii in the 5d series are nearly identical to their congeners in the 4d series, even though period 6 atoms have 32 more electrons. Molybdenum and tungsten, separated by 32 protons and 32 electrons, have covalent radii of 154 and 162 pm respectively. Zirconium and hafnium both have radii of 175 pm.</p>
 
-            <ol style="margin-left: 2rem; margin-bottom: 1.5rem;">
-                <li style="margin-bottom: 1rem;"><strong>Relativistic 6s contraction:</strong> Mercury's 6s electrons are pulled unusually close to the nucleus. They form a stable, compact pair that doesn't participate much in bonding.</li>
+            <div class="figure">
+                <canvas id="lanthanide-canvas" width="800" height="320"></canvas>
+                <p class="figure-caption">Ionic radii of M³⁺ lanthanide ions. The 18% decrease from La³⁺ to Lu³⁺ is the lanthanide contraction. Data from Shannon 1976.</p>
+            </div>
 
-                <li style="margin-bottom: 1rem;"><strong>Filled d-shell:</strong> With 5d¹⁰, there are no d orbitals available for metallic bonding. In most transition metals, d electrons form a "d-band" that strengthens the metallic bond.</li>
+            <p>The contraction has practical consequences. Zirconium and hafnium were not separated until 1923, and even then it required thousands of fractional crystallizations. Their chemical similarity makes separation extraordinarily difficult. The third-row transition metals are also denser than simple extrapolation would predict, because the lanthanide contraction packs more mass into roughly the same volume.</p>
 
-                <li style="margin-bottom: 1rem;"><strong>Poor orbital overlap:</strong> The contracted 6s orbital overlaps poorly with neighboring atoms. The metallic bond is weak.</li>
-
-                <li><strong>No covalent contribution:</strong> Unlike Zn and Cd (which also have d¹⁰s²), mercury's relativistically contracted 6s makes even weaker bonds.</li>
-            </ol>
-
-            <table class="data-table">
+            <table>
                 <tr>
-                    <th>Element</th>
-                    <th>Config</th>
-                    <th>Melting Point (°C)</th>
-                    <th>Why?</th>
+                    <th>4d element</th>
+                    <th>Radius (pm)</th>
+                    <th>5d element</th>
+                    <th>Radius (pm)</th>
                 </tr>
-                <tr>
-                    <td>Zn</td>
-                    <td>3d¹⁰ 4s²</td>
-                    <td>420</td>
-                    <td>No relativistic effect, moderate metallic bonding</td>
-                </tr>
-                <tr>
-                    <td>Cd</td>
-                    <td>4d¹⁰ 5s²</td>
-                    <td>321</td>
-                    <td>Larger, weaker bonding</td>
-                </tr>
-                <tr>
-                    <td style="color: var(--accent-cyan);">Hg</td>
-                    <td>5d¹⁰ 6s²</td>
-                    <td style="color: var(--accent-cyan);">-39</td>
-                    <td style="color: var(--accent-cyan);">Relativistic 6s contraction → very weak bonds</td>
-                </tr>
-                <tr>
-                    <td>Au</td>
-                    <td>5d¹⁰ 6s¹</td>
-                    <td>1064</td>
-                    <td>One 6s electron available for bonding → strong metallic bond</td>
-                </tr>
+                <tr><td>Zr (Z=40)</td><td>175</td><td>Hf (Z=72)</td><td>175</td></tr>
+                <tr><td>Nb (Z=41)</td><td>164</td><td>Ta (Z=73)</td><td>170</td></tr>
+                <tr><td>Mo (Z=42)</td><td>154</td><td>W (Z=74)</td><td>162</td></tr>
             </table>
-
-            <p>Notice that gold—with just one 6s electron—forms excellent metallic bonds and melts at 1064°C. Mercury's paired 6s² electrons are too stable and too contracted to contribute effectively.</p>
+            <p class="source-note">From Atkins & Shriver, Inorganic Chemistry</p>
         </section>
 
-        <!-- PART V: THE INERT PAIR EFFECT -->
+        <!-- RELATIVISTIC EFFECTS -->
         <section class="section">
-            <h2 class="section-title">The Inert Pair Effect</h2>
+            <h2>Relativistic Effects</h2>
 
-            <p>Down Groups 13, 14, and 15, something strange happens: the lower oxidation state becomes increasingly stable.</p>
+            <p>For light elements, relativistic corrections to electron behavior are negligible. For heavy elements with high atomic numbers, they become significant and can reduce atomic size by approximately 20 percent.</p>
 
-            <table class="data-table">
+            <p>Electrons in s orbitals have nonzero probability density at the nucleus. In heavy atoms, these electrons move at velocities approaching the speed of light. According to special relativity, their mass increases. A more massive electron orbits closer to the nucleus, and the s orbitals contract. This contraction is most pronounced for the 6s orbital in elements like gold, mercury, and lead.</p>
+
+            <p>The contracted 6s orbital shields the nucleus more effectively. As a result, d and f electrons experience reduced nuclear attraction and their orbitals expand. The d and f electrons become more diffuse and less effective at shielding other electrons, which causes further contraction of the outermost s orbital.</p>
+
+            <div class="figure">
+                <canvas id="relativistic-canvas" width="800" height="350"></canvas>
+                <p class="figure-caption">Relativistic orbital contraction and expansion in gold. The 6s contracts; the 5d expands. After Pyykkö, Chem. Rev. 1988.</p>
+            </div>
+
+            <h3>Why Gold Is Golden</h3>
+
+            <p>Silver and gold have similar electron configurations: [Kr]4d¹⁰5s¹ and [Xe]4f¹⁴5d¹⁰6s¹. Silver is white because all visible wavelengths are reflected equally. Gold absorbs blue light and reflects yellow and red. The difference arises from relativistic effects. In gold, the 6s orbital is contracted and stabilized while the 5d orbitals are expanded and destabilized. The energy gap between the 5d and 6s levels shrinks until transitions between them fall in the visible range. Gold absorbs blue light (the 5d→6s transition) and appears golden.</p>
+
+            <h3>Why Mercury Is Liquid</h3>
+
+            <p>Mercury melts at −39°C, the only metal liquid at room temperature. The relativistic contraction of its 6s² electrons makes them unavailable for metallic bonding. The filled 5d¹⁰ shell contributes nothing to the metallic bond. With its bonding electrons contracted close to the nucleus and unwilling to overlap with neighboring atoms, mercury forms weak metallic bonds and melts at remarkably low temperature.</p>
+
+            <table>
                 <tr>
-                    <th>Group 13</th>
-                    <th>Stable Ox. States</th>
-                    <th>Group 14</th>
-                    <th>Stable Ox. States</th>
-                    <th>Group 15</th>
-                    <th>Stable Ox. States</th>
+                    <th>Element</th>
+                    <th>Configuration</th>
+                    <th>Melting point</th>
                 </tr>
-                <tr>
-                    <td>Al</td>
-                    <td>+3 only</td>
-                    <td>C</td>
-                    <td>+4 (common)</td>
-                    <td>N</td>
-                    <td>+5, +3, etc.</td>
-                </tr>
-                <tr>
-                    <td>Ga</td>
-                    <td>+3 (some +1)</td>
-                    <td>Si</td>
-                    <td>+4 only</td>
-                    <td>P</td>
-                    <td>+5, +3</td>
-                </tr>
-                <tr>
-                    <td>In</td>
-                    <td>+3 (more +1)</td>
-                    <td>Ge</td>
-                    <td>+4, +2</td>
-                    <td>As</td>
-                    <td>+5, +3</td>
-                </tr>
-                <tr>
-                    <td>Tl</td>
-                    <td style="color: var(--accent-yellow);">+1 preferred</td>
-                    <td>Sn</td>
-                    <td>+4, +2 both common</td>
-                    <td>Sb</td>
-                    <td>+5, +3</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td>Pb</td>
-                    <td style="color: var(--accent-yellow);">+2 preferred</td>
-                    <td>Bi</td>
-                    <td style="color: var(--accent-yellow);">+3 preferred</td>
-                </tr>
+                <tr><td>Zn</td><td>3d¹⁰ 4s²</td><td>420°C</td></tr>
+                <tr><td>Cd</td><td>4d¹⁰ 5s²</td><td>321°C</td></tr>
+                <tr><td>Hg</td><td>5d¹⁰ 6s²</td><td>−39°C</td></tr>
             </table>
+            <p class="source-note">The 267°C drop from Cd to Hg reflects relativistic stabilization of 6s²</p>
+        </section>
 
-            <p>Why does the ns² pair become "inert"?</p>
+        <!-- INERT PAIR EFFECT -->
+        <section class="section">
+            <h2>The Inert Pair Effect</h2>
 
-            <p><strong>Two factors combine:</strong></p>
+            <p>Carbon and silicon possess inner noble gas shells that efficiently screen their valence electrons from the nuclear charge. This promotes hybridization and bonding. Carbon and silicon rarely exhibit the +2 oxidation state.</p>
 
-            <ol style="margin-left: 2rem; margin-bottom: 1.5rem;">
-                <li style="margin-bottom: 1rem;"><strong>Relativistic stabilization:</strong> For 6th period elements (Tl, Pb, Bi), the 6s orbital is relativistically contracted and stabilized. Using those electrons costs more energy.</li>
+            <p>Germanium, tin, and lead differ. Their atoms possess inner 18-electron shells (s²p⁶d¹⁰) that screen the valence electrons less efficiently. The ns² electron pair becomes stabilized. The dipositive state first appears definitively with germanium and grows increasingly important down the group.</p>
 
-                <li><strong>Poor orbital overlap:</strong> Even if you could use the 6s electrons, the contracted 6s orbital overlaps poorly with ligand orbitals. The bonds would be weak, making the energy investment not worthwhile.</li>
-            </ol>
+            <p>The high nuclear charge of lead, combined with the poor shielding from its filled 4f and 5d subshells, results in strong stabilization of the 6s² pair. This is the inert pair effect. Lead(II) is more stable than lead(IV). Compounds of lead(IV) are strong oxidizing agents, readily accepting electrons to achieve the more stable +2 state.</p>
 
-            <p><strong>Chemical consequences:</strong></p>
-            <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
-                <li>TlCl is stable; TlCl₃ decomposes above 40°C</li>
-                <li>PbO₂ is a powerful oxidizer (it wants to become PbO)</li>
-                <li>Bi₂O₅ doesn't exist under normal conditions; Bi₂O₃ is the stable oxide</li>
-                <li>Pb(IV) compounds are all oxidizing agents</li>
-            </ul>
+            <table>
+                <tr>
+                    <th>Element</th>
+                    <th>Common states</th>
+                    <th>Notes</th>
+                </tr>
+                <tr><td>C</td><td>+4</td><td>+2 rare</td></tr>
+                <tr><td>Si</td><td>+4</td><td>+2 very rare</td></tr>
+                <tr><td>Ge</td><td>+4, +2</td><td>+4 more stable</td></tr>
+                <tr><td>Sn</td><td>+4, +2</td><td>Both common</td></tr>
+                <tr><td>Pb</td><td>+2</td><td>+4 is oxidizing</td></tr>
+            </table>
+            <p class="source-note">From Basset, Inorganic Chemistry</p>
 
-            <div class="check-understanding">
-                <h3>Check Your Understanding</h3>
-                <div class="quiz-q" id="quiz-inert">
-                    <p>Tin(IV) chloride (SnCl₄) and lead(IV) chloride (PbCl₄) are both known compounds. Which statement is true?</p>
-                    <div class="quiz-options">
-                        <button class="quiz-opt" onclick="checkQuiz('quiz-inert', this, false)">Both are equally stable</button>
-                        <button class="quiz-opt" onclick="checkQuiz('quiz-inert', this, false)">PbCl₄ is more stable due to its larger size</button>
-                        <button class="quiz-opt" onclick="checkQuiz('quiz-inert', this, true)">PbCl₄ decomposes easily to PbCl₂ + Cl₂</button>
-                        <button class="quiz-opt" onclick="checkQuiz('quiz-inert', this, false)">SnCl₄ is less stable than SnCl₂</button>
-                    </div>
-                    <div class="quiz-explain" id="quiz-inert-explain">
-                        <strong>Correct!</strong> PbCl₄ is unstable due to the inert pair effect. The 6s² electrons in Pb are relativistically stabilized, making Pb²⁺ much more stable than Pb⁴⁺. PbCl₄ readily decomposes: PbCl₄ → PbCl₂ + Cl₂. In contrast, SnCl₄ is perfectly stable because tin (4th period) doesn't experience significant relativistic effects.
-                    </div>
+            <p>The same pattern appears in groups 13 and 15. Thallium prefers +1 over +3. The direct reaction of thallium with halogens produces TlX, not TlX₃. Bismuth prefers +3, and Bi₂O₅ does not exist under normal conditions while Bi₂O₃ is stable.</p>
+
+            <p>The cause is twofold. More energy is required to promote or ionize the 6s electrons because they are relativistically stabilized. But the energy recovered upon forming bonds is diminished because the contracted 6s orbital overlaps poorly with ligand orbitals. The energy investment is not worthwhile, and the pair remains inert.</p>
+
+            <div class="check-box">
+                <h4>Test yourself</h4>
+                <p>PbO₂ is used as an oxidizing agent. What happens to lead's oxidation state when PbO₂ acts as an oxidizer?</p>
+                <button class="quiz-btn" onclick="checkQuiz(this, true)">Pb goes from +4 to +2</button>
+                <button class="quiz-btn" onclick="checkQuiz(this, false)">Pb goes from +2 to +4</button>
+                <button class="quiz-btn" onclick="checkQuiz(this, false)">Pb remains +4</button>
+                <div class="quiz-answer" id="pb-ans">
+                    <p>Correct. PbO₂ contains Pb(IV), which is unstable due to the inert pair effect. When PbO₂ oxidizes another substance, it accepts electrons and lead is reduced to the more stable +2 state.</p>
                 </div>
             </div>
         </section>
 
-        <!-- PART VI: THE f-BLOCK -->
+        <!-- THE f-BLOCK -->
         <section class="section">
-            <h2 class="section-title">The f-Block: Why Lanthanides Are "Boring"</h2>
+            <h2>The f-Block</h2>
 
-            <p>Here's a paradox: 15 elements (La through Lu) with remarkably similar chemistry. Why?</p>
+            <p>Fifteen elements from lanthanum to lutetium show remarkably similar chemistry. All favor the +3 oxidation state. Their ionic radii decrease smoothly across the series. They are extraordinarily difficult to separate, requiring ion-exchange chromatography.</p>
 
-            <p><strong>4f orbitals are buried.</strong> They're shielded by filled 5s², 5p⁶, and partially filled 5d/6s orbitals. The 4f electrons rarely participate directly in bonding—they're too deep inside the atom.</p>
+            <p>The similarity arises because 4f orbitals are buried. They are shielded by filled 5s², 5p⁶ subshells and lie deep inside the atom. The 4f electrons do not extend to the periphery where chemical bonding occurs. Lanthanide chemistry is determined by the outer 5d and 6s electrons, which are nearly identical across the series.</p>
 
-            <div class="visual-container">
-                <canvas id="f-orbital-canvas" width="900" height="300"></canvas>
-                <p class="caption">Radial probability distribution: 4f electrons (purple) are buried inside 5s, 5p, and 5d. They don't "see" the chemical environment.</p>
+            <div class="figure">
+                <canvas id="f-burial-canvas" width="800" height="280"></canvas>
+                <p class="figure-caption">Radial probability for Gd. The 4f electrons (purple) are buried inside the 5s and 5p shells and do not participate in bonding.</p>
             </div>
 
-            <p><strong>Consequences:</strong></p>
-            <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
-                <li>All lanthanides favor the +3 oxidation state</li>
-                <li>Ionic radii decrease smoothly across the series (lanthanide contraction)</li>
-                <li>Similar coordination chemistry throughout</li>
-                <li>Extremely difficult to separate (requires ion exchange chromatography)</li>
-            </ul>
+            <p>Three lanthanides show unusual oxidation states that reveal what stabilizes +3:</p>
 
-            <h3 class="subsection">The Exceptions Prove the Rule</h3>
-
-            <p>Three lanthanides show unusual oxidation states. They reveal why +3 is normally preferred:</p>
-
-            <table class="data-table">
+            <table>
                 <tr>
                     <th>Element</th>
-                    <th>Unusual State</th>
-                    <th>4f Configuration</th>
-                    <th>Why Stable</th>
+                    <th>Unusual state</th>
+                    <th>4f configuration</th>
+                    <th>Stabilization</th>
                 </tr>
-                <tr>
-                    <td>Ce</td>
-                    <td style="color: var(--accent-green);">+4</td>
-                    <td>4f⁰</td>
-                    <td>Achieves noble gas core [Xe]</td>
-                </tr>
-                <tr>
-                    <td>Eu</td>
-                    <td style="color: var(--accent-green);">+2</td>
-                    <td>4f⁷</td>
-                    <td>Half-filled subshell is stable</td>
-                </tr>
-                <tr>
-                    <td>Yb</td>
-                    <td style="color: var(--accent-green);">+2</td>
-                    <td>4f¹⁴</td>
-                    <td>Filled subshell is stable</td>
-                </tr>
+                <tr><td>Ce</td><td>+4</td><td>4f⁰</td><td>Empty subshell</td></tr>
+                <tr><td>Eu</td><td>+2</td><td>4f⁷</td><td>Half-filled subshell</td></tr>
+                <tr><td>Yb</td><td>+2</td><td>4f¹⁴</td><td>Filled subshell</td></tr>
             </table>
 
-            <h3 class="subsection">Actinides Are Different</h3>
+            <h3>Actinides Are Different</h3>
 
-            <p>5f orbitals extend further from the nucleus than 4f. They participate more in bonding.</p>
-
-            <table class="data-table">
-                <tr>
-                    <th>Property</th>
-                    <th>Lanthanides (4f)</th>
-                    <th>Actinides (5f)</th>
-                </tr>
-                <tr>
-                    <td>f orbital extent</td>
-                    <td>Buried, non-bonding</td>
-                    <td>Extended, partially bonding</td>
-                </tr>
-                <tr>
-                    <td>Oxidation states</td>
-                    <td>Almost exclusively +3</td>
-                    <td>Multiple (+3 to +6 for U)</td>
-                </tr>
-                <tr>
-                    <td>Bonding character</td>
-                    <td>Ionic</td>
-                    <td>More covalent</td>
-                </tr>
-                <tr>
-                    <td>Color origin</td>
-                    <td>f-f transitions (weak)</td>
-                    <td>f-f and charge transfer (intense)</td>
-                </tr>
-            </table>
+            <p>The 5f orbitals of the actinides extend further from the nucleus than the 4f orbitals of the lanthanides. They participate more in bonding. Uranium shows oxidation states from +3 to +6, with uranyl (UO₂²⁺) being particularly stable. Actinide bonding has more covalent character than lanthanide bonding.</p>
         </section>
 
-        <!-- PART VII: PERIODICITY OF OXIDATION STATES -->
+        <!-- PERIODIC TABLE -->
         <section class="section">
-            <h2 class="section-title">Periodicity of Oxidation States</h2>
+            <h2>The Periodic Table</h2>
 
-            <p>The maximum oxidation state follows a clear pattern—until it doesn't.</p>
+            <p>The periodic table below is colored by block. Click any element to see its electron configuration.</p>
 
-            <div class="visual-container">
-                <canvas id="oxidation-canvas" width="900" height="350"></canvas>
-                <p class="caption">Maximum oxidation states across the 3d series. Note the peak at Mn (Group 7) and decline after.</p>
+            <div class="periodic-container">
+                <div class="periodic-table" id="ptable"></div>
             </div>
 
-            <p><strong>Key observations:</strong></p>
-            <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
-                <li>Maximum oxidation state equals group number <em>up to Group 7</em> (Mn: +7 in KMnO₄)</li>
-                <li>After Group 7, maximum oxidation state <em>decreases</em></li>
-                <li>Fe max = +6, Co max = +5, Ni max = +4</li>
-                <li>Cu and Zn resist high oxidation states entirely</li>
-            </ul>
-
-            <p><strong>Why the decrease?</strong></p>
-
-            <p>As we add more d electrons, exchange energy stabilization increases. Electrons with parallel spins can "exchange" positions, lowering the total energy. Removing electrons destroys these favorable exchanges. By the time we reach Fe and beyond, the exchange energy cost of reaching high oxidation states outweighs the bonding energy gained.</p>
-
-            <div class="check-understanding">
-                <h3>Check Your Understanding</h3>
-                <div class="quiz-q" id="quiz-ox">
-                    <p>Why can manganese reach +7 (in permanganate) but iron cannot exceed +6?</p>
-                    <div class="quiz-options">
-                        <button class="quiz-opt" onclick="checkQuiz('quiz-ox', this, false)">Iron is larger and can't accommodate 7 bonds</button>
-                        <button class="quiz-opt" onclick="checkQuiz('quiz-ox', this, true)">Iron's extra d electron provides exchange stabilization that's too costly to lose</button>
-                        <button class="quiz-opt" onclick="checkQuiz('quiz-ox', this, false)">Manganese has a lower ionization energy</button>
-                        <button class="quiz-opt" onclick="checkQuiz('quiz-ox', this, false)">Iron +7 would violate the octet rule</button>
-                    </div>
-                    <div class="quiz-explain" id="quiz-ox-explain">
-                        <strong>Correct!</strong> Mn has 5 d electrons, achieving a half-filled subshell at Mn(VII) with d⁰. Fe has 6 d electrons; reaching Fe(VII) would require breaking up favorable d-d exchange interactions from 6 parallel-spin electrons. The exchange energy cost exceeds the bond energy gained, so Fe(VII) is inaccessible under normal conditions.
-                    </div>
-                </div>
-            </div>
+            <p>Twenty-one elements have electron configurations that differ from simple aufbau predictions. Chromium is [Ar]3d⁵4s¹, not [Ar]3d⁴4s². Copper is [Ar]3d¹⁰4s¹, not [Ar]3d⁹4s². The exchange energy gained from half-filled or filled subshells exceeds the small energy cost of promoting an electron. These are not exceptions to a rule; they reveal that minimizing total energy, not following a filling order, determines electron configuration.</p>
         </section>
 
-        <!-- SUMMARY -->
-        <section class="section">
-            <h2 class="section-title">Bringing It All Together</h2>
-
-            <p>The periodic table isn't just 4 trends to memorize. It's a map of how electron behavior determines chemistry. The key concepts:</p>
-
-            <table class="data-table">
-                <tr>
-                    <th>Concept</th>
-                    <th>What It Explains</th>
-                </tr>
-                <tr>
-                    <td>Aufbau "violations"</td>
-                    <td>Exchange energy stabilizes half-filled and filled subshells</td>
-                </tr>
-                <tr>
-                    <td>Scandide contraction</td>
-                    <td>3d electrons shield poorly → Ga ≈ Al in size</td>
-                </tr>
-                <tr>
-                    <td>Lanthanide contraction</td>
-                    <td>4f electrons shield even worse → Hf ≈ Zr in size</td>
-                </tr>
-                <tr>
-                    <td>Relativistic effects</td>
-                    <td>6s contracts, 5d expands → Au is golden, Hg is liquid</td>
-                </tr>
-                <tr>
-                    <td>Inert pair effect</td>
-                    <td>ns² reluctant to bond in heavy elements → Pb prefers +2</td>
-                </tr>
-                <tr>
-                    <td>f-orbital burial</td>
-                    <td>4f doesn't participate in bonding → lanthanides are similar</td>
-                </tr>
-                <tr>
-                    <td>Exchange energy</td>
-                    <td>Limits max oxidation state after Group 7</td>
-                </tr>
-            </table>
-
-            <div class="key-insight">
-                Mendeleev's prediction power came from recognizing patterns. Now you understand <em>why</em> those patterns exist—and where they break down. You can predict not just trends, but exceptions.
-            </div>
-        </section>
-
-        <!-- Data Sources -->
-        <section class="section" style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid #2a3a5a;">
-            <h3 style="color: var(--text-dim); font-size: 1rem; margin-bottom: 1rem;">Data Sources</h3>
-            <ul style="font-size: 0.9rem; color: var(--text-dim); list-style: none;">
-                <li style="margin-bottom: 0.5rem;"><strong>Electron configurations:</strong> NIST Atomic Spectra Database, <a href="https://physics.nist.gov/asd" style="color: var(--accent);">physics.nist.gov/asd</a></li>
-                <li style="margin-bottom: 0.5rem;"><strong>Covalent radii:</strong> Cordero, B. et al. (2008) <em>Dalton Trans.</em> DOI: <a href="https://doi.org/10.1039/b801115j" style="color: var(--accent);">10.1039/b801115j</a></li>
-                <li style="margin-bottom: 0.5rem;"><strong>Ionic radii:</strong> Shannon, R.D. (1976) <em>Acta Cryst.</em> A32, 751–767</li>
-                <li style="margin-bottom: 0.5rem;"><strong>Relativistic effects:</strong> Pyykkö, P. (1988) <em>Chem. Rev.</em> 88, 563–594</li>
-                <li><strong>Oxidation states:</strong> Greenwood, N.N. & Earnshaw, A. <em>Chemistry of the Elements</em></li>
-            </ul>
+        <!-- SOURCES -->
+        <section class="section" style="border-top: 1px solid #2a3a5a; padding-top: 2rem; margin-top: 3rem;">
+            <h3 style="color: var(--text-dim); font-size: 1rem;">Sources</h3>
+            <p style="font-size: 0.9rem; color: var(--text-dim);">
+                Atkins, P. & Shriver, D. <em>Inorganic Chemistry</em>. Oxford University Press.<br>
+                Housecroft, C. & Sharpe, A. <em>Inorganic Chemistry</em>. Pearson.<br>
+                Basset, H. <em>Inorganic Chemistry</em>.<br>
+                Lee, J.D. <em>Concise Inorganic Chemistry</em>. Wiley.<br>
+                Cordero, B. et al. (2008) <em>Dalton Trans.</em> DOI: 10.1039/b801115j<br>
+                Shannon, R.D. (1976) <em>Acta Cryst.</em> A32, 751.<br>
+                Pyykkö, P. (1988) <em>Chem. Rev.</em> 88, 563.
+            </p>
         </section>
 
         <nav class="nav-bottom">
@@ -1215,157 +509,70 @@
         </nav>
     </article>
 
-    <!-- Element detail popup -->
-    <div class="overlay" id="overlay" onclick="closeDetail()"></div>
-    <div class="element-detail" id="element-detail">
-        <h3 id="detail-name">Element</h3>
-        <div class="detail-grid" id="detail-content"></div>
-        <button onclick="closeDetail()" style="margin-top: 1rem; padding: 0.5rem 1rem; background: var(--accent); color: #000; border: none; border-radius: 4px; cursor: pointer;">Close</button>
-    </div>
-
     <script>
-        // Complete element data with electron configurations
-        const elementData = {
-            H:  { z: 1, name: 'Hydrogen', config: '1s¹', block: 's', anomaly: false, maxOx: 1, radius: 31 },
-            He: { z: 2, name: 'Helium', config: '1s²', block: 's', anomaly: false, maxOx: 0, radius: 28 },
-            Li: { z: 3, name: 'Lithium', config: '[He] 2s¹', block: 's', anomaly: false, maxOx: 1, radius: 128 },
-            Be: { z: 4, name: 'Beryllium', config: '[He] 2s²', block: 's', anomaly: false, maxOx: 2, radius: 96 },
-            B:  { z: 5, name: 'Boron', config: '[He] 2s² 2p¹', block: 'p', anomaly: false, maxOx: 3, radius: 84 },
-            C:  { z: 6, name: 'Carbon', config: '[He] 2s² 2p²', block: 'p', anomaly: false, maxOx: 4, radius: 76 },
-            N:  { z: 7, name: 'Nitrogen', config: '[He] 2s² 2p³', block: 'p', anomaly: false, maxOx: 5, radius: 71 },
-            O:  { z: 8, name: 'Oxygen', config: '[He] 2s² 2p⁴', block: 'p', anomaly: false, maxOx: -2, radius: 66 },
-            F:  { z: 9, name: 'Fluorine', config: '[He] 2s² 2p⁵', block: 'p', anomaly: false, maxOx: -1, radius: 57 },
-            Ne: { z: 10, name: 'Neon', config: '[He] 2s² 2p⁶', block: 'p', anomaly: false, maxOx: 0, radius: 58 },
-            Na: { z: 11, name: 'Sodium', config: '[Ne] 3s¹', block: 's', anomaly: false, maxOx: 1, radius: 166 },
-            Mg: { z: 12, name: 'Magnesium', config: '[Ne] 3s²', block: 's', anomaly: false, maxOx: 2, radius: 141 },
-            Al: { z: 13, name: 'Aluminum', config: '[Ne] 3s² 3p¹', block: 'p', anomaly: false, maxOx: 3, radius: 121 },
-            Si: { z: 14, name: 'Silicon', config: '[Ne] 3s² 3p²', block: 'p', anomaly: false, maxOx: 4, radius: 111 },
-            P:  { z: 15, name: 'Phosphorus', config: '[Ne] 3s² 3p³', block: 'p', anomaly: false, maxOx: 5, radius: 107 },
-            S:  { z: 16, name: 'Sulfur', config: '[Ne] 3s² 3p⁴', block: 'p', anomaly: false, maxOx: 6, radius: 105 },
-            Cl: { z: 17, name: 'Chlorine', config: '[Ne] 3s² 3p⁵', block: 'p', anomaly: false, maxOx: 7, radius: 102 },
-            Ar: { z: 18, name: 'Argon', config: '[Ne] 3s² 3p⁶', block: 'p', anomaly: false, maxOx: 0, radius: 106 },
-            K:  { z: 19, name: 'Potassium', config: '[Ar] 4s¹', block: 's', anomaly: false, maxOx: 1, radius: 203 },
-            Ca: { z: 20, name: 'Calcium', config: '[Ar] 4s²', block: 's', anomaly: false, maxOx: 2, radius: 176 },
-            Sc: { z: 21, name: 'Scandium', config: '[Ar] 3d¹ 4s²', block: 'd', anomaly: false, maxOx: 3, radius: 170 },
-            Ti: { z: 22, name: 'Titanium', config: '[Ar] 3d² 4s²', block: 'd', anomaly: false, maxOx: 4, radius: 160 },
-            V:  { z: 23, name: 'Vanadium', config: '[Ar] 3d³ 4s²', block: 'd', anomaly: false, maxOx: 5, radius: 153 },
-            Cr: { z: 24, name: 'Chromium', config: '[Ar] 3d⁵ 4s¹', block: 'd', anomaly: true, maxOx: 6, radius: 139, note: 'Half-filled d subshell' },
-            Mn: { z: 25, name: 'Manganese', config: '[Ar] 3d⁵ 4s²', block: 'd', anomaly: false, maxOx: 7, radius: 150 },
-            Fe: { z: 26, name: 'Iron', config: '[Ar] 3d⁶ 4s²', block: 'd', anomaly: false, maxOx: 6, radius: 142 },
-            Co: { z: 27, name: 'Cobalt', config: '[Ar] 3d⁷ 4s²', block: 'd', anomaly: false, maxOx: 5, radius: 138 },
-            Ni: { z: 28, name: 'Nickel', config: '[Ar] 3d⁸ 4s²', block: 'd', anomaly: false, maxOx: 4, radius: 124 },
-            Cu: { z: 29, name: 'Copper', config: '[Ar] 3d¹⁰ 4s¹', block: 'd', anomaly: true, maxOx: 3, radius: 132, note: 'Filled d subshell' },
-            Zn: { z: 30, name: 'Zinc', config: '[Ar] 3d¹⁰ 4s²', block: 'd', anomaly: false, maxOx: 2, radius: 122 },
-            Ga: { z: 31, name: 'Gallium', config: '[Ar] 3d¹⁰ 4s² 4p¹', block: 'p', anomaly: false, maxOx: 3, radius: 122 },
-            Ge: { z: 32, name: 'Germanium', config: '[Ar] 3d¹⁰ 4s² 4p²', block: 'p', anomaly: false, maxOx: 4, radius: 120 },
-            As: { z: 33, name: 'Arsenic', config: '[Ar] 3d¹⁰ 4s² 4p³', block: 'p', anomaly: false, maxOx: 5, radius: 119 },
-            Se: { z: 34, name: 'Selenium', config: '[Ar] 3d¹⁰ 4s² 4p⁴', block: 'p', anomaly: false, maxOx: 6, radius: 120 },
-            Br: { z: 35, name: 'Bromine', config: '[Ar] 3d¹⁰ 4s² 4p⁵', block: 'p', anomaly: false, maxOx: 7, radius: 120 },
-            Kr: { z: 36, name: 'Krypton', config: '[Ar] 3d¹⁰ 4s² 4p⁶', block: 'p', anomaly: false, maxOx: 2, radius: 116 },
-            Rb: { z: 37, name: 'Rubidium', config: '[Kr] 5s¹', block: 's', anomaly: false, maxOx: 1, radius: 220 },
-            Sr: { z: 38, name: 'Strontium', config: '[Kr] 5s²', block: 's', anomaly: false, maxOx: 2, radius: 195 },
-            Y:  { z: 39, name: 'Yttrium', config: '[Kr] 4d¹ 5s²', block: 'd', anomaly: false, maxOx: 3, radius: 190 },
-            Zr: { z: 40, name: 'Zirconium', config: '[Kr] 4d² 5s²', block: 'd', anomaly: false, maxOx: 4, radius: 175 },
-            Nb: { z: 41, name: 'Niobium', config: '[Kr] 4d⁴ 5s¹', block: 'd', anomaly: true, maxOx: 5, radius: 164, note: 'Exchange energy preference' },
-            Mo: { z: 42, name: 'Molybdenum', config: '[Kr] 4d⁵ 5s¹', block: 'd', anomaly: true, maxOx: 6, radius: 154, note: 'Half-filled d subshell' },
-            Tc: { z: 43, name: 'Technetium', config: '[Kr] 4d⁵ 5s²', block: 'd', anomaly: false, maxOx: 7, radius: 147 },
-            Ru: { z: 44, name: 'Ruthenium', config: '[Kr] 4d⁷ 5s¹', block: 'd', anomaly: true, maxOx: 8, radius: 146, note: 'Minimizes pairing energy' },
-            Rh: { z: 45, name: 'Rhodium', config: '[Kr] 4d⁸ 5s¹', block: 'd', anomaly: true, maxOx: 6, radius: 142, note: 'Minimizes pairing energy' },
-            Pd: { z: 46, name: 'Palladium', config: '[Kr] 4d¹⁰', block: 'd', anomaly: true, maxOx: 4, radius: 139, note: 'Filled d, no s electrons!' },
-            Ag: { z: 47, name: 'Silver', config: '[Kr] 4d¹⁰ 5s¹', block: 'd', anomaly: true, maxOx: 3, radius: 145, note: 'Filled d subshell' },
-            Cd: { z: 48, name: 'Cadmium', config: '[Kr] 4d¹⁰ 5s²', block: 'd', anomaly: false, maxOx: 2, radius: 144 },
-            In: { z: 49, name: 'Indium', config: '[Kr] 4d¹⁰ 5s² 5p¹', block: 'p', anomaly: false, maxOx: 3, radius: 142 },
-            Sn: { z: 50, name: 'Tin', config: '[Kr] 4d¹⁰ 5s² 5p²', block: 'p', anomaly: false, maxOx: 4, radius: 139 },
-            Sb: { z: 51, name: 'Antimony', config: '[Kr] 4d¹⁰ 5s² 5p³', block: 'p', anomaly: false, maxOx: 5, radius: 139 },
-            Te: { z: 52, name: 'Tellurium', config: '[Kr] 4d¹⁰ 5s² 5p⁴', block: 'p', anomaly: false, maxOx: 6, radius: 138 },
-            I:  { z: 53, name: 'Iodine', config: '[Kr] 4d¹⁰ 5s² 5p⁵', block: 'p', anomaly: false, maxOx: 7, radius: 139 },
-            Xe: { z: 54, name: 'Xenon', config: '[Kr] 4d¹⁰ 5s² 5p⁶', block: 'p', anomaly: false, maxOx: 8, radius: 140 },
-            Cs: { z: 55, name: 'Cesium', config: '[Xe] 6s¹', block: 's', anomaly: false, maxOx: 1, radius: 244 },
-            Ba: { z: 56, name: 'Barium', config: '[Xe] 6s²', block: 's', anomaly: false, maxOx: 2, radius: 215 },
-            La: { z: 57, name: 'Lanthanum', config: '[Xe] 5d¹ 6s²', block: 'f', anomaly: true, maxOx: 3, radius: 207, note: 'No 4f electrons!' },
-            Ce: { z: 58, name: 'Cerium', config: '[Xe] 4f¹ 5d¹ 6s²', block: 'f', anomaly: false, maxOx: 4, radius: 204 },
-            Pr: { z: 59, name: 'Praseodymium', config: '[Xe] 4f³ 6s²', block: 'f', anomaly: false, maxOx: 4, radius: 203 },
-            Nd: { z: 60, name: 'Neodymium', config: '[Xe] 4f⁴ 6s²', block: 'f', anomaly: false, maxOx: 4, radius: 201 },
-            Pm: { z: 61, name: 'Promethium', config: '[Xe] 4f⁵ 6s²', block: 'f', anomaly: false, maxOx: 3, radius: 199 },
-            Sm: { z: 62, name: 'Samarium', config: '[Xe] 4f⁶ 6s²', block: 'f', anomaly: false, maxOx: 3, radius: 198 },
-            Eu: { z: 63, name: 'Europium', config: '[Xe] 4f⁷ 6s²', block: 'f', anomaly: false, maxOx: 3, radius: 198, note: 'Eu²⁺ stable (4f⁷)' },
-            Gd: { z: 64, name: 'Gadolinium', config: '[Xe] 4f⁷ 5d¹ 6s²', block: 'f', anomaly: true, maxOx: 3, radius: 196, note: 'Half-filled f + d¹' },
-            Tb: { z: 65, name: 'Terbium', config: '[Xe] 4f⁹ 6s²', block: 'f', anomaly: false, maxOx: 4, radius: 194 },
-            Dy: { z: 66, name: 'Dysprosium', config: '[Xe] 4f¹⁰ 6s²', block: 'f', anomaly: false, maxOx: 4, radius: 192 },
-            Ho: { z: 67, name: 'Holmium', config: '[Xe] 4f¹¹ 6s²', block: 'f', anomaly: false, maxOx: 3, radius: 192 },
-            Er: { z: 68, name: 'Erbium', config: '[Xe] 4f¹² 6s²', block: 'f', anomaly: false, maxOx: 3, radius: 189 },
-            Tm: { z: 69, name: 'Thulium', config: '[Xe] 4f¹³ 6s²', block: 'f', anomaly: false, maxOx: 3, radius: 190 },
-            Yb: { z: 70, name: 'Ytterbium', config: '[Xe] 4f¹⁴ 6s²', block: 'f', anomaly: false, maxOx: 3, radius: 187, note: 'Yb²⁺ stable (4f¹⁴)' },
-            Lu: { z: 71, name: 'Lutetium', config: '[Xe] 4f¹⁴ 5d¹ 6s²', block: 'f', anomaly: false, maxOx: 3, radius: 187 },
-            Hf: { z: 72, name: 'Hafnium', config: '[Xe] 4f¹⁴ 5d² 6s²', block: 'd', anomaly: false, maxOx: 4, radius: 175 },
-            Ta: { z: 73, name: 'Tantalum', config: '[Xe] 4f¹⁴ 5d³ 6s²', block: 'd', anomaly: false, maxOx: 5, radius: 170 },
-            W:  { z: 74, name: 'Tungsten', config: '[Xe] 4f¹⁴ 5d⁴ 6s²', block: 'd', anomaly: false, maxOx: 6, radius: 162 },
-            Re: { z: 75, name: 'Rhenium', config: '[Xe] 4f¹⁴ 5d⁵ 6s²', block: 'd', anomaly: false, maxOx: 7, radius: 151 },
-            Os: { z: 76, name: 'Osmium', config: '[Xe] 4f¹⁴ 5d⁶ 6s²', block: 'd', anomaly: false, maxOx: 8, radius: 144 },
-            Ir: { z: 77, name: 'Iridium', config: '[Xe] 4f¹⁴ 5d⁷ 6s²', block: 'd', anomaly: false, maxOx: 6, radius: 141 },
-            Pt: { z: 78, name: 'Platinum', config: '[Xe] 4f¹⁴ 5d⁹ 6s¹', block: 'd', anomaly: true, maxOx: 6, radius: 136, note: 'Relativistic + d⁹→d¹⁰ preference' },
-            Au: { z: 79, name: 'Gold', config: '[Xe] 4f¹⁴ 5d¹⁰ 6s¹', block: 'd', anomaly: true, maxOx: 5, radius: 136, note: 'Relativistic: gold is golden!' },
-            Hg: { z: 80, name: 'Mercury', config: '[Xe] 4f¹⁴ 5d¹⁰ 6s²', block: 'd', anomaly: false, maxOx: 2, radius: 132, note: 'Relativistic: liquid at RT!' },
-            Tl: { z: 81, name: 'Thallium', config: '[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p¹', block: 'p', anomaly: false, maxOx: 3, radius: 145, note: 'Inert pair: +1 preferred' },
-            Pb: { z: 82, name: 'Lead', config: '[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p²', block: 'p', anomaly: false, maxOx: 4, radius: 146, note: 'Inert pair: +2 preferred' },
-            Bi: { z: 83, name: 'Bismuth', config: '[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p³', block: 'p', anomaly: false, maxOx: 5, radius: 148, note: 'Inert pair: +3 preferred' },
-            Po: { z: 84, name: 'Polonium', config: '[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁴', block: 'p', anomaly: false, maxOx: 6, radius: 140 },
-            At: { z: 85, name: 'Astatine', config: '[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁵', block: 'p', anomaly: false, maxOx: 7, radius: 150 },
-            Rn: { z: 86, name: 'Radon', config: '[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁶', block: 'p', anomaly: false, maxOx: 2, radius: 150 },
-            Fr: { z: 87, name: 'Francium', config: '[Rn] 7s¹', block: 's', anomaly: false, maxOx: 1, radius: 260 },
-            Ra: { z: 88, name: 'Radium', config: '[Rn] 7s²', block: 's', anomaly: false, maxOx: 2, radius: 221 },
-            Ac: { z: 89, name: 'Actinium', config: '[Rn] 6d¹ 7s²', block: 'f', anomaly: true, maxOx: 3, radius: 215, note: 'No 5f electrons!' },
-            Th: { z: 90, name: 'Thorium', config: '[Rn] 6d² 7s²', block: 'f', anomaly: true, maxOx: 4, radius: 206, note: 'No 5f electrons!' },
-            Pa: { z: 91, name: 'Protactinium', config: '[Rn] 5f² 6d¹ 7s²', block: 'f', anomaly: false, maxOx: 5, radius: 200 },
-            U:  { z: 92, name: 'Uranium', config: '[Rn] 5f³ 6d¹ 7s²', block: 'f', anomaly: false, maxOx: 6, radius: 196 }
+        // Element data
+        const elements = {
+            H:{z:1,sym:'H',block:'s',config:'1s¹'},He:{z:2,sym:'He',block:'s',config:'1s²'},
+            Li:{z:3,sym:'Li',block:'s',config:'[He]2s¹'},Be:{z:4,sym:'Be',block:'s',config:'[He]2s²'},
+            B:{z:5,sym:'B',block:'p',config:'[He]2s²2p¹'},C:{z:6,sym:'C',block:'p',config:'[He]2s²2p²'},
+            N:{z:7,sym:'N',block:'p',config:'[He]2s²2p³'},O:{z:8,sym:'O',block:'p',config:'[He]2s²2p⁴'},
+            F:{z:9,sym:'F',block:'p',config:'[He]2s²2p⁵'},Ne:{z:10,sym:'Ne',block:'p',config:'[He]2s²2p⁶'},
+            Na:{z:11,sym:'Na',block:'s',config:'[Ne]3s¹'},Mg:{z:12,sym:'Mg',block:'s',config:'[Ne]3s²'},
+            Al:{z:13,sym:'Al',block:'p',config:'[Ne]3s²3p¹'},Si:{z:14,sym:'Si',block:'p',config:'[Ne]3s²3p²'},
+            P:{z:15,sym:'P',block:'p',config:'[Ne]3s²3p³'},S:{z:16,sym:'S',block:'p',config:'[Ne]3s²3p⁴'},
+            Cl:{z:17,sym:'Cl',block:'p',config:'[Ne]3s²3p⁵'},Ar:{z:18,sym:'Ar',block:'p',config:'[Ne]3s²3p⁶'},
+            K:{z:19,sym:'K',block:'s',config:'[Ar]4s¹'},Ca:{z:20,sym:'Ca',block:'s',config:'[Ar]4s²'},
+            Sc:{z:21,sym:'Sc',block:'d',config:'[Ar]3d¹4s²'},Ti:{z:22,sym:'Ti',block:'d',config:'[Ar]3d²4s²'},
+            V:{z:23,sym:'V',block:'d',config:'[Ar]3d³4s²'},Cr:{z:24,sym:'Cr',block:'d',config:'[Ar]3d⁵4s¹'},
+            Mn:{z:25,sym:'Mn',block:'d',config:'[Ar]3d⁵4s²'},Fe:{z:26,sym:'Fe',block:'d',config:'[Ar]3d⁶4s²'},
+            Co:{z:27,sym:'Co',block:'d',config:'[Ar]3d⁷4s²'},Ni:{z:28,sym:'Ni',block:'d',config:'[Ar]3d⁸4s²'},
+            Cu:{z:29,sym:'Cu',block:'d',config:'[Ar]3d¹⁰4s¹'},Zn:{z:30,sym:'Zn',block:'d',config:'[Ar]3d¹⁰4s²'},
+            Ga:{z:31,sym:'Ga',block:'p',config:'[Ar]3d¹⁰4s²4p¹'},Ge:{z:32,sym:'Ge',block:'p',config:'[Ar]3d¹⁰4s²4p²'},
+            As:{z:33,sym:'As',block:'p',config:'[Ar]3d¹⁰4s²4p³'},Se:{z:34,sym:'Se',block:'p',config:'[Ar]3d¹⁰4s²4p⁴'},
+            Br:{z:35,sym:'Br',block:'p',config:'[Ar]3d¹⁰4s²4p⁵'},Kr:{z:36,sym:'Kr',block:'p',config:'[Ar]3d¹⁰4s²4p⁶'},
+            Rb:{z:37,sym:'Rb',block:'s',config:'[Kr]5s¹'},Sr:{z:38,sym:'Sr',block:'s',config:'[Kr]5s²'},
+            Y:{z:39,sym:'Y',block:'d',config:'[Kr]4d¹5s²'},Zr:{z:40,sym:'Zr',block:'d',config:'[Kr]4d²5s²'},
+            Nb:{z:41,sym:'Nb',block:'d',config:'[Kr]4d⁴5s¹'},Mo:{z:42,sym:'Mo',block:'d',config:'[Kr]4d⁵5s¹'},
+            Tc:{z:43,sym:'Tc',block:'d',config:'[Kr]4d⁵5s²'},Ru:{z:44,sym:'Ru',block:'d',config:'[Kr]4d⁷5s¹'},
+            Rh:{z:45,sym:'Rh',block:'d',config:'[Kr]4d⁸5s¹'},Pd:{z:46,sym:'Pd',block:'d',config:'[Kr]4d¹⁰'},
+            Ag:{z:47,sym:'Ag',block:'d',config:'[Kr]4d¹⁰5s¹'},Cd:{z:48,sym:'Cd',block:'d',config:'[Kr]4d¹⁰5s²'},
+            In:{z:49,sym:'In',block:'p',config:'[Kr]4d¹⁰5s²5p¹'},Sn:{z:50,sym:'Sn',block:'p',config:'[Kr]4d¹⁰5s²5p²'},
+            Sb:{z:51,sym:'Sb',block:'p',config:'[Kr]4d¹⁰5s²5p³'},Te:{z:52,sym:'Te',block:'p',config:'[Kr]4d¹⁰5s²5p⁴'},
+            I:{z:53,sym:'I',block:'p',config:'[Kr]4d¹⁰5s²5p⁵'},Xe:{z:54,sym:'Xe',block:'p',config:'[Kr]4d¹⁰5s²5p⁶'},
+            Cs:{z:55,sym:'Cs',block:'s',config:'[Xe]6s¹'},Ba:{z:56,sym:'Ba',block:'s',config:'[Xe]6s²'},
+            La:{z:57,sym:'La',block:'f',config:'[Xe]5d¹6s²'},Ce:{z:58,sym:'Ce',block:'f',config:'[Xe]4f¹5d¹6s²'},
+            Hf:{z:72,sym:'Hf',block:'d',config:'[Xe]4f¹⁴5d²6s²'},Ta:{z:73,sym:'Ta',block:'d',config:'[Xe]4f¹⁴5d³6s²'},
+            W:{z:74,sym:'W',block:'d',config:'[Xe]4f¹⁴5d⁴6s²'},Re:{z:75,sym:'Re',block:'d',config:'[Xe]4f¹⁴5d⁵6s²'},
+            Os:{z:76,sym:'Os',block:'d',config:'[Xe]4f¹⁴5d⁶6s²'},Ir:{z:77,sym:'Ir',block:'d',config:'[Xe]4f¹⁴5d⁷6s²'},
+            Pt:{z:78,sym:'Pt',block:'d',config:'[Xe]4f¹⁴5d⁹6s¹'},Au:{z:79,sym:'Au',block:'d',config:'[Xe]4f¹⁴5d¹⁰6s¹'},
+            Hg:{z:80,sym:'Hg',block:'d',config:'[Xe]4f¹⁴5d¹⁰6s²'},Tl:{z:81,sym:'Tl',block:'p',config:'[Xe]4f¹⁴5d¹⁰6s²6p¹'},
+            Pb:{z:82,sym:'Pb',block:'p',config:'[Xe]4f¹⁴5d¹⁰6s²6p²'},Bi:{z:83,sym:'Bi',block:'p',config:'[Xe]4f¹⁴5d¹⁰6s²6p³'}
         };
 
-        // Periodic table layout (18 columns)
-        const ptLayout = [
+        const layout = [
             ['H','','','','','','','','','','','','','','','','','He'],
             ['Li','Be','','','','','','','','','','','B','C','N','O','F','Ne'],
             ['Na','Mg','','','','','','','','','','','Al','Si','P','S','Cl','Ar'],
             ['K','Ca','Sc','Ti','V','Cr','Mn','Fe','Co','Ni','Cu','Zn','Ga','Ge','As','Se','Br','Kr'],
             ['Rb','Sr','Y','Zr','Nb','Mo','Tc','Ru','Rh','Pd','Ag','Cd','In','Sn','Sb','Te','I','Xe'],
-            ['Cs','Ba','La*','Hf','Ta','W','Re','Os','Ir','Pt','Au','Hg','Tl','Pb','Bi','Po','At','Rn'],
-            ['Fr','Ra','Ac**','','','','','','','','','','','','','','',''],
-            ['','','','','','','','','','','','','','','','','',''],
-            ['*','Ce','Pr','Nd','Pm','Sm','Eu','Gd','Tb','Dy','Ho','Er','Tm','Yb','Lu','','',''],
-            ['**','Th','Pa','U','','','','','','','','','','','','','','']
+            ['Cs','Ba','La','Hf','Ta','W','Re','Os','Ir','Pt','Au','Hg','Tl','Pb','Bi','','','']
         ];
 
-        let currentMode = 'blocks';
-
-        function buildPeriodicTable() {
-            const container = document.getElementById('periodic-table');
-            container.innerHTML = '';
-
-            ptLayout.forEach((row, ri) => {
-                row.forEach((sym, ci) => {
+        function buildTable() {
+            const container = document.getElementById('ptable');
+            layout.forEach(row => {
+                row.forEach(sym => {
                     const div = document.createElement('div');
-                    div.className = 'pt-element';
-
-                    if (!sym || sym === '' || sym === '*' || sym === '**') {
+                    div.className = 'el';
+                    if (!sym) {
                         div.classList.add('empty');
-                        if (sym === '*' || sym === '**') {
-                            div.innerHTML = `<span class="sym" style="font-size:0.6rem;color:var(--text-dim);">${sym}</span>`;
-                            div.classList.remove('empty');
-                            div.style.background = 'transparent';
-                        }
                     } else {
-                        const cleanSym = sym.replace('*', '');
-                        const data = elementData[cleanSym];
+                        const data = elements[sym];
                         if (data) {
-                            div.innerHTML = `
-                                <span class="z">${data.z}</span>
-                                <span class="sym">${cleanSym}</span>
-                            `;
                             div.classList.add(data.block + '-block');
-                            if (data.anomaly) div.classList.add('anomaly');
-                            div.onclick = () => showElementDetail(cleanSym);
-                            div.title = `${data.name}\n${data.config}`;
-                        } else {
-                            div.innerHTML = `<span class="sym">${cleanSym}</span>`;
+                            div.innerHTML = `<span class="z">${data.z}</span><span class="sym">${sym}</span>`;
+                            div.title = `${sym}: ${data.config}`;
+                            div.onclick = () => alert(`${sym} (Z=${data.z})\n${data.config}`);
                         }
                     }
                     container.appendChild(div);
@@ -1373,451 +580,111 @@
             });
         }
 
-        function showPTMode(mode) {
-            currentMode = mode;
-            document.querySelectorAll('.pt-btn').forEach(b => b.classList.remove('active'));
-            event.target.classList.add('active');
-
-            const elements = document.querySelectorAll('.pt-element:not(.empty)');
-            elements.forEach(el => {
-                const sym = el.querySelector('.sym')?.textContent;
-                if (!sym || sym === '*' || sym === '**') return;
-                const data = elementData[sym];
-                if (!data) return;
-
-                // Reset classes
-                el.className = 'pt-element';
-
-                if (mode === 'blocks') {
-                    el.classList.add(data.block + '-block');
-                    if (data.anomaly) el.classList.add('anomaly');
-                } else if (mode === 'anomalies') {
-                    if (data.anomaly) {
-                        el.style.background = 'rgba(253, 214, 99, 0.3)';
-                        el.classList.add('anomaly');
-                    } else {
-                        el.style.background = 'var(--bg-elevated)';
-                    }
-                } else if (mode === 'oxidation') {
-                    const ox = data.maxOx;
-                    const hue = ox <= 0 ? 200 : (ox / 8) * 120;
-                    el.style.background = `hsl(${hue}, 50%, 25%)`;
-                } else if (mode === 'radii') {
-                    const r = data.radius || 100;
-                    const norm = Math.min(1, (r - 30) / 230);
-                    el.style.background = `hsl(${120 * norm}, 50%, 25%)`;
-                }
-            });
-
-            // Update legend
-            const legend = document.getElementById('pt-legend');
-            if (mode === 'blocks') {
-                legend.innerHTML = `
-                    <div class="legend-item"><span class="legend-color" style="background: #2d4a3d;"></span> s-block</div>
-                    <div class="legend-item"><span class="legend-color" style="background: #3d4a2d;"></span> p-block</div>
-                    <div class="legend-item"><span class="legend-color" style="background: #4a3d2d;"></span> d-block</div>
-                    <div class="legend-item"><span class="legend-color" style="background: #4a2d4a;"></span> f-block</div>
-                    <div class="legend-item"><span class="legend-color" style="background: transparent; border: 2px solid var(--accent-yellow);"></span> Anomalous config</div>
-                `;
-            } else if (mode === 'anomalies') {
-                legend.innerHTML = `
-                    <div class="legend-item"><span class="legend-color" style="background: rgba(253, 214, 99, 0.3); border: 2px solid var(--accent-yellow);"></span> Violates aufbau prediction</div>
-                    <div class="legend-item"><span class="legend-color" style="background: var(--bg-elevated);"></span> Follows aufbau</div>
-                `;
-            } else if (mode === 'oxidation') {
-                legend.innerHTML = `
-                    <div class="legend-item"><span class="legend-color" style="background: hsl(200, 50%, 25%);"></span> 0 or negative</div>
-                    <div class="legend-item"><span class="legend-color" style="background: hsl(60, 50%, 25%);"></span> +4</div>
-                    <div class="legend-item"><span class="legend-color" style="background: hsl(120, 50%, 25%);"></span> +8</div>
-                `;
-            } else if (mode === 'radii') {
-                legend.innerHTML = `
-                    <div class="legend-item"><span class="legend-color" style="background: hsl(0, 50%, 25%);"></span> Small (~30 pm)</div>
-                    <div class="legend-item"><span class="legend-color" style="background: hsl(60, 50%, 25%);"></span> Medium</div>
-                    <div class="legend-item"><span class="legend-color" style="background: hsl(120, 50%, 25%);"></span> Large (~260 pm)</div>
-                `;
-            }
-        }
-
-        function showElementDetail(sym) {
-            const data = elementData[sym];
-            if (!data) return;
-
-            document.getElementById('detail-name').textContent = `${data.name} (${sym})`;
-
-            let content = `
-                <span class="detail-label">Atomic Number:</span><span>${data.z}</span>
-                <span class="detail-label">Configuration:</span><span>${data.config}</span>
-                <span class="detail-label">Block:</span><span>${data.block}</span>
-                <span class="detail-label">Max Oxidation:</span><span>+${data.maxOx}</span>
-                <span class="detail-label">Covalent Radius:</span><span>${data.radius} pm</span>
-            `;
-            if (data.anomaly) {
-                content += `<span class="detail-label" style="color:var(--accent-yellow);">Anomaly:</span><span style="color:var(--accent-yellow);">${data.note || 'Yes'}</span>`;
-            }
-            if (data.note && !data.anomaly) {
-                content += `<span class="detail-label">Note:</span><span>${data.note}</span>`;
-            }
-
-            document.getElementById('detail-content').innerHTML = content;
-            document.getElementById('overlay').classList.add('show');
-            document.getElementById('element-detail').classList.add('show');
-        }
-
-        function closeDetail() {
-            document.getElementById('overlay').classList.remove('show');
-            document.getElementById('element-detail').classList.remove('show');
-        }
-
-        // Quiz handling
-        function checkQuiz(id, btn, correct) {
-            const opts = document.querySelectorAll(`#${id} .quiz-opt`);
-            opts.forEach(o => {
-                o.disabled = true;
-                o.classList.remove('correct', 'wrong');
-            });
-            btn.classList.add(correct ? 'correct' : 'wrong');
-            if (!correct) {
-                opts.forEach(o => {
-                    if (o.onclick.toString().includes('true')) o.classList.add('correct');
-                });
-            }
-            document.getElementById(`${id}-explain`).classList.add('show');
-        }
-
-        // Lanthanide contraction graph
-        function drawLanthanideGraph() {
-            const canvas = document.getElementById('lanthanide-canvas');
-            if (!canvas) return;
+        // Trend diagram
+        function drawTrends() {
+            const canvas = document.getElementById('trend-canvas');
             const ctx = canvas.getContext('2d');
-
             const dpr = window.devicePixelRatio || 1;
-            canvas.width = 900 * dpr;
-            canvas.height = 350 * dpr;
+            canvas.width = 800 * dpr;
+            canvas.height = 420 * dpr;
             ctx.scale(dpr, dpr);
 
-            const w = 900, h = 350;
+            const radii = {
+                'Li':128,'Be':96,'B':84,'C':76,'N':71,'O':66,'F':57,'Ne':58,
+                'Na':166,'Mg':141,'Al':121,'Si':111,'P':107,'S':105,'Cl':102,'Ar':106
+            };
+            const period2 = ['Li','Be','B','C','N','O','F','Ne'];
+            const period3 = ['Na','Mg','Al','Si','P','S','Cl','Ar'];
 
-            // Data: M³⁺ ionic radii in pm (Shannon 1976)
-            const lanthanides = [
-                {sym: 'La', r: 103.2}, {sym: 'Ce', r: 101.0}, {sym: 'Pr', r: 99.0},
-                {sym: 'Nd', r: 98.3}, {sym: 'Pm', r: 97.0}, {sym: 'Sm', r: 95.8},
-                {sym: 'Eu', r: 94.7}, {sym: 'Gd', r: 93.8}, {sym: 'Tb', r: 92.3},
-                {sym: 'Dy', r: 91.2}, {sym: 'Ho', r: 90.1}, {sym: 'Er', r: 89.0},
-                {sym: 'Tm', r: 88.0}, {sym: 'Yb', r: 86.8}, {sym: 'Lu', r: 86.1}
-            ];
+            const startX = 100, startY = 120, cellW = 80, cellH = 130;
 
-            const margin = {top: 40, right: 40, bottom: 60, left: 70};
-            const plotW = w - margin.left - margin.right;
-            const plotH = h - margin.top - margin.bottom;
-
-            // Background
-            ctx.fillStyle = 'var(--bg-card)';
-            ctx.fillRect(0, 0, w, h);
-
-            // Axes
-            ctx.strokeStyle = '#3a4a6a';
-            ctx.lineWidth = 1;
-            ctx.beginPath();
-            ctx.moveTo(margin.left, margin.top);
-            ctx.lineTo(margin.left, h - margin.bottom);
-            ctx.lineTo(w - margin.right, h - margin.bottom);
-            ctx.stroke();
-
-            // Y axis labels
-            ctx.fillStyle = '#9aa0a6';
-            ctx.font = '12px JetBrains Mono';
-            ctx.textAlign = 'right';
-            for (let r = 85; r <= 105; r += 5) {
-                const y = margin.top + plotH - ((r - 85) / 20) * plotH;
-                ctx.fillText(r + ' pm', margin.left - 10, y + 4);
-                ctx.beginPath();
-                ctx.moveTo(margin.left - 5, y);
-                ctx.lineTo(margin.left, y);
-                ctx.stroke();
-            }
-
-            // X axis labels and data points
+            ctx.fillStyle = '#e8eaed';
+            ctx.font = '13px JetBrains Mono';
             ctx.textAlign = 'center';
-            ctx.fillStyle = '#c58af9';
 
-            lanthanides.forEach((el, i) => {
-                const x = margin.left + (i / (lanthanides.length - 1)) * plotW;
-                const y = margin.top + plotH - ((el.r - 85) / 20) * plotH;
+            // Draw elements as circles scaled by radius
+            [period2, period3].forEach((row, ri) => {
+                row.forEach((el, ci) => {
+                    const x = startX + ci * cellW;
+                    const y = startY + ri * cellH;
+                    const r = radii[el];
+                    const circleR = r / 6;
 
-                // Draw point
-                ctx.beginPath();
-                ctx.arc(x, y, 6, 0, Math.PI * 2);
-                ctx.fillStyle = '#c58af9';
-                ctx.fill();
-
-                // Connect points
-                if (i > 0) {
-                    const prevEl = lanthanides[i-1];
-                    const px = margin.left + ((i-1) / (lanthanides.length - 1)) * plotW;
-                    const py = margin.top + plotH - ((prevEl.r - 85) / 20) * plotH;
-                    ctx.strokeStyle = '#c58af9';
-                    ctx.lineWidth = 2;
                     ctx.beginPath();
-                    ctx.moveTo(px, py);
-                    ctx.lineTo(x, y);
-                    ctx.stroke();
-                }
+                    ctx.arc(x, y, circleR, 0, Math.PI * 2);
+                    ctx.fillStyle = `hsl(${220 - r}, 60%, 45%)`;
+                    ctx.fill();
 
-                // Label
-                ctx.fillStyle = '#e8eaed';
-                ctx.fillText(el.sym, x, h - margin.bottom + 20);
+                    ctx.fillStyle = '#e8eaed';
+                    ctx.fillText(el, x, y + circleR + 18);
+                    ctx.fillStyle = '#9aa0a6';
+                    ctx.font = '11px JetBrains Mono';
+                    ctx.fillText(r + ' pm', x, y + circleR + 32);
+                    ctx.font = '13px JetBrains Mono';
+                });
             });
 
-            // Title
-            ctx.fillStyle = '#e8eaed';
-            ctx.font = '14px JetBrains Mono';
-            ctx.textAlign = 'center';
-            ctx.fillText('M³⁺ Ionic Radii (pm) — Lanthanide Contraction', w/2, 25);
+            // Arrows
+            ctx.strokeStyle = '#fdd663';
+            ctx.lineWidth = 2;
+            ctx.fillStyle = '#fdd663';
 
-            // Y axis title
+            // Horizontal arrow (decreasing across)
+            const arrowY = 70;
+            ctx.beginPath();
+            ctx.moveTo(startX - 30, arrowY);
+            ctx.lineTo(startX + 7 * cellW + 30, arrowY);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.moveTo(startX + 7 * cellW + 30, arrowY);
+            ctx.lineTo(startX + 7 * cellW + 15, arrowY - 8);
+            ctx.lineTo(startX + 7 * cellW + 15, arrowY + 8);
+            ctx.fill();
+            ctx.fillText('Radius decreases →', startX + 3.5 * cellW, arrowY - 15);
+
+            // Vertical arrow (increasing down)
+            ctx.strokeStyle = '#81c995';
+            ctx.fillStyle = '#81c995';
+            const arrowX = startX - 60;
+            ctx.beginPath();
+            ctx.moveTo(arrowX, startY - 30);
+            ctx.lineTo(arrowX, startY + cellH + 50);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.moveTo(arrowX, startY + cellH + 50);
+            ctx.lineTo(arrowX - 8, startY + cellH + 35);
+            ctx.lineTo(arrowX + 8, startY + cellH + 35);
+            ctx.fill();
+
             ctx.save();
-            ctx.translate(20, h/2);
-            ctx.rotate(-Math.PI/2);
-            ctx.fillText('Ionic Radius (pm)', 0, 0);
+            ctx.translate(arrowX - 25, startY + cellH / 2);
+            ctx.rotate(-Math.PI / 2);
+            ctx.fillText('Radius increases', 0, 0);
             ctx.restore();
         }
 
-        // Relativistic effects diagram
-        function drawRelativisticDiagram() {
-            const canvas = document.getElementById('relativistic-canvas');
-            if (!canvas) return;
+        // Lanthanide contraction graph
+        function drawLanthanide() {
+            const canvas = document.getElementById('lanthanide-canvas');
             const ctx = canvas.getContext('2d');
-
             const dpr = window.devicePixelRatio || 1;
-            canvas.width = 900 * dpr;
-            canvas.height = 400 * dpr;
+            canvas.width = 800 * dpr;
+            canvas.height = 320 * dpr;
             ctx.scale(dpr, dpr);
 
-            const w = 900, h = 400;
-
-            ctx.fillStyle = '#131b2e';
-            ctx.fillRect(0, 0, w, h);
-
-            // Draw two atoms side by side
-            const centerY = h / 2;
-
-            // Non-relativistic (left)
-            const leftX = 220;
-            ctx.fillStyle = '#e8eaed';
-            ctx.font = '14px JetBrains Mono';
-            ctx.textAlign = 'center';
-            ctx.fillText('Non-relativistic', leftX, 40);
-            ctx.fillText('(hypothetical Au)', leftX, 60);
-
-            // Nucleus
-            ctx.beginPath();
-            ctx.arc(leftX, centerY, 15, 0, Math.PI * 2);
-            ctx.fillStyle = '#fdd663';
-            ctx.fill();
-            ctx.fillStyle = '#000';
-            ctx.font = '10px JetBrains Mono';
-            ctx.fillText('79+', leftX, centerY + 4);
-
-            // 6s orbital (larger)
-            ctx.strokeStyle = '#8ab4f8';
-            ctx.lineWidth = 3;
-            ctx.setLineDash([5, 5]);
-            ctx.beginPath();
-            ctx.arc(leftX, centerY, 100, 0, Math.PI * 2);
-            ctx.stroke();
-            ctx.setLineDash([]);
-            ctx.fillStyle = '#8ab4f8';
-            ctx.font = '12px JetBrains Mono';
-            ctx.fillText('6s', leftX + 110, centerY);
-
-            // 5d orbital
-            ctx.strokeStyle = '#c58af9';
-            ctx.beginPath();
-            ctx.arc(leftX, centerY, 70, 0, Math.PI * 2);
-            ctx.stroke();
-            ctx.fillStyle = '#c58af9';
-            ctx.fillText('5d', leftX + 80, centerY - 30);
-
-            // Relativistic (right)
-            const rightX = 680;
-            ctx.fillStyle = '#e8eaed';
-            ctx.font = '14px JetBrains Mono';
-            ctx.fillText('Relativistic', rightX, 40);
-            ctx.fillText('(actual Au)', rightX, 60);
-
-            // Nucleus
-            ctx.beginPath();
-            ctx.arc(rightX, centerY, 15, 0, Math.PI * 2);
-            ctx.fillStyle = '#fdd663';
-            ctx.fill();
-            ctx.fillStyle = '#000';
-            ctx.font = '10px JetBrains Mono';
-            ctx.fillText('79+', rightX, centerY + 4);
-
-            // 6s orbital (contracted!)
-            ctx.strokeStyle = '#8ab4f8';
-            ctx.lineWidth = 4;
-            ctx.beginPath();
-            ctx.arc(rightX, centerY, 60, 0, Math.PI * 2);
-            ctx.stroke();
-            ctx.fillStyle = '#8ab4f8';
-            ctx.font = '12px JetBrains Mono';
-            ctx.fillText('6s (contracted)', rightX + 75, centerY);
-
-            // 5d orbital (expanded!)
-            ctx.strokeStyle = '#c58af9';
-            ctx.lineWidth = 3;
-            ctx.beginPath();
-            ctx.arc(rightX, centerY, 95, 0, Math.PI * 2);
-            ctx.stroke();
-            ctx.fillStyle = '#c58af9';
-            ctx.fillText('5d (expanded)', rightX + 110, centerY - 50);
-
-            // Arrow showing contraction
-            ctx.strokeStyle = '#81c995';
-            ctx.lineWidth = 2;
-            ctx.beginPath();
-            ctx.moveTo(leftX + 100, centerY + 140);
-            ctx.lineTo(rightX - 100, centerY + 140);
-            ctx.stroke();
-            // Arrowhead
-            ctx.beginPath();
-            ctx.moveTo(rightX - 100, centerY + 140);
-            ctx.lineTo(rightX - 115, centerY + 135);
-            ctx.lineTo(rightX - 115, centerY + 145);
-            ctx.fillStyle = '#81c995';
-            ctx.fill();
-
-            ctx.fillStyle = '#81c995';
-            ctx.font = '12px JetBrains Mono';
-            ctx.fillText('6s contracts → better shielding → 5d expands', w/2, centerY + 160);
-            ctx.fillText('Result: 5d→6s transition absorbs BLUE light → gold appears GOLDEN', w/2, centerY + 180);
-        }
-
-        // f-orbital burial diagram
-        function drawFOrbitalDiagram() {
-            const canvas = document.getElementById('f-orbital-canvas');
-            if (!canvas) return;
-            const ctx = canvas.getContext('2d');
-
-            const dpr = window.devicePixelRatio || 1;
-            canvas.width = 900 * dpr;
-            canvas.height = 300 * dpr;
-            ctx.scale(dpr, dpr);
-
-            const w = 900, h = 300;
-
-            ctx.fillStyle = '#131b2e';
-            ctx.fillRect(0, 0, w, h);
-
-            // Draw radial probability curves
-            const centerX = w / 2;
-            const baseline = h - 60;
-
-            // Labels
-            ctx.fillStyle = '#e8eaed';
-            ctx.font = '14px JetBrains Mono';
-            ctx.textAlign = 'center';
-            ctx.fillText('Radial Probability Distribution for Gd (Z=64)', centerX, 30);
-
-            // X axis
-            ctx.strokeStyle = '#3a4a6a';
-            ctx.lineWidth = 1;
-            ctx.beginPath();
-            ctx.moveTo(50, baseline);
-            ctx.lineTo(w - 50, baseline);
-            ctx.stroke();
-
-            ctx.fillStyle = '#9aa0a6';
-            ctx.font = '11px JetBrains Mono';
-            ctx.fillText('Distance from nucleus →', centerX, baseline + 40);
-
-            // Draw stylized probability curves
-            function drawCurve(color, peakX, width, height, label) {
-                ctx.strokeStyle = color;
-                ctx.fillStyle = color + '40';
-                ctx.lineWidth = 2;
-                ctx.beginPath();
-
-                const startX = peakX - width;
-                const endX = peakX + width;
-
-                ctx.moveTo(startX, baseline);
-
-                for (let x = startX; x <= endX; x += 2) {
-                    const relX = (x - peakX) / (width / 2);
-                    const y = baseline - height * Math.exp(-relX * relX);
-                    ctx.lineTo(x, y);
-                }
-
-                ctx.lineTo(endX, baseline);
-                ctx.closePath();
-                ctx.fill();
-                ctx.stroke();
-
-                ctx.fillStyle = color;
-                ctx.font = '12px JetBrains Mono';
-                ctx.textAlign = 'center';
-                ctx.fillText(label, peakX, baseline - height - 10);
-            }
-
-            // Draw orbitals from inside out
-            drawCurve('#f28b82', 150, 60, 80, '4f');  // Buried!
-            drawCurve('#fdd663', 280, 80, 100, '5s');
-            drawCurve('#81c995', 400, 90, 90, '5p');
-            drawCurve('#8ab4f8', 550, 100, 70, '5d');
-            drawCurve('#c58af9', 700, 110, 60, '6s');
-
-            // Annotation
-            ctx.fillStyle = '#f28b82';
-            ctx.font = '11px JetBrains Mono';
-            ctx.textAlign = 'left';
-            ctx.fillText('← 4f is BURIED inside 5s, 5p', 180, 160);
-            ctx.fillText('   Cannot participate in bonding', 180, 175);
-        }
-
-        // Oxidation state diagram
-        function drawOxidationDiagram() {
-            const canvas = document.getElementById('oxidation-canvas');
-            if (!canvas) return;
-            const ctx = canvas.getContext('2d');
-
-            const dpr = window.devicePixelRatio || 1;
-            canvas.width = 900 * dpr;
-            canvas.height = 350 * dpr;
-            ctx.scale(dpr, dpr);
-
-            const w = 900, h = 350;
-
-            ctx.fillStyle = '#131b2e';
-            ctx.fillRect(0, 0, w, h);
-
-            const elements = [
-                {sym: 'Sc', max: 3, group: 3},
-                {sym: 'Ti', max: 4, group: 4},
-                {sym: 'V', max: 5, group: 5},
-                {sym: 'Cr', max: 6, group: 6},
-                {sym: 'Mn', max: 7, group: 7},
-                {sym: 'Fe', max: 6, group: 8},
-                {sym: 'Co', max: 5, group: 9},
-                {sym: 'Ni', max: 4, group: 10},
-                {sym: 'Cu', max: 3, group: 11},
-                {sym: 'Zn', max: 2, group: 12}
+            const data = [
+                {sym:'La',r:103.2},{sym:'Ce',r:101.0},{sym:'Pr',r:99.0},{sym:'Nd',r:98.3},
+                {sym:'Pm',r:97.0},{sym:'Sm',r:95.8},{sym:'Eu',r:94.7},{sym:'Gd',r:93.8},
+                {sym:'Tb',r:92.3},{sym:'Dy',r:91.2},{sym:'Ho',r:90.1},{sym:'Er',r:89.0},
+                {sym:'Tm',r:88.0},{sym:'Yb',r:86.8},{sym:'Lu',r:86.1}
             ];
 
-            const margin = {top: 50, right: 50, bottom: 70, left: 70};
+            const margin = {top:40, right:40, bottom:50, left:60};
+            const w = 800, h = 320;
             const plotW = w - margin.left - margin.right;
             const plotH = h - margin.top - margin.bottom;
-            const barW = plotW / elements.length * 0.7;
 
-            // Title
-            ctx.fillStyle = '#e8eaed';
-            ctx.font = '14px JetBrains Mono';
-            ctx.textAlign = 'center';
-            ctx.fillText('Maximum Oxidation States Across the 3d Series', w/2, 30);
-
-            // Y axis
+            // Axes
             ctx.strokeStyle = '#3a4a6a';
             ctx.lineWidth = 1;
             ctx.beginPath();
@@ -1830,81 +697,214 @@
             ctx.fillStyle = '#9aa0a6';
             ctx.font = '11px JetBrains Mono';
             ctx.textAlign = 'right';
-            for (let i = 0; i <= 8; i++) {
-                const y = h - margin.bottom - (i / 8) * plotH;
-                ctx.fillText('+' + i, margin.left - 10, y + 4);
+            for (let r = 85; r <= 105; r += 5) {
+                const y = margin.top + plotH - ((r - 85) / 20) * plotH;
+                ctx.fillText(r, margin.left - 8, y + 4);
             }
 
-            // Draw "group number = max ox" line up to Mn
-            ctx.strokeStyle = 'rgba(253, 214, 99, 0.3)';
-            ctx.setLineDash([5, 5]);
+            // Data points and line
+            ctx.strokeStyle = '#c58af9';
+            ctx.fillStyle = '#c58af9';
+            ctx.lineWidth = 2;
             ctx.beginPath();
-            for (let i = 0; i < 5; i++) {
-                const x = margin.left + (i + 0.5) * (plotW / elements.length);
-                const y = h - margin.bottom - (elements[i].group / 8) * plotH;
+
+            data.forEach((el, i) => {
+                const x = margin.left + (i / (data.length - 1)) * plotW;
+                const y = margin.top + plotH - ((el.r - 85) / 20) * plotH;
+
                 if (i === 0) ctx.moveTo(x, y);
                 else ctx.lineTo(x, y);
-            }
+            });
             ctx.stroke();
-            ctx.setLineDash([]);
 
-            // Bars
-            elements.forEach((el, i) => {
-                const x = margin.left + i * (plotW / elements.length) + (plotW / elements.length - barW) / 2;
-                const barH = (el.max / 8) * plotH;
-                const y = h - margin.bottom - barH;
+            data.forEach((el, i) => {
+                const x = margin.left + (i / (data.length - 1)) * plotW;
+                const y = margin.top + plotH - ((el.r - 85) / 20) * plotH;
 
-                // Color based on whether it matches group number
-                const matchesGroup = el.max === el.group;
-                ctx.fillStyle = i < 5 ? '#81c995' : '#f28b82';
-                ctx.fillRect(x, y, barW, barH);
+                ctx.beginPath();
+                ctx.arc(x, y, 5, 0, Math.PI * 2);
+                ctx.fill();
 
-                // Element label
                 ctx.fillStyle = '#e8eaed';
-                ctx.font = '12px JetBrains Mono';
                 ctx.textAlign = 'center';
-                ctx.fillText(el.sym, x + barW/2, h - margin.bottom + 20);
-                ctx.fillStyle = '#9aa0a6';
-                ctx.font = '10px JetBrains Mono';
-                ctx.fillText('G' + el.group, x + barW/2, h - margin.bottom + 35);
-
-                // Value on top
-                ctx.fillStyle = '#e8eaed';
-                ctx.font = '11px JetBrains Mono';
-                ctx.fillText('+' + el.max, x + barW/2, y - 5);
+                ctx.fillText(el.sym, x, h - margin.bottom + 18);
+                ctx.fillStyle = '#c58af9';
             });
 
-            // Legend
-            ctx.fillStyle = '#fdd663';
-            ctx.font = '11px JetBrains Mono';
-            ctx.textAlign = 'left';
-            ctx.fillText('- - - Group number (expected max)', margin.left + 20, margin.top + 20);
-
-            ctx.fillStyle = '#81c995';
-            ctx.fillRect(w - 200, margin.top + 5, 15, 15);
+            // Title
             ctx.fillStyle = '#e8eaed';
-            ctx.fillText('Max = Group', w - 180, margin.top + 17);
-
-            ctx.fillStyle = '#f28b82';
-            ctx.fillRect(w - 200, margin.top + 25, 15, 15);
-            ctx.fillStyle = '#e8eaed';
-            ctx.fillText('Max < Group', w - 180, margin.top + 37);
+            ctx.font = '13px JetBrains Mono';
+            ctx.textAlign = 'center';
+            ctx.fillText('M³⁺ ionic radii (pm)', w / 2, 25);
         }
 
-        // Initialize
-        window.onload = function() {
-            buildPeriodicTable();
-            drawLanthanideGraph();
-            drawRelativisticDiagram();
-            drawFOrbitalDiagram();
-            drawOxidationDiagram();
-        };
+        // Relativistic diagram
+        function drawRelativistic() {
+            const canvas = document.getElementById('relativistic-canvas');
+            const ctx = canvas.getContext('2d');
+            const dpr = window.devicePixelRatio || 1;
+            canvas.width = 800 * dpr;
+            canvas.height = 350 * dpr;
+            ctx.scale(dpr, dpr);
 
-        window.onresize = function() {
-            drawLanthanideGraph();
-            drawRelativisticDiagram();
-            drawFOrbitalDiagram();
-            drawOxidationDiagram();
+            const w = 800, h = 350;
+            const cy = h / 2;
+
+            // Left: non-relativistic
+            const lx = 200;
+            ctx.fillStyle = '#9aa0a6';
+            ctx.font = '12px JetBrains Mono';
+            ctx.textAlign = 'center';
+            ctx.fillText('Non-relativistic', lx, 35);
+
+            ctx.beginPath();
+            ctx.arc(lx, cy, 12, 0, Math.PI * 2);
+            ctx.fillStyle = '#fdd663';
+            ctx.fill();
+
+            ctx.strokeStyle = '#8ab4f8';
+            ctx.lineWidth = 2;
+            ctx.setLineDash([4, 4]);
+            ctx.beginPath();
+            ctx.arc(lx, cy, 90, 0, Math.PI * 2);
+            ctx.stroke();
+            ctx.fillStyle = '#8ab4f8';
+            ctx.fillText('6s', lx + 100, cy);
+
+            ctx.strokeStyle = '#c58af9';
+            ctx.beginPath();
+            ctx.arc(lx, cy, 60, 0, Math.PI * 2);
+            ctx.stroke();
+            ctx.fillStyle = '#c58af9';
+            ctx.fillText('5d', lx + 70, cy - 35);
+
+            ctx.setLineDash([]);
+
+            // Right: relativistic
+            const rx = 600;
+            ctx.fillStyle = '#9aa0a6';
+            ctx.fillText('Relativistic (Au)', rx, 35);
+
+            ctx.beginPath();
+            ctx.arc(rx, cy, 12, 0, Math.PI * 2);
+            ctx.fillStyle = '#fdd663';
+            ctx.fill();
+
+            ctx.strokeStyle = '#8ab4f8';
+            ctx.lineWidth = 3;
+            ctx.beginPath();
+            ctx.arc(rx, cy, 55, 0, Math.PI * 2);
+            ctx.stroke();
+            ctx.fillStyle = '#8ab4f8';
+            ctx.fillText('6s contracted', rx + 70, cy);
+
+            ctx.strokeStyle = '#c58af9';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.arc(rx, cy, 85, 0, Math.PI * 2);
+            ctx.stroke();
+            ctx.fillStyle = '#c58af9';
+            ctx.fillText('5d expanded', rx + 95, cy - 50);
+
+            // Arrow
+            ctx.strokeStyle = '#81c995';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(lx + 110, cy + 120);
+            ctx.lineTo(rx - 110, cy + 120);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.moveTo(rx - 110, cy + 120);
+            ctx.lineTo(rx - 120, cy + 112);
+            ctx.lineTo(rx - 120, cy + 128);
+            ctx.fillStyle = '#81c995';
+            ctx.fill();
+
+            ctx.fillStyle = '#81c995';
+            ctx.font = '11px JetBrains Mono';
+            ctx.fillText('5d→6s gap shrinks → absorbs blue → gold color', w / 2, cy + 145);
+        }
+
+        // f-orbital burial
+        function drawFBurial() {
+            const canvas = document.getElementById('f-burial-canvas');
+            const ctx = canvas.getContext('2d');
+            const dpr = window.devicePixelRatio || 1;
+            canvas.width = 800 * dpr;
+            canvas.height = 280 * dpr;
+            ctx.scale(dpr, dpr);
+
+            const w = 800, h = 280;
+            const baseline = h - 50;
+
+            ctx.strokeStyle = '#3a4a6a';
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(50, baseline);
+            ctx.lineTo(w - 50, baseline);
+            ctx.stroke();
+
+            ctx.fillStyle = '#9aa0a6';
+            ctx.font = '11px JetBrains Mono';
+            ctx.textAlign = 'center';
+            ctx.fillText('Distance from nucleus →', w / 2, baseline + 35);
+
+            function curve(color, peakX, width, height, label) {
+                ctx.fillStyle = color + '40';
+                ctx.strokeStyle = color;
+                ctx.lineWidth = 2;
+                ctx.beginPath();
+                ctx.moveTo(peakX - width, baseline);
+                for (let x = peakX - width; x <= peakX + width; x += 2) {
+                    const rel = (x - peakX) / (width / 2);
+                    const y = baseline - height * Math.exp(-rel * rel);
+                    ctx.lineTo(x, y);
+                }
+                ctx.lineTo(peakX + width, baseline);
+                ctx.closePath();
+                ctx.fill();
+                ctx.stroke();
+
+                ctx.fillStyle = color;
+                ctx.font = '11px JetBrains Mono';
+                ctx.fillText(label, peakX, baseline - height - 8);
+            }
+
+            curve('#f28b82', 130, 50, 70, '4f');
+            curve('#fdd663', 240, 65, 85, '5s');
+            curve('#81c995', 370, 75, 75, '5p');
+            curve('#8ab4f8', 520, 85, 60, '5d');
+            curve('#c58af9', 670, 90, 50, '6s');
+
+            ctx.fillStyle = '#f28b82';
+            ctx.font = '10px JetBrains Mono';
+            ctx.textAlign = 'left';
+            ctx.fillText('4f buried inside 5s, 5p', 160, 130);
+        }
+
+        // Quiz functions
+        function showAnswer(id) {
+            document.getElementById(id).classList.add('show');
+        }
+
+        function checkQuiz(btn, correct) {
+            const parent = btn.parentElement;
+            const btns = parent.querySelectorAll('.quiz-btn');
+            btns.forEach(b => {
+                b.disabled = true;
+                if (b.onclick.toString().includes('true')) b.classList.add('correct');
+            });
+            if (!correct) btn.classList.add('wrong');
+            parent.querySelector('.quiz-answer').classList.add('show');
+        }
+
+        // Init
+        window.onload = function() {
+            buildTable();
+            drawTrends();
+            drawLanthanide();
+            drawRelativistic();
+            drawFBurial();
         };
     </script>
 </body>
