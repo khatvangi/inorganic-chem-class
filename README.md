@@ -45,7 +45,24 @@ Interactive prerequisite visualization for any chemistry question.
 
 **Access:** http://localhost:8361/visualizations/
 
-### 2. Interactive Games
+### 2. Interactive Lectures
+
+IC-level lecture content generated from textbook sources via RAG.
+
+| Session | Topic | Status |
+|---------|-------|--------|
+| 1 | Periodic Trends | ✅ [View](lectures/session_01_periodic_trends.html) |
+| 2-33 | Remaining sessions | ⏳ Pending |
+
+**Lecture features:**
+- Narrative prose (not bullet points)
+- Interactive Canvas diagrams
+- Faithful to Atkins, Housecroft, Basset, JD Lee textbooks
+- Verified against RAG sources
+
+**Generation framework:** See `docs/LECTURE_GENERATION.md`
+
+### 3. Interactive Games
 
 Six game-based drill modules for coordination chemistry:
 
@@ -58,7 +75,7 @@ Six game-based drill modules for coordination chemistry:
 | Reactions Lab | `reactions.html` | Substitution mechanisms |
 | Solids Lab | `solids.html` | Unit cells, packing |
 
-### 3. Knowledge Graph
+### 4. Knowledge Graph
 
 Built from 7 inorganic chemistry textbooks:
 
@@ -170,7 +187,10 @@ inorganic-chem-class/
 ├── data/                        # JSON question banks
 ├── js/                          # shared JavaScript utilities
 ├── libs/                        # external libraries (ChemDoodle)
-└── lectures/                    # slide decks
+├── lectures/                    # interactive HTML lectures
+│   ├── session_01_periodic_trends.html
+│   └── outlines/                # session outlines (.md)
+└── experiments/                 # knowledge extraction scripts
 ```
 
 ---
@@ -262,20 +282,39 @@ python api_server.py --port 8361
 
 | Document | Description |
 |----------|-------------|
-| `docs/KNOWLEDGE_FUNNEL_METHODOLOGY.md` | Full methodology, algorithms, results |
-| `infrastructure/README.md` | Infrastructure for all chemistry subfields |
-| `infrastructure/NOVEL_PEDAGOGY.md` | Novel pedagogical features |
-| `QUICKSTART.md` | Quick start guide |
+| `docs/LECTURE_GENERATION.md` | **Lecture generation framework** |
+| `docs/DEVELOPER_SETUP.md` | Environment and dependencies |
+| `docs/DEPLOYMENT.md` | Deploying to chem361.thebeakers.com |
+| `docs/API_REFERENCE.md` | API endpoints reference |
+| `docs/KNOWLEDGE_FUNNEL_METHODOLOGY.md` | Prerequisite tracing methodology |
+
+### Skills Framework
+
+Claude Code skills for lecture generation at `~/.claude/skills/chem361/`:
+
+| Skill | Purpose |
+|-------|---------|
+| `generate-lecture` | Full lecture generation workflow |
+| `verify-content` | Verify claims against RAG textbooks |
+| `create-diagrams` | Canvas diagram templates |
 
 ---
 
 ## Future Work
 
+### Lectures
+- [ ] Generate Sessions 2-33 using lecture framework
+- [ ] Add quiz integration per section
+- [ ] Mobile-optimize Canvas diagrams
+
+### Knowledge Funnel
 - [ ] Student tracking (mastered concepts)
 - [ ] Adaptive paths (skip known prerequisites)
 - [ ] Quiz integration at each node
+
+### Platform
 - [ ] Extend to organic, physical, analytical chemistry
-- [ ] Integration with chem361.thebeakers.com
+- [ ] User accounts and progress tracking
 
 ---
 
