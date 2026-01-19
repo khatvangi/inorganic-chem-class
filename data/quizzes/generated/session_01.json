@@ -1,0 +1,402 @@
+[
+  {
+    "question": "Which property decreases across a period and increases down a group?",
+    "options": [
+      "A) Atomic radius",
+      "B) Ionization energy",
+      "C) Electronegativity",
+      "D) Electron affinity"
+    ],
+    "answer": "A) Atomic radius",
+    "explanation": "Atomic radius decreases across a period due to increasing nuclear charge pulling electrons closer, and increases down a group due to additional electron shells shielding the nucleus.",
+    "concept": "Atomic radius",
+    "difficulty": "recall",
+    "topic": "Periodic trends: atomic properties",
+    "session": 1,
+    "module": "session_01"
+  },
+  {
+    "question": "Which property increases across a period and decreases down a group?",
+    "options": [
+      "A) Ionization energy",
+      "B) Atomic radius",
+      "C) Electron affinity",
+      "D) Electronegativity"
+    ],
+    "answer": "A) Ionization energy",
+    "explanation": "Ionization energy increases across a period due to stronger nuclear pull and decreases down a group due to increased shielding by inner electrons.",
+    "concept": "Ionization energy",
+    "difficulty": "recall",
+    "topic": "Periodic trends: atomic properties",
+    "session": 1,
+    "module": "session_01"
+  },
+  {
+    "question": "Which property generally increases across a period but has exceptions?",
+    "options": [
+      "A) Electron affinity",
+      "B) Electronegativity",
+      "C) Atomic radius",
+      "D) Ionization energy"
+    ],
+    "answer": "A) Electron affinity",
+    "explanation": "Electron affinity generally increases across a period, but exceptions exist (e.g., oxygen and fluorine), where the trend is disrupted by electron-electron repulsion.",
+    "concept": "Electron affinity",
+    "difficulty": "recall",
+    "topic": "Periodic trends: atomic properties",
+    "session": 1,
+    "module": "session_01"
+  },
+  {
+    "question": "Which property increases across a period and decreases down a group?",
+    "options": [
+      "A) Electronegativity",
+      "B) Ionization energy",
+      "C) Atomic radius",
+      "D) Electron affinity"
+    ],
+    "answer": "A) Electronegativity",
+    "explanation": "Electronegativity increases across a period due to higher effective nuclear charge and decreases down a group due to increased atomic size.",
+    "concept": "Electronegativity",
+    "difficulty": "recall",
+    "topic": "Periodic trends: atomic properties",
+    "session": 1,
+    "module": "session_01"
+  },
+  {
+    "question": "Which property increases as you move down a group?",
+    "options": [
+      "A) Atomic radius",
+      "B) Ionization energy",
+      "C) Electronegativity",
+      "D) Electron affinity"
+    ],
+    "answer": "A) Atomic radius",
+    "explanation": "Atomic radius increases down a group as additional electron shells reduce the effective nuclear charge per electron.",
+    "concept": "Atomic radius",
+    "difficulty": "recall",
+    "topic": "Periodic trends: atomic properties",
+    "session": 1,
+    "module": "session_01"
+  },
+  {
+    "question": "Which property decreases as you move down a group?",
+    "options": [
+      "A) Ionization energy",
+      "B) Atomic radius",
+      "C) Electronegativity",
+      "D) Electron affinity"
+    ],
+    "answer": "A) Ionization energy",
+    "explanation": "Ionization energy decreases down a group due to increased shielding by inner electrons and larger atomic size reducing nuclear pull.",
+    "concept": "Ionization energy",
+    "difficulty": "recall",
+    "topic": "Periodic trends: atomic properties",
+    "session": 1,
+    "module": "session_01"
+  },
+  {
+    "question": "Which property decreases down a group?",
+    "options": [
+      "A) Electron affinity",
+      "B) Electronegativity",
+      "C) Atomic radius",
+      "D) Ionization energy"
+    ],
+    "answer": "B) Electronegativity",
+    "explanation": "Electronegativity decreases down a group because larger atomic size reduces the ability to attract electrons effectively.",
+    "concept": "Electronegativity",
+    "difficulty": "recall",
+    "topic": "Periodic trends: atomic properties",
+    "session": 1,
+    "module": "session_01"
+  },
+  {
+    "question": "Which property decreases down a group?",
+    "options": [
+      "A) Electron affinity",
+      "B) Electronegativity",
+      "C) Atomic radius",
+      "D) Ionization energy"
+    ],
+    "answer": "D) Ionization energy",
+    "explanation": "Ionization energy decreases down a group due to increased shielding and greater atomic size, making it easier to remove outer electrons.",
+    "concept": "Ionization energy",
+    "difficulty": "recall",
+    "topic": "Periodic trends: atomic properties",
+    "session": 1,
+    "module": "session_01"
+  },
+  {
+    "question": "Which element has the largest atomic radius in Period 3?",
+    "options": [
+      "A) Sodium (Na)",
+      "B) Magnesium (Mg)",
+      "C) Chlorine (Cl)",
+      "D) Argon (Ar)"
+    ],
+    "answer": "A) Sodium (Na)",
+    "explanation": "Atomic radius decreases across a period due to increased nuclear charge. Sodium, being the first element in Period 3, has the largest atomic radius.",
+    "concept": "Atomic radius trends",
+    "difficulty": "application",
+    "topic": "Periodic trends: atomic properties",
+    "session": 1,
+    "module": "session_01"
+  },
+  {
+    "question": "Which element has the highest ionization energy in Group 15?",
+    "options": [
+      "A) Nitrogen (N)",
+      "B) Phosphorus (P)",
+      "C) Arsenic (As)",
+      "D) Bismuth (Bi)"
+    ],
+    "answer": "A) Nitrogen (N)",
+    "explanation": "Ionization energy decreases down a group due to increased atomic size and shielding. Nitrogen, being the highest in Group 15, has the strongest effective nuclear charge.",
+    "concept": "Ionization energy trends",
+    "difficulty": "application",
+    "topic": "Periodic trends: atomic properties",
+    "session": 1,
+    "module": "session_01"
+  },
+  {
+    "question": "Which element has the greatest electron affinity in the halogen group?",
+    "options": [
+      "A) Fluorine (F)",
+      "B) Chlorine (Cl)",
+      "C) Bromine (Br)",
+      "D) Iodine (I)"
+    ],
+    "answer": "A) Fluorine (F)",
+    "explanation": "Electron affinity generally increases across a period. Fluorine, the lightest halogen, has the highest electron affinity due to smaller atomic size and higher effective nuclear charge.",
+    "concept": "Electron affinity trends",
+    "difficulty": "application",
+    "topic": "Periodic trends: atomic properties",
+    "session": 1,
+    "module": "session_01"
+  },
+  {
+    "question": "Which element has the highest electronegativity among the alkaline earth metals?",
+    "options": [
+      "A) Beryllium (Be)",
+      "B) Magnesium (Mg)",
+      "C) Calcium (Ca)",
+      "D) Strontium (Sr)"
+    ],
+    "answer": "A) Beryllium (Be)",
+    "explanation": "Electronegativity decreases down a group. Beryllium, the lightest alkaline earth metal, has the highest electronegativity due to smaller atomic size and higher nuclear charge.",
+    "concept": "Electronegativity trends",
+    "difficulty": "application",
+    "topic": "Periodic trends: atomic properties",
+    "session": 1,
+    "module": "session_01"
+  },
+  {
+    "question": "Which has a larger atomic radius: K (Z=19) or Ca (Z=20)?",
+    "options": [
+      "A) Potassium (K)",
+      "B) Calcium (Ca)",
+      "C) They are equal",
+      "D) Cannot be determined"
+    ],
+    "answer": "A) Potassium (K)",
+    "explanation": "Atomic radius decreases across a period. Potassium is in Group 1, while calcium is in Group 2, so potassium has a larger radius despite having a lower atomic number.",
+    "concept": "Atomic radius trends",
+    "difficulty": "application",
+    "topic": "Periodic trends: atomic properties",
+    "session": 1,
+    "module": "session_01"
+  },
+  {
+    "question": "Which element has the lowest first ionization energy in Period 2?",
+    "options": [
+      "A) Lithium (Li)",
+      "B) Beryllium (Be)",
+      "C) Fluorine (F)",
+      "D) Neon (Ne)"
+    ],
+    "answer": "A) Lithium (Li)",
+    "explanation": "Ionization energy decreases across a period. Lithium, the first element in Period 2, has the lowest first ionization energy due to its large atomic size and low effective nuclear charge.",
+    "concept": "Ionization energy trends",
+    "difficulty": "application",
+    "topic": "Periodic trends: atomic properties",
+    "session": 1,
+    "module": "session_01"
+  },
+  {
+    "question": "Which element has the greatest electron affinity in Period 2?",
+    "options": [
+      "A) Carbon (C)",
+      "B) Nitrogen (N)",
+      "C) Oxygen (O)",
+      "D) Fluorine (F)"
+    ],
+    "answer": "D) Fluorine (F)",
+    "explanation": "Electron affinity increases across a period. Fluorine, the most electronegative element in Period 2, has the highest electron affinity due to its small size and high effective nuclear charge.",
+    "concept": "Electron affinity trends",
+    "difficulty": "application",
+    "topic": "Periodic trends: atomic properties",
+    "session": 1,
+    "module": "session_01"
+  },
+  {
+    "question": "Which element has the highest electronegativity in Period 3?",
+    "options": [
+      "A) Sodium (Na)",
+      "B) Chlorine (Cl)",
+      "C) Argon (Ar)",
+      "D) Aluminum (Al)"
+    ],
+    "answer": "B) Chlorine (Cl)",
+    "explanation": "Electronegativity increases across a period. Chlorine, the halogen in Period 3, has the highest electronegativity due to its high effective nuclear charge and small atomic size.",
+    "concept": "Electronegativity trends",
+    "difficulty": "application",
+    "topic": "Periodic trends: atomic properties",
+    "session": 1,
+    "module": "session_01"
+  },
+  {
+    "question": "Which element has the lowest ionization energy in Group 17?",
+    "options": [
+      "A) Fluorine (F)",
+      "B) Chlorine (Cl)",
+      "C) Bromine (Br)",
+      "D) Iodine (I)"
+    ],
+    "answer": "D) Iodine (I)",
+    "explanation": "Ionization energy decreases down a group. Iodine, the largest halogen, has the lowest ionization energy due to its increased atomic size and shielding effects.",
+    "concept": "Ionization energy trends",
+    "difficulty": "application",
+    "topic": "Periodic trends: atomic properties",
+    "session": 1,
+    "module": "session_01"
+  },
+  {
+    "question": "Which element has the greatest atomic radius in Group 14?",
+    "options": [
+      "A) Carbon (C)",
+      "B) Silicon (Si)",
+      "C) Germanium (Ge)",
+      "D) Tin (Sn)"
+    ],
+    "answer": "D) Tin (Sn)",
+    "explanation": "Atomic radius increases down a group. Tin, the heaviest element in Group 14, has the largest atomic radius due to additional electron shells and shielding.",
+    "concept": "Atomic radius trends",
+    "difficulty": "application",
+    "topic": "Periodic trends: atomic properties",
+    "session": 1,
+    "module": "session_01"
+  },
+  {
+    "question": "Which element has the largest atomic radius among Na, Mg, Al, and Cl?",
+    "options": [
+      "A) Na",
+      "B) Mg",
+      "C) Al",
+      "D) Cl"
+    ],
+    "answer": "A) Na",
+    "explanation": "Atomic radius decreases across a period due to increased effective nuclear charge. Sodium (Na) is in group 1, period 3, while Mg, Al, and Cl are to the right, resulting in smaller radii.",
+    "concept": "atomic radius",
+    "difficulty": "analysis",
+    "topic": "Periodic trends: atomic properties",
+    "session": 1,
+    "module": "session_01"
+  },
+  {
+    "question": "Which element has a higher first ionization energy, O or F?",
+    "options": [
+      "A) O",
+      "B) F",
+      "C) Both have equal IE",
+      "D) Neither has IE"
+    ],
+    "answer": "A) O",
+    "explanation": "Oxygen has a higher first ionization energy than fluorine because the electron-electron repulsion in O's 2p orbital destabilizes its outer electrons compared to F's 2p orbital.",
+    "concept": "ionization energy",
+    "difficulty": "analysis",
+    "topic": "Periodic trends: atomic properties",
+    "session": 1,
+    "module": "session_01"
+  },
+  {
+    "question": "Which group has the highest electron affinity?",
+    "options": [
+      "A) Alkali metals",
+      "B) Halogens",
+      "C) Noble gases",
+      "D) Alkaline earth metals"
+    ],
+    "answer": "B) Halogens",
+    "explanation": "Halogens (group 17) have the highest electron affinity due to their ability to achieve a stable noble gas configuration by gaining one electron.",
+    "concept": "electron affinity",
+    "difficulty": "analysis",
+    "topic": "Periodic trends: atomic properties",
+    "session": 1,
+    "module": "session_01"
+  },
+  {
+    "question": "Which element has higher electronegativity, N or O?",
+    "options": [
+      "A) N",
+      "B) O",
+      "C) Both have equal electronegativity",
+      "D) Neither has electronegativity"
+    ],
+    "answer": "B) O",
+    "explanation": "Electronegativity increases across a period due to higher effective nuclear charge. Oxygen (group 16) is to the right of nitrogen (group 15), resulting in greater electronegativity.",
+    "concept": "electronegativity",
+    "difficulty": "analysis",
+    "topic": "Periodic trends: atomic properties",
+    "session": 1,
+    "module": "session_01"
+  },
+  {
+    "question": "Predict the trend in atomic radius for elements in group 17 (halogens).",
+    "options": [
+      "A) Increases down the group",
+      "B) Decreases down the group",
+      "C) Remains constant",
+      "D) Alternates up and down"
+    ],
+    "answer": "B) Decreases down the group",
+    "explanation": "Atomic radius decreases down a group due to the increasing number of electron shells being offset by stronger nuclear attraction, resulting in smaller radii for heavier halogens.",
+    "concept": "atomic radius",
+    "difficulty": "synthesis",
+    "topic": "Periodic trends: atomic properties",
+    "session": 1,
+    "module": "session_01"
+  },
+  {
+    "question": "Explain why fluorine has a higher first ionization energy than oxygen.",
+    "options": [
+      "A) Fluorine has a smaller atomic radius",
+      "B) Fluorine has lower effective nuclear charge",
+      "C) Fluorine has more valence electrons",
+      "D) Fluorine has higher electron affinity"
+    ],
+    "answer": "A) Fluorine has a smaller atomic radius",
+    "explanation": "Fluorine's smaller atomic radius and higher effective nuclear charge create a stronger attraction for its valence electrons compared to oxygen, despite electron-electron repulsion in oxygen's 2p orbital.",
+    "concept": "ionization energy",
+    "difficulty": "analysis",
+    "topic": "Periodic trends: atomic properties",
+    "session": 1,
+    "module": "session_01"
+  },
+  {
+    "question": "Compare the electron affinity of Cl and Br. Which has a higher value?",
+    "options": [
+      "A) Cl",
+      "B) Br",
+      "C) Both have equal EA",
+      "D) Neither has EA"
+    ],
+    "answer": "A) Cl",
+    "explanation": "Electron affinity decreases down a group because the added electron occupies a higher energy level, reducing the attraction between the nucleus and the electron.",
+    "concept": "electron affinity",
+    "difficulty": "analysis",
+    "topic": "Periodic trends: atomic properties",
+    "session": 1,
+    "module": "session_01"
+  }
+]

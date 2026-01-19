@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 1: Periodic Trends - Atomic Properties | CHEM 361</title>
+    <link rel="stylesheet" href="../libs/ChemDoodleWeb.css">
+    <script src="../libs/ChemDoodleWeb.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+        :root {
+            --bg-primary: #0f172a;
+            --bg-secondary: #1e293b;
+            --bg-card: #334155;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --accent-blue: #60a5fa;
+            --accent-purple: #a78bfa;
+            --accent-green: #34d399;
+            --accent-amber: #fbbf24;
+            --accent-red: #f87171;
+            --scale-quantum: #ef4444;
+            --scale-electronic: #8b5cf6;
+            --scale-structural: #06b6d4;
+            --scale-descriptive: #22c55e;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Crimson Pro', Georgia, serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        /* navigation */
+        .nav-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 0.75rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+            border-bottom: 1px solid #334155;
+        }
+
+        .nav-bar a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+        }
+
+        .nav-bar a:hover { color: var(--accent-blue); }
+
+        .progress-bar {
+            position: fixed;
+            top: 52px;
+            left: 0;
+            height: 3px;
+            background: var(--accent-blue);
+            width: 0%;
+            transition: width 0.3s;
+            z-index: 99;
+        }
+
+        /* main content */
+        .chapter {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 6rem 2rem 4rem;
+        }
+
+        /* header */
+        .chapter-header {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #334155;
+        }
+
+        .session-badge {
+            display: inline-block;
+            background: var(--scale-descriptive);
+            color: #000;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+
+        /* learning objectives */
+        .objectives {
+            background: linear-gradient(135deg, rgba(96, 165, 250, 0.1), rgba(167, 139, 250, 0.1));
+            border-left: 4px solid var(--accent-blue);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .objectives h3 {
+            color: var(--accent-blue);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .objectives ul {
+            margin-left: 1.5rem;
+        }
+
+        .objectives li {
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+        }
+
+        /* sections */
+        h2 {
+            font-size: 1.8rem;
+            margin: 3rem 0 1.5rem;
+            color: var(--accent-purple);
+            border-bottom: 1px solid #334155;
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            margin: 2rem 0 1rem;
+            color: var(--accent-green);
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        /* key concept boxes */
+        .concept-box {
+            background: var(--bg-secondary);
+            border: 1px solid #475569;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .concept-box.quantum { border-left: 4px solid var(--scale-quantum); }
+        .concept-box.electronic { border-left: 4px solid var(--scale-electronic); }
+        .concept-box.structural { border-left: 4px solid var(--scale-structural); }
+        .concept-box.descriptive { border-left: 4px solid var(--scale-descriptive); }
+
+        .concept-box h4 {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            color: var(--accent-amber);
+            margin-bottom: 0.75rem;
+        }
+
+        /* equations */
+        .equation {
+            background: #1e293b;
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 6px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1rem;
+            text-align: center;
+            overflow-x: auto;
+        }
+
+        .equation .label {
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            display: block;
+            margin-top: 0.5rem;
+        }
+
+        /* interactive molecule viewer */
+        .molecule-viewer {
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .molecule-viewer canvas {
+            border-radius: 6px;
+        }
+
+        .molecule-viewer .caption {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-top: 0.75rem;
+            font-style: italic;
+        }
+
+        /* periodic table snippet */
+        .periodic-snippet {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            gap: 4px;
+            margin: 2rem 0;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+        }
+
+        .element {
+            background: var(--bg-card);
+            padding: 0.5rem;
+            border-radius: 4px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .element:hover {
+            transform: scale(1.1);
+            background: var(--accent-blue);
+            color: #000;
+        }
+
+        .element .symbol { font-weight: 600; font-size: 1rem; }
+        .element .number { color: var(--text-secondary); font-size: 0.65rem; }
+
+        .element.highlight {
+            background: var(--accent-amber);
+            color: #000;
+        }
+
+        /* interactive quiz */
+        .quiz-section {
+            background: linear-gradient(135deg, var(--bg-secondary), #1e1b4b);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 3rem 0;
+        }
+
+        .quiz-section h3 {
+            color: var(--accent-amber);
+            margin-bottom: 1.5rem;
+        }
+
+        .quiz-question {
+            margin-bottom: 2rem;
+        }
+
+        .quiz-question p {
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .quiz-options {
+            display: grid;
+            gap: 0.5rem;
+        }
+
+        .quiz-option {
+            background: var(--bg-card);
+            border: 1px solid #475569;
+            padding: 0.75rem 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-family: inherit;
+            font-size: 1rem;
+            color: var(--text-primary);
+            text-align: left;
+        }
+
+        .quiz-option:hover {
+            border-color: var(--accent-blue);
+            background: rgba(96, 165, 250, 0.1);
+        }
+
+        .quiz-option.correct {
+            background: rgba(52, 211, 153, 0.2);
+            border-color: var(--accent-green);
+        }
+
+        .quiz-option.incorrect {
+            background: rgba(248, 113, 113, 0.2);
+            border-color: var(--accent-red);
+        }
+
+        .quiz-feedback {
+            margin-top: 1rem;
+            padding: 1rem;
+            border-radius: 6px;
+            display: none;
+        }
+
+        .quiz-feedback.show { display: block; }
+        .quiz-feedback.correct { background: rgba(52, 211, 153, 0.1); border-left: 3px solid var(--accent-green); }
+        .quiz-feedback.incorrect { background: rgba(248, 113, 113, 0.1); border-left: 3px solid var(--accent-red); }
+
+        /* data tables */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            font-size: 0.95rem;
+        }
+
+        .data-table th {
+            background: var(--bg-card);
+            padding: 0.75rem;
+            text-align: left;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            color: var(--accent-blue);
+        }
+
+        .data-table td {
+            padding: 0.75rem;
+            border-bottom: 1px solid #334155;
+        }
+
+        .data-table tr:hover {
+            background: rgba(96, 165, 250, 0.05);
+        }
+
+        /* collapsible sections */
+        .collapsible {
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            overflow: hidden;
+        }
+
+        .collapsible-header {
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 500;
+        }
+
+        .collapsible-header:hover {
+            background: rgba(96, 165, 250, 0.1);
+        }
+
+        .collapsible-header::after {
+            content: '+';
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--accent-blue);
+        }
+
+        .collapsible.open .collapsible-header::after {
+            content: '−';
+        }
+
+        .collapsible-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s;
+            padding: 0 1.5rem;
+        }
+
+        .collapsible.open .collapsible-content {
+            max-height: 1000px;
+            padding: 1rem 1.5rem 1.5rem;
+        }
+
+        /* source attribution */
+        .source-tag {
+            display: inline-block;
+            background: var(--bg-card);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.7rem;
+            color: var(--text-secondary);
+            margin-left: 0.5rem;
+        }
+
+        /* navigation footer */
+        .chapter-footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid #334155;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav-btn {
+            background: var(--bg-secondary);
+            border: 1px solid #475569;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+
+        .nav-btn:hover {
+            border-color: var(--accent-blue);
+            background: rgba(96, 165, 250, 0.1);
+        }
+
+        /* funnel link */
+        .funnel-link {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--accent-purple);
+            color: #000;
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            font-weight: 600;
+            box-shadow: 0 4px 20px rgba(167, 139, 250, 0.3);
+            transition: transform 0.2s;
+        }
+
+        .funnel-link:hover {
+            transform: translateY(-2px);
+        }
+
+        /* responsive */
+        @media (max-width: 768px) {
+            .chapter { padding: 5rem 1rem 3rem; }
+            h1 { font-size: 1.8rem; }
+            .periodic-snippet { grid-template-columns: repeat(4, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-bar">
+        <a href="../index.html">CHEM 361</a>
+        <span style="color: var(--text-secondary);">Session 1 of 33</span>
+        <a href="session_02_ionization.html">Next →</a>
+    </nav>
+    <div class="progress-bar" id="progressBar"></div>
+
+    <article class="chapter">
+        <header class="chapter-header">
+            <span class="session-badge">DESCRIPTIVE SCALE</span>
+            <h1>Periodic Trends: Atomic Properties</h1>
+            <p class="subtitle">Understanding how atomic properties vary systematically across the periodic table</p>
+        </header>
+
+        <div class="objectives">
+            <h3>Learning Objectives</h3>
+            <ul>
+                <li>Explain trends in atomic and ionic radii across periods and down groups</li>
+                <li>Predict relative ionization energies and electron affinities</li>
+                <li>Calculate effective nuclear charge using Slater's rules</li>
+                <li>Connect quantum mechanical principles to macroscopic trends</li>
+            </ul>
+        </div>
+
+        <section>
+            <h2>1. Introduction: The Power of Periodicity</h2>
+
+            <p>The periodic table is not merely a catalog of elements—it is a predictive tool of extraordinary power. When Mendeleev arranged elements by atomic mass in 1869, he left gaps for undiscovered elements and predicted their properties with remarkable accuracy. The underlying reason for this periodicity became clear only with quantum mechanics: <strong>the periodic recurrence of similar electron configurations</strong>.</p>
+
+            <p>In this session, we explore how atomic properties—radius, ionization energy, electron affinity, and electronegativity—vary systematically. These trends are not arbitrary; they arise from the interplay between nuclear charge, electron shielding, and orbital occupancy.</p>
+
+            <div class="concept-box quantum">
+                <h4>QUANTUM Foundation</h4>
+                <p>All periodic trends ultimately trace back to the quantum mechanical behavior of electrons. The Schrödinger equation determines orbital shapes and energies, which in turn govern how atoms interact.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>2. Effective Nuclear Charge (Z<sub>eff</sub>)</h2>
+
+            <p>The key to understanding periodic trends is <strong>effective nuclear charge</strong>—the net positive charge experienced by an electron after accounting for shielding by other electrons. <span class="source-tag">JD Lee</span></p>
+
+            <div class="equation">
+                Z<sub>eff</sub> = Z − S
+                <span class="label">where Z = atomic number, S = shielding constant</span>
+            </div>
+
+            <h3>Slater's Rules</h3>
+
+            <p>Slater developed empirical rules to estimate shielding constants:</p>
+
+            <div class="collapsible" onclick="this.classList.toggle('open')">
+                <div class="collapsible-header">Slater's Rules (click to expand)</div>
+                <div class="collapsible-content">
+                    <ol>
+                        <li>Write electron configuration in groups: (1s)(2s,2p)(3s,3p)(3d)(4s,4p)...</li>
+                        <li>Electrons to the right contribute 0 to shielding</li>
+                        <li>Other electrons in the same group: 0.35 (except 1s: 0.30)</li>
+                        <li>Electrons in (n-1) shell: 0.85 for s/p, 1.00 for d/f</li>
+                        <li>Electrons in (n-2) and lower: 1.00</li>
+                    </ol>
+                </div>
+            </div>
+
+            <p><strong>Worked Example:</strong> Calculate Z<sub>eff</sub> for a 2p electron in oxygen (Z=8).</p>
+
+            <div class="concept-box descriptive">
+                <h4>Solution</h4>
+                <p>Configuration: (1s²)(2s²2p⁴)</p>
+                <p>S = 2(0.85) + 5(0.35) = 1.70 + 1.75 = 3.45</p>
+                <p>Z<sub>eff</sub> = 8 − 3.45 = <strong>4.55</strong></p>
+            </div>
+        </section>
+
+        <section>
+            <h2>3. Atomic Radius</h2>
+
+            <p>Atomic radius cannot be measured directly for isolated atoms—we instead measure distances in molecules or crystals and derive atomic radii. Three common definitions exist: <span class="source-tag">House</span></p>
+
+            <table class="data-table">
+                <tr>
+                    <th>Type</th>
+                    <th>Definition</th>
+                    <th>Context</th>
+                </tr>
+                <tr>
+                    <td>Covalent radius</td>
+                    <td>Half the bond length in homonuclear diatomic</td>
+                    <td>X−X bonds</td>
+                </tr>
+                <tr>
+                    <td>Metallic radius</td>
+                    <td>Half the distance between nuclei in metal</td>
+                    <td>Solid metals</td>
+                </tr>
+                <tr>
+                    <td>Van der Waals radius</td>
+                    <td>Half the distance between non-bonded atoms</td>
+                    <td>Noble gases, molecular crystals</td>
+                </tr>
+            </table>
+
+            <h3>Trends in Atomic Radius</h3>
+
+            <div class="periodic-snippet">
+                <div class="element highlight"><span class="number">3</span><span class="symbol">Li</span></div>
+                <div class="element"><span class="number">4</span><span class="symbol">Be</span></div>
+                <div class="element"><span class="number">5</span><span class="symbol">B</span></div>
+                <div class="element"><span class="number">6</span><span class="symbol">C</span></div>
+                <div class="element"><span class="number">7</span><span class="symbol">N</span></div>
+                <div class="element"><span class="number">8</span><span class="symbol">O</span></div>
+                <div class="element"><span class="number">9</span><span class="symbol">F</span></div>
+                <div class="element highlight"><span class="number">10</span><span class="symbol">Ne</span></div>
+            </div>
+            <p style="text-align: center; font-size: 0.9rem; color: var(--text-secondary);">
+                ← <strong>Decreasing atomic radius across Period 2</strong> →
+            </p>
+
+            <div class="concept-box descriptive">
+                <h4>Key Trends</h4>
+                <p><strong>Across a period:</strong> Radius decreases. Z increases but electrons enter the same shell → Z<sub>eff</sub> increases → electrons pulled closer.</p>
+                <p><strong>Down a group:</strong> Radius increases. New electron shells added → larger orbitals → greater distance from nucleus.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>4. Ionization Energy</h2>
+
+            <p>The first ionization energy (IE₁) is the energy required to remove the outermost electron from a gaseous atom: <span class="source-tag">Housecroft</span></p>
+
+            <div class="equation">
+                X(g) → X⁺(g) + e⁻ &nbsp;&nbsp;&nbsp; ΔH = IE₁
+            </div>
+
+            <p>Higher Z<sub>eff</sub> means electrons are held more tightly, requiring more energy to remove. Thus:</p>
+
+            <ul>
+                <li><strong>Across a period:</strong> IE generally increases (higher Z<sub>eff</sub>)</li>
+                <li><strong>Down a group:</strong> IE decreases (valence electrons farther from nucleus)</li>
+            </ul>
+
+            <h3>Anomalies Explained</h3>
+
+            <p>The trend is not perfectly smooth. Two notable anomalies occur in Period 2:</p>
+
+            <div class="collapsible" onclick="this.classList.toggle('open')">
+                <div class="collapsible-header">Why is IE₁(O) < IE₁(N)?</div>
+                <div class="collapsible-content">
+                    <p>Nitrogen has a half-filled 2p subshell (2p³) which is relatively stable due to exchange energy. Oxygen has one electron paired in a 2p orbital (2p⁴), experiencing electron-electron repulsion. This makes oxygen's outermost electron easier to remove despite higher Z.</p>
+                </div>
+            </div>
+
+            <div class="collapsible" onclick="this.classList.toggle('open')">
+                <div class="collapsible-header">Why is IE₁(B) < IE₁(Be)?</div>
+                <div class="collapsible-content">
+                    <p>Beryllium's outermost electron is in a 2s orbital; boron's is in a 2p orbital. The 2p orbital is higher in energy and experiences less penetration than 2s, making it easier to remove.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>5. Electron Affinity</h2>
+
+            <p>Electron affinity (EA) is the energy change when an electron is added to a gaseous atom:</p>
+
+            <div class="equation">
+                X(g) + e⁻ → X⁻(g) &nbsp;&nbsp;&nbsp; ΔH = −EA
+            </div>
+
+            <p>Note the sign convention: a positive EA means energy is <em>released</em> (exothermic). Halogens have high electron affinities because adding one electron completes their valence shell.</p>
+
+            <table class="data-table">
+                <tr>
+                    <th>Element</th>
+                    <th>EA (kJ/mol)</th>
+                    <th>Explanation</th>
+                </tr>
+                <tr>
+                    <td>F</td>
+                    <td>328</td>
+                    <td>Small atom, but e⁻-e⁻ repulsion reduces EA</td>
+                </tr>
+                <tr>
+                    <td>Cl</td>
+                    <td>349</td>
+                    <td>Highest EA; optimal size</td>
+                </tr>
+                <tr>
+                    <td>Br</td>
+                    <td>325</td>
+                    <td>Larger, less Z<sub>eff</sub></td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>6. Electronegativity</h2>
+
+            <p>Electronegativity (χ) measures an atom's ability to attract electrons in a chemical bond. Unlike IE and EA (measurable properties), electronegativity is a derived scale. <span class="source-tag">Douglas</span></p>
+
+            <h3>Pauling Scale</h3>
+
+            <p>Pauling defined electronegativity from bond energies:</p>
+
+            <div class="equation">
+                χ<sub>A</sub> − χ<sub>B</sub> = 0.102 √(Δ)
+                <span class="label">where Δ = D(A-B) − ½[D(A-A) + D(B-B)]</span>
+            </div>
+
+            <p>Fluorine is assigned χ = 4.0 as the reference. Trends follow Z<sub>eff</sub>: electronegativity increases across periods and decreases down groups.</p>
+
+            <div class="molecule-viewer">
+                <canvas id="hf-molecule" width="300" height="200"></canvas>
+                <p class="caption">HF molecule: Fluorine's high electronegativity polarizes the bond</p>
+            </div>
+        </section>
+
+        <!-- Interactive Quiz Section -->
+        <section class="quiz-section">
+            <h3>Check Your Understanding</h3>
+
+            <div class="quiz-question" id="q1">
+                <p>1. Which element has the highest first ionization energy?</p>
+                <div class="quiz-options">
+                    <button class="quiz-option" onclick="checkAnswer('q1', this, false)">A) Sodium (Na)</button>
+                    <button class="quiz-option" onclick="checkAnswer('q1', this, false)">B) Magnesium (Mg)</button>
+                    <button class="quiz-option" onclick="checkAnswer('q1', this, true)">C) Neon (Ne)</button>
+                    <button class="quiz-option" onclick="checkAnswer('q1', this, false)">D) Chlorine (Cl)</button>
+                </div>
+                <div class="quiz-feedback" id="q1-feedback"></div>
+            </div>
+
+            <div class="quiz-question" id="q2">
+                <p>2. Using Slater's rules, calculate Z<sub>eff</sub> for a 3s electron in Na (Z=11). Which is closest?</p>
+                <div class="quiz-options">
+                    <button class="quiz-option" onclick="checkAnswer('q2', this, false)">A) 1.0</button>
+                    <button class="quiz-option" onclick="checkAnswer('q2', this, true)">B) 2.2</button>
+                    <button class="quiz-option" onclick="checkAnswer('q2', this, false)">C) 4.5</button>
+                    <button class="quiz-option" onclick="checkAnswer('q2', this, false)">D) 8.8</button>
+                </div>
+                <div class="quiz-feedback" id="q2-feedback"></div>
+            </div>
+
+            <div class="quiz-question" id="q3">
+                <p>3. Why does atomic radius increase down Group 1 (Li → Cs)?</p>
+                <div class="quiz-options">
+                    <button class="quiz-option" onclick="checkAnswer('q3', this, false)">A) Decreasing nuclear charge</button>
+                    <button class="quiz-option" onclick="checkAnswer('q3', this, false)">B) Decreasing electron-electron repulsion</button>
+                    <button class="quiz-option" onclick="checkAnswer('q3', this, true)">C) Electrons occupy higher principal quantum shells</button>
+                    <button class="quiz-option" onclick="checkAnswer('q3', this, false)">D) Increasing effective nuclear charge</button>
+                </div>
+                <div class="quiz-feedback" id="q3-feedback"></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>7. Summary</h2>
+
+            <div class="concept-box descriptive">
+                <h4>Key Takeaways</h4>
+                <ul>
+                    <li><strong>Z<sub>eff</sub></strong> governs all periodic trends—higher Z<sub>eff</sub> means smaller radius, higher IE, higher EA, higher χ</li>
+                    <li><strong>Across periods:</strong> Z<sub>eff</sub> increases → radius ↓, IE ↑, EA ↑, χ ↑</li>
+                    <li><strong>Down groups:</strong> New shells added → radius ↑, IE ↓, EA ↓, χ ↓</li>
+                    <li><strong>Anomalies</strong> (O vs N, B vs Be) arise from subshell effects and electron pairing</li>
+                </ul>
+            </div>
+
+            <p><strong>Next session:</strong> We'll examine ionization energy and electronegativity in more depth, including the Mulliken scale and diagonal relationships.</p>
+        </section>
+
+        <footer class="chapter-footer">
+            <a href="../index.html" class="nav-btn">← Back to Course</a>
+            <a href="session_02_ionization.html" class="nav-btn">Next: Ionization & Electronegativity →</a>
+        </footer>
+    </article>
+
+    <a href="../visualizations/scales.html?q=periodic%20trends" class="funnel-link">
+        🔻 View in Knowledge Funnel
+    </a>
+
+    <script>
+        // progress bar
+        window.addEventListener('scroll', () => {
+            const scrollTop = document.documentElement.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const progress = (scrollTop / scrollHeight) * 100;
+            document.getElementById('progressBar').style.width = progress + '%';
+        });
+
+        // quiz functionality
+        const feedback = {
+            q1: {
+                correct: "Correct! Neon has the highest IE in Period 2 because it has the highest Z<sub>eff</sub> and a complete valence shell (very stable).",
+                incorrect: "Not quite. Think about which element has the highest Z<sub>eff</sub> and most stable electron configuration."
+            },
+            q2: {
+                correct: "Correct! Na: (1s²)(2s²2p⁶)(3s¹). S = 2(1.00) + 8(0.85) + 0(0.35) = 8.80. Z<sub>eff</sub> = 11 - 8.80 = 2.20",
+                incorrect: "Try again. Apply Slater's rules: group electrons as (1s²)(2s²2p⁶)(3s¹), then calculate shielding."
+            },
+            q3: {
+                correct: "Correct! As we go down the group, electrons occupy orbitals with higher n values, which are larger and extend farther from the nucleus.",
+                incorrect: "Not quite. Consider what happens to the principal quantum number as we move down a group."
+            }
+        };
+
+        function checkAnswer(questionId, button, isCorrect) {
+            const options = button.parentElement.querySelectorAll('.quiz-option');
+            options.forEach(opt => {
+                opt.disabled = true;
+                opt.classList.remove('correct', 'incorrect');
+            });
+
+            button.classList.add(isCorrect ? 'correct' : 'incorrect');
+
+            const feedbackEl = document.getElementById(questionId + '-feedback');
+            feedbackEl.innerHTML = isCorrect ? feedback[questionId].correct : feedback[questionId].incorrect;
+            feedbackEl.className = 'quiz-feedback show ' + (isCorrect ? 'correct' : 'incorrect');
+
+            // find correct answer if wrong
+            if (!isCorrect) {
+                options.forEach(opt => {
+                    if (opt.onclick.toString().includes('true')) {
+                        opt.classList.add('correct');
+                    }
+                });
+            }
+        }
+
+        // ChemDoodle molecule viewer
+        if (typeof ChemDoodle !== 'undefined') {
+            const canvas = new ChemDoodle.ViewerCanvas('hf-molecule', 300, 200);
+            canvas.styles.atoms_displayTerminalCarbonLabels_2D = true;
+            canvas.styles.atoms_useJMOLColors = true;
+            canvas.styles.bonds_width_2D = 2;
+            canvas.styles.backgroundColor = '#1e293b';
+
+            const mol = new ChemDoodle.structures.Molecule();
+            const h = new ChemDoodle.structures.Atom('H');
+            h.x = 100; h.y = 100;
+            const f = new ChemDoodle.structures.Atom('F');
+            f.x = 200; f.y = 100;
+            mol.atoms.push(h, f);
+            mol.bonds.push(new ChemDoodle.structures.Bond(h, f, 1));
+
+            canvas.loadMolecule(mol);
+        }
+    </script>
+</body>
+</html>
