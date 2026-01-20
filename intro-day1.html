@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHEM 361 | First Day | Spring 2026</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-deep: #0a0a0f;
+            --bg-card: #111118;
+            --bg-elevated: #1a1a22;
+            --copper-blue: #4fc3f7;
+            --copper-glow: rgba(79, 195, 247, 0.3);
+            --gold: #fbbf24;
+            --gold-muted: #d97706;
+            --purple: #a78bfa;
+            --green: #34d399;
+            --red: #f87171;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --border: #2a2a35;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-snap-type: y mandatory;
+        }
+
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background: var(--bg-deep);
+            color: var(--text-primary);
+            overflow-x: hidden;
+        }
+
+        /* Sections as slides */
+        section {
+            min-height: 100vh;
+            padding: 4rem 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            scroll-snap-align: start;
+        }
+
+        .content {
+            max-width: 1100px;
+            width: 100%;
+        }
+
+        /* Navigation dots */
+        .nav-dots {
+            position: fixed;
+            right: 2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            z-index: 100;
+        }
+
+        .nav-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--border);
+            border: 2px solid var(--text-muted);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .nav-dot:hover, .nav-dot.active {
+            background: var(--copper-blue);
+            border-color: var(--copper-blue);
+            box-shadow: 0 0 15px var(--copper-glow);
+        }
+
+        /* Title Section */
+        #intro {
+            background:
+                radial-gradient(ellipse at 20% 50%, rgba(79, 195, 247, 0.08) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 30%, rgba(167, 139, 250, 0.06) 0%, transparent 40%),
+                var(--bg-deep);
+        }
+
+        .hero-title {
+            font-family: 'Crimson Pro', Georgia, serif;
+            font-size: clamp(3rem, 8vw, 6rem);
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 1rem;
+        }
+
+        .hero-title .course-num {
+            display: block;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.35em;
+            color: var(--copper-blue);
+            letter-spacing: 0.2em;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            font-style: italic;
+            margin-bottom: 2rem;
+            font-family: 'Crimson Pro', serif;
+        }
+
+        .hero-meta {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .hero-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Cu2+ Animation Canvas */
+        #copper-canvas {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 40%;
+            height: 100%;
+            opacity: 0.8;
+        }
+
+        /* Section Headers */
+        h2 {
+            font-family: 'Crimson Pro', serif;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: var(--text-primary);
+        }
+
+        h2 .accent {
+            color: var(--copper-blue);
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            color: var(--gold);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        /* The Question Section */
+        #question {
+            background:
+                radial-gradient(ellipse at 50% 50%, rgba(79, 195, 247, 0.1) 0%, transparent 60%),
+                var(--bg-deep);
+            text-align: center;
+        }
+
+        .big-question {
+            font-family: 'Crimson Pro', serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 600;
+            line-height: 1.4;
+            margin-bottom: 3rem;
+        }
+
+        .copper-demo {
+            display: flex;
+            justify-content: center;
+            gap: 4rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .compound-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            width: 220px;
+            transition: all 0.3s;
+        }
+
+        .compound-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--copper-blue);
+        }
+
+        .compound-visual {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+        }
+
+        .compound-card.blue .compound-visual {
+            background: linear-gradient(135deg, #0ea5e9, #38bdf8);
+            box-shadow: 0 0 40px rgba(14, 165, 233, 0.4);
+        }
+
+        .compound-card.green .compound-visual {
+            background: linear-gradient(135deg, #10b981, #34d399);
+            box-shadow: 0 0 40px rgba(16, 185, 129, 0.4);
+        }
+
+        .compound-card.white .compound-visual {
+            background: linear-gradient(135deg, #e2e8f0, #f8fafc);
+            box-shadow: 0 0 40px rgba(226, 232, 240, 0.3);
+        }
+
+        .compound-name {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .compound-formula {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* Answer Reveal */
+        .answer-reveal {
+            margin-top: 3rem;
+            padding: 2rem;
+            background: rgba(79, 195, 247, 0.1);
+            border: 1px solid rgba(79, 195, 247, 0.3);
+            border-radius: 12px;
+            max-width: 700px;
+        }
+
+        .answer-reveal p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+        }
+
+        .answer-reveal strong {
+            color: var(--copper-blue);
+        }
+
+        /* Data Driven Section */
+        #approach {
+            background: var(--bg-deep);
+        }
+
+        .approach-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .approach-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .approach-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+        }
+
+        .approach-card.foundations::before { background: var(--green); }
+        .approach-card.hubs::before { background: var(--gold); }
+        .approach-card.capstones::before { background: var(--purple); }
+
+        .approach-card h3 {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .approach-card .number {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            padding: 0.3rem 0.6rem;
+            background: var(--bg-elevated);
+            border-radius: 6px;
+        }
+
+        .approach-card.foundations .number { color: var(--green); }
+        .approach-card.hubs .number { color: var(--gold); }
+        .approach-card.capstones .number { color: var(--purple); }
+
+        .approach-card p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+
+        .approach-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .approach-card li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .approach-card li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--text-muted);
+        }
+
+        /* Stats Section */
+        .stats-row {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            margin: 3rem 0;
+            padding: 2rem;
+            background: var(--bg-card);
+            border-radius: 16px;
+            border: 1px solid var(--border);
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 3rem;
+            font-weight: 600;
+            color: var(--copper-blue);
+            line-height: 1;
+        }
+
+        .stat-label {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Flow Visualization */
+        #flow {
+            background:
+                radial-gradient(ellipse at 30% 70%, rgba(167, 139, 250, 0.06) 0%, transparent 50%),
+                var(--bg-deep);
+        }
+
+        .flow-diagram {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin: 2rem 0;
+        }
+
+        .flow-node {
+            background: var(--bg-card);
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            text-align: center;
+            min-width: 140px;
+            transition: all 0.3s;
+        }
+
+        .flow-node:hover {
+            transform: scale(1.05);
+        }
+
+        .flow-node.atomic { border-color: var(--green); }
+        .flow-node.periodic { border-color: #22d3ee; }
+        .flow-node.bonding { border-color: var(--gold); }
+        .flow-node.coordination { border-color: var(--purple); }
+        .flow-node.cft { border-color: var(--copper-blue); }
+        .flow-node.color { border-color: var(--red); }
+
+        .flow-node .icon {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .flow-node .name {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .flow-arrow {
+            font-size: 1.5rem;
+            color: var(--text-muted);
+        }
+
+        /* Expectation Section */
+        #expectations {
+            background: var(--bg-deep);
+        }
+
+        .expect-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .expect-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 2rem;
+        }
+
+        .expect-card h4 {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .expect-card h4 .emoji {
+            font-size: 1.5rem;
+        }
+
+        .expect-card p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+
+        /* Syllabus Overview */
+        #syllabus {
+            background:
+                radial-gradient(ellipse at 70% 30%, rgba(251, 191, 36, 0.06) 0%, transparent 50%),
+                var(--bg-deep);
+        }
+
+        .syllabus-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2rem;
+            font-size: 0.95rem;
+        }
+
+        .syllabus-table th {
+            text-align: left;
+            padding: 1rem;
+            background: var(--bg-card);
+            color: var(--gold);
+            font-weight: 600;
+            border-bottom: 2px solid var(--gold);
+        }
+
+        .syllabus-table td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-secondary);
+        }
+
+        .syllabus-table tr:hover td {
+            background: var(--bg-card);
+        }
+
+        .phase-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .phase-badge.foundations { background: rgba(52, 211, 153, 0.2); color: var(--green); }
+        .phase-badge.hubs { background: rgba(251, 191, 36, 0.2); color: var(--gold); }
+        .phase-badge.capstones { background: rgba(167, 139, 250, 0.2); color: var(--purple); }
+
+        /* Final CTA */
+        #ready {
+            background:
+                radial-gradient(ellipse at 50% 50%, rgba(79, 195, 247, 0.1) 0%, transparent 50%),
+                var(--bg-deep);
+            text-align: center;
+        }
+
+        .final-message {
+            font-family: 'Crimson Pro', serif;
+            font-size: 2rem;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+
+        .final-message em {
+            color: var(--copper-blue);
+            font-style: normal;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .cta-btn {
+            font-family: 'JetBrains Mono', monospace;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: all 0.3s;
+        }
+
+        .cta-btn.primary {
+            background: var(--copper-blue);
+            color: var(--bg-deep);
+        }
+
+        .cta-btn.primary:hover {
+            box-shadow: 0 0 30px var(--copper-glow);
+            transform: translateY(-2px);
+        }
+
+        .cta-btn.secondary {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+        }
+
+        .cta-btn.secondary:hover {
+            border-color: var(--copper-blue);
+            color: var(--copper-blue);
+        }
+
+        /* Quote */
+        .quote {
+            font-family: 'Crimson Pro', serif;
+            font-style: italic;
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .quote cite {
+            display: block;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            font-style: normal;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            section { padding: 2rem 1rem; }
+            .nav-dots { display: none; }
+            .copper-demo { gap: 1.5rem; }
+            .compound-card { width: 160px; padding: 1.5rem; }
+            .flow-diagram { flex-direction: column; }
+            .flow-arrow { transform: rotate(90deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Dots -->
+    <nav class="nav-dots">
+        <div class="nav-dot active" data-section="intro"></div>
+        <div class="nav-dot" data-section="question"></div>
+        <div class="nav-dot" data-section="approach"></div>
+        <div class="nav-dot" data-section="flow"></div>
+        <div class="nav-dot" data-section="expectations"></div>
+        <div class="nav-dot" data-section="syllabus"></div>
+        <div class="nav-dot" data-section="ready"></div>
+    </nav>
+
+    <!-- Section 1: Title -->
+    <section id="intro">
+        <div id="copper-canvas"></div>
+        <div class="content">
+            <h1 class="hero-title">
+                <span class="course-num">CHEM 361</span>
+                Inorganic Chemistry
+            </h1>
+            <p class="hero-subtitle">Structure, Bonding & the Colors of Transition Metals</p>
+            <div class="hero-meta">
+                <span>📅 Spring 2026</span>
+                <span>🕐 TR 8:00–9:15 AM</span>
+                <span>👤 Dr. Boggavarapu</span>
+                <span>📍 McNeese State University</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: The Question -->
+    <section id="question">
+        <div class="content">
+            <p class="big-question">Why is copper sulfate <span style="color: var(--copper-blue);">blue</span>?</p>
+
+            <div class="copper-demo">
+                <div class="compound-card blue">
+                    <div class="compound-visual">💎</div>
+                    <div class="compound-name">CuSO₄·5H₂O</div>
+                    <div class="compound-formula">Copper(II) sulfate</div>
+                </div>
+                <div class="compound-card green">
+                    <div class="compound-visual">🟢</div>
+                    <div class="compound-name">[Cu(NH₃)₄]²⁺</div>
+                    <div class="compound-formula">Tetraamminecopper(II)</div>
+                </div>
+                <div class="compound-card white">
+                    <div class="compound-visual">⚪</div>
+                    <div class="compound-name">CuSO₄ (anhydrous)</div>
+                    <div class="compound-formula">White powder</div>
+                </div>
+            </div>
+
+            <div class="answer-reveal">
+                <p>
+                    Same copper. Same +2 charge. <strong>Different colors.</strong>
+                </p>
+                <p style="margin-top: 1rem;">
+                    The answer lies in <strong>d-orbital splitting</strong> — how the ligands around copper
+                    change the energy gap between d orbitals, which changes which wavelengths of light get absorbed.
+                </p>
+                <p style="margin-top: 1rem;">
+                    To understand this, we need: quantum numbers → electron configuration →
+                    crystal field theory → spectroscopy. <strong>That's this course.</strong>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Our Approach -->
+    <section id="approach">
+        <div class="content">
+            <h2>A <span class="accent">Data-Driven</span> Curriculum</h2>
+            <p style="color: var(--text-secondary); font-size: 1.1rem; max-width: 700px;">
+                This isn't a traditional textbook-order course. We analyzed <strong>7 inorganic chemistry textbooks</strong>
+                to identify prerequisites, bottlenecks, and integration points.
+            </p>
+
+            <div class="stats-row">
+                <div class="stat">
+                    <div class="stat-number">7</div>
+                    <div class="stat-label">Textbooks analyzed</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">8,756</div>
+                    <div class="stat-label">Text chunks processed</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">5,374</div>
+                    <div class="stat-label">Concepts extracted</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">2,885</div>
+                    <div class="stat-label">Prerequisite links</div>
+                </div>
+            </div>
+
+            <div class="approach-grid">
+                <div class="approach-card foundations">
+                    <h3><span class="number">PHASE 1</span> Foundations</h3>
+                    <p>32 concepts with no inorganic prerequisites. These are your entry points — learn them first.</p>
+                    <ul>
+                        <li>Quantum numbers & orbitals</li>
+                        <li>Electron configuration</li>
+                        <li>Periodic trends</li>
+                        <li>Lewis structures & VSEPR</li>
+                    </ul>
+                </div>
+                <div class="approach-card hubs">
+                    <h3><span class="number">PHASE 2</span> Hub Traversal</h3>
+                    <p>13 knowledge "hubs" — bottlenecks where prerequisite chains converge. Master these to unlock everything else.</p>
+                    <ul>
+                        <li>Crystal Field Theory</li>
+                        <li>MO diagrams</li>
+                        <li>Coordination nomenclature</li>
+                        <li>Redox & electrochemistry</li>
+                    </ul>
+                </div>
+                <div class="approach-card capstones">
+                    <h3><span class="number">PHASE 3</span> Capstones</h3>
+                    <p>Integration endpoints — topics with many prerequisites and no dependents. This is where it all comes together.</p>
+                    <ul>
+                        <li>Main group chemistry</li>
+                        <li>Transition metal applications</li>
+                        <li>Materials & catalysis</li>
+                        <li>Bioinorganic chemistry</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Topic Flow -->
+    <section id="flow">
+        <div class="content">
+            <h2>The Path to Understanding <span class="accent">Color</span></h2>
+            <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                Every topic connects. Here's the chain that answers "Why is Cu²⁺ blue?"
+            </p>
+
+            <div class="flow-diagram">
+                <div class="flow-node atomic">
+                    <div class="icon">⚛️</div>
+                    <div class="name">Quantum<br>Numbers</div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-node periodic">
+                    <div class="icon">📊</div>
+                    <div class="name">Electron<br>Config</div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-node bonding">
+                    <div class="icon">🔗</div>
+                    <div class="name">d-Orbitals</div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-node coordination">
+                    <div class="icon">🎯</div>
+                    <div class="name">Coordination<br>Geometry</div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-node cft">
+                    <div class="icon">📐</div>
+                    <div class="name">Crystal Field<br>Theory</div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-node color">
+                    <div class="icon">🌈</div>
+                    <div class="name">Color!</div>
+                </div>
+            </div>
+
+            <div style="background: var(--bg-card); border-radius: 12px; padding: 2rem; margin-top: 3rem;">
+                <h3 style="margin-bottom: 1rem;">The Cu²⁺ Answer</h3>
+                <p style="color: var(--text-secondary); line-height: 1.8;">
+                    Cu²⁺ has a d⁹ configuration. In an octahedral field (like [Cu(H₂O)₆]²⁺), the d-orbitals split into
+                    t₂g and eₐ sets. The energy gap Δₒ corresponds to ~600 nm (orange/red light). The complex absorbs
+                    red-orange and transmits <span style="color: var(--copper-blue);">blue</span>. Change the ligands →
+                    change Δ → change the color. That's why ammonia turns it deep blue-violet.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Expectations -->
+    <section id="expectations">
+        <div class="content">
+            <h2>What to <span class="accent">Expect</span></h2>
+
+            <div class="expect-grid">
+                <div class="expect-card">
+                    <h4><span class="emoji">🧠</span> Active Learning</h4>
+                    <p>
+                        Each 75-minute class: 15 min review, 30 min new concepts, 25 min problem-solving in pairs,
+                        5 min preview. You'll work, not just listen.
+                    </p>
+                </div>
+                <div class="expect-card">
+                    <h4><span class="emoji">🎮</span> Interactive Tools</h4>
+                    <p>
+                        3D orbital visualizers, nomenclature sprints, symmetry games. Chemistry is spatial —
+                        we'll use tools that let you see and manipulate molecules.
+                    </p>
+                </div>
+                <div class="expect-card">
+                    <h4><span class="emoji">📊</span> Hub Checkpoints</h4>
+                    <p>
+                        After each hub concept, a mastery check. No moving forward until foundations are solid.
+                        This prevents the "lost in week 8" feeling.
+                    </p>
+                </div>
+                <div class="expect-card">
+                    <h4><span class="emoji">📝</span> No Curves Needed</h4>
+                    <p>
+                        If everyone earns an A, everyone gets an A. Collaborate freely. The goal is understanding,
+                        not competition.
+                    </p>
+                </div>
+                <div class="expect-card">
+                    <h4><span class="emoji">🔬</span> Real Applications</h4>
+                    <p>
+                        Cisplatin for cancer. Hemoglobin for oxygen transport. Solar cells and batteries.
+                        Inorganic chemistry is everywhere — we'll connect theory to reality.
+                    </p>
+                </div>
+                <div class="expect-card">
+                    <h4><span class="emoji">💬</span> Office Hours Matter</h4>
+                    <p>
+                        Hidden bonus: visit office hours in Week 1 and correctly name the highest-connectivity hub
+                        → 3 bonus points on Exam 1.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Syllabus Overview -->
+    <section id="syllabus">
+        <div class="content">
+            <h2>Course <span class="accent">Overview</span></h2>
+
+            <table class="syllabus-table">
+                <thead>
+                    <tr>
+                        <th>Weeks</th>
+                        <th>Phase</th>
+                        <th>Topics</th>
+                        <th>Assessment</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1–4</td>
+                        <td><span class="phase-badge foundations">Foundations</span></td>
+                        <td>Quantum numbers, electron config, periodic trends, Lewis/VSEPR, symmetry basics</td>
+                        <td>Quizzes 1–4</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><span class="phase-badge hubs">Hub 1</span></td>
+                        <td>Molecular Orbital Theory — the first major bottleneck</td>
+                        <td>Quiz 5 + Checkpoint</td>
+                    </tr>
+                    <tr>
+                        <td>6–7</td>
+                        <td><span class="phase-badge hubs">Hubs 2–4</span></td>
+                        <td>Coordination chemistry, nomenclature, isomerism</td>
+                        <td>Midterm 1</td>
+                    </tr>
+                    <tr>
+                        <td>8–9</td>
+                        <td><span class="phase-badge hubs">Hubs 5–7</span></td>
+                        <td>Crystal Field Theory, CFSE, spectrochemical series, magnetism</td>
+                        <td>Quizzes 6–7</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td><span class="phase-badge hubs">Hub 8</span></td>
+                        <td>Electronic spectra, selection rules — explaining color</td>
+                        <td>Midterm 2</td>
+                    </tr>
+                    <tr>
+                        <td>11–12</td>
+                        <td><span class="phase-badge hubs">Hubs 9–13</span></td>
+                        <td>Solid state, band theory, redox, reaction mechanisms</td>
+                        <td>Quizzes 8–9</td>
+                    </tr>
+                    <tr>
+                        <td>13–14</td>
+                        <td><span class="phase-badge capstones">Capstones</span></td>
+                        <td>Main group integration, bioinorganic, materials, catalysis</td>
+                        <td>Quiz 10 + Presentations</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>—</td>
+                        <td>Review & synthesis</td>
+                        <td>Final Exam</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div style="margin-top: 2rem; display: flex; gap: 2rem; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 200px;">
+                    <h3>Grading</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.8;">
+                        Quizzes: 20%<br>
+                        Midterms (2): 30%<br>
+                        Case Analyses (2): 15%<br>
+                        Presentation: 10%<br>
+                        Final Exam: 25%
+                    </p>
+                </div>
+                <div style="flex: 1; min-width: 200px;">
+                    <h3>Textbook</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.8;">
+                        Rodgers, <em>Descriptive Inorganic, Coordination and Solid-State Chemistry</em>, 3rd Ed.
+                        <br><br>
+                        + Supplementary readings from 6 other textbooks (provided via knowledge graph analysis)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7: Ready -->
+    <section id="ready">
+        <div class="content">
+            <p class="final-message">
+                By the end of this course, you won't just know <em>that</em> Cu²⁺ is blue.<br>
+                You'll know <em>why</em> — and you'll be able to predict the color of any d-metal complex.
+            </p>
+
+            <div class="cta-buttons">
+                <a href="lessons/visuals/quantum_numbers_explorer.html" class="cta-btn primary">Start: Quantum Numbers →</a>
+                <a href="index.html" class="cta-btn secondary">Course Hub</a>
+                <a href="topic-flow.html" class="cta-btn secondary">Topic Graph</a>
+            </div>
+
+            <p class="quote">
+                "The periodic table is nature's Rosetta Stone. Once you learn to read it, you can decode the behavior of every element."
+                <cite>— Course Philosophy</cite>
+            </p>
+        </div>
+    </section>
+
+    <script>
+        // Copper ion animation
+        new p5((p) => {
+            let particles = [];
+            const NUM_PARTICLES = 60;
+
+            p.setup = () => {
+                const container = document.getElementById('copper-canvas');
+                const canvas = p.createCanvas(container.offsetWidth, container.offsetHeight);
+                canvas.parent('copper-canvas');
+
+                for (let i = 0; i < NUM_PARTICLES; i++) {
+                    particles.push({
+                        x: p.random(p.width),
+                        y: p.random(p.height),
+                        vx: p.random(-0.5, 0.5),
+                        vy: p.random(-0.5, 0.5),
+                        size: p.random(3, 8),
+                        alpha: p.random(50, 150)
+                    });
+                }
+            };
+
+            p.draw = () => {
+                p.clear();
+
+                // Central Cu2+ glow
+                const centerX = p.width * 0.5;
+                const centerY = p.height * 0.5;
+
+                for (let r = 150; r > 0; r -= 10) {
+                    const alpha = p.map(r, 0, 150, 30, 0);
+                    p.noStroke();
+                    p.fill(79, 195, 247, alpha);
+                    p.ellipse(centerX, centerY, r * 2);
+                }
+
+                // Cu2+ label
+                p.fill(79, 195, 247);
+                p.textSize(32);
+                p.textAlign(p.CENTER, p.CENTER);
+                p.textFont('JetBrains Mono');
+                p.text('Cu²⁺', centerX, centerY);
+
+                // d9 electron indicators
+                const time = p.millis() * 0.001;
+                for (let i = 0; i < 9; i++) {
+                    const angle = (i / 9) * p.TWO_PI + time * 0.3;
+                    const radius = 80 + p.sin(time * 2 + i) * 10;
+                    const ex = centerX + p.cos(angle) * radius;
+                    const ey = centerY + p.sin(angle) * radius;
+
+                    p.fill(79, 195, 247, 200);
+                    p.noStroke();
+                    p.ellipse(ex, ey, 8, 8);
+                }
+
+                // Water ligands
+                for (let i = 0; i < 6; i++) {
+                    const angle = (i / 6) * p.TWO_PI + p.PI / 6;
+                    const radius = 130;
+                    const lx = centerX + p.cos(angle) * radius;
+                    const ly = centerY + p.sin(angle) * radius;
+
+                    p.fill(100, 200, 255, 100);
+                    p.stroke(100, 200, 255, 150);
+                    p.strokeWeight(1);
+                    p.ellipse(lx, ly, 25, 25);
+
+                    // Bond to center
+                    p.stroke(100, 200, 255, 80);
+                    p.strokeWeight(2);
+                    p.line(centerX, centerY, lx, ly);
+                }
+
+                // Floating particles
+                particles.forEach(particle => {
+                    particle.x += particle.vx;
+                    particle.y += particle.vy;
+
+                    if (particle.x < 0 || particle.x > p.width) particle.vx *= -1;
+                    if (particle.y < 0 || particle.y > p.height) particle.vy *= -1;
+
+                    p.noStroke();
+                    p.fill(79, 195, 247, particle.alpha * 0.5);
+                    p.ellipse(particle.x, particle.y, particle.size);
+                });
+            };
+
+            p.windowResized = () => {
+                const container = document.getElementById('copper-canvas');
+                p.resizeCanvas(container.offsetWidth, container.offsetHeight);
+            };
+        });
+
+        // Navigation dots
+        const dots = document.querySelectorAll('.nav-dot');
+        const sections = document.querySelectorAll('section');
+
+        dots.forEach(dot => {
+            dot.addEventListener('click', () => {
+                const sectionId = dot.dataset.section;
+                document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Update active dot on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    dots.forEach(d => d.classList.remove('active'));
+                    const activeDot = document.querySelector(`.nav-dot[data-section="${entry.target.id}"]`);
+                    if (activeDot) activeDot.classList.add('active');
+                }
+            });
+        }, { threshold: 0.5 });
+
+        sections.forEach(section => observer.observe(section));
+    </script>
+</body>
+</html>
