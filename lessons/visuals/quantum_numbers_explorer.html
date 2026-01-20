@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Numbers: From Boundary Conditions to Orbitals</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-deep: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-hover: #1a1a25;
+            --accent-gold: #d4a855;
+            --accent-blue: #4a9eff;
+            --accent-purple: #9966ff;
+            --accent-red: #ff6b6b;
+            --accent-green: #4ecdc4;
+            --text-primary: #e8e6e3;
+            --text-muted: #8a8a8a;
+            --border: #2a2a35;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Crimson Pro', Georgia, serif;
+            background: var(--bg-deep);
+            color: var(--text-primary);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: var(--accent-gold);
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.02em;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        /* Story Section */
+        .story-section {
+            background: linear-gradient(135deg, var(--bg-card) 0%, #0d0d14 100%);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .story-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent-gold), var(--accent-purple), var(--accent-blue));
+        }
+
+        .story-section h2 {
+            font-size: 1.5rem;
+            color: var(--accent-gold);
+            margin-bottom: 1rem;
+        }
+
+        .story-section p {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .story-section .highlight {
+            color: var(--accent-blue);
+            font-weight: 600;
+        }
+
+        .story-section .key-insight {
+            background: rgba(212, 168, 85, 0.1);
+            border-left: 3px solid var(--accent-gold);
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            font-style: italic;
+        }
+
+        /* Main Interactive Area */
+        .interactive-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        @media (max-width: 1000px) {
+            .interactive-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .panel {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+        }
+
+        .panel h3 {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            color: var(--accent-gold);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        /* Quantum Number Selectors */
+        .qn-selector {
+            margin-bottom: 1.5rem;
+        }
+
+        .qn-label {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .qn-symbol {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: var(--accent-blue);
+            width: 40px;
+        }
+
+        .qn-name {
+            font-size: 1rem;
+            color: var(--text-muted);
+        }
+
+        .qn-buttons {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .qn-btn {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            background: var(--bg-deep);
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .qn-btn:hover {
+            background: var(--bg-hover);
+            border-color: var(--accent-blue);
+        }
+
+        .qn-btn.active {
+            background: var(--accent-blue);
+            border-color: var(--accent-blue);
+            color: var(--bg-deep);
+        }
+
+        .qn-btn:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+        }
+
+        /* Orbital Display */
+        .orbital-display {
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .orbital-name {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 3rem;
+            font-weight: 500;
+            color: var(--accent-gold);
+            margin-bottom: 0.5rem;
+        }
+
+        .orbital-description {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+        }
+
+        /* Canvas Container */
+        #canvas-container {
+            width: 100%;
+            aspect-ratio: 1;
+            border-radius: 8px;
+            overflow: hidden;
+            background: radial-gradient(ellipse at center, #1a1a25 0%, var(--bg-deep) 100%);
+            border: 1px solid var(--border);
+        }
+
+        #canvas-container canvas {
+            display: block;
+        }
+
+        /* Node Info */
+        .node-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .node-box {
+            background: var(--bg-deep);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .node-box.radial {
+            border-color: var(--accent-purple);
+        }
+
+        .node-box.angular {
+            border-color: var(--accent-green);
+        }
+
+        .node-count {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 2.5rem;
+            font-weight: 500;
+        }
+
+        .node-box.radial .node-count {
+            color: var(--accent-purple);
+        }
+
+        .node-box.angular .node-count {
+            color: var(--accent-green);
+        }
+
+        .node-label {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-top: 0.25rem;
+        }
+
+        .node-formula {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-top: 0.5rem;
+        }
+
+        /* Wave Function Plot */
+        #wave-container {
+            width: 100%;
+            height: 200px;
+            margin-top: 1rem;
+        }
+
+        /* Controls */
+        .controls {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .control-btn {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            padding: 0.5rem 1rem;
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .control-btn:hover {
+            background: var(--bg-hover);
+        }
+
+        .control-btn.active {
+            border-color: var(--accent-gold);
+            color: var(--accent-gold);
+        }
+
+        /* Explanation Boxes */
+        .explanation {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .explanation h3 {
+            color: var(--accent-gold);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .explanation p {
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        /* Standing Wave Animation */
+        #standing-wave-container {
+            width: 100%;
+            height: 150px;
+            margin: 1rem 0;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border);
+            margin-top: 2rem;
+        }
+
+        footer a {
+            color: var(--accent-gold);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Quantum Numbers</h1>
+            <p class="subtitle">Why integers rule the atomic world</p>
+        </header>
+
+        <!-- Story: The WHY -->
+        <section class="story-section">
+            <h2>The Question That Changes Everything</h2>
+            <p>
+                Why can't an electron have <span class="highlight">any</span> energy it wants? Why is energy
+                <span class="highlight">quantized</span>—restricted to specific values?
+            </p>
+            <p>
+                The answer lies in a simple physical requirement: <span class="highlight">the wave must fit</span>.
+            </p>
+            <div class="key-insight">
+                An electron is described by a wave function. Like a guitar string fixed at both ends,
+                this wave must satisfy <strong>boundary conditions</strong>—it must go to zero at certain points
+                and connect smoothly to itself. Only certain wavelengths "fit." These are the allowed states.
+            </div>
+            <p>
+                The integers we call quantum numbers—<span class="highlight">n, l, mₗ, mₛ</span>—are not arbitrary labels.
+                They <em>emerge</em> from the mathematics of waves that must fit within boundaries.
+                Each quantum number counts something: how many times the wave fits, how it twists, how it orients.
+            </p>
+        </section>
+
+        <!-- Standing Wave Demo -->
+        <section class="story-section">
+            <h2>See It: Waves That Fit</h2>
+            <p>A string fixed at both ends can only vibrate at certain frequencies. Watch:</p>
+            <div id="standing-wave-container"></div>
+            <div class="controls">
+                <button class="control-btn active" onclick="setHarmonic(1)">n = 1 (fundamental)</button>
+                <button class="control-btn" onclick="setHarmonic(2)">n = 2 (1 node)</button>
+                <button class="control-btn" onclick="setHarmonic(3)">n = 3 (2 nodes)</button>
+                <button class="control-btn" onclick="setHarmonic(4)">n = 4 (3 nodes)</button>
+            </div>
+            <p style="margin-top: 1rem; color: var(--text-muted);">
+                <strong>The pattern:</strong> n = 1 has 0 nodes. n = 2 has 1 node. n = 3 has 2 nodes.
+                In general: <span style="color: var(--accent-blue); font-family: 'JetBrains Mono';">nodes = n - 1</span>
+            </p>
+        </section>
+
+        <!-- Main Interactive -->
+        <div class="interactive-grid">
+            <!-- Left: Quantum Number Selectors -->
+            <div class="panel">
+                <h3>Build Your Orbital</h3>
+
+                <div class="qn-selector">
+                    <div class="qn-label">
+                        <span class="qn-symbol">n</span>
+                        <span class="qn-name">Principal — which shell? (size & energy)</span>
+                    </div>
+                    <div class="qn-buttons" id="n-buttons">
+                        <button class="qn-btn active" data-n="1">1</button>
+                        <button class="qn-btn" data-n="2">2</button>
+                        <button class="qn-btn" data-n="3">3</button>
+                        <button class="qn-btn" data-n="4">4</button>
+                    </div>
+                </div>
+
+                <div class="qn-selector">
+                    <div class="qn-label">
+                        <span class="qn-symbol">l</span>
+                        <span class="qn-name">Angular momentum — what shape? (0 to n-1)</span>
+                    </div>
+                    <div class="qn-buttons" id="l-buttons">
+                        <button class="qn-btn active" data-l="0">0 (s)</button>
+                    </div>
+                </div>
+
+                <div class="qn-selector">
+                    <div class="qn-label">
+                        <span class="qn-symbol">mₗ</span>
+                        <span class="qn-name">Magnetic — which orientation? (-l to +l)</span>
+                    </div>
+                    <div class="qn-buttons" id="ml-buttons">
+                        <button class="qn-btn active" data-ml="0">0</button>
+                    </div>
+                </div>
+
+                <div class="orbital-display">
+                    <div class="orbital-name" id="orbital-name">1s</div>
+                    <div class="orbital-description" id="orbital-desc">Spherical, no angular nodes</div>
+                </div>
+
+                <div class="node-info">
+                    <div class="node-box radial">
+                        <div class="node-count" id="radial-count">0</div>
+                        <div class="node-label">Radial Nodes</div>
+                        <div class="node-formula">n - l - 1</div>
+                    </div>
+                    <div class="node-box angular">
+                        <div class="node-count" id="angular-count">0</div>
+                        <div class="node-label">Angular Nodes</div>
+                        <div class="node-formula">l</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: 3D Orbital Visualization -->
+            <div class="panel">
+                <h3>Orbital Shape</h3>
+                <div id="canvas-container"></div>
+                <div class="controls">
+                    <button class="control-btn active" id="btn-probability" onclick="setView('probability')">Probability |ψ|²</button>
+                    <button class="control-btn" id="btn-phase" onclick="setView('phase')">Phase (+ / −)</button>
+                    <button class="control-btn" id="btn-nodes" onclick="setView('nodes')">Show Nodes</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Radial Wave Function -->
+        <div class="panel" style="margin-bottom: 2rem;">
+            <h3>Radial Wave Function R(r)</h3>
+            <p style="color: var(--text-muted); margin-bottom: 1rem;">
+                Where the wave crosses zero → radial node. Count them: should equal <span style="color: var(--accent-purple);">n - l - 1</span>
+            </p>
+            <div id="wave-container"></div>
+        </div>
+
+        <!-- Why Each Quantum Number -->
+        <section class="explanation">
+            <h3>Why These Four Numbers?</h3>
+            <p>
+                <strong style="color: var(--accent-blue);">n (principal)</strong> emerges from the radial boundary condition—the wave must decay to zero at infinite distance. Only certain energies allow this. Higher n = more radial oscillations = higher energy.
+            </p>
+            <p>
+                <strong style="color: var(--accent-purple);">l (angular momentum)</strong> emerges from the angular boundary condition—the wave must connect smoothly as you go around the atom. The number of angular nodes equals l.
+            </p>
+            <p>
+                <strong style="color: var(--accent-green);">mₗ (magnetic)</strong> specifies orientation in space. For each l, there are 2l+1 ways to orient the angular momentum (−l to +l). These are degenerate unless a magnetic field breaks the symmetry.
+            </p>
+            <p>
+                <strong style="color: var(--accent-red);">mₛ (spin)</strong> is intrinsic to the electron itself—not from orbital motion. It can only be +½ or −½. Two electrons can share an orbital only if their spins are opposite.
+            </p>
+        </section>
+
+        <footer>
+            CHEM 361 · Inorganic Chemistry · <a href="#">McNeese State University</a>
+        </footer>
+    </div>
+
+    <script>
+        // State
+        let n = 1, l = 0, ml = 0;
+        let viewMode = 'probability';
+        let harmonic = 1;
+        let orbitalSketch, waveSketch, standingWaveSketch;
+
+        // Orbital data
+        const orbitalNames = {0: 's', 1: 'p', 2: 'd', 3: 'f'};
+        const orbitalDescriptions = {
+            '1s': 'Spherical, no nodes',
+            '2s': 'Spherical, 1 radial node',
+            '2p': 'Dumbbell shape, 1 angular node',
+            '3s': 'Spherical, 2 radial nodes',
+            '3p': 'Dumbbell, 1 radial + 1 angular node',
+            '3d': 'Cloverleaf, 2 angular nodes',
+            '4s': 'Spherical, 3 radial nodes',
+            '4p': 'Dumbbell, 2 radial + 1 angular',
+            '4d': 'Cloverleaf, 1 radial + 2 angular',
+            '4f': 'Complex multilobed, 3 angular nodes'
+        };
+
+        // Button handlers
+        document.querySelectorAll('#n-buttons .qn-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                n = parseInt(btn.dataset.n);
+                updateNButtons();
+                updateLButtons();
+                updateMLButtons();
+                updateDisplay();
+            });
+        });
+
+        function updateNButtons() {
+            document.querySelectorAll('#n-buttons .qn-btn').forEach(btn => {
+                btn.classList.toggle('active', parseInt(btn.dataset.n) === n);
+            });
+        }
+
+        function updateLButtons() {
+            const container = document.getElementById('l-buttons');
+            container.innerHTML = '';
+            for (let i = 0; i < n; i++) {
+                const btn = document.createElement('button');
+                btn.className = 'qn-btn' + (i === 0 ? ' active' : '');
+                btn.dataset.l = i;
+                btn.textContent = `${i} (${orbitalNames[i]})`;
+                btn.addEventListener('click', () => {
+                    l = parseInt(btn.dataset.l);
+                    document.querySelectorAll('#l-buttons .qn-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    updateMLButtons();
+                    updateDisplay();
+                });
+                container.appendChild(btn);
+            }
+            l = 0;
+        }
+
+        function updateMLButtons() {
+            const container = document.getElementById('ml-buttons');
+            container.innerHTML = '';
+            for (let i = -l; i <= l; i++) {
+                const btn = document.createElement('button');
+                btn.className = 'qn-btn' + (i === 0 ? ' active' : '');
+                btn.dataset.ml = i;
+                btn.textContent = i >= 0 ? `+${i}` : `${i}`;
+                if (i === 0) btn.textContent = '0';
+                btn.addEventListener('click', () => {
+                    ml = parseInt(btn.dataset.ml);
+                    document.querySelectorAll('#ml-buttons .qn-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    updateDisplay();
+                });
+                container.appendChild(btn);
+            }
+            ml = 0;
+        }
+
+        function updateDisplay() {
+            const name = `${n}${orbitalNames[l]}`;
+            document.getElementById('orbital-name').textContent = name;
+            document.getElementById('orbital-desc').textContent = orbitalDescriptions[name] || `n=${n}, l=${l}`;
+
+            const radialNodes = n - l - 1;
+            const angularNodes = l;
+            document.getElementById('radial-count').textContent = radialNodes;
+            document.getElementById('angular-count').textContent = angularNodes;
+        }
+
+        function setView(mode) {
+            viewMode = mode;
+            document.querySelectorAll('.controls .control-btn').forEach(btn => btn.classList.remove('active'));
+            document.getElementById(`btn-${mode}`).classList.add('active');
+        }
+
+        function setHarmonic(h) {
+            harmonic = h;
+            document.querySelectorAll('#standing-wave-container + .controls .control-btn').forEach((btn, i) => {
+                btn.classList.toggle('active', i + 1 === h);
+            });
+        }
+
+        // Standing Wave Sketch
+        new p5((p) => {
+            standingWaveSketch = p;
+            let time = 0;
+
+            p.setup = () => {
+                const container = document.getElementById('standing-wave-container');
+                const canvas = p.createCanvas(container.offsetWidth, 150);
+                canvas.parent('standing-wave-container');
+            };
+
+            p.draw = () => {
+                p.background(10, 10, 15);
+                time += 0.03;
+
+                const w = p.width;
+                const h = p.height;
+                const amplitude = 50;
+
+                // Draw boundary markers
+                p.stroke(100);
+                p.strokeWeight(2);
+                p.line(40, h/2 - 60, 40, h/2 + 60);
+                p.line(w - 40, h/2 - 60, w - 40, h/2 + 60);
+
+                // Draw standing wave
+                p.noFill();
+                p.strokeWeight(3);
+
+                // Wave color gradient
+                p.stroke(74, 158, 255);
+
+                p.beginShape();
+                for (let x = 40; x <= w - 40; x++) {
+                    const xNorm = (x - 40) / (w - 80); // 0 to 1
+                    const spatial = Math.sin(harmonic * Math.PI * xNorm);
+                    const temporal = Math.cos(time * 2);
+                    const y = h/2 - amplitude * spatial * temporal;
+                    p.vertex(x, y);
+                }
+                p.endShape();
+
+                // Draw nodes
+                p.fill(153, 102, 255);
+                p.noStroke();
+                for (let i = 1; i < harmonic; i++) {
+                    const nodeX = 40 + (w - 80) * (i / harmonic);
+                    p.ellipse(nodeX, h/2, 12, 12);
+                }
+
+                // Labels
+                p.fill(138, 138, 138);
+                p.textSize(12);
+                p.textAlign(p.CENTER);
+                p.text('fixed', 40, h/2 + 80);
+                p.text('fixed', w - 40, h/2 + 80);
+
+                // Node count
+                p.fill(212, 168, 85);
+                p.textSize(14);
+                p.text(`n = ${harmonic}  →  ${harmonic - 1} node${harmonic - 1 !== 1 ? 's' : ''}`, w/2, h - 15);
+            };
+
+            p.windowResized = () => {
+                const container = document.getElementById('standing-wave-container');
+                p.resizeCanvas(container.offsetWidth, 150);
+            };
+        });
+
+        // Orbital Visualization Sketch
+        new p5((p) => {
+            orbitalSketch = p;
+            let angleX = 0.5, angleY = 0;
+            let dragging = false;
+            let lastX, lastY;
+
+            p.setup = () => {
+                const container = document.getElementById('canvas-container');
+                const size = Math.min(container.offsetWidth, 500);
+                const canvas = p.createCanvas(container.offsetWidth, container.offsetWidth, p.WEBGL);
+                canvas.parent('canvas-container');
+                p.colorMode(p.HSB, 360, 100, 100, 100);
+            };
+
+            p.draw = () => {
+                p.background(10, 10, 15);
+
+                // Auto-rotate slightly when not dragging
+                if (!dragging) {
+                    angleY += 0.003;
+                }
+
+                p.rotateX(angleX);
+                p.rotateY(angleY);
+
+                // Draw axes (subtle)
+                p.strokeWeight(1);
+                const axisLen = 120;
+                p.stroke(255, 30);
+                p.line(-axisLen, 0, 0, axisLen, 0, 0);
+                p.line(0, -axisLen, 0, 0, axisLen, 0);
+                p.line(0, 0, -axisLen, 0, 0, axisLen);
+
+                // Draw orbital based on current quantum numbers
+                drawOrbital(p);
+            };
+
+            function drawOrbital(p) {
+                const scale = 80;
+
+                if (l === 0) {
+                    // s orbital - spherical
+                    drawSorbital(p, scale);
+                } else if (l === 1) {
+                    // p orbital - dumbbell
+                    drawPorbital(p, scale);
+                } else if (l === 2) {
+                    // d orbital - cloverleaf
+                    drawDorbital(p, scale);
+                } else if (l === 3) {
+                    // f orbital - complex
+                    drawForbital(p, scale);
+                }
+            }
+
+            function drawSorbital(p, scale) {
+                // Draw concentric spheres for radial nodes
+                const radialNodes = n - l - 1;
+                const maxR = scale * (0.5 + n * 0.3);
+
+                p.noStroke();
+
+                if (viewMode === 'probability' || viewMode === 'phase') {
+                    // Main probability cloud
+                    for (let layer = 0; layer < 8; layer++) {
+                        const r = maxR * (1 - layer * 0.1);
+                        const alpha = 15 - layer * 1.5;
+
+                        if (viewMode === 'phase') {
+                            // Alternate colors for phase
+                            const isPositive = (layer % 2 === 0);
+                            p.fill(isPositive ? 210 : 0, 80, 80, alpha);
+                        } else {
+                            p.fill(210, 60, 80, alpha);
+                        }
+                        p.sphere(r);
+                    }
+                }
+
+                if (viewMode === 'nodes' && radialNodes > 0) {
+                    // Show radial nodes as purple spherical shells
+                    p.stroke(280, 80, 80, 80);
+                    p.strokeWeight(2);
+                    p.noFill();
+
+                    for (let i = 1; i <= radialNodes; i++) {
+                        const nodeR = maxR * (i / (radialNodes + 1));
+                        p.sphere(nodeR);
+                    }
+                }
+            }
+
+            function drawPorbital(p, scale) {
+                const maxR = scale * (0.4 + n * 0.25);
+
+                p.noStroke();
+
+                // Two lobes along z-axis (for ml=0, pz)
+                // Rotate based on ml for px, py
+                if (ml === 1) p.rotateY(p.PI/2);
+                if (ml === -1) p.rotateX(p.PI/2);
+
+                for (let sign = -1; sign <= 1; sign += 2) {
+                    p.push();
+                    p.translate(0, 0, sign * maxR * 0.6);
+
+                    for (let layer = 0; layer < 6; layer++) {
+                        const r = maxR * 0.5 * (1 - layer * 0.12);
+                        const alpha = 20 - layer * 2;
+
+                        if (viewMode === 'phase') {
+                            p.fill(sign > 0 ? 210 : 0, 80, 80, alpha);
+                        } else {
+                            p.fill(210, 60, 80, alpha);
+                        }
+                        p.ellipsoid(r * 0.7, r * 0.7, r);
+                    }
+                    p.pop();
+                }
+
+                // Angular node plane
+                if (viewMode === 'nodes') {
+                    p.fill(160, 80, 70, 30);
+                    p.noStroke();
+                    p.rotateX(p.PI/2);
+                    p.ellipse(0, 0, maxR * 2, maxR * 2);
+                }
+            }
+
+            function drawDorbital(p, scale) {
+                const maxR = scale * (0.35 + n * 0.2);
+
+                p.noStroke();
+
+                // Four lobes for most d orbitals (dxy, dxz, dyz, dx2-y2)
+                // dz2 is different (donut + two lobes)
+
+                if (ml === 0) {
+                    // dz2 orbital - donut + two lobes
+                    // Lobes along z
+                    for (let sign = -1; sign <= 1; sign += 2) {
+                        p.push();
+                        p.translate(0, 0, sign * maxR * 0.7);
+                        for (let layer = 0; layer < 5; layer++) {
+                            const r = maxR * 0.4 * (1 - layer * 0.15);
+                            const alpha = 18 - layer * 2;
+                            p.fill(viewMode === 'phase' ? 210 : 210, 60, 80, alpha);
+                            p.ellipsoid(r * 0.6, r * 0.6, r);
+                        }
+                        p.pop();
+                    }
+                    // Donut in xy plane
+                    p.push();
+                    for (let theta = 0; theta < p.TWO_PI; theta += 0.3) {
+                        const x = maxR * 0.5 * p.cos(theta);
+                        const y = maxR * 0.5 * p.sin(theta);
+                        p.push();
+                        p.translate(x, y, 0);
+                        for (let layer = 0; layer < 3; layer++) {
+                            const r = maxR * 0.15 * (1 - layer * 0.2);
+                            const alpha = 12 - layer * 2;
+                            p.fill(viewMode === 'phase' ? 0 : 210, 60, 80, alpha);
+                            p.sphere(r);
+                        }
+                        p.pop();
+                    }
+                    p.pop();
+                } else {
+                    // Four-lobed d orbitals
+                    const angles = ml === 2 || ml === -2 ? [0, p.PI/2, p.PI, 3*p.PI/2] : [p.PI/4, 3*p.PI/4, 5*p.PI/4, 7*p.PI/4];
+
+                    for (let i = 0; i < 4; i++) {
+                        const theta = angles[i];
+                        const x = maxR * 0.6 * p.cos(theta);
+                        const y = maxR * 0.6 * p.sin(theta);
+
+                        p.push();
+                        p.translate(x, y, 0);
+
+                        for (let layer = 0; layer < 5; layer++) {
+                            const r = maxR * 0.35 * (1 - layer * 0.15);
+                            const alpha = 18 - layer * 2;
+
+                            if (viewMode === 'phase') {
+                                const isPositive = (i % 2 === 0);
+                                p.fill(isPositive ? 210 : 0, 80, 80, alpha);
+                            } else {
+                                p.fill(210, 60, 80, alpha);
+                            }
+                            p.sphere(r);
+                        }
+                        p.pop();
+                    }
+                }
+
+                // Angular node planes
+                if (viewMode === 'nodes') {
+                    p.fill(160, 80, 70, 25);
+                    p.noStroke();
+                    // Two nodal planes
+                    p.push();
+                    p.rotateY(p.PI/4);
+                    p.rotateX(p.PI/2);
+                    p.ellipse(0, 0, maxR * 2.5, maxR * 2.5);
+                    p.pop();
+                    p.push();
+                    p.rotateY(-p.PI/4);
+                    p.rotateX(p.PI/2);
+                    p.ellipse(0, 0, maxR * 2.5, maxR * 2.5);
+                    p.pop();
+                }
+            }
+
+            function drawForbital(p, scale) {
+                const maxR = scale * (0.3 + n * 0.15);
+
+                p.noStroke();
+
+                // Simplified f orbital - 8 lobes
+                const positions = [];
+                for (let i = 0; i < 8; i++) {
+                    const phi = (i / 8) * p.TWO_PI;
+                    const theta = (i % 2 === 0) ? p.PI/4 : 3*p.PI/4;
+                    positions.push({
+                        x: maxR * 0.7 * p.sin(theta) * p.cos(phi),
+                        y: maxR * 0.7 * p.sin(theta) * p.sin(phi),
+                        z: maxR * 0.7 * p.cos(theta)
+                    });
+                }
+
+                positions.forEach((pos, i) => {
+                    p.push();
+                    p.translate(pos.x, pos.y, pos.z);
+
+                    for (let layer = 0; layer < 4; layer++) {
+                        const r = maxR * 0.25 * (1 - layer * 0.2);
+                        const alpha = 15 - layer * 2;
+
+                        if (viewMode === 'phase') {
+                            const isPositive = (i % 2 === 0);
+                            p.fill(isPositive ? 210 : 0, 80, 80, alpha);
+                        } else {
+                            p.fill(210, 60, 80, alpha);
+                        }
+                        p.sphere(r);
+                    }
+                    p.pop();
+                });
+            }
+
+            p.mousePressed = () => {
+                if (p.mouseX > 0 && p.mouseX < p.width && p.mouseY > 0 && p.mouseY < p.height) {
+                    dragging = true;
+                    lastX = p.mouseX;
+                    lastY = p.mouseY;
+                }
+            };
+
+            p.mouseReleased = () => {
+                dragging = false;
+            };
+
+            p.mouseDragged = () => {
+                if (dragging) {
+                    const dx = p.mouseX - lastX;
+                    const dy = p.mouseY - lastY;
+                    angleY += dx * 0.01;
+                    angleX += dy * 0.01;
+                    lastX = p.mouseX;
+                    lastY = p.mouseY;
+                }
+            };
+
+            p.windowResized = () => {
+                const container = document.getElementById('canvas-container');
+                p.resizeCanvas(container.offsetWidth, container.offsetWidth);
+            };
+        });
+
+        // Radial Wave Function Sketch
+        new p5((p) => {
+            waveSketch = p;
+
+            p.setup = () => {
+                const container = document.getElementById('wave-container');
+                const canvas = p.createCanvas(container.offsetWidth, 200);
+                canvas.parent('wave-container');
+            };
+
+            p.draw = () => {
+                p.background(18, 18, 26);
+
+                const w = p.width;
+                const h = p.height;
+                const margin = 60;
+
+                // Axes
+                p.stroke(100);
+                p.strokeWeight(1);
+                p.line(margin, h - 40, w - 20, h - 40); // x-axis
+                p.line(margin, 20, margin, h - 40); // y-axis
+
+                // Labels
+                p.fill(138, 138, 138);
+                p.noStroke();
+                p.textSize(12);
+                p.textAlign(p.CENTER);
+                p.text('r (distance from nucleus)', w/2, h - 10);
+                p.push();
+                p.translate(20, h/2);
+                p.rotate(-p.PI/2);
+                p.text('R(r)', 0, 0);
+                p.pop();
+
+                // Draw radial function
+                p.noFill();
+                p.strokeWeight(2);
+                p.stroke(74, 158, 255);
+
+                const radialNodes = n - l - 1;
+                const plotW = w - margin - 30;
+                const plotH = h - 70;
+                const centerY = h/2 - 10;
+
+                p.beginShape();
+                for (let i = 0; i <= plotW; i++) {
+                    const r = i / plotW * 10; // r from 0 to 10 (in units of a0)
+                    const R = radialFunction(r, n, l);
+                    const y = centerY - R * plotH * 0.4;
+                    p.vertex(margin + i, p.constrain(y, 20, h - 50));
+                }
+                p.endShape();
+
+                // Zero line
+                p.stroke(100, 50);
+                p.strokeWeight(1);
+                p.line(margin, centerY, w - 20, centerY);
+
+                // Mark nodes
+                p.fill(153, 102, 255);
+                p.noStroke();
+                const nodePositions = findNodes(n, l);
+                nodePositions.forEach(nodeR => {
+                    const x = margin + (nodeR / 10) * plotW;
+                    if (x < w - 30) {
+                        p.ellipse(x, centerY, 10, 10);
+                    }
+                });
+
+                // Node count label
+                p.fill(153, 102, 255);
+                p.textSize(14);
+                p.textAlign(p.LEFT);
+                p.text(`Radial nodes: ${radialNodes}`, margin + 10, 35);
+            };
+
+            function radialFunction(r, n, l) {
+                // Simplified radial functions (not exact, but show correct node behavior)
+                const a0 = 1; // Bohr radius unit
+                const rho = r / a0;
+
+                if (n === 1 && l === 0) {
+                    return Math.exp(-rho);
+                } else if (n === 2 && l === 0) {
+                    return (2 - rho) * Math.exp(-rho/2);
+                } else if (n === 2 && l === 1) {
+                    return rho * Math.exp(-rho/2);
+                } else if (n === 3 && l === 0) {
+                    return (27 - 18*rho + 2*rho*rho) * Math.exp(-rho/3) / 27;
+                } else if (n === 3 && l === 1) {
+                    return rho * (6 - rho) * Math.exp(-rho/3) / 6;
+                } else if (n === 3 && l === 2) {
+                    return rho * rho * Math.exp(-rho/3);
+                } else if (n === 4 && l === 0) {
+                    return (192 - 144*rho + 24*rho*rho - rho*rho*rho) * Math.exp(-rho/4) / 192;
+                } else if (n === 4 && l === 1) {
+                    return rho * (80 - 20*rho + rho*rho) * Math.exp(-rho/4) / 80;
+                } else if (n === 4 && l === 2) {
+                    return rho * rho * (12 - rho) * Math.exp(-rho/4) / 12;
+                } else if (n === 4 && l === 3) {
+                    return rho * rho * rho * Math.exp(-rho/4);
+                }
+                return Math.exp(-rho/n);
+            }
+
+            function findNodes(n, l) {
+                // Approximate node positions
+                const nodes = [];
+                const radialNodes = n - l - 1;
+
+                // Sample and find zero crossings
+                let lastVal = radialFunction(0.01, n, l);
+                for (let r = 0.1; r < 10; r += 0.05) {
+                    const val = radialFunction(r, n, l);
+                    if (lastVal * val < 0 && nodes.length < radialNodes) {
+                        nodes.push(r);
+                    }
+                    lastVal = val;
+                }
+                return nodes;
+            }
+
+            p.windowResized = () => {
+                const container = document.getElementById('wave-container');
+                p.resizeCanvas(container.offsetWidth, 200);
+            };
+        });
+
+        // Initial update
+        updateDisplay();
+    </script>
+</body>
+</html>

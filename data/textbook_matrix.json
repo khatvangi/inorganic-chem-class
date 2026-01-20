@@ -1,0 +1,188 @@
+{
+  "metadata": {
+    "description": "Textbook recommendation matrix for CHEM 361 Data-Driven Syllabus",
+    "created": "2026-01-19",
+    "source": "textbook_analysis_v3.json",
+    "syllabus": "CHEM361_Syllabus_Spring2026_DataDriven.docx"
+  },
+
+  "books": {
+    "atkins": {"name": "Atkins/Shriver Inorganic Chemistry", "chunks": 2494, "overall_score": 43.7},
+    "advanced": {"name": "Advanced IC Applications", "chunks": 351, "overall_score": 48.0},
+    "jdlee": {"name": "JD Lee Concise IC", "chunks": 565, "overall_score": 40.2},
+    "rodgers": {"name": "Rodgers Descriptive IC (TEXTBOOK)", "chunks": 1495, "overall_score": 46.3},
+    "house": {"name": "House Descriptive IC", "chunks": 1027, "overall_score": 38.8},
+    "basset": {"name": "Basset IC", "chunks": 446, "overall_score": 41.8},
+    "housecroft": {"name": "Housecroft/Sharpe IC", "chunks": 2375, "overall_score": 50.0}
+  },
+
+  "rating_scale": {
+    "5": "excellent",
+    "4": "good",
+    "3": "fair",
+    "2": "limited",
+    "1": "absent"
+  },
+
+  "phase_1_foundations": {
+    "weeks": "1-4",
+    "goal": "Build the base - concepts with no IC prerequisites",
+    "primary_book": "basset",
+    "secondary_books": ["jdlee", "advanced"],
+    "topics": [
+      {
+        "topic": "Atomic Structure",
+        "ratings": {"atkins": 3, "advanced": 3, "jdlee": 3, "rodgers": 3, "house": 3, "basset": 3, "housecroft": 3},
+        "best": "atkins",
+        "reason": "Most chunks (128), comprehensive coverage"
+      },
+      {
+        "topic": "Molecular Orbital Theory",
+        "ratings": {"atkins": 3, "advanced": 3, "jdlee": 4, "rodgers": 3, "house": 4, "basset": 3, "housecroft": 3},
+        "best": "jdlee",
+        "reason": "Good rating, highest keyword density (11.82)"
+      },
+      {
+        "topic": "Symmetry/Group Theory",
+        "ratings": {"atkins": 3, "advanced": 4, "jdlee": 3, "rodgers": 4, "house": 3, "basset": 3, "housecroft": 3},
+        "best": "advanced",
+        "reason": "Excellent density (14.04), focused treatment"
+      },
+      {
+        "topic": "Main Group s-block",
+        "ratings": {"atkins": 4, "advanced": 3, "jdlee": 4, "rodgers": 4, "house": 4, "basset": 4, "housecroft": 4},
+        "best": "basset",
+        "reason": "Highest density (12.42), excellent for periodic trends"
+      },
+      {
+        "topic": "Main Group p-block",
+        "ratings": {"atkins": 4, "advanced": 4, "jdlee": 3, "rodgers": 4, "house": 4, "basset": 5, "housecroft": 4},
+        "best": "basset",
+        "reason": "EXCELLENT rating (5), density 15.14"
+      },
+      {
+        "topic": "Redox Chemistry",
+        "ratings": {"atkins": 4, "advanced": 3, "jdlee": 4, "rodgers": 4, "house": 3, "basset": 4, "housecroft": 3},
+        "best": "atkins",
+        "reason": "629 chunks, comprehensive Frost/Latimer diagrams"
+      }
+    ]
+  },
+
+  "phase_2_hub_traversal": {
+    "weeks": "5-12",
+    "goal": "Navigate the 13 knowledge hubs - bottlenecks where prerequisite chains converge",
+    "primary_book": "atkins",
+    "secondary_books": ["advanced", "rodgers", "jdlee"],
+    "topics": [
+      {
+        "topic": "Coordination Fundamentals",
+        "ratings": {"atkins": 4, "advanced": 4, "jdlee": 4, "rodgers": 4, "house": 4, "basset": 3, "housecroft": 4},
+        "best": "atkins",
+        "reason": "829 chunks, most comprehensive coordination coverage"
+      },
+      {
+        "topic": "Crystal Field Theory",
+        "ratings": {"atkins": 4, "advanced": 5, "jdlee": 4, "rodgers": 4, "house": 3, "basset": 4, "housecroft": 4},
+        "best": "advanced",
+        "reason": "EXCELLENT rating (5), density 16.51, deep theory"
+      },
+      {
+        "topic": "Reaction Mechanisms",
+        "ratings": {"atkins": 3, "advanced": 5, "jdlee": 3, "rodgers": 4, "house": 4, "basset": 3, "housecroft": 3},
+        "best": "advanced",
+        "reason": "EXCELLENT rating (5), density 18.79"
+      },
+      {
+        "topic": "Transition Metals",
+        "ratings": {"atkins": 3, "advanced": 4, "jdlee": 3, "rodgers": 4, "house": 4, "basset": 4, "housecroft": 3},
+        "best": "basset",
+        "reason": "Highest density (14.94), good descriptive coverage"
+      },
+      {
+        "topic": "Solid State",
+        "ratings": {"atkins": 3, "advanced": 3, "jdlee": 4, "rodgers": 4, "house": 3, "basset": 3, "housecroft": 3},
+        "best": "jdlee",
+        "reason": "Good rating, excellent lattice energy treatment"
+      },
+      {
+        "topic": "Acids & Bases",
+        "ratings": {"atkins": 3, "advanced": 3, "jdlee": 3, "rodgers": 3, "house": 3, "basset": 3, "housecroft": 3},
+        "best": "atkins",
+        "reason": "301 chunks, Lewis acid/base theory"
+      },
+      {
+        "topic": "Spectroscopy",
+        "ratings": {"atkins": 3, "advanced": 3, "jdlee": 3, "rodgers": 3, "house": 3, "basset": 3, "housecroft": 3},
+        "best": "atkins",
+        "reason": "258 chunks, UV-Vis d-d transitions"
+      },
+      {
+        "topic": "Lanthanides/Actinides",
+        "ratings": {"atkins": 3, "advanced": 3, "jdlee": 3, "rodgers": 3, "house": 3, "basset": 4, "housecroft": 3},
+        "best": "basset",
+        "reason": "Good rating, density 9.92"
+      }
+    ]
+  },
+
+  "phase_3_capstones": {
+    "weeks": "13-16",
+    "goal": "Integration - all hubs converge here, highest in-degree topics",
+    "primary_book": "advanced",
+    "secondary_books": ["house", "rodgers"],
+    "topics": [
+      {
+        "topic": "Catalysis",
+        "ratings": {"atkins": 4, "advanced": 4, "jdlee": 3, "rodgers": 3, "house": 3, "basset": 3, "housecroft": 3},
+        "best": "atkins",
+        "reason": "Good rating, 210 chunks, industrial applications"
+      },
+      {
+        "topic": "Organometallics",
+        "ratings": {"atkins": 3, "advanced": 4, "jdlee": 3, "rodgers": 3, "house": 4, "basset": 3, "housecroft": 3},
+        "best": "house",
+        "reason": "Good rating, 108 chunks, practical focus"
+      },
+      {
+        "topic": "Bioinorganic",
+        "ratings": {"atkins": 3, "advanced": 4, "jdlee": 2, "rodgers": 3, "house": 3, "basset": 1, "housecroft": 3},
+        "best": "advanced",
+        "reason": "Good rating, density 9.42, medicinal connections"
+      },
+      {
+        "topic": "Materials/Nanochemistry",
+        "ratings": {"atkins": 3, "advanced": 3, "jdlee": 1, "rodgers": 3, "house": 3, "basset": 3, "housecroft": 3},
+        "best": "housecroft",
+        "reason": "161 chunks, modern materials coverage"
+      },
+      {
+        "topic": "Environmental IC",
+        "ratings": {"atkins": 3, "advanced": 3, "jdlee": 2, "rodgers": 4, "house": 3, "basset": 3, "housecroft": 3},
+        "best": "rodgers",
+        "reason": "Good rating, 121 chunks, real-world applications"
+      },
+      {
+        "topic": "Medicinal IC",
+        "ratings": {"atkins": 3, "advanced": 5, "jdlee": 2, "rodgers": 3, "house": 3, "basset": 1, "housecroft": 3},
+        "best": "advanced",
+        "reason": "EXCELLENT rating (5), density 16.03, cisplatin etc."
+      }
+    ]
+  },
+
+  "summary": {
+    "phase_1_primary": {"book": "basset", "reason": "Best for periodic trends, excellent p-block coverage"},
+    "phase_2_primary": {"book": "atkins", "reason": "Most comprehensive coordination, good CFT"},
+    "phase_2_cft_specialist": {"book": "advanced", "reason": "Excellent CFT and mechanisms"},
+    "phase_3_primary": {"book": "advanced", "reason": "Best for applications, mechanisms, medicinal"},
+    "course_textbook": {"book": "rodgers", "reason": "Good all-around, official textbook"},
+    "overall_best": {"book": "housecroft", "reason": "Highest overall score (50.0), most comprehensive"}
+  },
+
+  "reading_recommendations": {
+    "foundations": "Start with Basset for periodic trends, supplement with JD Lee for MO theory",
+    "hubs": "Atkins primary, Advanced IC for CFT deep dives, JD Lee for solid state",
+    "capstones": "Advanced IC for applications, Rodgers for environmental context"
+  }
+}
