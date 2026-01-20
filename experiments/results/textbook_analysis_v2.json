@@ -1,0 +1,1492 @@
+{
+  "Inorganic_Chemistry_Atkins_Shriver.pdf": {
+    "basic_info": {
+      "chunks": 500,
+      "book_name": "Inorganic_Chemistry_Atkins_Shriver.pdf"
+    },
+    "topic_coverage": {
+      "Atomic Structure": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 37 chunks but couldn't parse analysis"
+      },
+      "Molecular Orbital Theory": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 35 chunks but couldn't parse analysis"
+      },
+      "Symmetry/Group Theory": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 132 chunks but couldn't parse analysis"
+      },
+      "Acids & Bases": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 37 chunks but couldn't parse analysis"
+      },
+      "Redox Chemistry": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 135 chunks but couldn't parse analysis"
+      },
+      "Coordination Fundamentals": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 220 chunks but couldn't parse analysis"
+      },
+      "Crystal Field Theory": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 144 chunks but couldn't parse analysis"
+      },
+      "Spectroscopy (UV-Vis, IR, NMR)": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 51 chunks but couldn't parse analysis"
+      },
+      "Reaction Mechanisms": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 60 chunks but couldn't parse analysis"
+      },
+      "Main Group (s-block)": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 94 chunks but couldn't parse analysis"
+      },
+      "Main Group (p-block)": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 160 chunks but couldn't parse analysis"
+      },
+      "Transition Metals": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 99 chunks but couldn't parse analysis"
+      },
+      "Lanthanides/Actinides": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 31 chunks but couldn't parse analysis"
+      },
+      "Organometallics": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 60 chunks but couldn't parse analysis"
+      },
+      "Bioinorganic": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 12 chunks but couldn't parse analysis"
+      },
+      "Solid State": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 56 chunks but couldn't parse analysis"
+      },
+      "Catalysis": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 44 chunks but couldn't parse analysis"
+      },
+      "Materials/Nanochemistry": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 33 chunks but couldn't parse analysis"
+      },
+      "Environmental IC": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 14 chunks but couldn't parse analysis"
+      },
+      "Medicinal IC": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 6 chunks but couldn't parse analysis"
+      }
+    },
+    "worked_examples": {
+      "total_count": 0,
+      "by_difficulty": {},
+      "by_topic": {},
+      "avg_steps": 0.0,
+      "chunks_analyzed": 30
+    },
+    "conceptual_density": {
+      "avg_thread_completeness": 0.0,
+      "avg_integration_points": 0.0,
+      "avg_derivation_ratio": 0.0,
+      "avg_figure_integration": 0.0,
+      "composite_density": 0.0,
+      "sample_size": 0
+    },
+    "visual_analysis": {
+      "counts_by_type": {},
+      "total": 0,
+      "text_integrated": 0,
+      "quality_score": 0.0,
+      "dominant_type": null,
+      "chunks_analyzed": 25
+    },
+    "pedagogy": {
+      "avg_scaffolding": 0.0,
+      "misconceptions_addressed_pct": 0.0,
+      "review_elements": {
+        "summary_box_pct": 0.0,
+        "key_equations_pct": 0.0,
+        "learning_objectives_pct": 0.0
+      },
+      "common_prior_knowledge": [],
+      "sample_size": 0
+    },
+    "composite_scores": {
+      "topic_coverage_normalized": 0.6,
+      "conceptual_density_normalized": 0.0,
+      "pedagogy_normalized": 0.0,
+      "examples_per_100_chunks": 0.0,
+      "overall_quality": 0.18
+    }
+  },
+  "advancex_ic_applicaionts.pdf": {
+    "basic_info": {
+      "chunks": 351,
+      "book_name": "advancex_ic_applicaionts.pdf"
+    },
+    "topic_coverage": {
+      "Atomic Structure": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 29 chunks but couldn't parse analysis"
+      },
+      "Molecular Orbital Theory": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 47 chunks but couldn't parse analysis"
+      },
+      "Symmetry/Group Theory": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 133 chunks but couldn't parse analysis"
+      },
+      "Acids & Bases": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 5 chunks but couldn't parse analysis"
+      },
+      "Redox Chemistry": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 36 chunks but couldn't parse analysis"
+      },
+      "Coordination Fundamentals": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 189 chunks but couldn't parse analysis"
+      },
+      "Crystal Field Theory": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 112 chunks but couldn't parse analysis"
+      },
+      "Spectroscopy (UV-Vis, IR, NMR)": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 29 chunks but couldn't parse analysis"
+      },
+      "Reaction Mechanisms": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 90 chunks but couldn't parse analysis"
+      },
+      "Main Group (s-block)": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 25 chunks but couldn't parse analysis"
+      },
+      "Main Group (p-block)": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 76 chunks but couldn't parse analysis"
+      },
+      "Transition Metals": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 123 chunks but couldn't parse analysis"
+      },
+      "Lanthanides/Actinides": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 14 chunks but couldn't parse analysis"
+      },
+      "Organometallics": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 53 chunks but couldn't parse analysis"
+      },
+      "Bioinorganic": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 38 chunks but couldn't parse analysis"
+      },
+      "Solid State": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 4 chunks but couldn't parse analysis"
+      },
+      "Catalysis": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 26 chunks but couldn't parse analysis"
+      },
+      "Materials/Nanochemistry": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 5 chunks but couldn't parse analysis"
+      },
+      "Environmental IC": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 1 chunks but couldn't parse analysis"
+      },
+      "Medicinal IC": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 17 chunks but couldn't parse analysis"
+      }
+    },
+    "worked_examples": {
+      "total_count": 0,
+      "by_difficulty": {},
+      "by_topic": {},
+      "avg_steps": 0.0,
+      "chunks_analyzed": 30
+    },
+    "conceptual_density": {
+      "avg_thread_completeness": 0.0,
+      "avg_integration_points": 0.0,
+      "avg_derivation_ratio": 0.0,
+      "avg_figure_integration": 0.0,
+      "composite_density": 0.0,
+      "sample_size": 0
+    },
+    "visual_analysis": {
+      "counts_by_type": {},
+      "total": 0,
+      "text_integrated": 0,
+      "quality_score": 0.0,
+      "dominant_type": null,
+      "chunks_analyzed": 25
+    },
+    "pedagogy": {
+      "avg_scaffolding": 0.0,
+      "misconceptions_addressed_pct": 0.0,
+      "review_elements": {
+        "summary_box_pct": 0.0,
+        "key_equations_pct": 0.0,
+        "learning_objectives_pct": 0.0
+      },
+      "common_prior_knowledge": [],
+      "sample_size": 0
+    },
+    "composite_scores": {
+      "topic_coverage_normalized": 0.6,
+      "conceptual_density_normalized": 0.0,
+      "pedagogy_normalized": 0.0,
+      "examples_per_100_chunks": 0.0,
+      "overall_quality": 0.18
+    }
+  },
+  "bioinorganic_chemistry_bertini_et_al.pdf": {
+    "basic_info": {
+      "chunks": 1,
+      "book_name": "bioinorganic_chemistry_bertini_et_al.pdf"
+    },
+    "topic_coverage": {
+      "Atomic Structure": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      },
+      "Molecular Orbital Theory": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      },
+      "Symmetry/Group Theory": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      },
+      "Acids & Bases": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      },
+      "Redox Chemistry": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      },
+      "Coordination Fundamentals": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      },
+      "Crystal Field Theory": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      },
+      "Spectroscopy (UV-Vis, IR, NMR)": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      },
+      "Reaction Mechanisms": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      },
+      "Main Group (s-block)": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 1 chunks but couldn't parse analysis"
+      },
+      "Main Group (p-block)": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 1 chunks but couldn't parse analysis"
+      },
+      "Transition Metals": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      },
+      "Lanthanides/Actinides": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      },
+      "Organometallics": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      },
+      "Bioinorganic": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 1 chunks but couldn't parse analysis"
+      },
+      "Solid State": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      },
+      "Catalysis": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 1 chunks but couldn't parse analysis"
+      },
+      "Materials/Nanochemistry": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      },
+      "Environmental IC": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      },
+      "Medicinal IC": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      }
+    },
+    "worked_examples": {
+      "total_count": 0,
+      "by_difficulty": {},
+      "by_topic": {},
+      "avg_steps": 0.0,
+      "chunks_analyzed": 0
+    },
+    "conceptual_density": {
+      "avg_thread_completeness": 0.0,
+      "avg_integration_points": 0.0,
+      "avg_derivation_ratio": 0.0,
+      "avg_figure_integration": 0.0,
+      "composite_density": 0.0,
+      "sample_size": 0
+    },
+    "visual_analysis": {
+      "counts_by_type": {},
+      "total": 0,
+      "text_integrated": 0,
+      "quality_score": 0.0,
+      "dominant_type": null,
+      "chunks_analyzed": 0
+    },
+    "pedagogy": {
+      "avg_scaffolding": 0.0,
+      "misconceptions_addressed_pct": 0.0,
+      "review_elements": {
+        "summary_box_pct": 0.0,
+        "key_equations_pct": 0.0,
+        "learning_objectives_pct": 0.0
+      },
+      "common_prior_knowledge": [],
+      "sample_size": 0
+    },
+    "composite_scores": {
+      "topic_coverage_normalized": 0.28,
+      "conceptual_density_normalized": 0.0,
+      "pedagogy_normalized": 0.0,
+      "examples_per_100_chunks": 0.0,
+      "overall_quality": 0.084
+    }
+  },
+  "concise_ic_jd_lee.pdf": {
+    "basic_info": {
+      "chunks": 500,
+      "book_name": "concise_ic_jd_lee.pdf"
+    },
+    "topic_coverage": {
+      "Atomic Structure": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 76 chunks but couldn't parse analysis"
+      },
+      "Molecular Orbital Theory": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 58 chunks but couldn't parse analysis"
+      },
+      "Symmetry/Group Theory": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 113 chunks but couldn't parse analysis"
+      },
+      "Acids & Bases": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 8 chunks but couldn't parse analysis"
+      },
+      "Redox Chemistry": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 68 chunks but couldn't parse analysis"
+      },
+      "Coordination Fundamentals": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 110 chunks but couldn't parse analysis"
+      },
+      "Crystal Field Theory": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 182 chunks but couldn't parse analysis"
+      },
+      "Spectroscopy (UV-Vis, IR, NMR)": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 14 chunks but couldn't parse analysis"
+      },
+      "Reaction Mechanisms": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 21 chunks but couldn't parse analysis"
+      },
+      "Main Group (s-block)": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 108 chunks but couldn't parse analysis"
+      },
+      "Main Group (p-block)": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 142 chunks but couldn't parse analysis"
+      },
+      "Transition Metals": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 81 chunks but couldn't parse analysis"
+      },
+      "Lanthanides/Actinides": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 22 chunks but couldn't parse analysis"
+      },
+      "Organometallics": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 19 chunks but couldn't parse analysis"
+      },
+      "Bioinorganic": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 2 chunks but couldn't parse analysis"
+      },
+      "Solid State": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 87 chunks but couldn't parse analysis"
+      },
+      "Catalysis": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 21 chunks but couldn't parse analysis"
+      },
+      "Materials/Nanochemistry": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      },
+      "Environmental IC": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 4 chunks but couldn't parse analysis"
+      },
+      "Medicinal IC": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      }
+    },
+    "worked_examples": {
+      "total_count": 0,
+      "by_difficulty": {},
+      "by_topic": {},
+      "avg_steps": 0.0,
+      "chunks_analyzed": 30
+    },
+    "conceptual_density": {
+      "avg_thread_completeness": 0.0,
+      "avg_integration_points": 0.0,
+      "avg_derivation_ratio": 0.0,
+      "avg_figure_integration": 0.0,
+      "composite_density": 0.0,
+      "sample_size": 0
+    },
+    "visual_analysis": {
+      "counts_by_type": {},
+      "total": 0,
+      "text_integrated": 0,
+      "quality_score": 0.0,
+      "dominant_type": null,
+      "chunks_analyzed": 25
+    },
+    "pedagogy": {
+      "avg_scaffolding": 0.0,
+      "misconceptions_addressed_pct": 0.0,
+      "review_elements": {
+        "summary_box_pct": 0.0,
+        "key_equations_pct": 0.0,
+        "learning_objectives_pct": 0.0
+      },
+      "common_prior_knowledge": [],
+      "sample_size": 0
+    },
+    "composite_scores": {
+      "topic_coverage_normalized": 0.56,
+      "conceptual_density_normalized": 0.0,
+      "pedagogy_normalized": 0.0,
+      "examples_per_100_chunks": 0.0,
+      "overall_quality": 0.168
+    }
+  },
+  "descriptive_ic.pdf": {
+    "basic_info": {
+      "chunks": 500,
+      "book_name": "descriptive_ic.pdf"
+    },
+    "topic_coverage": {
+      "Atomic Structure": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 18 chunks but couldn't parse analysis"
+      },
+      "Molecular Orbital Theory": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 11 chunks but couldn't parse analysis"
+      },
+      "Symmetry/Group Theory": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 99 chunks but couldn't parse analysis"
+      },
+      "Acids & Bases": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 15 chunks but couldn't parse analysis"
+      },
+      "Redox Chemistry": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 96 chunks but couldn't parse analysis"
+      },
+      "Coordination Fundamentals": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 115 chunks but couldn't parse analysis"
+      },
+      "Crystal Field Theory": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 147 chunks but couldn't parse analysis"
+      },
+      "Spectroscopy (UV-Vis, IR, NMR)": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 17 chunks but couldn't parse analysis"
+      },
+      "Reaction Mechanisms": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 28 chunks but couldn't parse analysis"
+      },
+      "Main Group (s-block)": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 119 chunks but couldn't parse analysis"
+      },
+      "Main Group (p-block)": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 231 chunks but couldn't parse analysis"
+      },
+      "Transition Metals": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 91 chunks but couldn't parse analysis"
+      },
+      "Lanthanides/Actinides": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 16 chunks but couldn't parse analysis"
+      },
+      "Organometallics": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 9 chunks but couldn't parse analysis"
+      },
+      "Bioinorganic": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 4 chunks but couldn't parse analysis"
+      },
+      "Solid State": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 60 chunks but couldn't parse analysis"
+      },
+      "Catalysis": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 10 chunks but couldn't parse analysis"
+      },
+      "Materials/Nanochemistry": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 1 chunks but couldn't parse analysis"
+      },
+      "Environmental IC": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 19 chunks but couldn't parse analysis"
+      },
+      "Medicinal IC": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 10 chunks but couldn't parse analysis"
+      }
+    },
+    "worked_examples": {
+      "total_count": 0,
+      "by_difficulty": {},
+      "by_topic": {},
+      "avg_steps": 0.0,
+      "chunks_analyzed": 30
+    },
+    "conceptual_density": {
+      "avg_thread_completeness": 0.0,
+      "avg_integration_points": 0.0,
+      "avg_derivation_ratio": 0.0,
+      "avg_figure_integration": 0.0,
+      "composite_density": 0.0,
+      "sample_size": 0
+    },
+    "visual_analysis": {
+      "counts_by_type": {},
+      "total": 0,
+      "text_integrated": 0,
+      "quality_score": 0.0,
+      "dominant_type": null,
+      "chunks_analyzed": 25
+    },
+    "pedagogy": {
+      "avg_scaffolding": 0.0,
+      "misconceptions_addressed_pct": 0.0,
+      "review_elements": {
+        "summary_box_pct": 0.0,
+        "key_equations_pct": 0.0,
+        "learning_objectives_pct": 0.0
+      },
+      "common_prior_knowledge": [],
+      "sample_size": 0
+    },
+    "composite_scores": {
+      "topic_coverage_normalized": 0.6,
+      "conceptual_density_normalized": 0.0,
+      "pedagogy_normalized": 0.0,
+      "examples_per_100_chunks": 0.0,
+      "overall_quality": 0.18
+    }
+  },
+  "descriptive_ic_house.pdf": {
+    "basic_info": {
+      "chunks": 500,
+      "book_name": "descriptive_ic_house.pdf"
+    },
+    "topic_coverage": {
+      "Atomic Structure": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 30 chunks but couldn't parse analysis"
+      },
+      "Molecular Orbital Theory": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 26 chunks but couldn't parse analysis"
+      },
+      "Symmetry/Group Theory": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 179 chunks but couldn't parse analysis"
+      },
+      "Acids & Bases": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 31 chunks but couldn't parse analysis"
+      },
+      "Redox Chemistry": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 84 chunks but couldn't parse analysis"
+      },
+      "Coordination Fundamentals": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 141 chunks but couldn't parse analysis"
+      },
+      "Crystal Field Theory": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 133 chunks but couldn't parse analysis"
+      },
+      "Spectroscopy (UV-Vis, IR, NMR)": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 11 chunks but couldn't parse analysis"
+      },
+      "Reaction Mechanisms": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 42 chunks but couldn't parse analysis"
+      },
+      "Main Group (s-block)": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 87 chunks but couldn't parse analysis"
+      },
+      "Main Group (p-block)": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 239 chunks but couldn't parse analysis"
+      },
+      "Transition Metals": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 90 chunks but couldn't parse analysis"
+      },
+      "Lanthanides/Actinides": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 12 chunks but couldn't parse analysis"
+      },
+      "Organometallics": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 49 chunks but couldn't parse analysis"
+      },
+      "Bioinorganic": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 7 chunks but couldn't parse analysis"
+      },
+      "Solid State": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 31 chunks but couldn't parse analysis"
+      },
+      "Catalysis": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 34 chunks but couldn't parse analysis"
+      },
+      "Materials/Nanochemistry": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 8 chunks but couldn't parse analysis"
+      },
+      "Environmental IC": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 4 chunks but couldn't parse analysis"
+      },
+      "Medicinal IC": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 11 chunks but couldn't parse analysis"
+      }
+    },
+    "worked_examples": {
+      "total_count": 0,
+      "by_difficulty": {},
+      "by_topic": {},
+      "avg_steps": 0.0,
+      "chunks_analyzed": 30
+    },
+    "conceptual_density": {
+      "avg_thread_completeness": 0.0,
+      "avg_integration_points": 0.0,
+      "avg_derivation_ratio": 0.0,
+      "avg_figure_integration": 0.0,
+      "composite_density": 0.0,
+      "sample_size": 0
+    },
+    "visual_analysis": {
+      "counts_by_type": {},
+      "total": 0,
+      "text_integrated": 0,
+      "quality_score": 0.0,
+      "dominant_type": null,
+      "chunks_analyzed": 25
+    },
+    "pedagogy": {
+      "avg_scaffolding": 0.0,
+      "misconceptions_addressed_pct": 0.0,
+      "review_elements": {
+        "summary_box_pct": 0.0,
+        "key_equations_pct": 0.0,
+        "learning_objectives_pct": 0.0
+      },
+      "common_prior_knowledge": [],
+      "sample_size": 0
+    },
+    "composite_scores": {
+      "topic_coverage_normalized": 0.6,
+      "conceptual_density_normalized": 0.0,
+      "pedagogy_normalized": 0.0,
+      "examples_per_100_chunks": 0.0,
+      "overall_quality": 0.18
+    }
+  },
+  "ic_basset.pdf": {
+    "basic_info": {
+      "chunks": 446,
+      "book_name": "ic_basset.pdf"
+    },
+    "topic_coverage": {
+      "Atomic Structure": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 28 chunks but couldn't parse analysis"
+      },
+      "Molecular Orbital Theory": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 3 chunks but couldn't parse analysis"
+      },
+      "Symmetry/Group Theory": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 84 chunks but couldn't parse analysis"
+      },
+      "Acids & Bases": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 10 chunks but couldn't parse analysis"
+      },
+      "Redox Chemistry": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 164 chunks but couldn't parse analysis"
+      },
+      "Coordination Fundamentals": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 74 chunks but couldn't parse analysis"
+      },
+      "Crystal Field Theory": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 173 chunks but couldn't parse analysis"
+      },
+      "Spectroscopy (UV-Vis, IR, NMR)": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 3 chunks but couldn't parse analysis"
+      },
+      "Reaction Mechanisms": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 4 chunks but couldn't parse analysis"
+      },
+      "Main Group (s-block)": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 178 chunks but couldn't parse analysis"
+      },
+      "Main Group (p-block)": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 284 chunks but couldn't parse analysis"
+      },
+      "Transition Metals": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 127 chunks but couldn't parse analysis"
+      },
+      "Lanthanides/Actinides": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 16 chunks but couldn't parse analysis"
+      },
+      "Organometallics": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 15 chunks but couldn't parse analysis"
+      },
+      "Bioinorganic": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      },
+      "Solid State": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 65 chunks but couldn't parse analysis"
+      },
+      "Catalysis": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 12 chunks but couldn't parse analysis"
+      },
+      "Materials/Nanochemistry": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      },
+      "Environmental IC": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 11 chunks but couldn't parse analysis"
+      },
+      "Medicinal IC": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      }
+    },
+    "worked_examples": {
+      "total_count": 0,
+      "by_difficulty": {},
+      "by_topic": {},
+      "avg_steps": 0.0,
+      "chunks_analyzed": 30
+    },
+    "conceptual_density": {
+      "avg_thread_completeness": 0.0,
+      "avg_integration_points": 0.0,
+      "avg_derivation_ratio": 0.0,
+      "avg_figure_integration": 0.0,
+      "composite_density": 0.0,
+      "sample_size": 0
+    },
+    "visual_analysis": {
+      "counts_by_type": {},
+      "total": 0,
+      "text_integrated": 0,
+      "quality_score": 0.0,
+      "dominant_type": null,
+      "chunks_analyzed": 25
+    },
+    "pedagogy": {
+      "avg_scaffolding": 0.0,
+      "misconceptions_addressed_pct": 0.0,
+      "review_elements": {
+        "summary_box_pct": 0.0,
+        "key_equations_pct": 0.0,
+        "learning_objectives_pct": 0.0
+      },
+      "common_prior_knowledge": [],
+      "sample_size": 0
+    },
+    "composite_scores": {
+      "topic_coverage_normalized": 0.54,
+      "conceptual_density_normalized": 0.0,
+      "pedagogy_normalized": 0.0,
+      "examples_per_100_chunks": 0.0,
+      "overall_quality": 0.162
+    }
+  },
+  "ic_tina.pdf": {
+    "basic_info": {
+      "chunks": 500,
+      "book_name": "ic_tina.pdf"
+    },
+    "topic_coverage": {
+      "Atomic Structure": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 38 chunks but couldn't parse analysis"
+      },
+      "Molecular Orbital Theory": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 38 chunks but couldn't parse analysis"
+      },
+      "Symmetry/Group Theory": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 169 chunks but couldn't parse analysis"
+      },
+      "Acids & Bases": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 41 chunks but couldn't parse analysis"
+      },
+      "Redox Chemistry": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 142 chunks but couldn't parse analysis"
+      },
+      "Coordination Fundamentals": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 201 chunks but couldn't parse analysis"
+      },
+      "Crystal Field Theory": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 156 chunks but couldn't parse analysis"
+      },
+      "Spectroscopy (UV-Vis, IR, NMR)": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 51 chunks but couldn't parse analysis"
+      },
+      "Reaction Mechanisms": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 55 chunks but couldn't parse analysis"
+      },
+      "Main Group (s-block)": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 124 chunks but couldn't parse analysis"
+      },
+      "Main Group (p-block)": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 190 chunks but couldn't parse analysis"
+      },
+      "Transition Metals": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 99 chunks but couldn't parse analysis"
+      },
+      "Lanthanides/Actinides": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 32 chunks but couldn't parse analysis"
+      },
+      "Organometallics": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 65 chunks but couldn't parse analysis"
+      },
+      "Bioinorganic": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 11 chunks but couldn't parse analysis"
+      },
+      "Solid State": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 73 chunks but couldn't parse analysis"
+      },
+      "Catalysis": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 66 chunks but couldn't parse analysis"
+      },
+      "Materials/Nanochemistry": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 30 chunks but couldn't parse analysis"
+      },
+      "Environmental IC": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 37 chunks but couldn't parse analysis"
+      },
+      "Medicinal IC": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 11 chunks but couldn't parse analysis"
+      }
+    },
+    "worked_examples": {
+      "total_count": 0,
+      "by_difficulty": {},
+      "by_topic": {},
+      "avg_steps": 0.0,
+      "chunks_analyzed": 30
+    },
+    "conceptual_density": {
+      "avg_thread_completeness": 0.0,
+      "avg_integration_points": 0.0,
+      "avg_derivation_ratio": 0.0,
+      "avg_figure_integration": 0.0,
+      "composite_density": 0.0,
+      "sample_size": 0
+    },
+    "visual_analysis": {
+      "counts_by_type": {},
+      "total": 0,
+      "text_integrated": 0,
+      "quality_score": 0.0,
+      "dominant_type": null,
+      "chunks_analyzed": 25
+    },
+    "pedagogy": {
+      "avg_scaffolding": 0.0,
+      "misconceptions_addressed_pct": 0.0,
+      "review_elements": {
+        "summary_box_pct": 0.0,
+        "key_equations_pct": 0.0,
+        "learning_objectives_pct": 0.0
+      },
+      "common_prior_knowledge": [],
+      "sample_size": 0
+    },
+    "composite_scores": {
+      "topic_coverage_normalized": 0.6,
+      "conceptual_density_normalized": 0.0,
+      "pedagogy_normalized": 0.0,
+      "examples_per_100_chunks": 0.0,
+      "overall_quality": 0.18
+    }
+  },
+  "inorganic_chemistry_libretexts.pdf": {
+    "basic_info": {
+      "chunks": 1,
+      "book_name": "inorganic_chemistry_libretexts.pdf"
+    },
+    "topic_coverage": {
+      "Atomic Structure": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      },
+      "Molecular Orbital Theory": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 1 chunks but couldn't parse analysis"
+      },
+      "Symmetry/Group Theory": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      },
+      "Acids & Bases": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      },
+      "Redox Chemistry": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      },
+      "Coordination Fundamentals": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      },
+      "Crystal Field Theory": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      },
+      "Spectroscopy (UV-Vis, IR, NMR)": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      },
+      "Reaction Mechanisms": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 1 chunks but couldn't parse analysis"
+      },
+      "Main Group (s-block)": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      },
+      "Main Group (p-block)": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      },
+      "Transition Metals": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      },
+      "Lanthanides/Actinides": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      },
+      "Organometallics": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 1 chunks but couldn't parse analysis"
+      },
+      "Bioinorganic": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      },
+      "Solid State": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 1 chunks but couldn't parse analysis"
+      },
+      "Catalysis": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 1 chunks but couldn't parse analysis"
+      },
+      "Materials/Nanochemistry": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      },
+      "Environmental IC": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      },
+      "Medicinal IC": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      }
+    },
+    "worked_examples": {
+      "total_count": 0,
+      "by_difficulty": {},
+      "by_topic": {},
+      "avg_steps": 0.0,
+      "chunks_analyzed": 0
+    },
+    "conceptual_density": {
+      "avg_thread_completeness": 0.0,
+      "avg_integration_points": 0.0,
+      "avg_derivation_ratio": 0.0,
+      "avg_figure_integration": 0.0,
+      "composite_density": 0.0,
+      "sample_size": 0
+    },
+    "visual_analysis": {
+      "counts_by_type": {},
+      "total": 0,
+      "text_integrated": 0,
+      "quality_score": 0.0,
+      "dominant_type": null,
+      "chunks_analyzed": 1
+    },
+    "pedagogy": {
+      "avg_scaffolding": 0.0,
+      "misconceptions_addressed_pct": 0.0,
+      "review_elements": {
+        "summary_box_pct": 0.0,
+        "key_equations_pct": 0.0,
+        "learning_objectives_pct": 0.0
+      },
+      "common_prior_knowledge": [],
+      "sample_size": 0
+    },
+    "composite_scores": {
+      "topic_coverage_normalized": 0.3,
+      "conceptual_density_normalized": 0.0,
+      "pedagogy_normalized": 0.0,
+      "examples_per_100_chunks": 0.0,
+      "overall_quality": 0.09
+    }
+  },
+  "inorganic_chemistry_saito.pdf": {
+    "basic_info": {
+      "chunks": 1,
+      "book_name": "inorganic_chemistry_saito.pdf"
+    },
+    "topic_coverage": {
+      "Atomic Structure": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      },
+      "Molecular Orbital Theory": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      },
+      "Symmetry/Group Theory": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      },
+      "Acids & Bases": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      },
+      "Redox Chemistry": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      },
+      "Coordination Fundamentals": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 1 chunks but couldn't parse analysis"
+      },
+      "Crystal Field Theory": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      },
+      "Spectroscopy (UV-Vis, IR, NMR)": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      },
+      "Reaction Mechanisms": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      },
+      "Main Group (s-block)": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      },
+      "Main Group (p-block)": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 1 chunks but couldn't parse analysis"
+      },
+      "Transition Metals": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 1 chunks but couldn't parse analysis"
+      },
+      "Lanthanides/Actinides": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      },
+      "Organometallics": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      },
+      "Bioinorganic": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 1 chunks but couldn't parse analysis"
+      },
+      "Solid State": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 1 chunks but couldn't parse analysis"
+      },
+      "Catalysis": {
+        "rating": "fair",
+        "score": 3,
+        "evidence": "Found 1 chunks but couldn't parse analysis"
+      },
+      "Materials/Nanochemistry": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      },
+      "Environmental IC": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      },
+      "Medicinal IC": {
+        "rating": "absent",
+        "score": 1,
+        "evidence": "No chunks matched topic keywords"
+      }
+    },
+    "worked_examples": {
+      "total_count": 0,
+      "by_difficulty": {},
+      "by_topic": {},
+      "avg_steps": 0.0,
+      "chunks_analyzed": 1
+    },
+    "conceptual_density": {
+      "avg_thread_completeness": 0.0,
+      "avg_integration_points": 0.0,
+      "avg_derivation_ratio": 0.0,
+      "avg_figure_integration": 0.0,
+      "composite_density": 0.0,
+      "sample_size": 0
+    },
+    "visual_analysis": {
+      "counts_by_type": {},
+      "total": 0,
+      "text_integrated": 0,
+      "quality_score": 0.0,
+      "dominant_type": null,
+      "chunks_analyzed": 1
+    },
+    "pedagogy": {
+      "avg_scaffolding": 0.0,
+      "misconceptions_addressed_pct": 0.0,
+      "review_elements": {
+        "summary_box_pct": 0.0,
+        "key_equations_pct": 0.0,
+        "learning_objectives_pct": 0.0
+      },
+      "common_prior_knowledge": [],
+      "sample_size": 0
+    },
+    "composite_scores": {
+      "topic_coverage_normalized": 0.32,
+      "conceptual_density_normalized": 0.0,
+      "pedagogy_normalized": 0.0,
+      "examples_per_100_chunks": 0.0,
+      "overall_quality": 0.096
+    }
+  }
+}

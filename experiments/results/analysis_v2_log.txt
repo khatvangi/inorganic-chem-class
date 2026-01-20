@@ -1,0 +1,368 @@
+============================================================
+ENHANCED TEXTBOOK ANALYSIS v2
+============================================================
+Found 10 books to analyze
+
+============================================================
+Analyzing: Inorganic_Chemistry_Atkins_Shriver.pdf
+============================================================
+  Retrieved 500 chunks
+  [1/5] Topic coverage...
+    Analyzing topic: Atomic Structure
+    Analyzing topic: Molecular Orbital Theory
+    Analyzing topic: Symmetry/Group Theory
+    Analyzing topic: Acids & Bases
+    Analyzing topic: Redox Chemistry
+    Analyzing topic: Coordination Fundamentals
+    Analyzing topic: Crystal Field Theory
+    Analyzing topic: Spectroscopy (UV-Vis, IR, NMR)
+    Analyzing topic: Reaction Mechanisms
+    Analyzing topic: Main Group (s-block)
+    Analyzing topic: Main Group (p-block)
+    Analyzing topic: Transition Metals
+    Analyzing topic: Lanthanides/Actinides
+    Analyzing topic: Organometallics
+    Analyzing topic: Bioinorganic
+    Analyzing topic: Solid State
+    Analyzing topic: Catalysis
+    Analyzing topic: Materials/Nanochemistry
+    Analyzing topic: Environmental IC
+    Analyzing topic: Medicinal IC
+  [2/5] Worked examples...
+    Found 174 chunks with potential examples
+  [3/5] Conceptual density...
+    Analyzing density for 30 chunks
+  [4/5] Visual analysis...
+    Found 298 chunks with potential figures
+  LLM error: 
+  [5/5] Pedagogy analysis...
+    Analyzing pedagogy for 25 chunks
+  Done. Overall quality: 0.18
+
+============================================================
+Analyzing: advancex_ic_applicaionts.pdf
+============================================================
+  Retrieved 351 chunks
+  [1/5] Topic coverage...
+    Analyzing topic: Atomic Structure
+    Analyzing topic: Molecular Orbital Theory
+    Analyzing topic: Symmetry/Group Theory
+    Analyzing topic: Acids & Bases
+    Analyzing topic: Redox Chemistry
+    Analyzing topic: Coordination Fundamentals
+    Analyzing topic: Crystal Field Theory
+    Analyzing topic: Spectroscopy (UV-Vis, IR, NMR)
+    Analyzing topic: Reaction Mechanisms
+    Analyzing topic: Main Group (s-block)
+    Analyzing topic: Main Group (p-block)
+    Analyzing topic: Transition Metals
+    Analyzing topic: Lanthanides/Actinides
+    Analyzing topic: Organometallics
+    Analyzing topic: Bioinorganic
+    Analyzing topic: Solid State
+    Analyzing topic: Catalysis
+    Analyzing topic: Materials/Nanochemistry
+    Analyzing topic: Environmental IC
+    Analyzing topic: Medicinal IC
+  [2/5] Worked examples...
+    Found 77 chunks with potential examples
+  [3/5] Conceptual density...
+    Analyzing density for 30 chunks
+  [4/5] Visual analysis...
+    Found 257 chunks with potential figures
+  LLM error: 
+  [5/5] Pedagogy analysis...
+    Analyzing pedagogy for 25 chunks
+  Done. Overall quality: 0.18
+
+============================================================
+Analyzing: bioinorganic_chemistry_bertini_et_al.pdf
+============================================================
+  Retrieved 1 chunks
+  [1/5] Topic coverage...
+    Analyzing topic: Atomic Structure
+    Analyzing topic: Molecular Orbital Theory
+    Analyzing topic: Symmetry/Group Theory
+    Analyzing topic: Acids & Bases
+    Analyzing topic: Redox Chemistry
+    Analyzing topic: Coordination Fundamentals
+    Analyzing topic: Crystal Field Theory
+    Analyzing topic: Spectroscopy (UV-Vis, IR, NMR)
+    Analyzing topic: Reaction Mechanisms
+    Analyzing topic: Main Group (s-block)
+    Analyzing topic: Main Group (p-block)
+    Analyzing topic: Transition Metals
+    Analyzing topic: Lanthanides/Actinides
+    Analyzing topic: Organometallics
+    Analyzing topic: Bioinorganic
+    Analyzing topic: Solid State
+    Analyzing topic: Catalysis
+    Analyzing topic: Materials/Nanochemistry
+    Analyzing topic: Environmental IC
+    Analyzing topic: Medicinal IC
+  [2/5] Worked examples...
+    Found 0 chunks with potential examples
+  [3/5] Conceptual density...
+    Analyzing density for 1 chunks
+  [4/5] Visual analysis...
+    Found 0 chunks with potential figures
+  [5/5] Pedagogy analysis...
+    Analyzing pedagogy for 1 chunks
+  Done. Overall quality: 0.084
+
+============================================================
+Analyzing: concise_ic_jd_lee.pdf
+============================================================
+  Retrieved 500 chunks
+  [1/5] Topic coverage...
+    Analyzing topic: Atomic Structure
+    Analyzing topic: Molecular Orbital Theory
+    Analyzing topic: Symmetry/Group Theory
+    Analyzing topic: Acids & Bases
+    Analyzing topic: Redox Chemistry
+    Analyzing topic: Coordination Fundamentals
+    Analyzing topic: Crystal Field Theory
+    Analyzing topic: Spectroscopy (UV-Vis, IR, NMR)
+    Analyzing topic: Reaction Mechanisms
+    Analyzing topic: Main Group (s-block)
+    Analyzing topic: Main Group (p-block)
+    Analyzing topic: Transition Metals
+    Analyzing topic: Lanthanides/Actinides
+    Analyzing topic: Organometallics
+    Analyzing topic: Bioinorganic
+    Analyzing topic: Solid State
+    Analyzing topic: Catalysis
+    Analyzing topic: Materials/Nanochemistry
+    Analyzing topic: Environmental IC
+    Analyzing topic: Medicinal IC
+  [2/5] Worked examples...
+    Found 145 chunks with potential examples
+  [3/5] Conceptual density...
+    Analyzing density for 30 chunks
+  [4/5] Visual analysis...
+    Found 344 chunks with potential figures
+  [5/5] Pedagogy analysis...
+    Analyzing pedagogy for 25 chunks
+  Done. Overall quality: 0.168
+
+============================================================
+Analyzing: descriptive_ic.pdf
+============================================================
+  Retrieved 500 chunks
+  [1/5] Topic coverage...
+    Analyzing topic: Atomic Structure
+    Analyzing topic: Molecular Orbital Theory
+    Analyzing topic: Symmetry/Group Theory
+    Analyzing topic: Acids & Bases
+    Analyzing topic: Redox Chemistry
+    Analyzing topic: Coordination Fundamentals
+    Analyzing topic: Crystal Field Theory
+    Analyzing topic: Spectroscopy (UV-Vis, IR, NMR)
+    Analyzing topic: Reaction Mechanisms
+    Analyzing topic: Main Group (s-block)
+    Analyzing topic: Main Group (p-block)
+    Analyzing topic: Transition Metals
+    Analyzing topic: Lanthanides/Actinides
+    Analyzing topic: Organometallics
+    Analyzing topic: Bioinorganic
+    Analyzing topic: Solid State
+    Analyzing topic: Catalysis
+    Analyzing topic: Materials/Nanochemistry
+    Analyzing topic: Environmental IC
+    Analyzing topic: Medicinal IC
+  [2/5] Worked examples...
+    Found 156 chunks with potential examples
+  [3/5] Conceptual density...
+    Analyzing density for 30 chunks
+  [4/5] Visual analysis...
+    Found 301 chunks with potential figures
+  LLM error: 
+  [5/5] Pedagogy analysis...
+    Analyzing pedagogy for 25 chunks
+  Done. Overall quality: 0.18
+
+============================================================
+Analyzing: descriptive_ic_house.pdf
+============================================================
+  Retrieved 500 chunks
+  [1/5] Topic coverage...
+    Analyzing topic: Atomic Structure
+    Analyzing topic: Molecular Orbital Theory
+    Analyzing topic: Symmetry/Group Theory
+    Analyzing topic: Acids & Bases
+    Analyzing topic: Redox Chemistry
+    Analyzing topic: Coordination Fundamentals
+    Analyzing topic: Crystal Field Theory
+    Analyzing topic: Spectroscopy (UV-Vis, IR, NMR)
+    Analyzing topic: Reaction Mechanisms
+    Analyzing topic: Main Group (s-block)
+    Analyzing topic: Main Group (p-block)
+    Analyzing topic: Transition Metals
+    Analyzing topic: Lanthanides/Actinides
+    Analyzing topic: Organometallics
+    Analyzing topic: Bioinorganic
+    Analyzing topic: Solid State
+    Analyzing topic: Catalysis
+    Analyzing topic: Materials/Nanochemistry
+    Analyzing topic: Environmental IC
+    Analyzing topic: Medicinal IC
+  [2/5] Worked examples...
+    Found 162 chunks with potential examples
+  [3/5] Conceptual density...
+    Analyzing density for 30 chunks
+  [4/5] Visual analysis...
+    Found 301 chunks with potential figures
+  [5/5] Pedagogy analysis...
+    Analyzing pedagogy for 25 chunks
+  Done. Overall quality: 0.18
+
+============================================================
+Analyzing: ic_basset.pdf
+============================================================
+  Retrieved 446 chunks
+  [1/5] Topic coverage...
+    Analyzing topic: Atomic Structure
+    Analyzing topic: Molecular Orbital Theory
+    Analyzing topic: Symmetry/Group Theory
+    Analyzing topic: Acids & Bases
+    Analyzing topic: Redox Chemistry
+    Analyzing topic: Coordination Fundamentals
+    Analyzing topic: Crystal Field Theory
+    Analyzing topic: Spectroscopy (UV-Vis, IR, NMR)
+    Analyzing topic: Reaction Mechanisms
+    Analyzing topic: Main Group (s-block)
+    Analyzing topic: Main Group (p-block)
+    Analyzing topic: Transition Metals
+    Analyzing topic: Lanthanides/Actinides
+    Analyzing topic: Organometallics
+    Analyzing topic: Bioinorganic
+    Analyzing topic: Solid State
+    Analyzing topic: Catalysis
+    Analyzing topic: Materials/Nanochemistry
+    Analyzing topic: Environmental IC
+    Analyzing topic: Medicinal IC
+  [2/5] Worked examples...
+    Found 172 chunks with potential examples
+  [3/5] Conceptual density...
+    Analyzing density for 30 chunks
+  [4/5] Visual analysis...
+    Found 192 chunks with potential figures
+  LLM error: 
+  [5/5] Pedagogy analysis...
+    Analyzing pedagogy for 25 chunks
+  Done. Overall quality: 0.162
+
+============================================================
+Analyzing: ic_tina.pdf
+============================================================
+  Retrieved 500 chunks
+  [1/5] Topic coverage...
+    Analyzing topic: Atomic Structure
+    Analyzing topic: Molecular Orbital Theory
+    Analyzing topic: Symmetry/Group Theory
+    Analyzing topic: Acids & Bases
+    Analyzing topic: Redox Chemistry
+    Analyzing topic: Coordination Fundamentals
+    Analyzing topic: Crystal Field Theory
+    Analyzing topic: Spectroscopy (UV-Vis, IR, NMR)
+    Analyzing topic: Reaction Mechanisms
+    Analyzing topic: Main Group (s-block)
+    Analyzing topic: Main Group (p-block)
+    Analyzing topic: Transition Metals
+    Analyzing topic: Lanthanides/Actinides
+    Analyzing topic: Organometallics
+    Analyzing topic: Bioinorganic
+    Analyzing topic: Solid State
+    Analyzing topic: Catalysis
+    Analyzing topic: Materials/Nanochemistry
+    Analyzing topic: Environmental IC
+    Analyzing topic: Medicinal IC
+  [2/5] Worked examples...
+    Found 212 chunks with potential examples
+  [3/5] Conceptual density...
+    Analyzing density for 30 chunks
+  [4/5] Visual analysis...
+    Found 321 chunks with potential figures
+  [5/5] Pedagogy analysis...
+    Analyzing pedagogy for 25 chunks
+  Done. Overall quality: 0.18
+
+============================================================
+Analyzing: inorganic_chemistry_libretexts.pdf
+============================================================
+  Retrieved 1 chunks
+  [1/5] Topic coverage...
+    Analyzing topic: Atomic Structure
+    Analyzing topic: Molecular Orbital Theory
+    Analyzing topic: Symmetry/Group Theory
+    Analyzing topic: Acids & Bases
+    Analyzing topic: Redox Chemistry
+    Analyzing topic: Coordination Fundamentals
+    Analyzing topic: Crystal Field Theory
+    Analyzing topic: Spectroscopy (UV-Vis, IR, NMR)
+    Analyzing topic: Reaction Mechanisms
+    Analyzing topic: Main Group (s-block)
+    Analyzing topic: Main Group (p-block)
+    Analyzing topic: Transition Metals
+    Analyzing topic: Lanthanides/Actinides
+    Analyzing topic: Organometallics
+    Analyzing topic: Bioinorganic
+    Analyzing topic: Solid State
+    Analyzing topic: Catalysis
+    Analyzing topic: Materials/Nanochemistry
+    Analyzing topic: Environmental IC
+    Analyzing topic: Medicinal IC
+  [2/5] Worked examples...
+    Found 0 chunks with potential examples
+  [3/5] Conceptual density...
+    Analyzing density for 1 chunks
+  [4/5] Visual analysis...
+    Found 1 chunks with potential figures
+  [5/5] Pedagogy analysis...
+    Analyzing pedagogy for 1 chunks
+  Done. Overall quality: 0.09
+
+============================================================
+Analyzing: inorganic_chemistry_saito.pdf
+============================================================
+  Retrieved 1 chunks
+  [1/5] Topic coverage...
+    Analyzing topic: Atomic Structure
+    Analyzing topic: Molecular Orbital Theory
+    Analyzing topic: Symmetry/Group Theory
+    Analyzing topic: Acids & Bases
+    Analyzing topic: Redox Chemistry
+    Analyzing topic: Coordination Fundamentals
+    Analyzing topic: Crystal Field Theory
+    Analyzing topic: Spectroscopy (UV-Vis, IR, NMR)
+    Analyzing topic: Reaction Mechanisms
+    Analyzing topic: Main Group (s-block)
+    Analyzing topic: Main Group (p-block)
+    Analyzing topic: Transition Metals
+    Analyzing topic: Lanthanides/Actinides
+    Analyzing topic: Organometallics
+    Analyzing topic: Bioinorganic
+    Analyzing topic: Solid State
+    Analyzing topic: Catalysis
+    Analyzing topic: Materials/Nanochemistry
+    Analyzing topic: Environmental IC
+    Analyzing topic: Medicinal IC
+  [2/5] Worked examples...
+    Found 1 chunks with potential examples
+  [3/5] Conceptual density...
+    Analyzing density for 1 chunks
+  [4/5] Visual analysis...
+    Found 1 chunks with potential figures
+  [5/5] Pedagogy analysis...
+    Analyzing pedagogy for 1 chunks
+  Done. Overall quality: 0.096
+
+Results saved to experiments/results/textbook_analysis_v2.json
+Comparison matrix saved to experiments/results/textbook_comparison_matrix.md
+
+============================================================
+ANALYSIS COMPLETE
+============================================================
+Books analyzed: 10
+Results: experiments/results/textbook_analysis_v2.json
+Matrix: experiments/results/textbook_comparison_matrix.md
