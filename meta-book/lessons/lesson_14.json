@@ -1,59 +1,50 @@
 {
   "id": "lesson_14",
-  "title": "Chemical Bonding",
+  "title": "Electrochemistry",
   "unit": "unit_2",
   "session": 14,
   "duration_minutes": 75,
   "scale": {
-    "primary": "ELECTRONIC",
-    "touches": [
-      "DESCRIPTIVE"
-    ],
-    "escalation_from": "Understanding Of Atomic Structure"
+    "primary": "DESCRIPTIVE",
+    "touches": [],
+    "escalation_from": "Understanding Of Oxidation And Reduction"
   },
   "topic": {
-    "name": "Chemical Bonding",
-    "pagerank": 0.0029013229866688512,
-    "mentions": 129,
+    "name": "Electrochemistry",
+    "pagerank": 0.0014458509994602015,
+    "mentions": 255,
     "hub_score": 1.0
   },
   "prerequisites": {
     "required": [
-      "Understanding Of Atomic Structure",
-      "Periodic Table Trends",
-      "Lewis Structures"
+      "Understanding Of Oxidation And Reduction",
+      "Knowledge Of Electrode Potentials",
+      "Redox Chemistry"
     ],
     "recommended": [
-      "Molecular Orbital Theory",
-      "Atomic Orbitals"
+      "Gibbs Free Energy Calculations",
+      "Electrode Potentials"
     ],
     "scale_prerequisites": {
-      "ELECTRONIC": [
-        "Understanding Of Atomic Structure",
-        "Periodic Table Trends"
+      "DESCRIPTIVE": [
+        "Understanding Of Oxidation And Reduction",
+        "Knowledge Of Electrode Potentials"
       ]
     }
   },
   "learning_objectives": [
     {
       "id": "LO_14_1",
-      "text": "Define and explain Chemical Bonding",
+      "text": "Define and explain Electrochemistry",
       "bloom_level": "understand",
-      "scale": "ELECTRONIC",
+      "scale": "DESCRIPTIVE",
       "assessment_type": "short_answer"
     },
     {
-      "id": "LO_14_2",
-      "text": "Apply Chemical Bonding to predict chemical properties",
-      "bloom_level": "apply",
-      "scale": "ELECTRONIC",
-      "assessment_type": "problem_solving"
-    },
-    {
       "id": "LO_14_3",
-      "text": "Analyze how Chemical Bonding connects to related concepts",
+      "text": "Analyze how Electrochemistry connects to related concepts",
       "bloom_level": "analyze",
-      "scale": "ELECTRONIC",
+      "scale": "DESCRIPTIVE",
       "assessment_type": "essay"
     }
   ],
@@ -63,30 +54,18 @@
       "strength": "primary"
     },
     "best_examples": {
-      "source": "concise_ic_jd_lee",
+      "source": "descriptive_ic_house",
       "strength": "secondary"
     },
     "cross_references": []
   },
   "subtopics": [],
-  "worked_examples": [
-    {
-      "problem": "Apply Chemical Bonding to predict properties of a transition metal complex",
-      "type": "calculation",
-      "difficulty": "medium",
-      "solution_steps": [
-        "Identify key parameters",
-        "Apply theory",
-        "Interpret result"
-      ],
-      "source": "adapted from descriptive_ic"
-    }
-  ],
+  "worked_examples": [],
   "assessment_items": {
     "formative": [
       {
         "type": "clicker",
-        "question": "Quick check on Chemical Bonding"
+        "question": "Quick check on Electrochemistry"
       }
     ],
     "summative": {
@@ -98,14 +77,14 @@
   },
   "connections": {
     "forward": [
-      "Lewis Structures",
-      "Molecular Geometry",
-      "Bonding In Solids"
+      "Electrochemical Series",
+      "Fuel Cell Operation",
+      "Electrochemical Applications"
     ],
     "backward": [
-      "Understanding Of Atomic Structure",
-      "Periodic Table Trends",
-      "Lewis Structures"
+      "Understanding Of Oxidation And Reduction",
+      "Knowledge Of Electrode Potentials",
+      "Redox Chemistry"
     ],
     "lateral": [],
     "applications": []

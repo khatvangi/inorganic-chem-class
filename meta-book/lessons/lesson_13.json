@@ -1,62 +1,47 @@
 {
   "id": "lesson_13",
-  "title": "Molecular Orbital Theory",
+  "title": "Periodic Table Organization",
   "unit": "unit_2",
   "session": 13,
   "duration_minutes": 75,
   "scale": {
-    "primary": "QUANTUM",
-    "touches": [
-      "ELECTRONIC"
-    ],
-    "escalation_from": "Atomic Orbitals"
+    "primary": "DESCRIPTIVE",
+    "touches": [],
+    "escalation_from": "Periodic Table Structure"
   },
   "topic": {
-    "name": "Molecular Orbital Theory",
-    "pagerank": 0.002971080161168136,
-    "mentions": 143,
-    "hub_score": 1.0
+    "name": "Periodic Table Organization",
+    "pagerank": 0.0015466057831698967,
+    "mentions": 5,
+    "hub_score": 0.1
   },
   "prerequisites": {
     "required": [
-      "Atomic Orbitals",
-      "Electron Configuration",
-      "Chemical Bonding"
+      "Periodic Table Structure"
     ],
-    "recommended": [
-      "Orbital Hybridization",
-      "Symmetry Operations"
-    ],
+    "recommended": [],
     "scale_prerequisites": {
-      "QUANTUM": [
-        "Atomic Orbitals",
-        "Electron Configuration"
+      "DESCRIPTIVE": [
+        "Periodic Table Structure"
       ]
     }
   },
   "learning_objectives": [
     {
       "id": "LO_13_1",
-      "text": "Define and explain Molecular Orbital Theory",
+      "text": "Define and explain Periodic Table Organization",
       "bloom_level": "understand",
-      "scale": "QUANTUM",
+      "scale": "DESCRIPTIVE",
       "assessment_type": "short_answer"
-    },
-    {
-      "id": "LO_13_3",
-      "text": "Analyze how Molecular Orbital Theory connects to related concepts",
-      "bloom_level": "analyze",
-      "scale": "QUANTUM",
-      "assessment_type": "essay"
     }
   ],
   "content_synthesis": {
     "best_explanation": {
-      "source": "ic_tina",
+      "source": "descriptive_ic",
       "strength": "primary"
     },
     "best_examples": {
-      "source": "Atkins_Shriver",
+      "source": "descriptive_ic_house",
       "strength": "secondary"
     },
     "cross_references": []
@@ -67,7 +52,7 @@
     "formative": [
       {
         "type": "clicker",
-        "question": "Quick check on Molecular Orbital Theory"
+        "question": "Quick check on Periodic Table Organization"
       }
     ],
     "summative": {
@@ -79,14 +64,12 @@
   },
   "connections": {
     "forward": [
-      "Crystal Field Theory",
       "Main Group Chemistry",
-      "Chemical Bonding"
+      "Atomic Structure",
+      "Periodic Trends"
     ],
     "backward": [
-      "Atomic Orbitals",
-      "Electron Configuration",
-      "Chemical Bonding"
+      "Periodic Table Structure"
     ],
     "lateral": [],
     "applications": []

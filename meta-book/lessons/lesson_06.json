@@ -1,43 +1,62 @@
 {
   "id": "lesson_06",
-  "title": "Quantum Mechanics Basics",
+  "title": "Solid State Chemistry",
   "unit": "unit_1",
   "session": 6,
   "duration_minutes": 75,
   "scale": {
-    "primary": "QUANTUM",
-    "touches": [],
-    "escalation_from": null
+    "primary": "DESCRIPTIVE",
+    "touches": [
+      "STRUCTURAL"
+    ],
+    "escalation_from": "Crystal Lattice Structures"
   },
   "topic": {
-    "name": "Quantum Mechanics Basics",
-    "pagerank": 0,
-    "mentions": 74,
-    "hub_score": 0.2
+    "name": "Solid State Chemistry",
+    "pagerank": 0.0038781808007243247,
+    "mentions": 427,
+    "hub_score": 1.0
   },
   "prerequisites": {
-    "required": [],
-    "recommended": [],
+    "required": [
+      "Crystal Lattice Structures",
+      "Coordination Compounds",
+      "Unit Cell Calculations"
+    ],
+    "recommended": [
+      "Crystal Structures Of Binary Compounds",
+      "Coordination Chemistry Fundamentals"
+    ],
     "scale_prerequisites": {
-      "QUANTUM": []
+      "DESCRIPTIVE": [
+        "Crystal Lattice Structures",
+        "Coordination Compounds"
+      ]
     }
   },
   "learning_objectives": [
     {
       "id": "LO_6_1",
-      "text": "Define and explain Quantum Mechanics Basics",
+      "text": "Define and explain Solid State Chemistry",
       "bloom_level": "understand",
-      "scale": "QUANTUM",
+      "scale": "DESCRIPTIVE",
       "assessment_type": "short_answer"
+    },
+    {
+      "id": "LO_6_3",
+      "text": "Analyze how Solid State Chemistry connects to related concepts",
+      "bloom_level": "analyze",
+      "scale": "DESCRIPTIVE",
+      "assessment_type": "essay"
     }
   ],
   "content_synthesis": {
     "best_explanation": {
-      "source": "ic_tina",
+      "source": "descriptive_ic",
       "strength": "primary"
     },
     "best_examples": {
-      "source": "Atkins_Shriver",
+      "source": "descriptive_ic_house",
       "strength": "secondary"
     },
     "cross_references": []
@@ -48,7 +67,7 @@
     "formative": [
       {
         "type": "clicker",
-        "question": "Quick check on Quantum Mechanics Basics"
+        "question": "Quick check on Solid State Chemistry"
       }
     ],
     "summative": {
@@ -60,11 +79,15 @@
   },
   "connections": {
     "forward": [
+      "Crystal Field Theory",
       "Coordination Chemistry",
-      "Atomic Structure And Electronic Configuration",
-      "Spectroscopy"
+      "Crystallography"
     ],
-    "backward": [],
+    "backward": [
+      "Crystal Lattice Structures",
+      "Coordination Compounds",
+      "Unit Cell Calculations"
+    ],
     "lateral": [],
     "applications": []
   }

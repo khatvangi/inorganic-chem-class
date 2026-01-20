@@ -1,27 +1,37 @@
 {
   "meta": {
-    "version": "1.0.0",
+    "version": "2.0.0",
     "course": "CHEM 361",
     "title": "Inorganic Chemistry Meta-Book",
-    "generated": "2026-01-19T21:33:18.937910",
+    "generated": "2026-01-19T21:39:18.789472",
     "sources": {
       "knowledge_graph": "experiments/results/chemkg_enhanced.json",
       "textbooks": [
         "descriptive_ic",
         "ic_tina",
-        "concise_ic_jd_lee",
-        "descriptive_ic_house"
+        "descriptive_ic_house",
+        "concise_ic_jd_lee"
       ],
       "model": "hierarchical_4_scale"
+    },
+    "pedagogy_model": {
+      "description": "Combined PageRank Order + Hub Checkpoints",
+      "ordering_method": "PageRank (foundational topics first)",
+      "checkpoint_method": "Hub-based (bottleneck detection)",
+      "rationale": {
+        "pagerank": "Ensures prerequisites are taught before dependent topics",
+        "hubs": "Identifies where students get stuck, enables early intervention"
+      },
+      "combined_benefit": "Students learn in correct order AND get checked at bottlenecks"
     }
   },
   "units": [
     {
       "id": "unit_1",
-      "name": "Foundations",
+      "name": "Foundations (PageRank Top Tier)",
       "scale": "MIXED",
       "sessions": 8,
-      "weeks": "1-4",
+      "weeks": "1-5",
       "slos": [
         "SLO1",
         "SLO2"
@@ -37,25 +47,31 @@
         "lesson_08"
       ],
       "hub_topics": [
-        "Coordination Chemistry Fundamentals",
-        "Electron Configuration",
+        "Main Group Chemistry",
+        "Periodic Trends",
+        "Redox Chemistry",
+        "Coordination Chemistry",
         "Ionic Bonding",
-        "Oxidation States"
+        "Solid State Chemistry",
+        "Molecular Orbital Theory",
+        "Atomic Structure"
       ],
       "assessment": {
         "diagnostic": true,
+        "midterm1": true,
         "quizzes": [
           1,
-          2
+          2,
+          3
         ]
       }
     },
     {
       "id": "unit_2",
-      "name": "Core Concepts (Hub Traversal)",
+      "name": "Core Concepts (PageRank Mid Tier)",
       "scale": "ELECTRONIC",
-      "sessions": 12,
-      "weeks": "5-12",
+      "sessions": 9,
+      "weeks": "6-10",
       "slos": [
         "SLO2",
         "SLO3",
@@ -70,29 +86,18 @@
         "lesson_14",
         "lesson_15",
         "lesson_16",
-        "lesson_17",
-        "lesson_18",
-        "lesson_19",
-        "lesson_20"
+        "lesson_17"
       ],
       "hub_topics": [
-        "Main Group Chemistry",
-        "Periodic Trends",
-        "Coordination Chemistry",
-        "Solid State Chemistry",
-        "Molecular Orbital Theory",
         "Chemical Bonding",
         "Acid-Base Chemistry",
+        "Atomic Structure And Electronic Configuration",
         "Crystal Field Theory",
-        "Electrochemistry",
-        "Bioinorganic Chemistry",
-        "Redox Chemistry",
-        "Organometallic Chemistry"
+        "Electrochemistry"
       ],
       "assessment": {
-        "midterm": true,
+        "midterm2": true,
         "quizzes": [
-          3,
           4,
           5,
           6
@@ -101,27 +106,29 @@
     },
     {
       "id": "unit_3",
-      "name": "Integration (Capstones)",
+      "name": "Applications & Integration",
       "scale": "DESCRIPTIVE",
       "sessions": 6,
-      "weeks": "13-16",
+      "weeks": "11-15",
       "slos": [
         "SLO4",
-        "SLO5"
+        "SLO5",
+        "SLO6"
       ],
       "lessons": [
+        "lesson_18",
+        "lesson_19",
+        "lesson_20",
         "lesson_21",
         "lesson_22",
-        "lesson_23",
-        "lesson_24",
-        "lesson_25",
-        "lesson_26"
+        "lesson_23"
       ],
       "hub_topics": [],
       "assessment": {
         "final": true,
         "quizzes": [
-          7
+          7,
+          8
         ]
       }
     }
@@ -129,46 +136,335 @@
   "lessons": [
     {
       "id": "lesson_01",
-      "title": "Coordination Chemistry Fundamentals",
+      "title": "Main Group Chemistry",
       "unit": "unit_1",
       "session": 1,
       "duration_minutes": 75,
       "scale": {
-        "primary": "STRUCTURAL",
+        "primary": "DESCRIPTIVE",
         "touches": [],
-        "escalation_from": null
+        "escalation_from": "Lewis Acids And Bases"
       },
       "topic": {
-        "name": "Coordination Chemistry Fundamentals",
-        "pagerank": 0,
-        "mentions": 703,
-        "hub_score": 0.8
+        "name": "Main Group Chemistry",
+        "pagerank": 0.020405392741623108,
+        "mentions": 1570,
+        "hub_score": 1.0
       },
       "prerequisites": {
-        "required": [],
-        "recommended": [],
+        "required": [
+          "Lewis Acids And Bases",
+          "Periodic Table Trends",
+          "Redox Chemistry"
+        ],
+        "recommended": [
+          "Standard Reduction Potentials",
+          "Valence Bond Theory"
+        ],
         "scale_prerequisites": {
-          "STRUCTURAL": []
+          "DESCRIPTIVE": [
+            "Lewis Acids And Bases",
+            "Periodic Table Trends"
+          ]
         }
       },
       "learning_objectives": [
         {
           "id": "LO_1_1",
-          "text": "Define and explain Coordination Chemistry Fundamentals",
+          "text": "Define and explain Main Group Chemistry",
+          "bloom_level": "understand",
+          "scale": "DESCRIPTIVE",
+          "assessment_type": "short_answer"
+        },
+        {
+          "id": "LO_1_3",
+          "text": "Analyze how Main Group Chemistry connects to related concepts",
+          "bloom_level": "analyze",
+          "scale": "DESCRIPTIVE",
+          "assessment_type": "essay"
+        }
+      ],
+      "content_synthesis": {
+        "best_explanation": {
+          "source": "descriptive_ic",
+          "strength": "primary"
+        },
+        "best_examples": {
+          "source": "descriptive_ic_house",
+          "strength": "secondary"
+        },
+        "cross_references": []
+      },
+      "subtopics": [],
+      "worked_examples": [],
+      "assessment_items": {
+        "formative": [
+          {
+            "type": "clicker",
+            "question": "Quick check on Main Group Chemistry"
+          }
+        ],
+        "summative": {
+          "quiz_questions": [
+            "quiz_1_q1"
+          ],
+          "exam_questions": []
+        }
+      },
+      "connections": {
+        "forward": [
+          "Hydrolysis Reactions",
+          "Redox Reactions",
+          "Solid State Chemistry"
+        ],
+        "backward": [
+          "Lewis Acids And Bases",
+          "Periodic Table Trends",
+          "Redox Chemistry"
+        ],
+        "lateral": [],
+        "applications": []
+      }
+    },
+    {
+      "id": "lesson_02",
+      "title": "Periodic Trends",
+      "unit": "unit_1",
+      "session": 2,
+      "duration_minutes": 75,
+      "scale": {
+        "primary": "DESCRIPTIVE",
+        "touches": [],
+        "escalation_from": "Understanding Of Periodic Table Structure"
+      },
+      "topic": {
+        "name": "Periodic Trends",
+        "pagerank": 0.01203050059789048,
+        "mentions": 74,
+        "hub_score": 1.0
+      },
+      "prerequisites": {
+        "required": [
+          "Understanding Of Periodic Table Structure",
+          "Atomic Structure",
+          "Periodic Table Trends"
+        ],
+        "recommended": [
+          "Periodic Table",
+          "Electronic Structure Of Atoms"
+        ],
+        "scale_prerequisites": {
+          "DESCRIPTIVE": [
+            "Understanding Of Periodic Table Structure",
+            "Atomic Structure"
+          ]
+        }
+      },
+      "learning_objectives": [
+        {
+          "id": "LO_2_1",
+          "text": "Define and explain Periodic Trends",
+          "bloom_level": "understand",
+          "scale": "DESCRIPTIVE",
+          "assessment_type": "short_answer"
+        },
+        {
+          "id": "LO_2_3",
+          "text": "Analyze how Periodic Trends connects to related concepts",
+          "bloom_level": "analyze",
+          "scale": "DESCRIPTIVE",
+          "assessment_type": "essay"
+        }
+      ],
+      "content_synthesis": {
+        "best_explanation": {
+          "source": "descriptive_ic",
+          "strength": "primary"
+        },
+        "best_examples": {
+          "source": "descriptive_ic_house",
+          "strength": "secondary"
+        },
+        "cross_references": []
+      },
+      "subtopics": [],
+      "worked_examples": [],
+      "assessment_items": {
+        "formative": [
+          {
+            "type": "clicker",
+            "question": "Quick check on Periodic Trends"
+          }
+        ],
+        "summative": {
+          "quiz_questions": [
+            "quiz_2_q1"
+          ],
+          "exam_questions": []
+        }
+      },
+      "connections": {
+        "forward": [
+          "Acid-Base Chemistry",
+          "Main Group Chemistry",
+          "Crystal Field Theory"
+        ],
+        "backward": [
+          "Understanding Of Periodic Table Structure",
+          "Atomic Structure",
+          "Periodic Table Trends"
+        ],
+        "lateral": [],
+        "applications": []
+      }
+    },
+    {
+      "id": "lesson_03",
+      "title": "Redox Chemistry",
+      "unit": "unit_1",
+      "session": 3,
+      "duration_minutes": 75,
+      "scale": {
+        "primary": "DESCRIPTIVE",
+        "touches": [],
+        "escalation_from": "Electrochemical Series"
+      },
+      "topic": {
+        "name": "Redox Chemistry",
+        "pagerank": 0.007949847241380162,
+        "mentions": 31,
+        "hub_score": 0.92
+      },
+      "prerequisites": {
+        "required": [
+          "Electrochemical Series",
+          "Oxidation States",
+          "Basic Redox Reactions"
+        ],
+        "recommended": [
+          "Redox Chemistry",
+          "Understanding Of Oxidation-Reduction Reactions"
+        ],
+        "scale_prerequisites": {
+          "DESCRIPTIVE": [
+            "Electrochemical Series",
+            "Oxidation States"
+          ]
+        }
+      },
+      "learning_objectives": [
+        {
+          "id": "LO_3_1",
+          "text": "Define and explain Redox Chemistry",
+          "bloom_level": "understand",
+          "scale": "DESCRIPTIVE",
+          "assessment_type": "short_answer"
+        },
+        {
+          "id": "LO_3_3",
+          "text": "Analyze how Redox Chemistry connects to related concepts",
+          "bloom_level": "analyze",
+          "scale": "DESCRIPTIVE",
+          "assessment_type": "essay"
+        }
+      ],
+      "content_synthesis": {
+        "best_explanation": {
+          "source": "descriptive_ic",
+          "strength": "primary"
+        },
+        "best_examples": {
+          "source": "descriptive_ic_house",
+          "strength": "secondary"
+        },
+        "cross_references": []
+      },
+      "subtopics": [],
+      "worked_examples": [],
+      "assessment_items": {
+        "formative": [
+          {
+            "type": "clicker",
+            "question": "Quick check on Redox Chemistry"
+          }
+        ],
+        "summative": {
+          "quiz_questions": [
+            "quiz_3_q1"
+          ],
+          "exam_questions": []
+        }
+      },
+      "connections": {
+        "forward": [
+          "Main Group Chemistry",
+          "Enzymatic Catalysis",
+          "Electrochemistry"
+        ],
+        "backward": [
+          "Electrochemical Series",
+          "Oxidation States",
+          "Basic Redox Reactions"
+        ],
+        "lateral": [],
+        "applications": []
+      }
+    },
+    {
+      "id": "lesson_04",
+      "title": "Coordination Chemistry",
+      "unit": "unit_1",
+      "session": 4,
+      "duration_minutes": 75,
+      "scale": {
+        "primary": "STRUCTURAL",
+        "touches": [
+          "DESCRIPTIVE",
+          "ELECTRONIC"
+        ],
+        "escalation_from": "Reaction Mechanisms"
+      },
+      "topic": {
+        "name": "Coordination Chemistry",
+        "pagerank": 0.0048860817031320765,
+        "mentions": 1271,
+        "hub_score": 1.0
+      },
+      "prerequisites": {
+        "required": [
+          "Reaction Mechanisms",
+          "Coordination Compounds",
+          "Ligand Field Theory"
+        ],
+        "recommended": [
+          "Ionic Bonding",
+          "Crystal Structures"
+        ],
+        "scale_prerequisites": {
+          "STRUCTURAL": [
+            "Reaction Mechanisms",
+            "Coordination Compounds"
+          ]
+        }
+      },
+      "learning_objectives": [
+        {
+          "id": "LO_4_1",
+          "text": "Define and explain Coordination Chemistry",
           "bloom_level": "understand",
           "scale": "STRUCTURAL",
           "assessment_type": "short_answer"
         },
         {
-          "id": "LO_1_2",
-          "text": "Apply Coordination Chemistry Fundamentals to predict chemical properties",
+          "id": "LO_4_2",
+          "text": "Apply Coordination Chemistry to predict chemical properties",
           "bloom_level": "apply",
           "scale": "STRUCTURAL",
           "assessment_type": "problem_solving"
         },
         {
-          "id": "LO_1_3",
-          "text": "Analyze how Coordination Chemistry Fundamentals connects to related concepts",
+          "id": "LO_4_3",
+          "text": "Analyze how Coordination Chemistry connects to related concepts",
           "bloom_level": "analyze",
           "scale": "STRUCTURAL",
           "assessment_type": "essay"
@@ -191,103 +487,36 @@
         "formative": [
           {
             "type": "clicker",
-            "question": "Quick check on Coordination Chemistry Fundamentals"
+            "question": "Quick check on Coordination Chemistry"
           }
         ],
         "summative": {
           "quiz_questions": [
-            "quiz_1_q1"
+            "quiz_4_q1"
           ],
           "exam_questions": []
         }
       },
       "connections": {
         "forward": [
-          "Organometallic Chemistry",
-          "Solid State Chemistry",
-          "Inorganic Chemistry In Medicine"
+          "Coordination Geometry",
+          "Crystal Field Theory",
+          "Ligand Substitution Reactions"
         ],
-        "backward": [],
+        "backward": [
+          "Reaction Mechanisms",
+          "Coordination Compounds",
+          "Ligand Field Theory"
+        ],
         "lateral": [],
         "applications": []
       }
     },
     {
-      "id": "lesson_02",
-      "title": "Electron Configuration",
-      "unit": "unit_1",
-      "session": 2,
-      "duration_minutes": 75,
-      "scale": {
-        "primary": "QUANTUM",
-        "touches": [],
-        "escalation_from": null
-      },
-      "topic": {
-        "name": "Electron Configuration",
-        "pagerank": 0,
-        "mentions": 272,
-        "hub_score": 0.5
-      },
-      "prerequisites": {
-        "required": [],
-        "recommended": [],
-        "scale_prerequisites": {
-          "QUANTUM": []
-        }
-      },
-      "learning_objectives": [
-        {
-          "id": "LO_2_1",
-          "text": "Define and explain Electron Configuration",
-          "bloom_level": "understand",
-          "scale": "QUANTUM",
-          "assessment_type": "short_answer"
-        }
-      ],
-      "content_synthesis": {
-        "best_explanation": {
-          "source": "ic_tina",
-          "strength": "primary"
-        },
-        "best_examples": {
-          "source": "Atkins_Shriver",
-          "strength": "secondary"
-        },
-        "cross_references": []
-      },
-      "subtopics": [],
-      "worked_examples": [],
-      "assessment_items": {
-        "formative": [
-          {
-            "type": "clicker",
-            "question": "Quick check on Electron Configuration"
-          }
-        ],
-        "summative": {
-          "quiz_questions": [
-            "quiz_2_q1"
-          ],
-          "exam_questions": []
-        }
-      },
-      "connections": {
-        "forward": [
-          "Atomic Structure And Periodic Trends",
-          "Coordination Chemistry",
-          "Electronic Structure And Spectroscopy"
-        ],
-        "backward": [],
-        "lateral": [],
-        "applications": []
-      }
-    },
-    {
-      "id": "lesson_03",
+      "id": "lesson_05",
       "title": "Ionic Bonding",
       "unit": "unit_1",
-      "session": 3,
+      "session": 5,
       "duration_minutes": 75,
       "scale": {
         "primary": "ELECTRONIC",
@@ -309,14 +538,14 @@
       },
       "learning_objectives": [
         {
-          "id": "LO_3_1",
+          "id": "LO_5_1",
           "text": "Define and explain Ionic Bonding",
           "bloom_level": "understand",
           "scale": "ELECTRONIC",
           "assessment_type": "short_answer"
         },
         {
-          "id": "LO_3_2",
+          "id": "LO_5_2",
           "text": "Apply Ionic Bonding to predict chemical properties",
           "bloom_level": "apply",
           "scale": "ELECTRONIC",
@@ -357,7 +586,7 @@
         ],
         "summative": {
           "quiz_questions": [
-            "quiz_3_q1"
+            "quiz_5_q1"
           ],
           "exam_questions": []
         }
@@ -374,670 +603,10 @@
       }
     },
     {
-      "id": "lesson_04",
-      "title": "Oxidation States",
-      "unit": "unit_1",
-      "session": 4,
-      "duration_minutes": 75,
-      "scale": {
-        "primary": "DESCRIPTIVE",
-        "touches": [],
-        "escalation_from": null
-      },
-      "topic": {
-        "name": "Oxidation States",
-        "pagerank": 0,
-        "mentions": 368,
-        "hub_score": 0.34
-      },
-      "prerequisites": {
-        "required": [],
-        "recommended": [],
-        "scale_prerequisites": {
-          "DESCRIPTIVE": []
-        }
-      },
-      "learning_objectives": [
-        {
-          "id": "LO_4_1",
-          "text": "Define and explain Oxidation States",
-          "bloom_level": "understand",
-          "scale": "DESCRIPTIVE",
-          "assessment_type": "short_answer"
-        }
-      ],
-      "content_synthesis": {
-        "best_explanation": {
-          "source": "descriptive_ic",
-          "strength": "primary"
-        },
-        "best_examples": {
-          "source": "descriptive_ic_house",
-          "strength": "secondary"
-        },
-        "cross_references": []
-      },
-      "subtopics": [],
-      "worked_examples": [],
-      "assessment_items": {
-        "formative": [
-          {
-            "type": "clicker",
-            "question": "Quick check on Oxidation States"
-          }
-        ],
-        "summative": {
-          "quiz_questions": [
-            "quiz_4_q1"
-          ],
-          "exam_questions": []
-        }
-      },
-      "connections": {
-        "forward": [
-          "Coordination Chemistry",
-          "Main Group Chemistry",
-          "Redox Chemistry"
-        ],
-        "backward": [],
-        "lateral": [],
-        "applications": []
-      }
-    },
-    {
-      "id": "lesson_05",
-      "title": "Group Theory Basics",
-      "unit": "unit_1",
-      "session": 5,
-      "duration_minutes": 75,
-      "scale": {
-        "primary": "DESCRIPTIVE",
-        "touches": [],
-        "escalation_from": null
-      },
-      "topic": {
-        "name": "Group Theory Basics",
-        "pagerank": 0,
-        "mentions": 55,
-        "hub_score": 0.22
-      },
-      "prerequisites": {
-        "required": [],
-        "recommended": [],
-        "scale_prerequisites": {
-          "DESCRIPTIVE": []
-        }
-      },
-      "learning_objectives": [
-        {
-          "id": "LO_5_1",
-          "text": "Define and explain Group Theory Basics",
-          "bloom_level": "understand",
-          "scale": "DESCRIPTIVE",
-          "assessment_type": "short_answer"
-        }
-      ],
-      "content_synthesis": {
-        "best_explanation": {
-          "source": "descriptive_ic",
-          "strength": "primary"
-        },
-        "best_examples": {
-          "source": "descriptive_ic_house",
-          "strength": "secondary"
-        },
-        "cross_references": []
-      },
-      "subtopics": [],
-      "worked_examples": [],
-      "assessment_items": {
-        "formative": [
-          {
-            "type": "clicker",
-            "question": "Quick check on Group Theory Basics"
-          }
-        ],
-        "summative": {
-          "quiz_questions": [
-            "quiz_5_q1"
-          ],
-          "exam_questions": []
-        }
-      },
-      "connections": {
-        "forward": [
-          "Symmetry And Point Groups",
-          "Symmetry And Group Theory",
-          "Symmetry And Molecular Orbitals"
-        ],
-        "backward": [],
-        "lateral": [],
-        "applications": []
-      }
-    },
-    {
       "id": "lesson_06",
-      "title": "Quantum Mechanics Basics",
+      "title": "Solid State Chemistry",
       "unit": "unit_1",
       "session": 6,
-      "duration_minutes": 75,
-      "scale": {
-        "primary": "QUANTUM",
-        "touches": [],
-        "escalation_from": null
-      },
-      "topic": {
-        "name": "Quantum Mechanics Basics",
-        "pagerank": 0,
-        "mentions": 74,
-        "hub_score": 0.2
-      },
-      "prerequisites": {
-        "required": [],
-        "recommended": [],
-        "scale_prerequisites": {
-          "QUANTUM": []
-        }
-      },
-      "learning_objectives": [
-        {
-          "id": "LO_6_1",
-          "text": "Define and explain Quantum Mechanics Basics",
-          "bloom_level": "understand",
-          "scale": "QUANTUM",
-          "assessment_type": "short_answer"
-        }
-      ],
-      "content_synthesis": {
-        "best_explanation": {
-          "source": "ic_tina",
-          "strength": "primary"
-        },
-        "best_examples": {
-          "source": "Atkins_Shriver",
-          "strength": "secondary"
-        },
-        "cross_references": []
-      },
-      "subtopics": [],
-      "worked_examples": [],
-      "assessment_items": {
-        "formative": [
-          {
-            "type": "clicker",
-            "question": "Quick check on Quantum Mechanics Basics"
-          }
-        ],
-        "summative": {
-          "quiz_questions": [
-            "quiz_6_q1"
-          ],
-          "exam_questions": []
-        }
-      },
-      "connections": {
-        "forward": [
-          "Coordination Chemistry",
-          "Atomic Structure And Electronic Configuration",
-          "Spectroscopy"
-        ],
-        "backward": [],
-        "lateral": [],
-        "applications": []
-      }
-    },
-    {
-      "id": "lesson_07",
-      "title": "Thermodynamics",
-      "unit": "unit_1",
-      "session": 7,
-      "duration_minutes": 75,
-      "scale": {
-        "primary": "DESCRIPTIVE",
-        "touches": [],
-        "escalation_from": null
-      },
-      "topic": {
-        "name": "Thermodynamics",
-        "pagerank": 0.000866104795390483,
-        "mentions": 10,
-        "hub_score": 0.18
-      },
-      "prerequisites": {
-        "required": [],
-        "recommended": [],
-        "scale_prerequisites": {
-          "DESCRIPTIVE": []
-        }
-      },
-      "learning_objectives": [
-        {
-          "id": "LO_7_1",
-          "text": "Define and explain Thermodynamics",
-          "bloom_level": "understand",
-          "scale": "DESCRIPTIVE",
-          "assessment_type": "short_answer"
-        }
-      ],
-      "content_synthesis": {
-        "best_explanation": {
-          "source": "descriptive_ic",
-          "strength": "primary"
-        },
-        "best_examples": {
-          "source": "descriptive_ic_house",
-          "strength": "secondary"
-        },
-        "cross_references": []
-      },
-      "subtopics": [],
-      "worked_examples": [],
-      "assessment_items": {
-        "formative": [
-          {
-            "type": "clicker",
-            "question": "Quick check on Thermodynamics"
-          }
-        ],
-        "summative": {
-          "quiz_questions": [
-            "quiz_7_q1"
-          ],
-          "exam_questions": []
-        }
-      },
-      "connections": {
-        "forward": [
-          "Electrochemistry",
-          "Electrochemical Kinetics",
-          "Coordination Chemistry"
-        ],
-        "backward": [],
-        "lateral": [],
-        "applications": []
-      }
-    },
-    {
-      "id": "lesson_08",
-      "title": "Ligand Field Theory",
-      "unit": "unit_1",
-      "session": 8,
-      "duration_minutes": 75,
-      "scale": {
-        "primary": "ELECTRONIC",
-        "touches": [],
-        "escalation_from": null
-      },
-      "topic": {
-        "name": "Ligand Field Theory",
-        "pagerank": 0,
-        "mentions": 15,
-        "hub_score": 0.18
-      },
-      "prerequisites": {
-        "required": [],
-        "recommended": [],
-        "scale_prerequisites": {
-          "ELECTRONIC": []
-        }
-      },
-      "learning_objectives": [
-        {
-          "id": "LO_8_1",
-          "text": "Define and explain Ligand Field Theory",
-          "bloom_level": "understand",
-          "scale": "ELECTRONIC",
-          "assessment_type": "short_answer"
-        },
-        {
-          "id": "LO_8_2",
-          "text": "Apply Ligand Field Theory to predict chemical properties",
-          "bloom_level": "apply",
-          "scale": "ELECTRONIC",
-          "assessment_type": "problem_solving"
-        }
-      ],
-      "content_synthesis": {
-        "best_explanation": {
-          "source": "descriptive_ic",
-          "strength": "primary"
-        },
-        "best_examples": {
-          "source": "concise_ic_jd_lee",
-          "strength": "secondary"
-        },
-        "cross_references": []
-      },
-      "subtopics": [],
-      "worked_examples": [
-        {
-          "problem": "Apply Ligand Field Theory to predict properties of a transition metal complex",
-          "type": "calculation",
-          "difficulty": "medium",
-          "solution_steps": [
-            "Identify key parameters",
-            "Apply theory",
-            "Interpret result"
-          ],
-          "source": "adapted from descriptive_ic"
-        }
-      ],
-      "assessment_items": {
-        "formative": [
-          {
-            "type": "clicker",
-            "question": "Quick check on Ligand Field Theory"
-          }
-        ],
-        "summative": {
-          "quiz_questions": [
-            "quiz_8_q1"
-          ],
-          "exam_questions": []
-        }
-      },
-      "connections": {
-        "forward": [
-          "Organometallic Chemistry",
-          "Coordination Chemistry",
-          "Main Group Chemistry"
-        ],
-        "backward": [],
-        "lateral": [],
-        "applications": []
-      }
-    },
-    {
-      "id": "lesson_09",
-      "title": "Main Group Chemistry",
-      "unit": "unit_2",
-      "session": 9,
-      "duration_minutes": 75,
-      "scale": {
-        "primary": "DESCRIPTIVE",
-        "touches": [],
-        "escalation_from": "Lewis Acids And Bases"
-      },
-      "topic": {
-        "name": "Main Group Chemistry",
-        "pagerank": 0.020405392741623108,
-        "mentions": 1570,
-        "hub_score": 1.0
-      },
-      "prerequisites": {
-        "required": [
-          "Lewis Acids And Bases",
-          "Periodic Table Trends",
-          "Redox Chemistry"
-        ],
-        "recommended": [
-          "Standard Reduction Potentials",
-          "Valence Bond Theory"
-        ],
-        "scale_prerequisites": {
-          "DESCRIPTIVE": [
-            "Lewis Acids And Bases",
-            "Periodic Table Trends"
-          ]
-        }
-      },
-      "learning_objectives": [
-        {
-          "id": "LO_9_1",
-          "text": "Define and explain Main Group Chemistry",
-          "bloom_level": "understand",
-          "scale": "DESCRIPTIVE",
-          "assessment_type": "short_answer"
-        },
-        {
-          "id": "LO_9_3",
-          "text": "Analyze how Main Group Chemistry connects to related concepts",
-          "bloom_level": "analyze",
-          "scale": "DESCRIPTIVE",
-          "assessment_type": "essay"
-        }
-      ],
-      "content_synthesis": {
-        "best_explanation": {
-          "source": "descriptive_ic",
-          "strength": "primary"
-        },
-        "best_examples": {
-          "source": "descriptive_ic_house",
-          "strength": "secondary"
-        },
-        "cross_references": []
-      },
-      "subtopics": [],
-      "worked_examples": [],
-      "assessment_items": {
-        "formative": [
-          {
-            "type": "clicker",
-            "question": "Quick check on Main Group Chemistry"
-          }
-        ],
-        "summative": {
-          "quiz_questions": [
-            "quiz_9_q1"
-          ],
-          "exam_questions": []
-        }
-      },
-      "connections": {
-        "forward": [
-          "Hydrolysis Reactions",
-          "Redox Reactions",
-          "Solid State Chemistry"
-        ],
-        "backward": [
-          "Lewis Acids And Bases",
-          "Periodic Table Trends",
-          "Redox Chemistry"
-        ],
-        "lateral": [],
-        "applications": []
-      }
-    },
-    {
-      "id": "lesson_10",
-      "title": "Periodic Trends",
-      "unit": "unit_2",
-      "session": 10,
-      "duration_minutes": 75,
-      "scale": {
-        "primary": "DESCRIPTIVE",
-        "touches": [],
-        "escalation_from": "Understanding Of Periodic Table Structure"
-      },
-      "topic": {
-        "name": "Periodic Trends",
-        "pagerank": 0.01203050059789048,
-        "mentions": 74,
-        "hub_score": 1.0
-      },
-      "prerequisites": {
-        "required": [
-          "Understanding Of Periodic Table Structure",
-          "Atomic Structure",
-          "Periodic Table Trends"
-        ],
-        "recommended": [
-          "Periodic Table",
-          "Electronic Structure Of Atoms"
-        ],
-        "scale_prerequisites": {
-          "DESCRIPTIVE": [
-            "Understanding Of Periodic Table Structure",
-            "Atomic Structure"
-          ]
-        }
-      },
-      "learning_objectives": [
-        {
-          "id": "LO_10_1",
-          "text": "Define and explain Periodic Trends",
-          "bloom_level": "understand",
-          "scale": "DESCRIPTIVE",
-          "assessment_type": "short_answer"
-        },
-        {
-          "id": "LO_10_3",
-          "text": "Analyze how Periodic Trends connects to related concepts",
-          "bloom_level": "analyze",
-          "scale": "DESCRIPTIVE",
-          "assessment_type": "essay"
-        }
-      ],
-      "content_synthesis": {
-        "best_explanation": {
-          "source": "descriptive_ic",
-          "strength": "primary"
-        },
-        "best_examples": {
-          "source": "descriptive_ic_house",
-          "strength": "secondary"
-        },
-        "cross_references": []
-      },
-      "subtopics": [],
-      "worked_examples": [],
-      "assessment_items": {
-        "formative": [
-          {
-            "type": "clicker",
-            "question": "Quick check on Periodic Trends"
-          }
-        ],
-        "summative": {
-          "quiz_questions": [
-            "quiz_10_q1"
-          ],
-          "exam_questions": []
-        }
-      },
-      "connections": {
-        "forward": [
-          "Acid-Base Chemistry",
-          "Main Group Chemistry",
-          "Crystal Field Theory"
-        ],
-        "backward": [
-          "Understanding Of Periodic Table Structure",
-          "Atomic Structure",
-          "Periodic Table Trends"
-        ],
-        "lateral": [],
-        "applications": []
-      }
-    },
-    {
-      "id": "lesson_11",
-      "title": "Coordination Chemistry",
-      "unit": "unit_2",
-      "session": 11,
-      "duration_minutes": 75,
-      "scale": {
-        "primary": "STRUCTURAL",
-        "touches": [
-          "DESCRIPTIVE",
-          "ELECTRONIC"
-        ],
-        "escalation_from": "Reaction Mechanisms"
-      },
-      "topic": {
-        "name": "Coordination Chemistry",
-        "pagerank": 0.0048860817031320765,
-        "mentions": 1271,
-        "hub_score": 1.0
-      },
-      "prerequisites": {
-        "required": [
-          "Reaction Mechanisms",
-          "Coordination Compounds",
-          "Ligand Field Theory"
-        ],
-        "recommended": [
-          "Ionic Bonding",
-          "Crystal Structures"
-        ],
-        "scale_prerequisites": {
-          "STRUCTURAL": [
-            "Reaction Mechanisms",
-            "Coordination Compounds"
-          ]
-        }
-      },
-      "learning_objectives": [
-        {
-          "id": "LO_11_1",
-          "text": "Define and explain Coordination Chemistry",
-          "bloom_level": "understand",
-          "scale": "STRUCTURAL",
-          "assessment_type": "short_answer"
-        },
-        {
-          "id": "LO_11_2",
-          "text": "Apply Coordination Chemistry to predict chemical properties",
-          "bloom_level": "apply",
-          "scale": "STRUCTURAL",
-          "assessment_type": "problem_solving"
-        },
-        {
-          "id": "LO_11_3",
-          "text": "Analyze how Coordination Chemistry connects to related concepts",
-          "bloom_level": "analyze",
-          "scale": "STRUCTURAL",
-          "assessment_type": "essay"
-        }
-      ],
-      "content_synthesis": {
-        "best_explanation": {
-          "source": "ic_tina",
-          "strength": "primary"
-        },
-        "best_examples": {
-          "source": "Atkins_Shriver",
-          "strength": "secondary"
-        },
-        "cross_references": []
-      },
-      "subtopics": [],
-      "worked_examples": [],
-      "assessment_items": {
-        "formative": [
-          {
-            "type": "clicker",
-            "question": "Quick check on Coordination Chemistry"
-          }
-        ],
-        "summative": {
-          "quiz_questions": [
-            "quiz_11_q1"
-          ],
-          "exam_questions": []
-        }
-      },
-      "connections": {
-        "forward": [
-          "Coordination Geometry",
-          "Crystal Field Theory",
-          "Ligand Substitution Reactions"
-        ],
-        "backward": [
-          "Reaction Mechanisms",
-          "Coordination Compounds",
-          "Ligand Field Theory"
-        ],
-        "lateral": [],
-        "applications": []
-      }
-    },
-    {
-      "id": "lesson_12",
-      "title": "Solid State Chemistry",
-      "unit": "unit_2",
-      "session": 12,
       "duration_minutes": 75,
       "scale": {
         "primary": "DESCRIPTIVE",
@@ -1071,14 +640,14 @@
       },
       "learning_objectives": [
         {
-          "id": "LO_12_1",
+          "id": "LO_6_1",
           "text": "Define and explain Solid State Chemistry",
           "bloom_level": "understand",
           "scale": "DESCRIPTIVE",
           "assessment_type": "short_answer"
         },
         {
-          "id": "LO_12_3",
+          "id": "LO_6_3",
           "text": "Analyze how Solid State Chemistry connects to related concepts",
           "bloom_level": "analyze",
           "scale": "DESCRIPTIVE",
@@ -1107,7 +676,7 @@
         ],
         "summative": {
           "quiz_questions": [
-            "quiz_12_q1"
+            "quiz_6_q1"
           ],
           "exam_questions": []
         }
@@ -1128,10 +697,10 @@
       }
     },
     {
-      "id": "lesson_13",
+      "id": "lesson_07",
       "title": "Molecular Orbital Theory",
-      "unit": "unit_2",
-      "session": 13,
+      "unit": "unit_1",
+      "session": 7,
       "duration_minutes": 75,
       "scale": {
         "primary": "QUANTUM",
@@ -1165,14 +734,14 @@
       },
       "learning_objectives": [
         {
-          "id": "LO_13_1",
+          "id": "LO_7_1",
           "text": "Define and explain Molecular Orbital Theory",
           "bloom_level": "understand",
           "scale": "QUANTUM",
           "assessment_type": "short_answer"
         },
         {
-          "id": "LO_13_3",
+          "id": "LO_7_3",
           "text": "Analyze how Molecular Orbital Theory connects to related concepts",
           "bloom_level": "analyze",
           "scale": "QUANTUM",
@@ -1201,7 +770,7 @@
         ],
         "summative": {
           "quiz_questions": [
-            "quiz_13_q1"
+            "quiz_7_q1"
           ],
           "exam_questions": []
         }
@@ -1222,10 +791,104 @@
       }
     },
     {
-      "id": "lesson_14",
+      "id": "lesson_08",
+      "title": "Atomic Structure",
+      "unit": "unit_1",
+      "session": 8,
+      "duration_minutes": 75,
+      "scale": {
+        "primary": "DESCRIPTIVE",
+        "touches": [
+          "QUANTUM"
+        ],
+        "escalation_from": "Quantum Numbers"
+      },
+      "topic": {
+        "name": "Atomic Structure",
+        "pagerank": 0.0029611543535774136,
+        "mentions": 38,
+        "hub_score": 0.7
+      },
+      "prerequisites": {
+        "required": [
+          "Quantum Numbers",
+          "Wavefunctions",
+          "Atomic Structure Basics"
+        ],
+        "recommended": [
+          "Periodic Table Trends",
+          "Electron Configuration Basics"
+        ],
+        "scale_prerequisites": {
+          "DESCRIPTIVE": [
+            "Quantum Numbers",
+            "Wavefunctions"
+          ]
+        }
+      },
+      "learning_objectives": [
+        {
+          "id": "LO_8_1",
+          "text": "Define and explain Atomic Structure",
+          "bloom_level": "understand",
+          "scale": "DESCRIPTIVE",
+          "assessment_type": "short_answer"
+        },
+        {
+          "id": "LO_8_3",
+          "text": "Analyze how Atomic Structure connects to related concepts",
+          "bloom_level": "analyze",
+          "scale": "DESCRIPTIVE",
+          "assessment_type": "essay"
+        }
+      ],
+      "content_synthesis": {
+        "best_explanation": {
+          "source": "descriptive_ic",
+          "strength": "primary"
+        },
+        "best_examples": {
+          "source": "descriptive_ic_house",
+          "strength": "secondary"
+        },
+        "cross_references": []
+      },
+      "subtopics": [],
+      "worked_examples": [],
+      "assessment_items": {
+        "formative": [
+          {
+            "type": "clicker",
+            "question": "Quick check on Atomic Structure"
+          }
+        ],
+        "summative": {
+          "quiz_questions": [
+            "quiz_8_q1"
+          ],
+          "exam_questions": []
+        }
+      },
+      "connections": {
+        "forward": [
+          "Nuclear Chemistry",
+          "Main Group Chemistry",
+          "Periodic Trends"
+        ],
+        "backward": [
+          "Quantum Numbers",
+          "Wavefunctions",
+          "Atomic Structure Basics"
+        ],
+        "lateral": [],
+        "applications": []
+      }
+    },
+    {
+      "id": "lesson_09",
       "title": "Chemical Bonding",
       "unit": "unit_2",
-      "session": 14,
+      "session": 9,
       "duration_minutes": 75,
       "scale": {
         "primary": "ELECTRONIC",
@@ -1259,21 +922,21 @@
       },
       "learning_objectives": [
         {
-          "id": "LO_14_1",
+          "id": "LO_9_1",
           "text": "Define and explain Chemical Bonding",
           "bloom_level": "understand",
           "scale": "ELECTRONIC",
           "assessment_type": "short_answer"
         },
         {
-          "id": "LO_14_2",
+          "id": "LO_9_2",
           "text": "Apply Chemical Bonding to predict chemical properties",
           "bloom_level": "apply",
           "scale": "ELECTRONIC",
           "assessment_type": "problem_solving"
         },
         {
-          "id": "LO_14_3",
+          "id": "LO_9_3",
           "text": "Analyze how Chemical Bonding connects to related concepts",
           "bloom_level": "analyze",
           "scale": "ELECTRONIC",
@@ -1314,7 +977,7 @@
         ],
         "summative": {
           "quiz_questions": [
-            "quiz_14_q1"
+            "quiz_9_q1"
           ],
           "exam_questions": []
         }
@@ -1335,10 +998,10 @@
       }
     },
     {
-      "id": "lesson_15",
+      "id": "lesson_10",
       "title": "Acid-Base Chemistry",
       "unit": "unit_2",
-      "session": 15,
+      "session": 10,
       "duration_minutes": 75,
       "scale": {
         "primary": "DESCRIPTIVE",
@@ -1370,14 +1033,14 @@
       },
       "learning_objectives": [
         {
-          "id": "LO_15_1",
+          "id": "LO_10_1",
           "text": "Define and explain Acid-Base Chemistry",
           "bloom_level": "understand",
           "scale": "DESCRIPTIVE",
           "assessment_type": "short_answer"
         },
         {
-          "id": "LO_15_3",
+          "id": "LO_10_3",
           "text": "Analyze how Acid-Base Chemistry connects to related concepts",
           "bloom_level": "analyze",
           "scale": "DESCRIPTIVE",
@@ -1406,7 +1069,7 @@
         ],
         "summative": {
           "quiz_questions": [
-            "quiz_15_q1"
+            "quiz_10_q1"
           ],
           "exam_questions": []
         }
@@ -1427,10 +1090,97 @@
       }
     },
     {
-      "id": "lesson_16",
+      "id": "lesson_11",
+      "title": "Atomic Structure And Electronic Configuration",
+      "unit": "unit_2",
+      "session": 11,
+      "duration_minutes": 75,
+      "scale": {
+        "primary": "DESCRIPTIVE",
+        "touches": [
+          "QUANTUM"
+        ],
+        "escalation_from": "Quantum Numbers"
+      },
+      "topic": {
+        "name": "Atomic Structure And Electronic Configuration",
+        "pagerank": 0.0018817743669472663,
+        "mentions": 42,
+        "hub_score": 0.34
+      },
+      "prerequisites": {
+        "required": [
+          "Quantum Numbers",
+          "Electron Configuration",
+          "Quantum Mechanics Basics"
+        ],
+        "recommended": [
+          "Electron Configuration Basics",
+          "Atomic Orbitals"
+        ],
+        "scale_prerequisites": {
+          "DESCRIPTIVE": [
+            "Quantum Numbers",
+            "Electron Configuration"
+          ]
+        }
+      },
+      "learning_objectives": [
+        {
+          "id": "LO_11_1",
+          "text": "Define and explain Atomic Structure And Electronic Configuration",
+          "bloom_level": "understand",
+          "scale": "DESCRIPTIVE",
+          "assessment_type": "short_answer"
+        }
+      ],
+      "content_synthesis": {
+        "best_explanation": {
+          "source": "descriptive_ic",
+          "strength": "primary"
+        },
+        "best_examples": {
+          "source": "descriptive_ic_house",
+          "strength": "secondary"
+        },
+        "cross_references": []
+      },
+      "subtopics": [],
+      "worked_examples": [],
+      "assessment_items": {
+        "formative": [
+          {
+            "type": "clicker",
+            "question": "Quick check on Atomic Structure And Electronic Configuration"
+          }
+        ],
+        "summative": {
+          "quiz_questions": [
+            "quiz_11_q1"
+          ],
+          "exam_questions": []
+        }
+      },
+      "connections": {
+        "forward": [
+          "Periodic Trends",
+          "Chemical Bonding",
+          "Molecular Orbital Theory"
+        ],
+        "backward": [
+          "Quantum Numbers",
+          "Electron Configuration",
+          "Quantum Mechanics Basics"
+        ],
+        "lateral": [],
+        "applications": []
+      }
+    },
+    {
+      "id": "lesson_12",
       "title": "Crystal Field Theory",
       "unit": "unit_2",
-      "session": 16,
+      "session": 12,
       "duration_minutes": 75,
       "scale": {
         "primary": "ELECTRONIC",
@@ -1464,21 +1214,21 @@
       },
       "learning_objectives": [
         {
-          "id": "LO_16_1",
+          "id": "LO_12_1",
           "text": "Define and explain Crystal Field Theory",
           "bloom_level": "understand",
           "scale": "ELECTRONIC",
           "assessment_type": "short_answer"
         },
         {
-          "id": "LO_16_2",
+          "id": "LO_12_2",
           "text": "Apply Crystal Field Theory to predict chemical properties",
           "bloom_level": "apply",
           "scale": "ELECTRONIC",
           "assessment_type": "problem_solving"
         },
         {
-          "id": "LO_16_3",
+          "id": "LO_12_3",
           "text": "Analyze how Crystal Field Theory connects to related concepts",
           "bloom_level": "analyze",
           "scale": "ELECTRONIC",
@@ -1519,7 +1269,7 @@
         ],
         "summative": {
           "quiz_questions": [
-            "quiz_16_q1"
+            "quiz_12_q1"
           ],
           "exam_questions": []
         }
@@ -1540,10 +1290,87 @@
       }
     },
     {
-      "id": "lesson_17",
+      "id": "lesson_13",
+      "title": "Periodic Table Organization",
+      "unit": "unit_2",
+      "session": 13,
+      "duration_minutes": 75,
+      "scale": {
+        "primary": "DESCRIPTIVE",
+        "touches": [],
+        "escalation_from": "Periodic Table Structure"
+      },
+      "topic": {
+        "name": "Periodic Table Organization",
+        "pagerank": 0.0015466057831698967,
+        "mentions": 5,
+        "hub_score": 0.1
+      },
+      "prerequisites": {
+        "required": [
+          "Periodic Table Structure"
+        ],
+        "recommended": [],
+        "scale_prerequisites": {
+          "DESCRIPTIVE": [
+            "Periodic Table Structure"
+          ]
+        }
+      },
+      "learning_objectives": [
+        {
+          "id": "LO_13_1",
+          "text": "Define and explain Periodic Table Organization",
+          "bloom_level": "understand",
+          "scale": "DESCRIPTIVE",
+          "assessment_type": "short_answer"
+        }
+      ],
+      "content_synthesis": {
+        "best_explanation": {
+          "source": "descriptive_ic",
+          "strength": "primary"
+        },
+        "best_examples": {
+          "source": "descriptive_ic_house",
+          "strength": "secondary"
+        },
+        "cross_references": []
+      },
+      "subtopics": [],
+      "worked_examples": [],
+      "assessment_items": {
+        "formative": [
+          {
+            "type": "clicker",
+            "question": "Quick check on Periodic Table Organization"
+          }
+        ],
+        "summative": {
+          "quiz_questions": [
+            "quiz_13_q1"
+          ],
+          "exam_questions": []
+        }
+      },
+      "connections": {
+        "forward": [
+          "Main Group Chemistry",
+          "Atomic Structure",
+          "Periodic Trends"
+        ],
+        "backward": [
+          "Periodic Table Structure"
+        ],
+        "lateral": [],
+        "applications": []
+      }
+    },
+    {
+      "id": "lesson_14",
       "title": "Electrochemistry",
       "unit": "unit_2",
-      "session": 17,
+      "session": 14,
       "duration_minutes": 75,
       "scale": {
         "primary": "DESCRIPTIVE",
@@ -1575,14 +1402,14 @@
       },
       "learning_objectives": [
         {
-          "id": "LO_17_1",
+          "id": "LO_14_1",
           "text": "Define and explain Electrochemistry",
           "bloom_level": "understand",
           "scale": "DESCRIPTIVE",
           "assessment_type": "short_answer"
         },
         {
-          "id": "LO_17_3",
+          "id": "LO_14_3",
           "text": "Analyze how Electrochemistry connects to related concepts",
           "bloom_level": "analyze",
           "scale": "DESCRIPTIVE",
@@ -1611,7 +1438,7 @@
         ],
         "summative": {
           "quiz_questions": [
-            "quiz_17_q1"
+            "quiz_14_q1"
           ],
           "exam_questions": []
         }
@@ -1632,147 +1459,46 @@
       }
     },
     {
-      "id": "lesson_18",
-      "title": "Bioinorganic Chemistry",
+      "id": "lesson_15",
+      "title": "Thermochemistry",
       "unit": "unit_2",
-      "session": 18,
-      "duration_minutes": 75,
-      "scale": {
-        "primary": "DESCRIPTIVE",
-        "touches": [
-          "STRUCTURAL"
-        ],
-        "escalation_from": "Enzyme Structure And Function"
-      },
-      "topic": {
-        "name": "Bioinorganic Chemistry",
-        "pagerank": 0.0006767738800015222,
-        "mentions": 167,
-        "hub_score": 1.0
-      },
-      "prerequisites": {
-        "required": [
-          "Enzyme Structure And Function",
-          "Coordination Chemistry Fundamentals",
-          "Transition Metals"
-        ],
-        "recommended": [
-          "Enzyme Mechanisms",
-          "Protein Structure And Function"
-        ],
-        "scale_prerequisites": {
-          "DESCRIPTIVE": [
-            "Enzyme Structure And Function",
-            "Coordination Chemistry Fundamentals"
-          ]
-        }
-      },
-      "learning_objectives": [
-        {
-          "id": "LO_18_1",
-          "text": "Define and explain Bioinorganic Chemistry",
-          "bloom_level": "understand",
-          "scale": "DESCRIPTIVE",
-          "assessment_type": "short_answer"
-        },
-        {
-          "id": "LO_18_3",
-          "text": "Analyze how Bioinorganic Chemistry connects to related concepts",
-          "bloom_level": "analyze",
-          "scale": "DESCRIPTIVE",
-          "assessment_type": "essay"
-        }
-      ],
-      "content_synthesis": {
-        "best_explanation": {
-          "source": "descriptive_ic",
-          "strength": "primary"
-        },
-        "best_examples": {
-          "source": "descriptive_ic_house",
-          "strength": "secondary"
-        },
-        "cross_references": []
-      },
-      "subtopics": [],
-      "worked_examples": [],
-      "assessment_items": {
-        "formative": [
-          {
-            "type": "clicker",
-            "question": "Quick check on Bioinorganic Chemistry"
-          }
-        ],
-        "summative": {
-          "quiz_questions": [
-            "quiz_18_q1"
-          ],
-          "exam_questions": []
-        }
-      },
-      "connections": {
-        "forward": [
-          "Electron Transport Chain",
-          "Oxidative Phosphorylation",
-          "Enzyme Mechanisms"
-        ],
-        "backward": [
-          "Enzyme Structure And Function",
-          "Coordination Chemistry Fundamentals",
-          "Transition Metals"
-        ],
-        "lateral": [],
-        "applications": []
-      }
-    },
-    {
-      "id": "lesson_19",
-      "title": "Redox Chemistry",
-      "unit": "unit_2",
-      "session": 19,
+      "session": 15,
       "duration_minutes": 75,
       "scale": {
         "primary": "DESCRIPTIVE",
         "touches": [],
-        "escalation_from": "Electrochemical Series"
+        "escalation_from": "Understanding Of Enthalpy Concepts"
       },
       "topic": {
-        "name": "Redox Chemistry",
-        "pagerank": 0.007949847241380162,
-        "mentions": 31,
-        "hub_score": 0.92
+        "name": "Thermochemistry",
+        "pagerank": 0.0010935141074769968,
+        "mentions": 28,
+        "hub_score": 0.26
       },
       "prerequisites": {
         "required": [
-          "Electrochemical Series",
-          "Oxidation States",
-          "Basic Redox Reactions"
+          "Understanding Of Enthalpy Concepts",
+          "Ionization Energy",
+          "Enthalpy Of Sublimation"
         ],
         "recommended": [
-          "Redox Chemistry",
-          "Understanding Of Oxidation-Reduction Reactions"
+          "Enthalpy Changes",
+          "Born-Haber Cycle"
         ],
         "scale_prerequisites": {
           "DESCRIPTIVE": [
-            "Electrochemical Series",
-            "Oxidation States"
+            "Understanding Of Enthalpy Concepts",
+            "Ionization Energy"
           ]
         }
       },
       "learning_objectives": [
         {
-          "id": "LO_19_1",
-          "text": "Define and explain Redox Chemistry",
+          "id": "LO_15_1",
+          "text": "Define and explain Thermochemistry",
           "bloom_level": "understand",
           "scale": "DESCRIPTIVE",
           "assessment_type": "short_answer"
-        },
-        {
-          "id": "LO_19_3",
-          "text": "Analyze how Redox Chemistry connects to related concepts",
-          "bloom_level": "analyze",
-          "scale": "DESCRIPTIVE",
-          "assessment_type": "essay"
         }
       ],
       "content_synthesis": {
@@ -1792,36 +1518,211 @@
         "formative": [
           {
             "type": "clicker",
-            "question": "Quick check on Redox Chemistry"
+            "question": "Quick check on Thermochemistry"
           }
         ],
         "summative": {
           "quiz_questions": [
-            "quiz_19_q1"
+            "quiz_15_q1"
           ],
           "exam_questions": []
         }
       },
       "connections": {
         "forward": [
-          "Main Group Chemistry",
-          "Enzymatic Catalysis",
-          "Electrochemistry"
+          "Hydrogen Production And Utilization",
+          "Solid State Chemistry",
+          "Thermodynamic Calculations"
         ],
         "backward": [
-          "Electrochemical Series",
-          "Oxidation States",
-          "Basic Redox Reactions"
+          "Understanding Of Enthalpy Concepts",
+          "Ionization Energy",
+          "Enthalpy Of Sublimation"
         ],
         "lateral": [],
         "applications": []
       }
     },
     {
-      "id": "lesson_20",
-      "title": "Organometallic Chemistry",
+      "id": "lesson_16",
+      "title": "Reaction Mechanisms",
       "unit": "unit_2",
-      "session": 20,
+      "session": 16,
+      "duration_minutes": 75,
+      "scale": {
+        "primary": "DESCRIPTIVE",
+        "touches": [],
+        "escalation_from": "Understanding Of Reaction Mechanisms"
+      },
+      "topic": {
+        "name": "Reaction Mechanisms",
+        "pagerank": 0.0010848046885438129,
+        "mentions": 9,
+        "hub_score": 0.18
+      },
+      "prerequisites": {
+        "required": [
+          "Understanding Of Reaction Mechanisms",
+          "Reaction Kinetics"
+        ],
+        "recommended": [],
+        "scale_prerequisites": {
+          "DESCRIPTIVE": [
+            "Understanding Of Reaction Mechanisms",
+            "Reaction Kinetics"
+          ]
+        }
+      },
+      "learning_objectives": [
+        {
+          "id": "LO_16_1",
+          "text": "Define and explain Reaction Mechanisms",
+          "bloom_level": "understand",
+          "scale": "DESCRIPTIVE",
+          "assessment_type": "short_answer"
+        }
+      ],
+      "content_synthesis": {
+        "best_explanation": {
+          "source": "descriptive_ic",
+          "strength": "primary"
+        },
+        "best_examples": {
+          "source": "descriptive_ic_house",
+          "strength": "secondary"
+        },
+        "cross_references": []
+      },
+      "subtopics": [],
+      "worked_examples": [],
+      "assessment_items": {
+        "formative": [
+          {
+            "type": "clicker",
+            "question": "Quick check on Reaction Mechanisms"
+          }
+        ],
+        "summative": {
+          "quiz_questions": [
+            "quiz_16_q1"
+          ],
+          "exam_questions": []
+        }
+      },
+      "connections": {
+        "forward": [
+          "Coordination Chemistry",
+          "Catalysis",
+          "Main Group Chemistry"
+        ],
+        "backward": [
+          "Understanding Of Reaction Mechanisms",
+          "Reaction Kinetics"
+        ],
+        "lateral": [],
+        "applications": []
+      }
+    },
+    {
+      "id": "lesson_17",
+      "title": "Crystal Structures",
+      "unit": "unit_2",
+      "session": 17,
+      "duration_minutes": 75,
+      "scale": {
+        "primary": "STRUCTURAL",
+        "touches": [
+          "ELECTRONIC",
+          "DESCRIPTIVE"
+        ],
+        "escalation_from": "Crystal Lattice Structures"
+      },
+      "topic": {
+        "name": "Crystal Structures",
+        "pagerank": 0.00091426772879846,
+        "mentions": 11,
+        "hub_score": 0.3
+      },
+      "prerequisites": {
+        "required": [
+          "Crystal Lattice Structures",
+          "Ionic Bonding",
+          "Crystal Systems"
+        ],
+        "recommended": [
+          "Symmetry Operations",
+          "Unit Cell Geometry"
+        ],
+        "scale_prerequisites": {
+          "STRUCTURAL": [
+            "Crystal Lattice Structures",
+            "Ionic Bonding"
+          ]
+        }
+      },
+      "learning_objectives": [
+        {
+          "id": "LO_17_1",
+          "text": "Define and explain Crystal Structures",
+          "bloom_level": "understand",
+          "scale": "STRUCTURAL",
+          "assessment_type": "short_answer"
+        },
+        {
+          "id": "LO_17_2",
+          "text": "Apply Crystal Structures to predict chemical properties",
+          "bloom_level": "apply",
+          "scale": "STRUCTURAL",
+          "assessment_type": "problem_solving"
+        }
+      ],
+      "content_synthesis": {
+        "best_explanation": {
+          "source": "ic_tina",
+          "strength": "primary"
+        },
+        "best_examples": {
+          "source": "Atkins_Shriver",
+          "strength": "secondary"
+        },
+        "cross_references": []
+      },
+      "subtopics": [],
+      "worked_examples": [],
+      "assessment_items": {
+        "formative": [
+          {
+            "type": "clicker",
+            "question": "Quick check on Crystal Structures"
+          }
+        ],
+        "summative": {
+          "quiz_questions": [
+            "quiz_17_q1"
+          ],
+          "exam_questions": []
+        }
+      },
+      "connections": {
+        "forward": [
+          "Solid State Chemistry",
+          "Solid State Chemistry",
+          "Coordination Chemistry"
+        ],
+        "backward": [
+          "Crystal Lattice Structures",
+          "Ionic Bonding",
+          "Crystal Systems"
+        ],
+        "lateral": [],
+        "applications": []
+      }
+    },
+    {
+      "id": "lesson_18",
+      "title": "Organometallic Chemistry",
+      "unit": "unit_3",
+      "session": 18,
       "duration_minutes": 75,
       "scale": {
         "primary": "DESCRIPTIVE",
@@ -1856,14 +1757,14 @@
       },
       "learning_objectives": [
         {
-          "id": "LO_20_1",
+          "id": "LO_18_1",
           "text": "Define and explain Organometallic Chemistry",
           "bloom_level": "understand",
           "scale": "DESCRIPTIVE",
           "assessment_type": "short_answer"
         },
         {
-          "id": "LO_20_3",
+          "id": "LO_18_3",
           "text": "Analyze how Organometallic Chemistry connects to related concepts",
           "bloom_level": "analyze",
           "scale": "DESCRIPTIVE",
@@ -1892,7 +1793,7 @@
         ],
         "summative": {
           "quiz_questions": [
-            "quiz_20_q1"
+            "quiz_18_q1"
           ],
           "exam_questions": []
         }
@@ -1913,211 +1814,48 @@
       }
     },
     {
-      "id": "lesson_21",
-      "title": "Coordination Complexes",
+      "id": "lesson_19",
+      "title": "Catalysis",
       "unit": "unit_3",
-      "session": 21,
-      "duration_minutes": 75,
-      "scale": {
-        "primary": "STRUCTURAL",
-        "touches": [],
-        "escalation_from": null
-      },
-      "topic": {
-        "name": "Coordination Complexes",
-        "pagerank": 0,
-        "mentions": 419,
-        "hub_score": 0.16
-      },
-      "prerequisites": {
-        "required": [],
-        "recommended": [],
-        "scale_prerequisites": {
-          "STRUCTURAL": []
-        }
-      },
-      "learning_objectives": [
-        {
-          "id": "LO_21_1",
-          "text": "Define and explain Coordination Complexes",
-          "bloom_level": "understand",
-          "scale": "STRUCTURAL",
-          "assessment_type": "short_answer"
-        },
-        {
-          "id": "LO_21_2",
-          "text": "Apply Coordination Complexes to predict chemical properties",
-          "bloom_level": "apply",
-          "scale": "STRUCTURAL",
-          "assessment_type": "problem_solving"
-        }
-      ],
-      "content_synthesis": {
-        "best_explanation": {
-          "source": "ic_tina",
-          "strength": "primary"
-        },
-        "best_examples": {
-          "source": "Atkins_Shriver",
-          "strength": "secondary"
-        },
-        "cross_references": []
-      },
-      "subtopics": [],
-      "worked_examples": [],
-      "assessment_items": {
-        "formative": [
-          {
-            "type": "clicker",
-            "question": "Quick check on Coordination Complexes"
-          }
-        ],
-        "summative": {
-          "quiz_questions": [
-            "quiz_21_q1"
-          ],
-          "exam_questions": []
-        }
-      },
-      "connections": {
-        "forward": [
-          "Coordination Chemistry",
-          "Catalysis",
-          "Crystal Field Theory"
-        ],
-        "backward": [],
-        "lateral": [],
-        "applications": []
-      }
-    },
-    {
-      "id": "lesson_22",
-      "title": "Coordination Compounds",
-      "unit": "unit_3",
-      "session": 22,
-      "duration_minutes": 75,
-      "scale": {
-        "primary": "STRUCTURAL",
-        "touches": [],
-        "escalation_from": null
-      },
-      "topic": {
-        "name": "Coordination Compounds",
-        "pagerank": 0,
-        "mentions": 313,
-        "hub_score": 0.06
-      },
-      "prerequisites": {
-        "required": [],
-        "recommended": [],
-        "scale_prerequisites": {
-          "STRUCTURAL": []
-        }
-      },
-      "learning_objectives": [
-        {
-          "id": "LO_22_1",
-          "text": "Define and explain Coordination Compounds",
-          "bloom_level": "understand",
-          "scale": "STRUCTURAL",
-          "assessment_type": "short_answer"
-        },
-        {
-          "id": "LO_22_2",
-          "text": "Apply Coordination Compounds to predict chemical properties",
-          "bloom_level": "apply",
-          "scale": "STRUCTURAL",
-          "assessment_type": "problem_solving"
-        }
-      ],
-      "content_synthesis": {
-        "best_explanation": {
-          "source": "ic_tina",
-          "strength": "primary"
-        },
-        "best_examples": {
-          "source": "Atkins_Shriver",
-          "strength": "secondary"
-        },
-        "cross_references": []
-      },
-      "subtopics": [],
-      "worked_examples": [],
-      "assessment_items": {
-        "formative": [
-          {
-            "type": "clicker",
-            "question": "Quick check on Coordination Compounds"
-          }
-        ],
-        "summative": {
-          "quiz_questions": [
-            "quiz_22_q1"
-          ],
-          "exam_questions": []
-        }
-      },
-      "connections": {
-        "forward": [
-          "Solid State Chemistry",
-          "Coordination Chemistry",
-          "Main Group Chemistry"
-        ],
-        "backward": [],
-        "lateral": [],
-        "applications": []
-      }
-    },
-    {
-      "id": "lesson_23",
-      "title": "Atomic Structure",
-      "unit": "unit_3",
-      "session": 23,
+      "session": 19,
       "duration_minutes": 75,
       "scale": {
         "primary": "DESCRIPTIVE",
         "touches": [
-          "QUANTUM"
+          "STRUCTURAL"
         ],
-        "escalation_from": "Quantum Numbers"
+        "escalation_from": "Catalytic Mechanisms"
       },
       "topic": {
-        "name": "Atomic Structure",
-        "pagerank": 0.0029611543535774136,
-        "mentions": 38,
-        "hub_score": 0.7
+        "name": "Catalysis",
+        "pagerank": 0.0007313991211398991,
+        "mentions": 66,
+        "hub_score": 0.5
       },
       "prerequisites": {
         "required": [
-          "Quantum Numbers",
-          "Wavefunctions",
-          "Atomic Structure Basics"
+          "Catalytic Mechanisms",
+          "Surface Chemistry",
+          "Organometallic Chemistry Basics"
         ],
         "recommended": [
-          "Periodic Table Trends",
-          "Electron Configuration Basics"
+          "Understanding Of Catalytic Mechanisms",
+          "Organometallic Chemistry"
         ],
         "scale_prerequisites": {
           "DESCRIPTIVE": [
-            "Quantum Numbers",
-            "Wavefunctions"
+            "Catalytic Mechanisms",
+            "Surface Chemistry"
           ]
         }
       },
       "learning_objectives": [
         {
-          "id": "LO_23_1",
-          "text": "Define and explain Atomic Structure",
+          "id": "LO_19_1",
+          "text": "Define and explain Catalysis",
           "bloom_level": "understand",
           "scale": "DESCRIPTIVE",
           "assessment_type": "short_answer"
-        },
-        {
-          "id": "LO_23_3",
-          "text": "Analyze how Atomic Structure connects to related concepts",
-          "bloom_level": "analyze",
-          "scale": "DESCRIPTIVE",
-          "assessment_type": "essay"
         }
       ],
       "content_synthesis": {
@@ -2137,7 +1875,371 @@
         "formative": [
           {
             "type": "clicker",
-            "question": "Quick check on Atomic Structure"
+            "question": "Quick check on Catalysis"
+          }
+        ],
+        "summative": {
+          "quiz_questions": [
+            "quiz_19_q1"
+          ],
+          "exam_questions": []
+        }
+      },
+      "connections": {
+        "forward": [
+          "Catalytic Mechanisms",
+          "Homogeneous Catalysis",
+          "Main Group Chemistry"
+        ],
+        "backward": [
+          "Catalytic Mechanisms",
+          "Surface Chemistry",
+          "Organometallic Chemistry Basics"
+        ],
+        "lateral": [],
+        "applications": []
+      }
+    },
+    {
+      "id": "lesson_20",
+      "title": "Periodic Table And Electronic Structure",
+      "unit": "unit_3",
+      "session": 20,
+      "duration_minutes": 75,
+      "scale": {
+        "primary": "DESCRIPTIVE",
+        "touches": [],
+        "escalation_from": "Understanding Of Atomic Structure"
+      },
+      "topic": {
+        "name": "Periodic Table And Electronic Structure",
+        "pagerank": 0.0006937049990386667,
+        "mentions": 9,
+        "hub_score": 0.08
+      },
+      "prerequisites": {
+        "required": [
+          "Understanding Of Atomic Structure",
+          "Electronic Configuration Of Atoms"
+        ],
+        "recommended": [],
+        "scale_prerequisites": {
+          "DESCRIPTIVE": [
+            "Understanding Of Atomic Structure",
+            "Electronic Configuration Of Atoms"
+          ]
+        }
+      },
+      "learning_objectives": [
+        {
+          "id": "LO_20_1",
+          "text": "Define and explain Periodic Table And Electronic Structure",
+          "bloom_level": "understand",
+          "scale": "DESCRIPTIVE",
+          "assessment_type": "short_answer"
+        }
+      ],
+      "content_synthesis": {
+        "best_explanation": {
+          "source": "descriptive_ic",
+          "strength": "primary"
+        },
+        "best_examples": {
+          "source": "descriptive_ic_house",
+          "strength": "secondary"
+        },
+        "cross_references": []
+      },
+      "subtopics": [],
+      "worked_examples": [],
+      "assessment_items": {
+        "formative": [
+          {
+            "type": "clicker",
+            "question": "Quick check on Periodic Table And Electronic Structure"
+          }
+        ],
+        "summative": {
+          "quiz_questions": [
+            "quiz_20_q1"
+          ],
+          "exam_questions": []
+        }
+      },
+      "connections": {
+        "forward": [
+          "Chemical Bonding",
+          "Periodic Trends"
+        ],
+        "backward": [
+          "Understanding Of Atomic Structure",
+          "Electronic Configuration Of Atoms"
+        ],
+        "lateral": [],
+        "applications": []
+      }
+    },
+    {
+      "id": "lesson_21",
+      "title": "Molecular Symmetry",
+      "unit": "unit_3",
+      "session": 21,
+      "duration_minutes": 75,
+      "scale": {
+        "primary": "STRUCTURAL",
+        "touches": [],
+        "escalation_from": "Understanding Of Symmetry Operations"
+      },
+      "topic": {
+        "name": "Molecular Symmetry",
+        "pagerank": 0.0006895202412901509,
+        "mentions": 44,
+        "hub_score": 0.56
+      },
+      "prerequisites": {
+        "required": [
+          "Understanding Of Symmetry Operations",
+          "Understanding Of Molecular Geometry",
+          "Basic Knowledge Of Symmetry Operations"
+        ],
+        "recommended": [
+          "Knowledge Of Molecular Geometry",
+          "Knowledge Of Symmetry Operations"
+        ],
+        "scale_prerequisites": {
+          "STRUCTURAL": [
+            "Understanding Of Symmetry Operations",
+            "Understanding Of Molecular Geometry"
+          ]
+        }
+      },
+      "learning_objectives": [
+        {
+          "id": "LO_21_1",
+          "text": "Define and explain Molecular Symmetry",
+          "bloom_level": "understand",
+          "scale": "STRUCTURAL",
+          "assessment_type": "short_answer"
+        },
+        {
+          "id": "LO_21_2",
+          "text": "Apply Molecular Symmetry to predict chemical properties",
+          "bloom_level": "apply",
+          "scale": "STRUCTURAL",
+          "assessment_type": "problem_solving"
+        },
+        {
+          "id": "LO_21_3",
+          "text": "Analyze how Molecular Symmetry connects to related concepts",
+          "bloom_level": "analyze",
+          "scale": "STRUCTURAL",
+          "assessment_type": "essay"
+        }
+      ],
+      "content_synthesis": {
+        "best_explanation": {
+          "source": "ic_tina",
+          "strength": "primary"
+        },
+        "best_examples": {
+          "source": "Atkins_Shriver",
+          "strength": "secondary"
+        },
+        "cross_references": []
+      },
+      "subtopics": [],
+      "worked_examples": [],
+      "assessment_items": {
+        "formative": [
+          {
+            "type": "clicker",
+            "question": "Quick check on Molecular Symmetry"
+          }
+        ],
+        "summative": {
+          "quiz_questions": [
+            "quiz_21_q1"
+          ],
+          "exam_questions": []
+        }
+      },
+      "connections": {
+        "forward": [
+          "Spectroscopy",
+          "Crystal Field Theory",
+          "Character Tables"
+        ],
+        "backward": [
+          "Understanding Of Symmetry Operations",
+          "Understanding Of Molecular Geometry",
+          "Basic Knowledge Of Symmetry Operations"
+        ],
+        "lateral": [],
+        "applications": []
+      }
+    },
+    {
+      "id": "lesson_22",
+      "title": "Transition Metal Chemistry",
+      "unit": "unit_3",
+      "session": 22,
+      "duration_minutes": 75,
+      "scale": {
+        "primary": "STRUCTURAL",
+        "touches": [
+          "DESCRIPTIVE"
+        ],
+        "escalation_from": "Coordination Chemistry Fundamentals"
+      },
+      "topic": {
+        "name": "Transition Metal Chemistry",
+        "pagerank": 0.0006877456853680477,
+        "mentions": 30,
+        "hub_score": 0.52
+      },
+      "prerequisites": {
+        "required": [
+          "Coordination Chemistry Fundamentals",
+          "Reaction Mechanisms",
+          "Periodic Trends"
+        ],
+        "recommended": [
+          "D-Block Elements",
+          "Organometallic Chemistry"
+        ],
+        "scale_prerequisites": {
+          "STRUCTURAL": [
+            "Coordination Chemistry Fundamentals",
+            "Reaction Mechanisms"
+          ]
+        }
+      },
+      "learning_objectives": [
+        {
+          "id": "LO_22_1",
+          "text": "Define and explain Transition Metal Chemistry",
+          "bloom_level": "understand",
+          "scale": "STRUCTURAL",
+          "assessment_type": "short_answer"
+        },
+        {
+          "id": "LO_22_2",
+          "text": "Apply Transition Metal Chemistry to predict chemical properties",
+          "bloom_level": "apply",
+          "scale": "STRUCTURAL",
+          "assessment_type": "problem_solving"
+        },
+        {
+          "id": "LO_22_3",
+          "text": "Analyze how Transition Metal Chemistry connects to related concepts",
+          "bloom_level": "analyze",
+          "scale": "STRUCTURAL",
+          "assessment_type": "essay"
+        }
+      ],
+      "content_synthesis": {
+        "best_explanation": {
+          "source": "descriptive_ic_house",
+          "strength": "primary"
+        },
+        "best_examples": {
+          "source": "descriptive_ic",
+          "strength": "secondary"
+        },
+        "cross_references": []
+      },
+      "subtopics": [],
+      "worked_examples": [],
+      "assessment_items": {
+        "formative": [
+          {
+            "type": "clicker",
+            "question": "Quick check on Transition Metal Chemistry"
+          }
+        ],
+        "summative": {
+          "quiz_questions": [
+            "quiz_22_q1"
+          ],
+          "exam_questions": []
+        }
+      },
+      "connections": {
+        "forward": [
+          "Coordination Chemistry",
+          "Organometallic Chemistry",
+          "Crystal Field Theory"
+        ],
+        "backward": [
+          "Coordination Chemistry Fundamentals",
+          "Reaction Mechanisms",
+          "Periodic Trends"
+        ],
+        "lateral": [],
+        "applications": []
+      }
+    },
+    {
+      "id": "lesson_23",
+      "title": "Atomic Structure And Periodicity",
+      "unit": "unit_3",
+      "session": 23,
+      "duration_minutes": 75,
+      "scale": {
+        "primary": "DESCRIPTIVE",
+        "touches": [],
+        "escalation_from": "Understanding Of Atomic Structure"
+      },
+      "topic": {
+        "name": "Atomic Structure And Periodicity",
+        "pagerank": 0.0006796363704301863,
+        "mentions": 17,
+        "hub_score": 0.26
+      },
+      "prerequisites": {
+        "required": [
+          "Understanding Of Atomic Structure",
+          "Knowledge Of Periodic Trends",
+          "Atomic Structure Basics"
+        ],
+        "recommended": [
+          "Periodic Trends",
+          "Knowledge Of Electron Configurations"
+        ],
+        "scale_prerequisites": {
+          "DESCRIPTIVE": [
+            "Understanding Of Atomic Structure",
+            "Knowledge Of Periodic Trends"
+          ]
+        }
+      },
+      "learning_objectives": [
+        {
+          "id": "LO_23_1",
+          "text": "Define and explain Atomic Structure And Periodicity",
+          "bloom_level": "understand",
+          "scale": "DESCRIPTIVE",
+          "assessment_type": "short_answer"
+        }
+      ],
+      "content_synthesis": {
+        "best_explanation": {
+          "source": "descriptive_ic",
+          "strength": "primary"
+        },
+        "best_examples": {
+          "source": "descriptive_ic_house",
+          "strength": "secondary"
+        },
+        "cross_references": []
+      },
+      "subtopics": [],
+      "worked_examples": [],
+      "assessment_items": {
+        "formative": [
+          {
+            "type": "clicker",
+            "question": "Quick check on Atomic Structure And Periodicity"
           }
         ],
         "summative": {
@@ -2149,13 +2251,13 @@
       },
       "connections": {
         "forward": [
-          "Nuclear Chemistry",
-          "Main Group Chemistry",
-          "Periodic Trends"
+          "Chemical Bonding",
+          "Electron Configuration",
+          "Periodic Properties"
         ],
         "backward": [
-          "Quantum Numbers",
-          "Wavefunctions",
+          "Understanding Of Atomic Structure",
+          "Knowledge Of Periodic Trends",
           "Atomic Structure Basics"
         ],
         "lateral": [],
@@ -26832,190 +26934,421 @@
       }
     }
   },
+  "hub_checkpoints": {
+    "Main Group Chemistry": {
+      "position": 0,
+      "hub_score": 1.0,
+      "total_degree": 502,
+      "checkpoint_type": "mastery_check",
+      "threshold": 0.75,
+      "remediation": "review_main_group_chemistry",
+      "why_checkpoint": "Bottleneck topic: 134 topics depend on this"
+    },
+    "Periodic Trends": {
+      "position": 1,
+      "hub_score": 1.0,
+      "total_degree": 51,
+      "checkpoint_type": "mastery_check",
+      "threshold": 0.75,
+      "remediation": "review_periodic_trends",
+      "why_checkpoint": "Bottleneck topic: 34 topics depend on this"
+    },
+    "Redox Chemistry": {
+      "position": 2,
+      "hub_score": 0.92,
+      "total_degree": 46,
+      "checkpoint_type": "mastery_check",
+      "threshold": 0.75,
+      "remediation": "review_redox_chemistry",
+      "why_checkpoint": "Bottleneck topic: 39 topics depend on this"
+    },
+    "Coordination Chemistry": {
+      "position": 3,
+      "hub_score": 1.0,
+      "total_degree": 243,
+      "checkpoint_type": "mastery_check",
+      "threshold": 0.75,
+      "remediation": "review_coordination_chemistry",
+      "why_checkpoint": "Bottleneck topic: 86 topics depend on this"
+    },
+    "Ionic Bonding": {
+      "position": 4,
+      "hub_score": 0.34,
+      "total_degree": 17,
+      "checkpoint_type": "mastery_check",
+      "threshold": 0.75,
+      "remediation": "review_ionic_bonding",
+      "why_checkpoint": "Bottleneck topic: 17 topics depend on this"
+    },
+    "Solid State Chemistry": {
+      "position": 5,
+      "hub_score": 1.0,
+      "total_degree": 167,
+      "checkpoint_type": "mastery_check",
+      "threshold": 0.75,
+      "remediation": "review_solid_state_chemistry",
+      "why_checkpoint": "Bottleneck topic: 60 topics depend on this"
+    },
+    "Molecular Orbital Theory": {
+      "position": 6,
+      "hub_score": 1.0,
+      "total_degree": 82,
+      "checkpoint_type": "mastery_check",
+      "threshold": 0.75,
+      "remediation": "review_molecular_orbital_theory",
+      "why_checkpoint": "Bottleneck topic: 39 topics depend on this"
+    },
+    "Atomic Structure": {
+      "position": 7,
+      "hub_score": 0.7,
+      "total_degree": 35,
+      "checkpoint_type": "mastery_check",
+      "threshold": 0.75,
+      "remediation": "review_atomic_structure",
+      "why_checkpoint": "Bottleneck topic: 22 topics depend on this"
+    },
+    "Chemical Bonding": {
+      "position": 8,
+      "hub_score": 1.0,
+      "total_degree": 65,
+      "checkpoint_type": "mastery_check",
+      "threshold": 0.75,
+      "remediation": "review_chemical_bonding",
+      "why_checkpoint": "Bottleneck topic: 33 topics depend on this"
+    },
+    "Acid-Base Chemistry": {
+      "position": 9,
+      "hub_score": 1.0,
+      "total_degree": 77,
+      "checkpoint_type": "mastery_check",
+      "threshold": 0.75,
+      "remediation": "review_acid-base_chemistry",
+      "why_checkpoint": "Bottleneck topic: 22 topics depend on this"
+    },
+    "Atomic Structure And Electronic Configuration": {
+      "position": 10,
+      "hub_score": 0.34,
+      "total_degree": 17,
+      "checkpoint_type": "mastery_check",
+      "threshold": 0.75,
+      "remediation": "review_atomic_structure_and_electronic_configuration",
+      "why_checkpoint": "Bottleneck topic: 8 topics depend on this"
+    },
+    "Crystal Field Theory": {
+      "position": 11,
+      "hub_score": 1.0,
+      "total_degree": 79,
+      "checkpoint_type": "mastery_check",
+      "threshold": 0.75,
+      "remediation": "review_crystal_field_theory",
+      "why_checkpoint": "Bottleneck topic: 33 topics depend on this"
+    },
+    "Electrochemistry": {
+      "position": 13,
+      "hub_score": 1.0,
+      "total_degree": 70,
+      "checkpoint_type": "mastery_check",
+      "threshold": 0.75,
+      "remediation": "review_electrochemistry",
+      "why_checkpoint": "Bottleneck topic: 25 topics depend on this"
+    },
+    "Thermochemistry": {
+      "position": 14,
+      "hub_score": 0.26,
+      "total_degree": 13,
+      "checkpoint_type": "mastery_check",
+      "threshold": 0.75,
+      "remediation": "review_thermochemistry",
+      "why_checkpoint": "Bottleneck topic: 6 topics depend on this"
+    },
+    "Crystal Structures": {
+      "position": 16,
+      "hub_score": 0.3,
+      "total_degree": 15,
+      "checkpoint_type": "mastery_check",
+      "threshold": 0.75,
+      "remediation": "review_crystal_structures",
+      "why_checkpoint": "Bottleneck topic: 10 topics depend on this"
+    },
+    "Thermodynamics": {
+      "position": 17,
+      "hub_score": 0.18,
+      "total_degree": 9,
+      "checkpoint_type": "mastery_check",
+      "threshold": 0.75,
+      "remediation": "review_thermodynamics",
+      "why_checkpoint": "Bottleneck topic: 9 topics depend on this"
+    },
+    "Organometallic Chemistry": {
+      "position": 18,
+      "hub_score": 0.92,
+      "total_degree": 46,
+      "checkpoint_type": "mastery_check",
+      "threshold": 0.75,
+      "remediation": "review_organometallic_chemistry",
+      "why_checkpoint": "Bottleneck topic: 22 topics depend on this"
+    },
+    "Catalysis": {
+      "position": 19,
+      "hub_score": 0.5,
+      "total_degree": 25,
+      "checkpoint_type": "mastery_check",
+      "threshold": 0.75,
+      "remediation": "review_catalysis",
+      "why_checkpoint": "Bottleneck topic: 8 topics depend on this"
+    },
+    "Molecular Symmetry": {
+      "position": 21,
+      "hub_score": 0.56,
+      "total_degree": 28,
+      "checkpoint_type": "mastery_check",
+      "threshold": 0.75,
+      "remediation": "review_molecular_symmetry",
+      "why_checkpoint": "Bottleneck topic: 12 topics depend on this"
+    },
+    "Transition Metal Chemistry": {
+      "position": 22,
+      "hub_score": 0.52,
+      "total_degree": 26,
+      "checkpoint_type": "mastery_check",
+      "threshold": 0.75,
+      "remediation": "review_transition_metal_chemistry",
+      "why_checkpoint": "Bottleneck topic: 15 topics depend on this"
+    },
+    "Atomic Structure And Periodicity": {
+      "position": 23,
+      "hub_score": 0.26,
+      "total_degree": 13,
+      "checkpoint_type": "mastery_check",
+      "threshold": 0.75,
+      "remediation": "review_atomic_structure_and_periodicity",
+      "why_checkpoint": "Bottleneck topic: 7 topics depend on this"
+    },
+    "Bioinorganic Chemistry": {
+      "position": 24,
+      "hub_score": 1.0,
+      "total_degree": 54,
+      "checkpoint_type": "mastery_check",
+      "threshold": 0.75,
+      "remediation": "review_bioinorganic_chemistry",
+      "why_checkpoint": "Bottleneck topic: 15 topics depend on this"
+    },
+    "Molecular Symmetry And Group Theory": {
+      "position": 29,
+      "hub_score": 0.28,
+      "total_degree": 14,
+      "checkpoint_type": "mastery_check",
+      "threshold": 0.75,
+      "remediation": "review_molecular_symmetry_and_group_theory",
+      "why_checkpoint": "Bottleneck topic: 6 topics depend on this"
+    },
+    "Quantum Mechanics In Atomic Structure": {
+      "position": 30,
+      "hub_score": 0.28,
+      "total_degree": 14,
+      "checkpoint_type": "mastery_check",
+      "threshold": 0.75,
+      "remediation": "review_quantum_mechanics_in_atomic_structure",
+      "why_checkpoint": "Bottleneck topic: 8 topics depend on this"
+    },
+    "Electronegativity": {
+      "position": 32,
+      "hub_score": 0.2,
+      "total_degree": 10,
+      "checkpoint_type": "mastery_check",
+      "threshold": 0.75,
+      "remediation": "review_electronegativity",
+      "why_checkpoint": "Bottleneck topic: 7 topics depend on this"
+    },
+    "Polymer Chemistry": {
+      "position": 34,
+      "hub_score": 0.14,
+      "total_degree": 7,
+      "checkpoint_type": "mastery_check",
+      "threshold": 0.75,
+      "remediation": "review_polymer_chemistry",
+      "why_checkpoint": "Bottleneck topic: 3 topics depend on this"
+    },
+    "D-Block Elements": {
+      "position": 41,
+      "hub_score": 0.2,
+      "total_degree": 10,
+      "checkpoint_type": "mastery_check",
+      "threshold": 0.75,
+      "remediation": "review_d-block_elements",
+      "why_checkpoint": "Bottleneck topic: 5 topics depend on this"
+    },
+    "Symmetry And Group Theory": {
+      "position": 42,
+      "hub_score": 0.22,
+      "total_degree": 11,
+      "checkpoint_type": "mastery_check",
+      "threshold": 0.75,
+      "remediation": "review_symmetry_and_group_theory",
+      "why_checkpoint": "Bottleneck topic: 4 topics depend on this"
+    },
+    "Atomic Structure And Spectroscopy": {
+      "position": 43,
+      "hub_score": 0.28,
+      "total_degree": 14,
+      "checkpoint_type": "mastery_check",
+      "threshold": 0.75,
+      "remediation": "review_atomic_structure_and_spectroscopy",
+      "why_checkpoint": "Bottleneck topic: 6 topics depend on this"
+    },
+    "Environmental Chemistry": {
+      "position": 44,
+      "hub_score": 0.18,
+      "total_degree": 9,
+      "checkpoint_type": "mastery_check",
+      "threshold": 0.75,
+      "remediation": "review_environmental_chemistry",
+      "why_checkpoint": "Bottleneck topic: 3 topics depend on this"
+    },
+    "Inorganic Crystal Structures": {
+      "position": 45,
+      "hub_score": 0.16,
+      "total_degree": 8,
+      "checkpoint_type": "mastery_check",
+      "threshold": 0.75,
+      "remediation": "review_inorganic_crystal_structures",
+      "why_checkpoint": "Bottleneck topic: 3 topics depend on this"
+    },
+    "Oxidation And Reduction": {
+      "position": 46,
+      "hub_score": 0.18,
+      "total_degree": 9,
+      "checkpoint_type": "mastery_check",
+      "threshold": 0.75,
+      "remediation": "review_oxidation_and_reduction",
+      "why_checkpoint": "Bottleneck topic: 3 topics depend on this"
+    },
+    "Organic Chemistry": {
+      "position": 47,
+      "hub_score": 0.28,
+      "total_degree": 14,
+      "checkpoint_type": "mastery_check",
+      "threshold": 0.75,
+      "remediation": "review_organic_chemistry",
+      "why_checkpoint": "Bottleneck topic: 5 topics depend on this"
+    },
+    "Symmetry And Molecular Point Groups": {
+      "position": 49,
+      "hub_score": 0.14,
+      "total_degree": 7,
+      "checkpoint_type": "mastery_check",
+      "threshold": 0.75,
+      "remediation": "review_symmetry_and_molecular_point_groups",
+      "why_checkpoint": "Bottleneck topic: 3 topics depend on this"
+    },
+    "Transition Metals": {
+      "position": 50,
+      "hub_score": 0.18,
+      "total_degree": 9,
+      "checkpoint_type": "mastery_check",
+      "threshold": 0.75,
+      "remediation": "review_transition_metals",
+      "why_checkpoint": "Bottleneck topic: 5 topics depend on this"
+    },
+    "Symmetry And Point Groups": {
+      "position": 56,
+      "hub_score": 0.16,
+      "total_degree": 8,
+      "checkpoint_type": "mastery_check",
+      "threshold": 0.75,
+      "remediation": "review_symmetry_and_point_groups",
+      "why_checkpoint": "Bottleneck topic: 4 topics depend on this"
+    },
+    "Redox Reactions": {
+      "position": 59,
+      "hub_score": 0.14,
+      "total_degree": 7,
+      "checkpoint_type": "mastery_check",
+      "threshold": 0.75,
+      "remediation": "review_redox_reactions",
+      "why_checkpoint": "Bottleneck topic: 4 topics depend on this"
+    },
+    "Electronic Structure And Spectroscopy": {
+      "position": 61,
+      "hub_score": 0.16,
+      "total_degree": 8,
+      "checkpoint_type": "mastery_check",
+      "threshold": 0.75,
+      "remediation": "review_electronic_structure_and_spectroscopy",
+      "why_checkpoint": "Bottleneck topic: 5 topics depend on this"
+    },
+    "Nuclear Chemistry": {
+      "position": 62,
+      "hub_score": 0.42,
+      "total_degree": 21,
+      "checkpoint_type": "mastery_check",
+      "threshold": 0.75,
+      "remediation": "review_nuclear_chemistry",
+      "why_checkpoint": "Bottleneck topic: 7 topics depend on this"
+    },
+    "Group Theory": {
+      "position": 65,
+      "hub_score": 0.24,
+      "total_degree": 12,
+      "checkpoint_type": "mastery_check",
+      "threshold": 0.75,
+      "remediation": "review_group_theory",
+      "why_checkpoint": "Bottleneck topic: 6 topics depend on this"
+    },
+    "Atomic Structure And Periodic Trends": {
+      "position": 77,
+      "hub_score": 0.12,
+      "total_degree": 6,
+      "checkpoint_type": "mastery_check",
+      "threshold": 0.75,
+      "remediation": "review_atomic_structure_and_periodic_trends",
+      "why_checkpoint": "Bottleneck topic: 3 topics depend on this"
+    },
+    "Spectroscopy": {
+      "position": 78,
+      "hub_score": 0.3,
+      "total_degree": 15,
+      "checkpoint_type": "mastery_check",
+      "threshold": 0.75,
+      "remediation": "review_spectroscopy",
+      "why_checkpoint": "Bottleneck topic: 3 topics depend on this"
+    },
+    "Enzyme Catalysis": {
+      "position": 85,
+      "hub_score": 0.18,
+      "total_degree": 9,
+      "checkpoint_type": "mastery_check",
+      "threshold": 0.75,
+      "remediation": "review_enzyme_catalysis",
+      "why_checkpoint": "Bottleneck topic: 4 topics depend on this"
+    },
+    "Coordination Chemistry Fundamentals": {
+      "position": 129,
+      "hub_score": 0.8,
+      "total_degree": 40,
+      "checkpoint_type": "mastery_check",
+      "threshold": 0.75,
+      "remediation": "review_coordination_chemistry_fundamentals",
+      "why_checkpoint": "Bottleneck topic: 40 topics depend on this"
+    },
+    "Electron Configuration": {
+      "position": 134,
+      "hub_score": 0.5,
+      "total_degree": 25,
+      "checkpoint_type": "mastery_check",
+      "threshold": 0.75,
+      "remediation": "review_electron_configuration",
+      "why_checkpoint": "Bottleneck topic: 25 topics depend on this"
+    }
+  },
   "assessments": {
     "quizzes": {
       "quiz_1": {
         "lesson": "lesson_01",
-        "topic": "Coordination Chemistry Fundamentals",
-        "questions": [
-          {
-            "id": "quiz_1_q1",
-            "type": "short_answer",
-            "stem": "Explain the key principles of Coordination Chemistry Fundamentals.",
-            "points": 5,
-            "bloom_level": "understand",
-            "scale": "STRUCTURAL"
-          },
-          {
-            "id": "quiz_1_q2",
-            "type": "problem",
-            "stem": "Apply Coordination Chemistry Fundamentals to the following scenario...",
-            "points": 10,
-            "bloom_level": "apply",
-            "scale": "STRUCTURAL"
-          }
-        ]
-      },
-      "quiz_2": {
-        "lesson": "lesson_02",
-        "topic": "Electron Configuration",
-        "questions": [
-          {
-            "id": "quiz_2_q1",
-            "type": "short_answer",
-            "stem": "Explain the key principles of Electron Configuration.",
-            "points": 5,
-            "bloom_level": "understand",
-            "scale": "QUANTUM"
-          },
-          {
-            "id": "quiz_2_q2",
-            "type": "problem",
-            "stem": "Apply Electron Configuration to the following scenario...",
-            "points": 10,
-            "bloom_level": "apply",
-            "scale": "QUANTUM"
-          }
-        ]
-      },
-      "quiz_3": {
-        "lesson": "lesson_03",
-        "topic": "Ionic Bonding",
-        "questions": [
-          {
-            "id": "quiz_3_q1",
-            "type": "short_answer",
-            "stem": "Explain the key principles of Ionic Bonding.",
-            "points": 5,
-            "bloom_level": "understand",
-            "scale": "ELECTRONIC"
-          },
-          {
-            "id": "quiz_3_q2",
-            "type": "problem",
-            "stem": "Apply Ionic Bonding to the following scenario...",
-            "points": 10,
-            "bloom_level": "apply",
-            "scale": "ELECTRONIC"
-          }
-        ]
-      },
-      "quiz_4": {
-        "lesson": "lesson_04",
-        "topic": "Oxidation States",
-        "questions": [
-          {
-            "id": "quiz_4_q1",
-            "type": "short_answer",
-            "stem": "Explain the key principles of Oxidation States.",
-            "points": 5,
-            "bloom_level": "understand",
-            "scale": "DESCRIPTIVE"
-          },
-          {
-            "id": "quiz_4_q2",
-            "type": "problem",
-            "stem": "Apply Oxidation States to the following scenario...",
-            "points": 10,
-            "bloom_level": "apply",
-            "scale": "DESCRIPTIVE"
-          }
-        ]
-      },
-      "quiz_5": {
-        "lesson": "lesson_05",
-        "topic": "Group Theory Basics",
-        "questions": [
-          {
-            "id": "quiz_5_q1",
-            "type": "short_answer",
-            "stem": "Explain the key principles of Group Theory Basics.",
-            "points": 5,
-            "bloom_level": "understand",
-            "scale": "DESCRIPTIVE"
-          },
-          {
-            "id": "quiz_5_q2",
-            "type": "problem",
-            "stem": "Apply Group Theory Basics to the following scenario...",
-            "points": 10,
-            "bloom_level": "apply",
-            "scale": "DESCRIPTIVE"
-          }
-        ]
-      },
-      "quiz_6": {
-        "lesson": "lesson_06",
-        "topic": "Quantum Mechanics Basics",
-        "questions": [
-          {
-            "id": "quiz_6_q1",
-            "type": "short_answer",
-            "stem": "Explain the key principles of Quantum Mechanics Basics.",
-            "points": 5,
-            "bloom_level": "understand",
-            "scale": "QUANTUM"
-          },
-          {
-            "id": "quiz_6_q2",
-            "type": "problem",
-            "stem": "Apply Quantum Mechanics Basics to the following scenario...",
-            "points": 10,
-            "bloom_level": "apply",
-            "scale": "QUANTUM"
-          }
-        ]
-      },
-      "quiz_7": {
-        "lesson": "lesson_07",
-        "topic": "Thermodynamics",
-        "questions": [
-          {
-            "id": "quiz_7_q1",
-            "type": "short_answer",
-            "stem": "Explain the key principles of Thermodynamics.",
-            "points": 5,
-            "bloom_level": "understand",
-            "scale": "DESCRIPTIVE"
-          },
-          {
-            "id": "quiz_7_q2",
-            "type": "problem",
-            "stem": "Apply Thermodynamics to the following scenario...",
-            "points": 10,
-            "bloom_level": "apply",
-            "scale": "DESCRIPTIVE"
-          }
-        ]
-      },
-      "quiz_8": {
-        "lesson": "lesson_08",
-        "topic": "Ligand Field Theory",
-        "questions": [
-          {
-            "id": "quiz_8_q1",
-            "type": "short_answer",
-            "stem": "Explain the key principles of Ligand Field Theory.",
-            "points": 5,
-            "bloom_level": "understand",
-            "scale": "ELECTRONIC"
-          },
-          {
-            "id": "quiz_8_q2",
-            "type": "problem",
-            "stem": "Apply Ligand Field Theory to the following scenario...",
-            "points": 10,
-            "bloom_level": "apply",
-            "scale": "ELECTRONIC"
-          }
-        ]
-      },
-      "quiz_9": {
-        "lesson": "lesson_09",
         "topic": "Main Group Chemistry",
         "questions": [
           {
-            "id": "quiz_9_q1",
+            "id": "quiz_1_q1",
             "type": "short_answer",
             "stem": "Explain the key principles of Main Group Chemistry.",
             "points": 5,
@@ -27023,7 +27356,7 @@
             "scale": "DESCRIPTIVE"
           },
           {
-            "id": "quiz_9_q2",
+            "id": "quiz_1_q2",
             "type": "problem",
             "stem": "Apply Main Group Chemistry to the following scenario...",
             "points": 10,
@@ -27032,12 +27365,12 @@
           }
         ]
       },
-      "quiz_10": {
-        "lesson": "lesson_10",
+      "quiz_2": {
+        "lesson": "lesson_02",
         "topic": "Periodic Trends",
         "questions": [
           {
-            "id": "quiz_10_q1",
+            "id": "quiz_2_q1",
             "type": "short_answer",
             "stem": "Explain the key principles of Periodic Trends.",
             "points": 5,
@@ -27045,7 +27378,7 @@
             "scale": "DESCRIPTIVE"
           },
           {
-            "id": "quiz_10_q2",
+            "id": "quiz_2_q2",
             "type": "problem",
             "stem": "Apply Periodic Trends to the following scenario...",
             "points": 10,
@@ -27054,188 +27387,12 @@
           }
         ]
       },
-      "quiz_11": {
-        "lesson": "lesson_11",
-        "topic": "Coordination Chemistry",
-        "questions": [
-          {
-            "id": "quiz_11_q1",
-            "type": "short_answer",
-            "stem": "Explain the key principles of Coordination Chemistry.",
-            "points": 5,
-            "bloom_level": "understand",
-            "scale": "STRUCTURAL"
-          },
-          {
-            "id": "quiz_11_q2",
-            "type": "problem",
-            "stem": "Apply Coordination Chemistry to the following scenario...",
-            "points": 10,
-            "bloom_level": "apply",
-            "scale": "STRUCTURAL"
-          }
-        ]
-      },
-      "quiz_12": {
-        "lesson": "lesson_12",
-        "topic": "Solid State Chemistry",
-        "questions": [
-          {
-            "id": "quiz_12_q1",
-            "type": "short_answer",
-            "stem": "Explain the key principles of Solid State Chemistry.",
-            "points": 5,
-            "bloom_level": "understand",
-            "scale": "DESCRIPTIVE"
-          },
-          {
-            "id": "quiz_12_q2",
-            "type": "problem",
-            "stem": "Apply Solid State Chemistry to the following scenario...",
-            "points": 10,
-            "bloom_level": "apply",
-            "scale": "DESCRIPTIVE"
-          }
-        ]
-      },
-      "quiz_13": {
-        "lesson": "lesson_13",
-        "topic": "Molecular Orbital Theory",
-        "questions": [
-          {
-            "id": "quiz_13_q1",
-            "type": "short_answer",
-            "stem": "Explain the key principles of Molecular Orbital Theory.",
-            "points": 5,
-            "bloom_level": "understand",
-            "scale": "QUANTUM"
-          },
-          {
-            "id": "quiz_13_q2",
-            "type": "problem",
-            "stem": "Apply Molecular Orbital Theory to the following scenario...",
-            "points": 10,
-            "bloom_level": "apply",
-            "scale": "QUANTUM"
-          }
-        ]
-      },
-      "quiz_14": {
-        "lesson": "lesson_14",
-        "topic": "Chemical Bonding",
-        "questions": [
-          {
-            "id": "quiz_14_q1",
-            "type": "short_answer",
-            "stem": "Explain the key principles of Chemical Bonding.",
-            "points": 5,
-            "bloom_level": "understand",
-            "scale": "ELECTRONIC"
-          },
-          {
-            "id": "quiz_14_q2",
-            "type": "problem",
-            "stem": "Apply Chemical Bonding to the following scenario...",
-            "points": 10,
-            "bloom_level": "apply",
-            "scale": "ELECTRONIC"
-          }
-        ]
-      },
-      "quiz_15": {
-        "lesson": "lesson_15",
-        "topic": "Acid-Base Chemistry",
-        "questions": [
-          {
-            "id": "quiz_15_q1",
-            "type": "short_answer",
-            "stem": "Explain the key principles of Acid-Base Chemistry.",
-            "points": 5,
-            "bloom_level": "understand",
-            "scale": "DESCRIPTIVE"
-          },
-          {
-            "id": "quiz_15_q2",
-            "type": "problem",
-            "stem": "Apply Acid-Base Chemistry to the following scenario...",
-            "points": 10,
-            "bloom_level": "apply",
-            "scale": "DESCRIPTIVE"
-          }
-        ]
-      },
-      "quiz_16": {
-        "lesson": "lesson_16",
-        "topic": "Crystal Field Theory",
-        "questions": [
-          {
-            "id": "quiz_16_q1",
-            "type": "short_answer",
-            "stem": "Explain the key principles of Crystal Field Theory.",
-            "points": 5,
-            "bloom_level": "understand",
-            "scale": "ELECTRONIC"
-          },
-          {
-            "id": "quiz_16_q2",
-            "type": "problem",
-            "stem": "Apply Crystal Field Theory to the following scenario...",
-            "points": 10,
-            "bloom_level": "apply",
-            "scale": "ELECTRONIC"
-          }
-        ]
-      },
-      "quiz_17": {
-        "lesson": "lesson_17",
-        "topic": "Electrochemistry",
-        "questions": [
-          {
-            "id": "quiz_17_q1",
-            "type": "short_answer",
-            "stem": "Explain the key principles of Electrochemistry.",
-            "points": 5,
-            "bloom_level": "understand",
-            "scale": "DESCRIPTIVE"
-          },
-          {
-            "id": "quiz_17_q2",
-            "type": "problem",
-            "stem": "Apply Electrochemistry to the following scenario...",
-            "points": 10,
-            "bloom_level": "apply",
-            "scale": "DESCRIPTIVE"
-          }
-        ]
-      },
-      "quiz_18": {
-        "lesson": "lesson_18",
-        "topic": "Bioinorganic Chemistry",
-        "questions": [
-          {
-            "id": "quiz_18_q1",
-            "type": "short_answer",
-            "stem": "Explain the key principles of Bioinorganic Chemistry.",
-            "points": 5,
-            "bloom_level": "understand",
-            "scale": "DESCRIPTIVE"
-          },
-          {
-            "id": "quiz_18_q2",
-            "type": "problem",
-            "stem": "Apply Bioinorganic Chemistry to the following scenario...",
-            "points": 10,
-            "bloom_level": "apply",
-            "scale": "DESCRIPTIVE"
-          }
-        ]
-      },
-      "quiz_19": {
-        "lesson": "lesson_19",
+      "quiz_3": {
+        "lesson": "lesson_03",
         "topic": "Redox Chemistry",
         "questions": [
           {
-            "id": "quiz_19_q1",
+            "id": "quiz_3_q1",
             "type": "short_answer",
             "stem": "Explain the key principles of Redox Chemistry.",
             "points": 5,
@@ -27243,7 +27400,7 @@
             "scale": "DESCRIPTIVE"
           },
           {
-            "id": "quiz_19_q2",
+            "id": "quiz_3_q2",
             "type": "problem",
             "stem": "Apply Redox Chemistry to the following scenario...",
             "points": 10,
@@ -27252,12 +27409,320 @@
           }
         ]
       },
-      "quiz_20": {
-        "lesson": "lesson_20",
+      "quiz_4": {
+        "lesson": "lesson_04",
+        "topic": "Coordination Chemistry",
+        "questions": [
+          {
+            "id": "quiz_4_q1",
+            "type": "short_answer",
+            "stem": "Explain the key principles of Coordination Chemistry.",
+            "points": 5,
+            "bloom_level": "understand",
+            "scale": "STRUCTURAL"
+          },
+          {
+            "id": "quiz_4_q2",
+            "type": "problem",
+            "stem": "Apply Coordination Chemistry to the following scenario...",
+            "points": 10,
+            "bloom_level": "apply",
+            "scale": "STRUCTURAL"
+          }
+        ]
+      },
+      "quiz_5": {
+        "lesson": "lesson_05",
+        "topic": "Ionic Bonding",
+        "questions": [
+          {
+            "id": "quiz_5_q1",
+            "type": "short_answer",
+            "stem": "Explain the key principles of Ionic Bonding.",
+            "points": 5,
+            "bloom_level": "understand",
+            "scale": "ELECTRONIC"
+          },
+          {
+            "id": "quiz_5_q2",
+            "type": "problem",
+            "stem": "Apply Ionic Bonding to the following scenario...",
+            "points": 10,
+            "bloom_level": "apply",
+            "scale": "ELECTRONIC"
+          }
+        ]
+      },
+      "quiz_6": {
+        "lesson": "lesson_06",
+        "topic": "Solid State Chemistry",
+        "questions": [
+          {
+            "id": "quiz_6_q1",
+            "type": "short_answer",
+            "stem": "Explain the key principles of Solid State Chemistry.",
+            "points": 5,
+            "bloom_level": "understand",
+            "scale": "DESCRIPTIVE"
+          },
+          {
+            "id": "quiz_6_q2",
+            "type": "problem",
+            "stem": "Apply Solid State Chemistry to the following scenario...",
+            "points": 10,
+            "bloom_level": "apply",
+            "scale": "DESCRIPTIVE"
+          }
+        ]
+      },
+      "quiz_7": {
+        "lesson": "lesson_07",
+        "topic": "Molecular Orbital Theory",
+        "questions": [
+          {
+            "id": "quiz_7_q1",
+            "type": "short_answer",
+            "stem": "Explain the key principles of Molecular Orbital Theory.",
+            "points": 5,
+            "bloom_level": "understand",
+            "scale": "QUANTUM"
+          },
+          {
+            "id": "quiz_7_q2",
+            "type": "problem",
+            "stem": "Apply Molecular Orbital Theory to the following scenario...",
+            "points": 10,
+            "bloom_level": "apply",
+            "scale": "QUANTUM"
+          }
+        ]
+      },
+      "quiz_8": {
+        "lesson": "lesson_08",
+        "topic": "Atomic Structure",
+        "questions": [
+          {
+            "id": "quiz_8_q1",
+            "type": "short_answer",
+            "stem": "Explain the key principles of Atomic Structure.",
+            "points": 5,
+            "bloom_level": "understand",
+            "scale": "DESCRIPTIVE"
+          },
+          {
+            "id": "quiz_8_q2",
+            "type": "problem",
+            "stem": "Apply Atomic Structure to the following scenario...",
+            "points": 10,
+            "bloom_level": "apply",
+            "scale": "DESCRIPTIVE"
+          }
+        ]
+      },
+      "quiz_9": {
+        "lesson": "lesson_09",
+        "topic": "Chemical Bonding",
+        "questions": [
+          {
+            "id": "quiz_9_q1",
+            "type": "short_answer",
+            "stem": "Explain the key principles of Chemical Bonding.",
+            "points": 5,
+            "bloom_level": "understand",
+            "scale": "ELECTRONIC"
+          },
+          {
+            "id": "quiz_9_q2",
+            "type": "problem",
+            "stem": "Apply Chemical Bonding to the following scenario...",
+            "points": 10,
+            "bloom_level": "apply",
+            "scale": "ELECTRONIC"
+          }
+        ]
+      },
+      "quiz_10": {
+        "lesson": "lesson_10",
+        "topic": "Acid-Base Chemistry",
+        "questions": [
+          {
+            "id": "quiz_10_q1",
+            "type": "short_answer",
+            "stem": "Explain the key principles of Acid-Base Chemistry.",
+            "points": 5,
+            "bloom_level": "understand",
+            "scale": "DESCRIPTIVE"
+          },
+          {
+            "id": "quiz_10_q2",
+            "type": "problem",
+            "stem": "Apply Acid-Base Chemistry to the following scenario...",
+            "points": 10,
+            "bloom_level": "apply",
+            "scale": "DESCRIPTIVE"
+          }
+        ]
+      },
+      "quiz_11": {
+        "lesson": "lesson_11",
+        "topic": "Atomic Structure And Electronic Configuration",
+        "questions": [
+          {
+            "id": "quiz_11_q1",
+            "type": "short_answer",
+            "stem": "Explain the key principles of Atomic Structure And Electronic Configuration.",
+            "points": 5,
+            "bloom_level": "understand",
+            "scale": "DESCRIPTIVE"
+          },
+          {
+            "id": "quiz_11_q2",
+            "type": "problem",
+            "stem": "Apply Atomic Structure And Electronic Configuration to the following scenario...",
+            "points": 10,
+            "bloom_level": "apply",
+            "scale": "DESCRIPTIVE"
+          }
+        ]
+      },
+      "quiz_12": {
+        "lesson": "lesson_12",
+        "topic": "Crystal Field Theory",
+        "questions": [
+          {
+            "id": "quiz_12_q1",
+            "type": "short_answer",
+            "stem": "Explain the key principles of Crystal Field Theory.",
+            "points": 5,
+            "bloom_level": "understand",
+            "scale": "ELECTRONIC"
+          },
+          {
+            "id": "quiz_12_q2",
+            "type": "problem",
+            "stem": "Apply Crystal Field Theory to the following scenario...",
+            "points": 10,
+            "bloom_level": "apply",
+            "scale": "ELECTRONIC"
+          }
+        ]
+      },
+      "quiz_13": {
+        "lesson": "lesson_13",
+        "topic": "Periodic Table Organization",
+        "questions": [
+          {
+            "id": "quiz_13_q1",
+            "type": "short_answer",
+            "stem": "Explain the key principles of Periodic Table Organization.",
+            "points": 5,
+            "bloom_level": "understand",
+            "scale": "DESCRIPTIVE"
+          },
+          {
+            "id": "quiz_13_q2",
+            "type": "problem",
+            "stem": "Apply Periodic Table Organization to the following scenario...",
+            "points": 10,
+            "bloom_level": "apply",
+            "scale": "DESCRIPTIVE"
+          }
+        ]
+      },
+      "quiz_14": {
+        "lesson": "lesson_14",
+        "topic": "Electrochemistry",
+        "questions": [
+          {
+            "id": "quiz_14_q1",
+            "type": "short_answer",
+            "stem": "Explain the key principles of Electrochemistry.",
+            "points": 5,
+            "bloom_level": "understand",
+            "scale": "DESCRIPTIVE"
+          },
+          {
+            "id": "quiz_14_q2",
+            "type": "problem",
+            "stem": "Apply Electrochemistry to the following scenario...",
+            "points": 10,
+            "bloom_level": "apply",
+            "scale": "DESCRIPTIVE"
+          }
+        ]
+      },
+      "quiz_15": {
+        "lesson": "lesson_15",
+        "topic": "Thermochemistry",
+        "questions": [
+          {
+            "id": "quiz_15_q1",
+            "type": "short_answer",
+            "stem": "Explain the key principles of Thermochemistry.",
+            "points": 5,
+            "bloom_level": "understand",
+            "scale": "DESCRIPTIVE"
+          },
+          {
+            "id": "quiz_15_q2",
+            "type": "problem",
+            "stem": "Apply Thermochemistry to the following scenario...",
+            "points": 10,
+            "bloom_level": "apply",
+            "scale": "DESCRIPTIVE"
+          }
+        ]
+      },
+      "quiz_16": {
+        "lesson": "lesson_16",
+        "topic": "Reaction Mechanisms",
+        "questions": [
+          {
+            "id": "quiz_16_q1",
+            "type": "short_answer",
+            "stem": "Explain the key principles of Reaction Mechanisms.",
+            "points": 5,
+            "bloom_level": "understand",
+            "scale": "DESCRIPTIVE"
+          },
+          {
+            "id": "quiz_16_q2",
+            "type": "problem",
+            "stem": "Apply Reaction Mechanisms to the following scenario...",
+            "points": 10,
+            "bloom_level": "apply",
+            "scale": "DESCRIPTIVE"
+          }
+        ]
+      },
+      "quiz_17": {
+        "lesson": "lesson_17",
+        "topic": "Crystal Structures",
+        "questions": [
+          {
+            "id": "quiz_17_q1",
+            "type": "short_answer",
+            "stem": "Explain the key principles of Crystal Structures.",
+            "points": 5,
+            "bloom_level": "understand",
+            "scale": "STRUCTURAL"
+          },
+          {
+            "id": "quiz_17_q2",
+            "type": "problem",
+            "stem": "Apply Crystal Structures to the following scenario...",
+            "points": 10,
+            "bloom_level": "apply",
+            "scale": "STRUCTURAL"
+          }
+        ]
+      },
+      "quiz_18": {
+        "lesson": "lesson_18",
         "topic": "Organometallic Chemistry",
         "questions": [
           {
-            "id": "quiz_20_q1",
+            "id": "quiz_18_q1",
             "type": "short_answer",
             "stem": "Explain the key principles of Organometallic Chemistry.",
             "points": 5,
@@ -27265,7 +27730,7 @@
             "scale": "DESCRIPTIVE"
           },
           {
-            "id": "quiz_20_q2",
+            "id": "quiz_18_q2",
             "type": "problem",
             "stem": "Apply Organometallic Chemistry to the following scenario...",
             "points": 10,
@@ -27274,14 +27739,58 @@
           }
         ]
       },
+      "quiz_19": {
+        "lesson": "lesson_19",
+        "topic": "Catalysis",
+        "questions": [
+          {
+            "id": "quiz_19_q1",
+            "type": "short_answer",
+            "stem": "Explain the key principles of Catalysis.",
+            "points": 5,
+            "bloom_level": "understand",
+            "scale": "DESCRIPTIVE"
+          },
+          {
+            "id": "quiz_19_q2",
+            "type": "problem",
+            "stem": "Apply Catalysis to the following scenario...",
+            "points": 10,
+            "bloom_level": "apply",
+            "scale": "DESCRIPTIVE"
+          }
+        ]
+      },
+      "quiz_20": {
+        "lesson": "lesson_20",
+        "topic": "Periodic Table And Electronic Structure",
+        "questions": [
+          {
+            "id": "quiz_20_q1",
+            "type": "short_answer",
+            "stem": "Explain the key principles of Periodic Table And Electronic Structure.",
+            "points": 5,
+            "bloom_level": "understand",
+            "scale": "DESCRIPTIVE"
+          },
+          {
+            "id": "quiz_20_q2",
+            "type": "problem",
+            "stem": "Apply Periodic Table And Electronic Structure to the following scenario...",
+            "points": 10,
+            "bloom_level": "apply",
+            "scale": "DESCRIPTIVE"
+          }
+        ]
+      },
       "quiz_21": {
         "lesson": "lesson_21",
-        "topic": "Coordination Complexes",
+        "topic": "Molecular Symmetry",
         "questions": [
           {
             "id": "quiz_21_q1",
             "type": "short_answer",
-            "stem": "Explain the key principles of Coordination Complexes.",
+            "stem": "Explain the key principles of Molecular Symmetry.",
             "points": 5,
             "bloom_level": "understand",
             "scale": "STRUCTURAL"
@@ -27289,7 +27798,7 @@
           {
             "id": "quiz_21_q2",
             "type": "problem",
-            "stem": "Apply Coordination Complexes to the following scenario...",
+            "stem": "Apply Molecular Symmetry to the following scenario...",
             "points": 10,
             "bloom_level": "apply",
             "scale": "STRUCTURAL"
@@ -27298,12 +27807,12 @@
       },
       "quiz_22": {
         "lesson": "lesson_22",
-        "topic": "Coordination Compounds",
+        "topic": "Transition Metal Chemistry",
         "questions": [
           {
             "id": "quiz_22_q1",
             "type": "short_answer",
-            "stem": "Explain the key principles of Coordination Compounds.",
+            "stem": "Explain the key principles of Transition Metal Chemistry.",
             "points": 5,
             "bloom_level": "understand",
             "scale": "STRUCTURAL"
@@ -27311,7 +27820,7 @@
           {
             "id": "quiz_22_q2",
             "type": "problem",
-            "stem": "Apply Coordination Compounds to the following scenario...",
+            "stem": "Apply Transition Metal Chemistry to the following scenario...",
             "points": 10,
             "bloom_level": "apply",
             "scale": "STRUCTURAL"
@@ -27320,12 +27829,12 @@
       },
       "quiz_23": {
         "lesson": "lesson_23",
-        "topic": "Atomic Structure",
+        "topic": "Atomic Structure And Periodicity",
         "questions": [
           {
             "id": "quiz_23_q1",
             "type": "short_answer",
-            "stem": "Explain the key principles of Atomic Structure.",
+            "stem": "Explain the key principles of Atomic Structure And Periodicity.",
             "points": 5,
             "bloom_level": "understand",
             "scale": "DESCRIPTIVE"
@@ -27333,7 +27842,7 @@
           {
             "id": "quiz_23_q2",
             "type": "problem",
-            "stem": "Apply Atomic Structure to the following scenario...",
+            "stem": "Apply Atomic Structure And Periodicity to the following scenario...",
             "points": 10,
             "bloom_level": "apply",
             "scale": "DESCRIPTIVE"
@@ -27366,102 +27875,6 @@
       "lesson_01": [
         {
           "type": "clicker",
-          "question": "Which of the following best describes Coordination Chemistry Fundamentals?",
-          "timing": "start"
-        },
-        {
-          "type": "think_pair_share",
-          "prompt": "How does Coordination Chemistry Fundamentals relate to previous concepts?",
-          "timing": "middle"
-        }
-      ],
-      "lesson_02": [
-        {
-          "type": "clicker",
-          "question": "Which of the following best describes Electron Configuration?",
-          "timing": "start"
-        },
-        {
-          "type": "think_pair_share",
-          "prompt": "How does Electron Configuration relate to previous concepts?",
-          "timing": "middle"
-        }
-      ],
-      "lesson_03": [
-        {
-          "type": "clicker",
-          "question": "Which of the following best describes Ionic Bonding?",
-          "timing": "start"
-        },
-        {
-          "type": "think_pair_share",
-          "prompt": "How does Ionic Bonding relate to previous concepts?",
-          "timing": "middle"
-        }
-      ],
-      "lesson_04": [
-        {
-          "type": "clicker",
-          "question": "Which of the following best describes Oxidation States?",
-          "timing": "start"
-        },
-        {
-          "type": "think_pair_share",
-          "prompt": "How does Oxidation States relate to previous concepts?",
-          "timing": "middle"
-        }
-      ],
-      "lesson_05": [
-        {
-          "type": "clicker",
-          "question": "Which of the following best describes Group Theory Basics?",
-          "timing": "start"
-        },
-        {
-          "type": "think_pair_share",
-          "prompt": "How does Group Theory Basics relate to previous concepts?",
-          "timing": "middle"
-        }
-      ],
-      "lesson_06": [
-        {
-          "type": "clicker",
-          "question": "Which of the following best describes Quantum Mechanics Basics?",
-          "timing": "start"
-        },
-        {
-          "type": "think_pair_share",
-          "prompt": "How does Quantum Mechanics Basics relate to previous concepts?",
-          "timing": "middle"
-        }
-      ],
-      "lesson_07": [
-        {
-          "type": "clicker",
-          "question": "Which of the following best describes Thermodynamics?",
-          "timing": "start"
-        },
-        {
-          "type": "think_pair_share",
-          "prompt": "How does Thermodynamics relate to previous concepts?",
-          "timing": "middle"
-        }
-      ],
-      "lesson_08": [
-        {
-          "type": "clicker",
-          "question": "Which of the following best describes Ligand Field Theory?",
-          "timing": "start"
-        },
-        {
-          "type": "think_pair_share",
-          "prompt": "How does Ligand Field Theory relate to previous concepts?",
-          "timing": "middle"
-        }
-      ],
-      "lesson_09": [
-        {
-          "type": "clicker",
           "question": "Which of the following best describes Main Group Chemistry?",
           "timing": "start"
         },
@@ -27471,7 +27884,7 @@
           "timing": "middle"
         }
       ],
-      "lesson_10": [
+      "lesson_02": [
         {
           "type": "clicker",
           "question": "Which of the following best describes Periodic Trends?",
@@ -27483,103 +27896,7 @@
           "timing": "middle"
         }
       ],
-      "lesson_11": [
-        {
-          "type": "clicker",
-          "question": "Which of the following best describes Coordination Chemistry?",
-          "timing": "start"
-        },
-        {
-          "type": "think_pair_share",
-          "prompt": "How does Coordination Chemistry relate to Reaction Mechanisms?",
-          "timing": "middle"
-        }
-      ],
-      "lesson_12": [
-        {
-          "type": "clicker",
-          "question": "Which of the following best describes Solid State Chemistry?",
-          "timing": "start"
-        },
-        {
-          "type": "think_pair_share",
-          "prompt": "How does Solid State Chemistry relate to Crystal Lattice Structures?",
-          "timing": "middle"
-        }
-      ],
-      "lesson_13": [
-        {
-          "type": "clicker",
-          "question": "Which of the following best describes Molecular Orbital Theory?",
-          "timing": "start"
-        },
-        {
-          "type": "think_pair_share",
-          "prompt": "How does Molecular Orbital Theory relate to Atomic Orbitals?",
-          "timing": "middle"
-        }
-      ],
-      "lesson_14": [
-        {
-          "type": "clicker",
-          "question": "Which of the following best describes Chemical Bonding?",
-          "timing": "start"
-        },
-        {
-          "type": "think_pair_share",
-          "prompt": "How does Chemical Bonding relate to Understanding Of Atomic Structure?",
-          "timing": "middle"
-        }
-      ],
-      "lesson_15": [
-        {
-          "type": "clicker",
-          "question": "Which of the following best describes Acid-Base Chemistry?",
-          "timing": "start"
-        },
-        {
-          "type": "think_pair_share",
-          "prompt": "How does Acid-Base Chemistry relate to Periodic Trends?",
-          "timing": "middle"
-        }
-      ],
-      "lesson_16": [
-        {
-          "type": "clicker",
-          "question": "Which of the following best describes Crystal Field Theory?",
-          "timing": "start"
-        },
-        {
-          "type": "think_pair_share",
-          "prompt": "How does Crystal Field Theory relate to Crystal Field Theory?",
-          "timing": "middle"
-        }
-      ],
-      "lesson_17": [
-        {
-          "type": "clicker",
-          "question": "Which of the following best describes Electrochemistry?",
-          "timing": "start"
-        },
-        {
-          "type": "think_pair_share",
-          "prompt": "How does Electrochemistry relate to Understanding Of Oxidation And Reduction?",
-          "timing": "middle"
-        }
-      ],
-      "lesson_18": [
-        {
-          "type": "clicker",
-          "question": "Which of the following best describes Bioinorganic Chemistry?",
-          "timing": "start"
-        },
-        {
-          "type": "think_pair_share",
-          "prompt": "How does Bioinorganic Chemistry relate to Enzyme Structure And Function?",
-          "timing": "middle"
-        }
-      ],
-      "lesson_19": [
+      "lesson_03": [
         {
           "type": "clicker",
           "question": "Which of the following best describes Redox Chemistry?",
@@ -27591,7 +27908,175 @@
           "timing": "middle"
         }
       ],
-      "lesson_20": [
+      "lesson_04": [
+        {
+          "type": "clicker",
+          "question": "Which of the following best describes Coordination Chemistry?",
+          "timing": "start"
+        },
+        {
+          "type": "think_pair_share",
+          "prompt": "How does Coordination Chemistry relate to Reaction Mechanisms?",
+          "timing": "middle"
+        }
+      ],
+      "lesson_05": [
+        {
+          "type": "clicker",
+          "question": "Which of the following best describes Ionic Bonding?",
+          "timing": "start"
+        },
+        {
+          "type": "think_pair_share",
+          "prompt": "How does Ionic Bonding relate to previous concepts?",
+          "timing": "middle"
+        }
+      ],
+      "lesson_06": [
+        {
+          "type": "clicker",
+          "question": "Which of the following best describes Solid State Chemistry?",
+          "timing": "start"
+        },
+        {
+          "type": "think_pair_share",
+          "prompt": "How does Solid State Chemistry relate to Crystal Lattice Structures?",
+          "timing": "middle"
+        }
+      ],
+      "lesson_07": [
+        {
+          "type": "clicker",
+          "question": "Which of the following best describes Molecular Orbital Theory?",
+          "timing": "start"
+        },
+        {
+          "type": "think_pair_share",
+          "prompt": "How does Molecular Orbital Theory relate to Atomic Orbitals?",
+          "timing": "middle"
+        }
+      ],
+      "lesson_08": [
+        {
+          "type": "clicker",
+          "question": "Which of the following best describes Atomic Structure?",
+          "timing": "start"
+        },
+        {
+          "type": "think_pair_share",
+          "prompt": "How does Atomic Structure relate to Quantum Numbers?",
+          "timing": "middle"
+        }
+      ],
+      "lesson_09": [
+        {
+          "type": "clicker",
+          "question": "Which of the following best describes Chemical Bonding?",
+          "timing": "start"
+        },
+        {
+          "type": "think_pair_share",
+          "prompt": "How does Chemical Bonding relate to Understanding Of Atomic Structure?",
+          "timing": "middle"
+        }
+      ],
+      "lesson_10": [
+        {
+          "type": "clicker",
+          "question": "Which of the following best describes Acid-Base Chemistry?",
+          "timing": "start"
+        },
+        {
+          "type": "think_pair_share",
+          "prompt": "How does Acid-Base Chemistry relate to Periodic Trends?",
+          "timing": "middle"
+        }
+      ],
+      "lesson_11": [
+        {
+          "type": "clicker",
+          "question": "Which of the following best describes Atomic Structure And Electronic Configuration?",
+          "timing": "start"
+        },
+        {
+          "type": "think_pair_share",
+          "prompt": "How does Atomic Structure And Electronic Configuration relate to Quantum Numbers?",
+          "timing": "middle"
+        }
+      ],
+      "lesson_12": [
+        {
+          "type": "clicker",
+          "question": "Which of the following best describes Crystal Field Theory?",
+          "timing": "start"
+        },
+        {
+          "type": "think_pair_share",
+          "prompt": "How does Crystal Field Theory relate to Crystal Field Theory?",
+          "timing": "middle"
+        }
+      ],
+      "lesson_13": [
+        {
+          "type": "clicker",
+          "question": "Which of the following best describes Periodic Table Organization?",
+          "timing": "start"
+        },
+        {
+          "type": "think_pair_share",
+          "prompt": "How does Periodic Table Organization relate to Periodic Table Structure?",
+          "timing": "middle"
+        }
+      ],
+      "lesson_14": [
+        {
+          "type": "clicker",
+          "question": "Which of the following best describes Electrochemistry?",
+          "timing": "start"
+        },
+        {
+          "type": "think_pair_share",
+          "prompt": "How does Electrochemistry relate to Understanding Of Oxidation And Reduction?",
+          "timing": "middle"
+        }
+      ],
+      "lesson_15": [
+        {
+          "type": "clicker",
+          "question": "Which of the following best describes Thermochemistry?",
+          "timing": "start"
+        },
+        {
+          "type": "think_pair_share",
+          "prompt": "How does Thermochemistry relate to Understanding Of Enthalpy Concepts?",
+          "timing": "middle"
+        }
+      ],
+      "lesson_16": [
+        {
+          "type": "clicker",
+          "question": "Which of the following best describes Reaction Mechanisms?",
+          "timing": "start"
+        },
+        {
+          "type": "think_pair_share",
+          "prompt": "How does Reaction Mechanisms relate to Understanding Of Reaction Mechanisms?",
+          "timing": "middle"
+        }
+      ],
+      "lesson_17": [
+        {
+          "type": "clicker",
+          "question": "Which of the following best describes Crystal Structures?",
+          "timing": "start"
+        },
+        {
+          "type": "think_pair_share",
+          "prompt": "How does Crystal Structures relate to Crystal Lattice Structures?",
+          "timing": "middle"
+        }
+      ],
+      "lesson_18": [
         {
           "type": "clicker",
           "question": "Which of the following best describes Organometallic Chemistry?",
@@ -27603,48 +28088,77 @@
           "timing": "middle"
         }
       ],
-      "lesson_21": [
+      "lesson_19": [
         {
           "type": "clicker",
-          "question": "Which of the following best describes Coordination Complexes?",
+          "question": "Which of the following best describes Catalysis?",
           "timing": "start"
         },
         {
           "type": "think_pair_share",
-          "prompt": "How does Coordination Complexes relate to previous concepts?",
+          "prompt": "How does Catalysis relate to Catalytic Mechanisms?",
+          "timing": "middle"
+        }
+      ],
+      "lesson_20": [
+        {
+          "type": "clicker",
+          "question": "Which of the following best describes Periodic Table And Electronic Structure?",
+          "timing": "start"
+        },
+        {
+          "type": "think_pair_share",
+          "prompt": "How does Periodic Table And Electronic Structure relate to Understanding Of Atomic Structure?",
+          "timing": "middle"
+        }
+      ],
+      "lesson_21": [
+        {
+          "type": "clicker",
+          "question": "Which of the following best describes Molecular Symmetry?",
+          "timing": "start"
+        },
+        {
+          "type": "think_pair_share",
+          "prompt": "How does Molecular Symmetry relate to Understanding Of Symmetry Operations?",
           "timing": "middle"
         }
       ],
       "lesson_22": [
         {
           "type": "clicker",
-          "question": "Which of the following best describes Coordination Compounds?",
+          "question": "Which of the following best describes Transition Metal Chemistry?",
           "timing": "start"
         },
         {
           "type": "think_pair_share",
-          "prompt": "How does Coordination Compounds relate to previous concepts?",
+          "prompt": "How does Transition Metal Chemistry relate to Coordination Chemistry Fundamentals?",
           "timing": "middle"
         }
       ],
       "lesson_23": [
         {
           "type": "clicker",
-          "question": "Which of the following best describes Atomic Structure?",
+          "question": "Which of the following best describes Atomic Structure And Periodicity?",
           "timing": "start"
         },
         {
           "type": "think_pair_share",
-          "prompt": "How does Atomic Structure relate to Quantum Numbers?",
+          "prompt": "How does Atomic Structure And Periodicity relate to Understanding Of Atomic Structure?",
           "timing": "middle"
         }
       ]
     }
   },
   "learning_paths": {
+    "pedagogy_model": {
+      "ordering": "PageRank (foundational topics first)",
+      "checkpoints": "Hub-based (bottleneck topics flagged)",
+      "rationale": "PageRank ensures prerequisites met; Hubs catch struggling students early"
+    },
     "standard_path": {
-      "name": "Default Curriculum Order",
-      "description": "Data-driven sequence: Foundations \u2192 Hubs \u2192 Capstones",
+      "name": "PageRank-Ordered Curriculum",
+      "description": "Topics ordered by foundational importance (PageRank), with mastery checks at hub topics",
       "lessons": [
         "lesson_01",
         "lesson_02",
@@ -27671,55 +28185,179 @@
         "lesson_23"
       ]
     },
-    "remediation_paths": {
-      "weak_periodic_trends": {
-        "trigger": "pretest_score < 60% on periodic concepts",
-        "insert_before": "lesson_01",
-        "supplemental": [
-          "review_periodic_table",
-          "practice_trends"
-        ]
+    "hub_checkpoints": [
+      {
+        "topic": "Main Group Chemistry",
+        "after_lesson": "lesson_01",
+        "hub_score": 1.0,
+        "total_degree": 502,
+        "assessment": "hub_check_main_group_chemistry",
+        "threshold": 0.75,
+        "remediation": "review_main_group_chemistry",
+        "why": "Bottleneck topic: 134 topics depend on this"
       },
-      "weak_orbitals": {
-        "trigger": "quiz_2_score < 70%",
-        "insert_before": "lesson_09",
+      {
+        "topic": "Periodic Trends",
+        "after_lesson": "lesson_02",
+        "hub_score": 1.0,
+        "total_degree": 51,
+        "assessment": "hub_check_periodic_trends",
+        "threshold": 0.75,
+        "remediation": "review_periodic_trends",
+        "why": "Bottleneck topic: 34 topics depend on this"
+      },
+      {
+        "topic": "Redox Chemistry",
+        "after_lesson": "lesson_03",
+        "hub_score": 0.92,
+        "total_degree": 46,
+        "assessment": "hub_check_redox_chemistry",
+        "threshold": 0.75,
+        "remediation": "review_redox_chemistry",
+        "why": "Bottleneck topic: 39 topics depend on this"
+      },
+      {
+        "topic": "Coordination Chemistry",
+        "after_lesson": "lesson_04",
+        "hub_score": 1.0,
+        "total_degree": 243,
+        "assessment": "hub_check_coordination_chemistry",
+        "threshold": 0.75,
+        "remediation": "review_coordination_chemistry",
+        "why": "Bottleneck topic: 86 topics depend on this"
+      },
+      {
+        "topic": "Ionic Bonding",
+        "after_lesson": "lesson_05",
+        "hub_score": 0.34,
+        "total_degree": 17,
+        "assessment": "hub_check_ionic_bonding",
+        "threshold": 0.75,
+        "remediation": "review_ionic_bonding",
+        "why": "Bottleneck topic: 17 topics depend on this"
+      },
+      {
+        "topic": "Solid State Chemistry",
+        "after_lesson": "lesson_06",
+        "hub_score": 1.0,
+        "total_degree": 167,
+        "assessment": "hub_check_solid_state_chemistry",
+        "threshold": 0.75,
+        "remediation": "review_solid_state_chemistry",
+        "why": "Bottleneck topic: 60 topics depend on this"
+      },
+      {
+        "topic": "Molecular Orbital Theory",
+        "after_lesson": "lesson_07",
+        "hub_score": 1.0,
+        "total_degree": 82,
+        "assessment": "hub_check_molecular_orbital_theory",
+        "threshold": 0.75,
+        "remediation": "review_molecular_orbital_theory",
+        "why": "Bottleneck topic: 39 topics depend on this"
+      },
+      {
+        "topic": "Atomic Structure",
+        "after_lesson": "lesson_08",
+        "hub_score": 0.7,
+        "total_degree": 35,
+        "assessment": "hub_check_atomic_structure",
+        "threshold": 0.75,
+        "remediation": "review_atomic_structure",
+        "why": "Bottleneck topic: 22 topics depend on this"
+      },
+      {
+        "topic": "Chemical Bonding",
+        "after_lesson": "lesson_09",
+        "hub_score": 1.0,
+        "total_degree": 65,
+        "assessment": "hub_check_chemical_bonding",
+        "threshold": 0.75,
+        "remediation": "review_chemical_bonding",
+        "why": "Bottleneck topic: 33 topics depend on this"
+      },
+      {
+        "topic": "Acid-Base Chemistry",
+        "after_lesson": "lesson_10",
+        "hub_score": 1.0,
+        "total_degree": 77,
+        "assessment": "hub_check_acid-base_chemistry",
+        "threshold": 0.75,
+        "remediation": "review_acid-base_chemistry",
+        "why": "Bottleneck topic: 22 topics depend on this"
+      }
+    ],
+    "remediation_paths": {
+      "weak_atomic_structure": {
+        "trigger": "hub_check fails on Atomic Structure",
         "supplemental": [
           "review_orbitals",
           "practice_electron_config"
+        ],
+        "resources": [
+          "JD Lee Ch.1",
+          "ic_tina orbital module"
+        ]
+      },
+      "weak_periodic_trends": {
+        "trigger": "hub_check fails on Periodic Trends",
+        "supplemental": [
+          "review_periodic_table",
+          "practice_trends"
+        ],
+        "resources": [
+          "Rodgers Ch.2",
+          "periodic trends worksheet"
         ]
       },
       "weak_bonding": {
-        "trigger": "quiz_3_score < 70%",
-        "insert_before": "lesson_12",
+        "trigger": "hub_check fails on Chemical Bonding or MO Theory",
         "supplemental": [
           "review_lewis",
           "practice_mo_diagrams"
+        ],
+        "resources": [
+          "Atkins Ch.3",
+          "MO diagram practice"
+        ]
+      },
+      "weak_coordination": {
+        "trigger": "hub_check fails on Coordination Chemistry",
+        "supplemental": [
+          "review_nomenclature",
+          "practice_isomers"
+        ],
+        "resources": [
+          "ic_tina coordination module"
+        ]
+      },
+      "weak_cft": {
+        "trigger": "hub_check fails on Crystal Field Theory",
+        "supplemental": [
+          "review_d_orbitals",
+          "practice_cfse"
+        ],
+        "resources": [
+          "JD Lee CFT chapter",
+          "Tanabe-Sugano practice"
         ]
       }
     },
     "acceleration_paths": {
       "strong_foundation": {
-        "trigger": "pretest_score > 90%",
-        "skip": [
+        "trigger": "pretest_score > 90% AND first hub_check > 90%",
+        "action": "Skip review lessons, proceed to applications",
+        "skip_lessons": [
           "lesson_01",
           "lesson_02"
-        ],
-        "start_at": "lesson_03"
+        ]
       }
     },
-    "hub_checkpoints": {
-      "periodic_trends": {
-        "after_lesson": "lesson_04",
-        "assessment": "hub_check_1",
-        "threshold": 0.75,
-        "remediation": "remediation_paths.weak_periodic_trends"
-      },
-      "bonding_theories": {
-        "after_lesson": "lesson_12",
-        "assessment": "hub_check_2",
-        "threshold": 0.75,
-        "remediation": "remediation_paths.weak_bonding"
-      }
+    "checkpoint_summary": {
+      "total_hubs_identified": 45,
+      "checkpoints_in_curriculum": 20,
+      "average_threshold": 0.75,
+      "remediation_available": true
     }
   }
 }

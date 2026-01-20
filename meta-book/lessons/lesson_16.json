@@ -1,92 +1,60 @@
 {
   "id": "lesson_16",
-  "title": "Crystal Field Theory",
+  "title": "Reaction Mechanisms",
   "unit": "unit_2",
   "session": 16,
   "duration_minutes": 75,
   "scale": {
-    "primary": "ELECTRONIC",
-    "touches": [
-      "STRUCTURAL"
-    ],
-    "escalation_from": "Crystal Field Theory"
+    "primary": "DESCRIPTIVE",
+    "touches": [],
+    "escalation_from": "Understanding Of Reaction Mechanisms"
   },
   "topic": {
-    "name": "Crystal Field Theory",
-    "pagerank": 0.0016602967303817671,
-    "mentions": 165,
-    "hub_score": 1.0
+    "name": "Reaction Mechanisms",
+    "pagerank": 0.0010848046885438129,
+    "mentions": 9,
+    "hub_score": 0.18
   },
   "prerequisites": {
     "required": [
-      "Crystal Field Theory",
-      "Lattice Energy Calculations",
-      "Electronic Configuration Of Transition Metals"
+      "Understanding Of Reaction Mechanisms",
+      "Reaction Kinetics"
     ],
-    "recommended": [
-      "Spectroscopy Basics",
-      "Molecular Orbital Theory"
-    ],
+    "recommended": [],
     "scale_prerequisites": {
-      "ELECTRONIC": [
-        "Crystal Field Theory",
-        "Lattice Energy Calculations"
+      "DESCRIPTIVE": [
+        "Understanding Of Reaction Mechanisms",
+        "Reaction Kinetics"
       ]
     }
   },
   "learning_objectives": [
     {
       "id": "LO_16_1",
-      "text": "Define and explain Crystal Field Theory",
+      "text": "Define and explain Reaction Mechanisms",
       "bloom_level": "understand",
-      "scale": "ELECTRONIC",
+      "scale": "DESCRIPTIVE",
       "assessment_type": "short_answer"
-    },
-    {
-      "id": "LO_16_2",
-      "text": "Apply Crystal Field Theory to predict chemical properties",
-      "bloom_level": "apply",
-      "scale": "ELECTRONIC",
-      "assessment_type": "problem_solving"
-    },
-    {
-      "id": "LO_16_3",
-      "text": "Analyze how Crystal Field Theory connects to related concepts",
-      "bloom_level": "analyze",
-      "scale": "ELECTRONIC",
-      "assessment_type": "essay"
     }
   ],
   "content_synthesis": {
     "best_explanation": {
-      "source": "concise_ic_jd_lee",
+      "source": "descriptive_ic",
       "strength": "primary"
     },
     "best_examples": {
-      "source": "ic_tina",
+      "source": "descriptive_ic_house",
       "strength": "secondary"
     },
     "cross_references": []
   },
   "subtopics": [],
-  "worked_examples": [
-    {
-      "problem": "Apply Crystal Field Theory to predict properties of a transition metal complex",
-      "type": "calculation",
-      "difficulty": "medium",
-      "solution_steps": [
-        "Identify key parameters",
-        "Apply theory",
-        "Interpret result"
-      ],
-      "source": "adapted from concise_ic_jd_lee"
-    }
-  ],
+  "worked_examples": [],
   "assessment_items": {
     "formative": [
       {
         "type": "clicker",
-        "question": "Quick check on Crystal Field Theory"
+        "question": "Quick check on Reaction Mechanisms"
       }
     ],
     "summative": {
@@ -98,14 +66,13 @@
   },
   "connections": {
     "forward": [
-      "Crystal Field Theory",
-      "Crystal Field Stabilization Energy (Cfse)",
-      "Coordination Chemistry"
+      "Coordination Chemistry",
+      "Catalysis",
+      "Main Group Chemistry"
     ],
     "backward": [
-      "Crystal Field Theory",
-      "Lattice Energy Calculations",
-      "Electronic Configuration Of Transition Metals"
+      "Understanding Of Reaction Mechanisms",
+      "Reaction Kinetics"
     ],
     "lateral": [],
     "applications": []

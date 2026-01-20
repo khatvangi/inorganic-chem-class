@@ -1,50 +1,69 @@
 {
   "id": "lesson_22",
-  "title": "Coordination Compounds",
+  "title": "Transition Metal Chemistry",
   "unit": "unit_3",
   "session": 22,
   "duration_minutes": 75,
   "scale": {
     "primary": "STRUCTURAL",
-    "touches": [],
-    "escalation_from": null
+    "touches": [
+      "DESCRIPTIVE"
+    ],
+    "escalation_from": "Coordination Chemistry Fundamentals"
   },
   "topic": {
-    "name": "Coordination Compounds",
-    "pagerank": 0,
-    "mentions": 313,
-    "hub_score": 0.06
+    "name": "Transition Metal Chemistry",
+    "pagerank": 0.0006877456853680477,
+    "mentions": 30,
+    "hub_score": 0.52
   },
   "prerequisites": {
-    "required": [],
-    "recommended": [],
+    "required": [
+      "Coordination Chemistry Fundamentals",
+      "Reaction Mechanisms",
+      "Periodic Trends"
+    ],
+    "recommended": [
+      "D-Block Elements",
+      "Organometallic Chemistry"
+    ],
     "scale_prerequisites": {
-      "STRUCTURAL": []
+      "STRUCTURAL": [
+        "Coordination Chemistry Fundamentals",
+        "Reaction Mechanisms"
+      ]
     }
   },
   "learning_objectives": [
     {
       "id": "LO_22_1",
-      "text": "Define and explain Coordination Compounds",
+      "text": "Define and explain Transition Metal Chemistry",
       "bloom_level": "understand",
       "scale": "STRUCTURAL",
       "assessment_type": "short_answer"
     },
     {
       "id": "LO_22_2",
-      "text": "Apply Coordination Compounds to predict chemical properties",
+      "text": "Apply Transition Metal Chemistry to predict chemical properties",
       "bloom_level": "apply",
       "scale": "STRUCTURAL",
       "assessment_type": "problem_solving"
+    },
+    {
+      "id": "LO_22_3",
+      "text": "Analyze how Transition Metal Chemistry connects to related concepts",
+      "bloom_level": "analyze",
+      "scale": "STRUCTURAL",
+      "assessment_type": "essay"
     }
   ],
   "content_synthesis": {
     "best_explanation": {
-      "source": "ic_tina",
+      "source": "descriptive_ic_house",
       "strength": "primary"
     },
     "best_examples": {
-      "source": "Atkins_Shriver",
+      "source": "descriptive_ic",
       "strength": "secondary"
     },
     "cross_references": []
@@ -55,7 +74,7 @@
     "formative": [
       {
         "type": "clicker",
-        "question": "Quick check on Coordination Compounds"
+        "question": "Quick check on Transition Metal Chemistry"
       }
     ],
     "summative": {
@@ -67,11 +86,15 @@
   },
   "connections": {
     "forward": [
-      "Solid State Chemistry",
       "Coordination Chemistry",
-      "Main Group Chemistry"
+      "Organometallic Chemistry",
+      "Crystal Field Theory"
     ],
-    "backward": [],
+    "backward": [
+      "Coordination Chemistry Fundamentals",
+      "Reaction Mechanisms",
+      "Periodic Trends"
+    ],
     "lateral": [],
     "applications": []
   }

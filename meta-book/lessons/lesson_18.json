@@ -1,50 +1,51 @@
 {
   "id": "lesson_18",
-  "title": "Bioinorganic Chemistry",
-  "unit": "unit_2",
+  "title": "Organometallic Chemistry",
+  "unit": "unit_3",
   "session": 18,
   "duration_minutes": 75,
   "scale": {
     "primary": "DESCRIPTIVE",
     "touches": [
-      "STRUCTURAL"
+      "STRUCTURAL",
+      "ELECTRONIC"
     ],
-    "escalation_from": "Enzyme Structure And Function"
+    "escalation_from": "Coordination Chemistry Fundamentals"
   },
   "topic": {
-    "name": "Bioinorganic Chemistry",
-    "pagerank": 0.0006767738800015222,
-    "mentions": 167,
-    "hub_score": 1.0
+    "name": "Organometallic Chemistry",
+    "pagerank": 0.000799614961380097,
+    "mentions": 102,
+    "hub_score": 0.92
   },
   "prerequisites": {
     "required": [
-      "Enzyme Structure And Function",
       "Coordination Chemistry Fundamentals",
-      "Transition Metals"
+      "Ligand Field Theory",
+      "Metal-Ligand Bonding"
     ],
     "recommended": [
-      "Enzyme Mechanisms",
-      "Protein Structure And Function"
+      "Valence Bond Theory",
+      "Transition Metal Electron Configuration"
     ],
     "scale_prerequisites": {
       "DESCRIPTIVE": [
-        "Enzyme Structure And Function",
-        "Coordination Chemistry Fundamentals"
+        "Coordination Chemistry Fundamentals",
+        "Ligand Field Theory"
       ]
     }
   },
   "learning_objectives": [
     {
       "id": "LO_18_1",
-      "text": "Define and explain Bioinorganic Chemistry",
+      "text": "Define and explain Organometallic Chemistry",
       "bloom_level": "understand",
       "scale": "DESCRIPTIVE",
       "assessment_type": "short_answer"
     },
     {
       "id": "LO_18_3",
-      "text": "Analyze how Bioinorganic Chemistry connects to related concepts",
+      "text": "Analyze how Organometallic Chemistry connects to related concepts",
       "bloom_level": "analyze",
       "scale": "DESCRIPTIVE",
       "assessment_type": "essay"
@@ -67,7 +68,7 @@
     "formative": [
       {
         "type": "clicker",
-        "question": "Quick check on Bioinorganic Chemistry"
+        "question": "Quick check on Organometallic Chemistry"
       }
     ],
     "summative": {
@@ -79,14 +80,14 @@
   },
   "connections": {
     "forward": [
-      "Electron Transport Chain",
-      "Oxidative Phosphorylation",
-      "Enzyme Mechanisms"
+      "Coordination Complexes",
+      "Electronic Structure Of Transition Metals",
+      "Catalysis"
     ],
     "backward": [
-      "Enzyme Structure And Function",
       "Coordination Chemistry Fundamentals",
-      "Transition Metals"
+      "Ligand Field Theory",
+      "Metal-Ligand Bonding"
     ],
     "lateral": [],
     "applications": []

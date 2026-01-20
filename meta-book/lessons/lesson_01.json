@@ -1,57 +1,60 @@
 {
   "id": "lesson_01",
-  "title": "Coordination Chemistry Fundamentals",
+  "title": "Main Group Chemistry",
   "unit": "unit_1",
   "session": 1,
   "duration_minutes": 75,
   "scale": {
-    "primary": "STRUCTURAL",
+    "primary": "DESCRIPTIVE",
     "touches": [],
-    "escalation_from": null
+    "escalation_from": "Lewis Acids And Bases"
   },
   "topic": {
-    "name": "Coordination Chemistry Fundamentals",
-    "pagerank": 0,
-    "mentions": 703,
-    "hub_score": 0.8
+    "name": "Main Group Chemistry",
+    "pagerank": 0.020405392741623108,
+    "mentions": 1570,
+    "hub_score": 1.0
   },
   "prerequisites": {
-    "required": [],
-    "recommended": [],
+    "required": [
+      "Lewis Acids And Bases",
+      "Periodic Table Trends",
+      "Redox Chemistry"
+    ],
+    "recommended": [
+      "Standard Reduction Potentials",
+      "Valence Bond Theory"
+    ],
     "scale_prerequisites": {
-      "STRUCTURAL": []
+      "DESCRIPTIVE": [
+        "Lewis Acids And Bases",
+        "Periodic Table Trends"
+      ]
     }
   },
   "learning_objectives": [
     {
       "id": "LO_1_1",
-      "text": "Define and explain Coordination Chemistry Fundamentals",
+      "text": "Define and explain Main Group Chemistry",
       "bloom_level": "understand",
-      "scale": "STRUCTURAL",
+      "scale": "DESCRIPTIVE",
       "assessment_type": "short_answer"
     },
     {
-      "id": "LO_1_2",
-      "text": "Apply Coordination Chemistry Fundamentals to predict chemical properties",
-      "bloom_level": "apply",
-      "scale": "STRUCTURAL",
-      "assessment_type": "problem_solving"
-    },
-    {
       "id": "LO_1_3",
-      "text": "Analyze how Coordination Chemistry Fundamentals connects to related concepts",
+      "text": "Analyze how Main Group Chemistry connects to related concepts",
       "bloom_level": "analyze",
-      "scale": "STRUCTURAL",
+      "scale": "DESCRIPTIVE",
       "assessment_type": "essay"
     }
   ],
   "content_synthesis": {
     "best_explanation": {
-      "source": "ic_tina",
+      "source": "descriptive_ic",
       "strength": "primary"
     },
     "best_examples": {
-      "source": "Atkins_Shriver",
+      "source": "descriptive_ic_house",
       "strength": "secondary"
     },
     "cross_references": []
@@ -62,7 +65,7 @@
     "formative": [
       {
         "type": "clicker",
-        "question": "Quick check on Coordination Chemistry Fundamentals"
+        "question": "Quick check on Main Group Chemistry"
       }
     ],
     "summative": {
@@ -74,11 +77,15 @@
   },
   "connections": {
     "forward": [
-      "Organometallic Chemistry",
-      "Solid State Chemistry",
-      "Inorganic Chemistry In Medicine"
+      "Hydrolysis Reactions",
+      "Redox Reactions",
+      "Solid State Chemistry"
     ],
-    "backward": [],
+    "backward": [
+      "Lewis Acids And Bases",
+      "Periodic Table Trends",
+      "Redox Chemistry"
+    ],
     "lateral": [],
     "applications": []
   }

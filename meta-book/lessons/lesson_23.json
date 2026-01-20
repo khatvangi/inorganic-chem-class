@@ -1,53 +1,44 @@
 {
   "id": "lesson_23",
-  "title": "Atomic Structure",
+  "title": "Atomic Structure And Periodicity",
   "unit": "unit_3",
   "session": 23,
   "duration_minutes": 75,
   "scale": {
     "primary": "DESCRIPTIVE",
-    "touches": [
-      "QUANTUM"
-    ],
-    "escalation_from": "Quantum Numbers"
+    "touches": [],
+    "escalation_from": "Understanding Of Atomic Structure"
   },
   "topic": {
-    "name": "Atomic Structure",
-    "pagerank": 0.0029611543535774136,
-    "mentions": 38,
-    "hub_score": 0.7
+    "name": "Atomic Structure And Periodicity",
+    "pagerank": 0.0006796363704301863,
+    "mentions": 17,
+    "hub_score": 0.26
   },
   "prerequisites": {
     "required": [
-      "Quantum Numbers",
-      "Wavefunctions",
+      "Understanding Of Atomic Structure",
+      "Knowledge Of Periodic Trends",
       "Atomic Structure Basics"
     ],
     "recommended": [
-      "Periodic Table Trends",
-      "Electron Configuration Basics"
+      "Periodic Trends",
+      "Knowledge Of Electron Configurations"
     ],
     "scale_prerequisites": {
       "DESCRIPTIVE": [
-        "Quantum Numbers",
-        "Wavefunctions"
+        "Understanding Of Atomic Structure",
+        "Knowledge Of Periodic Trends"
       ]
     }
   },
   "learning_objectives": [
     {
       "id": "LO_23_1",
-      "text": "Define and explain Atomic Structure",
+      "text": "Define and explain Atomic Structure And Periodicity",
       "bloom_level": "understand",
       "scale": "DESCRIPTIVE",
       "assessment_type": "short_answer"
-    },
-    {
-      "id": "LO_23_3",
-      "text": "Analyze how Atomic Structure connects to related concepts",
-      "bloom_level": "analyze",
-      "scale": "DESCRIPTIVE",
-      "assessment_type": "essay"
     }
   ],
   "content_synthesis": {
@@ -67,7 +58,7 @@
     "formative": [
       {
         "type": "clicker",
-        "question": "Quick check on Atomic Structure"
+        "question": "Quick check on Atomic Structure And Periodicity"
       }
     ],
     "summative": {
@@ -79,13 +70,13 @@
   },
   "connections": {
     "forward": [
-      "Nuclear Chemistry",
-      "Main Group Chemistry",
-      "Periodic Trends"
+      "Chemical Bonding",
+      "Electron Configuration",
+      "Periodic Properties"
     ],
     "backward": [
-      "Quantum Numbers",
-      "Wavefunctions",
+      "Understanding Of Atomic Structure",
+      "Knowledge Of Periodic Trends",
       "Atomic Structure Basics"
     ],
     "lateral": [],

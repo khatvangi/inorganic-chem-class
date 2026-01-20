@@ -1,43 +1,60 @@
 {
   "id": "lesson_02",
-  "title": "Electron Configuration",
+  "title": "Periodic Trends",
   "unit": "unit_1",
   "session": 2,
   "duration_minutes": 75,
   "scale": {
-    "primary": "QUANTUM",
+    "primary": "DESCRIPTIVE",
     "touches": [],
-    "escalation_from": null
+    "escalation_from": "Understanding Of Periodic Table Structure"
   },
   "topic": {
-    "name": "Electron Configuration",
-    "pagerank": 0,
-    "mentions": 272,
-    "hub_score": 0.5
+    "name": "Periodic Trends",
+    "pagerank": 0.01203050059789048,
+    "mentions": 74,
+    "hub_score": 1.0
   },
   "prerequisites": {
-    "required": [],
-    "recommended": [],
+    "required": [
+      "Understanding Of Periodic Table Structure",
+      "Atomic Structure",
+      "Periodic Table Trends"
+    ],
+    "recommended": [
+      "Periodic Table",
+      "Electronic Structure Of Atoms"
+    ],
     "scale_prerequisites": {
-      "QUANTUM": []
+      "DESCRIPTIVE": [
+        "Understanding Of Periodic Table Structure",
+        "Atomic Structure"
+      ]
     }
   },
   "learning_objectives": [
     {
       "id": "LO_2_1",
-      "text": "Define and explain Electron Configuration",
+      "text": "Define and explain Periodic Trends",
       "bloom_level": "understand",
-      "scale": "QUANTUM",
+      "scale": "DESCRIPTIVE",
       "assessment_type": "short_answer"
+    },
+    {
+      "id": "LO_2_3",
+      "text": "Analyze how Periodic Trends connects to related concepts",
+      "bloom_level": "analyze",
+      "scale": "DESCRIPTIVE",
+      "assessment_type": "essay"
     }
   ],
   "content_synthesis": {
     "best_explanation": {
-      "source": "ic_tina",
+      "source": "descriptive_ic",
       "strength": "primary"
     },
     "best_examples": {
-      "source": "Atkins_Shriver",
+      "source": "descriptive_ic_house",
       "strength": "secondary"
     },
     "cross_references": []
@@ -48,7 +65,7 @@
     "formative": [
       {
         "type": "clicker",
-        "question": "Quick check on Electron Configuration"
+        "question": "Quick check on Periodic Trends"
       }
     ],
     "summative": {
@@ -60,11 +77,15 @@
   },
   "connections": {
     "forward": [
-      "Atomic Structure And Periodic Trends",
-      "Coordination Chemistry",
-      "Electronic Structure And Spectroscopy"
+      "Acid-Base Chemistry",
+      "Main Group Chemistry",
+      "Crystal Field Theory"
     ],
-    "backward": [],
+    "backward": [
+      "Understanding Of Periodic Table Structure",
+      "Atomic Structure",
+      "Periodic Table Trends"
+    ],
     "lateral": [],
     "applications": []
   }

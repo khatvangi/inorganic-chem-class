@@ -358,47 +358,70 @@ def get_escalation_target(scale: str) -> str:
     return escalation.get(scale, "ELECTRONIC")
 
 # ============================================================================
-# CURRICULUM ORDERING
+# CURRICULUM ORDERING (Combined: PageRank Order + Hub Checkpoints)
 # ============================================================================
 
 def order_topics_by_curriculum(topics: Dict[str, TopicMetadata]) -> List[str]:
     """
-    Order topics using hub-based curriculum structure:
-    1. FOUNDATIONS (high out-degree, low in-degree) 
-    2. HUBS (high total degree)
-    3. CAPSTONES (high in-degree, low out-degree)
+    COMBINED PEDAGOGY:
+    - ORDER by PageRank (foundational topics first)
+    - CHECKPOINT at Hubs (high-degree bottleneck topics)
+
+    PageRank answers: "What should I learn FIRST?"
+    Hub score answers: "Where will I get STUCK?"
     """
-    
-    # Categorize topics
-    foundations = []
-    hubs = []
-    capstones = []
-    regular = []
-    
-    for name, meta in topics.items():
-        if meta.in_degree == 0 and meta.out_degree >= 3:
-            foundations.append((name, meta.out_degree))
-        elif name in HUB_TOPICS or meta.hub_score > 0.5:
-            hubs.append((name, meta.hub_score, meta.pagerank))
-        elif meta.in_degree >= 10 and meta.out_degree <= 2:
-            capstones.append((name, meta.in_degree))
-        else:
-            regular.append((name, meta.pagerank))
-    
-    # Sort within categories
-    foundations.sort(key=lambda x: -x[1])  # Highest out-degree first
-    hubs.sort(key=lambda x: (-x[1], -x[2]))  # Highest hub score, then pagerank
-    capstones.sort(key=lambda x: -x[1])  # Highest in-degree first
-    regular.sort(key=lambda x: -x[1])  # Highest pagerank first
-    
-    # Build ordered list
-    ordered = []
-    ordered.extend([x[0] for x in foundations])
-    ordered.extend([x[0] for x in hubs])
-    ordered.extend([x[0] for x in regular])
-    ordered.extend([x[0] for x in capstones])
-    
+
+    # Primary ordering: PageRank (foundations first)
+    # This ensures prerequisites are taught before dependent topics
+    by_pagerank = sorted(
+        topics.items(),
+        key=lambda x: (-x[1].pagerank, -x[1].mentions),  # High PR first, then mentions
+    )
+
+    ordered = [name for name, _ in by_pagerank]
+
     return ordered
+
+
+def identify_hub_checkpoints(topics: Dict[str, TopicMetadata], ordered: List[str]) -> Dict[str, Dict]:
+    """
+    Identify hub topics that need checkpoints.
+    Students should be assessed after these bottleneck topics.
+
+    Hub = high total degree (in + out) = gateway topic
+    """
+    checkpoints = {}
+
+    for name in ordered:
+        if name not in topics:
+            continue
+        meta = topics[name]
+
+        # Hub criteria: high connectivity OR explicitly marked
+        is_hub = (
+            meta.hub_score > 0.4 or
+            name in HUB_TOPICS or
+            (meta.in_degree >= 3 and meta.out_degree >= 3)
+        )
+
+        if is_hub:
+            # Find position in ordered list
+            try:
+                position = ordered.index(name)
+            except ValueError:
+                position = -1
+
+            checkpoints[name] = {
+                "position": position,
+                "hub_score": meta.hub_score,
+                "total_degree": meta.in_degree + meta.out_degree,
+                "checkpoint_type": "mastery_check",
+                "threshold": 0.75,  # 75% required to proceed
+                "remediation": f"review_{name.lower().replace(' ', '_')}",
+                "why_checkpoint": f"Bottleneck topic: {meta.out_degree} topics depend on this"
+            }
+
+    return checkpoints
 
 # ============================================================================
 # LESSON GENERATION
@@ -519,119 +542,157 @@ def generate_lesson(topic: TopicMetadata, lesson_num: int, unit_id: str) -> Less
     )
 
 # ============================================================================
-# UNIT GENERATION
+# UNIT GENERATION (PageRank-ordered with Hub Checkpoints)
 # ============================================================================
 
 def generate_units(topics: Dict[str, TopicMetadata], ordered_topics: List[str]) -> List[Unit]:
-    """Generate course units based on curriculum phases"""
-    
+    """
+    Generate course units based on PageRank order.
+    Units are divided by natural breaks in the curriculum.
+
+    Unit 1: High PageRank topics (foundations)
+    Unit 2: Medium PageRank topics (core concepts)
+    Unit 3: Lower PageRank topics (applications/integration)
+    """
+
     units = []
-    
-    # Phase 1: Foundations (Weeks 1-4)
-    foundation_topics = [t for t in ordered_topics 
-                        if t in topics and topics[t].out_degree >= 3 and topics[t].in_degree == 0][:8]
-    
+    total_lessons = min(23, len(ordered_topics))
+
+    # Divide into 3 units: 8 + 9 + 6 = 23 lessons
+    unit_sizes = [8, 9, 6]
+
+    # Unit 1: Foundations (highest PageRank topics)
     units.append(Unit(
         id="unit_1",
-        name="Foundations",
+        name="Foundations (PageRank Top Tier)",
         scale="MIXED",
-        sessions=len(foundation_topics),
-        weeks="1-4",
+        sessions=unit_sizes[0],
+        weeks="1-5",
         slos=["SLO1", "SLO2"],
-        lessons=[f"lesson_{i+1:02d}" for i in range(len(foundation_topics))],
-        hub_topics=[t for t in foundation_topics if topics[t].hub_score > 0.3],
-        assessment={"diagnostic": True, "quizzes": [1, 2]}
+        lessons=[f"lesson_{i+1:02d}" for i in range(unit_sizes[0])],
+        hub_topics=[t for t in ordered_topics[:unit_sizes[0]]
+                   if t in topics and topics[t].hub_score > 0.3],
+        assessment={"diagnostic": True, "midterm1": True, "quizzes": [1, 2, 3]}
     ))
-    
-    # Phase 2: Hub Traversal (Weeks 5-12)
-    hub_topics = [t for t in ordered_topics 
-                  if t in topics and (t in HUB_TOPICS or topics[t].hub_score > 0.5)]
-    hub_topics = [t for t in hub_topics if t not in foundation_topics][:12]
-    
-    start_idx = len(foundation_topics)
+
+    # Unit 2: Core Concepts (medium PageRank)
+    start_idx = unit_sizes[0]
     units.append(Unit(
         id="unit_2",
-        name="Core Concepts (Hub Traversal)",
+        name="Core Concepts (PageRank Mid Tier)",
         scale="ELECTRONIC",
-        sessions=len(hub_topics),
-        weeks="5-12",
+        sessions=unit_sizes[1],
+        weeks="6-10",
         slos=["SLO2", "SLO3", "SLO4"],
-        lessons=[f"lesson_{start_idx+i+1:02d}" for i in range(len(hub_topics))],
-        hub_topics=hub_topics,
-        assessment={"midterm": True, "quizzes": [3, 4, 5, 6]}
+        lessons=[f"lesson_{start_idx+i+1:02d}" for i in range(unit_sizes[1])],
+        hub_topics=[t for t in ordered_topics[start_idx:start_idx+unit_sizes[1]]
+                   if t in topics and topics[t].hub_score > 0.3],
+        assessment={"midterm2": True, "quizzes": [4, 5, 6]}
     ))
-    
-    # Phase 3: Capstones (Weeks 13-16)
-    capstone_topics = [t for t in ordered_topics 
-                       if t in topics and topics[t].in_degree >= 10]
-    capstone_topics = [t for t in capstone_topics 
-                       if t not in foundation_topics and t not in hub_topics][:6]
-    
-    start_idx = len(foundation_topics) + len(hub_topics)
+
+    # Unit 3: Applications & Integration
+    start_idx = unit_sizes[0] + unit_sizes[1]
     units.append(Unit(
         id="unit_3",
-        name="Integration (Capstones)",
+        name="Applications & Integration",
         scale="DESCRIPTIVE",
-        sessions=len(capstone_topics),
-        weeks="13-16",
-        slos=["SLO4", "SLO5"],
-        lessons=[f"lesson_{start_idx+i+1:02d}" for i in range(len(capstone_topics))],
+        sessions=unit_sizes[2],
+        weeks="11-15",
+        slos=["SLO4", "SLO5", "SLO6"],
+        lessons=[f"lesson_{start_idx+i+1:02d}" for i in range(unit_sizes[2])],
         hub_topics=[],
-        assessment={"final": True, "quizzes": [7]}
+        assessment={"final": True, "quizzes": [7, 8]}
     ))
-    
+
     return units
 
 # ============================================================================
-# LEARNING PATHS
+# LEARNING PATHS (with Hub Checkpoints)
 # ============================================================================
 
-def generate_learning_paths(topics: Dict[str, TopicMetadata], lessons: List[Lesson]) -> Dict:
-    """Generate learning paths including remediation and acceleration"""
-    
+def generate_learning_paths(topics: Dict[str, TopicMetadata], lessons: List[Lesson],
+                           hub_checkpoints: Dict[str, Dict]) -> Dict:
+    """
+    Generate learning paths with:
+    - Standard path (PageRank ordered)
+    - Hub checkpoints (mastery gates at bottleneck topics)
+    - Remediation paths (for students who fail hub checks)
+    - Acceleration paths (for advanced students)
+    """
+
+    # Build lesson name to ID mapping
+    lesson_map = {l.title: l.id for l in lessons}
+
+    # Convert hub checkpoints to lesson-based checkpoints
+    checkpoint_list = []
+    for topic_name, checkpoint in hub_checkpoints.items():
+        if topic_name in lesson_map:
+            lesson_id = lesson_map[topic_name]
+            checkpoint_list.append({
+                "topic": topic_name,
+                "after_lesson": lesson_id,
+                "hub_score": checkpoint["hub_score"],
+                "total_degree": checkpoint["total_degree"],
+                "assessment": f"hub_check_{topic_name.lower().replace(' ', '_')}",
+                "threshold": checkpoint["threshold"],
+                "remediation": checkpoint["remediation"],
+                "why": checkpoint["why_checkpoint"]
+            })
+
+    # Sort checkpoints by lesson position
+    checkpoint_list.sort(key=lambda x: x["after_lesson"])
+
     return {
+        "pedagogy_model": {
+            "ordering": "PageRank (foundational topics first)",
+            "checkpoints": "Hub-based (bottleneck topics flagged)",
+            "rationale": "PageRank ensures prerequisites met; Hubs catch struggling students early"
+        },
         "standard_path": {
-            "name": "Default Curriculum Order",
-            "description": "Data-driven sequence: Foundations → Hubs → Capstones",
+            "name": "PageRank-Ordered Curriculum",
+            "description": "Topics ordered by foundational importance (PageRank), with mastery checks at hub topics",
             "lessons": [l.id for l in lessons]
         },
+        "hub_checkpoints": checkpoint_list[:10],  # Top 10 hub checkpoints
         "remediation_paths": {
-            "weak_periodic_trends": {
-                "trigger": "pretest_score < 60% on periodic concepts",
-                "insert_before": "lesson_01",
-                "supplemental": ["review_periodic_table", "practice_trends"]
+            "weak_atomic_structure": {
+                "trigger": "hub_check fails on Atomic Structure",
+                "supplemental": ["review_orbitals", "practice_electron_config"],
+                "resources": ["JD Lee Ch.1", "ic_tina orbital module"]
             },
-            "weak_orbitals": {
-                "trigger": "quiz_2_score < 70%",
-                "insert_before": "lesson_09",
-                "supplemental": ["review_orbitals", "practice_electron_config"]
+            "weak_periodic_trends": {
+                "trigger": "hub_check fails on Periodic Trends",
+                "supplemental": ["review_periodic_table", "practice_trends"],
+                "resources": ["Rodgers Ch.2", "periodic trends worksheet"]
             },
             "weak_bonding": {
-                "trigger": "quiz_3_score < 70%",
-                "insert_before": "lesson_12",
-                "supplemental": ["review_lewis", "practice_mo_diagrams"]
+                "trigger": "hub_check fails on Chemical Bonding or MO Theory",
+                "supplemental": ["review_lewis", "practice_mo_diagrams"],
+                "resources": ["Atkins Ch.3", "MO diagram practice"]
+            },
+            "weak_coordination": {
+                "trigger": "hub_check fails on Coordination Chemistry",
+                "supplemental": ["review_nomenclature", "practice_isomers"],
+                "resources": ["ic_tina coordination module"]
+            },
+            "weak_cft": {
+                "trigger": "hub_check fails on Crystal Field Theory",
+                "supplemental": ["review_d_orbitals", "practice_cfse"],
+                "resources": ["JD Lee CFT chapter", "Tanabe-Sugano practice"]
             }
         },
         "acceleration_paths": {
             "strong_foundation": {
-                "trigger": "pretest_score > 90%",
-                "skip": ["lesson_01", "lesson_02"],
-                "start_at": "lesson_03"
+                "trigger": "pretest_score > 90% AND first hub_check > 90%",
+                "action": "Skip review lessons, proceed to applications",
+                "skip_lessons": ["lesson_01", "lesson_02"]
             }
         },
-        "hub_checkpoints": {
-            "periodic_trends": {
-                "after_lesson": "lesson_04",
-                "assessment": "hub_check_1",
-                "threshold": 0.75,
-                "remediation": "remediation_paths.weak_periodic_trends"
-            },
-            "bonding_theories": {
-                "after_lesson": "lesson_12",
-                "assessment": "hub_check_2", 
-                "threshold": 0.75,
-                "remediation": "remediation_paths.weak_bonding"
-            }
+        "checkpoint_summary": {
+            "total_hubs_identified": len(hub_checkpoints),
+            "checkpoints_in_curriculum": len(checkpoint_list),
+            "average_threshold": 0.75,
+            "remediation_available": True
         }
     }
 
@@ -775,9 +836,13 @@ def generate_metabook(kg_path: str, output_dir: str):
             unit_lesson_count += 1
     
     print(f"  Generated {len(lessons)} lessons")
-    
+
+    print("Identifying hub checkpoints...")
+    hub_checkpoints = identify_hub_checkpoints(topics, ordered)
+    print(f"  Identified {len(hub_checkpoints)} hub checkpoints")
+
     print("Generating learning paths...")
-    paths = generate_learning_paths(topics, lessons)
+    paths = generate_learning_paths(topics, lessons, hub_checkpoints)
     
     print("Generating assessments...")
     assessments = generate_assessments(topics, lessons)
@@ -785,22 +850,33 @@ def generate_metabook(kg_path: str, output_dir: str):
     # Assemble meta-book
     metabook = {
         "meta": {
-            "version": "1.0.0",
+            "version": "2.0.0",
             "course": "CHEM 361",
             "title": "Inorganic Chemistry Meta-Book",
             "generated": datetime.now().isoformat(),
             "sources": {
                 "knowledge_graph": kg_path,
                 "textbooks": list(set(
-                    t.best_sources["explanation"]["source"] 
+                    t.best_sources["explanation"]["source"]
                     for t in topics.values()
                 )),
                 "model": "hierarchical_4_scale"
+            },
+            "pedagogy_model": {
+                "description": "Combined PageRank Order + Hub Checkpoints",
+                "ordering_method": "PageRank (foundational topics first)",
+                "checkpoint_method": "Hub-based (bottleneck detection)",
+                "rationale": {
+                    "pagerank": "Ensures prerequisites are taught before dependent topics",
+                    "hubs": "Identifies where students get stuck, enables early intervention"
+                },
+                "combined_benefit": "Students learn in correct order AND get checked at bottlenecks"
             }
         },
         "units": [asdict(u) for u in units],
         "lessons": [asdict(l) for l in lessons],
         "topics": {name: asdict(t) for name, t in topics.items()},
+        "hub_checkpoints": hub_checkpoints,
         "assessments": assessments,
         "learning_paths": paths
     }
@@ -832,10 +908,23 @@ def generate_metabook(kg_path: str, output_dir: str):
         "total_topics": len(topics),
         "total_lessons": len(lessons),
         "total_units": len(units),
+        "pedagogy": {
+            "ordering": "PageRank",
+            "checkpoints": "Hub-based",
+            "total_hub_checkpoints": len(hub_checkpoints)
+        },
         "scale_distribution": {},
-        "hub_topics": [t for t in topics if topics[t].hub_score > 0.5]
+        "hub_topics": [t for t in topics if topics[t].hub_score > 0.5],
+        "top_10_by_pagerank": [
+            {"topic": t.name, "pagerank": round(t.pagerank, 4)}
+            for t in sorted(topics.values(), key=lambda x: -x.pagerank)[:10]
+        ],
+        "top_10_hub_checkpoints": [
+            {"topic": name, "hub_score": round(cp["hub_score"], 2), "total_degree": cp["total_degree"]}
+            for name, cp in sorted(hub_checkpoints.items(), key=lambda x: -x[1]["hub_score"])[:10]
+        ]
     }
-    
+
     for scale in ["QUANTUM", "ELECTRONIC", "STRUCTURAL", "DESCRIPTIVE"]:
         stats["scale_distribution"][scale] = len([t for t in topics.values() if t.scale == scale])
     

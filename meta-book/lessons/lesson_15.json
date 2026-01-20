@@ -1,51 +1,44 @@
 {
   "id": "lesson_15",
-  "title": "Acid-Base Chemistry",
+  "title": "Thermochemistry",
   "unit": "unit_2",
   "session": 15,
   "duration_minutes": 75,
   "scale": {
     "primary": "DESCRIPTIVE",
     "touches": [],
-    "escalation_from": "Periodic Trends"
+    "escalation_from": "Understanding Of Enthalpy Concepts"
   },
   "topic": {
-    "name": "Acid-Base Chemistry",
-    "pagerank": 0.0025137268249206075,
-    "mentions": 194,
-    "hub_score": 1.0
+    "name": "Thermochemistry",
+    "pagerank": 0.0010935141074769968,
+    "mentions": 28,
+    "hub_score": 0.26
   },
   "prerequisites": {
     "required": [
-      "Periodic Trends",
-      "Acid Dissociation",
-      "Acid-Base Theory"
+      "Understanding Of Enthalpy Concepts",
+      "Ionization Energy",
+      "Enthalpy Of Sublimation"
     ],
     "recommended": [
-      "Lewis Structures",
-      "Acid-Base Equilibrium"
+      "Enthalpy Changes",
+      "Born-Haber Cycle"
     ],
     "scale_prerequisites": {
       "DESCRIPTIVE": [
-        "Periodic Trends",
-        "Acid Dissociation"
+        "Understanding Of Enthalpy Concepts",
+        "Ionization Energy"
       ]
     }
   },
   "learning_objectives": [
     {
       "id": "LO_15_1",
-      "text": "Define and explain Acid-Base Chemistry",
+      "text": "Define and explain Thermochemistry",
       "bloom_level": "understand",
       "scale": "DESCRIPTIVE",
       "assessment_type": "short_answer"
-    },
-    {
-      "id": "LO_15_3",
-      "text": "Analyze how Acid-Base Chemistry connects to related concepts",
-      "bloom_level": "analyze",
-      "scale": "DESCRIPTIVE",
-      "assessment_type": "essay"
     }
   ],
   "content_synthesis": {
@@ -65,7 +58,7 @@
     "formative": [
       {
         "type": "clicker",
-        "question": "Quick check on Acid-Base Chemistry"
+        "question": "Quick check on Thermochemistry"
       }
     ],
     "summative": {
@@ -77,14 +70,14 @@
   },
   "connections": {
     "forward": [
-      "Acid-Base Equilibria",
-      "Electrochemistry",
-      "Acid Strength Trends"
+      "Hydrogen Production And Utilization",
+      "Solid State Chemistry",
+      "Thermodynamic Calculations"
     ],
     "backward": [
-      "Periodic Trends",
-      "Acid Dissociation",
-      "Acid-Base Theory"
+      "Understanding Of Enthalpy Concepts",
+      "Ionization Energy",
+      "Enthalpy Of Sublimation"
     ],
     "lateral": [],
     "applications": []

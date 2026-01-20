@@ -1,41 +1,51 @@
 {
   "id": "lesson_03",
-  "title": "Ionic Bonding",
+  "title": "Redox Chemistry",
   "unit": "unit_1",
   "session": 3,
   "duration_minutes": 75,
   "scale": {
-    "primary": "ELECTRONIC",
+    "primary": "DESCRIPTIVE",
     "touches": [],
-    "escalation_from": null
+    "escalation_from": "Electrochemical Series"
   },
   "topic": {
-    "name": "Ionic Bonding",
-    "pagerank": 0.00439501139431198,
-    "mentions": 5,
-    "hub_score": 0.34
+    "name": "Redox Chemistry",
+    "pagerank": 0.007949847241380162,
+    "mentions": 31,
+    "hub_score": 0.92
   },
   "prerequisites": {
-    "required": [],
-    "recommended": [],
+    "required": [
+      "Electrochemical Series",
+      "Oxidation States",
+      "Basic Redox Reactions"
+    ],
+    "recommended": [
+      "Redox Chemistry",
+      "Understanding Of Oxidation-Reduction Reactions"
+    ],
     "scale_prerequisites": {
-      "ELECTRONIC": []
+      "DESCRIPTIVE": [
+        "Electrochemical Series",
+        "Oxidation States"
+      ]
     }
   },
   "learning_objectives": [
     {
       "id": "LO_3_1",
-      "text": "Define and explain Ionic Bonding",
+      "text": "Define and explain Redox Chemistry",
       "bloom_level": "understand",
-      "scale": "ELECTRONIC",
+      "scale": "DESCRIPTIVE",
       "assessment_type": "short_answer"
     },
     {
-      "id": "LO_3_2",
-      "text": "Apply Ionic Bonding to predict chemical properties",
-      "bloom_level": "apply",
-      "scale": "ELECTRONIC",
-      "assessment_type": "problem_solving"
+      "id": "LO_3_3",
+      "text": "Analyze how Redox Chemistry connects to related concepts",
+      "bloom_level": "analyze",
+      "scale": "DESCRIPTIVE",
+      "assessment_type": "essay"
     }
   ],
   "content_synthesis": {
@@ -44,30 +54,18 @@
       "strength": "primary"
     },
     "best_examples": {
-      "source": "concise_ic_jd_lee",
+      "source": "descriptive_ic_house",
       "strength": "secondary"
     },
     "cross_references": []
   },
   "subtopics": [],
-  "worked_examples": [
-    {
-      "problem": "Apply Ionic Bonding to predict properties of a transition metal complex",
-      "type": "calculation",
-      "difficulty": "medium",
-      "solution_steps": [
-        "Identify key parameters",
-        "Apply theory",
-        "Interpret result"
-      ],
-      "source": "adapted from descriptive_ic"
-    }
-  ],
+  "worked_examples": [],
   "assessment_items": {
     "formative": [
       {
         "type": "clicker",
-        "question": "Quick check on Ionic Bonding"
+        "question": "Quick check on Redox Chemistry"
       }
     ],
     "summative": {
@@ -79,11 +77,15 @@
   },
   "connections": {
     "forward": [
-      "Coordination Chemistry",
       "Main Group Chemistry",
-      "Crystal Structures And Ionic Bonding"
+      "Enzymatic Catalysis",
+      "Electrochemistry"
     ],
-    "backward": [],
+    "backward": [
+      "Electrochemical Series",
+      "Oxidation States",
+      "Basic Redox Reactions"
+    ],
     "lateral": [],
     "applications": []
   }

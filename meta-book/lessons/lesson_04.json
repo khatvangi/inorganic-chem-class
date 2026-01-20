@@ -1,43 +1,70 @@
 {
   "id": "lesson_04",
-  "title": "Oxidation States",
+  "title": "Coordination Chemistry",
   "unit": "unit_1",
   "session": 4,
   "duration_minutes": 75,
   "scale": {
-    "primary": "DESCRIPTIVE",
-    "touches": [],
-    "escalation_from": null
+    "primary": "STRUCTURAL",
+    "touches": [
+      "DESCRIPTIVE",
+      "ELECTRONIC"
+    ],
+    "escalation_from": "Reaction Mechanisms"
   },
   "topic": {
-    "name": "Oxidation States",
-    "pagerank": 0,
-    "mentions": 368,
-    "hub_score": 0.34
+    "name": "Coordination Chemistry",
+    "pagerank": 0.0048860817031320765,
+    "mentions": 1271,
+    "hub_score": 1.0
   },
   "prerequisites": {
-    "required": [],
-    "recommended": [],
+    "required": [
+      "Reaction Mechanisms",
+      "Coordination Compounds",
+      "Ligand Field Theory"
+    ],
+    "recommended": [
+      "Ionic Bonding",
+      "Crystal Structures"
+    ],
     "scale_prerequisites": {
-      "DESCRIPTIVE": []
+      "STRUCTURAL": [
+        "Reaction Mechanisms",
+        "Coordination Compounds"
+      ]
     }
   },
   "learning_objectives": [
     {
       "id": "LO_4_1",
-      "text": "Define and explain Oxidation States",
+      "text": "Define and explain Coordination Chemistry",
       "bloom_level": "understand",
-      "scale": "DESCRIPTIVE",
+      "scale": "STRUCTURAL",
       "assessment_type": "short_answer"
+    },
+    {
+      "id": "LO_4_2",
+      "text": "Apply Coordination Chemistry to predict chemical properties",
+      "bloom_level": "apply",
+      "scale": "STRUCTURAL",
+      "assessment_type": "problem_solving"
+    },
+    {
+      "id": "LO_4_3",
+      "text": "Analyze how Coordination Chemistry connects to related concepts",
+      "bloom_level": "analyze",
+      "scale": "STRUCTURAL",
+      "assessment_type": "essay"
     }
   ],
   "content_synthesis": {
     "best_explanation": {
-      "source": "descriptive_ic",
+      "source": "ic_tina",
       "strength": "primary"
     },
     "best_examples": {
-      "source": "descriptive_ic_house",
+      "source": "Atkins_Shriver",
       "strength": "secondary"
     },
     "cross_references": []
@@ -48,7 +75,7 @@
     "formative": [
       {
         "type": "clicker",
-        "question": "Quick check on Oxidation States"
+        "question": "Quick check on Coordination Chemistry"
       }
     ],
     "summative": {
@@ -60,11 +87,15 @@
   },
   "connections": {
     "forward": [
-      "Coordination Chemistry",
-      "Main Group Chemistry",
-      "Redox Chemistry"
+      "Coordination Geometry",
+      "Crystal Field Theory",
+      "Ligand Substitution Reactions"
     ],
-    "backward": [],
+    "backward": [
+      "Reaction Mechanisms",
+      "Coordination Compounds",
+      "Ligand Field Theory"
+    ],
     "lateral": [],
     "applications": []
   }

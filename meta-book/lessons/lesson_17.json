@@ -1,60 +1,63 @@
 {
   "id": "lesson_17",
-  "title": "Electrochemistry",
+  "title": "Crystal Structures",
   "unit": "unit_2",
   "session": 17,
   "duration_minutes": 75,
   "scale": {
-    "primary": "DESCRIPTIVE",
-    "touches": [],
-    "escalation_from": "Understanding Of Oxidation And Reduction"
+    "primary": "STRUCTURAL",
+    "touches": [
+      "ELECTRONIC",
+      "DESCRIPTIVE"
+    ],
+    "escalation_from": "Crystal Lattice Structures"
   },
   "topic": {
-    "name": "Electrochemistry",
-    "pagerank": 0.0014458509994602015,
-    "mentions": 255,
-    "hub_score": 1.0
+    "name": "Crystal Structures",
+    "pagerank": 0.00091426772879846,
+    "mentions": 11,
+    "hub_score": 0.3
   },
   "prerequisites": {
     "required": [
-      "Understanding Of Oxidation And Reduction",
-      "Knowledge Of Electrode Potentials",
-      "Redox Chemistry"
+      "Crystal Lattice Structures",
+      "Ionic Bonding",
+      "Crystal Systems"
     ],
     "recommended": [
-      "Gibbs Free Energy Calculations",
-      "Electrode Potentials"
+      "Symmetry Operations",
+      "Unit Cell Geometry"
     ],
     "scale_prerequisites": {
-      "DESCRIPTIVE": [
-        "Understanding Of Oxidation And Reduction",
-        "Knowledge Of Electrode Potentials"
+      "STRUCTURAL": [
+        "Crystal Lattice Structures",
+        "Ionic Bonding"
       ]
     }
   },
   "learning_objectives": [
     {
       "id": "LO_17_1",
-      "text": "Define and explain Electrochemistry",
+      "text": "Define and explain Crystal Structures",
       "bloom_level": "understand",
-      "scale": "DESCRIPTIVE",
+      "scale": "STRUCTURAL",
       "assessment_type": "short_answer"
     },
     {
-      "id": "LO_17_3",
-      "text": "Analyze how Electrochemistry connects to related concepts",
-      "bloom_level": "analyze",
-      "scale": "DESCRIPTIVE",
-      "assessment_type": "essay"
+      "id": "LO_17_2",
+      "text": "Apply Crystal Structures to predict chemical properties",
+      "bloom_level": "apply",
+      "scale": "STRUCTURAL",
+      "assessment_type": "problem_solving"
     }
   ],
   "content_synthesis": {
     "best_explanation": {
-      "source": "descriptive_ic",
+      "source": "ic_tina",
       "strength": "primary"
     },
     "best_examples": {
-      "source": "descriptive_ic_house",
+      "source": "Atkins_Shriver",
       "strength": "secondary"
     },
     "cross_references": []
@@ -65,7 +68,7 @@
     "formative": [
       {
         "type": "clicker",
-        "question": "Quick check on Electrochemistry"
+        "question": "Quick check on Crystal Structures"
       }
     ],
     "summative": {
@@ -77,14 +80,14 @@
   },
   "connections": {
     "forward": [
-      "Electrochemical Series",
-      "Fuel Cell Operation",
-      "Electrochemical Applications"
+      "Solid State Chemistry",
+      "Solid State Chemistry",
+      "Coordination Chemistry"
     ],
     "backward": [
-      "Understanding Of Oxidation And Reduction",
-      "Knowledge Of Electrode Potentials",
-      "Redox Chemistry"
+      "Crystal Lattice Structures",
+      "Ionic Bonding",
+      "Crystal Systems"
     ],
     "lateral": [],
     "applications": []

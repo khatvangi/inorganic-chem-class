@@ -1,41 +1,53 @@
 {
   "id": "lesson_08",
-  "title": "Ligand Field Theory",
+  "title": "Atomic Structure",
   "unit": "unit_1",
   "session": 8,
   "duration_minutes": 75,
   "scale": {
-    "primary": "ELECTRONIC",
-    "touches": [],
-    "escalation_from": null
+    "primary": "DESCRIPTIVE",
+    "touches": [
+      "QUANTUM"
+    ],
+    "escalation_from": "Quantum Numbers"
   },
   "topic": {
-    "name": "Ligand Field Theory",
-    "pagerank": 0,
-    "mentions": 15,
-    "hub_score": 0.18
+    "name": "Atomic Structure",
+    "pagerank": 0.0029611543535774136,
+    "mentions": 38,
+    "hub_score": 0.7
   },
   "prerequisites": {
-    "required": [],
-    "recommended": [],
+    "required": [
+      "Quantum Numbers",
+      "Wavefunctions",
+      "Atomic Structure Basics"
+    ],
+    "recommended": [
+      "Periodic Table Trends",
+      "Electron Configuration Basics"
+    ],
     "scale_prerequisites": {
-      "ELECTRONIC": []
+      "DESCRIPTIVE": [
+        "Quantum Numbers",
+        "Wavefunctions"
+      ]
     }
   },
   "learning_objectives": [
     {
       "id": "LO_8_1",
-      "text": "Define and explain Ligand Field Theory",
+      "text": "Define and explain Atomic Structure",
       "bloom_level": "understand",
-      "scale": "ELECTRONIC",
+      "scale": "DESCRIPTIVE",
       "assessment_type": "short_answer"
     },
     {
-      "id": "LO_8_2",
-      "text": "Apply Ligand Field Theory to predict chemical properties",
-      "bloom_level": "apply",
-      "scale": "ELECTRONIC",
-      "assessment_type": "problem_solving"
+      "id": "LO_8_3",
+      "text": "Analyze how Atomic Structure connects to related concepts",
+      "bloom_level": "analyze",
+      "scale": "DESCRIPTIVE",
+      "assessment_type": "essay"
     }
   ],
   "content_synthesis": {
@@ -44,30 +56,18 @@
       "strength": "primary"
     },
     "best_examples": {
-      "source": "concise_ic_jd_lee",
+      "source": "descriptive_ic_house",
       "strength": "secondary"
     },
     "cross_references": []
   },
   "subtopics": [],
-  "worked_examples": [
-    {
-      "problem": "Apply Ligand Field Theory to predict properties of a transition metal complex",
-      "type": "calculation",
-      "difficulty": "medium",
-      "solution_steps": [
-        "Identify key parameters",
-        "Apply theory",
-        "Interpret result"
-      ],
-      "source": "adapted from descriptive_ic"
-    }
-  ],
+  "worked_examples": [],
   "assessment_items": {
     "formative": [
       {
         "type": "clicker",
-        "question": "Quick check on Ligand Field Theory"
+        "question": "Quick check on Atomic Structure"
       }
     ],
     "summative": {
@@ -79,11 +79,15 @@
   },
   "connections": {
     "forward": [
-      "Organometallic Chemistry",
-      "Coordination Chemistry",
-      "Main Group Chemistry"
+      "Nuclear Chemistry",
+      "Main Group Chemistry",
+      "Periodic Trends"
     ],
-    "backward": [],
+    "backward": [
+      "Quantum Numbers",
+      "Wavefunctions",
+      "Atomic Structure Basics"
+    ],
     "lateral": [],
     "applications": []
   }

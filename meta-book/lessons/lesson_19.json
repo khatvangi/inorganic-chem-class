@@ -1,51 +1,46 @@
 {
   "id": "lesson_19",
-  "title": "Redox Chemistry",
-  "unit": "unit_2",
+  "title": "Catalysis",
+  "unit": "unit_3",
   "session": 19,
   "duration_minutes": 75,
   "scale": {
     "primary": "DESCRIPTIVE",
-    "touches": [],
-    "escalation_from": "Electrochemical Series"
+    "touches": [
+      "STRUCTURAL"
+    ],
+    "escalation_from": "Catalytic Mechanisms"
   },
   "topic": {
-    "name": "Redox Chemistry",
-    "pagerank": 0.007949847241380162,
-    "mentions": 31,
-    "hub_score": 0.92
+    "name": "Catalysis",
+    "pagerank": 0.0007313991211398991,
+    "mentions": 66,
+    "hub_score": 0.5
   },
   "prerequisites": {
     "required": [
-      "Electrochemical Series",
-      "Oxidation States",
-      "Basic Redox Reactions"
+      "Catalytic Mechanisms",
+      "Surface Chemistry",
+      "Organometallic Chemistry Basics"
     ],
     "recommended": [
-      "Redox Chemistry",
-      "Understanding Of Oxidation-Reduction Reactions"
+      "Understanding Of Catalytic Mechanisms",
+      "Organometallic Chemistry"
     ],
     "scale_prerequisites": {
       "DESCRIPTIVE": [
-        "Electrochemical Series",
-        "Oxidation States"
+        "Catalytic Mechanisms",
+        "Surface Chemistry"
       ]
     }
   },
   "learning_objectives": [
     {
       "id": "LO_19_1",
-      "text": "Define and explain Redox Chemistry",
+      "text": "Define and explain Catalysis",
       "bloom_level": "understand",
       "scale": "DESCRIPTIVE",
       "assessment_type": "short_answer"
-    },
-    {
-      "id": "LO_19_3",
-      "text": "Analyze how Redox Chemistry connects to related concepts",
-      "bloom_level": "analyze",
-      "scale": "DESCRIPTIVE",
-      "assessment_type": "essay"
     }
   ],
   "content_synthesis": {
@@ -65,7 +60,7 @@
     "formative": [
       {
         "type": "clicker",
-        "question": "Quick check on Redox Chemistry"
+        "question": "Quick check on Catalysis"
       }
     ],
     "summative": {
@@ -77,14 +72,14 @@
   },
   "connections": {
     "forward": [
-      "Main Group Chemistry",
-      "Enzymatic Catalysis",
-      "Electrochemistry"
+      "Catalytic Mechanisms",
+      "Homogeneous Catalysis",
+      "Main Group Chemistry"
     ],
     "backward": [
-      "Electrochemical Series",
-      "Oxidation States",
-      "Basic Redox Reactions"
+      "Catalytic Mechanisms",
+      "Surface Chemistry",
+      "Organometallic Chemistry Basics"
     ],
     "lateral": [],
     "applications": []
