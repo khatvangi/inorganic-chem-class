@@ -1,0 +1,1836 @@
+{
+  "Inorganic_Chemistry_Atkins_Shriver.pdf": {
+    "book_name": "Inorganic_Chemistry_Atkins_Shriver.pdf",
+    "total_chunks": 2494,
+    "total_words": 585050,
+    "topic_scores": {
+      "Atomic Structure": {
+        "topic": "Atomic Structure",
+        "chunk_count": 128,
+        "keyword_hits": 261,
+        "keyword_density": 5.61,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Molecular Orbital Theory": {
+        "topic": "Molecular Orbital Theory",
+        "chunk_count": 171,
+        "keyword_hits": 476,
+        "keyword_density": 7.92,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Symmetry/Group Theory": {
+        "topic": "Symmetry/Group Theory",
+        "chunk_count": 372,
+        "keyword_hits": 942,
+        "keyword_density": 7.62,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Acids & Bases": {
+        "topic": "Acids & Bases",
+        "chunk_count": 301,
+        "keyword_hits": 743,
+        "keyword_density": 7.3,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Redox Chemistry": {
+        "topic": "Redox Chemistry",
+        "chunk_count": 629,
+        "keyword_hits": 1835,
+        "keyword_density": 8.81,
+        "score": 4,
+        "rating": "good"
+      },
+      "Coordination Fundamentals": {
+        "topic": "Coordination Fundamentals",
+        "chunk_count": 829,
+        "keyword_hits": 2320,
+        "keyword_density": 9.14,
+        "score": 4,
+        "rating": "good"
+      },
+      "Crystal Field Theory": {
+        "topic": "Crystal Field Theory",
+        "chunk_count": 128,
+        "keyword_hits": 431,
+        "keyword_density": 11.95,
+        "score": 4,
+        "rating": "good"
+      },
+      "Spectroscopy (UV-Vis, IR, NMR)": {
+        "topic": "Spectroscopy (UV-Vis, IR, NMR)",
+        "chunk_count": 258,
+        "keyword_hits": 650,
+        "keyword_density": 6.95,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Reaction Mechanisms": {
+        "topic": "Reaction Mechanisms",
+        "chunk_count": 276,
+        "keyword_hits": 648,
+        "keyword_density": 6.92,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Main Group (s-block)": {
+        "topic": "Main Group (s-block)",
+        "chunk_count": 367,
+        "keyword_hits": 1239,
+        "keyword_density": 9.15,
+        "score": 4,
+        "rating": "good"
+      },
+      "Main Group (p-block)": {
+        "topic": "Main Group (p-block)",
+        "chunk_count": 729,
+        "keyword_hits": 2393,
+        "keyword_density": 9.88,
+        "score": 4,
+        "rating": "good"
+      },
+      "Transition Metals": {
+        "topic": "Transition Metals",
+        "chunk_count": 424,
+        "keyword_hits": 866,
+        "keyword_density": 5.79,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Lanthanides/Actinides": {
+        "topic": "Lanthanides/Actinides",
+        "chunk_count": 89,
+        "keyword_hits": 147,
+        "keyword_density": 4.4,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Organometallics": {
+        "topic": "Organometallics",
+        "chunk_count": 284,
+        "keyword_hits": 724,
+        "keyword_density": 7.68,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Bioinorganic": {
+        "topic": "Bioinorganic",
+        "chunk_count": 69,
+        "keyword_hits": 121,
+        "keyword_density": 4.75,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Solid State": {
+        "topic": "Solid State",
+        "chunk_count": 394,
+        "keyword_hits": 1051,
+        "keyword_density": 7.66,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Catalysis": {
+        "topic": "Catalysis",
+        "chunk_count": 210,
+        "keyword_hits": 681,
+        "keyword_density": 9.08,
+        "score": 4,
+        "rating": "good"
+      },
+      "Materials/Nanochemistry": {
+        "topic": "Materials/Nanochemistry",
+        "chunk_count": 137,
+        "keyword_hits": 262,
+        "keyword_density": 5.53,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Environmental IC": {
+        "topic": "Environmental IC",
+        "chunk_count": 89,
+        "keyword_hits": 156,
+        "keyword_density": 4.01,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Medicinal IC": {
+        "topic": "Medicinal IC",
+        "chunk_count": 23,
+        "keyword_hits": 40,
+        "keyword_density": 4.95,
+        "score": 3,
+        "rating": "fair"
+      }
+    },
+    "example_count": 365,
+    "examples_per_100_chunks": 14.6,
+    "equation_count": 361,
+    "equations_per_chunk": 0.14,
+    "figure_references": 2224,
+    "figures_per_chunk": 0.89,
+    "avg_words_per_chunk": 234.6,
+    "keyword_diversity": 0.012,
+    "cross_topic_integration": 0.625,
+    "coverage_score": 66.8,
+    "depth_score": 31.6,
+    "pedagogy_score": 25.0,
+    "overall_score": 43.7,
+    "best_for": [
+      "coordination chemistry",
+      "main group chemistry"
+    ]
+  },
+  "advancex_ic_applicaionts.pdf": {
+    "book_name": "advancex_ic_applicaionts.pdf",
+    "total_chunks": 351,
+    "total_words": 67278,
+    "topic_scores": {
+      "Atomic Structure": {
+        "topic": "Atomic Structure",
+        "chunk_count": 10,
+        "keyword_hits": 17,
+        "keyword_density": 7.76,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Molecular Orbital Theory": {
+        "topic": "Molecular Orbital Theory",
+        "chunk_count": 38,
+        "keyword_hits": 72,
+        "keyword_density": 7.45,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Symmetry/Group Theory": {
+        "topic": "Symmetry/Group Theory",
+        "chunk_count": 84,
+        "keyword_hits": 231,
+        "keyword_density": 14.04,
+        "score": 4,
+        "rating": "good"
+      },
+      "Acids & Bases": {
+        "topic": "Acids & Bases",
+        "chunk_count": 10,
+        "keyword_hits": 13,
+        "keyword_density": 5.42,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Redox Chemistry": {
+        "topic": "Redox Chemistry",
+        "chunk_count": 36,
+        "keyword_hits": 54,
+        "keyword_density": 6.01,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Coordination Fundamentals": {
+        "topic": "Coordination Fundamentals",
+        "chunk_count": 137,
+        "keyword_hits": 371,
+        "keyword_density": 12.89,
+        "score": 4,
+        "rating": "good"
+      },
+      "Crystal Field Theory": {
+        "topic": "Crystal Field Theory",
+        "chunk_count": 42,
+        "keyword_hits": 169,
+        "keyword_density": 16.51,
+        "score": 5,
+        "rating": "excellent"
+      },
+      "Spectroscopy (UV-Vis, IR, NMR)": {
+        "topic": "Spectroscopy (UV-Vis, IR, NMR)",
+        "chunk_count": 33,
+        "keyword_hits": 61,
+        "keyword_density": 7.71,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Reaction Mechanisms": {
+        "topic": "Reaction Mechanisms",
+        "chunk_count": 85,
+        "keyword_hits": 343,
+        "keyword_density": 18.79,
+        "score": 5,
+        "rating": "excellent"
+      },
+      "Main Group (s-block)": {
+        "topic": "Main Group (s-block)",
+        "chunk_count": 12,
+        "keyword_hits": 20,
+        "keyword_density": 5.77,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Main Group (p-block)": {
+        "topic": "Main Group (p-block)",
+        "chunk_count": 62,
+        "keyword_hits": 164,
+        "keyword_density": 10.97,
+        "score": 4,
+        "rating": "good"
+      },
+      "Transition Metals": {
+        "topic": "Transition Metals",
+        "chunk_count": 107,
+        "keyword_hits": 254,
+        "keyword_density": 10.29,
+        "score": 4,
+        "rating": "good"
+      },
+      "Lanthanides/Actinides": {
+        "topic": "Lanthanides/Actinides",
+        "chunk_count": 4,
+        "keyword_hits": 7,
+        "keyword_density": 5.99,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Organometallics": {
+        "topic": "Organometallics",
+        "chunk_count": 51,
+        "keyword_hits": 152,
+        "keyword_density": 12.07,
+        "score": 4,
+        "rating": "good"
+      },
+      "Bioinorganic": {
+        "topic": "Bioinorganic",
+        "chunk_count": 38,
+        "keyword_hits": 89,
+        "keyword_density": 9.42,
+        "score": 4,
+        "rating": "good"
+      },
+      "Solid State": {
+        "topic": "Solid State",
+        "chunk_count": 7,
+        "keyword_hits": 8,
+        "keyword_density": 4.41,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Catalysis": {
+        "topic": "Catalysis",
+        "chunk_count": 28,
+        "keyword_hits": 122,
+        "keyword_density": 14.88,
+        "score": 4,
+        "rating": "good"
+      },
+      "Materials/Nanochemistry": {
+        "topic": "Materials/Nanochemistry",
+        "chunk_count": 1,
+        "keyword_hits": 2,
+        "keyword_density": 3.48,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Environmental IC": {
+        "topic": "Environmental IC",
+        "chunk_count": 3,
+        "keyword_hits": 5,
+        "keyword_density": 4.22,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Medicinal IC": {
+        "topic": "Medicinal IC",
+        "chunk_count": 14,
+        "keyword_hits": 70,
+        "keyword_density": 16.03,
+        "score": 5,
+        "rating": "excellent"
+      }
+    },
+    "example_count": 13,
+    "examples_per_100_chunks": 3.7,
+    "equation_count": 83,
+    "equations_per_chunk": 0.24,
+    "figure_references": 687,
+    "figures_per_chunk": 1.96,
+    "avg_words_per_chunk": 191.7,
+    "keyword_diversity": 0.062,
+    "cross_topic_integration": 0.624,
+    "coverage_score": 73.4,
+    "depth_score": 24.8,
+    "pedagogy_score": 37.2,
+    "overall_score": 48.0,
+    "best_for": [
+      "coordination chemistry",
+      "bioinorganic",
+      "organometallics"
+    ]
+  },
+  "bioinorganic_chemistry_bertini_et_al.pdf": {
+    "book_name": "bioinorganic_chemistry_bertini_et_al.pdf",
+    "total_chunks": 1,
+    "total_words": 217,
+    "topic_scores": {
+      "Atomic Structure": {
+        "topic": "Atomic Structure",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Molecular Orbital Theory": {
+        "topic": "Molecular Orbital Theory",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Symmetry/Group Theory": {
+        "topic": "Symmetry/Group Theory",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Acids & Bases": {
+        "topic": "Acids & Bases",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Redox Chemistry": {
+        "topic": "Redox Chemistry",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Coordination Fundamentals": {
+        "topic": "Coordination Fundamentals",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Crystal Field Theory": {
+        "topic": "Crystal Field Theory",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Spectroscopy (UV-Vis, IR, NMR)": {
+        "topic": "Spectroscopy (UV-Vis, IR, NMR)",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Reaction Mechanisms": {
+        "topic": "Reaction Mechanisms",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Main Group (s-block)": {
+        "topic": "Main Group (s-block)",
+        "chunk_count": 1,
+        "keyword_hits": 1,
+        "keyword_density": 4.61,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Main Group (p-block)": {
+        "topic": "Main Group (p-block)",
+        "chunk_count": 1,
+        "keyword_hits": 1,
+        "keyword_density": 4.61,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Transition Metals": {
+        "topic": "Transition Metals",
+        "chunk_count": 1,
+        "keyword_hits": 1,
+        "keyword_density": 4.61,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Lanthanides/Actinides": {
+        "topic": "Lanthanides/Actinides",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Organometallics": {
+        "topic": "Organometallics",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Bioinorganic": {
+        "topic": "Bioinorganic",
+        "chunk_count": 1,
+        "keyword_hits": 4,
+        "keyword_density": 18.43,
+        "score": 5,
+        "rating": "excellent"
+      },
+      "Solid State": {
+        "topic": "Solid State",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Catalysis": {
+        "topic": "Catalysis",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Materials/Nanochemistry": {
+        "topic": "Materials/Nanochemistry",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Environmental IC": {
+        "topic": "Environmental IC",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Medicinal IC": {
+        "topic": "Medicinal IC",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      }
+    },
+    "example_count": 0,
+    "examples_per_100_chunks": 0.0,
+    "equation_count": 0,
+    "equations_per_chunk": 0.0,
+    "figure_references": 0,
+    "figures_per_chunk": 0.0,
+    "avg_words_per_chunk": 217.0,
+    "keyword_diversity": 0.571,
+    "cross_topic_integration": 1.0,
+    "coverage_score": 29.9,
+    "depth_score": 33.3,
+    "pedagogy_score": 19.0,
+    "overall_score": 27.7,
+    "best_for": [
+      "bioinorganic"
+    ]
+  },
+  "concise_ic_jd_lee.pdf": {
+    "book_name": "concise_ic_jd_lee.pdf",
+    "total_chunks": 565,
+    "total_words": 132089,
+    "topic_scores": {
+      "Atomic Structure": {
+        "topic": "Atomic Structure",
+        "chunk_count": 45,
+        "keyword_hits": 91,
+        "keyword_density": 7.7,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Molecular Orbital Theory": {
+        "topic": "Molecular Orbital Theory",
+        "chunk_count": 55,
+        "keyword_hits": 163,
+        "keyword_density": 11.82,
+        "score": 4,
+        "rating": "good"
+      },
+      "Symmetry/Group Theory": {
+        "topic": "Symmetry/Group Theory",
+        "chunk_count": 30,
+        "keyword_hits": 48,
+        "keyword_density": 5.86,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Acids & Bases": {
+        "topic": "Acids & Bases",
+        "chunk_count": 19,
+        "keyword_hits": 43,
+        "keyword_density": 6.29,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Redox Chemistry": {
+        "topic": "Redox Chemistry",
+        "chunk_count": 90,
+        "keyword_hits": 260,
+        "keyword_density": 9.31,
+        "score": 4,
+        "rating": "good"
+      },
+      "Coordination Fundamentals": {
+        "topic": "Coordination Fundamentals",
+        "chunk_count": 101,
+        "keyword_hits": 311,
+        "keyword_density": 10.83,
+        "score": 4,
+        "rating": "good"
+      },
+      "Crystal Field Theory": {
+        "topic": "Crystal Field Theory",
+        "chunk_count": 47,
+        "keyword_hits": 157,
+        "keyword_density": 12.39,
+        "score": 4,
+        "rating": "good"
+      },
+      "Spectroscopy (UV-Vis, IR, NMR)": {
+        "topic": "Spectroscopy (UV-Vis, IR, NMR)",
+        "chunk_count": 16,
+        "keyword_hits": 23,
+        "keyword_density": 3.62,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Reaction Mechanisms": {
+        "topic": "Reaction Mechanisms",
+        "chunk_count": 17,
+        "keyword_hits": 23,
+        "keyword_density": 3.26,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Main Group (s-block)": {
+        "topic": "Main Group (s-block)",
+        "chunk_count": 134,
+        "keyword_hits": 439,
+        "keyword_density": 11.52,
+        "score": 4,
+        "rating": "good"
+      },
+      "Main Group (p-block)": {
+        "topic": "Main Group (p-block)",
+        "chunk_count": 148,
+        "keyword_hits": 336,
+        "keyword_density": 7.61,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Transition Metals": {
+        "topic": "Transition Metals",
+        "chunk_count": 99,
+        "keyword_hits": 205,
+        "keyword_density": 7.15,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Lanthanides/Actinides": {
+        "topic": "Lanthanides/Actinides",
+        "chunk_count": 15,
+        "keyword_hits": 21,
+        "keyword_density": 3.59,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Organometallics": {
+        "topic": "Organometallics",
+        "chunk_count": 15,
+        "keyword_hits": 26,
+        "keyword_density": 4.99,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Bioinorganic": {
+        "topic": "Bioinorganic",
+        "chunk_count": 2,
+        "keyword_hits": 2,
+        "keyword_density": 1.09,
+        "score": 2,
+        "rating": "limited"
+      },
+      "Solid State": {
+        "topic": "Solid State",
+        "chunk_count": 138,
+        "keyword_hits": 370,
+        "keyword_density": 9.93,
+        "score": 4,
+        "rating": "good"
+      },
+      "Catalysis": {
+        "topic": "Catalysis",
+        "chunk_count": 19,
+        "keyword_hits": 32,
+        "keyword_density": 4.68,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Materials/Nanochemistry": {
+        "topic": "Materials/Nanochemistry",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Environmental IC": {
+        "topic": "Environmental IC",
+        "chunk_count": 8,
+        "keyword_hits": 12,
+        "keyword_density": 2.93,
+        "score": 2,
+        "rating": "limited"
+      },
+      "Medicinal IC": {
+        "topic": "Medicinal IC",
+        "chunk_count": 1,
+        "keyword_hits": 1,
+        "keyword_density": 1.14,
+        "score": 2,
+        "rating": "limited"
+      }
+    },
+    "example_count": 49,
+    "examples_per_100_chunks": 8.7,
+    "equation_count": 421,
+    "equations_per_chunk": 0.75,
+    "figure_references": 503,
+    "figures_per_chunk": 0.89,
+    "avg_words_per_chunk": 233.8,
+    "keyword_diversity": 0.048,
+    "cross_topic_integration": 0.506,
+    "coverage_score": 63.2,
+    "depth_score": 27.6,
+    "pedagogy_score": 22.2,
+    "overall_score": 40.2,
+    "best_for": [
+      "coordination chemistry"
+    ]
+  },
+  "descriptive_ic.pdf": {
+    "book_name": "descriptive_ic.pdf",
+    "total_chunks": 1495,
+    "total_words": 300085,
+    "topic_scores": {
+      "Atomic Structure": {
+        "topic": "Atomic Structure",
+        "chunk_count": 53,
+        "keyword_hits": 89,
+        "keyword_density": 6.3,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Molecular Orbital Theory": {
+        "topic": "Molecular Orbital Theory",
+        "chunk_count": 25,
+        "keyword_hits": 32,
+        "keyword_density": 3.79,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Symmetry/Group Theory": {
+        "topic": "Symmetry/Group Theory",
+        "chunk_count": 133,
+        "keyword_hits": 229,
+        "keyword_density": 8.48,
+        "score": 4,
+        "rating": "good"
+      },
+      "Acids & Bases": {
+        "topic": "Acids & Bases",
+        "chunk_count": 72,
+        "keyword_hits": 117,
+        "keyword_density": 6.83,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Redox Chemistry": {
+        "topic": "Redox Chemistry",
+        "chunk_count": 297,
+        "keyword_hits": 597,
+        "keyword_density": 8.04,
+        "score": 4,
+        "rating": "good"
+      },
+      "Coordination Fundamentals": {
+        "topic": "Coordination Fundamentals",
+        "chunk_count": 303,
+        "keyword_hits": 775,
+        "keyword_density": 10.82,
+        "score": 4,
+        "rating": "good"
+      },
+      "Crystal Field Theory": {
+        "topic": "Crystal Field Theory",
+        "chunk_count": 98,
+        "keyword_hits": 224,
+        "keyword_density": 9.76,
+        "score": 4,
+        "rating": "good"
+      },
+      "Spectroscopy (UV-Vis, IR, NMR)": {
+        "topic": "Spectroscopy (UV-Vis, IR, NMR)",
+        "chunk_count": 52,
+        "keyword_hits": 93,
+        "keyword_density": 6.59,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Reaction Mechanisms": {
+        "topic": "Reaction Mechanisms",
+        "chunk_count": 109,
+        "keyword_hits": 350,
+        "keyword_density": 13.9,
+        "score": 4,
+        "rating": "good"
+      },
+      "Main Group (s-block)": {
+        "topic": "Main Group (s-block)",
+        "chunk_count": 393,
+        "keyword_hits": 1087,
+        "keyword_density": 11.6,
+        "score": 4,
+        "rating": "good"
+      },
+      "Main Group (p-block)": {
+        "topic": "Main Group (p-block)",
+        "chunk_count": 642,
+        "keyword_hits": 2162,
+        "keyword_density": 14.0,
+        "score": 4,
+        "rating": "good"
+      },
+      "Transition Metals": {
+        "topic": "Transition Metals",
+        "chunk_count": 268,
+        "keyword_hits": 530,
+        "keyword_density": 8.03,
+        "score": 4,
+        "rating": "good"
+      },
+      "Lanthanides/Actinides": {
+        "topic": "Lanthanides/Actinides",
+        "chunk_count": 38,
+        "keyword_hits": 57,
+        "keyword_density": 5.45,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Organometallics": {
+        "topic": "Organometallics",
+        "chunk_count": 23,
+        "keyword_hits": 26,
+        "keyword_density": 3.98,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Bioinorganic": {
+        "topic": "Bioinorganic",
+        "chunk_count": 17,
+        "keyword_hits": 40,
+        "keyword_density": 7.75,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Solid State": {
+        "topic": "Solid State",
+        "chunk_count": 216,
+        "keyword_hits": 628,
+        "keyword_density": 12.32,
+        "score": 4,
+        "rating": "good"
+      },
+      "Catalysis": {
+        "topic": "Catalysis",
+        "chunk_count": 27,
+        "keyword_hits": 35,
+        "keyword_density": 5.03,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Materials/Nanochemistry": {
+        "topic": "Materials/Nanochemistry",
+        "chunk_count": 7,
+        "keyword_hits": 11,
+        "keyword_density": 4.74,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Environmental IC": {
+        "topic": "Environmental IC",
+        "chunk_count": 121,
+        "keyword_hits": 282,
+        "keyword_density": 9.06,
+        "score": 4,
+        "rating": "good"
+      },
+      "Medicinal IC": {
+        "topic": "Medicinal IC",
+        "chunk_count": 42,
+        "keyword_hits": 81,
+        "keyword_density": 7.06,
+        "score": 3,
+        "rating": "fair"
+      }
+    },
+    "example_count": 224,
+    "examples_per_100_chunks": 15.0,
+    "equation_count": 1221,
+    "equations_per_chunk": 0.82,
+    "figure_references": 1272,
+    "figures_per_chunk": 0.85,
+    "avg_words_per_chunk": 200.7,
+    "keyword_diversity": 0.018,
+    "cross_topic_integration": 0.596,
+    "coverage_score": 70.8,
+    "depth_score": 35.3,
+    "pedagogy_score": 24.8,
+    "overall_score": 46.3,
+    "best_for": [
+      "coordination chemistry",
+      "main group chemistry"
+    ]
+  },
+  "descriptive_ic_house.pdf": {
+    "book_name": "descriptive_ic_house.pdf",
+    "total_chunks": 1027,
+    "total_words": 242325,
+    "topic_scores": {
+      "Atomic Structure": {
+        "topic": "Atomic Structure",
+        "chunk_count": 22,
+        "keyword_hits": 39,
+        "keyword_density": 4.76,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Molecular Orbital Theory": {
+        "topic": "Molecular Orbital Theory",
+        "chunk_count": 43,
+        "keyword_hits": 86,
+        "keyword_density": 8.21,
+        "score": 4,
+        "rating": "good"
+      },
+      "Symmetry/Group Theory": {
+        "topic": "Symmetry/Group Theory",
+        "chunk_count": 229,
+        "keyword_hits": 455,
+        "keyword_density": 7.82,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Acids & Bases": {
+        "topic": "Acids & Bases",
+        "chunk_count": 91,
+        "keyword_hits": 122,
+        "keyword_density": 4.76,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Redox Chemistry": {
+        "topic": "Redox Chemistry",
+        "chunk_count": 183,
+        "keyword_hits": 324,
+        "keyword_density": 6.09,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Coordination Fundamentals": {
+        "topic": "Coordination Fundamentals",
+        "chunk_count": 217,
+        "keyword_hits": 584,
+        "keyword_density": 9.31,
+        "score": 4,
+        "rating": "good"
+      },
+      "Crystal Field Theory": {
+        "topic": "Crystal Field Theory",
+        "chunk_count": 28,
+        "keyword_hits": 78,
+        "keyword_density": 7.62,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Spectroscopy (UV-Vis, IR, NMR)": {
+        "topic": "Spectroscopy (UV-Vis, IR, NMR)",
+        "chunk_count": 28,
+        "keyword_hits": 48,
+        "keyword_density": 5.11,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Reaction Mechanisms": {
+        "topic": "Reaction Mechanisms",
+        "chunk_count": 74,
+        "keyword_hits": 331,
+        "keyword_density": 14.08,
+        "score": 4,
+        "rating": "good"
+      },
+      "Main Group (s-block)": {
+        "topic": "Main Group (s-block)",
+        "chunk_count": 187,
+        "keyword_hits": 499,
+        "keyword_density": 9.74,
+        "score": 4,
+        "rating": "good"
+      },
+      "Main Group (p-block)": {
+        "topic": "Main Group (p-block)",
+        "chunk_count": 479,
+        "keyword_hits": 1676,
+        "keyword_density": 13.65,
+        "score": 4,
+        "rating": "good"
+      },
+      "Transition Metals": {
+        "topic": "Transition Metals",
+        "chunk_count": 183,
+        "keyword_hits": 593,
+        "keyword_density": 10.52,
+        "score": 4,
+        "rating": "good"
+      },
+      "Lanthanides/Actinides": {
+        "topic": "Lanthanides/Actinides",
+        "chunk_count": 14,
+        "keyword_hits": 28,
+        "keyword_density": 7.87,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Organometallics": {
+        "topic": "Organometallics",
+        "chunk_count": 108,
+        "keyword_hits": 241,
+        "keyword_density": 8.55,
+        "score": 4,
+        "rating": "good"
+      },
+      "Bioinorganic": {
+        "topic": "Bioinorganic",
+        "chunk_count": 10,
+        "keyword_hits": 14,
+        "keyword_density": 3.6,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Solid State": {
+        "topic": "Solid State",
+        "chunk_count": 86,
+        "keyword_hits": 153,
+        "keyword_density": 5.58,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Catalysis": {
+        "topic": "Catalysis",
+        "chunk_count": 66,
+        "keyword_hits": 86,
+        "keyword_density": 4.66,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Materials/Nanochemistry": {
+        "topic": "Materials/Nanochemistry",
+        "chunk_count": 18,
+        "keyword_hits": 40,
+        "keyword_density": 6.32,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Environmental IC": {
+        "topic": "Environmental IC",
+        "chunk_count": 32,
+        "keyword_hits": 49,
+        "keyword_density": 5.67,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Medicinal IC": {
+        "topic": "Medicinal IC",
+        "chunk_count": 24,
+        "keyword_hits": 42,
+        "keyword_density": 5.67,
+        "score": 3,
+        "rating": "fair"
+      }
+    },
+    "example_count": 65,
+    "examples_per_100_chunks": 6.3,
+    "equation_count": 49,
+    "equations_per_chunk": 0.05,
+    "figure_references": 595,
+    "figures_per_chunk": 0.58,
+    "avg_words_per_chunk": 236.0,
+    "keyword_diversity": 0.026,
+    "cross_topic_integration": 0.597,
+    "coverage_score": 67.7,
+    "depth_score": 24.4,
+    "pedagogy_score": 14.7,
+    "overall_score": 38.8,
+    "best_for": [
+      "main group chemistry",
+      "organometallics"
+    ]
+  },
+  "ic_basset.pdf": {
+    "book_name": "ic_basset.pdf",
+    "total_chunks": 446,
+    "total_words": 117180,
+    "topic_scores": {
+      "Atomic Structure": {
+        "topic": "Atomic Structure",
+        "chunk_count": 17,
+        "keyword_hits": 24,
+        "keyword_density": 4.87,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Molecular Orbital Theory": {
+        "topic": "Molecular Orbital Theory",
+        "chunk_count": 3,
+        "keyword_hits": 4,
+        "keyword_density": 5.36,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Symmetry/Group Theory": {
+        "topic": "Symmetry/Group Theory",
+        "chunk_count": 42,
+        "keyword_hits": 61,
+        "keyword_density": 5.15,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Acids & Bases": {
+        "topic": "Acids & Bases",
+        "chunk_count": 33,
+        "keyword_hits": 39,
+        "keyword_density": 4.22,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Redox Chemistry": {
+        "topic": "Redox Chemistry",
+        "chunk_count": 170,
+        "keyword_hits": 513,
+        "keyword_density": 10.69,
+        "score": 4,
+        "rating": "good"
+      },
+      "Coordination Fundamentals": {
+        "topic": "Coordination Fundamentals",
+        "chunk_count": 53,
+        "keyword_hits": 109,
+        "keyword_density": 7.18,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Crystal Field Theory": {
+        "topic": "Crystal Field Theory",
+        "chunk_count": 1,
+        "keyword_hits": 1,
+        "keyword_density": 9.26,
+        "score": 4,
+        "rating": "good"
+      },
+      "Spectroscopy (UV-Vis, IR, NMR)": {
+        "topic": "Spectroscopy (UV-Vis, IR, NMR)",
+        "chunk_count": 3,
+        "keyword_hits": 4,
+        "keyword_density": 4.88,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Reaction Mechanisms": {
+        "topic": "Reaction Mechanisms",
+        "chunk_count": 4,
+        "keyword_hits": 4,
+        "keyword_density": 3.89,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Main Group (s-block)": {
+        "topic": "Main Group (s-block)",
+        "chunk_count": 204,
+        "keyword_hits": 709,
+        "keyword_density": 12.42,
+        "score": 4,
+        "rating": "good"
+      },
+      "Main Group (p-block)": {
+        "topic": "Main Group (p-block)",
+        "chunk_count": 276,
+        "keyword_hits": 1174,
+        "keyword_density": 15.14,
+        "score": 5,
+        "rating": "excellent"
+      },
+      "Transition Metals": {
+        "topic": "Transition Metals",
+        "chunk_count": 160,
+        "keyword_hits": 636,
+        "keyword_density": 14.94,
+        "score": 4,
+        "rating": "good"
+      },
+      "Lanthanides/Actinides": {
+        "topic": "Lanthanides/Actinides",
+        "chunk_count": 11,
+        "keyword_hits": 27,
+        "keyword_density": 9.92,
+        "score": 4,
+        "rating": "good"
+      },
+      "Organometallics": {
+        "topic": "Organometallics",
+        "chunk_count": 14,
+        "keyword_hits": 22,
+        "keyword_density": 5.96,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Bioinorganic": {
+        "topic": "Bioinorganic",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Solid State": {
+        "topic": "Solid State",
+        "chunk_count": 104,
+        "keyword_hits": 196,
+        "keyword_density": 6.51,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Catalysis": {
+        "topic": "Catalysis",
+        "chunk_count": 12,
+        "keyword_hits": 13,
+        "keyword_density": 3.39,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Materials/Nanochemistry": {
+        "topic": "Materials/Nanochemistry",
+        "chunk_count": 1,
+        "keyword_hits": 1,
+        "keyword_density": 3.86,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Environmental IC": {
+        "topic": "Environmental IC",
+        "chunk_count": 18,
+        "keyword_hits": 21,
+        "keyword_density": 4.64,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Medicinal IC": {
+        "topic": "Medicinal IC",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      }
+    },
+    "example_count": 63,
+    "examples_per_100_chunks": 14.1,
+    "equation_count": 539,
+    "equations_per_chunk": 1.21,
+    "figure_references": 41,
+    "figures_per_chunk": 0.09,
+    "avg_words_per_chunk": 262.7,
+    "keyword_diversity": 0.022,
+    "cross_topic_integration": 0.724,
+    "coverage_score": 64.5,
+    "depth_score": 41.6,
+    "pedagogy_score": 11.7,
+    "overall_score": 41.8,
+    "best_for": [
+      "main group chemistry"
+    ]
+  },
+  "ic_tina.pdf": {
+    "book_name": "ic_tina.pdf",
+    "total_chunks": 2375,
+    "total_words": 646093,
+    "topic_scores": {
+      "Atomic Structure": {
+        "topic": "Atomic Structure",
+        "chunk_count": 131,
+        "keyword_hits": 316,
+        "keyword_density": 4.81,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Molecular Orbital Theory": {
+        "topic": "Molecular Orbital Theory",
+        "chunk_count": 186,
+        "keyword_hits": 513,
+        "keyword_density": 6.5,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Symmetry/Group Theory": {
+        "topic": "Symmetry/Group Theory",
+        "chunk_count": 448,
+        "keyword_hits": 1101,
+        "keyword_density": 6.66,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Acids & Bases": {
+        "topic": "Acids & Bases",
+        "chunk_count": 323,
+        "keyword_hits": 807,
+        "keyword_density": 6.12,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Redox Chemistry": {
+        "topic": "Redox Chemistry",
+        "chunk_count": 666,
+        "keyword_hits": 1896,
+        "keyword_density": 7.39,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Coordination Fundamentals": {
+        "topic": "Coordination Fundamentals",
+        "chunk_count": 775,
+        "keyword_hits": 2388,
+        "keyword_density": 8.16,
+        "score": 4,
+        "rating": "good"
+      },
+      "Crystal Field Theory": {
+        "topic": "Crystal Field Theory",
+        "chunk_count": 128,
+        "keyword_hits": 427,
+        "keyword_density": 9.33,
+        "score": 4,
+        "rating": "good"
+      },
+      "Spectroscopy (UV-Vis, IR, NMR)": {
+        "topic": "Spectroscopy (UV-Vis, IR, NMR)",
+        "chunk_count": 257,
+        "keyword_hits": 740,
+        "keyword_density": 6.13,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Reaction Mechanisms": {
+        "topic": "Reaction Mechanisms",
+        "chunk_count": 264,
+        "keyword_hits": 621,
+        "keyword_density": 5.43,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Main Group (s-block)": {
+        "topic": "Main Group (s-block)",
+        "chunk_count": 409,
+        "keyword_hits": 1432,
+        "keyword_density": 8.15,
+        "score": 4,
+        "rating": "good"
+      },
+      "Main Group (p-block)": {
+        "topic": "Main Group (p-block)",
+        "chunk_count": 783,
+        "keyword_hits": 2617,
+        "keyword_density": 8.65,
+        "score": 4,
+        "rating": "good"
+      },
+      "Transition Metals": {
+        "topic": "Transition Metals",
+        "chunk_count": 459,
+        "keyword_hits": 1212,
+        "keyword_density": 5.86,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Lanthanides/Actinides": {
+        "topic": "Lanthanides/Actinides",
+        "chunk_count": 91,
+        "keyword_hits": 146,
+        "keyword_density": 3.88,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Organometallics": {
+        "topic": "Organometallics",
+        "chunk_count": 297,
+        "keyword_hits": 811,
+        "keyword_density": 6.51,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Bioinorganic": {
+        "topic": "Bioinorganic",
+        "chunk_count": 63,
+        "keyword_hits": 116,
+        "keyword_density": 4.32,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Solid State": {
+        "topic": "Solid State",
+        "chunk_count": 433,
+        "keyword_hits": 1185,
+        "keyword_density": 6.7,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Catalysis": {
+        "topic": "Catalysis",
+        "chunk_count": 235,
+        "keyword_hits": 641,
+        "keyword_density": 6.17,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Materials/Nanochemistry": {
+        "topic": "Materials/Nanochemistry",
+        "chunk_count": 161,
+        "keyword_hits": 395,
+        "keyword_density": 5.53,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Environmental IC": {
+        "topic": "Environmental IC",
+        "chunk_count": 134,
+        "keyword_hits": 253,
+        "keyword_density": 4.25,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Medicinal IC": {
+        "topic": "Medicinal IC",
+        "chunk_count": 49,
+        "keyword_hits": 106,
+        "keyword_density": 4.51,
+        "score": 3,
+        "rating": "fair"
+      }
+    },
+    "example_count": 650,
+    "examples_per_100_chunks": 27.4,
+    "equation_count": 1751,
+    "equations_per_chunk": 0.74,
+    "figure_references": 2395,
+    "figures_per_chunk": 1.01,
+    "avg_words_per_chunk": 272.0,
+    "keyword_diversity": 0.011,
+    "cross_topic_integration": 0.656,
+    "coverage_score": 64.8,
+    "depth_score": 45.0,
+    "pedagogy_score": 35.4,
+    "overall_score": 50.0,
+    "best_for": [
+      "coordination chemistry",
+      "main group chemistry"
+    ]
+  },
+  "inorganic_chemistry_libretexts.pdf": {
+    "book_name": "inorganic_chemistry_libretexts.pdf",
+    "total_chunks": 1,
+    "total_words": 160,
+    "topic_scores": {
+      "Atomic Structure": {
+        "topic": "Atomic Structure",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Molecular Orbital Theory": {
+        "topic": "Molecular Orbital Theory",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Symmetry/Group Theory": {
+        "topic": "Symmetry/Group Theory",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Acids & Bases": {
+        "topic": "Acids & Bases",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Redox Chemistry": {
+        "topic": "Redox Chemistry",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Coordination Fundamentals": {
+        "topic": "Coordination Fundamentals",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Crystal Field Theory": {
+        "topic": "Crystal Field Theory",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Spectroscopy (UV-Vis, IR, NMR)": {
+        "topic": "Spectroscopy (UV-Vis, IR, NMR)",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Reaction Mechanisms": {
+        "topic": "Reaction Mechanisms",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Main Group (s-block)": {
+        "topic": "Main Group (s-block)",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Main Group (p-block)": {
+        "topic": "Main Group (p-block)",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Transition Metals": {
+        "topic": "Transition Metals",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Lanthanides/Actinides": {
+        "topic": "Lanthanides/Actinides",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Organometallics": {
+        "topic": "Organometallics",
+        "chunk_count": 1,
+        "keyword_hits": 3,
+        "keyword_density": 18.75,
+        "score": 5,
+        "rating": "excellent"
+      },
+      "Bioinorganic": {
+        "topic": "Bioinorganic",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Solid State": {
+        "topic": "Solid State",
+        "chunk_count": 1,
+        "keyword_hits": 1,
+        "keyword_density": 6.25,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Catalysis": {
+        "topic": "Catalysis",
+        "chunk_count": 1,
+        "keyword_hits": 1,
+        "keyword_density": 6.25,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Materials/Nanochemistry": {
+        "topic": "Materials/Nanochemistry",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Environmental IC": {
+        "topic": "Environmental IC",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Medicinal IC": {
+        "topic": "Medicinal IC",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      }
+    },
+    "example_count": 0,
+    "examples_per_100_chunks": 0.0,
+    "equation_count": 0,
+    "equations_per_chunk": 0.0,
+    "figure_references": 0,
+    "figures_per_chunk": 0.0,
+    "avg_words_per_chunk": 160.0,
+    "keyword_diversity": 0.6,
+    "cross_topic_integration": 1.0,
+    "coverage_score": 28.0,
+    "depth_score": 33.3,
+    "pedagogy_score": 20.0,
+    "overall_score": 27.2,
+    "best_for": [
+      "organometallics"
+    ]
+  },
+  "inorganic_chemistry_saito.pdf": {
+    "book_name": "inorganic_chemistry_saito.pdf",
+    "total_chunks": 1,
+    "total_words": 280,
+    "topic_scores": {
+      "Atomic Structure": {
+        "topic": "Atomic Structure",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Molecular Orbital Theory": {
+        "topic": "Molecular Orbital Theory",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Symmetry/Group Theory": {
+        "topic": "Symmetry/Group Theory",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Acids & Bases": {
+        "topic": "Acids & Bases",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Redox Chemistry": {
+        "topic": "Redox Chemistry",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Coordination Fundamentals": {
+        "topic": "Coordination Fundamentals",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Crystal Field Theory": {
+        "topic": "Crystal Field Theory",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Spectroscopy (UV-Vis, IR, NMR)": {
+        "topic": "Spectroscopy (UV-Vis, IR, NMR)",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Reaction Mechanisms": {
+        "topic": "Reaction Mechanisms",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Main Group (s-block)": {
+        "topic": "Main Group (s-block)",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Main Group (p-block)": {
+        "topic": "Main Group (p-block)",
+        "chunk_count": 1,
+        "keyword_hits": 1,
+        "keyword_density": 3.57,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Transition Metals": {
+        "topic": "Transition Metals",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Lanthanides/Actinides": {
+        "topic": "Lanthanides/Actinides",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Organometallics": {
+        "topic": "Organometallics",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Bioinorganic": {
+        "topic": "Bioinorganic",
+        "chunk_count": 1,
+        "keyword_hits": 1,
+        "keyword_density": 3.57,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Solid State": {
+        "topic": "Solid State",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Catalysis": {
+        "topic": "Catalysis",
+        "chunk_count": 1,
+        "keyword_hits": 2,
+        "keyword_density": 7.14,
+        "score": 3,
+        "rating": "fair"
+      },
+      "Materials/Nanochemistry": {
+        "topic": "Materials/Nanochemistry",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Environmental IC": {
+        "topic": "Environmental IC",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      },
+      "Medicinal IC": {
+        "topic": "Medicinal IC",
+        "chunk_count": 0,
+        "keyword_hits": 0,
+        "keyword_density": 0,
+        "score": 1,
+        "rating": "absent"
+      }
+    },
+    "example_count": 0,
+    "examples_per_100_chunks": 0.0,
+    "equation_count": 0,
+    "equations_per_chunk": 0.0,
+    "figure_references": 0,
+    "figures_per_chunk": 0.0,
+    "avg_words_per_chunk": 280.0,
+    "keyword_diversity": 1.0,
+    "cross_topic_integration": 1.0,
+    "coverage_score": 25.8,
+    "depth_score": 33.3,
+    "pedagogy_score": 33.3,
+    "overall_score": 30.3,
+    "best_for": []
+  }
+}
