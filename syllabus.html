@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllabus | CHEM 361</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-tertiary: #1a1a24;
+            --text-primary: #e8e6e3;
+            --text-secondary: #a0a0a0;
+            --text-muted: #6b6b6b;
+            --accent-purple: #8b5cf6;
+            --accent-violet: #a855f7;
+            --accent-amber: #f59e0b;
+            --accent-cyan: #06b6d4;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+
+        .bg-animation {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            z-index: -1;
+            background:
+                radial-gradient(ellipse at 20% 20%, rgba(139, 92, 246, 0.08) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 80%, rgba(168, 85, 247, 0.06) 0%, transparent 50%);
+        }
+
+        /* Header */
+        header {
+            padding: 2rem;
+            border-bottom: 1px solid var(--bg-tertiary);
+            position: sticky;
+            top: 0;
+            background: rgba(10, 10, 15, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent-purple), var(--accent-violet));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-purple);
+        }
+
+        /* Main content */
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem 6rem;
+        }
+
+        /* Hero section */
+        .hero {
+            text-align: center;
+            margin-bottom: 4rem;
+            padding-bottom: 3rem;
+            border-bottom: 1px solid var(--bg-tertiary);
+        }
+
+        .course-badge {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--accent-purple);
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+        }
+
+        .hero h1 {
+            font-family: 'Fraunces', serif;
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero .subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+
+        .hero .quote {
+            font-style: italic;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            padding: 1.5rem;
+            border-left: 3px solid var(--accent-purple);
+            background: var(--bg-secondary);
+            border-radius: 0 8px 8px 0;
+            text-align: left;
+        }
+
+        /* Info grid */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .info-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--bg-tertiary);
+            border-radius: 12px;
+            padding: 1.25rem;
+        }
+
+        .info-card .label {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.25rem;
+        }
+
+        .info-card .value {
+            font-weight: 500;
+        }
+
+        .info-card a {
+            color: var(--accent-purple);
+            text-decoration: none;
+        }
+
+        .info-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section styling */
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-family: 'Fraunces', serif;
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        h2::before {
+            content: '';
+            width: 4px;
+            height: 1.5rem;
+            background: linear-gradient(180deg, var(--accent-purple), var(--accent-violet));
+            border-radius: 2px;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 1.5rem 0 1rem;
+            color: var(--text-primary);
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        /* Tables */
+        .table-wrapper {
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+
+        th, td {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--bg-tertiary);
+        }
+
+        th {
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        td {
+            color: var(--text-secondary);
+        }
+
+        tr:hover td {
+            background: rgba(139, 92, 246, 0.05);
+        }
+
+        .phase-badge {
+            display: inline-block;
+            padding: 0.2rem 0.5rem;
+            background: rgba(139, 92, 246, 0.2);
+            color: var(--accent-purple);
+            border-radius: 4px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+        }
+
+        .hub-badge {
+            display: inline-block;
+            padding: 0.2rem 0.5rem;
+            background: rgba(245, 158, 11, 0.2);
+            color: var(--accent-amber);
+            border-radius: 4px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+        }
+
+        .capstone-badge {
+            display: inline-block;
+            padding: 0.2rem 0.5rem;
+            background: rgba(6, 182, 212, 0.2);
+            color: var(--accent-cyan);
+            border-radius: 4px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+        }
+
+        /* Lists */
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        li::marker {
+            color: var(--accent-purple);
+        }
+
+        /* Callout boxes */
+        .callout {
+            background: var(--bg-secondary);
+            border: 1px solid var(--bg-tertiary);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .callout.insight {
+            border-left: 4px solid var(--accent-purple);
+        }
+
+        .callout.important {
+            border-left: 4px solid var(--accent-amber);
+        }
+
+        .callout.data {
+            border-left: 4px solid var(--accent-cyan);
+        }
+
+        .callout-title {
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Phase headers */
+        .phase-header {
+            background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0 1rem;
+            font-weight: 600;
+        }
+
+        .phase-header .phase-num {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--accent-purple);
+            margin-right: 0.5rem;
+        }
+
+        .phase-header.hub .phase-num {
+            color: var(--accent-amber);
+        }
+
+        .phase-header.capstone .phase-num {
+            color: var(--accent-cyan);
+        }
+
+        .phase-header .phase-goal {
+            display: block;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: 400;
+            font-style: italic;
+            margin-top: 0.25rem;
+        }
+
+        /* Hub checkpoints */
+        .checkpoint-table td:first-child {
+            font-weight: 600;
+            color: var(--accent-amber);
+        }
+
+        /* FAQ */
+        .faq-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .faq-q {
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .faq-a {
+            color: var(--text-secondary);
+            padding-left: 1rem;
+            border-left: 2px solid var(--bg-tertiary);
+        }
+
+        /* Footer quote */
+        .closing-quote {
+            text-align: center;
+            padding: 3rem 2rem;
+            margin-top: 3rem;
+            border-top: 1px solid var(--bg-tertiary);
+        }
+
+        .closing-quote blockquote {
+            font-style: italic;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto 1rem;
+            font-size: 1.1rem;
+        }
+
+        .closing-quote cite {
+            color: var(--text-muted);
+        }
+
+        .closing-message {
+            margin-top: 2rem;
+            color: var(--text-secondary);
+        }
+
+        .closing-message .signature {
+            color: var(--accent-purple);
+            font-weight: 600;
+            margin-top: 0.5rem;
+        }
+
+        .final-joke {
+            margin-top: 2rem;
+            color: var(--text-muted);
+            font-style: italic;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+            th, td {
+                padding: 0.5rem;
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-animation"></div>
+
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo">CHEM 361</a>
+            <nav class="nav-links">
+                <a href="intro-day1.html">Day 1</a>
+                <a href="sprint.html">Nomenclature</a>
+                <a href="topic-flow.html">Topic Flow</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <div class="hero">
+            <div class="course-badge">MCNEESE STATE UNIVERSITY | SPRING 2026</div>
+            <h1>Inorganic Chemistry</h1>
+            <p class="subtitle">Data-Driven Curriculum: Foundations → Hubs → Capstones</p>
+            <div class="quote">
+                "The periodic table is nature's Rosetta Stone. Once you learn to read it, you can decode the behavior of every element."
+            </div>
+        </div>
+
+        <!-- Instructor Info -->
+        <div class="info-grid">
+            <div class="info-card">
+                <div class="label">Instructor</div>
+                <div class="value">Kiran Boggavarapu, Ph.D.</div>
+            </div>
+            <div class="info-card">
+                <div class="label">Email</div>
+                <div class="value"><a href="mailto:kiran@mcneese.edu">kiran@mcneese.edu</a></div>
+            </div>
+            <div class="info-card">
+                <div class="label">Office</div>
+                <div class="value">Kirkman 225/206</div>
+            </div>
+            <div class="info-card">
+                <div class="label">Phone</div>
+                <div class="value">(337) 475-5768</div>
+            </div>
+            <div class="info-card">
+                <div class="label">Class Time</div>
+                <div class="value">TR 8:00–9:15 AM</div>
+            </div>
+            <div class="info-card">
+                <div class="label">Location</div>
+                <div class="value">Kirkman 202</div>
+            </div>
+        </div>
+
+        <div class="info-card" style="margin-bottom: 2rem;">
+            <div class="label">Office Hours</div>
+            <div class="value">MWF 9–10 AM, 11 AM–12:15 PM &nbsp;|&nbsp; TR 9:30–11:00 AM &nbsp;|&nbsp; or by appointment</div>
+        </div>
+
+        <!-- Course Description -->
+        <section>
+            <h2>Course Description</h2>
+
+            <div class="callout data">
+                <div class="callout-title">Data-Driven Curriculum Design</div>
+                <p style="margin-bottom: 0;">This course uses a curriculum derived from <strong>knowledge graph analysis</strong> of 7 inorganic chemistry textbooks (8,756 chunks, 5,374 concepts, 2,885 prerequisite relationships). Instead of following traditional chapter order, we identified:</p>
+            </div>
+
+            <ul>
+                <li><strong>32 Actionable Foundations</strong> — concepts with no IC prerequisites that enable everything else</li>
+                <li><strong>13 Hub Concepts</strong> — knowledge bottlenecks where prerequisite chains converge</li>
+                <li><strong>5 Major Capstones</strong> — integration endpoints where all threads come together</li>
+            </ul>
+
+            <p>The result: you learn foundations first, navigate through hubs, and integrate at capstones. Every concept has a clear "why" because you've already learned its prerequisites.</p>
+
+            <div class="callout insight">
+                <div class="callout-title">Prerequisites & Textbook</div>
+                <p style="margin-bottom: 0.5rem;"><strong>Prerequisite:</strong> CHEM 301 with minimum grade of D</p>
+                <p style="margin-bottom: 0;"><strong>Textbook:</strong> <em>Descriptive Inorganic, Coordination and Solid-State Chemistry</em>, 3rd Ed., G. E. Rodgers (Cengage)</p>
+            </div>
+        </section>
+
+        <!-- Learning Outcomes -->
+        <section>
+            <h2>Student Learning Outcomes</h2>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Learning Outcome</th>
+                            <th>Level</th>
+                            <th>Assess</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Explain periodic trends (electronegativity, ionization energy, atomic radius) using quantum mechanical principles</td>
+                            <td>Understand</td>
+                            <td>E, Q</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Predict geometry, magnetism, and color of coordination compounds using Crystal Field Theory</td>
+                            <td>Apply</td>
+                            <td>E, Q, C</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Name coordination compounds using IUPAC nomenclature and draw structural isomers</td>
+                            <td>Apply</td>
+                            <td>E, Q</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Calculate lattice energy using Born-Haber cycles and predict solubility trends</td>
+                            <td>Apply</td>
+                            <td>E, Q</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Compare reactivity patterns across main group families and predict products of characteristic reactions</td>
+                            <td>Analyze</td>
+                            <td>E, C</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Analyze structure-property relationships to explain why specific compounds are used in applications</td>
+                            <td>Analyze</td>
+                            <td>C, P</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><em>Assessment key: E = Exam, Q = Quiz, C = Case Analysis, P = Presentation</em></p>
+        </section>
+
+        <!-- Assessment and Grading -->
+        <section>
+            <h2>Assessment and Grading</h2>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Component</th>
+                            <th>Weight</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Midterm Exam 1 (Foundations & Hubs)</td>
+                            <td>20%</td>
+                            <td>MC + short answer; SLOs 1, 4</td>
+                        </tr>
+                        <tr>
+                            <td>Midterm Exam 2 (MO, CFT, Applications)</td>
+                            <td>20%</td>
+                            <td>MC + short answer; SLOs 2, 3, 5</td>
+                        </tr>
+                        <tr>
+                            <td>Weekly Retrieval Quizzes</td>
+                            <td>15%</td>
+                            <td>Best 10 of 12; 10 min at start of Thursday class</td>
+                        </tr>
+                        <tr>
+                            <td>Case Analyses (2 written)</td>
+                            <td>15%</td>
+                            <td>Structure-property analysis; SLOs 5, 6</td>
+                        </tr>
+                        <tr>
+                            <td>Application Presentation + Peer Eval</td>
+                            <td>10%</td>
+                            <td>10 min + Q&A; SLO 6</td>
+                        </tr>
+                        <tr>
+                            <td>Comprehensive Final Exam</td>
+                            <td>20%</td>
+                            <td>MC + short answer; cumulative</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p><strong>Grading Scale:</strong> A: 90–100% | B: 80–89% | C: 70–79% | D: 60–69% | F: &lt;60%</p>
+        </section>
+
+        <!-- Course Schedule -->
+        <section>
+            <h2>Course Schedule: Data-Driven Sequence</h2>
+            <p><em>The order below is determined by prerequisite analysis, not textbook chapters. Q = Quiz at start of class.</em></p>
+
+            <div class="phase-header">
+                <span class="phase-num">PHASE 1:</span> FOUNDATIONS (Weeks 1–4)
+                <span class="phase-goal">Goal: Build the base. These concepts have no IC prerequisites but enable everything else.</span>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Wk</th>
+                            <th>Day</th>
+                            <th>Topic</th>
+                            <th>Active Learning</th>
+                            <th>SLOs</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>Tue</td><td>Intro: Data-driven curriculum; why this order?</td><td>Card sort: foundation vs capstone</td><td>—</td></tr>
+                        <tr><td>1</td><td>Thu</td><td>Electron configuration; quantum numbers</td><td>Predict configs from periodic position</td><td>1</td></tr>
+                        <tr><td>2</td><td>Tue</td><td>Atomic orbitals; shapes and energies</td><td>Sketch orbital boundaries</td><td>1</td></tr>
+                        <tr><td>2</td><td>Thu Q1</td><td>Periodic trends: electronegativity, IE, radius</td><td>Predict & explain trend graphs</td><td>1</td></tr>
+                        <tr><td>3</td><td>Tue</td><td>Ionic bonding; lattice energy concepts</td><td>Rank compounds by lattice energy</td><td>4</td></tr>
+                        <tr><td>3</td><td>Thu Q2</td><td>Born-Haber cycles</td><td>Calculate ΔH<sub>f</sub> from cycle</td><td>4</td></tr>
+                        <tr><td>4</td><td>Tue</td><td>Oxidation states; redox fundamentals</td><td>Assign oxidation states in complexes</td><td>1, 4</td></tr>
+                        <tr><td>4</td><td>Thu Q3</td><td>Thermochemistry: stability predictions</td><td>Predict spontaneity from ΔG</td><td>4</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="phase-header hub">
+                <span class="phase-num">PHASE 2:</span> HUB TRAVERSAL (Weeks 5–12)
+                <span class="phase-goal">Goal: Navigate the 13 knowledge hubs. Each hub unlocks the next. These are the bottlenecks where prerequisite chains converge.</span>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Wk</th>
+                            <th>Day</th>
+                            <th>Topic</th>
+                            <th>Active Learning</th>
+                            <th>SLOs</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>5</td><td>Tue</td><td><span class="hub-badge">HUB</span> Redox Chemistry — electrochemical series</td><td>Predict reaction spontaneity</td><td>1, 4</td></tr>
+                        <tr><td>5</td><td>Thu</td><td colspan="3"><strong>MIDTERM EXAM 1</strong> (Foundations) — SLOs 1, 4</td></tr>
+                        <tr><td>6</td><td>Tue</td><td><span class="hub-badge">HUB</span> Acid-Base — Brønsted-Lowry & Lewis</td><td>Classify acids/bases by mechanism</td><td>1, 5</td></tr>
+                        <tr><td>6</td><td>Thu Q4</td><td>HSAB principle; hard/soft acids and bases</td><td>Predict complex stability</td><td>5</td></tr>
+                        <tr><td>7</td><td>Tue</td><td colspan="3" style="color: var(--text-muted);"><em>MARDI GRAS — NO CLASS</em></td></tr>
+                        <tr><td>7</td><td>Thu Q5</td><td>Acid-base in IC: oxoacids, pH predictions</td><td>Rank oxoacid strengths</td><td>5</td></tr>
+                        <tr><td>8</td><td>Tue</td><td><span class="hub-badge">HUB</span> MO Theory — LCAO, bonding/antibonding</td><td>Build MO diagrams for H₂, O₂</td><td>2</td></tr>
+                        <tr><td>8</td><td>Thu Q6</td><td>MO diagrams: homonuclear diatomics</td><td>Explain O₂ paramagnetism</td><td>2</td></tr>
+                        <tr><td>9</td><td>Tue</td><td>MO diagrams: heteronuclear; bond order — <em>CASE 1 DUE</em></td><td>Draw MO for CO, NO</td><td>2</td></tr>
+                        <tr><td>9</td><td>Thu Q7</td><td><span class="hub-badge">HUB</span> Crystal Structures — unit cells, packing</td><td>Build unit cell models</td><td>4</td></tr>
+                        <tr><td>10</td><td>Tue</td><td><span class="hub-badge">HUB</span> Crystal Field Theory — octahedral splitting</td><td>Predict d-orbital energies</td><td>2</td></tr>
+                        <tr><td>10</td><td>Thu Q8</td><td>CFT: tetrahedral, square planar geometries</td><td>Why is [NiCl₄]²⁻ tetrahedral?</td><td>2</td></tr>
+                        <tr><td>11</td><td>Tue</td><td>CFSE; high-spin vs low-spin; spectrochemical series</td><td>Calculate CFSE; predict spin state</td><td>2</td></tr>
+                        <tr><td>11</td><td>Thu Q9</td><td>Color and magnetism from CFT</td><td>Explain why Cu²⁺ is blue</td><td>2</td></tr>
+                        <tr><td>12</td><td>Tue</td><td><span class="hub-badge">HUB</span> Organometallic — 18-electron rule</td><td>Count electrons in complexes</td><td>3, 6</td></tr>
+                        <tr><td>12</td><td>Thu Q10</td><td>Catalytic cycles: hydrogenation, polymerization</td><td>Trace mechanism steps</td><td>6</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="phase-header capstone">
+                <span class="phase-num">PHASE 3:</span> CAPSTONES (Weeks 13–16)
+                <span class="phase-goal">Goal: Integration. All hubs converge here. These topics have the highest in-degree (most prerequisites).</span>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Wk</th>
+                            <th>Day</th>
+                            <th>Topic</th>
+                            <th>Active Learning</th>
+                            <th>SLOs</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>13</td><td>Tue</td><td><span class="capstone-badge">CAPSTONE</span> Coordination Chemistry — nomenclature</td><td>Naming race (pairs)</td><td>3</td></tr>
+                        <tr><td>13</td><td>Thu Q11</td><td>Isomerism: geometric, optical — <em>CASE 2 DUE</em></td><td>Draw all isomers challenge</td><td>3</td></tr>
+                        <tr><td>14</td><td>Tue</td><td><span class="capstone-badge">CAPSTONE</span> Transition Metals — first row survey</td><td>Compare oxidation state patterns</td><td>5</td></tr>
+                        <tr><td>14</td><td>Thu Q12</td><td>Applications: cisplatin, hemoglobin, catalysts</td><td>Case: Why does cisplatin work?</td><td>6</td></tr>
+                        <tr><td colspan="5" style="text-align: center; color: var(--text-muted);"><em>— SPRING BREAK — NO CLASS —</em></td></tr>
+                        <tr><td>15</td><td>Tue</td><td><span class="capstone-badge">CAPSTONE</span> Main Group — s-block and p-block integration</td><td>Predict products across groups</td><td>5</td></tr>
+                        <tr><td>15</td><td>Thu</td><td>Main group applications; industrial chemistry</td><td>Jigsaw: group presentations</td><td>5, 6</td></tr>
+                        <tr><td>16</td><td>Tue</td><td>STUDENT PRESENTATIONS</td><td>Peer evaluation</td><td>6</td></tr>
+                        <tr><td>16</td><td>Thu</td><td colspan="3"><strong>COMPREHENSIVE FINAL EXAM</strong></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Why This Order -->
+        <section>
+            <h2>Why This Order?</h2>
+
+            <div class="callout data">
+                <div class="callout-title">Knowledge Graph Analysis</div>
+                <p>Traditional curricula teach Coordination Chemistry first. Our knowledge graph analysis shows it has <strong>in-degree = 157</strong> (many prerequisites) and <strong>out-degree = 0</strong> (nothing depends on it). It's an integration endpoint, not a starting point.</p>
+                <p style="margin-bottom: 0;"><strong>Main Group</strong> has in-degree = 368 — it's the ultimate capstone.</p>
+            </div>
+        </section>
+
+        <!-- Hub Checkpoints -->
+        <section>
+            <h2>Hub Checkpoints</h2>
+            <p>After each hub, you must demonstrate mastery before proceeding. These are not arbitrary gatekeeping—they're prerequisite verification.</p>
+
+            <div class="table-wrapper">
+                <table class="checkpoint-table">
+                    <thead>
+                        <tr>
+                            <th>Hub</th>
+                            <th>Checkpoint Question</th>
+                            <th>Must Master Before</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Redox</td>
+                            <td>Balance a redox reaction in acidic solution</td>
+                            <td>Acid-Base Hub</td>
+                        </tr>
+                        <tr>
+                            <td>Acid-Base</td>
+                            <td>Predict relative acidity using HSAB</td>
+                            <td>MO Theory Hub</td>
+                        </tr>
+                        <tr>
+                            <td>MO Theory</td>
+                            <td>Draw MO diagram for CO and explain bond order</td>
+                            <td>CFT Hub</td>
+                        </tr>
+                        <tr>
+                            <td>CFT</td>
+                            <td>Calculate CFSE for d⁶ high-spin vs low-spin</td>
+                            <td>Capstones</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Course Policies -->
+        <section>
+            <h2>Course Policies</h2>
+
+            <h3>Engagement and Attendance</h3>
+            <p>Tracked through quiz participation. After 2 missed quizzes, I'll check in. After 4 missed classes, mandatory meeting. Students with ≥90% attendance may drop lowest midterm score.</p>
+
+            <h3>Late Work</h3>
+            <ul>
+                <li><strong>Quizzes:</strong> No make-ups (lowest 2 dropped)</li>
+                <li><strong>Case analyses:</strong> 10%/day penalty, not accepted after 3 days</li>
+                <li><strong>Exams:</strong> Make-ups only with documented emergency</li>
+            </ul>
+
+            <h3>Electronics</h3>
+            <p>Phones silenced and away. Laptops for notes only.</p>
+
+            <h3>Academic Integrity</h3>
+            <p>All work must be your own. Violations result in zero and report to Dean. Second violation = course failure.</p>
+        </section>
+
+        <!-- University Policies -->
+        <section>
+            <h2>University Policies</h2>
+
+            <h3>Americans with Disabilities Act</h3>
+            <p>Register with Office of Services for Students with Disabilities (Drew Hall 200, 337-475-5916). Contact me within first two weeks.</p>
+
+            <h3>Title IX</h3>
+            <p>Report sexual misconduct to Title IX Coordinator or Counseling Center (confidential).</p>
+
+            <h3>Mental Health</h3>
+            <p>Counseling Center: 337-475-5956 (free, confidential).</p>
+        </section>
+
+        <!-- FAQ -->
+        <section>
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <div class="faq-q">Q: Why is the order different from the textbook?</div>
+                <div class="faq-a">A: The textbook follows author preference. Our order follows prerequisite chains extracted from 7 textbooks. You learn X before Y because Y requires X—verified by data.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">Q: I struggled in Organic. Will I struggle here?</div>
+                <div class="faq-a">A: Inorganic is different. Many find structure-property relationships more intuitive than organic mechanisms.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">Q: How much math?</div>
+                <div class="faq-a">A: Algebra for Born-Haber cycles and CFSE. No calculus.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">Q: What's a "hub"?</div>
+                <div class="faq-a">A: A concept where many prerequisite chains converge. If you don't master the hub, you can't proceed. Like a highway interchange—all traffic passes through.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">Q: Will there be curves?</div>
+                <div class="faq-a">A: No. If everyone earns an A, everyone gets an A. Collaborate freely.</div>
+            </div>
+
+            <div class="callout important">
+                <div class="callout-title">Bonus Opportunity</div>
+                <p style="margin-bottom: 0;">Students who visit office hours in Week 1 and correctly identify which hub has the highest connectivity will receive 3 bonus points on Exam 1.</p>
+            </div>
+        </section>
+
+        <!-- Closing -->
+        <div class="closing-quote">
+            <blockquote>
+                "Chemistry is the study of matter, but I prefer to see it as the study of change."
+            </blockquote>
+            <cite>— Walter White (Breaking Bad)</cite>
+
+            <p style="margin-top: 2rem; color: var(--text-muted); font-style: italic;">This syllabus is a guide and may be modified. Changes announced in class and on Moodle.</p>
+
+            <div class="closing-message">
+                <p class="signature">— Dr. B</p>
+            </div>
+
+            <p class="final-joke">"If you're not part of the solution, you're part of the precipitate."</p>
+        </div>
+    </main>
+</body>
+</html>
