@@ -1,0 +1,78 @@
+{
+  "id": "lesson_22",
+  "title": "Coordination Compounds",
+  "unit": "unit_3",
+  "session": 22,
+  "duration_minutes": 75,
+  "scale": {
+    "primary": "STRUCTURAL",
+    "touches": [],
+    "escalation_from": null
+  },
+  "topic": {
+    "name": "Coordination Compounds",
+    "pagerank": 0,
+    "mentions": 313,
+    "hub_score": 0.06
+  },
+  "prerequisites": {
+    "required": [],
+    "recommended": [],
+    "scale_prerequisites": {
+      "STRUCTURAL": []
+    }
+  },
+  "learning_objectives": [
+    {
+      "id": "LO_22_1",
+      "text": "Define and explain Coordination Compounds",
+      "bloom_level": "understand",
+      "scale": "STRUCTURAL",
+      "assessment_type": "short_answer"
+    },
+    {
+      "id": "LO_22_2",
+      "text": "Apply Coordination Compounds to predict chemical properties",
+      "bloom_level": "apply",
+      "scale": "STRUCTURAL",
+      "assessment_type": "problem_solving"
+    }
+  ],
+  "content_synthesis": {
+    "best_explanation": {
+      "source": "ic_tina",
+      "strength": "primary"
+    },
+    "best_examples": {
+      "source": "Atkins_Shriver",
+      "strength": "secondary"
+    },
+    "cross_references": []
+  },
+  "subtopics": [],
+  "worked_examples": [],
+  "assessment_items": {
+    "formative": [
+      {
+        "type": "clicker",
+        "question": "Quick check on Coordination Compounds"
+      }
+    ],
+    "summative": {
+      "quiz_questions": [
+        "quiz_22_q1"
+      ],
+      "exam_questions": []
+    }
+  },
+  "connections": {
+    "forward": [
+      "Solid State Chemistry",
+      "Coordination Chemistry",
+      "Main Group Chemistry"
+    ],
+    "backward": [],
+    "lateral": [],
+    "applications": []
+  }
+}

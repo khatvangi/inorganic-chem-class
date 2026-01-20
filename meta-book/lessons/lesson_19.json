@@ -1,0 +1,92 @@
+{
+  "id": "lesson_19",
+  "title": "Redox Chemistry",
+  "unit": "unit_2",
+  "session": 19,
+  "duration_minutes": 75,
+  "scale": {
+    "primary": "DESCRIPTIVE",
+    "touches": [],
+    "escalation_from": "Electrochemical Series"
+  },
+  "topic": {
+    "name": "Redox Chemistry",
+    "pagerank": 0.007949847241380162,
+    "mentions": 31,
+    "hub_score": 0.92
+  },
+  "prerequisites": {
+    "required": [
+      "Electrochemical Series",
+      "Oxidation States",
+      "Basic Redox Reactions"
+    ],
+    "recommended": [
+      "Redox Chemistry",
+      "Understanding Of Oxidation-Reduction Reactions"
+    ],
+    "scale_prerequisites": {
+      "DESCRIPTIVE": [
+        "Electrochemical Series",
+        "Oxidation States"
+      ]
+    }
+  },
+  "learning_objectives": [
+    {
+      "id": "LO_19_1",
+      "text": "Define and explain Redox Chemistry",
+      "bloom_level": "understand",
+      "scale": "DESCRIPTIVE",
+      "assessment_type": "short_answer"
+    },
+    {
+      "id": "LO_19_3",
+      "text": "Analyze how Redox Chemistry connects to related concepts",
+      "bloom_level": "analyze",
+      "scale": "DESCRIPTIVE",
+      "assessment_type": "essay"
+    }
+  ],
+  "content_synthesis": {
+    "best_explanation": {
+      "source": "descriptive_ic",
+      "strength": "primary"
+    },
+    "best_examples": {
+      "source": "descriptive_ic_house",
+      "strength": "secondary"
+    },
+    "cross_references": []
+  },
+  "subtopics": [],
+  "worked_examples": [],
+  "assessment_items": {
+    "formative": [
+      {
+        "type": "clicker",
+        "question": "Quick check on Redox Chemistry"
+      }
+    ],
+    "summative": {
+      "quiz_questions": [
+        "quiz_19_q1"
+      ],
+      "exam_questions": []
+    }
+  },
+  "connections": {
+    "forward": [
+      "Main Group Chemistry",
+      "Enzymatic Catalysis",
+      "Electrochemistry"
+    ],
+    "backward": [
+      "Electrochemical Series",
+      "Oxidation States",
+      "Basic Redox Reactions"
+    ],
+    "lateral": [],
+    "applications": []
+  }
+}

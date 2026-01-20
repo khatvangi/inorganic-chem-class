@@ -1,0 +1,71 @@
+{
+  "id": "lesson_02",
+  "title": "Electron Configuration",
+  "unit": "unit_1",
+  "session": 2,
+  "duration_minutes": 75,
+  "scale": {
+    "primary": "QUANTUM",
+    "touches": [],
+    "escalation_from": null
+  },
+  "topic": {
+    "name": "Electron Configuration",
+    "pagerank": 0,
+    "mentions": 272,
+    "hub_score": 0.5
+  },
+  "prerequisites": {
+    "required": [],
+    "recommended": [],
+    "scale_prerequisites": {
+      "QUANTUM": []
+    }
+  },
+  "learning_objectives": [
+    {
+      "id": "LO_2_1",
+      "text": "Define and explain Electron Configuration",
+      "bloom_level": "understand",
+      "scale": "QUANTUM",
+      "assessment_type": "short_answer"
+    }
+  ],
+  "content_synthesis": {
+    "best_explanation": {
+      "source": "ic_tina",
+      "strength": "primary"
+    },
+    "best_examples": {
+      "source": "Atkins_Shriver",
+      "strength": "secondary"
+    },
+    "cross_references": []
+  },
+  "subtopics": [],
+  "worked_examples": [],
+  "assessment_items": {
+    "formative": [
+      {
+        "type": "clicker",
+        "question": "Quick check on Electron Configuration"
+      }
+    ],
+    "summative": {
+      "quiz_questions": [
+        "quiz_2_q1"
+      ],
+      "exam_questions": []
+    }
+  },
+  "connections": {
+    "forward": [
+      "Atomic Structure And Periodic Trends",
+      "Coordination Chemistry",
+      "Electronic Structure And Spectroscopy"
+    ],
+    "backward": [],
+    "lateral": [],
+    "applications": []
+  }
+}

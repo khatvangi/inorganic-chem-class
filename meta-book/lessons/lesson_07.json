@@ -1,0 +1,71 @@
+{
+  "id": "lesson_07",
+  "title": "Thermodynamics",
+  "unit": "unit_1",
+  "session": 7,
+  "duration_minutes": 75,
+  "scale": {
+    "primary": "DESCRIPTIVE",
+    "touches": [],
+    "escalation_from": null
+  },
+  "topic": {
+    "name": "Thermodynamics",
+    "pagerank": 0.000866104795390483,
+    "mentions": 10,
+    "hub_score": 0.18
+  },
+  "prerequisites": {
+    "required": [],
+    "recommended": [],
+    "scale_prerequisites": {
+      "DESCRIPTIVE": []
+    }
+  },
+  "learning_objectives": [
+    {
+      "id": "LO_7_1",
+      "text": "Define and explain Thermodynamics",
+      "bloom_level": "understand",
+      "scale": "DESCRIPTIVE",
+      "assessment_type": "short_answer"
+    }
+  ],
+  "content_synthesis": {
+    "best_explanation": {
+      "source": "descriptive_ic",
+      "strength": "primary"
+    },
+    "best_examples": {
+      "source": "descriptive_ic_house",
+      "strength": "secondary"
+    },
+    "cross_references": []
+  },
+  "subtopics": [],
+  "worked_examples": [],
+  "assessment_items": {
+    "formative": [
+      {
+        "type": "clicker",
+        "question": "Quick check on Thermodynamics"
+      }
+    ],
+    "summative": {
+      "quiz_questions": [
+        "quiz_7_q1"
+      ],
+      "exam_questions": []
+    }
+  },
+  "connections": {
+    "forward": [
+      "Electrochemistry",
+      "Electrochemical Kinetics",
+      "Coordination Chemistry"
+    ],
+    "backward": [],
+    "lateral": [],
+    "applications": []
+  }
+}

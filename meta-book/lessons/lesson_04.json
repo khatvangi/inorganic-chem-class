@@ -1,0 +1,71 @@
+{
+  "id": "lesson_04",
+  "title": "Oxidation States",
+  "unit": "unit_1",
+  "session": 4,
+  "duration_minutes": 75,
+  "scale": {
+    "primary": "DESCRIPTIVE",
+    "touches": [],
+    "escalation_from": null
+  },
+  "topic": {
+    "name": "Oxidation States",
+    "pagerank": 0,
+    "mentions": 368,
+    "hub_score": 0.34
+  },
+  "prerequisites": {
+    "required": [],
+    "recommended": [],
+    "scale_prerequisites": {
+      "DESCRIPTIVE": []
+    }
+  },
+  "learning_objectives": [
+    {
+      "id": "LO_4_1",
+      "text": "Define and explain Oxidation States",
+      "bloom_level": "understand",
+      "scale": "DESCRIPTIVE",
+      "assessment_type": "short_answer"
+    }
+  ],
+  "content_synthesis": {
+    "best_explanation": {
+      "source": "descriptive_ic",
+      "strength": "primary"
+    },
+    "best_examples": {
+      "source": "descriptive_ic_house",
+      "strength": "secondary"
+    },
+    "cross_references": []
+  },
+  "subtopics": [],
+  "worked_examples": [],
+  "assessment_items": {
+    "formative": [
+      {
+        "type": "clicker",
+        "question": "Quick check on Oxidation States"
+      }
+    ],
+    "summative": {
+      "quiz_questions": [
+        "quiz_4_q1"
+      ],
+      "exam_questions": []
+    }
+  },
+  "connections": {
+    "forward": [
+      "Coordination Chemistry",
+      "Main Group Chemistry",
+      "Redox Chemistry"
+    ],
+    "backward": [],
+    "lateral": [],
+    "applications": []
+  }
+}

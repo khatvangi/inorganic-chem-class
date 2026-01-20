@@ -1,0 +1,71 @@
+{
+  "id": "lesson_05",
+  "title": "Group Theory Basics",
+  "unit": "unit_1",
+  "session": 5,
+  "duration_minutes": 75,
+  "scale": {
+    "primary": "DESCRIPTIVE",
+    "touches": [],
+    "escalation_from": null
+  },
+  "topic": {
+    "name": "Group Theory Basics",
+    "pagerank": 0,
+    "mentions": 55,
+    "hub_score": 0.22
+  },
+  "prerequisites": {
+    "required": [],
+    "recommended": [],
+    "scale_prerequisites": {
+      "DESCRIPTIVE": []
+    }
+  },
+  "learning_objectives": [
+    {
+      "id": "LO_5_1",
+      "text": "Define and explain Group Theory Basics",
+      "bloom_level": "understand",
+      "scale": "DESCRIPTIVE",
+      "assessment_type": "short_answer"
+    }
+  ],
+  "content_synthesis": {
+    "best_explanation": {
+      "source": "descriptive_ic",
+      "strength": "primary"
+    },
+    "best_examples": {
+      "source": "descriptive_ic_house",
+      "strength": "secondary"
+    },
+    "cross_references": []
+  },
+  "subtopics": [],
+  "worked_examples": [],
+  "assessment_items": {
+    "formative": [
+      {
+        "type": "clicker",
+        "question": "Quick check on Group Theory Basics"
+      }
+    ],
+    "summative": {
+      "quiz_questions": [
+        "quiz_5_q1"
+      ],
+      "exam_questions": []
+    }
+  },
+  "connections": {
+    "forward": [
+      "Symmetry And Point Groups",
+      "Symmetry And Group Theory",
+      "Symmetry And Molecular Orbitals"
+    ],
+    "backward": [],
+    "lateral": [],
+    "applications": []
+  }
+}

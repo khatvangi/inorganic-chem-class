@@ -1,0 +1,92 @@
+{
+  "id": "lesson_15",
+  "title": "Acid-Base Chemistry",
+  "unit": "unit_2",
+  "session": 15,
+  "duration_minutes": 75,
+  "scale": {
+    "primary": "DESCRIPTIVE",
+    "touches": [],
+    "escalation_from": "Periodic Trends"
+  },
+  "topic": {
+    "name": "Acid-Base Chemistry",
+    "pagerank": 0.0025137268249206075,
+    "mentions": 194,
+    "hub_score": 1.0
+  },
+  "prerequisites": {
+    "required": [
+      "Periodic Trends",
+      "Acid Dissociation",
+      "Acid-Base Theory"
+    ],
+    "recommended": [
+      "Lewis Structures",
+      "Acid-Base Equilibrium"
+    ],
+    "scale_prerequisites": {
+      "DESCRIPTIVE": [
+        "Periodic Trends",
+        "Acid Dissociation"
+      ]
+    }
+  },
+  "learning_objectives": [
+    {
+      "id": "LO_15_1",
+      "text": "Define and explain Acid-Base Chemistry",
+      "bloom_level": "understand",
+      "scale": "DESCRIPTIVE",
+      "assessment_type": "short_answer"
+    },
+    {
+      "id": "LO_15_3",
+      "text": "Analyze how Acid-Base Chemistry connects to related concepts",
+      "bloom_level": "analyze",
+      "scale": "DESCRIPTIVE",
+      "assessment_type": "essay"
+    }
+  ],
+  "content_synthesis": {
+    "best_explanation": {
+      "source": "descriptive_ic",
+      "strength": "primary"
+    },
+    "best_examples": {
+      "source": "descriptive_ic_house",
+      "strength": "secondary"
+    },
+    "cross_references": []
+  },
+  "subtopics": [],
+  "worked_examples": [],
+  "assessment_items": {
+    "formative": [
+      {
+        "type": "clicker",
+        "question": "Quick check on Acid-Base Chemistry"
+      }
+    ],
+    "summative": {
+      "quiz_questions": [
+        "quiz_15_q1"
+      ],
+      "exam_questions": []
+    }
+  },
+  "connections": {
+    "forward": [
+      "Acid-Base Equilibria",
+      "Electrochemistry",
+      "Acid Strength Trends"
+    ],
+    "backward": [
+      "Periodic Trends",
+      "Acid Dissociation",
+      "Acid-Base Theory"
+    ],
+    "lateral": [],
+    "applications": []
+  }
+}

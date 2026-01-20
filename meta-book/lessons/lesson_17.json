@@ -1,0 +1,92 @@
+{
+  "id": "lesson_17",
+  "title": "Electrochemistry",
+  "unit": "unit_2",
+  "session": 17,
+  "duration_minutes": 75,
+  "scale": {
+    "primary": "DESCRIPTIVE",
+    "touches": [],
+    "escalation_from": "Understanding Of Oxidation And Reduction"
+  },
+  "topic": {
+    "name": "Electrochemistry",
+    "pagerank": 0.0014458509994602015,
+    "mentions": 255,
+    "hub_score": 1.0
+  },
+  "prerequisites": {
+    "required": [
+      "Understanding Of Oxidation And Reduction",
+      "Knowledge Of Electrode Potentials",
+      "Redox Chemistry"
+    ],
+    "recommended": [
+      "Gibbs Free Energy Calculations",
+      "Electrode Potentials"
+    ],
+    "scale_prerequisites": {
+      "DESCRIPTIVE": [
+        "Understanding Of Oxidation And Reduction",
+        "Knowledge Of Electrode Potentials"
+      ]
+    }
+  },
+  "learning_objectives": [
+    {
+      "id": "LO_17_1",
+      "text": "Define and explain Electrochemistry",
+      "bloom_level": "understand",
+      "scale": "DESCRIPTIVE",
+      "assessment_type": "short_answer"
+    },
+    {
+      "id": "LO_17_3",
+      "text": "Analyze how Electrochemistry connects to related concepts",
+      "bloom_level": "analyze",
+      "scale": "DESCRIPTIVE",
+      "assessment_type": "essay"
+    }
+  ],
+  "content_synthesis": {
+    "best_explanation": {
+      "source": "descriptive_ic",
+      "strength": "primary"
+    },
+    "best_examples": {
+      "source": "descriptive_ic_house",
+      "strength": "secondary"
+    },
+    "cross_references": []
+  },
+  "subtopics": [],
+  "worked_examples": [],
+  "assessment_items": {
+    "formative": [
+      {
+        "type": "clicker",
+        "question": "Quick check on Electrochemistry"
+      }
+    ],
+    "summative": {
+      "quiz_questions": [
+        "quiz_17_q1"
+      ],
+      "exam_questions": []
+    }
+  },
+  "connections": {
+    "forward": [
+      "Electrochemical Series",
+      "Fuel Cell Operation",
+      "Electrochemical Applications"
+    ],
+    "backward": [
+      "Understanding Of Oxidation And Reduction",
+      "Knowledge Of Electrode Potentials",
+      "Redox Chemistry"
+    ],
+    "lateral": [],
+    "applications": []
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "id": "lesson_13",
+  "title": "Molecular Orbital Theory",
+  "unit": "unit_2",
+  "session": 13,
+  "duration_minutes": 75,
+  "scale": {
+    "primary": "QUANTUM",
+    "touches": [
+      "ELECTRONIC"
+    ],
+    "escalation_from": "Atomic Orbitals"
+  },
+  "topic": {
+    "name": "Molecular Orbital Theory",
+    "pagerank": 0.002971080161168136,
+    "mentions": 143,
+    "hub_score": 1.0
+  },
+  "prerequisites": {
+    "required": [
+      "Atomic Orbitals",
+      "Electron Configuration",
+      "Chemical Bonding"
+    ],
+    "recommended": [
+      "Orbital Hybridization",
+      "Symmetry Operations"
+    ],
+    "scale_prerequisites": {
+      "QUANTUM": [
+        "Atomic Orbitals",
+        "Electron Configuration"
+      ]
+    }
+  },
+  "learning_objectives": [
+    {
+      "id": "LO_13_1",
+      "text": "Define and explain Molecular Orbital Theory",
+      "bloom_level": "understand",
+      "scale": "QUANTUM",
+      "assessment_type": "short_answer"
+    },
+    {
+      "id": "LO_13_3",
+      "text": "Analyze how Molecular Orbital Theory connects to related concepts",
+      "bloom_level": "analyze",
+      "scale": "QUANTUM",
+      "assessment_type": "essay"
+    }
+  ],
+  "content_synthesis": {
+    "best_explanation": {
+      "source": "ic_tina",
+      "strength": "primary"
+    },
+    "best_examples": {
+      "source": "Atkins_Shriver",
+      "strength": "secondary"
+    },
+    "cross_references": []
+  },
+  "subtopics": [],
+  "worked_examples": [],
+  "assessment_items": {
+    "formative": [
+      {
+        "type": "clicker",
+        "question": "Quick check on Molecular Orbital Theory"
+      }
+    ],
+    "summative": {
+      "quiz_questions": [
+        "quiz_13_q1"
+      ],
+      "exam_questions": []
+    }
+  },
+  "connections": {
+    "forward": [
+      "Crystal Field Theory",
+      "Main Group Chemistry",
+      "Chemical Bonding"
+    ],
+    "backward": [
+      "Atomic Orbitals",
+      "Electron Configuration",
+      "Chemical Bonding"
+    ],
+    "lateral": [],
+    "applications": []
+  }
+}

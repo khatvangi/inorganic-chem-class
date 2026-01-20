@@ -1,0 +1,92 @@
+{
+  "id": "lesson_10",
+  "title": "Periodic Trends",
+  "unit": "unit_2",
+  "session": 10,
+  "duration_minutes": 75,
+  "scale": {
+    "primary": "DESCRIPTIVE",
+    "touches": [],
+    "escalation_from": "Understanding Of Periodic Table Structure"
+  },
+  "topic": {
+    "name": "Periodic Trends",
+    "pagerank": 0.01203050059789048,
+    "mentions": 74,
+    "hub_score": 1.0
+  },
+  "prerequisites": {
+    "required": [
+      "Understanding Of Periodic Table Structure",
+      "Atomic Structure",
+      "Periodic Table Trends"
+    ],
+    "recommended": [
+      "Periodic Table",
+      "Electronic Structure Of Atoms"
+    ],
+    "scale_prerequisites": {
+      "DESCRIPTIVE": [
+        "Understanding Of Periodic Table Structure",
+        "Atomic Structure"
+      ]
+    }
+  },
+  "learning_objectives": [
+    {
+      "id": "LO_10_1",
+      "text": "Define and explain Periodic Trends",
+      "bloom_level": "understand",
+      "scale": "DESCRIPTIVE",
+      "assessment_type": "short_answer"
+    },
+    {
+      "id": "LO_10_3",
+      "text": "Analyze how Periodic Trends connects to related concepts",
+      "bloom_level": "analyze",
+      "scale": "DESCRIPTIVE",
+      "assessment_type": "essay"
+    }
+  ],
+  "content_synthesis": {
+    "best_explanation": {
+      "source": "descriptive_ic",
+      "strength": "primary"
+    },
+    "best_examples": {
+      "source": "descriptive_ic_house",
+      "strength": "secondary"
+    },
+    "cross_references": []
+  },
+  "subtopics": [],
+  "worked_examples": [],
+  "assessment_items": {
+    "formative": [
+      {
+        "type": "clicker",
+        "question": "Quick check on Periodic Trends"
+      }
+    ],
+    "summative": {
+      "quiz_questions": [
+        "quiz_10_q1"
+      ],
+      "exam_questions": []
+    }
+  },
+  "connections": {
+    "forward": [
+      "Acid-Base Chemistry",
+      "Main Group Chemistry",
+      "Crystal Field Theory"
+    ],
+    "backward": [
+      "Understanding Of Periodic Table Structure",
+      "Atomic Structure",
+      "Periodic Table Trends"
+    ],
+    "lateral": [],
+    "applications": []
+  }
+}

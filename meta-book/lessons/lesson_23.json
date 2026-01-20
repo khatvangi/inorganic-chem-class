@@ -1,0 +1,94 @@
+{
+  "id": "lesson_23",
+  "title": "Atomic Structure",
+  "unit": "unit_3",
+  "session": 23,
+  "duration_minutes": 75,
+  "scale": {
+    "primary": "DESCRIPTIVE",
+    "touches": [
+      "QUANTUM"
+    ],
+    "escalation_from": "Quantum Numbers"
+  },
+  "topic": {
+    "name": "Atomic Structure",
+    "pagerank": 0.0029611543535774136,
+    "mentions": 38,
+    "hub_score": 0.7
+  },
+  "prerequisites": {
+    "required": [
+      "Quantum Numbers",
+      "Wavefunctions",
+      "Atomic Structure Basics"
+    ],
+    "recommended": [
+      "Periodic Table Trends",
+      "Electron Configuration Basics"
+    ],
+    "scale_prerequisites": {
+      "DESCRIPTIVE": [
+        "Quantum Numbers",
+        "Wavefunctions"
+      ]
+    }
+  },
+  "learning_objectives": [
+    {
+      "id": "LO_23_1",
+      "text": "Define and explain Atomic Structure",
+      "bloom_level": "understand",
+      "scale": "DESCRIPTIVE",
+      "assessment_type": "short_answer"
+    },
+    {
+      "id": "LO_23_3",
+      "text": "Analyze how Atomic Structure connects to related concepts",
+      "bloom_level": "analyze",
+      "scale": "DESCRIPTIVE",
+      "assessment_type": "essay"
+    }
+  ],
+  "content_synthesis": {
+    "best_explanation": {
+      "source": "descriptive_ic",
+      "strength": "primary"
+    },
+    "best_examples": {
+      "source": "descriptive_ic_house",
+      "strength": "secondary"
+    },
+    "cross_references": []
+  },
+  "subtopics": [],
+  "worked_examples": [],
+  "assessment_items": {
+    "formative": [
+      {
+        "type": "clicker",
+        "question": "Quick check on Atomic Structure"
+      }
+    ],
+    "summative": {
+      "quiz_questions": [
+        "quiz_23_q1"
+      ],
+      "exam_questions": []
+    }
+  },
+  "connections": {
+    "forward": [
+      "Nuclear Chemistry",
+      "Main Group Chemistry",
+      "Periodic Trends"
+    ],
+    "backward": [
+      "Quantum Numbers",
+      "Wavefunctions",
+      "Atomic Structure Basics"
+    ],
+    "lateral": [],
+    "applications": []
+  }
+}

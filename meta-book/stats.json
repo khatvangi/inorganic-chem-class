@@ -1,0 +1,29 @@
+{
+  "total_topics": 726,
+  "total_lessons": 23,
+  "total_units": 3,
+  "scale_distribution": {
+    "QUANTUM": 54,
+    "ELECTRONIC": 55,
+    "STRUCTURAL": 131,
+    "DESCRIPTIVE": 486
+  },
+  "hub_topics": [
+    "Electrochemistry",
+    "Acid-Base Chemistry",
+    "Solid State Chemistry",
+    "Main Group Chemistry",
+    "Molecular Symmetry",
+    "Organometallic Chemistry",
+    "Bioinorganic Chemistry",
+    "Coordination Chemistry",
+    "Crystal Field Theory",
+    "Chemical Bonding",
+    "Redox Chemistry",
+    "Periodic Trends",
+    "Molecular Orbital Theory",
+    "Atomic Structure",
+    "Transition Metal Chemistry",
+    "Coordination Chemistry Fundamentals"
+  ]
+}

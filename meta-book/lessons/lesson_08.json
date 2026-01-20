@@ -1,0 +1,90 @@
+{
+  "id": "lesson_08",
+  "title": "Ligand Field Theory",
+  "unit": "unit_1",
+  "session": 8,
+  "duration_minutes": 75,
+  "scale": {
+    "primary": "ELECTRONIC",
+    "touches": [],
+    "escalation_from": null
+  },
+  "topic": {
+    "name": "Ligand Field Theory",
+    "pagerank": 0,
+    "mentions": 15,
+    "hub_score": 0.18
+  },
+  "prerequisites": {
+    "required": [],
+    "recommended": [],
+    "scale_prerequisites": {
+      "ELECTRONIC": []
+    }
+  },
+  "learning_objectives": [
+    {
+      "id": "LO_8_1",
+      "text": "Define and explain Ligand Field Theory",
+      "bloom_level": "understand",
+      "scale": "ELECTRONIC",
+      "assessment_type": "short_answer"
+    },
+    {
+      "id": "LO_8_2",
+      "text": "Apply Ligand Field Theory to predict chemical properties",
+      "bloom_level": "apply",
+      "scale": "ELECTRONIC",
+      "assessment_type": "problem_solving"
+    }
+  ],
+  "content_synthesis": {
+    "best_explanation": {
+      "source": "descriptive_ic",
+      "strength": "primary"
+    },
+    "best_examples": {
+      "source": "concise_ic_jd_lee",
+      "strength": "secondary"
+    },
+    "cross_references": []
+  },
+  "subtopics": [],
+  "worked_examples": [
+    {
+      "problem": "Apply Ligand Field Theory to predict properties of a transition metal complex",
+      "type": "calculation",
+      "difficulty": "medium",
+      "solution_steps": [
+        "Identify key parameters",
+        "Apply theory",
+        "Interpret result"
+      ],
+      "source": "adapted from descriptive_ic"
+    }
+  ],
+  "assessment_items": {
+    "formative": [
+      {
+        "type": "clicker",
+        "question": "Quick check on Ligand Field Theory"
+      }
+    ],
+    "summative": {
+      "quiz_questions": [
+        "quiz_8_q1"
+      ],
+      "exam_questions": []
+    }
+  },
+  "connections": {
+    "forward": [
+      "Organometallic Chemistry",
+      "Coordination Chemistry",
+      "Main Group Chemistry"
+    ],
+    "backward": [],
+    "lateral": [],
+    "applications": []
+  }
+}

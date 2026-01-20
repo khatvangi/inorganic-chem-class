@@ -1,0 +1,78 @@
+{
+  "id": "lesson_21",
+  "title": "Coordination Complexes",
+  "unit": "unit_3",
+  "session": 21,
+  "duration_minutes": 75,
+  "scale": {
+    "primary": "STRUCTURAL",
+    "touches": [],
+    "escalation_from": null
+  },
+  "topic": {
+    "name": "Coordination Complexes",
+    "pagerank": 0,
+    "mentions": 419,
+    "hub_score": 0.16
+  },
+  "prerequisites": {
+    "required": [],
+    "recommended": [],
+    "scale_prerequisites": {
+      "STRUCTURAL": []
+    }
+  },
+  "learning_objectives": [
+    {
+      "id": "LO_21_1",
+      "text": "Define and explain Coordination Complexes",
+      "bloom_level": "understand",
+      "scale": "STRUCTURAL",
+      "assessment_type": "short_answer"
+    },
+    {
+      "id": "LO_21_2",
+      "text": "Apply Coordination Complexes to predict chemical properties",
+      "bloom_level": "apply",
+      "scale": "STRUCTURAL",
+      "assessment_type": "problem_solving"
+    }
+  ],
+  "content_synthesis": {
+    "best_explanation": {
+      "source": "ic_tina",
+      "strength": "primary"
+    },
+    "best_examples": {
+      "source": "Atkins_Shriver",
+      "strength": "secondary"
+    },
+    "cross_references": []
+  },
+  "subtopics": [],
+  "worked_examples": [],
+  "assessment_items": {
+    "formative": [
+      {
+        "type": "clicker",
+        "question": "Quick check on Coordination Complexes"
+      }
+    ],
+    "summative": {
+      "quiz_questions": [
+        "quiz_21_q1"
+      ],
+      "exam_questions": []
+    }
+  },
+  "connections": {
+    "forward": [
+      "Coordination Chemistry",
+      "Catalysis",
+      "Crystal Field Theory"
+    ],
+    "backward": [],
+    "lateral": [],
+    "applications": []
+  }
+}

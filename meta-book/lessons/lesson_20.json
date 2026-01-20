@@ -1,0 +1,95 @@
+{
+  "id": "lesson_20",
+  "title": "Organometallic Chemistry",
+  "unit": "unit_2",
+  "session": 20,
+  "duration_minutes": 75,
+  "scale": {
+    "primary": "DESCRIPTIVE",
+    "touches": [
+      "STRUCTURAL",
+      "ELECTRONIC"
+    ],
+    "escalation_from": "Coordination Chemistry Fundamentals"
+  },
+  "topic": {
+    "name": "Organometallic Chemistry",
+    "pagerank": 0.000799614961380097,
+    "mentions": 102,
+    "hub_score": 0.92
+  },
+  "prerequisites": {
+    "required": [
+      "Coordination Chemistry Fundamentals",
+      "Ligand Field Theory",
+      "Metal-Ligand Bonding"
+    ],
+    "recommended": [
+      "Valence Bond Theory",
+      "Transition Metal Electron Configuration"
+    ],
+    "scale_prerequisites": {
+      "DESCRIPTIVE": [
+        "Coordination Chemistry Fundamentals",
+        "Ligand Field Theory"
+      ]
+    }
+  },
+  "learning_objectives": [
+    {
+      "id": "LO_20_1",
+      "text": "Define and explain Organometallic Chemistry",
+      "bloom_level": "understand",
+      "scale": "DESCRIPTIVE",
+      "assessment_type": "short_answer"
+    },
+    {
+      "id": "LO_20_3",
+      "text": "Analyze how Organometallic Chemistry connects to related concepts",
+      "bloom_level": "analyze",
+      "scale": "DESCRIPTIVE",
+      "assessment_type": "essay"
+    }
+  ],
+  "content_synthesis": {
+    "best_explanation": {
+      "source": "descriptive_ic",
+      "strength": "primary"
+    },
+    "best_examples": {
+      "source": "descriptive_ic_house",
+      "strength": "secondary"
+    },
+    "cross_references": []
+  },
+  "subtopics": [],
+  "worked_examples": [],
+  "assessment_items": {
+    "formative": [
+      {
+        "type": "clicker",
+        "question": "Quick check on Organometallic Chemistry"
+      }
+    ],
+    "summative": {
+      "quiz_questions": [
+        "quiz_20_q1"
+      ],
+      "exam_questions": []
+    }
+  },
+  "connections": {
+    "forward": [
+      "Coordination Complexes",
+      "Electronic Structure Of Transition Metals",
+      "Catalysis"
+    ],
+    "backward": [
+      "Coordination Chemistry Fundamentals",
+      "Ligand Field Theory",
+      "Metal-Ligand Bonding"
+    ],
+    "lateral": [],
+    "applications": []
+  }
+}
