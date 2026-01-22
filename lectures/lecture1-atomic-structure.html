@@ -117,11 +117,61 @@
             border: 1px solid var(--bg-elevated);
         }
 
+        .figure-tabs {
+            display: flex;
+            background: var(--bg-elevated);
+            border-bottom: 1px solid var(--bg);
+        }
+
+        .figure-tab {
+            padding: 0.75rem 1.5rem;
+            background: transparent;
+            border: none;
+            color: var(--text-dim);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .figure-tab:hover {
+            color: var(--text);
+            background: rgba(138, 180, 248, 0.1);
+        }
+
+        .figure-tab.active {
+            color: var(--accent);
+            background: var(--bg-card);
+            border-bottom: 2px solid var(--accent);
+        }
+
+        .figure-content {
+            display: none;
+        }
+
+        .figure-content.active {
+            display: block;
+        }
+
         .figure-container iframe {
             width: 100%;
             height: 500px;
             border: none;
             display: block;
+        }
+
+        .figure-original {
+            padding: 1rem;
+            text-align: center;
+            background: #f5f5f5;
+        }
+
+        .figure-original img {
+            max-width: 100%;
+            height: auto;
+            max-height: 600px;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
 
         .figure-caption {
@@ -268,8 +318,19 @@
                 <p style="margin-top: 0.5rem; margin-bottom: 0;">The probability of finding the electron in a small volume element \(d\tau\) at position \(\mathbf{r}\) is \(\rho \, d\tau\).</p>
             </div>
 
-            <div class="figure-container">
-                <iframe src="../atomic_orbitals_interactive/fig_1_3.html" title="Figure 1.3: Born Interpretation"></iframe>
+            <div class="figure-container" data-figure="1.3">
+                <div class="figure-tabs">
+                    <button class="figure-tab active" data-view="interactive">Interactive</button>
+                    <button class="figure-tab" data-view="original">Original (Textbook)</button>
+                </div>
+                <div class="figure-content active" data-view="interactive">
+                    <iframe src="../atomic_orbitals_interactive/fig_1_3.html" title="Figure 1.3: Born Interpretation"></iframe>
+                </div>
+                <div class="figure-content" data-view="original">
+                    <div class="figure-original">
+                        <img src="../assets/textbook_figures/fig_page-07.png" alt="Original Figure 1.3-1.4 from textbook">
+                    </div>
+                </div>
                 <div class="figure-caption">
                     <strong>Figure 1.3:</strong> The Born interpretation of the wavefunction. The wavefunction ψ can be positive or negative, but ρ = |ψ|² is always non-negative. At a node (where ψ = 0), there is zero probability of finding the electron.
                 </div>
@@ -281,8 +342,19 @@
                 <li><strong>Destructive interference:</strong> opposite signs → reduced probability density</li>
             </ul>
 
-            <div class="figure-container">
-                <iframe src="../atomic_orbitals_interactive/fig_1_4.html" title="Figure 1.4: Wave Interference"></iframe>
+            <div class="figure-container" data-figure="1.4">
+                <div class="figure-tabs">
+                    <button class="figure-tab active" data-view="interactive">Interactive</button>
+                    <button class="figure-tab" data-view="original">Original (Textbook)</button>
+                </div>
+                <div class="figure-content active" data-view="interactive">
+                    <iframe src="../atomic_orbitals_interactive/fig_1_4.html" title="Figure 1.4: Wave Interference"></iframe>
+                </div>
+                <div class="figure-content" data-view="original">
+                    <div class="figure-original">
+                        <img src="../assets/textbook_figures/fig_page-07.png" alt="Original Figure 1.3-1.4 from textbook">
+                    </div>
+                </div>
                 <div class="figure-caption">
                     <strong>Figure 1.4:</strong> Constructive and destructive interference of wavefunctions. Adjust the phase difference Δφ to see how interference affects the total probability density |ψ₁ + ψ₂|².
                 </div>
@@ -309,8 +381,19 @@
                 <p>m<sub>ℓ</sub> = −ℓ, ..., 0, ..., +ℓ. Determines the orientation of the orbital in space. There are (2ℓ+1) orbitals in each subshell.</p>
             </div>
 
-            <div class="figure-container">
-                <iframe src="../atomic_orbitals_interactive/fig_1_6.html" title="Figure 1.6: Shell Classification"></iframe>
+            <div class="figure-container" data-figure="1.6">
+                <div class="figure-tabs">
+                    <button class="figure-tab active" data-view="interactive">Interactive</button>
+                    <button class="figure-tab" data-view="original">Original (Textbook)</button>
+                </div>
+                <div class="figure-content active" data-view="interactive">
+                    <iframe src="../atomic_orbitals_interactive/fig_1_6.html" title="Figure 1.6: Shell Classification"></iframe>
+                </div>
+                <div class="figure-content" data-view="original">
+                    <div class="figure-original">
+                        <img src="../assets/textbook_figures/fig_page-09.png" alt="Original Figure 1.6 from textbook">
+                    </div>
+                </div>
                 <div class="figure-caption">
                     <strong>Figure 1.6:</strong> Shell and subshell classification. The number of orbitals in shell n is n². Adjust n to see how subshells are organized.
                 </div>
@@ -324,8 +407,19 @@
                 </ul>
             </div>
 
-            <div class="figure-container">
-                <iframe src="../atomic_orbitals_interactive/fig_1_7.html" title="Figure 1.7: Spherical Polar Coordinates"></iframe>
+            <div class="figure-container" data-figure="1.7">
+                <div class="figure-tabs">
+                    <button class="figure-tab active" data-view="interactive">Interactive</button>
+                    <button class="figure-tab" data-view="original">Original (Textbook)</button>
+                </div>
+                <div class="figure-content active" data-view="interactive">
+                    <iframe src="../atomic_orbitals_interactive/fig_1_7.html" title="Figure 1.7: Spherical Polar Coordinates"></iframe>
+                </div>
+                <div class="figure-content" data-view="original">
+                    <div class="figure-original">
+                        <img src="../assets/textbook_figures/fig_page-10.png" alt="Original Figure 1.7-1.9 from textbook">
+                    </div>
+                </div>
                 <div class="figure-caption">
                     <strong>Figure 1.7:</strong> Spherical polar coordinates (r, θ, φ). The orbital wavefunction separates into radial R(r) and angular Y(θ,φ) parts.
                 </div>
@@ -349,8 +443,19 @@
                 <li>In hydrogenic atoms, all orbitals with the same n are <strong>degenerate</strong> (same energy)</li>
             </ul>
 
-            <div class="figure-container">
-                <iframe src="../atomic_orbitals_interactive/fig_1_5.html" title="Figure 1.5: Energy Levels"></iframe>
+            <div class="figure-container" data-figure="1.5">
+                <div class="figure-tabs">
+                    <button class="figure-tab active" data-view="interactive">Interactive</button>
+                    <button class="figure-tab" data-view="original">Original (Textbook)</button>
+                </div>
+                <div class="figure-content active" data-view="interactive">
+                    <iframe src="../atomic_orbitals_interactive/fig_1_5.html" title="Figure 1.5: Energy Levels"></iframe>
+                </div>
+                <div class="figure-content" data-view="original">
+                    <div class="figure-original">
+                        <img src="../assets/textbook_figures/fig_page-08.png" alt="Original Figure 1.5 from textbook">
+                    </div>
+                </div>
                 <div class="figure-caption">
                     <strong>Figure 1.5:</strong> Quantized energy levels for H (Z=1) and He⁺ (Z=2). The energy scales as −Z²/n², so He⁺ levels are four times deeper than H levels.
                 </div>
@@ -362,15 +467,37 @@
 
             <p>The radial wavefunction R<sub>nℓ</sub>(r) describes how the orbital's amplitude varies with distance from the nucleus. For s orbitals (ℓ = 0), R is non-zero at the nucleus. For all other orbitals (ℓ > 0), R = 0 at r = 0.</p>
 
-            <div class="figure-container">
-                <iframe src="../atomic_orbitals_interactive/fig_1_8.html" title="Figure 1.8: Radial Wavefunctions s"></iframe>
+            <div class="figure-container" data-figure="1.8">
+                <div class="figure-tabs">
+                    <button class="figure-tab active" data-view="interactive">Interactive</button>
+                    <button class="figure-tab" data-view="original">Original (Textbook)</button>
+                </div>
+                <div class="figure-content active" data-view="interactive">
+                    <iframe src="../atomic_orbitals_interactive/fig_1_8.html" title="Figure 1.8: Radial Wavefunctions s"></iframe>
+                </div>
+                <div class="figure-content" data-view="original">
+                    <div class="figure-original">
+                        <img src="../assets/textbook_figures/fig_page-10.png" alt="Original Figure 1.8 from textbook">
+                    </div>
+                </div>
                 <div class="figure-caption">
                     <strong>Figure 1.8:</strong> Radial wavefunctions R<sub>n0</sub> for 1s, 2s, and 3s orbitals. Note how the number of radial nodes (n − 1) increases with n. The horizontal axis is the scaled radius Zr/a₀.
                 </div>
             </div>
 
-            <div class="figure-container">
-                <iframe src="../atomic_orbitals_interactive/fig_1_9.html" title="Figure 1.9: Radial Wavefunctions p"></iframe>
+            <div class="figure-container" data-figure="1.9">
+                <div class="figure-tabs">
+                    <button class="figure-tab active" data-view="interactive">Interactive</button>
+                    <button class="figure-tab" data-view="original">Original (Textbook)</button>
+                </div>
+                <div class="figure-content active" data-view="interactive">
+                    <iframe src="../atomic_orbitals_interactive/fig_1_9.html" title="Figure 1.9: Radial Wavefunctions p"></iframe>
+                </div>
+                <div class="figure-content" data-view="original">
+                    <div class="figure-original">
+                        <img src="../assets/textbook_figures/fig_page-10.png" alt="Original Figure 1.9 from textbook">
+                    </div>
+                </div>
                 <div class="figure-caption">
                     <strong>Figure 1.9:</strong> Radial wavefunctions R<sub>n1</sub> for 2p and 3p orbitals. These vanish at the nucleus (r = 0) because ℓ ≠ 0.
                 </div>
@@ -386,15 +513,37 @@
 
             <p>For the 1s orbital, P(r) has a maximum at r = a₀/Z, where a₀ = 52.9 pm is the Bohr radius.</p>
 
-            <div class="figure-container">
-                <iframe src="../atomic_orbitals_interactive/fig_1_11.html" title="Figure 1.11: Radial Distribution 1s"></iframe>
+            <div class="figure-container" data-figure="1.11">
+                <div class="figure-tabs">
+                    <button class="figure-tab active" data-view="interactive">Interactive</button>
+                    <button class="figure-tab" data-view="original">Original (Textbook)</button>
+                </div>
+                <div class="figure-content active" data-view="interactive">
+                    <iframe src="../atomic_orbitals_interactive/fig_1_11.html" title="Figure 1.11: Radial Distribution 1s"></iframe>
+                </div>
+                <div class="figure-content" data-view="original">
+                    <div class="figure-original">
+                        <img src="../assets/textbook_figures/fig_page-11.png" alt="Original Figure 1.10-1.11 from textbook">
+                    </div>
+                </div>
                 <div class="figure-caption">
                     <strong>Figure 1.11:</strong> Radial distribution function P(r) for the 1s orbital. The most probable radius is r<sub>max</sub> = a₀/Z.
                 </div>
             </div>
 
-            <div class="figure-container">
-                <iframe src="../atomic_orbitals_interactive/fig_1_12.html" title="Figure 1.12: Radial Distribution 2s vs 2p"></iframe>
+            <div class="figure-container" data-figure="1.12">
+                <div class="figure-tabs">
+                    <button class="figure-tab active" data-view="interactive">Interactive</button>
+                    <button class="figure-tab" data-view="original">Original (Textbook)</button>
+                </div>
+                <div class="figure-content active" data-view="interactive">
+                    <iframe src="../atomic_orbitals_interactive/fig_1_12.html" title="Figure 1.12: Radial Distribution 2s vs 2p"></iframe>
+                </div>
+                <div class="figure-content" data-view="original">
+                    <div class="figure-original">
+                        <img src="../assets/textbook_figures/fig_page-12.png" alt="Original Figure 1.12-1.14 from textbook">
+                    </div>
+                </div>
                 <div class="figure-caption">
                     <strong>Figure 1.12:</strong> Radial distributions for 2s and 2p. The 2s orbital has an inner maximum close to the nucleus due to its additional radial node structure.
                 </div>
@@ -409,8 +558,19 @@
             <h3>s Orbitals</h3>
             <p>s orbitals (ℓ = 0) are spherically symmetric—they have the same amplitude at a given distance from the nucleus regardless of direction. They have no angular nodes.</p>
 
-            <div class="figure-container">
-                <iframe src="../atomic_orbitals_interactive/fig_1_13.html" title="Figure 1.13: s Orbital"></iframe>
+            <div class="figure-container" data-figure="1.13">
+                <div class="figure-tabs">
+                    <button class="figure-tab active" data-view="interactive">Interactive</button>
+                    <button class="figure-tab" data-view="original">Original (Textbook)</button>
+                </div>
+                <div class="figure-content active" data-view="interactive">
+                    <iframe src="../atomic_orbitals_interactive/fig_1_13.html" title="Figure 1.13: s Orbital"></iframe>
+                </div>
+                <div class="figure-content" data-view="original">
+                    <div class="figure-original">
+                        <img src="../assets/textbook_figures/fig_page-12.png" alt="Original Figure 1.13 from textbook">
+                    </div>
+                </div>
                 <div class="figure-caption">
                     <strong>Figure 1.13:</strong> Boundary surface of an s orbital showing 90% probability. s orbitals are spherical with no angular nodes.
                 </div>
@@ -419,8 +579,19 @@
             <h3>p Orbitals</h3>
             <p>p orbitals (ℓ = 1) have one angular node—a nodal plane passing through the nucleus. The three p orbitals (p<sub>x</sub>, p<sub>y</sub>, p<sub>z</sub>) are oriented along the Cartesian axes.</p>
 
-            <div class="figure-container">
-                <iframe src="../atomic_orbitals_interactive/fig_1_14.html" title="Figure 1.14: p Orbitals"></iframe>
+            <div class="figure-container" data-figure="1.14">
+                <div class="figure-tabs">
+                    <button class="figure-tab active" data-view="interactive">Interactive</button>
+                    <button class="figure-tab" data-view="original">Original (Textbook)</button>
+                </div>
+                <div class="figure-content active" data-view="interactive">
+                    <iframe src="../atomic_orbitals_interactive/fig_1_14.html" title="Figure 1.14: p Orbitals"></iframe>
+                </div>
+                <div class="figure-content" data-view="original">
+                    <div class="figure-original">
+                        <img src="../assets/textbook_figures/fig_page-12.png" alt="Original Figure 1.14 from textbook">
+                    </div>
+                </div>
                 <div class="figure-caption">
                     <strong>Figure 1.14:</strong> Boundary surfaces of p orbitals. Each has one nodal plane through the nucleus. The different colors represent opposite phases (signs) of the wavefunction.
                 </div>
@@ -429,8 +600,19 @@
             <h3>d Orbitals</h3>
             <p>d orbitals (ℓ = 2) have two angular nodes. There are five d orbitals with different orientations: d<sub>xy</sub>, d<sub>yz</sub>, d<sub>xz</sub>, d<sub>x²−y²</sub>, and d<sub>z²</sub>.</p>
 
-            <div class="figure-container">
-                <iframe src="../atomic_orbitals_interactive/fig_1_15.html" title="Figure 1.15: d Orbitals"></iframe>
+            <div class="figure-container" data-figure="1.15">
+                <div class="figure-tabs">
+                    <button class="figure-tab active" data-view="interactive">Interactive</button>
+                    <button class="figure-tab" data-view="original">Original (Textbook)</button>
+                </div>
+                <div class="figure-content active" data-view="interactive">
+                    <iframe src="../atomic_orbitals_interactive/fig_1_15.html" title="Figure 1.15: d Orbitals"></iframe>
+                </div>
+                <div class="figure-content" data-view="original">
+                    <div class="figure-original">
+                        <img src="../assets/textbook_figures/fig_page-13.png" alt="Original Figure 1.15-1.16 from textbook">
+                    </div>
+                </div>
                 <div class="figure-caption">
                     <strong>Figure 1.15:</strong> Boundary surfaces of d orbitals. Each has two nodal planes (or conic surfaces for d<sub>z²</sub>). These orbitals become important in transition metal chemistry.
                 </div>
@@ -439,8 +621,19 @@
             <h3>f Orbitals</h3>
             <p>f orbitals (ℓ = 3) have three angular nodes and complex shapes. There are seven f orbitals, which become important in lanthanide and actinide chemistry.</p>
 
-            <div class="figure-container">
-                <iframe src="../atomic_orbitals_interactive/fig_1_16.html" title="Figure 1.16: f Orbitals"></iframe>
+            <div class="figure-container" data-figure="1.16">
+                <div class="figure-tabs">
+                    <button class="figure-tab active" data-view="interactive">Interactive</button>
+                    <button class="figure-tab" data-view="original">Original (Textbook)</button>
+                </div>
+                <div class="figure-content active" data-view="interactive">
+                    <iframe src="../atomic_orbitals_interactive/fig_1_16.html" title="Figure 1.16: f Orbitals"></iframe>
+                </div>
+                <div class="figure-content" data-view="original">
+                    <div class="figure-original">
+                        <img src="../assets/textbook_figures/fig_page-13.png" alt="Original Figure 1.16 from textbook">
+                    </div>
+                </div>
                 <div class="figure-caption">
                     <strong>Figure 1.16:</strong> Boundary surfaces of f orbitals. These have three nodal surfaces and play a key role in the chemistry of the f-block elements.
                 </div>
@@ -464,8 +657,19 @@
 
             <p>This explains why, in many-electron atoms, orbitals with the same n but different ℓ are no longer degenerate. The penetration effect leads to the ordering: ns < np < nd < nf in energy for a given n.</p>
 
-            <div class="figure-container">
-                <iframe src="../atomic_orbitals_interactive/fig_1_10.html" title="Figure 1.10: s Orbital Nodes"></iframe>
+            <div class="figure-container" data-figure="1.10">
+                <div class="figure-tabs">
+                    <button class="figure-tab active" data-view="interactive">Interactive</button>
+                    <button class="figure-tab" data-view="original">Original (Textbook)</button>
+                </div>
+                <div class="figure-content active" data-view="interactive">
+                    <iframe src="../atomic_orbitals_interactive/fig_1_10.html" title="Figure 1.10: s Orbital Nodes"></iframe>
+                </div>
+                <div class="figure-content" data-view="original">
+                    <div class="figure-original">
+                        <img src="../assets/textbook_figures/fig_page-11.png" alt="Original Figure 1.10 from textbook">
+                    </div>
+                </div>
                 <div class="figure-caption">
                     <strong>Figure 1.10:</strong> The 1s, 2s, and 3s orbitals showing radial nodes. The 2s and 3s orbitals have inner maxima that allow them to penetrate closer to the nucleus than 2p or 3p.
                 </div>
@@ -488,6 +692,7 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
+            // render math
             renderMathInElement(document.body, {
                 delimiters: [
                     {left: "$$", right: "$$", display: true},
@@ -495,6 +700,27 @@
                     {left: "\\(", right: "\\)", display: false},
                     {left: "\\[", right: "\\]", display: true}
                 ]
+            });
+
+            // figure tab switching
+            document.querySelectorAll('.figure-container').forEach(container => {
+                const tabs = container.querySelectorAll('.figure-tab');
+                const contents = container.querySelectorAll('.figure-content');
+
+                tabs.forEach(tab => {
+                    tab.addEventListener('click', () => {
+                        const view = tab.dataset.view;
+
+                        // update tabs
+                        tabs.forEach(t => t.classList.remove('active'));
+                        tab.classList.add('active');
+
+                        // update content
+                        contents.forEach(c => {
+                            c.classList.toggle('active', c.dataset.view === view);
+                        });
+                    });
+                });
             });
         });
     </script>
