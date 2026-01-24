@@ -1,0 +1,254 @@
+{
+  "chapter": 2,
+  "title": "Molecular structure and bonding",
+  "exercises": [
+    {
+      "number": "2.1",
+      "text": "Draw feasible Lewis structures for (a) NO+, (b) ClO\u2212, (c) H2O2, (d) CCl4, (e) \u2212 HSO3.",
+      "type": "exercise",
+      "page": 27
+    },
+    {
+      "number": "2.2",
+      "text": "Draw the resonance structures for \u2212 CO3 2 .",
+      "type": "exercise",
+      "page": 27
+    },
+    {
+      "number": "2.3",
+      "text": "What shapes would you expect for the species (a) H2Se, (b) \u2212 BF4 , (c) + NH4? 60",
+      "type": "exercise",
+      "page": 27
+    },
+    {
+      "number": "2.4",
+      "text": "What shapes would you expect for the species (a) SO3, (b) \u2212 SO3 2 , (c) IF5?",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "2.5",
+      "text": "What shapes would you expect for the species (a) + IF6, (b) IF3, (c) XeOF4?",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "2.6",
+      "text": "What shapes would you expect for the species (a) ClF3, (b) lCl4 \u2212, (c) \u2212I3?",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "2.7",
+      "text": "In which of the species lCl6 \u2212 and SF4 is the bond angle closest to that predicted by the VSEPR model?",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "2.8",
+      "text": "Solid phosphorus pentachloride is an ionic solid composed of PCl4 + cations and PCl6 \u2212 anions, but the vapour is molecular. What are the shapes of the ions in the solid?",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "2.9",
+      "text": "Use the covalent radii in Table 2.6 to calculate the bond lengths in (a) CCl4 (177\u2009pm), (b) SiCl4 (201\u2009pm), (c) GeCl4 (210\u2009pm). (The values in parentheses are experimental bond lengths and are included for comparison.)",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "2.10",
+      "text": "Use the concepts from Chapter 1, particularly the effects of penetration and shielding on the radial wavefunction, to account for the variation of single-bond covalent radii with position in the periodic table.",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "2.11",
+      "text": "Given that B(Si=O)\u2009=\u2009640\u2009kJ\u2009mol\u22121, show that bond enthalpy considerations predict that silicon\u2013oxygen compounds are likely to contain networks of tetrahedra with Si\u2013O single bonds and not discrete molecules with Si\u2013O double bonds.",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "2.12",
+      "text": "The common forms of nitrogen and phosphorus are N2(g) and P4(s), respectively. Account for the difference in terms of the single and multiple bond enthalpies.",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "2.13",
+      "text": "Use the data in Table 2.7 to calculate the standard enthalpy of the reaction 2\u2009H2(g)\u2009+\u2009O2(g)\u2009\u2192\u20092\u2009H2O(g). The experimental value is \u2212484\u2009kJ. Account for the difference between the estimated and experimental values.",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "2.14",
+      "text": "Rationalize the bond dissociation energy (D) and bond length data of the gaseous diatomic species given in the following table and highlight the atoms that obey the octet rule. D/(kJ mol\u22121) Bond length/pm C2 607 124.3 BN 389 128.1 O2 498 120.7 NF 343 131.7 BeO 435 133.1",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "2.15",
+      "text": "Predict the standard enthalpies of the reactions + \u2192 \u2212 \u2212 S (g) S (g) S (g) 1 4 2 2 8 4 2 + \u2192 \u2212 \u2212 O (g) O (g) O (g) 2 2 2 4 2 by using mean bond enthalpy data. Assume that the unknown species \u2212 O4 2  is a singly bonded chain analogue of \u2212 S4 2 .",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "2.16",
+      "text": "Determine the oxidation states of the element emboldened in each of the following species: (a) \u2212 SO3 2 , (b) NO+, (c) \u2212 Cr O 2 7 2 , (d) V2O5, (e) PCl5.",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "2.17",
+      "text": "Four elements arbitrarily labelled A, B, C, and D have electronegativities of 3.8, 3.3, 2.8, and 1.3, respectively. Place the compounds AB, AD, BD, and AC in order of increasing covalent character.",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "2.18",
+      "text": "Use the Ketelaar triangle in Fig. 2.28 and the electronegativity values in Table 1.7 to predict what type of bonding is likely to dominate in (a) BCl3, (b) KCl, (c) BeO.",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "2.19",
+      "text": "Predict the hybridization of orbitals required in (a) BCl3, (b) + NH4, (c) SF4, (d) XeF4.",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "2.20",
+      "text": "Use molecular orbital diagrams to determine the number of unpaired electrons in (a) \u2212 O2, (b) + O2, (c) BN, (d) NO2.",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "2.21",
+      "text": "Use Fig. 2.17 to write the electron configurations of (a) Be2 +, (b) B2 \u2212, (c) \u2212 C2, (d) + F2 and sketch the form of the HOMO in each case.",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "2.22",
+      "text": "Sketch the interactions of the d orbitals that would give rise to \u03c3 and \u03c0 molecular orbitals.",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "2.23",
+      "text": "When acetylene (ethyne) is passed through a solution of copper(I) chloride a red precipitate of copper acetylide, CuC2, is formed. This is a common test for the presence of acetylene. Describe the bonding in the \u2212 C2 2  ion in terms of molecular orbital theory and compare the bond order to that of C2.",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "2.24",
+      "text": "Draw and label a molecular orbital energy-level diagram for the gaseous homonuclear diatomic molecule dicarbon, C2. Annotate the diagram with pictorial representations of the molecular orbitals involved. What is the bond order of C2?",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "2.25",
+      "text": "Draw a molecular orbital energy-level diagram for the gaseous heteronuclear diatomic molecule boron nitride, BN. How does it differ from that for C2?",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "2.26",
+      "text": "Assume that the MO diagram of IBr is analogous to that of ICl (Fig. 2.24). (a) What basis set of atomic orbitals would be used to generate the IBr molecular orbitals? (b) Calculate the bond order of IBr.",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "2.27",
+      "text": "Determine the bond orders of (a) S2, (b) Cl2, and (c) NO+ from their molecular orbital configurations and compare the values with the bond orders determined from Lewis structures. (NO has orbitals like those of O2.)",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "2.28",
+      "text": "What are the expected changes in bond order and bond distance that accompany the following ionization processes? (a) \u2192 + + \u2192 \u2192 + + \u2212 \u2212 \u2212 + \u2212 O O e ; (b) N e N ; (c) NO NO e 2 2 2 2",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "2.29",
+      "text": "From a consideration of their respective molecular orbital diagrams, sketch the forms of the frontier orbitals of C2 2\u2212, N2, CO, and O2 and predict any likely consequences for chemical properties.",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "2.30",
+      "text": "Assign the lines in the UV photoelectron spectrum of CO shown in Fig. 2.31 and predict the appearance of the UV photoelectron spectrum of the SO molecule (see Section8.9). FIGURE 2.31 The ultraviolet photoelectron spectrum of CO obtained using 21\u2009eV radiation. 11 13 15 17 19 I / eV 3\u03c3 2\u03c3 1\u03c0 61",
+      "type": "exercise",
+      "page": 28
+    }
+  ],
+  "tutorial_problems": [
+    {
+      "number": "2.31",
+      "text": "When an He atom absorbs a photon to form the excited configuration 1s12s1 (here called He*) a weak bond forms with another He atom to give the diatomic molecule HeHe*. Construct a molecular orbital description of the bonding in this species.",
+      "type": "tutorial",
+      "page": 29
+    },
+    {
+      "number": "2.32",
+      "text": "Construct and label molecular orbital diagrams for N2, NO, and O2 showing the principal linear combinations of atomic orbitals being used. Comment on the following bond lengths: N2 110\u2009pm, NO 115\u2009pm, O2 121\u2009pm.",
+      "type": "tutorial",
+      "page": 29
+    },
+    {
+      "number": "2.33",
+      "text": "Do the hypothetical species (a) square + H4 2 , (b) angular \u2212 O3 2 have a duplet or octet of electrons? Explain your answer and decide whether either of them is likely to exist.",
+      "type": "tutorial",
+      "page": 29
+    },
+    {
+      "number": "2.1",
+      "text": "In valence bond theory, hypervalence is usually explained in terms of d-orbital participation in bonding. In the paper \u2018On the role of orbital hybridisation\u2019 (J. Chem. Educ., 2007, 84, 783) the author argues that this is not the case. Give a concise summary of the method used and the author\u2019s reasoning.",
+      "type": "tutorial",
+      "page": 29
+    },
+    {
+      "number": "2.2",
+      "text": "Develop an argument based on bond enthalpies for the importance of Si\u2212O bonds, in preference to Si\u2212Si or Si\u2212H bonds, in substances common in the Earth\u2019s crust. How and why does the behaviour of silicon differ from that of carbon?",
+      "type": "tutorial",
+      "page": 29
+    },
+    {
+      "number": "2.3",
+      "text": "The van Arkel\u2013Ketelaar triangle has been in use since the 1940s. A quantitative treatment of the triangle was carried out by Gordon Sproul in 1994 (J. Phys. Chem., 1994, 98, 6699). How many scales of electronegativity and how many compounds did Sproul investigate? What criteria were used to select compounds for the study? Which two electronegativity scales were found to give the best separation between areas of the triangle? What were the theoretical bases of these two scales?",
+      "type": "tutorial",
+      "page": 29
+    },
+    {
+      "number": "2.4",
+      "text": "In their short article \u2018In defense of the hybrid atomic orbitals\u2019 (P.C. Hiberty, F. Volatron, and S. Shaik, J. Chem. Educ., 2012, 89, 575), the authors defend the continuing use of the concept of the hybrid atomic orbital. Summarize the criticisms that they are addressing and present an outline of their arguments in favour of hybrid orbitals.",
+      "type": "tutorial",
+      "page": 29
+    },
+    {
+      "number": "2.5",
+      "text": "In their article \u2018Some observations on molecular orbital theory\u2019 (J.F. Harrison and D. Lawson, J. Chem. Educ., 2005, 82, 1205) the authors discuss several limitations of the theory. What are these limitations? Sketch the MO diagram for Li2 given in the paper. Why do you think this version does not appear in textbooks? Use the data given in the paper to construct MO diagrams for B2 and C2. Do these versions differ from those in Fig. 2.17 in this textbook? Discuss any variations.",
+      "type": "tutorial",
+      "page": 29
+    },
+    {
+      "number": "2.6",
+      "text": "(a) Use a molecular orbital program or input and output from software supplied by your instructor to construct a molecular orbital energy-level diagram to correlate the MO (from the output) and AO (from the input) energies and indicate the occupancy of the MOs (in the manner of Fig. 2.17) for one of the following molecules: HF (bond length 92\u2009pm), HCl (127\u2009pm), or CS (153\u2009pm). (b) Use the output to sketch the form of the occupied orbitals, showing the signs of the AO lobes by shading and their amplitudes by means of size of the orbital.",
+      "type": "tutorial",
+      "page": 29
+    },
+    {
+      "number": "2.7",
+      "text": "Use software to perform an MO calculation on H3 by using the H energy given in Problem 2.6 and H\u2013H distances from NH3 (N\u2013H length 102\u2009pm, HNH bond angle 107\u00b0) and then carry out the same type of calculation for NH3. Use energy data for N2s and N2p orbitals from Problem 2.6. From the output, plot the molecular orbital energy levels with proper symmetry labels and correlate them with the N orbitals and H3 orbitals of the appropriate symmetries. Compare the results of this calculation with the qualitative description in Problem 2.6.",
+      "type": "tutorial",
+      "page": 29
+    },
+    {
+      "number": "2.8",
+      "text": "The effects of the nonbonding lone pair in the tin and lead anions in compounds such as Sr(MX3)2.5H2O (M\u2009=\u2009Sn or Pb, X\u2009=\u2009Cl or Br) have been studied by crystallography and by electronic structure calculations (I. Abrahams et al., Polyhedron, 2006, 25, 996). Briefly outline the synthetic method used to prepare the compounds and indicate which compound could not be prepared. Explain how this compound was handled in the electronic structure calculations as no experimental structural data were available. State the shape of the [MX3]\u2212 anions and describe how the effect of the nonbonding lone pair varies between Sn and Pb in the gas phase and the solid phase.",
+      "type": "tutorial",
+      "page": 29
+    }
+  ]
+}

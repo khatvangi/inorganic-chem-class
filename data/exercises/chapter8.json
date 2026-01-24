@@ -1,0 +1,320 @@
+{
+  "chapter": 8,
+  "title": "Physical techniques in inorganic chemistry",
+  "exercises": [
+    {
+      "number": "8.1",
+      "text": "The synthesis of the spinel Mg2TiO4 can be achieved by heating TiO2 with MgO at 1400\u00b0C over a period of several days. How would powder X-ray diffraction be able to demonstrate that the reaction had gone to completion?",
+      "type": "exercise",
+      "page": 40
+    },
+    {
+      "number": "8.2",
+      "text": "A student forgot to label their samples of MgO and CaO; both are white, insoluble powders. How could they identify which sample is which without destroying them?",
+      "type": "exercise",
+      "page": 40
+    },
+    {
+      "number": "8.3",
+      "text": "The minimum size of crystal that can typically be studied using a laboratory single-crystal diffractometer is 50\u2009\u00d7\u200950\u2009\u00d7\u200950\u2009\u00b5m3. The X-ray flux from a synchrotron source is expected to be 106 times the intensity of a laboratory source. Calculate the minimum size of a cubic crystal that could be studied on a diffractometer by using this source. A neutron flux is 103 times weaker. Calculate the minimum size of crystal that could be studied by single-crystal neutron diffraction.",
+      "type": "exercise",
+      "page": 40
+    },
+    {
+      "number": "8.4",
+      "text": "Why are the reported errors on the N\u2013H bond lengths determined in (NH4)2SeO4 by single-crystal X-ray diffraction much larger than those on the Se\u2013O bond lengths?",
+      "type": "exercise",
+      "page": 40
+    },
+    {
+      "number": "8.5",
+      "text": "Strong hydrogen bonds can either be symmetric, as in the [F\u2013H\u2013F]\u2212 anion (with both F\u2013H distances equal at 1.14\u2009\u00c5) or asymmetric as in KH2PO4 (where the O\u2013H bond distance is 1.05\u2009\u00c5 and H\u2013O hydrogen bonding separation is 1.51\u2009\u00c5). How could you determine whether the hydrogen bond in the following compounds was symmetric or asymmetric (a) BO(OH) (b) CrO(OH)?",
+      "type": "exercise",
+      "page": 40
+    },
+    {
+      "number": "8.6",
+      "text": "(a) Calculate the wavelength associated with a neutron moving at 2.60\u2009km\u2009s\u22121. Is this wavelength suitable for diffraction studies (mn\u2009=\u20091.675\u2009\u00d7\u200910\u221227\u2009kg)? (b) For magnetic neutron diffraction studies long neutron wavelengths are often needed; calculate the velocity of a neutron that has an associated wavelength of 5\u2009\u00c5.",
+      "type": "exercise",
+      "page": 40
+    },
+    {
+      "number": "8.7",
+      "text": "Discuss why the length of an O\u2013H bond obtained from X-ray diffraction experiments averages 85\u2009pm whereas that obtained in neutron diffraction experiments averages 96\u2009pm. Would you expect to see similar effects with C\u2013H bond lengths measured by these techniques? 284",
+      "type": "exercise",
+      "page": 40
+    },
+    {
+      "number": "8.8",
+      "text": "Explain why a Raman band assigned to the symmetric N\u2013C stretching mode in N(CH3)3 shows a shift to lower frequency when 14N is substituted by 15N but no such shift is observed for the N\u2013Si symmetric stretch in N(SiH3)3.",
+      "type": "exercise",
+      "page": 41
+    },
+    {
+      "number": "8.9",
+      "text": "The ambidentate thiocyanate ligand (SCN\u2212) can coordinate to a metal centre either through sulfur (SCN) or nitrogen (NCS), Chapter 7. Explain the following observed vibrational frequencies for the C\u2013S bond (\u03bd(CS)): K2[Co(SCN)4].4H2O, 850\u2009cm\u22121; KSCN, 746\u2009cm\u22121; K2[Pd(SCN)4], 730\u2009cm\u22121. RbBi(SCN)4 shows an absorption in its IR spectrum at 722\u2009cm\u22121; what is the likely mode of bonding of the thiocyanate group to bismuth in this compound?",
+      "type": "exercise",
+      "page": 41
+    },
+    {
+      "number": "8.10",
+      "text": "Calculate the expected wavenumber for an N\u2013D stretch given that N\u2013H stretches are normally observed at 3400\u2009cm\u22121.",
+      "type": "exercise",
+      "page": 41
+    },
+    {
+      "number": "8.11",
+      "text": "Suggest reasons for the order of stretching frequencies observed with isoelectronic diatomic species: CN\u2212\u2009>\u2009CO\u2009>\u2009NO+. Predict a position for the carbide anion [C2]2\u2212, which is found in calcium carbide CaC2, in this series.",
+      "type": "exercise",
+      "page": 41
+    },
+    {
+      "number": "8.12",
+      "text": "Use the data in Table 8.3 to estimate the O\u2013O stretching wavenumber expected for a compound believed to contain the oxygenyl species O2 +. Would you expect to observe this stretching vibration in (i) the IR spectrum or (ii) the Raman spectrum?",
+      "type": "exercise",
+      "page": 41
+    },
+    {
+      "number": "8.13",
+      "text": "Predict the form of the 19F-NMR and the 77Se-NMR spectra of 77SeF4. For 77Se, I = 1 2 .",
+      "type": "exercise",
+      "page": 41
+    },
+    {
+      "number": "8.14",
+      "text": "The 31P-NMR spectrum of PF3Cl2 consists of a doublet of triplets. Explain this observation.",
+      "type": "exercise",
+      "page": 41
+    },
+    {
+      "number": "8.15",
+      "text": "Explain the observation that the 19F-NMR spectrum of the \u2212 [XeF ] 5  anion consists of a central peak symmetrically flanked by two peaks, each of which is roughly one-sixth of the intensity of the central peak. Predict the form of the 129Xe-NMR spectrum for this ion. 129Xe, I = \u00bd, 26.5 per cent abundant.",
+      "type": "exercise",
+      "page": 41
+    },
+    {
+      "number": "8.16",
+      "text": "The 129Xe- and 19F-NMR spectra of [XeF3]+ are shown in Fig. 8.56. Interpret these spectra in light of the shape of [XeF3]+ predicted from VSEPR theory.",
+      "type": "exercise",
+      "page": 41
+    },
+    {
+      "number": "8.17",
+      "text": "Explain why the 13C-NMR spectrum of [Fe3(CO)12] shows only a single peak at 212.5\u2009ppm at room temperature while the IR spectrum shows the presence of both terminal and bridging carbonyl groups. How might the 13C-NMR spectrum change on cooling?",
+      "type": "exercise",
+      "page": 41
+    },
+    {
+      "number": "8.18",
+      "text": "The 31P-MAS-NMR spectrum of solid PCl5 shows two resonances, one of which has a chemical shift similar to that found for 31P in the salt CsPCl6. Explain.",
+      "type": "exercise",
+      "page": 41
+    },
+    {
+      "number": "8.19",
+      "text": "The solution 31P-NMR spectrum of P4S3 consists of a doublet and quartet with intensities in the ratio 3:1. Suggest a structure consistent with this pattern.",
+      "type": "exercise",
+      "page": 41
+    },
+    {
+      "number": "8.20",
+      "text": "Sketch the forms of the following solution phase NMR spectra (abundances shown as per cent): (a)\u2002 The 1H-NMR spectrum of KBH4 (b)\u2002 The 1H- and 195Pt-NMR spectra of cis-[Pt(CO)2(H)Cl] \u00031H, I = \u00bd, 100 per cent; 195Pt, I = \u00bd, 34 per cent; \u000310B, I = 3; 20 per cent; 11B, I = 3/2; 80 per cent; no other nuclei contribute to these NMR spectra.",
+      "type": "exercise",
+      "page": 41
+    },
+    {
+      "number": "8.21",
+      "text": "Determine the g values of the EPR spectrum shown in Fig. 8.57, measured for a frozen sample using a microwave frequency of 9.43\u2009GHz. \u03b4 620 600 /ppm 580 560 40 30 20 \u03b4 /ppm 129Xe 19F FIGURE 8.56 300 340 380 420 460 500 B / mT FIGURE 8.57",
+      "type": "exercise",
+      "page": 41
+    },
+    {
+      "number": "8.22",
+      "text": "Which technique is sensitive to the fastest processes, NMR or EPR?",
+      "type": "exercise",
+      "page": 41
+    },
+    {
+      "number": "8.23",
+      "text": "The EPR spectrum of bis[tris(2-pyridyl)methane]copper(II) dinitrate is isotropic at 293\u2009K, but is axial with > \u22a5 g g at 150\u2009K. Explain these observations by references to the EPR timescale and dynamic Jahn\u2013Teller distortions that can occur in copper complexes.",
+      "type": "exercise",
+      "page": 41
+    },
+    {
+      "number": "8.24",
+      "text": "For a paramagnetic compound of a d-metal having one unpaired electron, outline the main difference you would expect between an EPR spectrum measured in aqueous solution at room temperature and one recorded for a frozen solution.",
+      "type": "exercise",
+      "page": 41
+    },
+    {
+      "number": "8.25",
+      "text": "Predict a value for the isomer shift for iron in the M\u00f6ssbauer spectrum of Na3Fe(V)O4.",
+      "type": "exercise",
+      "page": 41
+    },
+    {
+      "number": "8.26",
+      "text": "Some formally Fe(IV) compounds, such as CaFeO3, are believed to contain the iron as a mixture of Fe(III) and Fe(V). Predict the key features of the 57Fe M\u00f6ssbauer spectra of this compound when described as (a) CaFe(IV)O3 and (b) CaFe(III)0.5Fe(V)0.5O3, assuming iron is in a regular octahedral coordination to oxygen in both descriptions. Could M\u00f6ssbauer spectroscopy be used to distinguish these two descriptions? CaFeO3 orders antiferromagnetically at low temperatures and the M\u00f6ssbauer spectrum at 4\u2009K consists of two overlying, magnetic hyperfine six-line patterns. Which is the best description of the iron oxidation states in CaFeO3 at this temperature? 285",
+      "type": "exercise",
+      "page": 41
+    }
+  ],
+  "tutorial_problems": [
+    {
+      "number": "8.27",
+      "text": "How could the analysis of the XANES spectrum at the Fe K-edge help identify the iron oxidation state(s) present in CaFeO3 as discussed in Exercise 8.26?",
+      "type": "tutorial",
+      "page": 42
+    },
+    {
+      "number": "8.28",
+      "text": "Addition of concentrated HCl to an aqueous solution of CoSO4.7H2O results in major changes to the Co K-edge EXAFS spectrum. Explain this observation.",
+      "type": "tutorial",
+      "page": 42
+    },
+    {
+      "number": "8.29",
+      "text": "Explain why, even though the average atomic mass of silver is 107.9mu, no peak at 108mu is observed in the mass spectrum of pure silver. Describe the expected form of the molecular ion peak in the mass spectra of (a) methyl silver CH3Ag (b) methylsilver tetramer, (CH3Ag)4.",
+      "type": "tutorial",
+      "page": 42
+    },
+    {
+      "number": "8.30",
+      "text": "What peaks should you expect to observe in the mass spectrum of [Mo(C6H6)(CO)3]?",
+      "type": "tutorial",
+      "page": 42
+    },
+    {
+      "number": "8.31",
+      "text": "Thermogravimetric analysis of a zeolite of composition CaAl2Si6O16.nH2O shows a mass loss of 25 per cent on heating to dryness. Determine n.",
+      "type": "tutorial",
+      "page": 42
+    },
+    {
+      "number": "8.32",
+      "text": "LiBH4 has been proposed as a possible hydrogen storage material. Heating LiBH4 on a thermobalance to 1000\u00b0C results in a weight loss of 18.5 per cent. Is all the hydrogen released during this decomposition?",
+      "type": "tutorial",
+      "page": 42
+    },
+    {
+      "number": "8.33",
+      "text": "Interpret the cyclic voltammogram shown in Fig. 8.58, which has been recorded for an Fe(III) complex in aqueous solution. \u201310 0 10 Current, I / mA 0.240 V 0.720 V 0.180 V 0 0.5 1.0 Potential difference, E / V Start FIGURE 8.58",
+      "type": "tutorial",
+      "page": 42
+    },
+    {
+      "number": "8.1",
+      "text": "Discuss the importance of X-ray crystallography in inorganic chemistry. See, for example, W.P. Jensen, G.J. Palenik, and I.-H. Suh, The history of molecular structure determination viewed through the Nobel Prizes, J. Chem. Educ., 2003, 80, 753.",
+      "type": "tutorial",
+      "page": 42
+    },
+    {
+      "number": "8.2",
+      "text": "How is single-crystal neutron diffraction of use in inorganic chemistry?",
+      "type": "tutorial",
+      "page": 42
+    },
+    {
+      "number": "8.3",
+      "text": "How may metal hydride materials, of interest for hydrogen storage applications, be characterized using the various analytical methods discussed in this Chapter?",
+      "type": "tutorial",
+      "page": 42
+    },
+    {
+      "number": "8.4",
+      "text": "Discuss the information available from the following techniques in the analysis of inorganic pigments used in antique oil paintings: (i) powder X-ray diffraction, (ii) infrared and Raman spectroscopies, (iii) UV\u2013visible spectroscopy, (iv) X-ray fluorescence.",
+      "type": "tutorial",
+      "page": 42
+    },
+    {
+      "number": "8.5",
+      "text": "Discuss how hydrogen bonding in inorganic compounds can be characterized using infrared spectroscopy. How does the strength of a hydrogen bond affect (a) OH stretching modes (b) OH bending modes?",
+      "type": "tutorial",
+      "page": 42
+    },
+    {
+      "number": "8.6",
+      "text": "How may a consideration of 31P chemical shifts and 1H coupling constants be used to distinguish the isomers of the octahedral complex [Rh(CCR)2H(PMe3)3]? (See J.P. Rourke, G. Stringer, D.S. Yufit, J.A.K. Howard, and T.B. Marder, Organometallics, 2002, 21, 429.)",
+      "type": "tutorial",
+      "page": 42
+    },
+    {
+      "number": "8.7",
+      "text": "Discuss the importance of NMR spectroscopy in the development of Group 18 chemistry. (See M. Gerken and G.J. Schrobilgen, Coord. Chem. Rev., 2000, 197, 335.)",
+      "type": "tutorial",
+      "page": 42
+    },
+    {
+      "number": "8.8",
+      "text": "Ionization techniques in mass spectrometry frequently induce fragmentation and other undesirable reactions. However, under some circumstances these reactions can be helpful. Using fullerenes as an example, discuss this phenomenon. (See M.M. Boorum, Y.V. Vasil\u2019ev, T. Drewello, and L.T. Scott, Science, 2001, 294, 828.)",
+      "type": "tutorial",
+      "page": 42
+    },
+    {
+      "number": "8.9",
+      "text": "Discuss how EXAFS can be used to follow the isomerization of the spiked triangular cluster [Ru3Pt(\u00b5-H)(\u00b54-\u03b72-CCBut) (CO)9(dppe)] (dppe = 1,2-bis(diphenylphosphino)ethane) to the butterfly cluster [Ru3Pt(\u00b54-\u03b72-C=CHBut)(CO)9(dppe)]. (See A.J. Dent, L.J. Farrugia, A.G. Orpen, and S.E. Stratford, J. Chem. Soc., Chem. Commun., 1992, 1456.)",
+      "type": "tutorial",
+      "page": 42
+    },
+    {
+      "number": "8.34",
+      "text": "Sodium carbonate, boron oxide, and silicon dioxide when heated together and quickly cooled produce a borosilicate glass. Explain why the powder diffraction pattern of this product shows no diffraction maxima. Heating the borosilicate glass in a DTA instrument shows an exothermic event at 500\u00b0C and the powder X-ray diffraction pattern observed from the product shows diffraction maxima. Explain these observations.",
+      "type": "tutorial",
+      "page": 42
+    },
+    {
+      "number": "8.35",
+      "text": "A cobalt(II) salt was dissolved in water and reacted with excess acetylacetone (2,4-pentanedione, CH3COCH2COCH3) and hydrogen peroxide. A green solid was formed that gave the following results for elemental analysis: C, 50.4 per cent; H, 6.2 per cent; Co, 16.5 per cent (all by mass). Determine the ratio of cobalt to acetylacetonate ion in the product.",
+      "type": "tutorial",
+      "page": 42
+    },
+    {
+      "number": "8.36",
+      "text": "How would the cyclic voltammetry shown in Fig. 8.53a differ if (a) the Os(IV) complex decomposed rapidly; (b) Os(III) is oxidized in a single, rapid two-electron step to Os(V)?",
+      "type": "tutorial",
+      "page": 42
+    },
+    {
+      "number": "8.37",
+      "text": "Particle sizes in the range 50\u20131000\u2009nm can be determined using powder X-ray diffraction as the particle size in this range is inversely correlated with diffraction peak width. How else could a particle size in this range be measured? What technique could be used to measure the size of particles in the range 1\u201310\u2009nm?",
+      "type": "tutorial",
+      "page": 42
+    },
+    {
+      "number": "8.38",
+      "text": "How would you determine the composition of a crystal obtained from the reaction of CuS, SnS, and ZnS in a sealed tube, without destroying it? The analysis shows the following atomic weight percentages, Cu 26.74 per cent, Zn 15.83 per cent, Sn 10.90 per cent, and S 46.54 per cent. Determine the composition of the compound. The crystal was left in air for a week and then analysed again; how might the determined composition change? 286",
+      "type": "tutorial",
+      "page": 42
+    },
+    {
+      "number": "8.10",
+      "text": "Discuss how you would carry out the following analyses and determinations: (a) calcium levels in breakfast cereal, (b) mercury in shellfish, (c) the geometry of BrF5, (d) the number and type of organic ligands in a d-metal complex, (e) the number of coordinated ammonia molecules in Mg(NH3)nCl2.",
+      "type": "tutorial",
+      "page": 43
+    },
+    {
+      "number": "8.11",
+      "text": "The iron content of a dietary supplement tablet was determined using atomic absorption spectrometry. A tablet (0.4878\u2009g) was ground to a fine powder and 0.1123\u2009g was dissolved in dilute sulfuric acid and transferred to a 50\u2009cm3 volumetric flask. A 10\u2009cm3\u2009sample of this solution was taken and made up to 100\u2009cm3 in another volumetric flask. A series of standards was prepared that contained 1.00, 3.00, 5.00, 7.00, and 10.0\u2009ppm iron. The absorptions of the standards and the sample solution were measured at the iron absorption wavelength. Concentration/ppm Absorbance 1.00 0.095 3.00 0.265 5.00 0.450 7.00 0.632 10.0 0.910 Sample 0.545 \u0003Calculate the mass of iron in the tablet.",
+      "type": "tutorial",
+      "page": 43
+    },
+    {
+      "number": "8.12",
+      "text": "A sample of water from a reservoir was analysed for copper content. The sample was filtered and diluted 10-fold with deionized water. A set of standards was prepared with copper concentrations between 100 and 500\u2009ppm. The standards and the sample were aspirated into an atomic absorption spectrometer and the absorbance was measured at the copper absorption wavelength. The results obtained are given below. Calculate the concentration of copper in the reservoir. Concentration/ppm Absorbance 100 0.152 200 0.388 300 0.590 400 0.718 500 0.865 Sample 0.751",
+      "type": "tutorial",
+      "page": 43
+    },
+    {
+      "number": "8.13",
+      "text": "A sample from an effluent stream was analysed for phosphate levels. Dilute hydrochloric acid and excess sodium molybdate were added to a 50\u2009cm3 sample of the effluent. The molybdophosphoric acid, H3PMo12O40, that was formed was extracted into two 10\u2009cm3 portions of an organic solvent. A molybdenum standard with a concentration of 10\u2009ppm was prepared in the same solvent. The combined extract and the standard were aspirated into an atomic absorption spectrometer that was set up to measure molybdenum. The extracts gave an absorbance of 0.573 and the standard gave an absorbance of 0.222. Calculate the concentration of phosphate in the effluent.",
+      "type": "tutorial",
+      "page": 43
+    },
+    {
+      "number": "8.14",
+      "text": "The particles sizes determined using powder X-ray diffraction data peak widths (using the Scherrer formula which is widely described in the literature) and those obtained from imaging using electron microscopy often differ, with electron microscopy normally yielding a larger value. Find out why this is the case. The elements and their compounds This part of the book describes the physical and chemical properties of the elements as they are set out in the periodic table. This \u2018descriptive chemistry\u2019 of the elements reveals a rich tapestry of patterns and trends, many of which can be rationalized and explained by application of the concepts developed in Part 1. The first chapter of this part of the text, Chapter 9, summarizes the trends and patterns in the properties of the elements and their compounds in the context of the periodic table and the principles described in Part 1. The trends described in this chapter are illustrated throughout the following chapters. Chapter 10 deals with the chemistry of the unique element hydrogen. The following eight chapters (Chapters 11\u221218) proceed systematically across the main groups of the periodic table. The elements of these groups demonstrate the diversity, intricacy, and fascinating nature of inorganic chemistry. The chemical properties of the d-block elements are so diverse and extensive that the next four \u00adchapters of this part are devoted to them. Chapter 19 reviews the descriptive chemistry of the three series of d-block elements. Chapter 20 describes how electronic structure affects the chemical and physical properties of the d-metal complexes and Chapter 21 describes their reactions in solution. Chapter 22 deals with the industrially vital d-metal organometallic compounds. Our tour of the \u00adperiodic table draws to a close in Chapter 23 with an account of the important and unusual properties of the f-block elements. Throughout these chapters Boxes are included that highlight the exciting, contemporary chemistry and applications of the elements in the Group. These Boxes have been fully updated and expanded. PART 2",
+      "type": "tutorial",
+      "page": 43
+    }
+  ]
+}

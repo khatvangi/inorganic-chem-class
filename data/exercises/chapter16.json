@@ -1,0 +1,181 @@
+{
+  "chapter": 16,
+  "title": "The Group 16 elements",
+  "exercises": [],
+  "tutorial_problems": [
+    {
+      "number": "16.1",
+      "text": "State whether the following oxides are acidic, basic, neutral, or amphoteric: CO2, P2O5, SO3, MgO, K2O, Al2O3, CO.",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "16.2",
+      "text": "The bond lengths in O2, + O2, and \u2212 O2 2  are 121, 112, and 149\u2009pm, respectively. Describe the bonding in these molecules in terms of molecular orbital theory and use this description to rationalize the differences in bond lengths.",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "16.3",
+      "text": "(a) Use standard potentials (Resource section 3) to calculate the standard potential of the disproportionation of H2O2 in acid solution. (b) Is Cr2+ a likely catalyst for the disproportionation of H2O2? (c) Given the Latimer diagram \uf8e7 \u2192 \uf8e7\uf8e7 \uf8e7 \u2192 \uf8e7\uf8e7 + O HO H O 0.13 1.44 2 2 2 2 in acidic solution, calculate \u25cb \u2206 \u2212\u2212 G r for the disproportionation of hydrogen superoxide (HO ) 2  into O2 and H2O2, and compare the result with its value for the disproportionation of H2O2.",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "16.4",
+      "text": "Correct any inaccuracies in the following statements and, after correction, provide examples to illustrate each statement: (a)\u2002 \u0007Elements in the middle of Group 16 are easier to oxidize to the group oxidation number than are the lightest and heaviest members. (b)\u2002 \u0007In its ground state, O2 is a triplet and it undergoes Diels\u2013 Alder electrophilic attack on dienes. (c)\u2002 \u0007The diffusion of ozone from the stratosphere into the troposphere poses a major environmental problem.",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "16.5",
+      "text": "Which hydrogen bond would be stronger: S\u2013H\u2026O or O\u2013H\u2026S?",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "16.6",
+      "text": "Explain why SF6 is a very stable molecule whereas OF6 is unknown. Make use of the bond enthalpy data given in Table 2.7.",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "16.7",
+      "text": "Which of the solvents, ethylenediamine (which is basic and reducing) or SO2 (which is acidic and oxidizing), might not react with (a) Na2S4, (b) K2Te3?",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "16.8",
+      "text": "Rank the following species from the strongest reducing agent to the strongest oxidizing agent: \u2212 \u2212 \u2212 SO , SO , O SO SO 4 2 3 2 3 2 3 2 .",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "16.9",
+      "text": "Predict which oxidation states of Mn will be reduced by sulfite ions in basic conditions.",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "16.10",
+      "text": "(a) Give the formula for Te(VI) in acidic aqueous solution and contrast it with the formula for S(VI). (b) Offer a plausible explanation for this difference.",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "16.11",
+      "text": "Use the standard potential data in Resource section 3 to predict which oxoanions of sulfur will disproportionate in acidic conditions.",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "16.12",
+      "text": "Use the standard potential data in Resource section 3 to predict whether \u2212 SeO3 2  is more stable in acidic or basic solution.",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "16.13",
+      "text": "Predict whether any of the following will be reduced by thiosulfate ions, \u2212 SeO3 2 , in acidic conditions: VO2+, Fe3+, Cu+, Co3+.",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "16.14",
+      "text": "SF4 reacts with BF3 to form [SF3][BF4]. Use VSEPR theory to predict the shapes of the cation and anion.",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "16.15",
+      "text": "Discuss the trends in stabilities of oxidation states for Group 16 elements at pH = 0, as represented by the Frost diagram in Fig. 16.5, and state the likely nature of the species prevailing for each entry. Oxidation number Volt equivalent / nF \u20132 0 +2 +4 +6 6 4 2 0 \u20132 Po Se Te S Po Se S O Te FIGURE 16.5 The Frost diagram for the Group 16 elements at pH = 0.",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "16.16",
+      "text": "Tetramethylammonium fluoride (0.70\u2009g) reacts with SF4 (0.81\u2009g) to form an ionic product. (a) Write a balanced equation for the reaction and (b) sketch the structure of the anion. (c) How many lines would be observed in the 19F-NMR spectrum of the anion?",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "16.17",
+      "text": "Identify the sulfur-containing compounds A, B, C, D, E, and F. S A D Cl2 F O2 K2SO3 B xs NH3 C E H2S I2 Ag/\u0394",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "16.18",
+      "text": "Predict whether the following species will exhibit inorganic aromaticity: (a) \u2212 S N 3 3, (b) + S N 4 3, (c) S5N5.",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "16.19",
+      "text": "Write a comparative account of the properties of sulfuric, selenic, and telluric acids.",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "16.1",
+      "text": "The isolation and characterization of a Se\u2013Se species with a three-electron sigma bond was described in a paper by Zhang and co-workers (Nat. Commun., 2014, 5, 4127). (a) Who first proposed the possibility of a three-electron sigma bond? (b) Sketch the orbital interaction diagram for the formation of the bond. (c) What was the Se\u2013Se bond length? Discuss how this compares to a single Se\u2013Se bond and explain the difference between them. (d) Which organic species was used to stabilize the Se\u2013Se bond? 499",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "16.2",
+      "text": "In their paper \u2018Spiral chain O4 form of dense oxygen\u2019 (Proc. Natl. Acad. Sci. U.S.A., 2012, 109, 3, 751), L. Zhu and co-workers describe their predicted chain structure for oxygen. Under what conditions is this structure predicted to exist? Which other Group 16 elements form this structure? How do the predicted properties of this form of oxygen differ from those of other forms of the element?",
+      "type": "tutorial",
+      "page": 26
+    },
+    {
+      "number": "16.3",
+      "text": "The article \u2018Oxygen, sulfur, selenium, tellurium and polonium\u2019 by L. Myongwon Lee and I. Vargas-Baca (Annu. Rep. Prog. Chem., Sect. A: Inorg. Chem., 2012, 108, 113) summarizes highlights from the 2011 literature on the chemistry of the Group 16 elements. Use the references in this paper to (a) outline the synthetic methods use to prepare [Te5Mo15O57]8\u2212, (b) sketch the structure of aryl tellurium monohalides, (c) sketch the structures of AsSCl and AsS2, and (d) describe the products of the reaction of ClP4S3 with sulfur.",
+      "type": "tutorial",
+      "page": 26
+    },
+    {
+      "number": "16.4",
+      "text": "In their paper \u2018Formation of tellurium nanotubes through concentration depletion at the surfaces of seeds\u2019 (Adv. Mater., 2002, 14, 279), B. Mayers and Y. Xia describe the synthesis of tellurium nanotubes. Describe how their method differs from those used to produce carbon nanotubes. What were the dimensions of tellurium nanotubes produced? What applications do the authors envisage for tellurium nanotubes?",
+      "type": "tutorial",
+      "page": 26
+    },
+    {
+      "number": "16.5",
+      "text": "In November 2006 the former KGB agent Alexander Litvinenko was found to have been poisoned by radioactive polonium-210. Write a review of the chemical and radiological properties of Po and discuss its toxicity.",
+      "type": "tutorial",
+      "page": 26
+    },
+    {
+      "number": "16.6",
+      "text": "A mechanistic study of reaction between chloramine and sulfite has been reported (B.S. Yiin, D.M. Walker, and D.W. Margerum, Inorg. Chem., 1987, 26, 3435). Summarize the observed rate law and the proposed mechanism. Accepting the proposed mechanism, why should SO2(OH)\u2212 and \u2212 HSO3 display different rates of reaction? Explain why it was not possible to distinguish the reactivity of SO2(OH)\u2212 from that of \u2212 HSO3.",
+      "type": "tutorial",
+      "page": 26
+    },
+    {
+      "number": "16.7",
+      "text": "Tetramethyltellurium, Te(CH3)4, was prepared in 1989 (R.W. Gedrige, D.C. Harris, K.R. Higa, and R.A. Nissan, Organometallics, 1989, 8, 2817), and its synthesis was soon followed by the preparation of the hexamethyl compound (L. Ahmed and J.A. Morrison, J. Am. Chem. Soc., 1990, 112, 7411). Explain why these compounds are so unusual, give equations for their syntheses, and speculate on why these synthetic procedures are successful. In relation to the last point, speculate on why reaction of TeF4 with methyllithium does not yield tetramethyltellurium.",
+      "type": "tutorial",
+      "page": 26
+    },
+    {
+      "number": "16.8",
+      "text": "The bonding in the square-planar ion E4 2+ is described in Section 16.15. Explore this proposition in more detail by carrying out computations, using software of your choice, on + S4 2  with S\u2013S bond distances of 200\u2009pm (sulfur is recommended because its semi- empirical parameters are more reliable than those of Se). From the output (a) draw the molecular orbital energy-level diagram, (b) assign the symmetry of each level, and (c) sketch the highest energy molecular orbital. Is a closed-shell molecule predicted?",
+      "type": "tutorial",
+      "page": 26
+    },
+    {
+      "number": "16.9",
+      "text": "The nature of the sulfur cycle in ancient times has been investigated (J. Farquhar, H. Bao, and M. Thiemen, Science, 2000, 289, 756). What three factors influence the modern-day cycle? When did the authors establish that a significant change in the cycle had occurred and how were the differences between the ancient and modern cycles explained?",
+      "type": "tutorial",
+      "page": 26
+    },
+    {
+      "number": "16.10",
+      "text": "H. Keppler has investigated the concentration of sulfur in volcano magma (Science, 1999, 284, 1652). In what forms is sulfur erupted from volcanoes? What concentration of sulfur was found in the magma erupted from Mount Pinatubo in 1991? Discuss whether this concentration was expected and how any deviation from the expected value was explained.",
+      "type": "tutorial",
+      "page": 26
+    }
+  ]
+}

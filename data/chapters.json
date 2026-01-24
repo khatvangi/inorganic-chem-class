@@ -1,0 +1,164 @@
+[
+  {
+    "number": 1,
+    "title": "Atomic structure",
+    "start_page": 26,
+    "end_page": 55
+  },
+  {
+    "number": 2,
+    "title": "Molecular structure and bonding",
+    "start_page": 56,
+    "end_page": 84
+  },
+  {
+    "number": 3,
+    "title": "Molecular symmetry",
+    "start_page": 85,
+    "end_page": 112
+  },
+  {
+    "number": 4,
+    "title": "The structures of simple solids",
+    "start_page": 113,
+    "end_page": 171
+  },
+  {
+    "number": 5,
+    "title": "Acids and bases",
+    "start_page": 172,
+    "end_page": 207
+  },
+  {
+    "number": 6,
+    "title": "Oxidation and reduction",
+    "start_page": 208,
+    "end_page": 238
+  },
+  {
+    "number": 7,
+    "title": "An introduction to coordination compounds",
+    "start_page": 239,
+    "end_page": 266
+  },
+  {
+    "number": 8,
+    "title": "Physical techniques in inorganic chemistry",
+    "start_page": 267,
+    "end_page": 311
+  },
+  {
+    "number": 9,
+    "title": "Periodic trends",
+    "start_page": 312,
+    "end_page": 333
+  },
+  {
+    "number": 10,
+    "title": "Hydrogen",
+    "start_page": 334,
+    "end_page": 358
+  },
+  {
+    "number": 11,
+    "title": "The Group 1 elements",
+    "start_page": 359,
+    "end_page": 380
+  },
+  {
+    "number": 12,
+    "title": "The Group 2 elements",
+    "start_page": 381,
+    "end_page": 402
+  },
+  {
+    "number": 13,
+    "title": "The Group 13 elements",
+    "start_page": 403,
+    "end_page": 434
+  },
+  {
+    "number": 14,
+    "title": "The Group 14 elements",
+    "start_page": 435,
+    "end_page": 467
+  },
+  {
+    "number": 15,
+    "title": "The Group 15 elements",
+    "start_page": 468,
+    "end_page": 496
+  },
+  {
+    "number": 16,
+    "title": "The Group 16 elements",
+    "start_page": 497,
+    "end_page": 522
+  },
+  {
+    "number": 17,
+    "title": "The Group 17 elements",
+    "start_page": 523,
+    "end_page": 548
+  },
+  {
+    "number": 18,
+    "title": "The Group 18 elements",
+    "start_page": 549,
+    "end_page": 560
+  },
+  {
+    "number": 19,
+    "title": "The d-block elements",
+    "start_page": 561,
+    "end_page": 590
+  },
+  {
+    "number": 20,
+    "title": "d-Metal complexes:electronic structure and properties",
+    "start_page": 591,
+    "end_page": 626
+  },
+  {
+    "number": 21,
+    "title": "Coordination chemistry: reactions of complexes",
+    "start_page": 627,
+    "end_page": 655
+  },
+  {
+    "number": 22,
+    "title": "d-Metal organometallic chemistry",
+    "start_page": 656,
+    "end_page": 711
+  },
+  {
+    "number": 23,
+    "title": "The f-block elements",
+    "start_page": 712,
+    "end_page": 743
+  },
+  {
+    "number": 24,
+    "title": "Materials chemistry and nanomaterials",
+    "start_page": 744,
+    "end_page": 831
+  },
+  {
+    "number": 25,
+    "title": "Green chemistry",
+    "start_page": 832,
+    "end_page": 846
+  },
+  {
+    "number": 26,
+    "title": "Biological inorganic chemistry",
+    "start_page": 847,
+    "end_page": 907
+  },
+  {
+    "number": 27,
+    "title": "Inorganic chemistry in medicine",
+    "start_page": 908,
+    "end_page": 967
+  }
+]

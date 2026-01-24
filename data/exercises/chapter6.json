@@ -1,0 +1,182 @@
+{
+  "chapter": 6,
+  "title": "Oxidation and reduction",
+  "exercises": [
+    {
+      "number": "6.16",
+      "text": "Calculate the reduction potential at 25\u00b0C for the conversion of MnO4 \u2212 to MnO2(s) in aqueous solution at pH = 9.00 and 1\u2009M MnO4 \u2212(aq) given that E \u29b5(MnO4 \u2212/MnO2) = +1.69 V.",
+      "type": "exercise",
+      "page": 29
+    },
+    {
+      "number": "6.17",
+      "text": "Using the following aqueous acid solution reduction potentials E \u29b5(Pd2+,Pd) = +0.915\u2009V and E \u29b5([PdCl4]2\u2212,Pd) = +0.60\u2009V, calculate the equilibrium constant for the reaction Pd2+(aq) +",
+      "type": "exercise",
+      "page": 29
+    },
+    {
+      "number": "6.18",
+      "text": "Calculate the equilibrium constant of the reaction Au+(aq) + Au (aq) e Au(s) 1.68V [Au(CN) ] (aq) e Au(s) 2CN (aq) 0.6V 2 E E \u25cb \u25cb + \u2212\u2192 = + + \u2192 + = \u2212 + \u2212 \u2212 \u2212 \u2212\u2212 \u2212\u2212",
+      "type": "exercise",
+      "page": 29
+    },
+    {
+      "number": "6.19",
+      "text": "The ligand edta forms stable complexes with hard acid centres. How will complexation with edta affect the reduction of M2+ to the metal in the 3d series?",
+      "type": "exercise",
+      "page": 29
+    },
+    {
+      "number": "6.20",
+      "text": "Draw a Frost diagram for mercury in acid solution, given the following Latimer diagram: \uf8e7 \u2192 \uf8e7\uf8e7 \uf8e7 \u2192 \uf8e7\uf8e7 + + Hg Hg Hg 2 0.911 2 2 0.796 Comment on the tendency of any of the species to act as an oxidizing agent, a reducing agent, or to undergo disproportionation.",
+      "type": "exercise",
+      "page": 29
+    },
+    {
+      "number": "6.21",
+      "text": "Use Fig. 6.12 to find the approximate potential of an aerated lake at pH = 6. With this information and Latimer diagrams from Resource section 3, predict the species at equilibrium for the elements (a) iron, (b) manganese, (c) sulfur.",
+      "type": "exercise",
+      "page": 29
+    },
+    {
+      "number": "6.22",
+      "text": "Explain why water with high concentrations of dissolved carbon dioxide and open to atmospheric oxygen is very corrosive towards iron.",
+      "type": "exercise",
+      "page": 29
+    },
+    {
+      "number": "6.23",
+      "text": "The species Fe2+ and H2S are important at the bottom of a lake where O2 is scarce. If the pH = 6, what is the maximum value of E characterizing the environment?",
+      "type": "exercise",
+      "page": 29
+    },
+    {
+      "number": "6.24",
+      "text": "In Fig. 6.11, which of the boundaries depend on the choice of Fe2+ concentration as 10\u22125\u2009mol\u2009dm\u22123?",
+      "type": "exercise",
+      "page": 29
+    },
+    {
+      "number": "6.25",
+      "text": "Consult the Ellingham diagram in Fig. 6.16 and determine if there are any conditions under which aluminium might be expected to reduce MgO. Comment on these conditions.",
+      "type": "exercise",
+      "page": 29
+    },
+    {
+      "number": "6.26",
+      "text": "The standard potentials for phosphorus species in aqueous solution at pH = 0 and pH = 14 are provided in Resource section 3. (a)\u2002 Account for the difference in reduction potentials between pH 0 and pH 14. (b)\u2002 Construct a single Frost diagram showing both sets of data. (c)\u2002 Phosphine (PH3) can be prepared by heating phosphorus with aqueous alkali. Discuss the reactions that are feasible and estimate their equilibrium constants.",
+      "type": "exercise",
+      "page": 29
+    },
+    {
+      "number": "6.27",
+      "text": "Given the following standard potentials in basic solution CrO (aq) 4H O(l) 3e Cr(OH) (s) 5OH (aq) 0.11V [Cu(NH ) ] (aq) e Cu(s) 2NH (aq) 0.10 V 4 2 2 3 3 2 3 E E \u25cb \u25cb + + \u2192 + = \u2212 + \u2192 + = \u2212 \u2212 \u2212 \u2212 + \u2212 \u2212\u2212 \u2212\u2212 and assuming that a reversible reaction can be established on a suitable catalyst, calculate E \u29b5, \u0394rG \u29b5, and K for the reductions of (a) CrO4 2\u2212 and (b) [Cu(NH3)2]+ in basic solution. Comment on why \u0394rG \u29b5 and K are so different between the two cases despite the values of E \u29b5 being so similar.",
+      "type": "exercise",
+      "page": 29
+    },
+    {
+      "number": "6.28",
+      "text": "Many of the tabulated data for standard potentials have been determined from thermochemical data rather than direct electrochemical measurements of cell potentials. Carry out a calculation to illustrate this approach for the half-reaction Sc2O3(s) + 3\u2009H2O(l) + 6\u2009e\u2212 \u2192 2\u2009Sc(s) + 6\u2009OH\u2212(aq). Sc3+(aq) OH\u2212(aq) H2O(l) Sc2O3(s) Sc(s) \u0394fH \u29b5/(kJ\u2009mol\u22121) \u2212614.2 \u2212230.0 \u2212286.8 \u22121908.7 0 S \u29b5 m/(J\u2009K\u22121\u2009mol\u22121) \u2212255.2 \u221210.75 69.91 77.0 34.76",
+      "type": "exercise",
+      "page": 29
+    },
+    {
+      "number": "6.29",
+      "text": "Standard potentials at 25\u00b0C for indium and thallium in aqueous solution (pH = 0) are given below. In3+(aq) + 3\u2009e\u2212 \u2192 In(s) E \u29b5 = \u22120.338\u2009V In+(aq) + e\u2212 \u2192 In(s) E \u29b5 = \u22120.126\u2009V Tl3+(aq) + 3\u2009e\u2212 \u2192 Tl(s) E \u29b5 = +0.721\u2009V Tl+(aq) + e\u2212 \u2192 Tl(s) E \u29b5 = \u22120.336\u2009V Use the data to construct a Frost diagram for the two elements and discuss the relative stabilities of the species.",
+      "type": "exercise",
+      "page": 29
+    },
+    {
+      "number": "6.30",
+      "text": "Data shown below refer to redox couples for the Group 8 elements Fe and Ru. Fe2+(aq) + 2\u2009e\u2212 \u2192 Fe(s) E \u29b5 = \u22120.44\u2009V Fe3+(aq) + e\u2212 \u2192 Fe2+(aq) E \u29b5 = +0.77\u2009V Ru2+(aq) + 2\u2009e\u2212 \u2192 Ru(s) E \u29b5 = +0.80\u2009V Ru3+(aq) + 2e\u2212 \u2192 Ru2+(aq) E \u29b5 = +0.25\u2009V (a)\u2002 Comment on the relative stability of Fe2+ and Ru2+ in acidic aqueous solution. (b)\u2002 Give a balanced equation for the reaction that would occur if iron filings were to be added to an acidified aqueous solution of an Fe3+ salt. (c)\u2002 Calculate the equilibrium constant for the reaction between Fe2+(aq) and an acidified solution of potassium permanganate under standard conditions (use Resource section 3).",
+      "type": "exercise",
+      "page": 29
+    },
+    {
+      "number": "6.31",
+      "text": "The Latimer diagram for vanadium species in acidic (pH = 0) solution is: \uf8e7 \u2192 \uf8e7\uf8e7 \uf8e7 \u2192 \uf8e7\uf8e7 \uf8e7 \u2192 \uf8e7\uf8e7 \uf8e7 \u2192 \uf8e7\uf8e7 + + + + + \u2212 + \u2212 V(OH) VO V V V 4 1.00 2 2 0.34 3 0.26 2 1.13 Using these data: (a)\u2002 Calculate the potential for the reduction of VO2+(aq) to V(s) and write a balanced chemical equation for this process. (b)\u2002 Construct a Frost diagram for vanadium at pH = 0. (c)\u2002 Calculate the equilibrium constant for the disproportionation of V3+(aq) to V2+(aq) and VO2+(aq) at pH = 0. Hence comment on the stability of V3+(aq) in\u2002 acidic (pH = 0) solution. (d)\u2002 How might the potential for the reduction of VO2+(aq) to V3+(aq) be affected by increasing the pH of the solution ?",
+      "type": "exercise",
+      "page": 29
+    },
+    {
+      "number": "6.32",
+      "text": "The following Latimer diagrams show the standard reduction potentials E \u29b5/V for some oxidation states of iron in acid and alkaline solution: pH = 0 \uf8e7 \u2192 \uf8e7\uf8e7 \uf8e7 \u2192 \uf8e7\uf8e7 + + + \u2212 Fe Fe Fe 3 0.77 2 0.44 pH = 14 \uf8e7 \u2192 \uf8e7\uf8e7 \uf8e7 \u2192 \uf8e7\uf8e7 \uf8e7 \u2192 \uf8e7\uf8e7 \u2212 + \u2212 \u2212 \u2212 \u2212 FeO FeO Fe(O)OH Fe 4 2 0.55 2 0.69 0.80 (a)\u2002 Plot a Frost diagram showing the states of Fe under acid and alkaline conditions. 214 (b)\u2002 Calculate the standard potential for the Fe3+/Fe couple in acid solution. (c)\u2002 Explain why the potentials for the Fe(III)/Fe(II) reduction are very different in acid and alkaline conditions, and comment on the fact that FeO4 2\u2212 is unknown in acid solution. (d)\u2002 FeO4 2\u2212 can be prepared by oxidation of Fe(III) by ClO\u2212 in alkaline solution. Making use of the standard reduction potentials given below, write an equation for the reaction occurring in this preparation. Standard potentials E \u29b5/V at pH = 14: ClO\u2212/Cl2 +0.42\u2009V\u2003 \u2003 Cl2/Cl\u2212 +1.36\u2009V.",
+      "type": "exercise",
+      "page": 29
+    }
+  ],
+  "tutorial_problems": [
+    {
+      "number": "6.33",
+      "text": "Reduction potentials for half-cell reactions of simple carbon species measured in aqueous solution at pH 7.0, 25\u00b0C, are as follows. CO2(g) + 4\u2009H+ + 4\u2009e\u2212 \u2192 HCHO(aq) + H2O E \u29b5 = \u22120.51\u2009V CO2(g) + e\u2212 \u2192 CO2 \u2212(aq) E \u29b5 = \u22121.90\u2009V CO2(g) + 2\u2009H+ + 2\u2009e\u2212 \u2192 CO(g) + H2O E \u29b5 = \u22120.52\u2009V CO2(g) + H+ + 2\u2009e\u2212 \u2192 HCO2 \u2212(aq) E \u29b5 = \u22120.43\u2009V CO2(g) + 6\u2009H+ + 6\u2009e\u2212 \u2192 CH3OH(aq) + H2O E \u29b5 = \u22120.38\u2009V CO2(g) + 8\u2009H+ + 8\u2009e\u2212 \u2192 CH4(g) + 2\u2009H2O E \u29b5 = \u22120.24\u2009V (a)\u2002 Assign carbon oxidation numbers to each of the species involved. (b)\u2002 Construct a Frost diagram, making HCHO the reference point at the origin. (c)\u2002 Identify the redox couple having the most positive reduction potential. (d)\u2002 Is hydration of CO to give formate (HCO2 \u2212) favourable at pH 7.0? (e)\u2002 At pH 7.0, 25\u00b0C, the reduction potential for the hydrogen half-cell is given by: E \u29b5 = \u22120.41\u2009V Calculate the equilibrium constant for the water-gas shift reaction CO2(g) + H2(g) \u21cb CO(g) + H2O(l) in aqueous solution, under these conditions.",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "6.1",
+      "text": "Use standard potential data to suggest why permanganate (MnO4 \u2212) is not a suitable oxidizing agent for the quantitative estimation of Fe2+ in the presence of HCl but becomes so if sufficient Mn2+ and phosphate ion are added to the solution. (Hint: Phosphate forms complexes with Fe3+, thereby stabilizing it.)",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "6.2",
+      "text": "Explain the significance of reduction potentials in inorganic chemistry, highlighting their applications in investigations of stability, solubility, and reactivity in water.",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "6.3",
+      "text": "Using Resource sections 1\u20133, and data for atomization of the elements \u0394fH \u29b5 = 397\u2009kJ\u2009mol\u22121 (Cr) and 664\u2009kJ\u2009mol\u22121 (Mo), construct thermodynamic cycles for the reactions of Cr or Mo with dilute acids and thus consider the importance of metallic bonding in determining the standard reduction potentials for formation of cations from metals.",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "6.4",
+      "text": "Enterobactin (Ent) is a special ligand secreted by some bacteria to sequester Fe from the environment (Fe is an essential nutrient for almost all living species, see Section 26.6). The equilibrium constant for formation of [Fe(III)(Ent)] (1052\u2009mol\u22121\u2009dm3) is at least forty orders of magnitude higher than the equilibrium constant for the corresponding Fe(II) complex. Determine the feasibility of releasing Fe from [Fe(III)(Ent)] by its reduction to Fe(II) under conditions of neutral pH, noting that the strongest reducing agent normally available to bacteria is H2.",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "6.5",
+      "text": "The reduction potential of an ion such as OH\u2212 can be strongly influenced by the solvent. (a) From the review article by D.T. Sawyer and J.L. Roberts (Acc. Chem. Res., 1988, 21, 469), describe the magnitude of the change in the potential of the OH/ OH\u2212 couple on changing the solvent from water to acetonitrile, CH3CN. (b) Suggest a qualitative interpretation of the difference in solvation of the OH\u2212 ion in these two solvents.",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "6.6",
+      "text": "Construct an Ellingham diagram for the thermal splitting of water (H2O(g) \u2192 H2(g) + \u00bd\u2009O2(g)) by using \u0394rH \u29b5 = +260\u2009kJ\u2009mol\u22121; \u0394rS \u29b5 = +60\u2009J\u2009K\u22121\u2009mol\u22121 (you may assume that \u0394rH \u29b5 is independent of temperature). Hence, calculate the temperature at which H2 may be obtained by spontaneous decomposition of water (Chem. Rev., 2007, 107, 4048). Comment on the feasibility of producing H2 by this means.",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "6.7",
+      "text": "By reference to the paper by K. Shah, B. Moghtaderi, and T. Wall (Energy Fuels, 2012, 26, 2038), discuss how the information represented in Ellingham diagrams can be used to identify metal oxides suitable for the production of pure O2 from air.",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "6.8",
+      "text": "Discuss how the equilibrium Cu2+(aq) + Cu(s) \u21cb 2\u2009Cu+(aq) can be shifted by complexation with chloride ions (see J. Malyyszko and M. Kaczor, J. Chem. Educ., 2003, 80, 1048).",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "6.9",
+      "text": "In their article \u2018Variability of the cell potential of a given chemical reaction\u2019 (J. Chem. Educ., 2004, 81, 84), L.H. Berka and I. Fishtik conclude that E \u29b5 for a chemical reaction is not a state function because the half-reactions are arbitrarily chosen and may contain different numbers of transferred electrons. Discuss this objection.",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "6.10",
+      "text": "In their article \u2018A thermochemical study of ceria: exploiting an old material for new modes of energy conversion and CO2 mitigation\u2019 (Philos. Trans. R. Soc. London, 2010, 368, 3269), Chueh and Haile describe a way to convert water into H2 and O2 using CeO2. Explain the chemical and thermodynamic principles of this innovation.",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "6.11",
+      "text": "In their article \u2018Enzymes and bio-inspired electrocatalysts in solar fuel devices\u2019 (Energy Environ. Sci., 2012, 5, 7470), Woolerton et al. use a generic Frost diagram (Fig. 6.21) to illustrate the concept of chemical energy storage and release. So-called \u2018energy-rich substances\u2019 are compounds (fuels and oxidants) in which chemical energy is stored: fuels (such as 215 hydrocarbons, boranes, metal hydrides) lie towards the upper left whereas strong oxidants such as O2 lie towards the upper right. \u2018Energy-poor substances\u2019 are stable, reduced compounds (e.g. H2O) lying towards the lower left and oxidized compounds (e.g. CO2, components of ash) lying towards the lower right. Energy release (whether by combustion or in a fuel cell or battery) occurs when a species from the upper left reacts with a species from the upper right to give products positioned diagonally down their respective arrows. During energy storage (such as photosynthesis or charging a battery) compounds from the lower left and lower right are transformed using sunlight or electricity into products that are positioned diagonally upwards along their respective arrows. Using data from Resource section 3 assess the usefulness of this concept for a methanol/oxygen system and a lead\u2013acid battery. FIGURE 6.21 A generic Frost diagram depicting the relationships between fuels, oxidants, and energy-poor substances such as water, carbon dioxide, and ash. Fuels Oxidants Reduced Oxidized Energy poor Energy rich Free energy Oxidation number, N",
+      "type": "tutorial",
+      "page": 30
+    }
+  ]
+}

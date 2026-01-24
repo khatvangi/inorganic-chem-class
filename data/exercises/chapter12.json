@@ -1,0 +1,187 @@
+{
+  "chapter": 12,
+  "title": "The Group 2 elements",
+  "exercises": [],
+  "tutorial_problems": [
+    {
+      "number": "12.1",
+      "text": "Explain why compounds of beryllium are mainly covalent whereas those of the other Group 2 elements are predominantly ionic.",
+      "type": "tutorial",
+      "page": 21
+    },
+    {
+      "number": "12.2",
+      "text": "Why are the properties of beryllium more similar to aluminium and zinc than to magnesium?",
+      "type": "tutorial",
+      "page": 21
+    },
+    {
+      "number": "12.3",
+      "text": "The melting points (\u00b0C) of the Group 2 chlorides are as follows: BeCl2, 405; MgCl2, 714; CaCl2, 772; SrCl2, 874; and BaCl2, 962. Account for the significantly lower temperature for BeCl2.",
+      "type": "tutorial",
+      "page": 21
+    },
+    {
+      "number": "12.4",
+      "text": "Using electronegativity values of 1.57 for Be and 0.79 for Cs and a Ketelaar triangle (Fig. 2.28), predict what type of compound might form between these elements.",
+      "type": "tutorial",
+      "page": 21
+    },
+    {
+      "number": "12.5",
+      "text": "Identify the metal-containing compounds A, B, C, and D in this scheme: A B C Ba D H2O H2O CO2 HCl carbon",
+      "type": "tutorial",
+      "page": 21
+    },
+    {
+      "number": "12.6",
+      "text": "Why does beryllium fluoride form a glass when cooled from a melt?",
+      "type": "tutorial",
+      "page": 21
+    },
+    {
+      "number": "12.7",
+      "text": "Predict the product of the reaction BeF2(s) + n\u2009NH3(l) \u2192",
+      "type": "tutorial",
+      "page": 21
+    },
+    {
+      "number": "12.8",
+      "text": "Dissolution of MgCl2\u22c56H2O in water gives a solution with a pH of 6 while dissolution of BaCl2\u22c52H2O gives a neutral pH solution. Explain these observations.",
+      "type": "tutorial",
+      "page": 21
+    },
+    {
+      "number": "12.9",
+      "text": "Calculate the weight per cent of hydrogen in each of the Group 2 hydrides. Why is MgH2 being investigated as a hydrogen storage material while BeH2 is not?",
+      "type": "tutorial",
+      "page": 21
+    },
+    {
+      "number": "12.10",
+      "text": "Explain why Group 1 hydroxides are much more corrosive to metals than those of most Group 2 hydroxides.",
+      "type": "tutorial",
+      "page": 21
+    },
+    {
+      "number": "12.11",
+      "text": "What are the advantages of using Ba(OH)2 over NaOH as base in analytical acid-base titrations, especially when the solutions have to be handled in air?",
+      "type": "tutorial",
+      "page": 21
+    },
+    {
+      "number": "12.12",
+      "text": "Which of the salts, MgSeO4 or BaSeO4, would be expected to be more soluble in water?",
+      "type": "tutorial",
+      "page": 21
+    },
+    {
+      "number": "12.13",
+      "text": "2.4 per cent of all global CO2 emissions (35 billion tonnes in 2016) derive from cement production. Assuming all this CO2 is derived from the decomposition of CaCO3 calculate the annual level of CaO production for the cement industry.",
+      "type": "tutorial",
+      "page": 21
+    },
+    {
+      "number": "12.14",
+      "text": "How can Ra be separated from solutions containing the other Group 2 metal cations?",
+      "type": "tutorial",
+      "page": 21
+    },
+    {
+      "number": "12.15",
+      "text": "Which Group 2 salts are used as drying agents and why?",
+      "type": "tutorial",
+      "page": 21
+    },
+    {
+      "number": "12.16",
+      "text": "Predict structures for BeTe and BaTe using an ionic radius for Te2\u2212 of 207\u2009pm.",
+      "type": "tutorial",
+      "page": 21
+    },
+    {
+      "number": "12.17",
+      "text": "Use the data in Table 1.7 and the Ketelaar triangle in Fig. 2.28 to predict the nature of the bonding in BeBr2, MgBr2, and BaBr2.",
+      "type": "tutorial",
+      "page": 21
+    },
+    {
+      "number": "12.18",
+      "text": "The two Grignard compounds C2H5MgBr and 2,4,6-(CH3)3C6H2MgBr both dissolve in THF. What differences would be expected in the structures of the species formed in these solutions?",
+      "type": "tutorial",
+      "page": 21
+    },
+    {
+      "number": "12.19",
+      "text": "Predict the products of the following reactions: (a)\tMgCl2 + LiC2H5 \u2192 (b)\tMg + (C2H5)2Hg \u2192 (c)\tMg + C2H5HgCl \u2192",
+      "type": "tutorial",
+      "page": 21
+    },
+    {
+      "number": "12.1",
+      "text": "Marble and limestone buildings are eroded by contact with acid rain. Define the term \u2018acid rain\u2019 and discuss the origins of the acidity. Describe the processes by which the marble and limestone are attacked.",
+      "type": "tutorial",
+      "page": 21
+    },
+    {
+      "number": "12.2",
+      "text": "Discuss the advantages and disadvantages of calcium looping for CO2 capture in comparison with amine scrubbing.",
+      "type": "tutorial",
+      "page": 21
+    },
+    {
+      "number": "12.3",
+      "text": "In their paper \u2018Noncovalent interaction of chemical bonding between alkaline earth cations and benzene?\u2019 (Chem. Phys. Lett., 379 2001, 349, 113), X.J. Tan and co-workers carried out theoretical calculations of complexes formed between beryllium, magnesium, and calcium ions and benzene. To which orbital interactions were the binding of the alkali metal to benzene attributed? How was the C\u2013C bond length in benzene affected by this interaction? Place the M\u2013C bonds in order of increasing bond enthalpy. How did the strength of the bonds compare to those formed between Group 1 elements and benzene? Sketch the geometry of the metal\u2013benzene complexes.",
+      "type": "tutorial",
+      "page": 21
+    },
+    {
+      "number": "12.4",
+      "text": "Discuss beryllium fluoride glasses, noting how the chemistry of BeF2 is analogous to that of SiO2.",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "12.5",
+      "text": "P.C. Junk and J.W. Steed (J. Chem. Soc., Dalton. Trans., 1999, 407) prepared crown ether complexes from the nitrates of Mg, Ca, Sr, and Ba. Outline the general procedure that was used for the syntheses. Sketch the structures of the two crown ethers used. Comment on the structures of the complexes and how they change with different cations.",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "12.6",
+      "text": "Use your knowledge of chemical trends in Group 2 chemistry and data from Table 12.1 to predict the chemistry of radium. Compare your predictions with experimental observations. See, for example, H.W. Kirby and M.L. Salutsky, The radiochemistry of radium. Nuclear Science Series, National Academy of Sciences, National Research Council. National Bureau of Standards, US Department of Commerce (1964). http://library.lanl.gov/cgi-bin/getfile?rc000041.pdf (accessed January 2018).",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "12.7",
+      "text": "The aluminosilicates form a large group of minerals based on linked AlO4 and SiO4 tetrahedra which includes many clay and zeolite minerals whose compositions may be written Mx+[AlxSi1\u2212xO4]x\u2212. Discuss the occurrence of the BeO4 unit in natural minerals. To what extent has it proved possible to produce beryllophosphates based on linked BeO4 and PO4 tetrahedral units that are structural and compositional analogues of Mx+[AlxSi1\u2212xO4]x\u2212, that is Mx+[BexP1\u2212xO4]x\u2212?",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "12.8",
+      "text": "An experiment was carried out to determine the hardness of domestic water. A few drops of pH = 10 buffer were added to a 100\u2009cm3 sample of the water. This sample was titrated against 0.01\u2009M edta(aq) using Eriochrome Black T indicator and gave a titre of 33.8\u2009cm3. Under these circumstances both Mg2+ and Ca2+ ions react with edta. A second 100\u2009cm3 sample was titrated against the edta solution after 5.0\u2009cm3 of 0.1\u2009M NaOH(aq) and a few drops of murexide indicator had been added. Under these conditions only the Ca2+ ions react with the edta and a titre of 27.5\u2009cm3 was obtained. Determine the hardness of the water sample in terms of the concentration of the Mg2+ and of the Ca2+ ions.",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "12.9",
+      "text": "The synthesis of an Mg(I) compound has been reported (Science, 2007, 318, 1754). Describe how this synthesis was carried out and how this unusual Group 2 oxidation state was stabilized.",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "12.10",
+      "text": "Discuss the bonding in the C\u2013Be\u2013C unit of zero valent beryllium compounds (M. Arrowsmith et al., Nat. Chem., 2016, 8, 890).",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "12.11",
+      "text": "\u2018Nature is adept at controlling mineralisation processes to produce single crystals and polycrystalline and amorphous structures with remarkable morphologies and mechanical properties\u2019 (F. Meldrum, Int. Mater. Rev., 2003, 48, 187; F. Meldrum and H C\u00f6lfen, Chem. Rev., 2008, 108, 4332). Calcium carbonate is one of the most common biominerals. Summarize the chemistry involved in the biomimetic engineering of CaCO3.",
+      "type": "tutorial",
+      "page": 22
+    }
+  ]
+}

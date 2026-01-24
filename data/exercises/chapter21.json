@@ -1,0 +1,181 @@
+{
+  "chapter": 21,
+  "title": "Coordination chemistry: reactions of complexes",
+  "exercises": [],
+  "tutorial_problems": [
+    {
+      "number": "21.4",
+      "text": "Write the rate law for formation of [MnX(OH2)5]+ from the aqua ion and X\u2212. How would you determine if the reaction is d or a?",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "21.5",
+      "text": "Octahedral complexes of metal centres with high oxidation numbers or of d metals of the second and third series are less labile than those of low oxidation number and d metals of the first series of the block. Account for this observation on the basis of a dissociative rate-determining step.",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "21.6",
+      "text": "A Pt(II) complex of tetramethyldiethylenetriamine is attacked by Cl\u2212 105 times less rapidly than the diethylenetriamine analogue. Explain this observation in terms of an associative rate- determining step.",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "21.7",
+      "text": "The rate of loss of chlorobenzene, PhCl, from [W(CO)4L(PhCl)] increases with increase in the cone angle of L. What does this observation suggest about the mechanism?",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "21.8",
+      "text": "The pressure dependence of the replacement of chlorobenzene (PhCl) by piperidine in the complex [W(CO)4(PPh3)(PhCl)] has been studied. The volume of activation is found to be +11.3\u2009cm3\u2009mol\u22121. What does this value suggest about the mechanism?",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "21.9",
+      "text": "Does the fact that [Ni(CN)5]3\u2212 can be isolated help to explain why substitution reactions of [Ni(CN)4]2\u2212 are very rapid?",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "21.10",
+      "text": "Reactions of [Pt(Ph)2(SMe2)2] with the bidentate ligand 1,10-phenanthroline (phen) give [Pt(Ph)2phen]. There is a kinetic pathway with activation parameters H \u2206 = + \u2212 101kJmol \u2021 1 and S mol \u2021 1 1 \u2206 = + \u2212 \u2212. Propose a mechanism.",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "21.11",
+      "text": "Design two-step syntheses of cis- and trans-[PtCl2(NO2) (NH3)]\u2212 starting from [PtCl4]2\u2212.",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "21.12",
+      "text": "How does each of the following modifications affect the rate of a square-planar complex substitution reaction? (a) Changing a trans ligand from H\u2212 to Cl\u2212; (b) changing the leaving group from Cl\u2212 to I\u2212; (c) adding a bulky substituent to a cis ligand; (d) increasing the positive charge on the complex.",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "21.13",
+      "text": "The rate of attack on [Co(OH2)6]3+ by an entering group Y is nearly independent of Y, with the spectacular exception of the rapid reaction with OH\u2212. Explain the anomaly. What is the implication of your explanation for the behaviour of a complex lacking Br\u00f8nsted acidity on the ligands?",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "21.14",
+      "text": "Predict the products of the following reactions: (a)\t [Pt(PR3)4]2+ + 2\u2009Cl\u2212 (b)\t [PtCl4]2\u2212 + 2\u2009PR3 (c)\t cis-[Pt(NH3)2(py)2]2+ + 2\u2009Cl\u2212",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "21.15",
+      "text": "Put in order of increasing rate of substitution by H2O the complexes (a) [Co(NH3)6]3+, (b) [Rh(NH3)6]3+, (c) [Ir(NH3)6]3+, (d) [Mn(OH2)6]2+, (e) [Ni(OH2)6]2+.",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "21.16",
+      "text": "State the effect on the rate of dissociatively activated reactions of Rh(III) complexes of (a) an increase in the overall charge on the complex, (b) changing the leaving group from \u2212 NO3 to Cl\u2212, (c) changing the entering group from Cl\u2212 to I\u2212, (d) changing the cis ligands from NH3 to H2O.",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "21.17",
+      "text": "Write out the inner- and outer-sphere pathways for reduction of azidopentaamminecobalt(III) ion with V2+(aq). What experimental data might be used to distinguish between the two pathways?",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "21.18",
+      "text": "The compound [Fe(SCN)(OH2)5]2+ can be detected in the reaction of [Co(NCS)(NH3)5]2+ with Fe2+(aq) to give Fe3+(aq) and Co2+(aq). What does this observation suggest about the mechanism?",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "21.19",
+      "text": "The rate of reduction of [Co(NH3)5(OH2)]3+ by Cr(II) is seven orders of magnitude slower than reduction of its conjugate base, [Co(NH3)5(OH)]2+, by Cr(II). For the corresponding reductions with [Ru(NH3)6]2+, the two differ by less than a factor of 10. What do these observations suggest about mechanisms?",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "21.20",
+      "text": "Refer to Table 21.13 and calculate the rate constants for electron transfer in the oxidation of \u25cb [V(OH ) ] ( (V /V ) 0.255V) 2 6 2 3 2 = \u2212 \u2212 + + + E by the oxidants (a) \u25cb E = + \u2212 + + + [Ru(NH ) ] ( (Ru /Ru ) 0.07V) 3 6 3 3 2 , (b) \u25cb E = + \u2212 + + + [Co(NH ) ] ( (Co / Co ) 0.10V) 3 6 3 3 2 . Comment on the relative sizes of the rate constants.",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "21.21",
+      "text": "Refer to Table 21.13 and calculate the rate constants for electron transfer in the oxidation of \u25cb [Cr(OH ) ] ( (Cr /Cr ) 0.41V) 2 6 2 3 2 = \u2212 \u2212 + + + E and each of the oxidants \u25cb [Ru(NH ) ] ( (Ru /Ru ) 0.07V) 3 6 3 3 2 = + \u2212 + + + E , \u25cb [Fe(OH ) ] ( (Fe /Fe ) 0.77V) 2 6 3 3 2 = + \u2212 + + + E and [Ru(bpy)3]3+ \u25cb ( (Ru /Ru ) 1.26V) 3 2 = + \u2212 + + E . Comment on the relative sizes of the rate constants.",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "21.22",
+      "text": "The photochemical substitution of [W(CO)5(py)] (py = pyridine) with triphenylphosphine gives [W(CO)5(P(C6H5)3)]. In the presence of excess phosphine, the quantum yield is approximately 0.4. A flash photolysis study reveals a spectrum that can be assigned to the intermediate [W(CO)5]. What product and quantum yield do you predict for substitution of [W(CO)5(py)] in the presence of excess triethylamine? Is this reaction expected to be initiated from the ligand field or MLCT excited state of the complex?",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "21.23",
+      "text": "From the spectrum of [CrCl(NH3)5]2+ shown in Fig. 20.33, propose a wavelength for photoinitiation of reduction of Cr(III) to Cr(II) accompanied by oxidation of a ligand.",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "21.1",
+      "text": "Given the following mechanism for the formation of a chelate complex, \u21cb \u21cb \u21cb + \u2212 \u2212 \u2212 \u2212 + \u2032 \u2212 \u2212 + \u2032 + + + + + + [Ni(OH ) ] L L [Ni(OH ) ] ,L L ,rapid [Ni(OH ) ] ,L L [Ni(OH ) L L ] H O , [Ni(OH ) L L ] [Ni(OH ) L L ] H O , 2 6 2 2 6 2 E 2 6 2 2 5 2 2 a a 2 5 2 2 4 2 2 b b K k k k k \u0003derive the rate law for the formation of the chelate. Discuss the step that is different from that for two monodentate ligands. The formation of chelates with strongly bound ligands occurs at the rate of formation of the analogous monodentate complex, but the formation of chelates of weakly bound ligands is often significantly slower. Assuming an Id mechanism, explain this observation. (See R.G. Wilkins, Acc. Chem. Res., 1970, 3, 408.)",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "21.2",
+      "text": "Discuss the following set of rate constants (k) and activation parameters for water exchange reactions of metal aqua ions. 632 Species k/s\u22121 \u0394\u2021H/kJ\u2009mol\u22121 \u0394\u2021V/cm3\u2009mol\u22121 [Ti(OH2)6]3+ 1.8 \u00d7 105 43.4 \u221212.1 [V(OH2)6]2+ 87 61.8 \u22124.1 [V(OH2)6]3+ 500 49.4 \u221212.1 [Cr(OH2)6]3+ 2.4 \u00d7 10\u22126 109 \u22129.6 [Cr(OH2)5(OH)]2+ 1.8 \u00d7 10\u22124 111 +2.7 [Mn(OH2)6]2+ 2.1 \u00d7 107 32.9 \u22125.4 [Fe(OH2)6]3+ 1.6 \u00d7 102 63.9 \u22125.4 [Co(OH2)6]2+ 3.2 \u00d7 106 46.9 +6.1 [Ni(OH2)6]2+ 3.2 \u00d7 104 56.9 +7.2 [Cu(OH2)6]2+ 4.4 \u00d7 109 11.5 +2.0",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "21.3",
+      "text": "The complex [PtH(PEt3)3]+ was studied in deuterated acetone in the presence of excess PEt3. In the absence of excess ligand the 1H-NMR spectrum in the hydride region exhibits a doublet of triplets. As excess PEt3 ligand is added the hydride signal begins to change, the line shape depending on the ligand concentration. Suggest a mechanism to account for the effects of excess PEt3.",
+      "type": "tutorial",
+      "page": 29
+    },
+    {
+      "number": "21.4",
+      "text": "Solutions of [PtH2(PMe3)2] exist as a mixture of cis and trans isomers. Addition of excess PMe3 led to formation of [PtH2(PMe3)3] at a concentration that could be detected using NMR. This complex exchanged phosphine ligands rapidly with the trans isomer but not the cis. Propose a pathway. What are the implications for the trans effect of H versus PMe3? (See D.L. Packett and W.G. Trogler, Inorg. Chem., 1988, 27, 1768.)",
+      "type": "tutorial",
+      "page": 29
+    },
+    {
+      "number": "21.5",
+      "text": "Figure 21.24 (which is based on J.B. Goddard and F. Basolo, Inorg. Chem., 1968, 7, 936) shows the observed first-order rate constants for the reaction of [PdBrL]+ with various Y\u2212 to give [PdYL]+, where L is Et2NCH2CH2NHCH2CH2NEt2. Note the large slope for \u2212 S O 2 3 2  and zero slopes for = \u2212 \u2212 \u2212 \u2212 Y N , I , NO 3 2, and SCN\u2212. Propose a mechanism.",
+      "type": "tutorial",
+      "page": 29
+    },
+    {
+      "number": "21.6",
+      "text": "The activation enthalpy for the reduction of cis- [CoCl2(en)2]+ by Cr2+ (aq) is \u221224\u2009kJ\u2009mol\u22121. Explain the negative value. (See R.C. Patel, R.E. Ball, J.F. Endicott, and R.G. Hughes, Inorg. Chem., 1970, 9, 23.)",
+      "type": "tutorial",
+      "page": 29
+    },
+    {
+      "number": "21.7",
+      "text": "Consider the complexes (18) and (19) discussed in the Brief illustration in Section 21.11. Think about the potential routes of the electron transfer in the two complexes and suggest why there is such a difference in the rates of electron transfer between the two complexes.",
+      "type": "tutorial",
+      "page": 29
+    },
+    {
+      "number": "21.8",
+      "text": "Calculate the rate constants for outer-sphere reactions from the following data. Compare your results to the measured values in the last column. Reaction k11/dm3 mol\u22121\u2009s\u22121 k22/dm3 mol\u22121\u2009s\u22121 E \u29b5/V kobs/dm3 mol\u22121\u2009s\u22121 + + + Cr Fe 2 3 2 \u00d7 10\u22125 4.0 +1.18 2.3 \u00d7 103 [W(CN) ] Ce(IV) 8 4 + \u2212 >4 \u00d7 104 4.4 +0.54 >108 [Fe(CN) ] [MnO ] 6 4 4 + \u2212 \u2212 7.4 \u00d7 102 3 \u00d7 103 +1.30 1.7 \u00d7 105 [Fe(phen) ] Ce(IV) 3 2 + + >3 \u00d7 107 4.4 +0.66 1.4 \u00d7 105",
+      "type": "tutorial",
+      "page": 29
+    },
+    {
+      "number": "21.9",
+      "text": "In the presence of catalytic amounts of [Pt(\u00b5-P2O5H2)4]4\u2212 (21) and light, 2-propanol produces H2 and acetone (E.L. Harley, A.E. Stiegman, A. Vlcek, Jr, and H.B. Gray, J. Am. Chem. Soc., 1987, 109, 5233; D.C. Smith and H.B. Gray, Coord. Chem. Rev., 1990, 100, 169). (a) Give the equation for the overall reaction. (b) Give a plausible molecular orbital scheme for the metal\u2013metal bonding in this tetragonal-prismatic complex and indicate the nature of the excited state that is thought to be responsible for the photochemistry. (c) Indicate the metal complex intermediates and the evidence for their existence. FIGURE 21.24 The data required for Problem 21.5. 0 10 20 30 40 50 [Reactant] / 10\u20133mol dm\u20133 0 4 8 12 kobs / 10\u20133 s\u20131 SO3 + HSO3 I\u2013 N3 NO2 SCN\u2013 OH\u2013 S2O3 2\u2013 2\u2013 \u2013 \u2013 \u2013",
+      "type": "tutorial",
+      "page": 29
+    }
+  ]
+}

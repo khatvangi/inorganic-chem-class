@@ -1,0 +1,31 @@
+{
+  "chapter": 10,
+  "title": "Hydrogen",
+  "exercises": [],
+  "tutorial_problems": [
+    {
+      "number": "10.1",
+      "text": "In their article \u2018Hydrogen storage in metal\u2013organic frameworks\u2019 (Chem. Soc. Rev., 2009, 38, 1294), Jeffrey Long and co-workers discuss some of the design principles for hydrogen storage materials. List the advantages and disadvantages of storing H2 by using weak rather than strong binding interactions.",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "10.2",
+      "text": "In his paper \u2018The proper place for hydrogen\u2019 (J. Chem. Educ., 2003, 80, 947), M.W. Cronyn argues that hydrogen should be placed at the head of Group 14 immediately above carbon. Summarize his reasoning.",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "10.3",
+      "text": "Spectroscopic evidence has been obtained for the existence of [Ir(C5H5)(H3)(PR3)]+, a complex in which one ligand is formally H3 +. Devise a plausible molecular orbital scheme for the bonding in the complex, assuming that an angular H3 unit occupies one coordination site and interacts with the eg and t2g orbitals of the metal. An alternative formulation of the structure of the complex, however, is as a trihydro species with very large coupling constants (see J. Am. Chem. Soc., 1991, 113, 6074 and the references therein, and especially J. Am. Chem. Soc., 1990, 112, 909 and 920). Review the evidence for this alternative formulation.",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "10.4",
+      "text": "In their article \u2018Reversible, metal-free hydrogen activation\u2019 (Science 2006, 314, 1124), Douglas Stephan and co-workers describe how H2 is heterolytically cleaved at a molecule containing only main group elements. By referring also to Section 5.10, explain the principles of this reaction, the procedures used to investigate the mechanism, and the possible implications for H2 storage.",
+      "type": "tutorial",
+      "page": 25
+    }
+  ]
+}

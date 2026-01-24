@@ -1,0 +1,98 @@
+{
+  "chapter": 26,
+  "title": "Biological inorganic chemistry",
+  "exercises": [
+    {
+      "number": "26.1",
+      "text": "With reference to details that have been discussed in Section",
+      "type": "exercise",
+      "page": 60
+    },
+    {
+      "number": "26.3",
+      "text": "for the K+ channel, predict the properties of Na+, Ca2+, and Cl\u2013 binding sites that would be important for providing selectivity in their respective transmembrane ion transporters.",
+      "type": "exercise",
+      "page": 60
+    },
+    {
+      "number": "26.2",
+      "text": "Calcium-binding proteins can be studied by using lanthanoid ions (Ln3+). Compare and contrast the coordination preferences of the two types of metal ion and suggest techniques in which lanthanoid ions would be useful.",
+      "type": "exercise",
+      "page": 60
+    },
+    {
+      "number": "26.3",
+      "text": "In zinc enzymes, \u2018spectroscopically silent\u2019 Zn(II) can often be replaced by Co(II) with high retention of activity. Explain the principles by which this substitution can be exploited to obtain structural and mechanistic information.",
+      "type": "exercise",
+      "page": 60
+    },
+    {
+      "number": "26.4",
+      "text": "Compare and contrast the acid\u2013base catalytic activities of Zn(II), Fe(III), and Mg(II).",
+      "type": "exercise",
+      "page": 60
+    },
+    {
+      "number": "26.5",
+      "text": "Propose physical methods that would allow you to determine whether a reactive intermediate isolated by rapid freeze quenching contains Fe(V).",
+      "type": "exercise",
+      "page": 60
+    },
+    {
+      "number": "26.6",
+      "text": "Figure 26.68 shows M\u00f6ssbauer spectra of a sample of ferredoxin from chloroplasts at 77\u2009K. With reference to Section 8.8, interpret the data with regard to the oxidation states and spin states of the two Fe atoms and comment on the electron delocalization at this temperature.",
+      "type": "exercise",
+      "page": 60
+    },
+    {
+      "number": "26.7",
+      "text": "The structure of the P-cluster in nitrogenase differs significantly between oxidized and reduced states. Comment on this observation in the light of proposals that it participates in long-range electron transfer.",
+      "type": "exercise",
+      "page": 60
+    },
+    {
+      "number": "26.8",
+      "text": "Microorganisms can synthesize the acetyl group (CH3CO\u2013) by direct combination of methyl groups with CO. Make some predictions about the metals that are involved.",
+      "type": "exercise",
+      "page": 60
+    },
+    {
+      "number": "26.9",
+      "text": "Comment on the implications of discovering, by microwave detection, substantial levels of O2 on a planet in another solar system.",
+      "type": "exercise",
+      "page": 60
+    },
+    {
+      "number": "26.10",
+      "text": "Apart from direct O-atom transfer (Fig. 26.50), another mechanism proposed for Mo enzymes is indirect O-atom transfer, also known as coupled electron-proton transfer. In this mechanism, shown in Fig. 26.69 for sulfite oxidase, the O atom that is transferred originates instead from an uncoordinated H2O molecule. Propose a way to distinguish between direct and indirect O-atom transfer mechanisms.",
+      "type": "exercise",
+      "page": 60
+    },
+    {
+      "number": "26.11",
+      "text": "Reductive dehalogenases are cobalamin-containing enzymes which catalyse the replacement of a halogen atom by a hydrogen atom in organic molecules (X is typically Cl). \u21cb R X 2e H R H Cl + + + \u2212 + \u2212 FIGURE 26.69 The mechanism referred to in Exercise 26.10. - e\u2013 - H+ S Mo S OH O S-cys S Mo S OH2 O S-cys S Mo S O O S-cys S Mo S OH O S-cys VI IV IV V - e\u2013 - H+ O S O O O 2\u2013 HO S O O O 2\u2013 S O O O 2\u2013 H OH H2O FIGURE 26.68 M\u00f6ssbauer spectra of a sample of ferredoxin from chloroplasts at 77\u2009K. Relative transmission \u20133 \u20132 \u20131 0 1 2 3 Oxidized Reduced Isomer shift, \u03b4/(mm s\u20131) 884 \u0003With reference to the principles of halogen bonding (Section 5.7) and the properties of cobalamins explained in Section 26.11, propose an outline mechanism for dehalogenation of organic halides starting from Co(I) and suggest how a conserved tyrosine positioned close to the site of reaction may play a key role.",
+      "type": "exercise",
+      "page": 60
+    }
+  ],
+  "tutorial_problems": [
+    {
+      "number": "26.1",
+      "text": "In an article on the detection of Zn(II) that is released from neuronal tissue (brain, nerves) following trauma, E. Tomat and S.J. Lippard describe the development of special ligands that are highly selective for Zn and allow it to be imaged by a technique called confocal microscopy (Curr. Opin. Chem. Biol., 2010, 14, 225). Using your knowledge of the coordination chemistry of Zn, explain the principles underlying this research.",
+      "type": "tutorial",
+      "page": 61
+    },
+    {
+      "number": "26.2",
+      "text": "In justifying research into small molecule catalysts for producing NH3 from N2, it is sometimes stated that nitrogenase is an \u2018efficient\u2019 enzyme: how true is this statement? Comment critically on the argument that \u2018knowing the 3D structure of nitrogenase has not enlightened us as to its mechanism of action\u2019 and discuss how this view might be valid more generally for enzymes for which a structure is known.",
+      "type": "tutorial",
+      "page": 61
+    },
+    {
+      "number": "26.3",
+      "text": "\u2018In Mo enzymes, the bond between a terminal oxo anion and Mo(VI) is usually written as a double bond, whereas it is more correctly assigned as a triple bond.\u2019 Discuss this statement. Suggest how a terminal oxido ligand influences the reactivity of other coordination sites on the Mo atom and explain how a terminal sulfido ligand (as occurs in xanthine oxidase) would alter the properties of the active site.",
+      "type": "tutorial",
+      "page": 61
+    }
+  ]
+}

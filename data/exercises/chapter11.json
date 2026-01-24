@@ -1,0 +1,121 @@
+{
+  "chapter": 11,
+  "title": "The Group 1 elements",
+  "exercises": [],
+  "tutorial_problems": [
+    {
+      "number": "11.8",
+      "text": "Identify the metal-containing compounds A, B, C, and D in the following array of reactions when (i) M is Li, (ii) M is Rb. A H O M O B C NH l D 2 2 3 ( ) \u2190 \uf8e7 \uf8e7\uf8e7\uf8e7 \uf8e7 \u2192 \uf8e7\uf8e7 \u2206 \uf8e7\u2192 \uf8e7 \u2193",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "11.9",
+      "text": "Describe how you would prepare a pure sample of caesium ozonide starting from caesium metal, including its recrystallization from a suitable solvent.",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "11.10",
+      "text": "Account for the fact that LiF and CsI have low solubility in water whereas LiI and CsF are very soluble.",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "11.11",
+      "text": "Which salts of francium would be the least soluble? How could francium be precipitated and isolated from solution that also contains sodium ions?",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "11.12",
+      "text": "Explain why LiH has greater thermal stability than the other Group 1 hydrides, whereas solid LiHCO3 cannot be isolated, unlike the other Group 1 hydrogencarbonates.",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "11.13",
+      "text": "Draw the structures of NaCl and CsCl, and give the coordination number of the metal in each case. Explain why the compounds adopt different structures.",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "11.14",
+      "text": "What would you expect to happen to the structure of RbBr under the application of very high pressures?",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "11.15",
+      "text": "Predict the products of the following reactions: (a)\tCH3Br + Li \u2192 (b)\tMgCl2 + LiC2H5 \u2192 (c)\tC2H5Li + C6H6 \u2192",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "11.16",
+      "text": "Explain how the nature of the alkyl group affects the structure of lithium alkyls.",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "11.1",
+      "text": "It has been argued that a better diagonal relationship exists between Li and Ca than between Li and Mg (T.P. Hanusa, J. Chem. Educ., 1967, 64, 686). Summarize the arguments for and against this viewpoint.",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "11.2",
+      "text": "Francium has been described as \u2018the last discovered natural element\u2019 (J.-P. Adloff and G.B. Kauffman, The Chemical Educator, 2005, 10, 387). Discuss the justification for this statement. Summarize the evidence and claims for the first discovery of francium.",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "11.3",
+      "text": "Under ambient conditions lithium and sodium adopt simple bcc structures. Under high pressures these alkali metals undergo a series of complex phase transitions to fcc and then lower- symmetry structures (M.I. McMahon et al., Proc. Natl. Acad. Sci. USA, 2007, 104, 17297; B. Rousseau et al., Eur. Phys. J. B, 2011, 81, 1). Discuss these phase transitions and the changes in electronic properties that accompany them.",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "11.4",
+      "text": "Discuss the industrial uses of lithium and likely future demand for compounds of the metal. How are these demands likely to be met? A useful resource is the United States Geological Survey at https://minerals.usgs.gov/minerals/pubs/commodity/ lithium/ (accessed January 2018).",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "11.5",
+      "text": "By 2020 \u2018gigafactories\u2019 in Europe and the US should each produce lithium ion batteries with a capacity, per annum, of over commercial lithium ion batteries (J.B. Goodenough and K.-S. Park, J. Am. Chem. Soc., 2013, 135, 1167). Discuss the materials and processes that have led to the reduction of Li-ion battery costs over the last decade.",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "11.6",
+      "text": "Summarize the chemistry of sodium that is being researched for the development of rechargeable sodium ion batteries. See M.D. Slater, D Kim, E. Lee, and C.S. Johnson, Adv. Func. Mater., 2013, 23, 947.",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "11.7",
+      "text": "Identify the incorrect phrase in each of the following statements; explain your answer in each case. (a) Sodium dissolves in ammonia and amines to produce the sodium cation and solvated electrons or the sodide ion. (b) Sodium dissolved in liquid ammonia will not react with NH4 + because of strong hydrogen bonding with the solvent.",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "11.8",
+      "text": "Z. Jedlinski and M. Sokol describe the solubility of alkali metals in nonaqueous supramolecular systems (Pure Appl. Chem., 1995, 67, 587). They dissolved the metals in THF containing crown ethers or cryptands. Sketch the structure of the 18-crown-6 ligand. Give the equations proposed for the dissolution process. Outline the two methods used to prepare the alkali metal solutions. What factors affect the stability of the solutions?",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "11.9",
+      "text": "Alkali metal halides can be extracted from aqueous solution by solid-phase ditopic salt receptors (see J.M. Mahoney, A.M. Beatty, and B.D. Smith, Inorg. Chem., 2004, 43, 7617). (a) What is a ditopic receptor? (b) What is the order of selectivity to extraction of the alkali metal ions in aqueous solution? (c) What is the order of selectivity to extraction from the solid phase? (d) Explain the observed order of selectivity.",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "11.10",
+      "text": "The molecular geometries of crown ether derivatives play an important role in capturing and transporting alkali metal ions. K. Okano and co-workers (see K. Okano, H. Tsukube, and K. Hori, Tetrahedron, 2004, 60, 10877) studied stable conformations of 12-crown-O3N and its Li+ complex in aqueous and acetonitrile solutions. (a) Which three programs did the authors use in their study and what did each program calculate? (b) Which Li+ complex was found to be most stable in (i) aqueous and (ii) acetonitrile solutions?",
+      "type": "tutorial",
+      "page": 22
+    }
+  ]
+}

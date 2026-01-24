@@ -1,0 +1,368 @@
+{
+  "chapter": 5,
+  "title": "Acids and bases",
+  "exercises": [
+    {
+      "number": "5.1",
+      "text": "Sketch an outline of the s and p blocks of the periodic table and indicate on it the elements that form (a) strongly acidic oxides and (b) strongly basic oxides, and (c) show the regions for which amphoterism is common.",
+      "type": "exercise",
+      "page": 33
+    },
+    {
+      "number": "5.2",
+      "text": "Identify the conjugate bases corresponding to the following acids: [Co(NH3)5(OH2)]3+, HSO4 \u2212, CH3OH, H2PO4 \u2212, Si(OH)4, HS\u2212.",
+      "type": "exercise",
+      "page": 33
+    },
+    {
+      "number": "5.3",
+      "text": "Identify the conjugate acids of the bases C5H5N (pyridine), HPO4 2\u2212, O2\u2212, CH3COOH, [Co(CO)4]\u2212, CN\u2212. 182",
+      "type": "exercise",
+      "page": 33
+    },
+    {
+      "number": "5.4",
+      "text": "Calculate the equilibrium concentration of H3O+ in a 0.10\u2009M solution of butanoic acid (Ka = 1.86 \u00d7 10\u22125). What is the pH of this solution?",
+      "type": "exercise",
+      "page": 34
+    },
+    {
+      "number": "5.5",
+      "text": "The Ka of ethanoic acid, CH3COOH, in water is 1.8 \u00d7 10\u22125. Calculate Kb of the conjugate base, CH3CO2 \u2212.",
+      "type": "exercise",
+      "page": 34
+    },
+    {
+      "number": "5.6",
+      "text": "The value of Kb for pyridine, C5H5N, is 1.8 \u00d7 10\u22129. Calculate Ka for the conjugate acid, C5H5NH+.",
+      "type": "exercise",
+      "page": 34
+    },
+    {
+      "number": "5.7",
+      "text": "The effective proton affinity Ap\u2032 of F\u2212 in water is 1150\u2009kJ\u2009mol\u22121. Predict whether it will behave as an acid or a base in water.",
+      "type": "exercise",
+      "page": 34
+    },
+    {
+      "number": "5.8",
+      "text": "Draw the structures of chloric acid and chlorous acid and predict their pKa values using Pauling\u2019s rules.",
+      "type": "exercise",
+      "page": 34
+    },
+    {
+      "number": "5.9",
+      "text": "Aided by Fig. 5.5 (taking solvent levelling into account), identify which bases from the following lists are (a) too strong to be studied experimentally; (b) too weak to be studied experimentally; or (c) of directly measurable base strength. (i) CO3 2\u2212, O2\u2212, ClO4 \u2212, and NO3 \u2212 in water; (ii) HSO4 \u2212, NO3 \u2212, ClO4 \u2212 in H2SO4.",
+      "type": "exercise",
+      "page": 34
+    },
+    {
+      "number": "5.10",
+      "text": "The aqueous solution pKa values for HOCN, H2NCN, and CH3CN are approximately 4, 10.5, and 20 (estimated), respectively. Explain the trend in these cyano derivatives of binary acids and compare them with H2O, NH3, and CH4. Is the CN group electron donating or withdrawing?",
+      "type": "exercise",
+      "page": 34
+    },
+    {
+      "number": "5.11",
+      "text": "H3PO4, H3PO3, and H3PO2 all have a pKa value of 2, but the pKa values of HOCl, HClO2, and HClO3 are 7.5, 2.0, and \u22123.0, respectively. Explain this observation.",
+      "type": "exercise",
+      "page": 34
+    },
+    {
+      "number": "5.12",
+      "text": "Arrange the following ions in order of increasing acidity in aqueous solution: Fe3+, Na+, Mn2+, Ca2+, Al3+, Sr2+.",
+      "type": "exercise",
+      "page": 34
+    },
+    {
+      "number": "5.13",
+      "text": "Use Pauling\u2019s rules to place the following acids in order of increasing acid strength: HNO2, H2SO4, HBrO3, and HClO4 in a nonlevelling solvent.",
+      "type": "exercise",
+      "page": 34
+    },
+    {
+      "number": "5.14",
+      "text": "Which member of the following pairs is the stronger acid? Give reasons for your choice. (a) [Fe(OH2)6]3+ or [Fe(OH2)6]2+, (b) [Al(OH2)6]3+ or [Ga(OH2)6]3+, (c) Si(OH)4 or Ge(OH)4, (d) HClO3 or HClO4, (e) H2CrO4 or HMnO4, (f) H3PO4 or H2SO4.",
+      "type": "exercise",
+      "page": 34
+    },
+    {
+      "number": "5.15",
+      "text": "Arrange the oxides Al2O3, B2O3, BaO, CO2, Cl2O7, SO3 in order from the most acidic through amphoteric to the most basic.",
+      "type": "exercise",
+      "page": 34
+    },
+    {
+      "number": "5.16",
+      "text": "Arrange the acids HSO4 \u2212, H3O+, H4SiO4, CH3GeH3, NH3, HSO3F in order of increasing acid strength.",
+      "type": "exercise",
+      "page": 34
+    },
+    {
+      "number": "5.17",
+      "text": "The ions Na+ and Ag+ have similar radii. Which aqua ion is the stronger acid? Why?",
+      "type": "exercise",
+      "page": 34
+    },
+    {
+      "number": "5.18",
+      "text": "When a pair of aqua cations forms an M\u2013O\u2013M bridge with the elimination of water, what is the general rule for the change in charge per M atom on the ion?",
+      "type": "exercise",
+      "page": 34
+    },
+    {
+      "number": "5.19",
+      "text": "Write balanced equations for the main reaction occurring when (a) H3PO4 and Na2HPO4 and (b) CO2 and CaCO3 are mixed in aqueous media.",
+      "type": "exercise",
+      "page": 34
+    },
+    {
+      "number": "5.20",
+      "text": "Hydrogen fluoride acts as an acid in anhydrous sulfuric acid and as a base in liquid ammonia. Give the equations for both reactions.",
+      "type": "exercise",
+      "page": 34
+    },
+    {
+      "number": "5.21",
+      "text": "Explain why hydrogen selenide is a stronger acid than hydrogen sulfide.",
+      "type": "exercise",
+      "page": 34
+    },
+    {
+      "number": "5.22",
+      "text": "Explain why the Lewis acidity of the silicon tetrahalides follows the trend: SiI4 < SiBr4 < SiCl4 < SiF4 whereas the trend for the boron trihalides follows the trend BF3 < BCl3 < BBr3 < BI3.",
+      "type": "exercise",
+      "page": 34
+    },
+    {
+      "number": "5.23",
+      "text": "For each of the following processes, identify the acids and bases involved and characterize the process as complex formation or acid\u2013base displacement. Identify the species that exhibit Br\u00f8nsted acidity as well as Lewis acidity. (a)\u2002 SO3 + H2O \u2192 HSO4 \u2212 + H+ (b)\u2002 CH3[B12] + Hg2+ \u2192 [B12]+ + CH3Hg+; [B12] designates the Co-porphyrin, vitamin B12 (Section 26.11). (c)\u2002 KCl + SnCl2 \u2192 K+ + [SnCl3]\u2212 (d)\u2002 AsF3(g) + SbF5(l) \u2192 [AsF2]+[SbF6]\u2212(s) (e)\u2002 Ethanol dissolves in pyridine to produce a nonconducting solution.",
+      "type": "exercise",
+      "page": 34
+    },
+    {
+      "number": "5.24",
+      "text": "Select the compound on each line with the named characteristic and state the reason for your choice. (a)\u2002 Strongest Lewis acid: BF3 BCl3 BBr3 BeCl2 BCl3 B(n-Bu)3 B(t-Bu)3 (b)\u2002 More basic towards B(CH3)3 Me3N Et3N 2-CH3C5H4N 4-CH3C5H4N",
+      "type": "exercise",
+      "page": 34
+    },
+    {
+      "number": "5.25",
+      "text": "Using hard\u2013soft concepts, which of the following reactions are predicted to have an equilibrium constant greater than 1? Unless otherwise stated, assume gas-phase or hydrocarbon solution and 25\u00b0C. (a)\u2002 R3PBBr3 + R3NBF3 \u21cb R3PRF3 + R3NBBr3 (b)\u2002 SO2 + (C6H5)3PHOC(CH3)3 \u21cb (C6H5)3PSO2 + HOC(CH3)3 (c)\u2002 CH3HgI + HCl \u21cb CH3HgCl + HI (d)\u2002 [AgCl2]\u2212(aq) + 2\u2009CN\u2212(aq) \u21cb [Ag(CN)2]\u2212(aq) + 2\u2009Cl\u2212(aq)",
+      "type": "exercise",
+      "page": 34
+    },
+    {
+      "number": "5.26",
+      "text": "Identify the products from the reaction between the following pairs of reagents. In each case identify the species which are acting as a Lewis acid or a Lewis base in the reactions. (a)\u2002 CsF + BrF3 (b)\u2002 ClF3 + SbF5 (c)\u2002 B(OH)3 + H2O (d)\u2002 B2H6 + PMe3",
+      "type": "exercise",
+      "page": 34
+    },
+    {
+      "number": "5.27",
+      "text": "The enthalpies of reaction of trimethylboron with NH3CH3, NH2, (CH3)2NH, and (CH3)3N are \u221258, \u221274, \u221281, and \u221274\u2009kJ\u2009mol\u22121, respectively. Why is trimethylamine out of line?",
+      "type": "exercise",
+      "page": 34
+    },
+    {
+      "number": "5.28",
+      "text": "With the aid of the table of E and C values (Table 5.5), discuss the relative basicities of (a) acetone and dimethyl sulfoxide, (b) dimethyl sulfide and dimethyl sulfoxide. Comment on a possible ambiguity for dimethyl sulfoxide.",
+      "type": "exercise",
+      "page": 34
+    },
+    {
+      "number": "5.29",
+      "text": "Give the equation for the dissolution of SiO2 glass by HF and interpret the reaction in terms of Lewis and Br\u00f8nsted acid\u2013 base concepts.",
+      "type": "exercise",
+      "page": 34
+    },
+    {
+      "number": "5.30",
+      "text": "Aluminium sulfide, Al2S3, gives off a foul odour characteristic of hydrogen sulfide when it becomes damp. Write a balanced chemical equation for the reaction and discuss it in terms of acid\u2013base concepts. 183",
+      "type": "exercise",
+      "page": 34
+    },
+    {
+      "number": "5.31",
+      "text": "Describe the solvent properties that would (a) favour displacement of Cl\u2013 by I\u2013 from an acid centre, (b) favour basicity of R3As over R3N, (c) favour acidity of Ag+ over Al3+, (d) promote the reaction 2\u2009FeCl3 + ZnCl2 \u2192 Zn2+ + 2\u2009[FeCl4]\u2212. In each case, suggest a specific solvent that might be suitable.",
+      "type": "exercise",
+      "page": 35
+    },
+    {
+      "number": "5.32",
+      "text": "Catalysis of the acylation of aryl compounds by the Lewis acid AlCl3 was described in Section 5.7b. Propose a mechanism for a similar reaction catalysed by an alumina surface.",
+      "type": "exercise",
+      "page": 35
+    },
+    {
+      "number": "5.33",
+      "text": "Use acid\u2013base concepts to comment on the fact that the only important ore of mercury is cinnabar, HgS, whereas zinc occurs in nature as sulfides, silicates, carbonates, and oxides.",
+      "type": "exercise",
+      "page": 35
+    },
+    {
+      "number": "5.34",
+      "text": "Write balanced Br\u00f8nsted acid\u2013base equations for the dissolution of the following compounds in liquid hydrogen fluoride: (a) CH3CH2OH, (b) NH3, (c) C6H5COOH.",
+      "type": "exercise",
+      "page": 35
+    },
+    {
+      "number": "5.35",
+      "text": "Is the dissolution of silicates in HF a Lewis acid\u2013base reaction, a Br\u00f8nsted acid\u2013base reaction, or both?",
+      "type": "exercise",
+      "page": 35
+    },
+    {
+      "number": "5.36",
+      "text": "The f-block elements are found as M(III) lithophiles in silicate minerals. What does this indicate about their hardness?",
+      "type": "exercise",
+      "page": 35
+    },
+    {
+      "number": "5.37",
+      "text": "Use the data in Table 5.5 to calculate the enthalpy change for the reaction of iodine with phenol.",
+      "type": "exercise",
+      "page": 35
+    },
+    {
+      "number": "5.38",
+      "text": "In the gas phase, the base strength of amines increases regularly along the series NH3 < CH3NH2 < (CH3)2NH < (CH3)3N. Consider the role of steric effects and the electron-donating ability of CH3 in determining this order. In aqueous solution, the order is reversed. What solvation effect is likely to be responsible?",
+      "type": "exercise",
+      "page": 35
+    },
+    {
+      "number": "5.39",
+      "text": "The hydroxoacid Si(OH)4 is weaker than H2CO3. Write balanced equations to show how dissolving a solid M2SiO4 can lead to a reduction in the pressure of CO2 over an aqueous solution. Explain why silicates in ocean sediments might limit the increase of CO2 in the atmosphere.",
+      "type": "exercise",
+      "page": 35
+    },
+    {
+      "number": "5.40",
+      "text": "The precipitation of Fe(OH)3 discussed in the chapter is used to clarify waste waters, because the gelatinous hydrous oxide is very efficient at the co-precipitation of some contaminants and the entrapment of others. The solubility constant of Fe(OH)3 is Ks = [Fe3+][OH\u2212]3 \u2248 1.0 \u00d7 10\u221238. As the autoprotolysis constant of water links [H3O+] to [OH\u2013] by Kw = [H3O+][OH\u2013] = 1.0 \u00d7 10\u201314, we can rewrite the solubility constant by substitution as [Fe3+]/[H+]3 = 1.0 \u00d7 104. (a) Balance the chemical equation for the precipitation of Fe(OH)3 when iron(III) nitrate is added to water. (b) If 6.6\u2009kg of Fe(NO3)3.9H2O is added to 100\u2009dm3 of water, what is the final pH of the solution and the molar concentration of Fe3+, neglecting other forms of dissolved Fe(III)? Give formulas for two Fe(III) species that have been neglected in this calculation.",
+      "type": "exercise",
+      "page": 35
+    },
+    {
+      "number": "5.41",
+      "text": "The frequency of the symmetrical M\u2013O stretching vibration of the octahedral aqua ions [M(OH2)6]2+ increases along the series, Ca2+ < Mn2+ < Ni2+. How does this trend relate to acidity?",
+      "type": "exercise",
+      "page": 35
+    },
+    {
+      "number": "5.42",
+      "text": "An electrically conducting solution is produced when AlCl3 is dissolved in the basic polar solvent CH3CN. Give formulas for the most probable conducting species and describe their formation using Lewis acid\u2013base concepts.",
+      "type": "exercise",
+      "page": 35
+    },
+    {
+      "number": "5.43",
+      "text": "The complex anion [FeCl4]\u2212 is yellow whereas the species [Fe2Cl6] trapped in an argon matrix is reddish. Dissolution of 0.1\u2009mol FeCl3(s) in 1\u2009dm3 of either POCl3 or PO(OR)3 produces a reddish solution that turns yellow on dilution. Titration of the red solution in POCl3 with Et4NCl solutions leads to a sharp colour change (from red to yellow) at a 1:1 mole ratio of FeCl3/ Et4NCl. Vibrational spectra suggest that oxochloride solvents form adducts with typical Lewis acids by coordination of oxygen. Compare the following two sets of reactions as possible explanations of the observations. (a)\u2002 Fe2Cl6 + 2\u2009POCl3 \u21cb [FeCl4]\u2212 + 2\u2009[POCl2]+ POCl2 + + Et4NCl \u21cb Et4N+ + POCl3 (b)\u2002 Fe2Cl6 + 4\u2009POCl3 \u21cb [FeCl2(OPCl3)4]+ + [FeCl4]\u2212 Both equilibria are shifted to products by dilution.",
+      "type": "exercise",
+      "page": 35
+    },
+    {
+      "number": "5.44",
+      "text": "In the traditional scheme for the separation of metal ions from solution that is the basis of qualitative analysis, ions of Au, As, Sb, and Sn precipitate as sulfides but redissolve on addition of excess ammonium polysulfide. By contrast, ions of Cu, Pb, Hg, Bi, and Cd precipitate as sulfides but do not redissolve. In the language of this chapter, the first group is amphoteric for reactions involving SH\u2212 in place of OH\u2212. The second group is less acidic. Locate the amphoteric boundary in the periodic table for sulfides implied by this information. Compare this boundary with the amphoteric boundary for hydrous oxides in Fig. 5.5. Does this analysis agree with describing S2\u2212 as a softer base than O2\u2212?",
+      "type": "exercise",
+      "page": 35
+    },
+    {
+      "number": "5.45",
+      "text": "The compounds SO2 and SOCl2 can undergo an exchange of radioactively labelled sulfur. The exchange is catalysed by Cl\u2212 and SbCl5. Suggest mechanisms for these two exchange reactions with the first step being the formation of an appropriate complex.",
+      "type": "exercise",
+      "page": 35
+    },
+    {
+      "number": "5.46",
+      "text": "Pyridine forms a stronger Lewis acid\u2013base complex with SO3 than with SO2. However, pyridine forms a weaker complex with SF6 than with SF4. Explain the difference.",
+      "type": "exercise",
+      "page": 35
+    },
+    {
+      "number": "5.47",
+      "text": "Predict whether the equilibrium constants for the following reactions should be greater than 1 or less than 1: (a)\u2002 CdI2(s) + CaF2(s) \u21cb CdF2(s) + CaI2(s) (b)\u2002 [CuI4]2\u2212(aq) + [CuCl4]3\u2212(aq) \u21cb [CuCl4]2\u2212(aq) + [CuI4]3\u2212(aq) (c)\u2002 NH2 \u2212(aq) + H2O(l) \u21cb NH3(aq) + OH\u2212(aq)",
+      "type": "exercise",
+      "page": 35
+    },
+    {
+      "number": "5.48",
+      "text": "For parts (a), (b), and (c), state which of the two solutions has the lower pH: (a)\u2002 0.1\u2009M Fe(ClO4)2(aq) or 0.1\u2009M Fe(ClO4)3(aq) (b)\u2002 0.1\u2009M Ca(NO3)2(aq) or 0.1\u2009M Mg(NO3)2(aq) (c)\u2002 0.1\u2009M Hg(NO3)2(aq) or 0.1\u2009M Zn(NO3)2(aq)",
+      "type": "exercise",
+      "page": 35
+    },
+    {
+      "number": "5.49",
+      "text": "Why are strongly acidic solvents (e.g. SbF5/HSO3F) used in the preparation of cations such as I2 + and Se8 2+, whereas strongly basic solvents are needed to stabilize anionic species such as S4 2\u2212 and Pb9 4\u2212 ?",
+      "type": "exercise",
+      "page": 35
+    },
+    {
+      "number": "5.50",
+      "text": "A standard procedure for improving the detection of the stoichiometric point in titrations of weak bases with strong acids is to use acetic acid as a solvent. Explain the basis of this approach.",
+      "type": "exercise",
+      "page": 35
+    },
+    {
+      "number": "5.51",
+      "text": "Explain the following observations: (a)\u2002 The heat of adduct formation of BEt3 with NMe3 is \u221272.3\u2009kJ\u2009mol\u22121, whereas that of B(OMe)3 with the same amine is \u221231.5\u2009kJ\u2009mol\u22121. (b)\u2002 The heat of adduct formation of BMe3 with NMe3 is \u221275.2\u2009kJ\u2009mol\u22121, whereas with N(SiH3)3 it is about +4\u2009kJ\u2009mol\u22121.",
+      "type": "exercise",
+      "page": 35
+    },
+    {
+      "number": "5.52",
+      "text": "Write equations to account for the acidity of CO2 and boric acid (B(OH)3), each dissolved in water. 184",
+      "type": "exercise",
+      "page": 35
+    }
+  ],
+  "tutorial_problems": [
+    {
+      "number": "5.1",
+      "text": "A paper by Gillespie and Liang entitled \u2018Superacid solutions in hydrogen fluoride\u2019 (J. Am. Chem. Soc., 1988, 110, 6053) discusses the acidity of various solutions of inorganic compounds in HF. (a) Give the order of acid strength of the pentafluorides determined during the investigation. (b) Give the equations for the reactions of SbF5 and AsF5 with HF. (c) SbF5 forms an F-bridged dimer (Sb2F11 \u2212) in HF: give the equation for the equilibrium between the monomeric and the dimeric species.",
+      "type": "tutorial",
+      "page": 36
+    },
+    {
+      "number": "5.2",
+      "text": "In the reaction of t-butyl bromide with Ba(NCS)2, the product is 91 per cent S-bound tBu\u2013SCN. However, if Ba(NCS)2 is impregnated into solid CaF2, the yield is higher and the product is 99 per cent t-Bu\u2013NCS. Discuss the effect of alkaline earth metal salt support on the hardness of the ambident nucleophile SCN\u2212. (See T. Kimura, M. Fujita, and T. Ando, J. Chem Soc., Chem. Commun., 1990, 1213.)",
+      "type": "tutorial",
+      "page": 36
+    },
+    {
+      "number": "5.3",
+      "text": "In their paper \u2018The strengths of the hydrohalic acids\u2019 (J. Chem. Educ., 2001, 78, 116), R. Schmid and A. Miah discuss the validity of literature values of the pKa values for HF, HCl, HBr, and HI. (a) On what basis have the literature values been estimated? (b) To what is the low acid strength of HF relative to HCl usually attributed? (c) What reason do the authors suggest for the high acid strength of HCl?",
+      "type": "tutorial",
+      "page": 36
+    },
+    {
+      "number": "5.4",
+      "text": "Superacids are well established but superbases also exist and are usually based on hydrides of Group 1 and Group 2 elements. Write an account of the chemistry of superbases.",
+      "type": "tutorial",
+      "page": 36
+    },
+    {
+      "number": "5.5",
+      "text": "In a review article (Angew. Chem. Int. Ed., 2009, 48, 2100), E.J. Corey describes asymmetric catalysis by chiral boranes. Show how these chiral boranes, which are Lewis acids, are also able to direct Br\u00f8nsted acidity.",
+      "type": "tutorial",
+      "page": 36
+    },
+    {
+      "number": "5.6",
+      "text": "An article by Poliakoff and co-workers describes how a new industrial chemical process was initiated, in which conventional solvents were replaced by scCO2 (Green Chem., 2003, 5, 99). Explain the advantages and challenges of introducing such changes to traditional technology.",
+      "type": "tutorial",
+      "page": 36
+    },
+    {
+      "number": "5.7",
+      "text": "The reversible reaction of CO2 gas with aqueous emulsions of long-chain alkyl amidine compounds has important practical applications. Describe the chemistry that is involved in this demonstration of \u2018switchable surfactants\u2019 (Science, 2006, 313, 958).",
+      "type": "tutorial",
+      "page": 36
+    },
+    {
+      "number": "5.8",
+      "text": "An article by Krossing and co-workers (J. Am. Chem. Soc., 2006, 128, 13427) explains the behaviour of ionic liquids in terms of a thermodynamic cycle approach. Describe the principles that are applied and summarize the predictions that are made.",
+      "type": "tutorial",
+      "page": 36
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "chapter": 9,
+  "title": "Periodic trends",
+  "exercises": [],
+  "tutorial_problems": [
+    {
+      "number": "9.1",
+      "text": "Give the expected maximum stable oxidation state for (a) Ba, (b) As, (c) P, (d) Cl, (e) Ti, (f) Cr.",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "9.2",
+      "text": "With the exception of one member of the group, the elements form saline hydrides. They form oxides and peroxides and all the carbides react with water to liberate a hydrocarbon. Identify this group of elements.",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "9.3",
+      "text": "The elements vary from metals through metalloids to nonmetals. They form fluorides in oxidation states +5 and +3 and the hydrides are all toxic gases. Identify this group of elements.",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "9.4",
+      "text": "The elements are all metals. The most stable oxidation state at the top of the group is +3, the most stable at the bottom is +6. Identify the group of elements.",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "9.5",
+      "text": "Draw a Born\u2013Haber cycle for the formation of the hypothetical compound NaCl2. State which thermochemical step is responsible for the fact that NaCl2 does not exist.",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "9.6",
+      "text": "Predict how the inert-pair effect would manifest itself beyond Group 15 and compare your predictions with the chemical properties of the elements involved.",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "9.7",
+      "text": "Summarize the relationship between ionic radii, ionization energy, and metallic character.",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "9.8",
+      "text": "Which one of each of the following pairs has the higher first ionization energy: (a) Be or B, (b) C or Si, (c) Cr or Mn?",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "9.9",
+      "text": "Which one of each of the following pairs is the more electronegative: (a) Na or Cs, (b) Si or O?",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "9.10",
+      "text": "Classify each of the following hydrides as saline, molecular or metallic: (a) LiH, (b) SiH4, (c) B2H6, (d) UH3, (e) PdHx (x < 1).",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "9.11",
+      "text": "Classify each of the following oxides as acidic, basic, or amphoteric: (a) Na2O, (b) P2O5\u2009, (c) ZnO, (d) SiO2, (e) Al2O3, (f) MnO.",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "9.12",
+      "text": "Place the following halides in order of increasing covalent character: CrF2, CrF3, CrF6.",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "9.13",
+      "text": "Give the names of the ores from which (a) Mg, (b) Al, (c) Pb, and (d) Fe are extracted.",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "9.14",
+      "text": "Identify the Z + 8 element for P. Briefly summarize any similarities between the elements.",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "9.15",
+      "text": "Identify the Z + 22 element for tin and summarize any similarities between them.",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "9.16",
+      "text": "Use the following data to calculate average values of B(Se\u2013F) in SeF4 and SeF6. Comment on your answers in view of the corresponding values for B(S\u2013F) in SF4 (+340\u2009kJ\u2009mol\u22121) and SF6 (+329\u2009kJ\u2009mol\u22121): \u25cb \u2206 = + \u2212 \u2212 H (Se) 227 kJmol a , \u25cb \u2206 = + \u2212 \u2212 H (F) 159kJmol a 1, \u25cb \u2206 = \u2212 \u2212 \u2212 H (SeF ,g) 1030kJmol f 6 1, \u25cb \u2206 = \u2212 \u2212 \u2212 H (SeF ,g) 850kJmol f 4 .",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "9.17",
+      "text": "Use the bond enthalpy data in Table 2.7 to calculate the enthalpy of formation for NF3 and NCl3. Explain why NF3 is thermodynamically stable whereas NCl3 is unstable and reactive.",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "9.1",
+      "text": "In January 2016 the International Union of Pure and Applied Chemistry (IUPAC) announced the discovery of four new elements with atomic numbers 113, 115, 117, and 118. These elements are very unstable and form isotopes of more stable elements by radioactive decay. Assuming that samples of these elements could be made that were stable enough to be investigated use your knowledge of periodic trends to predict some of the expected physical and chemical properties of these elements.",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "9.2",
+      "text": "In the paper \u2018Diffusion cartograms for the display of periodic table data\u2019 (J. Chem. Educ., 2011, 88, 1507), M.J. Winter describes a technique commonly used in geography to represent periodic trends. Write a critique of this method by comparing two of the cartograms with two of the figures used in this chapter.",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "9.3",
+      "text": "In the paper \u2018What and how physics contributes to understanding the periodic law\u2019 (Found. Chem., 2001, 3, 145), V. Ostrovsky describes the philosophical and methodological approaches taken by physicists to explain periodicity. Compare and contrast the approaches of physics and chemistry to explaining chemical periodicity.",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "9.4",
+      "text": "P. Christiansen et al. describe \u2018Relativistic effects in chemical systems\u2019 in their 1985 paper (Annu. Rev. Phys. Chem., 2001, 36, 407). How did they define relativistic effects? Briefly summarize the most important consequences of relativistic effects in chemistry.",
+      "type": "tutorial",
+      "page": 22
+    },
+    {
+      "number": "9.5",
+      "text": "Many models of the periodic table have been proposed since the version devised by Mendeleev. Review the more recent versions and discuss the theoretical basis for each one.",
+      "type": "tutorial",
+      "page": 22
+    }
+  ]
+}

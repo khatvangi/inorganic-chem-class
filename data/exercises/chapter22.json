@@ -1,0 +1,308 @@
+{
+  "chapter": 22,
+  "title": "d-Metal organometallic chemistry",
+  "exercises": [
+    {
+      "number": "22.1",
+      "text": "Name the species, draw the structures of, and give valence electron counts to the metal atoms in: (a) [Fe(CO)5], (b) [Mn2(CO)10], (c) [V(CO)6], (d) [Fe(CO)4]2\u2212, (e) [La(\u03b75-Cp*)3], (f) [Fe(\u03b73-allyl)(CO)3Cl], (g) [Fe(CO)4(PEt3)], (h) [Rh(Me) (CO)2(PPh3)], (i) [Pd(Me)(Cl)(PPh3)2], (j) [Co(\u03b75-C5H5)(\u03b74-C4Ph4)], (k) [Fe(\u03b75-C5H5)(CO)2]\u2212, (l) [Cr(\u03b76-C6H6)(\u03b76-C7H8)], (m) [Ta(\u03b75- C5H5)2Cl3], (n) [Ni(\u03b75-C5H5)NO]. Do any of the complexes deviate from the 18-electron rule? If so, how is this reflected in their structure or chemical properties?",
+      "type": "exercise",
+      "page": 53
+    },
+    {
+      "number": "22.2",
+      "text": "(a) Sketch an \u03b72 interaction of 1,3-butadiene with a metal atom and (b) do the same for an \u03b74 interaction.",
+      "type": "exercise",
+      "page": 53
+    },
+    {
+      "number": "22.3",
+      "text": "What hapticities are possible for the interaction of each of the following ligands with a single d-block metal atom such as cobalt? (a) C2H4, (b) cyclopentadienyl, (c) C6H6, (d) cyclooctadiene, (e) cyclooctatetraene.",
+      "type": "exercise",
+      "page": 53
+    },
+    {
+      "number": "22.4",
+      "text": "Draw plausible structures and give the electron count of (a) [Ni(\u03b73-C3H5)2], (b) \u03b74-cyclobutadiene-\u03b75-cyclopentadienylcobalt, (c) [Co(\u03b73-C3H5)(CO)2]. If the electron count deviates from 18, is the deviation explicable in terms of periodic trends?",
+      "type": "exercise",
+      "page": 53
+    },
+    {
+      "number": "22.5",
+      "text": "State the two common methods for the preparation of simple metal carbonyls and illustrate your answer with chemical equations. Is the selection of method based on thermodynamic or kinetic considerations?",
+      "type": "exercise",
+      "page": 53
+    },
+    {
+      "number": "22.6",
+      "text": "Suppose that you are given a series of metal tricarbonyl compounds having the respective symmetries C2v, D3h, and Cs. Without consulting reference material, which of these should display the greatest number of CO stretching bands in the IR spectrum? Check your answer and give the number of expected bands for each by consulting Table 22.7.",
+      "type": "exercise",
+      "page": 53
+    },
+    {
+      "number": "22.7",
+      "text": "Provide plausible reasons for the differences in IR stretching frequencies between each of the following pairs: (a) [Mo(CO)3(PF3)3] 2040, 1991\u2009cm\u22121 versus [Mo(CO)3(PMe3)3] 1945, 1851\u2009cm\u22121, (b) [Mn(Cp)(CO)3] 2023, 1939\u2009cm\u22121 versus [Mn(Cp*)(CO)3] 2017, 1928\u2009cm\u22121.",
+      "type": "exercise",
+      "page": 53
+    },
+    {
+      "number": "22.8",
+      "text": "The compound [Ni3(C5H5)3(CO)2] has a single CO stretching absorption at 1761\u2009cm\u22121. The IR data indicate that all C5H5 ligands are pentahapto and probably in identical environments. (a) On the basis of these data, propose a structure. 22\u2002 d-Metal organometallic chemistry 686 (b) Does the electron count for each metal in your structure agree with the 18-electron rule? If not, is nickel in a region of the periodic table where deviations from the 18-electron rule are common?",
+      "type": "exercise",
+      "page": 53
+    },
+    {
+      "number": "22.9",
+      "text": "Decide which of the two complexes (a) [W(CO)6] or (b) [Ir(CO)Cl(PPh3)2] should undergo the fastest exchange with 13CO. Justify your answer.",
+      "type": "exercise",
+      "page": 54
+    },
+    {
+      "number": "22.10",
+      "text": "Which metal carbonyl in each of (a) [Fe(CO)4]2\u2212 or [Co(CO)4]\u2212, (b) [Mn(CO)5]\u2212 or [Re(CO)5]\u2212 should be the most basic towards a proton? Explain your answer.",
+      "type": "exercise",
+      "page": 54
+    },
+    {
+      "number": "22.11",
+      "text": "Using the 18-electron rule as a guide, indicate the probable number of carbonyl ligands in (a) [W(\u03b76-C6H6)(CO)n], (b) [Rh(\u03b75-C5H5)(CO)n], and (c) [Ru3(CO)n].",
+      "type": "exercise",
+      "page": 54
+    },
+    {
+      "number": "22.12",
+      "text": "Propose two syntheses for [MnMe(CO)5], both starting with [Mn2(CO)10], with one using Na and one using Br2. You may use other reagents of your choice.",
+      "type": "exercise",
+      "page": 54
+    },
+    {
+      "number": "22.13",
+      "text": "Give the probable structure of the product obtained when [Mo(CO)6] is allowed to react first with LiPh and then with the strong carbocation reagent, CH3OSO2CF3.",
+      "type": "exercise",
+      "page": 54
+    },
+    {
+      "number": "22.14",
+      "text": "Na[W(\u03b75-C5H5)(CO)3] reacts with 3-chloroprop-1-ene to give a solid, A, which has the molecular formula [W(C3H5) (C5H5)(CO)3]. Compound A loses carbon monoxide on exposure to light and forms compound B, which has the formula [W(C3H5) (C5H5)(CO)2]. Treating compound A with hydrogen chloride and then potassium hexafluoridophosphate, K PF6 + \u2212, results in the formation of a salt, C, which has the molecular formula [W(C3H6) (C5H5)(CO)3]PF6. Use this information and the 18-electron rule to identify the compounds A, B, and C. Sketch a structure for each, paying particular attention to the hapticity of the hydrocarbons.",
+      "type": "exercise",
+      "page": 54
+    },
+    {
+      "number": "22.15",
+      "text": "Suggest syntheses of (a) [Mo(\u03b77-C7H7)(CO)3]BF4 from [Mo(CO)6] and (b) [Ir(COMe)(CO)(Cl)2(PPh3)2] from [Ir(CO) Cl(PPh3)2].",
+      "type": "exercise",
+      "page": 54
+    },
+    {
+      "number": "22.16",
+      "text": "When [Fe(CO)5] is refluxed with cyclopentadiene, compound A is formed which has the empirical formula C8H6O3Fe and a complicated 1H-NMR spectrum. Compound A readily loses CO to give compound B with two 1H-NMR resonances, one at negative chemical shift (relative intensity 1) and one at around 5 ppm (relative intensity 5). Subsequent heating of B results in the loss of H2 and the formation of compound C. Compound C has a single 1H-NMR resonance and the empirical formula C7H5O2Fe. Compounds A, B, and C all have 18 valence electrons: identify them and explain the observed spectroscopic data.",
+      "type": "exercise",
+      "page": 54
+    },
+    {
+      "number": "22.17",
+      "text": "Treatment of TiCl4 at low temperature with EtMgBr gives an organometallic compound that is unstable above \u221270\u00b0C. However, treatment of TiCl4 at low temperature with MeLi or LiCH2SiMe3 gives organometallic compounds that are stable at room temperature. Rationalize these observations.",
+      "type": "exercise",
+      "page": 54
+    },
+    {
+      "number": "22.18",
+      "text": "Treatment of TiCl4 with 4 equivalents of NaCp gives a single organometallic compound (together with NaCl by- product). At room temperature the 1H-NMR spectrum shows a single sharp singlet; on cooling to \u221240\u00b0C this singlet separates into two singlets of equal intensity; further cooling results in one of the singlets separating into three signals with intensity ratios 1:2:2. Explain these results.",
+      "type": "exercise",
+      "page": 54
+    },
+    {
+      "number": "22.19",
+      "text": "Give the equations for workable reactions that will convert [Fe(\u03b75-C5H5)2] into (a) [Fe(\u03b75-C5H5)(\u03b75-C5H4COCH3)] and (b) [Fe(\u03b75-C5H5)(\u03b75-C5H4CO2H)].",
+      "type": "exercise",
+      "page": 54
+    },
+    {
+      "number": "22.20",
+      "text": "Sketch the a1\u2032 symmetry-adapted orbitals for two eclipsed C5H5 ligands stacked together with D5h symmetry. Identify the s, p, and d orbitals of a metal atom lying between the rings that may have nonzero overlap, and state how many a1\u2032 molecular orbitals may be formed.",
+      "type": "exercise",
+      "page": 54
+    },
+    {
+      "number": "22.21",
+      "text": "The compound [Ni(\u03b75-C5H5)2] readily adds one molecule of HF to yield [Ni(\u03b75-C5H5)(\u03b74-C5H6)]+, whereas [Fe(\u03b75-C5H5)2] reacts with strong acid to yield [Fe(\u03b75-C5H5)2H]+. In the latter compound the H atom is attached to the Fe atom. Provide a reasonable explanation for this difference.",
+      "type": "exercise",
+      "page": 54
+    },
+    {
+      "number": "22.22",
+      "text": "Write a plausible mechanism, giving your reasoning, for the reactions (a)\u2002 [Mn(CO)5(CF2)]+ + H2O \u2192 [Mn(CO)6]+ + 2\u2009HF (b)\u2002 [Rh(CO)(C2H5)(PR3)2] \u2192 [RhH(CO)(PR3)2] + C2H4",
+      "type": "exercise",
+      "page": 54
+    },
+    {
+      "number": "22.23",
+      "text": "Suggest two plausible routes by which a carbonyl ligand in [Mo(Cp)(CO)3Me] might exchange for a phosphine. Neither route should invoke the initial dissociation of a CO.",
+      "type": "exercise",
+      "page": 54
+    },
+    {
+      "number": "22.24",
+      "text": "(a) What cluster valence electron (CVE) count is characteristic of octahedral and trigonal prismatic complexes? (b) Can these CVE values be derived from the 18-electron rule? (c) Determine the probable geometry (octahedral or trigonal prismatic) of [Fe6(C)(CO)16]2\u2212 and [Co6(C)(CO)16]2\u2212. (The C atom in both cases resides in the centre of the cluster and can be considered to be a four-electron donor.)",
+      "type": "exercise",
+      "page": 54
+    },
+    {
+      "number": "22.25",
+      "text": "Based on isolobal analogies, choose the groups that might replace the group in bold in (a)\u2002 [Co2(CO)9CH]: OCH3, N(CH3)2, or SiCH3 (b)\u2002 [(OC)5MnMn(CO)5]: I, CH2, or CCH3",
+      "type": "exercise",
+      "page": 54
+    },
+    {
+      "number": "22.26",
+      "text": "Ligand substitution reactions on metal clusters are often found to occur by associative mechanisms, and it is postulated that these occur by initial breaking of an M\u2013M bond, thereby providing an open coordination site for the incoming ligand. If the proposed mechanism is applicable, which would you expect to undergo the fastest exchange with added 13CO, [Co4(CO)12] or [Ir4(CO)12]? Suggest an explanation.",
+      "type": "exercise",
+      "page": 54
+    },
+    {
+      "number": "22.27",
+      "text": "Addition of PPh3 to a solution of Wilkinson\u2019s catalyst, [RhCl(PPh3)3], reduces the turnover frequency for the hydrogenation of propene. Give a plausible mechanistic explanation for this observation.",
+      "type": "exercise",
+      "page": 54
+    },
+    {
+      "number": "22.28",
+      "text": "The rates of H2 gas absorption (in dm3\u2009mol\u22121\u2009s\u22121) by alkenes catalysed by [RhCl(PPh3)3] in benzene at 25\u00baC are: hexene, 2910; cis-4-methyl-2-pentene, 990; cyclohexene, 3160; 1-methylcyclo- hexene, 60. Suggest the origin of the trends and identify the affected reaction step in the proposed mechanism (Fig. 22.18).",
+      "type": "exercise",
+      "page": 54
+    },
+    {
+      "number": "22.29",
+      "text": "Sketch the catalytic cycle for the production of butanal from prop-1-ene. Identify the step at which selectivity to the n or iso isomer occurs.",
+      "type": "exercise",
+      "page": 54
+    },
+    {
+      "number": "22.30",
+      "text": "Infrared spectroscopic investigation of a mixture of CO, H2, and 1-butene under conditions that bring about hydroformylation indicate the presence of compound (E) in Fig. 22.20 in the reaction mixture. The same reacting mixture in the presence of added tributylphosphine was studied by infrared spectroscopy and neither (E) nor an analogous phosphine-substituted complex was observed. What does the first observation suggest as the rate-limiting reaction in the absence of phosphine? Assuming the sequence of reactions remains unchanged, what are the possible rate-limiting reactions in the presence of tributylphosphine? 687",
+      "type": "exercise",
+      "page": 54
+    }
+  ],
+  "tutorial_problems": [
+    {
+      "number": "22.31",
+      "text": "(a) Starting with the alkene complex shown in Fig. 22.22 with trans-DHC=CHD in place of C2H4, assume dissolved OH\u2212 attacks from the side opposite the metal. Give a stereochemical drawing of the resulting compound. (b) Assume attack on the coordinated trans-DHC=CHD by an OH\u2212 ligand coordinated to Pd, and draw the stereochemistry of the resulting compound. (c) Does the stereochemistry differentiate these proposed steps in the Wacker process?",
+      "type": "tutorial",
+      "page": 55
+    },
+    {
+      "number": "22.32",
+      "text": "Draw the catalytic cycle for the Ziegler Natta polymerization of propene. Explain each of the steps involved and predict what the physical properties of the polymer produced would be like.",
+      "type": "tutorial",
+      "page": 55
+    },
+    {
+      "number": "22.1",
+      "text": "Propose the structure of the product obtained by the reaction of [Re(CO)(\u03b75-C5H5)(NO)(PPh3)]+ with Li[HBEt3]. The latter contains a strongly nucleophilic hydride. (For full details see W. Tam, G.Y. Lin, W.K. Wong, W.A. Kiel, V. Wong, and J.A. Gladysz, J. Am. Chem. Soc., 1982, 104, 141.)",
+      "type": "tutorial",
+      "page": 55
+    },
+    {
+      "number": "22.2",
+      "text": "When several CO ligands are present in a metal carbonyl, an indication of the individual bond strengths can be obtained by means of force constants derived from the experimental IR frequencies. In [Cr(CO)5(PPh3)] the cis-CO ligands have the higher force constants, whereas in [Ph3SnCo(CO)4] the force constants are higher for the trans-CO. Suggest why, and explain which carbonyl C atoms should be susceptible to nucleophilic attack in these two cases. (For details see D.J. Darensbourg and M.Y. Darensbourg, Inorg. Chem., 1970, 9, 1691.)",
+      "type": "tutorial",
+      "page": 55
+    },
+    {
+      "number": "22.3",
+      "text": "Discuss the following data for M\u2212M and M\u2212CO bond enthalpies in a series of metal carbonyl cluster compounds. The enthalpies given in each case are average values for that compound. BM\u2013M/kJ\u2009mol\u22121 BM\u2013C/kJ\u2009mol\u22121 Fe(CO)5 117 Fe3(CO)12 65 126 Ru3(CO)12 78 182 Os3(CO)12 94 201 Co4(CO)12 74 140 Rh4(CO)12 86 178 Ir4(CO)12 117 196",
+      "type": "tutorial",
+      "page": 55
+    },
+    {
+      "number": "22.4",
+      "text": "It is often possible to assign different resonance structures to an organometallic compound; for example, there can be competition between carbene and zwitterionic forms. Suggest ways of distinguishing the two forms and describe conditions that might favour one form over the other. See N. Ashkenazi, A. Vigalok, S. Parthiban, Y. Ben-David, L.J.W. Shimon, J.M.L. Martin, and D. Milstein, J. Am. Chem. Soc., 2000, 122, 8797; and C.P. Newman, G.J. Clarkson, N.W. Alcock, and J.P. Rourke, Dalton Trans., 2006, 3321.",
+      "type": "tutorial",
+      "page": 55
+    },
+    {
+      "number": "22.5",
+      "text": "Agostic interactions are often thought of as weak. Discuss examples where agostic interactions have been shown to displace other ligand interactions. See B.L. Conley and T.J. Williams, J. Am. Chem. Soc., 2010, 132, 1764; and S.H. Crosby, G.J. Clarkson, R.J. Deeth, and J.P. Rourke, Dalton Trans., 2011, 40, 1227.",
+      "type": "tutorial",
+      "page": 55
+    },
+    {
+      "number": "22.6",
+      "text": "Describe how alkane complexes of d metals have been unambiguously identified by NMR. What additional insights can be gained from X-ray diffraction? See S. Geftakis and G.E. Ball, J. Am. Chem. Soc., 1998, 120, 9953; W.H. Bernskoetter, C.K. Schauer, K.I. Goldberg, and M. Brookhart, Science, 2009, 326, 553; and S.D. Pike, A.L. Thompson, A.G. Algarra, D.C. Apperley, S.A. Macgregor, and A.S. Weller, Science, 2012, 337, 1648.",
+      "type": "tutorial",
+      "page": 55
+    },
+    {
+      "number": "22.7",
+      "text": "It is possible to distinguish two types of notionally agostic interactions: agostic and anagostic. Describe the differences between the two types. See M. Brookhart, M.L.H. Green, and G. Parkin, Proc. Natl. Acad. Sci. U.S.A., 2007, 104, 6908.",
+      "type": "tutorial",
+      "page": 55
+    },
+    {
+      "number": "22.8",
+      "text": "The dinitrogen complex [Zr2(\u03b75-Cp*)4(N2)3] has been isolated and its structure determined by single-crystal X-ray diffraction. Each Zr atom is bonded to two Cp* and one terminal N2. The third N2 bridges between the Zr atoms in a nearly linear ZrNNZr array. Before consulting the reference, write a plausible structure for this compound that accounts for the 1H-NMR spectrum obtained on a sample held at 27\u00b0C. This spectrum shows two singlets, indicating that the Cp* rings are in two different environments. At somewhat above room temperature these rings become equivalent on the NMR timescale and 15N-NMR indicates that N2 exchange between the terminal ligands and dissolved N2 is correlated with the process that interconverts the Cp* ligand sites. Propose a way in which this equilibration could interconvert the sites of the Cp* ligands. (For further details see J.M. Manriquez, D.R. McAlister, E. Rosenberg, H.M. Shiller, K.L. Willamson, S.I. Chan, and J.E. Bercaw, J. Am. Chem. Soc., 1978, 100, 3078.)",
+      "type": "tutorial",
+      "page": 55
+    },
+    {
+      "number": "22.9",
+      "text": "How might you unambiguously identify, in solution, an organometallic complex containing a noble gas atom as a ligand? See G.E. Ball, T.A. Darwish, S. Geftakis, M.W. George, D.J. Lawes, P. Portius, and J.P. Rourke, Proc. Natl. Acad. Sci. U.S.A., 2005, 102, 1853.",
+      "type": "tutorial",
+      "page": 55
+    },
+    {
+      "number": "22.10",
+      "text": "What conclusions can you draw from the bonding and reactivity of dihydrogen bound to a low-oxidation-state d-block metal that might be applicable to the bonding of an alkane to a metal? What implications might this have for the oxidative addition of a hydrocarbon to a metal atom? (See, for example, R.H. Crabtree, J. Organomet. Chem., 2004, 689, 4083.)",
+      "type": "tutorial",
+      "page": 55
+    },
+    {
+      "number": "22.11",
+      "text": "Compare and contrast Fischer and Schrock carbenes. See E.O. Fischer, Adv. Organomet. Chem., 1976, 14, 1; and R.R. Schrock, Acc. Chem. Res., 1984, 12, 98.",
+      "type": "tutorial",
+      "page": 55
+    },
+    {
+      "number": "22.12",
+      "text": "Rearrangements of ligands so that differing numbers of carbons interact with the central metal atom are known as haptotropic rearrangements. Consider the (fluorenyl)(cyclo- pentadienyl)iron complex. What haptotropic isomers are possible? See E. Kirillov, S. Kahlal, T. Roisnel, T. Georgelin, J. Saillard, and J. Carpentier, Organometallics, 2008, 27, 387.",
+      "type": "tutorial",
+      "page": 55
+    },
+    {
+      "number": "22.13",
+      "text": "It is possible to consider bridging carbonyl ligands in several different ways, with differing numbers of electrons donated to metals. Describe how it is possible to account for the structure of [Fe2(CO)9] as having an 18-electron count at both 22\u2002 d-Metal organometallic chemistry 688 metals, but without invoking the presence of an Fe\u2013Fe bond. See J.C. Green, M.L.H. Green, and G. Parkin Chem. Commun., 2012, 48, 11481.",
+      "type": "tutorial",
+      "page": 55
+    },
+    {
+      "number": "22.14",
+      "text": "A. Arbaoui and C. Redshaw (Polym. Chem., 2010, 1, 801) review catalysts for the synthesis of biodegradable polymers via ring opening metathesis polymerization. Summarize the need for biodegradable polymers and why new catalysts are required. From the details given identify which group of metals give the most active catalysts with which types of ligands. Illustrate with examples.",
+      "type": "tutorial",
+      "page": 56
+    },
+    {
+      "number": "22.15",
+      "text": "When direct evidence for a mechanism is not available, chemists frequently invoke analogies with similar systems. Describe how J.E. B\u00e4ckvall, B. \u00c5kermark, and S.O. Ljunggren (J. Am. Chem. Soc., 1979, 101, 2411) inferred the attack of uncoordinated water on \u03b72-C2H4 in the Wacker process.",
+      "type": "tutorial",
+      "page": 56
+    },
+    {
+      "number": "22.16",
+      "text": "\u03b2-Pinene is a major component of natural turpentine and its polymer is nontoxic and used in a wide variety of industrial applications such as adhesives, varnishes, food packaging and chewing gum. Novel catalysts for the polymerization of \u03b2-pinene have been produced based on niobium and tantalum pentahalides (M. Hayatifar et al., Catal. Today, 2012, 192, 177). Which catalyst was the most effective for the polymerization and why are the reaction conditions so attractive? Describe the nature of the catalyst\u2013\u03b2-pinene interaction.",
+      "type": "tutorial",
+      "page": 56
+    },
+    {
+      "number": "22.17",
+      "text": "The tethering of a homogeneous catalyst to a solid support has been investigated as a method that allows easy separation of the catalyst from the reaction mixture, with little loss in catalyst activity. What are the advantages and disadvantages of this approach? Choose an article from Chem. Rev., 2002, 102, issue 10 (start page 3215) to illustrate your discussion.",
+      "type": "tutorial",
+      "page": 56
+    },
+    {
+      "number": "22.18",
+      "text": "How may the use of two liquid phases that are not miscible at room temperature be used to create catalytic systems that have advantages over normal (single phase) systems? Discuss this area, paying attention to either fluorous biphasic systems (see J. Fluorine Chem., 1999, 100, 75) or ionic liquid systems (see Chem. Rev., 2002, 102, 3667).",
+      "type": "tutorial",
+      "page": 56
+    }
+  ]
+}

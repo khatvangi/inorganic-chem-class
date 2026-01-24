@@ -1,0 +1,230 @@
+{
+  "chapter": 15,
+  "title": "The Group 15 elements",
+  "exercises": [
+    {
+      "number": "15.1",
+      "text": "List the elements in Group 15 and indicate the ones that are (a) diatomic gases, (b) nonmetals, (c) metalloids, (d) true metals. Indicate those elements that display the inert-pair effect.",
+      "type": "exercise",
+      "page": 27
+    },
+    {
+      "number": "15.2",
+      "text": "Predict the chemical properties of element 115, moscovium.",
+      "type": "exercise",
+      "page": 27
+    },
+    {
+      "number": "15.3",
+      "text": "Why does P display a much wider range of allotropy than N? 472",
+      "type": "exercise",
+      "page": 27
+    },
+    {
+      "number": "15.4",
+      "text": "Account for the variation in the following band gaps (Eg/eV) for compounds of Group 15 elements. \u0003BN (cubic) 7.5\u2003  GaN 3.37\u2003  GaP 2.26\u2003  GaAs 1.42\u2003 GaSb 0.72",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "15.5",
+      "text": "(a) Give complete and balanced chemical equations for each step in the synthesis of H3PO4 from hydroxyapatite to yield (a) high-purity phosphoric acid and (b) fertilizer-grade phosphoric acid. (c) Account for the large difference in cost between these two methods.",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "15.6",
+      "text": "Ammonia can be prepared by (a) the hydrolysis of Li3N or (b) the high-temperature, high-pressure reduction of N2 by H2. Give balanced chemical equations for each method starting with N2, Li, and H2, as appropriate. (c) Account for the lower cost of the second method.",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "15.7",
+      "text": "Show with an equation why aqueous solutions of NH4NO3 are acidic.",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "15.8",
+      "text": "Carbon monoxide is a good ligand and is toxic. Why is the isoelectronic N2 molecule not toxic?",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "15.9",
+      "text": "Explain why NF3 has weak electron donor properties whereas PF3 is a good ligand in metal complexes. How can the existence of NOF3 be explained?",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "15.10",
+      "text": "Compare and contrast the formulas and stabilities of the oxidation states of the common nitrogen chlorides with the phosphorus chlorides.",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "15.11",
+      "text": "Use the VSEPR model to predict the probable shapes of (a) PCl4 +, (b) PCl4 \u2212, (c) AsCl5, (d) SbF5 2\u2212, (e) SbF6 \u2212.",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "15.12",
+      "text": "Explain why compounds of Bi(III) typically have the metal atom in a distorted geometry.",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "15.13",
+      "text": "Give balanced chemical equations for each of the following reactions: (a) oxidation of P4 with excess oxygen, (b) reaction of the product from part (a) with excess water, (c) reaction of the product from part (b) with a solution of CaCl2, and name the product.",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "15.14",
+      "text": "Starting with NH3(g) and other reagents of your choice, give the chemical equations and conditions for the synthesis of (a) HNO3, (b) NO2 \u2212, (c) NH2OH, (d) N3 \u2212.",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "15.15",
+      "text": "Write the balanced chemical equation corresponding to the standard enthalpy of formation of P4O10(s). Specify the structure, physical state (s, l, or g), and allotrope of the reactants. Does either of the reactants differ from the usual practice of taking as reference state the most stable form of an element?",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "15.16",
+      "text": "Without reference to the text, sketch the general form of the Frost diagrams for phosphorus (oxidation states 0 to +5) and bismuth (0 to +5) in acidic solution and discuss the relative stabilities of the +3 and +5 oxidation states of both elements.",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "15.17",
+      "text": "Are reactions of NO2 \u2212 as an oxidizing agent generally faster or slower when pH is lowered? Give a mechanistic explanation for the pH dependence of NO2 \u2212 oxidations.",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "15.18",
+      "text": "When equal volumes of nitric oxide (NO) and air are mixed at atmospheric pressure a rapid reaction occurs, to form NO2 and N2O4. However, nitric oxide from an automobile exhaust, which is present in the parts per million concentration range, reacts slowly with air. Give an explanation for this observation in terms of the rate law and the probable mechanism.",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "15.19",
+      "text": "On account of their slow reactions at electrodes, the potentials of most redox reactions of nitrogen compounds cannot be measured in an electrochemical cell. Instead, the values must be determined from other thermodynamic data. Illustrate such a calculation by using G \u25cb f \u2206 \u2212\u2212 (NH3,aq) = \u221226.5\u2009kJ\u2009mol\u22121 to calculate the standard potential of the N2/NH3 couple in basic aqueous solution.",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "15.20",
+      "text": "Give balanced chemical equations for the reactions of the following reagents with PCl5 and indicate the structures of the products: (a) water (1:1), (b) water in excess, (c) AlCl3, (d) NH4Cl.",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "15.21",
+      "text": "Explain how you could use 31P-NMR to distinguish between PF3 and POF3.",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "15.22",
+      "text": "Use data in Resource section 3 to calculate the standard potential of the reaction of H3PO2 with Cu2+. Are HPO2 2\u2212 and H PO 2 2 2\u2212 useful as oxidizing or as reducing agents?",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "15.23",
+      "text": "The tetrahedral P4 molecule may be described in terms of localized 2c,2e bonds. Determine the number of skeletal valence electrons and from this decide whether P4 is closo, nido, or arachno (these terms are specified in Section 13.11). If it is not closo, determine the parent closo polyhedron from which the structure of P4 could be formally derived by the removal of one or more vertices.",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "15.24",
+      "text": "Identify the compounds A, B, C, and D. Cl2/h\u03bd As LiAlH4 D C A B Cl2",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "15.25",
+      "text": "Sketch the two possible geometric isomers of the octahedral [AsF4Cl2]\u2212 and explain how they could be distinguished by 19F-NMR.",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "15.26",
+      "text": "Identify the nitrogen compounds A, B, C, D, and E. A B + C Cu/H+ E F Zn/H+ H2O NO O2 D",
+      "type": "exercise",
+      "page": 28
+    },
+    {
+      "number": "15.27",
+      "text": "Use the Latimer diagrams in Resource section 3 to determine which species of N and P disproportionate in acid conditions. 473 473",
+      "type": "exercise",
+      "page": 28
+    }
+  ],
+  "tutorial_problems": [
+    {
+      "number": "15.1",
+      "text": "Write a short review of the uses of bismuth compounds in the treatment of gastric ulcers.",
+      "type": "tutorial",
+      "page": 29
+    },
+    {
+      "number": "15.2",
+      "text": "A paper published by J. Lee and co-workers (Sci. Rep., 2015, 5, 11512) describes the existence of two-dimensional honeycomb sheet and ribbon forms of the Group 15 elements. (a) What methods did the authors use to explore these structures? (b) Which Group 15 element was most reluctant to form the honeycomb structures? (c) What properties and uses are these structures predicted to have? (d) What is it about these structures of Group 15 elements that makes them potentially more useful than graphene?",
+      "type": "tutorial",
+      "page": 29
+    },
+    {
+      "number": "15.3",
+      "text": "The structure of a butterfly-shaped P4 unit has been reported by J. Bresien and co-workers (Dalton Trans., 2016, 45, 1998). (a) Sketch the P4 unit. (b) Give one example of a bicyclic tetraphosphene synthesized from P4 with a Lewis acid and one synthesized via self-assembly of P1 units. (c) Draw the two isomers of Mes*P4Mes*. (d) Which isomer would give two triplets in the 31P-NMR spectrum?",
+      "type": "tutorial",
+      "page": 29
+    },
+    {
+      "number": "15.4",
+      "text": "Nitrous oxide has been discovered to play a crucial role in biological systems. A paper published by A.W. Carpenter and M.H. Schoenfisch (Chem. Soc. Rev., 2012, 41, 3742) discusses therapeutic applications of NO. Outline the main applications and drawbacks of gaseous NO as a therapeutic agent. Discuss how NO-donor molecules have been developed to enable NO therapies for a wide range of medical conditions.",
+      "type": "tutorial",
+      "page": 29
+    },
+    {
+      "number": "15.5",
+      "text": "Describe sewage treatment methods that result in a decrease in phosphate levels in wastewater. Outline a laboratory method that could be used to monitor phosphate levels in water.",
+      "type": "tutorial",
+      "page": 29
+    },
+    {
+      "number": "15.6",
+      "text": "A compound containing five-coordinate nitrogen has been characterized (A. Frohmann, J. Riede, and H. Schmidbaur, Nature, 1990, 345, 140). Describe (a) the synthesis, (b) the structure of the compound, (c) the bonding.",
+      "type": "tutorial",
+      "page": 29
+    },
+    {
+      "number": "15.7",
+      "text": "Two articles (A. Lykknes and L. Kvittingen, Arsenic: not so evil after all?, J. Chem. Educ., 2003, 80, 497; J. Wang and C.M. Chien, Arsenic in drinking water: a global environmental problem, J. Chem. Educ., 2004, 81, 207) present opposing perspectives on the toxic nature of arsenic. Use these references to produce a critical assessment of the beneficial and detrimental effects of arsenic.",
+      "type": "tutorial",
+      "page": 29
+    },
+    {
+      "number": "15.8",
+      "text": "A paper published by N. Tokitoh et al. (Science, 1997, 277, 78) gives an account of the synthesis and characterization of a stable bismuthene, containing Bi=Bi double bonds. Give the equations for the synthesis of the compound. Name and sketch the structure of the steric protecting group that was used. Why was the isolation of the product simple? What methods were used to determine the structure of the compound?",
+      "type": "tutorial",
+      "page": 29
+    },
+    {
+      "number": "15.9",
+      "text": "A paper published by Y. Zhang et al. (Inorg. Chem., 2006, 45, 10446) describes the synthesis of phosphazene cations as precursors for polyphosphazenes. Polyphosphazenes are prepared by ring-opening polymerization of the cyclic (NPCl2)3 and the reaction is initiated by phosphazene cations. Discuss which Lewis acids were used to produce the cations and give the reaction scheme for the ring-opening polymerization of (NPCl2)3.",
+      "type": "tutorial",
+      "page": 29
+    },
+    {
+      "number": "15.10",
+      "text": "In their paper \u2018Catalytic reduction of dinitrogen to ammonia at single molybdenum center\u2019 (Science, 2003, 301, 5629), D. Yandulov and R. Schrock describe the catalytic conversion of nitrogen to ammonia at room temperature and atmospheric pressure. Discuss why this development could be important commercially. Review nonbiological methods of nitrogen activation.",
+      "type": "tutorial",
+      "page": 29
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+# ignore extracted figures from chapters 2+ (too large for git)
+# chapter 1 figures already committed
+chapter[2-9]/
+chapter1[0-9]/
+chapter2[0-7]/
+
+# ignore raw page renders in all chapters
+**/pages/

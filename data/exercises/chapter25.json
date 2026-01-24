@@ -1,0 +1,79 @@
+{
+  "chapter": 25,
+  "title": "Green chemistry",
+  "exercises": [],
+  "tutorial_problems": [
+    {
+      "number": "25.1",
+      "text": "DDT was one of the first synthetic pesticides and was widely used as an effective control measure for malaria, typhoid, and other insect-borne diseases during World War II. During the 1950s\u20131960s it became very widely used for insect control on crops, in animals, and in the home. However, it was banned in the 1970s and the subsequent furore led to changes in legislation in many countries. Discuss the history of DDT, the problems it caused, and legislation stimulated by the case. Describe in what circumstances DDT is currently recommended for use.",
+      "type": "tutorial",
+      "page": 15
+    },
+    {
+      "number": "25.2",
+      "text": "In their article \u2018Industrial research: drug companies must adopt green chemistry\u2019 (Nature, 2016, 534, 27), J. Tucker and M. Faul describe how they transformed their approach to manufacturing to save their company time and money by making drugs more sustainably. Summarize the approaches they used and identify which of the 12 principles of green chemistry were applied.",
+      "type": "tutorial",
+      "page": 15
+    },
+    {
+      "number": "25.3",
+      "text": "In the 1960s, the anti-nausea drug thalidomide caused severe birth defects in babies born to mothers who had taken the drug to relieve morning sickness. Discuss the reasons why this was a serious issue in Europe and yet not in the US. Describe why the drug is toxic and under what circumstances it is currently prescribed. What changes in legislation were introduced in Europe following these cases?",
+      "type": "tutorial",
+      "page": 15
+    },
+    {
+      "number": "25.4",
+      "text": "Discuss how recycling is different from green chemistry. Evaluate the advantages and disadvantages of each.",
+      "type": "tutorial",
+      "page": 15
+    },
+    {
+      "number": "25.5",
+      "text": "Chlorofluorocarbons (CFCs) were developed as novel, safe refrigerants. What refrigerants were they designed to replace and what were their hazards? What were the problems associated with CFCs? Review the latest compounds used as refrigerants.",
+      "type": "tutorial",
+      "page": 15
+    },
+    {
+      "number": "25.6",
+      "text": "The addition of promoters can further enhance the rate of a catalysed reaction. Describe how the promoters allowed the iridium-based Cativa process to compete with the rhodium-based process in the carbonylation of methanol. (See A. Haynes, P.M. Maitlis, G.E. Morris, G.J. Sunley, H. Adams, and P.W. Badger, J. Am. Chem. Soc., 2004, 126, 2847.)",
+      "type": "tutorial",
+      "page": 15
+    },
+    {
+      "number": "25.7",
+      "text": "Briefly outline the different industrial processes that have been used to manufacture acetic anhydride. Discuss the green credentials of each process.",
+      "type": "tutorial",
+      "page": 15
+    },
+    {
+      "number": "25.8",
+      "text": "J.A. Botas et al. discuss the catalytic conversion of vegetable oils into hydrocarbons suitable for use as biofuels (Catal. Today, 2012, 195, 59). What are the most important features of catalysts that are used for these reactions? How was the incorporation of transition metals expected to modify catalyst properties? Outline how the modified catalysts were prepared and characterized. What reactions occurred in the reactor in addition to catalytic cracking? Which reactions led to aromatic products? Which of the modified catalysts produced most coke build-up? Explain why this did not deactivate the catalyst.",
+      "type": "tutorial",
+      "page": 15
+    },
+    {
+      "number": "25.9",
+      "text": "A. Arbaoui and C. Redshaw (Polym. Chem., 2010, 1, 801) review catalysts for the synthesis of biodegradable polymers via ring-opening metathesis polymerization. Summarize the need for biodegradable polymers and why new catalysts are required. From the details given, identify which groups of metals give the most active catalysts and with which types of ligands. Illustrate with examples.",
+      "type": "tutorial",
+      "page": 15
+    },
+    {
+      "number": "25.10",
+      "text": "Ionic liquids can be used as catalysts as well as solvents. Write a review on the use of ionic liquids as catalysts.",
+      "type": "tutorial",
+      "page": 15
+    },
+    {
+      "number": "25.11",
+      "text": "Sensors are increasingly being used in situ to monitor reactions and effluent streams in industry. What are the advantages and disadvantages of using in situ sensors compared to traditional laboratory analysis?",
+      "type": "tutorial",
+      "page": 15
+    },
+    {
+      "number": "25.12",
+      "text": "Ultimately, the overall \u2018green\u2019 credentials of any process can only be evaluated through life cycle analysis (LCA). Identify what components would be considered in the LCA of the synthesis of ammonia via the Haber\u2013Bosch process.",
+      "type": "tutorial",
+      "page": 15
+    }
+  ]
+}

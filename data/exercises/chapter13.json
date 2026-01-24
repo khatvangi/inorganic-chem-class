@@ -1,0 +1,109 @@
+{
+  "chapter": 13,
+  "title": "The Group 13 elements",
+  "exercises": [],
+  "tutorial_problems": [
+    {
+      "number": "13.28",
+      "text": "BF3 reacts with CsF to form CsBF4 while there is no reaction between BBr3 and CsBr. Explain these observations.",
+      "type": "tutorial",
+      "page": 32
+    },
+    {
+      "number": "13.29",
+      "text": "(a) What are the similarities and differences in the structures of layered BN and graphite (Section 14.5)? (b) Contrast their reactivity with Na, air, and Br2. (c) Suggest a rationalization for the differences in structure and reactivity.",
+      "type": "tutorial",
+      "page": 32
+    },
+    {
+      "number": "13.30",
+      "text": "Under what conditions could you convert hexagonal BN to cubic BN?",
+      "type": "tutorial",
+      "page": 32
+    },
+    {
+      "number": "13.31",
+      "text": "Devise a synthesis for the borazines (a) Ph3N3B3Cl3 and (b) Me3N3B3H3, starting with BCl3 and other reagents of your choice. Draw the structures of the products.",
+      "type": "tutorial",
+      "page": 32
+    },
+    {
+      "number": "13.32",
+      "text": "Identify the incorrect statements in the following description of Group 13 chemistry and provide corrections along with explanations of the principle or chemical generalization that applies: (a)\u2002 All the elements in Group 13 are nonmetals. (b)\u2002 The increase in chemical hardness on going down the group is illustrated by greater oxophilicity and fluorophilicity for the heavier elements. (c)\u2002 The Lewis acidity increases for BX3 from X = F to Br and this may be explained by stronger Br\u2013B \u03c0 bonding. (d)\u2002 Arachno-boron hydrides have a 2(n + 3) skeletal electron count and they are more stable than nido-boron hydrides. (e)\u2002 In a series of nido-boron hydrides acidity increases with increasing size. (f)\u2002 Layered boron nitride is similar in structure to graphite and, because it has a small separation between HOMO and LUMO, it is a good electrical conductor.",
+      "type": "tutorial",
+      "page": 32
+    },
+    {
+      "number": "13.33",
+      "text": "Indium forms a chloride of the stoichiometry In5Cl9. Rewrite this formula in terms of the oxidation states commonly adopted by indium. Describe the bonding in this compound given that it has been stated that it adopts the same structure type as Cs3Tl2Cl9.",
+      "type": "tutorial",
+      "page": 32
+    },
+    {
+      "number": "13.34",
+      "text": "Indium tin oxide has important applications as a transparent conducting oxide. Which oxide(s) could be doped with Al2O3 to produce a material with similar properties?",
+      "type": "tutorial",
+      "page": 32
+    },
+    {
+      "number": "13.35",
+      "text": "Use the data in Table 13.5 to estimate a band gap for the semiconductor GaP. Use this to calculate the wavelength of light that is emitted when an electron drops from the conduction band to the valence band. Is this consistent with the observed green light of gallium phosphide LEDs?",
+      "type": "tutorial",
+      "page": 32
+    },
+    {
+      "number": "13.36",
+      "text": "Determine the position of the compound Rb2In3 on a Ketelaar diagram and hence predict the type of bonding in this phase. By comparison with known structural motifs from boride cluster chemistry suggest a possible indium-containing unit if the formula is rewritten as Rb4In6.",
+      "type": "tutorial",
+      "page": 32
+    },
+    {
+      "number": "13.1",
+      "text": "Discuss the similarities in the chemistry of Tl(I) to those of the alkali metals and particularly that of potassium.",
+      "type": "tutorial",
+      "page": 32
+    },
+    {
+      "number": "13.2",
+      "text": "Use suitable molecular-orbital software to calculate the wavefunctions and energy levels for closo-[B6H6]2\u2212. From that output, draw a molecular orbital energy diagram for the orbitals primarily involved in B\u2013B bonding and sketch the form of the orbitals. How do these orbitals compare qualitatively with the qualitative description for this anion in this chapter? Is B\u2013H bonding neatly separated from the B\u2013B bonding in the computed wavefunctions?",
+      "type": "tutorial",
+      "page": 32
+    },
+    {
+      "number": "13.3",
+      "text": "In his paper \u2018Covalent and ionic molecules: why are BeF2 and AlF3 high melting point solids whereas BF3 and SiF4 are gases?\u2019 (J. Chem. Educ., 1998, 75, 923), R.J. Gillespie makes a case for the classification of the bonding in BF3 and SiF4 as predominantly ionic. Summarize his arguments and describe how these differ from the conventional view of bonding in gaseous molecules.",
+      "type": "tutorial",
+      "page": 32
+    },
+    {
+      "number": "13.4",
+      "text": "Nanotubes of C and BN have been synthesized by C. Colliex et al. (Science, 1997, 278, 653). (a) What are the advantageous properties of these nanotubes over carbon analogues? (b) Outline the method used for the preparation of these compounds. (c) What was the main structural feature of the nanotubes, and how could this be exploited in applications?",
+      "type": "tutorial",
+      "page": 32
+    },
+    {
+      "number": "13.5",
+      "text": "M. Montiverde discusses \u2018Pressure dependence of the superconducting temperature of MgB2\u2019 (Science, 2001, 292, 75). (a) Describe the bases of the two theories that have been postulated to explain the superconductivity of MgB2. (b) How does the Tc of MgB2 vary with pressure? What insight does this provide into the superconductivity?",
+      "type": "tutorial",
+      "page": 32
+    },
+    {
+      "number": "13.6",
+      "text": "Use the references in Z.W. Pan, Z.R. Dai, and Z.L. Wang (Science, 2001, 291, 1947) as a starting point to write a review of wire-like nanomaterials of Group 13 elements. Indicate how In2O3 nanobelts were prepared and give the dimensions of a typical nanobelt.",
+      "type": "tutorial",
+      "page": 32
+    },
+    {
+      "number": "13.7",
+      "text": "Shuji Nakamura was awarded the 2014 Nobel Prize for Physics in part for his invention of blue LEDs based on gallium nitride. Discuss the chemistry of gallium nitride including its synthesis, structures adopted and semiconducting chemistry (including the doped forms).",
+      "type": "tutorial",
+      "page": 32
+    },
+    {
+      "number": "13.8",
+      "text": "In their paper \u2018New structural motifs in metallaborane chemistry: synthesis, characterization, and solid-state structures of [(Cp*W)3(\u00b5-H)B8H8], [(Cp*W)2B7H9], and [(Cp*Re)2B7H7] (Cp* = \u03b75-C5Me5)\u2019 (Organometallics, 1999, 18, 853), A.S. Weller, M. Shang, and T.P. Fehlner discuss the synthesis and characterization of some novel boron-rich metallaboranes. Sketch and explain the 11B- and 1H-NMR spectra of (Cp*W)2B7H9.",
+      "type": "tutorial",
+      "page": 32
+    }
+  ]
+}

@@ -1,0 +1,458 @@
+{
+  "chapter": 24,
+  "title": "Materials chemistry and nanomaterials",
+  "exercises": [
+    {
+      "number": "24.1",
+      "text": "Outline how you could prepare samples of (a) MgCr2O4, (b) LaFeO3, (c) Ta3N5, (d) LiMgH3, (e) KCuF3, (f) the zeolite A analogue with Ga replacing Al, Na12[Si12Ga12O48]\u22c5nH2O.",
+      "type": "exercise",
+      "page": 85
+    },
+    {
+      "number": "24.2",
+      "text": "Identify the likely products of the reactions (a)\u2002 Li CO CoO 2 3 2 + \uf8e7 \u2192 \uf8e7\uf8e7\uf8e7 \u00b0 (b)\u2002 2Sr OH WO MnO 2 3 2 ( ) + + \uf8e7 \u2192 \uf8e7\uf8e7\uf8e7 \u00b0",
+      "type": "exercise",
+      "page": 85
+    },
+    {
+      "number": "24.3",
+      "text": "When NiO is doped with small quantities of Li2O, the electronic conductivity of the solid increases. Provide a plausible chemical explanation for this observation. (Hint: Li+ occurs on Ni2+ sites.)",
+      "type": "exercise",
+      "page": 85
+    },
+    {
+      "number": "24.4",
+      "text": "The compound FexO generally has x < 1. Describe the probable metal ion defect that leads to x being less than 1.",
+      "type": "exercise",
+      "page": 85
+    },
+    {
+      "number": "24.5",
+      "text": "How might you distinguish experimentally the existence of a solid solution from a series of crystallographic shear- plane structures for a material that appears to have variable composition?",
+      "type": "exercise",
+      "page": 85
+    },
+    {
+      "number": "24.6",
+      "text": "Use ionic radii data (Resource section 1) to suggest possible dopants to increase anion conductivity in (a) PbF2 and (b) Bi2O3 (six-coordinate Bi3+).",
+      "type": "exercise",
+      "page": 85
+    },
+    {
+      "number": "24.7",
+      "text": "Draw one unit cell in the ReO3 structure, showing the M and O atoms. Does this structure appear to be sufficiently open to undergo Na+ ion intercalation? If so, where might the Na+ ions reside? Describe the likely structure type for a material where the Na:Re ratio is 1:1.",
+      "type": "exercise",
+      "page": 85
+    },
+    {
+      "number": "24.8",
+      "text": "\u2018Double perovskites\u2019 of the composition AA\u2032BB\u2032O6 have been widely studied in respect of their magnetic properties. For A = Rb and A\u2032 = Sr suggest some possible ions for the B and B\u2032 sites in a double perovskite.",
+      "type": "exercise",
+      "page": 85
+    },
+    {
+      "number": "24.9",
+      "text": "The iodostannate perovskites, ASnI3, have been studied as potential semiconductors for applications as photovoltaics. By reference to the known APbI3 phases that adopt the perovskite structure suggest which cations, A+, might form a perovskite in the ASnI3 system.",
+      "type": "exercise",
+      "page": 85
+    },
+    {
+      "number": "24.10",
+      "text": "Predict the N\u00e9el temperature for CrO.",
+      "type": "exercise",
+      "page": 85
+    },
+    {
+      "number": "24.11",
+      "text": "Write possible formulas for a sulfide and a fluoride that might adopt the spinel structure.",
+      "type": "exercise",
+      "page": 85
+    },
+    {
+      "number": "24.12",
+      "text": "Which of the materials (a) YBa2Cu4O8, (b) Ca1.8Na0.2CuO2Cl2, (c) Gd2Ba2Ti2Cu2O11, (d) SrCuO2.12, which all contain layers of the stoichiometry CuO2, might be expected to be high-temperature superconductors?",
+      "type": "exercise",
+      "page": 85
+    },
+    {
+      "number": "24.13",
+      "text": "Explain why the colour of Ta2O5 changes from white to red when it is heated under flowing NH3.",
+      "type": "exercise",
+      "page": 85
+    },
+    {
+      "number": "24.14",
+      "text": "State Zachariasen\u2019s two generalizations that favour glass formation and apply them to the observation that cooling molten CaF2 leads to a crystalline solid whereas cooling molten SiO2 at a similar rate produces a glass.",
+      "type": "exercise",
+      "page": 85
+    },
+    {
+      "number": "24.15",
+      "text": "Classify the oxides (a) BeO, (b) TiO2, (c) La2O3, (d) B2O3, (e) GeO2 into glass-forming and non-glass-forming. 806",
+      "type": "exercise",
+      "page": 85
+    }
+  ],
+  "tutorial_problems": [
+    {
+      "number": "24.16",
+      "text": "Which metal fluorides might be glass-forming?",
+      "type": "tutorial",
+      "page": 86
+    },
+    {
+      "number": "24.17",
+      "text": "Describe two methods that could be used to prepare the intercalation compound LixTiS2, x = 0.5.",
+      "type": "tutorial",
+      "page": 86
+    },
+    {
+      "number": "24.18",
+      "text": "Reaction of ZrS2 (c lattice parameter 583\u2009pm) with [Co(\u03b75-C5H5)2] gives a compound with a c lattice parameter of 1164\u2009pm, and reaction with [Co(\u03b75-C5Me5)2] gives a product with a corresponding lattice parameter of 1161\u2009pm; ZrS2 does not react with [Fe(\u03b75-C5H5)2]. Explain these observations.",
+      "type": "tutorial",
+      "page": 86
+    },
+    {
+      "number": "24.19",
+      "text": "Describe the interactions between Mo6S8 units in a Chevrel phase.",
+      "type": "tutorial",
+      "page": 86
+    },
+    {
+      "number": "24.20",
+      "text": "Which of the elements Be, Mg, Ga, Zn, P, and Cl might form structures in which the element is incorporated into a framework as an oxotetrahedral species?",
+      "type": "tutorial",
+      "page": 86
+    },
+    {
+      "number": "24.21",
+      "text": "Propose formulas for structures that would be isomorphous with SiO2 and zeolites of the same stoichiometry involving Al, P, B, and Zn, or mixtures thereof, replacing Si.",
+      "type": "tutorial",
+      "page": 86
+    },
+    {
+      "number": "24.22",
+      "text": "Aluminosilicate surfaces in zeolites act as strong Br\u00f8nsted acids, whereas silica gel is a very weak acid. (a) Give an explanation for the enhancement of acidity by the presence of Al3+ in a silica lattice. (b) Name three other ions that might enhance the acidity of silica.",
+      "type": "tutorial",
+      "page": 86
+    },
+    {
+      "number": "24.23",
+      "text": "Discuss shape selectivity with respect to catalytic processes involving zeolites including mechanisms involving reactant, transition state, and product selectivity.",
+      "type": "tutorial",
+      "page": 86
+    },
+    {
+      "number": "24.24",
+      "text": "Describe what sorts of ligands are needed to produce metal\u2013organic frameworks (MOFs).",
+      "type": "tutorial",
+      "page": 86
+    },
+    {
+      "number": "24.25",
+      "text": "Calculate the mass percentage of hydrogen in NaBH4 and state whether or not this material might be suitable for hydrogen storage.",
+      "type": "tutorial",
+      "page": 86
+    },
+    {
+      "number": "24.26",
+      "text": "Substitution of Mg by small amounts of Li and Al into MgH2 improves its hydrogen-storage properties. Write a formula for this lithium aluminium magnesium dihydride and explain how Li and Al would be incorporated into the structures.",
+      "type": "tutorial",
+      "page": 86
+    },
+    {
+      "number": "24.27",
+      "text": "Why isn\u2019t BeH2 considered to be a suitable hydrogen- storage material?",
+      "type": "tutorial",
+      "page": 86
+    },
+    {
+      "number": "24.28",
+      "text": "Egyptian blue, CaCuSi4O10, is pale blue and the spinel CuAl2O4 is an intense blue-green. Explain the difference.",
+      "type": "tutorial",
+      "page": 86
+    },
+    {
+      "number": "24.29",
+      "text": "Dissolution of Na2S9 in polar solvents initially produces an intensely blue-coloured solution. In air the colour fades after a few minutes. Explain these observations by reference to the species responsible for the colour of ultramarine.",
+      "type": "tutorial",
+      "page": 86
+    },
+    {
+      "number": "24.30",
+      "text": "Describe the properties of an ideal photocatalyst for water-splitting.",
+      "type": "tutorial",
+      "page": 86
+    },
+    {
+      "number": "24.31",
+      "text": "Place the semiconductors AlP, BN, InSb, and C (diamond) in order of the expected band gap.",
+      "type": "tutorial",
+      "page": 86
+    },
+    {
+      "number": "24.32",
+      "text": "Describe the structures of Na2C60 and Na3C60 in terms of hole-filling in a close-packed array of fulleride molecular ions.",
+      "type": "tutorial",
+      "page": 86
+    },
+    {
+      "number": "24.33",
+      "text": "(a) Compare the surface area for two spherical objects: one has a diameter of 10\u2009nm and the other has a diameter of 1000\u2009nm. (b) Describe whether these two objects are considered nanoparticles by using the size-based definition of a nanomaterial. (c) Using a surface-area-related property, describe what must hold true for either of these objects to be considered nanoparticles, using the size/properties-based definition of a nanomaterial.",
+      "type": "tutorial",
+      "page": 86
+    },
+    {
+      "number": "24.34",
+      "text": "(a) Explain the difference between the top-down and bottom-up methods of fabrication of materials. Be specific and provide one example of each. (b) Give one advantage and one disadvantage for each synthesis method.",
+      "type": "tutorial",
+      "page": 86
+    },
+    {
+      "number": "24.35",
+      "text": "(a) Describe the three basic steps in nanoparticle formation from solution. (b) Explain why two steps should occur independently to achieve a uniform size distribution. (c) What are stabilizer molecules used for in nanoparticle synthesis?",
+      "type": "tutorial",
+      "page": 86
+    },
+    {
+      "number": "24.36",
+      "text": "Describe the processes occurring during Ostwald ripening.",
+      "type": "tutorial",
+      "page": 86
+    },
+    {
+      "number": "24.37",
+      "text": "(a) Draw a schematic diagram of a core\u2013shell nanoparticle. (b) Briefly describe how core\u2013shell nanoparticles could be made using either vapour-phase or solution-based techniques. (c) For what purpose would core\u2013shell nanoparticles be used?",
+      "type": "tutorial",
+      "page": 86
+    },
+    {
+      "number": "24.38",
+      "text": "Which inorganic materials, other than graphite, have structures with strong in-layer bonds but much weaker interactions between layers, and so might be exfoliated into single sheets?",
+      "type": "tutorial",
+      "page": 86
+    },
+    {
+      "number": "24.39",
+      "text": "Why is the platinum/rhodium catalyst in automobile catalytic converters dispersed on the surface of a ceramic rather than used in the form of a thin metal foil?",
+      "type": "tutorial",
+      "page": 86
+    },
+    {
+      "number": "24.40",
+      "text": "Alkanes are observed to exchange hydrogen atoms with deuterium gas over some platinum metal catalysts. When 3,3-dimethylpentane in the presence of D2 is exposed to a platinum catalyst and the gases are observed before the reaction has proceeded very far, the main product is CH3CH2C(CH3)2CD2CD3 plus unreacted 3,3-dimethylpentane. Devise a plausible mechanism to explain this observation.",
+      "type": "tutorial",
+      "page": 86
+    },
+    {
+      "number": "24.41",
+      "text": "The effectiveness of platinum in catalysing the reaction Suggest an explanation.",
+      "type": "tutorial",
+      "page": 86
+    },
+    {
+      "number": "24.42",
+      "text": "Describe the role of electrocatalysts in reducing the overpotential in the oxygen reduction reaction in fuel cells.",
+      "type": "tutorial",
+      "page": 86
+    },
+    {
+      "number": "24.1",
+      "text": "Describe the inorganic chemistry involved in the operation of a lambda sensor (an exhaust-gas oxygen sensor) in a vehicle engine.",
+      "type": "tutorial",
+      "page": 86
+    },
+    {
+      "number": "24.2",
+      "text": "To obtain high oxidation states for first row d metals in complex oxides, e.g. Sr2Fe(IV)O4, compounds are normally prepared at as low a temperature as possible commensurate with the reaction. Discuss the thermodynamic reasons for the use of these conditions and explain why the optimum temperature for producing YBCO involves a final annealing stage at about 450\u00b0C under pure oxygen.",
+      "type": "tutorial",
+      "page": 86
+    },
+    {
+      "number": "24.3",
+      "text": "Heating a complex oxide under ammonia can lead to nitridation (with nitrogen replacing oxygen) or reduction (with the production of nitrogen and water). Describe possible products that might be formed when SrWO4 is heated in ammonia. By consideration of the relative entropy changes for the two reactions, explain how the reaction temperature might affect the outcome. 807",
+      "type": "tutorial",
+      "page": 86
+    },
+    {
+      "number": "24.4",
+      "text": "What are the advantages of sol\u2013gel routes, in comparison with direct high-temperature reaction methods, in the synthesis of complex metal oxides? Why are sol\u2013gel routes used to prepare finely divided or nanoparticulate material?",
+      "type": "tutorial",
+      "page": 87
+    },
+    {
+      "number": "24.5",
+      "text": "Describe the delafossite structure type adopted by some compounds of the stoichiometry MM\u2032X2. Which elemental combinations are known to form this structure type? Discuss their electronic properties when X = O, and potential applications as photocatalysts.",
+      "type": "tutorial",
+      "page": 87
+    },
+    {
+      "number": "24.6",
+      "text": "Superconductors are often classified as type I or II. Describe the physical characteristic that determines the classification of a superconductor into one or the other of these types. Classify the following materials in their superconducting state (a) Hg, (b) TaSi2, (c) YBCO, and (d) Nb3Ge.",
+      "type": "tutorial",
+      "page": 87
+    },
+    {
+      "number": "24.7",
+      "text": "Discuss how various chemical substitutions led to the discovery, and subsequent optimization of the properties, of the superconducting materials with the LnFeOAs structure type. Describe the compositional and structural chemistry of other recently discovered iron-based superconducting materials.",
+      "type": "tutorial",
+      "page": 87
+    },
+    {
+      "number": "24.8",
+      "text": "Discuss differences in the properties of zeolites, zeotypes (frameworks built from oxotetrahedral species other than AlO4 and SiO4), and metal\u2013organic frameworks (MOFs).",
+      "type": "tutorial",
+      "page": 87
+    },
+    {
+      "number": "24.9",
+      "text": "Describe recent progress towards the commercialization of MOFs. (See N. Notman, Chem. World, 2017, 5, 44.)",
+      "type": "tutorial",
+      "page": 87
+    },
+    {
+      "number": "24.10",
+      "text": "One target for a material of use for hydrogen storage in transport applications is that it should contain 10 weight per cent hydrogen. Which class of material is the most promising for this application? What are the different requirements of a static system that might be used to store hydrogen produced from renewable energy?",
+      "type": "tutorial",
+      "page": 87
+    },
+    {
+      "number": "24.11",
+      "text": "What are the properties of an ideal inorganic pigment?",
+      "type": "tutorial",
+      "page": 87
+    },
+    {
+      "number": "24.12",
+      "text": "Discuss the recent advances in perovskite solar cell chemistry that have driven device efficiencies to over 20 per cent. (See S. Yang, W. Fu, Z. Zhang, H. Chen and C.-Z. Li, J. Mater. Chem. A, 2017 , 5, 11462.)",
+      "type": "tutorial",
+      "page": 87
+    },
+    {
+      "number": "24.13",
+      "text": "Summarize recent research efforts directed towards finding improved materials for the photocatalytic splitting of water.",
+      "type": "tutorial",
+      "page": 87
+    },
+    {
+      "number": "24.14",
+      "text": "Compare and contrast the chemistries of graphite and C60 with respect to their compounds in association with the alkali metals.",
+      "type": "tutorial",
+      "page": 87
+    },
+    {
+      "number": "24.15",
+      "text": "\u2018The increased reactivity that allows the design and synthesis of materials based on molecular units also means that these compounds are unsuitable for many applications that currently use inorganic materials.\u2019 Discuss this remark.",
+      "type": "tutorial",
+      "page": 87
+    },
+    {
+      "number": "24.16",
+      "text": "Explain whether vapour-phase or solution-based techniques typically lead to (a) larger size distributions in nanoparticle synthesis, (b) agglomerated particles that are strongly bonded to one another in so-called hard agglomerates.",
+      "type": "tutorial",
+      "page": 87
+    },
+    {
+      "number": "24.17",
+      "text": "(a) Discuss the difference between homogeneous and heterogeneous nucleation from the vapour phase. (b) Which type of nucleation is preferred for the growth of a thin film in this process? (c) Which type of nucleation is preferred for the growth of nanoparticles in this process?",
+      "type": "tutorial",
+      "page": 87
+    },
+    {
+      "number": "24.18",
+      "text": "Describe the difference between a physical vapour and a chemical vapour with respect to the type and stability of the vapour species.",
+      "type": "tutorial",
+      "page": 87
+    },
+    {
+      "number": "24.19",
+      "text": "(a) Give a definition for scanning probe microscopy that makes clear both what it is and why it is called scanning probe microscopy. (b) Using a material of interest to you, pick any scanning probe microscopy method and describe how you might use it to characterize an important aspect of your material.",
+      "type": "tutorial",
+      "page": 87
+    },
+    {
+      "number": "24.20",
+      "text": "Compare and contrast the band energies for a quantum dot nanocrystal and a bulk semiconductor.",
+      "type": "tutorial",
+      "page": 87
+    },
+    {
+      "number": "24.21",
+      "text": "(a) Give two examples of applications of quantum wells. (b) Describe why quantum wells are used and if either molecular materials or traditional solid-state materials can exhibit similar properties. (c) How are quantum wells made?",
+      "type": "tutorial",
+      "page": 87
+    },
+    {
+      "number": "24.22",
+      "text": "(a) What is the relevance of self-assembly to the fabrication of nanomaterials? (b) What role will it play in nanotechnology?",
+      "type": "tutorial",
+      "page": 87
+    },
+    {
+      "number": "24.23",
+      "text": "(a) Describe the two classes of inorganic\u2013organic nanocomposites based on their bonding types. (b) Give one example of a nanocomposite in each class.",
+      "type": "tutorial",
+      "page": 87
+    },
+    {
+      "number": "24.24",
+      "text": "Discuss the synthesis, properties, and potential applications of ultrathin two-dimensional nanosheets of layered transition metal dichalcogenides. (See M. Chhowalla, et al., Nat. Chem., 2013, 5, 263.)",
+      "type": "tutorial",
+      "page": 87
+    },
+    {
+      "number": "24.25",
+      "text": "The synthesis method described in this chapter for generating CdSe quantum dots involves the use of rather toxic compounds. Explore the chemical literature to find a more recent example that uses less toxic substances. Describe the solvation step, the nucleation step, and the growth step in each case. Comment on the size dispersions in each case. (See the following articles as a start: G.C. Lisensky and E.M. Boatman, J. Chem. Educ., 2005, 82, 1360; W. William Yu and X.-G. Peng, Angew. Chem., Int. Ed., 2002, 41, 2368.)",
+      "type": "tutorial",
+      "page": 87
+    },
+    {
+      "number": "24.26",
+      "text": "The Gr\u00e4tzel cell has been described as a useful photoelectrochemical cell. Describe how the photoelectrochemical cell differs from the conventional photovoltaic cell. Describe why the nanostructure TiO2 is important for the improved performance. What other inorganic species play an important role in functionalizing the Gr\u00e4tzel cell? (See M. Gr\u00e4tzel, Nature, 2001, 414, 338.)",
+      "type": "tutorial",
+      "page": 87
+    },
+    {
+      "number": "24.27",
+      "text": "Discuss how the various physical properties of graphene may lead to the incorporation of this material into future technologies.",
+      "type": "tutorial",
+      "page": 87
+    },
+    {
+      "number": "24.28",
+      "text": "Carbon nanotubes have been suggested for use as wires in molecular electronics. Describe the challenges of using nanotubes as wires in terms of connecting two functional electronic devices. Describe a possible technique to overcome some of these problems.",
+      "type": "tutorial",
+      "page": 87
+    },
+    {
+      "number": "24.29",
+      "text": "Nanotubes are widely known for carbon. Find an example of an inorganic nanotube not based on carbon and describe its synthesis and properties as compared to the corresponding bulk material. Compare its structure to the carbon nanotubes discussed in this chapter.",
+      "type": "tutorial",
+      "page": 87
+    },
+    {
+      "number": "24.30",
+      "text": "Summarize the potential impact of heterogeneous oxidation catalysts in chemistry. (See J.M. Thomas and R. Raja, Catal. Today, 2006, 117, 22.)",
+      "type": "tutorial",
+      "page": 87
+    },
+    {
+      "number": "24.31",
+      "text": "Discuss the applications and mechanisms of oxidation and ammoxidation catalysts such as bismuth molybdate. (See, for example, R.K. Grasselli, J. Chem. Educ., 1986, 63, 216.)",
+      "type": "tutorial",
+      "page": 87
+    },
+    {
+      "number": "24.32",
+      "text": "Discuss the advantages of a solid support in catalysis by reference to the use of [Ni(POEt)3]4 in alkene isomerization. 808 (See A.J. Seen, J. Chem. Educ., 2004, 81, 383; and K.R. Birdwhistell and J. Lanza, J. Chem. Educ., 1997, 74, 579.)",
+      "type": "tutorial",
+      "page": 87
+    },
+    {
+      "number": "24.33",
+      "text": "J.A. Botas et al. discuss the catalytic conversion of vegetable oils into hydrocarbons suitable for use as biofuels (Catal. Today, 2012, 195, 1, 59). What are the most important features of catalysts that are used for these reactions? How was the incorporation of transition metals expected to modify catalyst properties? Outline how the modified catalysts were prepared and characterized. What reactions occurred in the reactor in addition to catalytic cracking? Which reactions led to aromatic products? Which of the modified catalysts produced most coke build-up? Explain why this did not deactivate the catalyst.",
+      "type": "tutorial",
+      "page": 88
+    }
+  ]
+}

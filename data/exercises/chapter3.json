@@ -1,0 +1,79 @@
+{
+  "chapter": 3,
+  "title": "Molecular symmetry",
+  "exercises": [],
+  "tutorial_problems": [
+    {
+      "number": "3.16",
+      "text": "Draw the linear combinations of H1s orbitals for linear and square forms of the hypothetical H4 molecule and construct the respective MO diagrams to demonstrate that one of these forms should be paramagnetic (contain unpaired electrons).",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "3.17",
+      "text": "(a) Construct the form of each molecular orbital in linear [HHeH]2+ using 1s basis atomic orbitals on each atom and considering successive nodal surfaces. (b) Arrange the MOs in increasing energy. (c) Indicate the electron population of the MOs. (d) Should [HHeH]2+ be stable in isolation or in solution? Explain your reasoning.",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "3.1",
+      "text": "Consider a molecule IF3O2 (with I as the central atom). How many isomers are possible? Assign point group designations to each isomer.",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "3.2",
+      "text": "How many isomers are there for \u2018octahedral\u2019 molecules with the formula MA3B3, where A and B are monoatomic ligands? What is the point group of each isomer? Are any of the isomers chiral? Repeat this exercise for molecules with the formula MA2B2C2.",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "3.3",
+      "text": "Group theory is often used by chemists as an aid in the interpretation of IR spectra. For example, there are four NH bonds in NH4 + and four stretching modes are possible. There is the possibility that several vibrational modes occur at the same frequency, and hence are degenerate. A quick glance at the character table will tell if degeneracy is possible. (a) In the case of the tetrahedral NH4 + ion, is it necessary to consider the possibility of degeneracies? (b) Are degeneracies possible in any of the vibrational modes of NH D 2 2 +?",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "3.4",
+      "text": "Determine whether the number of IR and Raman active stretching modes could be used to determine uniquely whether a sample of gas is BF3, NF3, or ClF3.",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "3.5",
+      "text": "Reaction of AsCl3 with Cl2 at low temperature yields a product, believed to be AsCl5, which shows Raman bands at 437, 369, 295, 220, 213, and 83\u2009cm\u22121. Detailed analysis of the 369 and 295\u2009cm\u22121 bands shows them to arise from totally symmetric modes. Show that the Raman spectrum is consistent with a trigonal-bipyramidal geometry.",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "3.6",
+      "text": "Show how you would use Raman and infrared spectroscopy to distinguish between regular octahedral and regular trigonal prismatic geometries of a six-coordinate species, ML6. Discuss the possible distortions that could occur in either case (you do not need to determine the symmetries of vibrations for the distorted states).",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "3.7",
+      "text": "Consider the p orbitals on the four Cl atoms of tetrahedral [CoCl4]2\u2212, with one p orbital on each Cl pointing directly at the central metal atom. (a) Confirm that the four p orbitals which point at the metal transform in an identical manner to the four s orbitals on the Cl atoms. How might these p orbitals contribute to the bonding of the complex? (b) Take the remaining eight p orbitals and determine how they transform. Reduce the representation you derive to determine the symmetry of the SALCs these orbitals contribute to. Which metal orbitals can these SALCs bond with? (c) Generate the SALCs referred to in (b).",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "3.8",
+      "text": "Consider all 12 of the p orbitals on the four Cl atoms of a square planar complex like [PtCl4]2\u2212. (a) Determine how these p orbitals transform under D4h and reduce the representation. (b) Which metal orbitals can these SALCs bond with? (c) Which SALCs and which metal orbitals contribute to \u03c3 bonds? (d) Which SALCs and which metal orbitals contribute to the in-plane \u03c0 bonds? (e) Which SALCs and which metal orbitals contribute to the out-of-plane \u03c0 bonds?",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "3.9",
+      "text": "Consider an octahedral complex and construct all the \u03c3- and \u03c0-bonding SALCs.",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "3.10",
+      "text": "Construct an approximate molecular orbital energy diagram for a hypothetical planar form of NH3. You may refer to Resource section 4 to determine the form of the appropriate orbitals on the central N atom and on the triangle of H3 atoms. From a consideration of the atomic energy levels, place the N and H3 orbitals on either side of a molecular orbital energy-level diagram. Then use your judgement about the effect of bonding and antibonding interactions and energies of the parent orbitals to construct the molecular orbital energy levels in the centre of your diagram and draw lines indicating the contributions of the atomic orbitals to each molecular orbital. Ionization energies are I(H1s)\u2009=\u200913.6\u2009eV, I(N2s)\u2009=\u200926.0\u2009eV, and I(N2p)\u2009=\u200913.4\u2009eV.",
+      "type": "tutorial",
+      "page": 28
+    }
+  ]
+}

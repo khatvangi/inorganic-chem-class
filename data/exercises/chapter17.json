@@ -1,0 +1,266 @@
+{
+  "chapter": 17,
+  "title": "The Group 17 elements",
+  "exercises": [
+    {
+      "number": "17.1",
+      "text": "Preferably without consulting reference material, write out the halogens as they appear in the periodic table, and indicate the trends in (a) physical state (s, l, or g) at room temperature and pressure, (b) electronegativity, (c) hardness of the halide ion, (d) colour.",
+      "type": "exercise",
+      "page": 24
+    },
+    {
+      "number": "17.2",
+      "text": "Describe how the halogens are recovered from the naturally occurring halides and rationalize the approach in terms of standard potentials. Give balanced chemical equations and conditions where appropriate.",
+      "type": "exercise",
+      "page": 24
+    },
+    {
+      "number": "17.3",
+      "text": "Use the molecular orbital diagram in Fig. 17.5 to determine the bond order of the Br2 + ion. Will the Br\u2013Br bond be longer or shorter than that in the Br2 molecule?",
+      "type": "exercise",
+      "page": 24
+    },
+    {
+      "number": "17.4",
+      "text": "Sketch a chloralkali cell. Show the half-cell reactions and indicate the direction of diffusion of the ions. Give the chemical equation for the unwanted reaction that would occur if OH\u2212 migrated through the membrane and into the anode compartment.",
+      "type": "exercise",
+      "page": 24
+    },
+    {
+      "number": "17.5",
+      "text": "Sketch the form of the vacant \u03c3* orbital of a dihalogen molecule and describe its role in the Lewis acidity of the dihalogens.",
+      "type": "exercise",
+      "page": 24
+    },
+    {
+      "number": "17.6",
+      "text": "Which dihalogens are thermodynamically capable of oxidizing H2O to O2?",
+      "type": "exercise",
+      "page": 24
+    },
+    {
+      "number": "17.7",
+      "text": "Nitrogen trifluoride, NF3, boils at \u2212129\u00b0C and is a very weak Lewis base. By contrast, the lower molar mass compound NH3 boils at \u221233\u00b0C and is well known as a Lewis base. (a) Describe the origins of this very large difference in volatility. (b) Describe the probable origins of the difference in basicity.",
+      "type": "exercise",
+      "page": 24
+    },
+    {
+      "number": "17.8",
+      "text": "Based on the analogy between halogens and pseudohalogens, write (a) the balanced equation for the probable reaction of cyanogen, (CN)2, with aqueous sodium hydroxide; (b) the equation for the probable reaction of excess thiocyanate with the oxidizing agent MnO2(s) in acidic aqueous solution; (c) a plausible structure for trimethylsilyl cyanide.",
+      "type": "exercise",
+      "page": 24
+    },
+    {
+      "number": "17.9",
+      "text": "Given that 1.84\u2009g of IF3 reacts with 0.93\u2009g of [(CH3)4N] F to form a product X, (a) identify X, (b) use the VSEPR model to predict the shapes of IF3 and the cation and anion in X, and (c) predict how many 19F-NMR signals would be observed in IF3 and X. 524",
+      "type": "exercise",
+      "page": 24
+    }
+  ],
+  "tutorial_problems": [
+    {
+      "number": "17.10",
+      "text": "Treatment of Br2 with ozone in CFCl3 at \u221250\u00b0C yields yellow crystals of an unstable diamagnetic compound. Identify this compound and predict the products obtained when it reacts with one mole equivalent of NaOH.",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "17.11",
+      "text": "Use the VSEPR model to predict the shapes of SbCl5 and FClO3.",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "17.12",
+      "text": "Indicate the product of the reaction between ClF5 and SbF5. Predict the shapes of the reactants and products.",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "17.13",
+      "text": "Sketch all the isomers of the complexes [CrCl4F2]3\u2212 and [CrCl3F3]3\u2212. Indicate how many fluorine environments would be indicated in the 19F-NMR spectrum of each isomer.",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "17.14",
+      "text": "(a) Use the VSEPR model to predict the probable shapes of [IF6]+ and IF7. (b) Give a plausible chemical equation for the preparation of [IF6][SbF6].",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "17.15",
+      "text": "Predict the shape of the doubly chlorine-bridged I2Cl6 molecule by using the VSEPR model, and assign the point group.",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "17.16",
+      "text": "Predict the structure and identify the point group of ClO2F.",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "17.17",
+      "text": "Predict whether each of the following solutes is likely to make liquid BrF3 act as a Lewis acid or a Lewis base: (a) SbF5, (b) SF6, (c) CsF.",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "17.18",
+      "text": "Given the bond lengths and angles in \u2212I5 (5), describe the bonding in terms of two-centre and three-centre bonds. Can the structure be accounted for in terms of the VSEPR model?",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "17.19",
+      "text": "Predict the appearance of the 19F-NMR spectrum of + IF5 .",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "17.20",
+      "text": "Predict whether each of the following compounds is likely to be dangerously explosive in contact with BrF3 and explain your answer: (a) SbF5, (b) CH3OH, (c) F2, (d) S2Cl2.",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "17.21",
+      "text": "The formation of \u2212 Br3  from a tetraalkylammonium bromide and Br2 is only slightly exergonic. Write an equation for the interaction of [NR4][Br3] with I2 in CH2Cl2 solution and give your reasoning.",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "17.22",
+      "text": "Explain why CsI3(s) is stable with respect to decomposition but NaI3(s) is not.",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "17.23",
+      "text": "Write plausible Lewis structures for (a) ClO2 and (b) I2O6 and predict their shapes and the associated point group.",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "17.24",
+      "text": "(a) Give the formulas and the probable relative acidities of perbromic acid and periodic acid. (b) Which is the more stable to decomposition liberating oxygen?",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "17.25",
+      "text": "(a) Describe the expected trend in the standard potential of an oxoanion in a solution with decreasing pH. (b) Demonstrate this phenomenon by calculating the reduction potential of \u2212 ClO4 at pH = 7 and comparing it with the tabulated value at pH = 0.",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "17.26",
+      "text": "With regard to the general influence of pH on the standard potentials of oxoanions, explain why the disproportionation of an oxoanion is often promoted by low pH.",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "17.27",
+      "text": "Use either the Frost diagram in Figure 17.14 or the Latimer diagrams in Resource section 3 to calculate the standard potentials for the following couples in basic solution: (a) \u2212 \u2212 ClO / ClO 4 , (b) \u2212 \u2212 BrO / BrO 4 , (c) \u2212 \u2212 IO / IO 4 . Comment on the relative feasibilities of the reduction reactions.",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "17.28",
+      "text": "(a) For which of the following anions is disproportionation thermodynamically favourable in acidic solution: ClO\u2212, \u2212 ClO2, \u2212 ClO3, and \u2212 ClO4? (If you do not know the properties of these ions, determine them from a table of standard potentials as in Resources section 3.) (b) For which of the favourable cases is the reaction very slow at room temperature?",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "17.29",
+      "text": "Which of the following compounds present an explosion hazard? (a) NH4ClO4, (b) Mg(ClO4)2, (c) NaClO4, (d) [Fe(OH2)6] [ClO4]2. Explain your reasoning.",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "17.30",
+      "text": "Use standard potentials to predict which of the following will be oxidized by ClO\u2212 ions in acidic conditions: (a) Cr3+, (b) V3+, (c) Fe2+, (d) Co2+.",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "17.31",
+      "text": "Identify all the compounds A to G. A F2 SiO2 D C Cl2 E CsF G H2O B OH\u2013 H2SO4",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "17.32",
+      "text": "Many of the acids and salts corresponding to the positive oxidation numbers of the halogens are not listed in the catalogue of a major international chemical supplier: (a) KClO4 and KIO4 are available but KBrO4 is not, (b) KClO3, KBrO3, and KIO3 are all available, (c) NaClO2 and NaBrO2\u22c53H2O are available but salts of \u2212 IO2 are not, (d) only ClO\u2212 salts are available but the bromine and iodine analogues are not. Describe the probable reason for the unavailability of those salts of the oxoanions.",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "17.33",
+      "text": "Identify the incorrect statements among the following descriptions and provide correct statements: (a)\u2002 Oxidation of the halides is the only commercial method of preparing the halogens from F2 to I2. (b) \u2212 ClF4  and \u2212I5 are isolobal and isostructural. (c)\u2002 Atom-transfer processes are common in the mechanisms of oxidations by the halogen oxoanions, and an example is the O atom transfer in the oxidation of \u2212 SO3 2  by ClO\u2212. (d)\u2002 Periodate appears to be a more facile oxidizing agent than perchlorate because the former can coordinate to the reducing agent at the I(VII) centre, whereas the Cl(VII) centre in perchlorate is inaccessible to reducing agents.",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "17.1",
+      "text": "The paper \u2018The consequences of excess iodine\u2019 by A. Leung and E Braverman (Nat. Rev., 2014, 10, 136) reviews the health implications of excess iodine ingestion. (a) What is the recommended daily intake of iodine? (b) What are the main dietary sources of iodine? (c) What is usually the source of high levels of iodine? (d) What are the symptoms of ingestion of high levels of iodine? (d) What were the health benefits of a high iodine diet in Japan in the period after 2011? (e) How is sufficient dietary iodine ensured in most countries? 525",
+      "type": "tutorial",
+      "page": 25
+    },
+    {
+      "number": "17.2",
+      "text": "The phenomenon of the halogen bond has been known for over a century. In the paper \u2018The halogen bond in solution\u2019 (Chem. Soc. Rev., 2012, 41, 3547), M. Erdelyi reviews the current state of knowledge of the nature of the halogen bond. Describe what is meant by halogen bonding. Work on the halogen bond received the 1969 Nobel Prize in Chemistry. Who were the recipients of this prize? Describe the relevance of halogen bonding in biology. List the techniques that have been used to probe the nature of halogen bonded interactions and outline the molecular orbital description of such a bond. Explain what is measured by the diiodide basicity scale and give the assumptions on which the scale is based. Give the reference in which this scale was first mentioned.",
+      "type": "tutorial",
+      "page": 26
+    },
+    {
+      "number": "17.3",
+      "text": "In their paper \u2018Recent discoveries of polyhalogen anions\u2014 from bromine to fluorine\u2019 (Z. Anorg. Allg. Chem., 2014, 640, 7, 1281), H. Haller and S. Riedel described the synthesis and structure elucidation of several new polyhalide ions. (a) Outline the synthetic strategies that enabled these polyhalide ions to be synthesized. (b) Sketch the structures of the Br5 +, Br3\u2212 13, and Cl7 \u2212 ions. (c) Referring to earlier work on polyiodides, discuss how I3 \u2212 units coordinate to build up polyiodides.",
+      "type": "tutorial",
+      "page": 26
+    },
+    {
+      "number": "17.4",
+      "text": "The potential of organofluoro compounds in materials chemistry is discussed in a paper by R. Berger and co-workers (Chem. Soc. Rev., 2011, 40, 3496). One group of compounds discussed is the fluorinated fullerenes. Give an equation for the reaction of the most commonly used fluorinated fullerene with an organic species to form [18]trannulene and sketch the product. The use of fluorine in pharmaceuticals is also described in the paper. Summarize the reasons why fluorine finds wide application in pharmaceutical compounds.",
+      "type": "tutorial",
+      "page": 26
+    },
+    {
+      "number": "17.5",
+      "text": "The reaction of I\u2212 ions is often used to titrate ClO\u2212, giving deeply coloured \u2212I3 ions, along with Cl\u2212 and H2O. Although never proved, it was once thought that the initial reaction proceeds by O atom transfer from Cl to I. However, it is now believed that the reaction proceeds by Cl atom transfer to give ICl as the intermediate (K. Kumar, R.A. Day, and D.W. Margerum, Inorg. Chem., 1986, 25, 4344). Summarize the evidence for Cl atom transfer.",
+      "type": "tutorial",
+      "page": 26
+    },
+    {
+      "number": "17.6",
+      "text": "Until the work of K.O. Christe (Inorg. Chem., 1986, 25, 3721), F2 could be prepared only electrochemically. Give chemical equations for Christe\u2019s preparation and summarize the reasoning behind it.",
+      "type": "tutorial",
+      "page": 26
+    },
+    {
+      "number": "17.7",
+      "text": "The use of templates to synthesize long-chain polyiodide ions has been described (A.J. Blake et al., Chem. Soc. Rev., 1998, 27, 195). (a) According to the authors, what is the longest polyiodide that has been characterized? (b) How does the nature of the cation influence the structure of the polyanion? (c) What was the templating agent used for the synthesis of \u2212I7 and \u2212I12? (c) Which spectroscopic method was used for the characterization of the polyanions in this study?",
+      "type": "tutorial",
+      "page": 26
+    },
+    {
+      "number": "17.8",
+      "text": "Review published studies on the fluoridation of drinking water in your country. Summarize both the reasons for continuing fluoridation and the main concerns expressed by those opposed to it.",
+      "type": "tutorial",
+      "page": 26
+    },
+    {
+      "number": "17.9",
+      "text": "Write a review of the environmental problems associated with the use of chlorine-based bleaches in industry, and suggest possible solutions.",
+      "type": "tutorial",
+      "page": 26
+    },
+    {
+      "number": "17.10",
+      "text": "Write a review of the biological effects of excess iodine in the body. Discuss how iodine is used as a therapy for (a) an underactive and (b) an overactive thyroid gland.",
+      "type": "tutorial",
+      "page": 26
+    }
+  ]
+}

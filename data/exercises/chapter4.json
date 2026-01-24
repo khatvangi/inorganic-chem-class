@@ -1,0 +1,386 @@
+{
+  "chapter": 4,
+  "title": "The structures of simple solids",
+  "exercises": [
+    {
+      "number": "4.1",
+      "text": "What are the relationships between the unit cell parameters in the monoclinic crystal system? Draw a projection of a monoclinic cell viewed down the b axis and hence show that the packing of monoclinic unit cells will completely fill three-dimensional space.",
+      "type": "exercise",
+      "page": 56
+    },
+    {
+      "number": "4.2",
+      "text": "Draw a tetragonal unit cell and mark on it a set of points that would define (a) a face-centred lattice and (b) a body-centred lattice. Demonstrate, by considering two adjacent unit cells, that a tetragonal face-centred lattice of dimensions a and c can always be redrawn as a body-centred tetragonal lattice with dimensions a/\u221a2 and c.",
+      "type": "exercise",
+      "page": 56
+    },
+    {
+      "number": "4.3",
+      "text": "(a) Draw a cubic unit cell with lattice points at (\u00bd,0,0), (0,\u00bd,0), (0,0,\u00bd), and (\u00bd,\u00bd,\u00bd). What is the lattice type of this unit cell and how many lattice points are contained within the unit cell? (b) Draw an orthorhombic unit cell with lattice points at (0,0,0) and (\u00bd,\u00bd,0). What is the lattice type and how many lattice points are there in the unit cell?",
+      "type": "exercise",
+      "page": 56
+    },
+    {
+      "number": "4.4",
+      "text": "Draw a cubic unit cell (a) in projection (showing the fractional heights of the atoms) and (b) as a three-dimensional representation that has atoms at the following positions: Ti at ( , , ) 1 2 1 2 1 2 , O at ( , , 1 2 1 2 0), (0,\u2009 , 1 2 1 2 ), and ( ,0, ) 1 2 1 2 , and Ba at (0,0,0). Remember that a cubic unit cell with an atom on the cell face, edge, or corner will have equivalent atoms displaced by the unit cell repeat in any direction. What structure type is the cell? 146",
+      "type": "exercise",
+      "page": 56
+    },
+    {
+      "number": "4.5",
+      "text": "Which of the following schemes for the repeating pattern of close-packed planes are not ways of generating close-packed lattices? (a) CBACBA\u00a0.\u00a0.\u00a0., (b) ABAC\u00a0.\u00a0.\u00a0., (c) ABBA\u00a0.\u00a0.\u00a0., (d) ABCBC\u00a0.\u00a0.\u00a0., (e) ABABC\u00a0.\u00a0.\u00a0., (f) ABCBCA\u00a0.\u00a0.\u00a0..",
+      "type": "exercise",
+      "page": 57
+    },
+    {
+      "number": "4.6",
+      "text": "Determine the formulas of the compounds produced by (a) filling a quarter of the tetrahedral holes with cations M in a hexagonal close-packed array of anions X; (b) filling half the octahedral holes with cations M in a cubic close-packed array of anions X; (c) filling a sixth of the tetrahedral holes in a hcp array of M with X?",
+      "type": "exercise",
+      "page": 57
+    },
+    {
+      "number": "4.7",
+      "text": "Metallic copper adopts an fcc structure with density 8960\u2009kg\u2009m\u22123. Draw the unit cell of copper and mark the shortest copper atom to copper atom distance. How many copper atoms are there in the unit cell? Use the density and mass of the unit cell to determine the lattice parameter for copper and hence calculate a value for the metallic radius of copper.",
+      "type": "exercise",
+      "page": 57
+    },
+    {
+      "number": "4.8",
+      "text": "(a) Potassium reacts with C60 (Fig. 4.16) to give a compound in which all the octahedral and tetrahedral holes are filled by potassium ions. Derive a stoichiometry for this compound. (b) The reaction of C60 with excess potassium yields a material that has a body-centred arrangement of C60 molecules with two potassium ions along each unit cell edge; calculate the stoichiometry of this compound.",
+      "type": "exercise",
+      "page": 57
+    },
+    {
+      "number": "4.9",
+      "text": "In the structure of MoS2, the S atoms are arranged in close- packed layers that repeat themselves in the sequence AAA\u00a0.\u00a0.\u00a0.. The Mo atoms occupy holes with coordination number 6. Show that each Mo atom is surrounded by a trigonal prism of S atoms.",
+      "type": "exercise",
+      "page": 57
+    },
+    {
+      "number": "4.10",
+      "text": "Draw the bcc unit cell of tungsten metal and add a second neighbouring unit cell. What, approximately, is the CN of a site in the face of the original unit cell? What would be the stoichiometry of a compound in which all these sites were filled with carbon? Calculate the two shortest W-C distances for this structure if the unit cell lattice parameter is 3.60\u2009\u00c5.",
+      "type": "exercise",
+      "page": 57
+    },
+    {
+      "number": "4.11",
+      "text": "Metallic lithium adopts a bcc structure with density of 535\u2009kg\u2009m\u22123. What is the length of the edge of the unit cell?",
+      "type": "exercise",
+      "page": 57
+    },
+    {
+      "number": "4.12",
+      "text": "An alloy of copper and gold has the structure shown in Fig. 4.75. Calculate the composition of this unit cell. What is the lattice type of this structure? Given that 24-carat gold is pure gold, what carat gold does this alloy represent? coordination number of the cation and anion in each of these structures? (b) In which of these structures will Rb have the larger apparent ionic radius?",
+      "type": "exercise",
+      "page": 57
+    },
+    {
+      "number": "4.16",
+      "text": "Consider the structure of caesium chloride. How many Cs+ ions occupy second-nearest-neighbour locations of a Cs+ ion? How many Cl\u2212 ions occupy the third-nearest-neighbour sites?",
+      "type": "exercise",
+      "page": 57
+    },
+    {
+      "number": "4.17",
+      "text": "The ReO3 structure is cubic with a rhenium atom at each corner of the unit cell and one oxygen atom on each unit cell edge midway between the rhenium atoms. Sketch this unit cell and determine (a) the coordination numbers of the ions and (b) the identity of the structure type that would be generated if a cation were inserted in the centre of each ReO3 unit cell.",
+      "type": "exercise",
+      "page": 57
+    },
+    {
+      "number": "4.18",
+      "text": "Determine the composition of a compound based on the ReO3 structure, Exercise 4.17, where each of the oxide ions is replaced by a hydroxide ion [OH]\u2212. Predict, based on commonly adopted oxidation states, which elements in the periodic table might have hydroxides that adopt this structure type.",
+      "type": "exercise",
+      "page": 57
+    },
+    {
+      "number": "4.19",
+      "text": "Describe the coordination around the oxide ions in the perovskite structure, ABO3, in terms of coordination to the A- and B-type cations.",
+      "type": "exercise",
+      "page": 57
+    },
+    {
+      "number": "4.20",
+      "text": "Obtain formulae (MXn or MnX) for structures derived from hole-filling in close-packed arrays with (a) half the octahedral holes filled, (b) one-quarter of the tetrahedral holes filled, (c) two-thirds of the octahedral holes filled. What are the average coordination numbers of M and X in (a) and (b)?",
+      "type": "exercise",
+      "page": 57
+    },
+    {
+      "number": "4.21",
+      "text": "The perovskite structure, ABX3, can be described as a close- packed array of the A and X ions together, with B-type cations in octahedral holes. What proportion of octahedral holes is filled?",
+      "type": "exercise",
+      "page": 57
+    },
+    {
+      "number": "4.22",
+      "text": "Use radius-ratio rules and the ionic radii given in Resource section 1 to predict structures of (a) UO2, (b) FrI, (c) BeS, (d) InP.",
+      "type": "exercise",
+      "page": 57
+    },
+    {
+      "number": "4.23",
+      "text": "Given the following data for the length of a side of the unit cell for compounds that crystallize in the rock-salt structure, determine the cation radii: MgSe (545\u2009pm), CaSe (591\u2009pm), SrSe (623\u2009pm), BaSe (662\u2009pm). (Hint: To determine the radius of Se2\u2212, assume that the Se2\u2212 ions are in contact in MgSe.)",
+      "type": "exercise",
+      "page": 57
+    },
+    {
+      "number": "4.24",
+      "text": "Use the structure map in Fig. 4.47 to predict the coordination numbers of the cations and anions in (a) LiF, (b) RbBr, (c) SrS, (d) BeO. The observed coordination numbers are (6,6) for LiF, RbBr, and SrS and (4,4) for BeO. Propose a possible reason for any discrepancies.",
+      "type": "exercise",
+      "page": 57
+    },
+    {
+      "number": "4.25",
+      "text": "Describe how the structures of the following compounds could be described in terms of the simple structure types of Table",
+      "type": "exercise",
+      "page": 57
+    },
+    {
+      "number": "4.4",
+      "text": "but with complex ions replacing simple monoatomic cations and anions. (a) K2PtCl6, (b) [Ni(H2O)6][SiF6], (c) CsCN (d) CsPF6.",
+      "type": "exercise",
+      "page": 57
+    },
+    {
+      "number": "4.26",
+      "text": "The structure of calcite (CaCO3) is shown in Fig. 4.76. Describe how this structure is related to that of NaCl. Au Cu FIGURE 4.75 The structure of Cu3Au.",
+      "type": "exercise",
+      "page": 57
+    },
+    {
+      "number": "4.13",
+      "text": "Using a Ketelaar triangle, would you classify Sr2Ga (\u03c7(Sr)\u2009=\u20090.95; \u03c7(Ga)\u2009=\u20091.81) as an alloy or a Zintl phase?",
+      "type": "exercise",
+      "page": 57
+    },
+    {
+      "number": "4.14",
+      "text": "Classify the following materials using the electronegativity data in Table 1.7 and a Ketelaar triangle: (a) LiI, (b), BeBr2, (c) SnS, (d) RbSn.",
+      "type": "exercise",
+      "page": 57
+    },
+    {
+      "number": "4.15",
+      "text": "Depending on temperature, RbCl can exist in either the rock-salt or caesium-chloride structure. (a) What is the CO3 Ca2+ 2\u2013 FIGURE 4.76 The structure of CaCO3. 147",
+      "type": "exercise",
+      "page": 57
+    },
+    {
+      "number": "4.28",
+      "text": "What are the most significant terms in the Born\u2013Haber cycle for the formation of Ca3N2?",
+      "type": "exercise",
+      "page": 58
+    },
+    {
+      "number": "4.29",
+      "text": "Explain, by considering the magnitude of the key terms in the Born\u2013Haber cycle that involve the halogen or halide ion, why AgF2 exists but AgCl2 does not.",
+      "type": "exercise",
+      "page": 58
+    },
+    {
+      "number": "4.30",
+      "text": "On the basis of the factors that contribute to lattice enthalpies, place LiF, SrO, RbCl, AlP, NiO, and CsI, all of which adopt the rock-salt structure, in order of increasing lattice enthalpy.",
+      "type": "exercise",
+      "page": 58
+    },
+    {
+      "number": "4.31",
+      "text": "By considering the parameters that change in the Born\u2013 Mayer expression, estimate lattice enthalpies for MgO and AlN, given that MgO and AlN adopt the rock-salt structure with very similar lattice parameters to NaCl and (NaCl) 786kJmol L 1 \u2206 = \u2212 \u2212\u2212 \u25cb H .",
+      "type": "exercise",
+      "page": 58
+    },
+    {
+      "number": "4.32",
+      "text": "(a) Calculate the enthalpy of formation of the hypothetical compound KF2 assuming a CaF2 structure. Use the Born\u2013Mayer equation to obtain the lattice enthalpy and estimate the radius of K2+ by extrapolation of trends in Table 1.4 and Resource section 1. Ionization enthalpies and electron gain enthalpies are given in Tables 1.5 and 1.6. (b) What factor prevents the formation of this compound despite the favourable lattice enthalpy?",
+      "type": "exercise",
+      "page": 58
+    },
+    {
+      "number": "4.33",
+      "text": "The common oxidation number for an alkaline earth metal is +2. Using the Born\u2013Mayer equation and a Born\u2013Haber cycle, show that CaCl is an exothermic compound. Use a suitable analogy to estimate an ionic radius for Ca+. The sublimation enthalpy of Ca(s) is 176\u2009kJ\u2009mol\u22121. Show that an explanation for the nonexistence of CaCl can be found in the enthalpy change for the reaction 2\u2009CaCl(s)\u2009\u2192\u2009Ca(s) + CaCl2(s).",
+      "type": "exercise",
+      "page": 58
+    },
+    {
+      "number": "4.34",
+      "text": "Determine the first four terms in the expression for the Madelung constant calculation for the CsCl structure.",
+      "type": "exercise",
+      "page": 58
+    },
+    {
+      "number": "4.35",
+      "text": "(a) Explain why lattice energy calculations based on the Born\u2013Mayer equation reproduce the experimentally determined values to within 1 per cent for LiCl but only 10 per cent for AgCl, given that both compounds have the rock-salt structure. (b) Identify a pair of compounds containing M2+ ions that might be expected to show similar behaviour.",
+      "type": "exercise",
+      "page": 58
+    },
+    {
+      "number": "4.36",
+      "text": "Use the Kapustinskii equation and the ionic and thermochemical radii given in Resource section 1 and Table 4.10, and r(Bk4+)\u2009=\u200996\u2009pm to calculate lattice enthalpies of (a) BkO2, (b) K2SiF6, and (c) LiClO4.",
+      "type": "exercise",
+      "page": 58
+    },
+    {
+      "number": "4.37",
+      "text": "Which member of each pair is likely to be more soluble in water: (a) BaSeO4 or CaSeO4, (b) NaF or NaBF4?",
+      "type": "exercise",
+      "page": 58
+    },
+    {
+      "number": "4.38",
+      "text": "Infrared spectrometers can have optical windows made of NaCl, KBr, or CsI. What is the disadvantage of using CsI optics?",
+      "type": "exercise",
+      "page": 58
+    },
+    {
+      "number": "4.39",
+      "text": "Recommend a specific cation for the quantitative precipitation of selenate ion, SeO4 2\u2212, from water. Suggest two different cations, one that would have a soluble phosphate (PO4 3\u2212) and the other a highly insoluble phosphate.",
+      "type": "exercise",
+      "page": 58
+    },
+    {
+      "number": "4.40",
+      "text": "Which of the following pairs of isostructural compounds are likely to undergo thermal decomposition at lower temperature? Give your reasoning. (a) MgCO3 and CaCO3 (decomposition products MO\u2009+\u2009CO2). (b) CsI3 and N(CH3)4I3 (both compounds contain the [I3]\u2212 anion; decomposition products MI + I2).",
+      "type": "exercise",
+      "page": 58
+    },
+    {
+      "number": "4.41",
+      "text": "The anion [ICl4]\u2212 may be synthesized by bubbling Cl2(g) through a solution of iodide ions. This complex anionic species can undergo decomposition, losing Cl2, to form initially [ICl2]\u2212 and eventually regenerating I\u2212. Suggest a counter-ion you could use to crystallize [ICl4]\u2212 and prevent its decomposition.",
+      "type": "exercise",
+      "page": 58
+    },
+    {
+      "number": "4.42",
+      "text": "Predict what type of intrinsic defect is most likely to occur in (a) Ca3N2, (b) HgS.",
+      "type": "exercise",
+      "page": 58
+    },
+    {
+      "number": "4.43",
+      "text": "By considering which dopant ions produce the blue of sapphires, provide an explanation for the origin of the colour in the blue form of beryl known as aquamarine.",
+      "type": "exercise",
+      "page": 58
+    },
+    {
+      "number": "4.44",
+      "text": "For which of the following compounds might significant levels of nonstoichiometry be found: aluminium oxide, vanadium carbide, manganese sulfide?",
+      "type": "exercise",
+      "page": 58
+    },
+    {
+      "number": "4.45",
+      "text": "Explain why higher levels of defects are found in solids at high temperatures and close to their melting points. How would pressure affect the equilibrium number of defects in a solid?",
+      "type": "exercise",
+      "page": 58
+    },
+    {
+      "number": "4.46",
+      "text": "By considering the effect on the lattice energies of incorporating large numbers of defects and the resultant changes in oxidation numbers of the ions making up the structure, predict which of the following systems should show nonstoichiometry over a large range of x: Zn1+xO, Fe1\u2212xO, UO2+x.",
+      "type": "exercise",
+      "page": 58
+    },
+    {
+      "number": "4.47",
+      "text": "Classify the following as n- or p-doped semiconductors: (a) Ga-doped Ge, (b) As-doped Si, (c) In0.49As0.51.",
+      "type": "exercise",
+      "page": 58
+    },
+    {
+      "number": "4.48",
+      "text": "Would VO or NiO be expected to show metallic properties?",
+      "type": "exercise",
+      "page": 58
+    },
+    {
+      "number": "4.49",
+      "text": "Describe the difference between a semiconductor and a semimetal.",
+      "type": "exercise",
+      "page": 58
+    },
+    {
+      "number": "4.50",
+      "text": "Classify the following as to whether they are likely to show n- or p-type semiconductivity: Ag2S, VO2, CuBr.",
+      "type": "exercise",
+      "page": 58
+    },
+    {
+      "number": "4.51",
+      "text": "Graphite is a semimetal with a band structure of the type shown in Fig. 4.70. Reaction of graphite with potassium produces C8K while reaction with bromine yields C8Br. Assuming the graphite sheets remain intact and potassium and bromine enter the graphite structure as K+ and Br\u2212 ions, respectively, discuss whether you would expect the compounds C8K and C8Br to exhibit metallic, semimetallic, semiconducting, or insulating properties.",
+      "type": "exercise",
+      "page": 58
+    },
+    {
+      "number": "4.27",
+      "text": "The projection representation of a unit cell of an ionic crystal of the binary compound ApBq is shown in Fig. 4.77. Determine the stoichiometry and the number of formula units in the unit cell. State the coordination number and coordination geometry of ions A and B. Give an example of a compound that adopts this structure, and comment on how a derivative of this structure could exist with the formula ApB2q. (0,1) \u00bd 5/8 1/8 A B FIGURE 4.77 Compound ApBq 148",
+      "type": "exercise",
+      "page": 58
+    }
+  ],
+  "tutorial_problems": [
+    {
+      "number": "4.1",
+      "text": "Both ccp and hcp have identical close-packed volumes, but the calculated Gibbs free energy of the two arrangements shows that ccp is more stable by 0.002\u20130.012\u2009kJ\u2009mol\u22121 at room temperature (L.V. Woodcock, Nature, 1997, 385, 141, P.G. Bolhuis, D. Frenkel, S-C Mau and D.A. Huse, Nature, 1997, 388, 235). Determine independently the number of neighbours in the first five coordination shells for these two close-packed structures and, thereby, describe the origin of this difference in free energy.",
+      "type": "tutorial",
+      "page": 59
+    },
+    {
+      "number": "4.2",
+      "text": "Calculate the number of atoms present in a cubic gold nanoparticle of dimensions 2 \u00d7 2 \u00d7 2\u2009nm3; gold adopts an fcc unit cell with lattice parameter of 400\u2009pm. Discuss how the size of silver and gold nanoparticles affects their colour and how this has led to their historical application in stained glass.",
+      "type": "tutorial",
+      "page": 59
+    },
+    {
+      "number": "4.3",
+      "text": "The relative positons of tetrahedral and octahedral holes between close-packed layers may be described using the PTOT system, where P represents a close-packed layer, and T and O the tetrahedral and octahedral holes, respectively. Use this description and the formation of \u2018stuffed\u2019 PTOT arrangements (B.E. Douglas, J. Chem. Educ., 2007, 84, 1846) to describe the structures of (a) Li3Bi, (b) CdCl2, (c) MoS2, and (d) BeAl2O4.",
+      "type": "tutorial",
+      "page": 59
+    },
+    {
+      "number": "4.4",
+      "text": "By considering the rock-salt structure and the distances and charges around one central ion, show that the first six terms of the Na+ Madelung series are 6 1 12 2 8 3 6 4 24 5 24 6 \u2212 + \u2212 + \u2212 \u0003Discuss methods for showing that this series converges to 1.748 by reference to R.P. Grosso, J.T. Fermann, and W.J. Vining, J. Chem. Educ., 2001, 78, 1198.",
+      "type": "tutorial",
+      "page": 59
+    },
+    {
+      "number": "4.5",
+      "text": "Nanocrystals with dimensions of 1\u201310 nm are of increasing importance in technological applications (see Chapter 24). The calculation of the Madelung constant for a particular structure type requires the summation of an infinite series of terms, and this method is not applicable to a crystal of nanometre dimensions. Discuss how the concept of a Madelung factor, A*, may be used to describe the total ionic interactions in nanocrystals. How does A* vary as a function of nanocrystal size for (a) the NaCl structure type and (b) the CsCl structure type? How might the properties of a nanocrystal differ from the bulk solid as a result? See M.D. Baker and A.D. Baker, J. Chem. Educ., 2010, 87, 280.",
+      "type": "tutorial",
+      "page": 59
+    },
+    {
+      "number": "4.6",
+      "text": "Discuss the thermodynamic factors behind the observation that CuO is a well-known, stable oxide of Cu(II) but AgO is a mixed-valence oxide, Ag(I)Ag(III)O2. See D. Tudela, J. Chem. Educ., 2008, 85, 863. AgF2 is a stable compound of Ag(II); discuss what factors might contribute to the stability of Ag(II) in combination with fluoride.",
+      "type": "tutorial",
+      "page": 59
+    },
+    {
+      "number": "4.7",
+      "text": "The Kapustinskii equation shows that lattice enthalpies are inversely proportional to the interionic distances. Later work has shown that further simplification of the Kapustinskii equation allows lattice enthalpies to be estimated from the molecular (formula) unit volume (the unit cell volume divided by the number of formula units, Z, that it contains) or the mass density (see, for example, H.D.B. Jenkins and D. Tudela, J. Chem. Educ., 2003, 80, 1482). How would you expect the lattice enthalpy to vary as a function of (a) the molecular unit volume and (b) the mass density? Given the following unit cell volumes (all in cubic angstroms, \u00c53; 1\u2009\u00c5\u2009=\u200910\u221210\u2009m) for the alkaline earth carbonates MCO3 and oxides, predict the observed decomposition behaviour of the carbonates. MgCO3 CaCO3 SrCO3 BaCO3 47 61 64 76 MgO CaO SrO BaO 19 28 34 42",
+      "type": "tutorial",
+      "page": 59
+    },
+    {
+      "number": "4.8",
+      "text": "The following linear correlation, sometimes referred to as Bartlett\u2019s relationship, has been found between lattice enthalpy (kJ\u2009mol\u22121) and the inverse cube root of the formula unit volume V (in nm3) for 1:1 MX salts. 232.8 110 3 \u2206 = + H V L \u0003Show that this expression is related to the Kapustinskii equation. \u0003Formula unit cell volumes are readily obtainable from X-ray diffraction studies of crystalline, ionic MX structures and, therefore, Bartlett\u2019s relationship may be used where individual thermochemical radii are not available. Discuss how application of this relationship has been used to account for the inability to synthesize [I2]+[AlCl4]\u2212 and the instability of [I3]+[AsF6]\u2212 (H.D.B. Jenkins, H.K. Roobottom, J. Passmore, and L. Glasser, Inorg. Chem., 1999, 38, 3609).",
+      "type": "tutorial",
+      "page": 59
+    },
+    {
+      "number": "4.9",
+      "text": "The analysis undertaken in Problem 4.8 may be extended to give the \u2018isomegethic rule\u2019 which states that \u2018The formula unit volumes, Vm, of isomeric ionic salts are approximately the same\u2019; see H.D.B. Jenkins et al., Inorg. Chem., 2004, 43, 6238, and L. Glasser, J. Chem. Educ., 2011, 88, 581. Discuss the basis for this \u2018rule\u2019 and its applications in solid-state chemistry.",
+      "type": "tutorial",
+      "page": 59
+    },
+    {
+      "number": "4.10",
+      "text": "Discuss the \u2018water-bottle\u2019 analogy in interpreting the electronic properties of metallic, insulating and semiconducting solids (P.F. Weller, J. Chem. Educ., 1967, 44, 391).",
+      "type": "tutorial",
+      "page": 59
+    },
+    {
+      "number": "4.11",
+      "text": "\u2018Band theory is less helpful than Mott\u2013Hubbard theory . . . in explaining conductivity and semiconductivity to introductory students\u2019 (S.J. Hawkes, J. Chem. Educ., 2012, 89, 694). Describe the Mott\u2013Hubbard model and its applications in explaining how metallic behaviour can arise in solids.",
+      "type": "tutorial",
+      "page": 59
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "chapter": 14,
+  "title": "The Group 14 elements",
+  "exercises": [
+    {
+      "number": "14.1",
+      "text": "Correct any inaccuracies in the following descriptions of Group 14 chemistry: (a)\u2002 None of the elements in this group is a metal. (b)\u2002 At very high pressures, diamond is a thermodynamically stable phase of carbon. (c)\u2002 Both CO2 and CS2 are weak Lewis acids and the hardness increases from CO2 to CS2. (d)\u2002 Zeolites are layered materials exclusively composed of aluminosilicates. (e)\u2002 The reaction of calcium carbide with water yields ethyne and this product reflects the presence of a highly basic C2 2\u2212 ion in calcium carbide.",
+      "type": "exercise",
+      "page": 32
+    },
+    {
+      "number": "14.2",
+      "text": "The lightest p-block elements often display different physical and chemical properties from the heavier members. Discuss the similarities and differences by comparison of: (a)\u2002 The structures and electrical properties of carbon and silicon (b)\u2002 The physical properties and structures of the oxides of carbon and silicon (c)\u2002 The Lewis acid\u2013base properties of the tetrahalides of carbon and silicon.",
+      "type": "exercise",
+      "page": 32
+    },
+    {
+      "number": "14.3",
+      "text": "Silicon forms the chlorofluorides SiCl3F, SiCl2F2, and SiClF3. Sketch the structures of these molecules. What are their point groups?",
+      "type": "exercise",
+      "page": 32
+    },
+    {
+      "number": "14.4",
+      "text": "As well as Ge3F8 (Example 14.2) compounds with the stoichiometries Ge5F12 and Ge7F16 have been reported. Explain how these seemingly unusual stoichiometries can arise for germanium.",
+      "type": "exercise",
+      "page": 32
+    },
+    {
+      "number": "14.5",
+      "text": "Explain why CH4 burns in air whereas CF4 does not. The enthalpy of combustion of CH4 is \u2212888 kJ mol\u22121 and the C\u2013H and C\u2013F bond enthalpies are \u2212412 and \u2212486 kJ mol\u22121, respectively.",
+      "type": "exercise",
+      "page": 32
+    },
+    {
+      "number": "14.6",
+      "text": "Describe the types of bonding in the structures of SiF4 and PbF2. Explain why these are so different.",
+      "type": "exercise",
+      "page": 32
+    },
+    {
+      "number": "14.7",
+      "text": "SiF4 reacts with (CH3)4NF to form [(CH3)4N][SiF5]. (a) Use the VSEPR rules to determine the shape of the cation and anion in the product. (b) Account for the fact that the 19F-NMR spectrum shows two fluorine environments.",
+      "type": "exercise",
+      "page": 32
+    },
+    {
+      "number": "14.8",
+      "text": "Draw the structure and determine the charge on the cyclic anion [Si4O12]n\u2212.",
+      "type": "exercise",
+      "page": 32
+    },
+    {
+      "number": "14.9",
+      "text": "Predict the appearance of (i) the 119Sn-NMR spectrum and (ii) the 31P-NMR spectrum of (CH3)3SnPH2, (trimethylstannyl) phosphine.",
+      "type": "exercise",
+      "page": 32
+    },
+    {
+      "number": "14.10",
+      "text": "Use the data in Table 14.2 and the additional bond enthalpy data given here to calculate the enthalpy of hydrolysis of CCl4 and CBr4. Bond enthalpies/kJ\u2009mol\u22121: O\u2013H = 463, H\u2013Cl = 431, H\u2013Br = 366.",
+      "type": "exercise",
+      "page": 32
+    },
+    {
+      "number": "14.11",
+      "text": "Identify the compounds A to F.",
+      "type": "exercise",
+      "page": 32
+    },
+    {
+      "number": "14.12",
+      "text": "(a) Summarize the trends in relative stabilities of the oxidation states of the elements of Group 14, and indicate the elements that display the inert-pair effect. (b) With this information in mind, write balanced chemical reactions or NR (for no reaction) for the following combinations, and explain how the answer fits the trends: (i) + \uf8e7 \u2192 \uf8e7\uf8e7\uf8e7\uf8e7 + Sn (aq) PbO (s)(excess) air excluded 2 2 (ii)\u2002 Sn2+(aq) + O2(air) \u2192",
+      "type": "exercise",
+      "page": 32
+    },
+    {
+      "number": "14.13",
+      "text": "Explain why PbI4 is unknown while reaction of Pb with fluorine yields PbF4.",
+      "type": "exercise",
+      "page": 32
+    },
+    {
+      "number": "14.14",
+      "text": "Why does silicon occur naturally in silicates while the major ore of lead is the sulfide galena, PbS?",
+      "type": "exercise",
+      "page": 32
+    },
+    {
+      "number": "14.15",
+      "text": "Give balanced chemical equations and conditions for the recovery of silicon and germanium from their ores.",
+      "type": "exercise",
+      "page": 32
+    },
+    {
+      "number": "14.16",
+      "text": "(a) Describe the trend in band gap energy, Eg, for the elements carbon (diamond) to tin (grey). (b) Explain whether the electrical conductivity of silicon increases or decreases when its temperature is changed from 20\u00b0C to 40\u00b0C.",
+      "type": "exercise",
+      "page": 32
+    },
+    {
+      "number": "14.17",
+      "text": "Preferably without consulting reference material, draw a periodic table and indicate the elements that form saline, metallic, and metalloid carbides.",
+      "type": "exercise",
+      "page": 32
+    },
+    {
+      "number": "14.18",
+      "text": "Describe the preparation, structure, and classification of (a) KC8, (b) CaC2, (c) K3C60.",
+      "type": "exercise",
+      "page": 32
+    },
+    {
+      "number": "14.19",
+      "text": "Write balanced chemical equations for the reactions of K2CO3 with HCl(aq) and of Na4SiO4 with aqueous acid.",
+      "type": "exercise",
+      "page": 32
+    },
+    {
+      "number": "14.20",
+      "text": "Explain why silicon can exhibit six-fold coordination in [SiF6]2\u2212 but the [SiCl6]2\u2212 anion is unknown.",
+      "type": "exercise",
+      "page": 32
+    },
+    {
+      "number": "14.21",
+      "text": "Describe in general terms the nature of the [SiO ] 3 2 \u2212 n n  ion present in jadeite.",
+      "type": "exercise",
+      "page": 32
+    },
+    {
+      "number": "14.22",
+      "text": "Three SiO4 units can link together to form a short chain of composition [Si3O10]8\u2212 or a cyclic unit of stoichiometry [Si3O9]6\u2212. How could 29Si NMR be used to distinguish these two polymeric anions?",
+      "type": "exercise",
+      "page": 32
+    },
+    {
+      "number": "14.23",
+      "text": "Describe the physical properties of pyrophyllite and muscovite mica and explain how these properties arise from the composition and structures of these closely related aluminosilicates.",
+      "type": "exercise",
+      "page": 32
+    },
+    {
+      "number": "14.24",
+      "text": "There are major commercial applications for semicrystalline and amorphous solids, many of which are formed by Group 14 elements or their compounds. List four different examples of amorphous or partially crystalline solids described in this chapter and briefly state their useful properties.",
+      "type": "exercise",
+      "page": 32
+    },
+    {
+      "number": "14.25",
+      "text": "The layered silicate compound CaAl2(Al2Si2)O10(OH)2 contains a double aluminosilicate layer, with both Si and Al in four-coordinate sites. Sketch an edge-on view of a reasonable structure for the double layer, involving only vertex sharing between the SiO4 and AlO4 units. Discuss the likely sites occupied by Ca2+ in relation to the silica\u2013alumina double layer.",
+      "type": "exercise",
+      "page": 32
+    },
+    {
+      "number": "14.26",
+      "text": "Describe the key compositional and structural features of \u2018silly putty\u2019. Si Cl2 A H2O E RLi B H2O C RMgBr F D heat 444",
+      "type": "exercise",
+      "page": 32
+    }
+  ],
+  "tutorial_problems": [
+    {
+      "number": "14.1",
+      "text": "The chemical properties of flerovium, element 114, are predicted to be significantly different from those of the other members of Group 14 (P. Schwerdtfeger and M. Seth, J. Nucl. Radiochem. Sci., 2002, 3, 133). Specifically, the only oxidation state exhibited by Fl will be +2 and the element will be chemically highly inert. Do these predictions follow the observed trends in Group 14? Your discussion should include the role of relativistic effects on the energies of the 7s and 7p orbitals in the superheavy elements.",
+      "type": "tutorial",
+      "page": 33
+    },
+    {
+      "number": "14.2",
+      "text": "Discuss the solid-state chemistry of silicon in silicates with reference to how the various structures can be built up from SiO4 tetrahedra linked into polymeric anions, chains, rings, sheets, and three-dimensional networks.",
+      "type": "tutorial",
+      "page": 33
+    },
+    {
+      "number": "14.3",
+      "text": "One of your friends is studying English and is taking a course in science fiction. A common theme in the sources is silicon-based life forms. Your friend wonders why silicon should be chosen and why all life is carbon-based. Prepare a short article that presents arguments for and against silicon-based life.",
+      "type": "tutorial",
+      "page": 33
+    },
+    {
+      "number": "14.4",
+      "text": "Karl Marx remarked in Das Kapital that \u2018If we could succeed, at a small expenditure of labour, in converting carbon into diamonds, their value might fall below that of bricks.\u2019 Review current methods of synthesizing diamonds and discuss why these developments have not resulted in a large decrease in the value of diamonds.",
+      "type": "tutorial",
+      "page": 33
+    },
+    {
+      "number": "14.5",
+      "text": "In their paper \u2018Mesoporous silica nanoparticles in biomedical applications\u2019, Li Zongxi et al. (Chem. Soc. Rev., 2012, 41, 2590) discuss the utility of mesoporous silica nanoparticles (MSNPs) as supports for the delivery of therapeutic drugs in the body. What are the properties of MSNPs that make them particularly suitable for these applications? Describe how the rate of drug release is controlled. Outline the synthetic methods used to produce the MSNPs and identify the chemists who first synthesized MSNPs.",
+      "type": "tutorial",
+      "page": 33
+    },
+    {
+      "number": "14.6",
+      "text": "In the paper \u2018Developing drug molecules for therapy with carbon monoxide\u2019 (Chem. Soc. Rev., 2012, 41, 3571), the authors discuss the use of carbon monoxide as a therapeutic agent for treating diseased tissue. Outline the problems associated with using CO as a therapeutic agent and how the authors overcame some of these.",
+      "type": "tutorial",
+      "page": 33
+    },
+    {
+      "number": "14.7",
+      "text": "One way of addressing the effects of CO2 emissions on the atmosphere is to use it as a chemical feedstock in the production of useful chemicals, fuels and polymers (M. Aresta and A. Dibenedetto, Dalton Trans., 2007, 2975; C.-H. Huang and C.-S. Tan, Aerosol Air Qual. Res., 2014, 14, 480). Summarize the various approaches to using CO2 as a feedstock and the chemistry involved in the production of organic compounds.",
+      "type": "tutorial",
+      "page": 33
+    },
+    {
+      "number": "14.8",
+      "text": "The paper \u2018Metallacarboranes and their interactions: theoretical insights and their applicability\u2019 (P. Farr\u00e0s et al., Chem. Soc. Rev., 2012, 41, 3445) discusses the properties of metallacarboranes and how they can be analysed using computational methods. Outline the properties of metallacarboranes that were investigated and describe the principles of the computational methods used to model them.",
+      "type": "tutorial",
+      "page": 33
+    },
+    {
+      "number": "14.9",
+      "text": "The combination of mesoporosity with semiconductivity would produce materials with interesting properties. A synthesis of such a material was discussed in \u2018Hexagonal mesoporous germanium\u2019 by S. Gerasimo et al. (Science, 2006, 313, 5788). Summarize the expected advantages of such a material and describe how the mesoporous germanium was synthesized.",
+      "type": "tutorial",
+      "page": 33
+    },
+    {
+      "number": "14.10",
+      "text": "Many potentially useful semiconducting materials for photovoltaic applications contain Group 14 elements in sulfides. Examples include Cu2ZnSnS4 (CZTS) and SnS which have been studied because they contain nontoxic elements that are relatively abundant on Earth. Describe the structures and properties of these sulfide materials and include a discussion of the sustainability of these Group 14 element-based materials in comparison with CdTe and CIGS (copper indium gallium sulfide).",
+      "type": "tutorial",
+      "page": 33
+    },
+    {
+      "number": "14.11",
+      "text": "Hybrid organic-inorganic lead and tin iodide perovskites are potential low cost, solution-synthesized semiconductors for solar cell applications (T.M. Brenner, D.A. Egger, L. Kronik, G. Hodes, and D. Cahen, Nat. Rev. Mater., 2016, 1, Article 15007). Summarize the recent advances made with these materials focusing on their synthesis, structures, and chemical properties.",
+      "type": "tutorial",
+      "page": 33
+    },
+    {
+      "number": "14.12",
+      "text": "In \u2018An atomic seesaw switch formed by tilted asymmetric Sn\u2013Ge dimers on a Ge (001) surface\u2019 (Science, 2007, 315, 1696), K. Tomatsu et al. describe the synthesis and operation of a molecular switch. Describe how such molecular switches operate and summarize their current and potential applications.",
+      "type": "tutorial",
+      "page": 33
+    }
+  ]
+}

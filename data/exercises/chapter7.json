@@ -1,0 +1,91 @@
+{
+  "chapter": 7,
+  "title": "An introduction to coordination compounds",
+  "exercises": [],
+  "tutorial_problems": [
+    {
+      "number": "7.1",
+      "text": "The compound Na2IrCl6 reacts with triphenylphosphine in diethylene glycol in an atmosphere of CO to give trans-[IrCl(CO) (PPh3)2], known as \u2018Vaska\u2019s compound\u2019. Excess CO gives a five- coordinate species and treatment with NaBH4 in ethanol gives [IrH(CO)2(PPh3)2]. Derive a formal name for Vaska\u2019s compound. Draw and name all isomers of the two five-coordinate complexes.",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "7.2",
+      "text": "A pink solid has the formula CoCl3.5NH3.H2O. A solution of this salt is also pink and rapidly gives 3\u2009mol AgCl on titration with silver nitrate solution. When the pink solid is heated, it loses 1\u2009mol H2O to give a purple solid with the same ratio of NH3:Cl:Co. The purple solid, on dissolution and titration with AgNO3, releases two of its chlorides rapidly. Deduce the structures of the two octahedral complexes and draw and name them.",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "7.3",
+      "text": "The hydrated chromium chloride that is available commercially has the overall composition CrCl3\u00b76H2O. On boiling a solution, it becomes violet and has a molar electrical conductivity similar to that of [Co(NH3)6]Cl3. By contrast, another form of CrCl3\u00b76H2O is green and has a lower molar conductivity in solution. If a dilute acidified solution of the green complex is allowed to stand for several hours, it turns violet. Interpret these observations with structural diagrams.",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "7.4",
+      "text": "The complex first denoted \u03b2-[PtCl2(NH3)2] was identified as the trans isomer. (The cis isomer was denoted \u03b1.) It reacts slowly with solid Ag2O to produce [Pt(NH3)2(OH2)2]2+. This complex does not react with 1,2-diaminoethane to give a chelated complex. Name and draw the structure of the diaqua complex. A third isomer of composition PtCl2\u00b72NH3 is an insoluble solid that, when ground with AgNO3, gives a mixture containing [Pt(NH3)4] (NO3)2 and a new solid phase of composition Ag2[PtCl4]. Give the structures and names of each of the three Pt(II) compounds.",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "7.5",
+      "text": "Air oxidation of Co(II) carbonate and aqueous ammonium chloride gives a pink chloride salt with a ratio of 4NH3:Co. On addition of HCl to a solution of this salt, a gas is rapidly evolved and the solution slowly turns violet on heating. Complete evaporation of the violet solution yields CoCl3\u00b74NH3. When this product is heated in concentrated HCl, a green salt can be isolated with composition CoCl3\u00b74NH3\u00b7HCl. Write balanced equations for all the transformations occurring after the air oxidation. Give as much information as possible concerning the isomerism occurring, and the basis of your reasoning. Is it helpful to know that the form of [Co(Cl)2(en)2]+ that is resolvable into enantiomers is violet?",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "7.6",
+      "text": "When cobalt(II) salts are oxidized by air in a solution containing ammonia and sodium nitrite, a yellow solid, [Co(NO2)3(NH3)3], can be isolated. In solution it is nonconducting; treatment with HCl gives a complex that, after a series of further reactions, can be identified as trans- [Co(Cl)2(NH3)3(OH2)]+. It requires an entirely different route to prepare cis-[Co(Cl)2(NH3)3(OH2)]+. Is the yellow substance fac or mer? What assumption must you make to arrive at a conclusion?",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "7.7",
+      "text": "The reaction of [ZrCl4(dppe)] with Mg(CH3)2 gives [Zr(CH3)4(dppe)]. NMR spectra indicate that all methyl groups are equivalent. Draw octahedral and trigonal prism structures for the complex and show how the conclusion from NMR supports the trigonal prism assignment (P.M. Morse and G.S. Girolami, J. Am. Chem. Soc., 1989, 111, 4114).",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "7.8",
+      "text": "The resolving agent d-cis[Co(NO2)2(en)2]Br can be converted to the soluble nitrate by grinding in water with AgNO3. Outline the use of this species for resolving a racemic mixture of the d and l enantiomers of K[Co(edta)]. (The l-[Co(edta)]\u2212 enantiomer forms the less soluble diastereomer; see F.P. Dwyer and F.L. Garvan, Inorg. Synth., 1965, 6, 192.)",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "7.9",
+      "text": "Show how the coordination of two MeHNCH2CH2NH2 ligands to a metal atom in a square-planar complex results in not only cis and trans but also optical isomers. Identify the mirror planes in the isomers that are not chiral.",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "7.10",
+      "text": "Use a group-theory analysis to assign point groups to the all cis and all trans isomers of [MA2B2C2]; use the character tables associated with each to determine whether they are chiral or not.",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "7.11",
+      "text": "BINAP is a chelating diphosphine ligand shown below. Discuss the reasons for the observed chirality of BINAP, and of its complexes. PPh2 PPh2",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "7.12",
+      "text": "The equilibrium constants for the successive reactions of 1,2-diaminoethane with Co2+, Ni2+, and Cu2+ are as follows: [M(OH ) ] en [M(en)(OH ) ] 2H O [M(en)(OH ) ] en [M(en) (OH ) ] 2H O [M(en) (OH ) ] en [M(en) ] 2H O 2 6 2 2 4 2 2 1 2 4 2 2 2 2 2 2 2 2 2 2 2 3 2 2 3 \u21cb \u21cb \u21cb + + + + + + + + + + + + K K K Ion log\u2009K1 log\u2009K2 log\u2009K3 Co2+ 5.89 4.83 3.10 Ni2+ 7.52 6.28 4.26 Cu2+ 10.72 9.31 \u22121.0 Discuss whether these data support the generalizations in the text about successive formation constants. How do you account for the very low value of K3 for Cu2+?",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "7.13",
+      "text": "How may the aromatic character of a chelate ring provide additional stabilization of a complex? See A. Crispini and M. Ghedini, J. Chem. Soc., Dalton Trans., 1997, 75.",
+      "type": "tutorial",
+      "page": 28
+    },
+    {
+      "number": "7.14",
+      "text": "What are rotaxanes, and how do they differ from pseudorotaxanes? Discuss how coordination chemistry might be used to synthesize such molecules.",
+      "type": "tutorial",
+      "page": 28
+    }
+  ]
+}

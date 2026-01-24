@@ -1,0 +1,230 @@
+{
+  "chapter": 20,
+  "title": "d-Metal complexes:electronic structure and properties",
+  "exercises": [
+    {
+      "number": "20.1",
+      "text": "Determine the configuration (in the form x y t e 2g g or x y e t2, as appropriate), the number of unpaired electrons, and the ligand- field stabilization energy in terms of \u0394O or \u0394T and P for each of the following complexes. Use the spectrochemical series to decide, where relevant, which are likely to be high-spin and which low-spin. (a) [Co(NH3)6]3+, (b) [Fe(OH2)6]2+, (c) [Fe(CN)6]3\u2212, (d) [Cr(NH3)6]3+, (e) [W(CO)6], (f) tetrahedral [FeCl4]2\u2212, (g) tetrahedral [NiCl4]2\u2212.",
+      "type": "exercise",
+      "page": 34
+    },
+    {
+      "number": "20.2",
+      "text": "Both H\u2212 and P(C6H5)3 are ligands of similar field strength, high in the spectrochemical series. Recalling that phosphines act as \u03c0 acceptors, is \u03c0-acceptor character required for strong-field behaviour? What orbital factors account for the field strength of each ligand?",
+      "type": "exercise",
+      "page": 34
+    },
+    {
+      "number": "20.3",
+      "text": "Estimate the spin-only contribution to the magnetic moment for each complex in Exercise 20.1.",
+      "type": "exercise",
+      "page": 34
+    },
+    {
+      "number": "20.4",
+      "text": "Match each of the magnetic moments, 3.8, 0, 1.8, 5.9 (in \u00b5B), with one of the species: [Fe(CN)6]3\u2212, [Fe(H2O)6]3+, [CrO4]2\u2212, [Cr(H2O)6]3+.",
+      "type": "exercise",
+      "page": 34
+    },
+    {
+      "number": "20.5",
+      "text": "Solutions of the complexes [Co(NH3)6]2+, [Co(OH2)6]2+ (both Oh), and [CoCl4]2\u2212 are coloured. One is pink (absorbs blue light), another is yellow (absorbs violet light), and the third is blue (absorbs red light). Considering the spectrochemical series and the relative magnitudes of \u0394T and \u0394O, assign each colour to one of the complexes.",
+      "type": "exercise",
+      "page": 34
+    },
+    {
+      "number": "20.6",
+      "text": "For each of the following pairs of complexes, identify the one that has the larger LFSE: (a)\u2002 [Cr(OH2)6]2+ or [Mn(OH2)6]2+ (b)\u2002 [Fe(OH2)6]2+ or [Fe(OH2)6]3+ (c)\u2002 [Fe(OH2)6]3+ or [Fe(CN)6]3\u2013 (d)\u2002 [Fe(CN)6]3\u2013 or [Ru(CN)6]3\u2013 (e)\u2002 tetrahedral [FeCl4]2\u2212 or tetrahedral [CoCl4]2\u2212",
+      "type": "exercise",
+      "page": 34
+    },
+    {
+      "number": "20.7",
+      "text": "Interpret the variation, including the overall trend across the 3d series, of the following values of oxide lattice enthalpies (in kJ\u2009mol\u22121). All the compounds have the rock-salt structure: CaO (3460), TiO (3878), VO (3913), MnO (3810), FeO (3921), CoO (3988), NiO (4071).",
+      "type": "exercise",
+      "page": 34
+    },
+    {
+      "number": "20.8",
+      "text": "Enthalpies of hydration and values of the ligand-field splitting parameter, \u0394O, are given for some octahedrally coordinated ions. (a) Plot the enthalpies of hydration against the number of d electrons. (b) Calculate LFSE in terms of \u0394O for high-spin configuration. Use the given values of \u0394O to find LFSE in kJ\u2009mol\u22121 for each ion. (c) Apply this energy as a correction term to the enthalpies of hydration and plot the estimated \u0394H in the absence of ligand-field effects. Comment on this plot. (1\u2009kJ\u2009mol\u22121 = 83.7\u2009cm\u22121.) Ion \u0394hydH/kJ\u2009mol\u22121 \u0394O/cm\u22121 Ca2+ 1577 0 V2+ 1918 12\u2009600 Cr2+ 1904 13\u2009900 Mn2+ 1841 7800 Fe2+ 1946 10\u2009400 Co2+ 1996 9300 Ni2+ 2105 8300 Cu2+ 2100 12\u2009600 Zn2+ 2046 0 N N N Ph Ph 12 A preference normally exists for the low-spin state under high pressure and low temperature. This preference can be 20\u2002 d-Metal complexes: electronic structure and properties 602",
+      "type": "exercise",
+      "page": 34
+    }
+  ],
+  "tutorial_problems": [
+    {
+      "number": "20.9",
+      "text": "A neutral macrocyclic ligand with four donor atoms produces a red diamagnetic low-spin d8 complex of Ni(II) if the anion is the weakly coordinating perchlorate ion. When perchlorate is replaced by two thiocyanate ions, SCN\u2212, the complex turns violet and is high-spin with two unpaired electrons. Interpret the observed change in terms of the structure of the complexes.",
+      "type": "tutorial",
+      "page": 35
+    },
+    {
+      "number": "20.10",
+      "text": "Bearing in mind the Jahn\u2013Teller effect, predict the structure of [Cr(OH2)6]2+.",
+      "type": "tutorial",
+      "page": 35
+    },
+    {
+      "number": "20.11",
+      "text": "The spectrum of d1 Ti3+(aq) is attributed to a single electronic transition eg \u2190 t2g. The band shown in Fig. 20.3 is not symmetric and suggests that more than one state is involved. Suggest how to explain this observation using the Jahn\u2013Teller effect.",
+      "type": "tutorial",
+      "page": 35
+    },
+    {
+      "number": "20.12",
+      "text": "Write the Russell\u2013Saunders term symbols for states with the angular momentum quantum numbers (L,S): (a) (0,\u20095 2), (b) (3,\u20093 2), (c) (2,\u20091 2), (d) (1,1).",
+      "type": "tutorial",
+      "page": 35
+    },
+    {
+      "number": "20.13",
+      "text": "Identify the ground term from each set of terms: (a) 1P, 3P, 3F, 1G; (b) 3P, 5D, 3H, 1I, 1G; (c) 6S, 4P, 4G, 2I.",
+      "type": "tutorial",
+      "page": 35
+    },
+    {
+      "number": "20.14",
+      "text": "Give the Russell\u2013Saunders terms of the configurations: (a) 4s1, (b) 3p2. Identify the ground term.",
+      "type": "tutorial",
+      "page": 35
+    },
+    {
+      "number": "20.15",
+      "text": "The gas-phase ion V3+ has a 3F ground term. The 1D and 3P terms lie, respectively, 10\u2009642 and 12\u2009920\u2009cm\u22121 above it. The energies of the terms are given in terms of Racah parameters as E(3F) = A \u2212 8B, E(3P) = A + 7B, E(1D) = A \u2212 3B + 2C. Calculate the values of B and C for V3+.",
+      "type": "tutorial",
+      "page": 35
+    },
+    {
+      "number": "20.16",
+      "text": "Write the d-orbital configurations and use the Tanabe\u2013 Sugano diagrams (Resource section 6) to identify the ground term of (a) low-spin [Rh(NH3)6]3+, (b) [Ti(OH2)6]3+, (c) high-spin [Fe(OH2)6]3+.",
+      "type": "tutorial",
+      "page": 35
+    },
+    {
+      "number": "20.17",
+      "text": "Using the Tanabe\u2013Sugano diagrams in Resource section 6, estimate \u0394O and B for (a) [Ni(OH2)6]2+ (absorptions at 8500, 15\u2009400, and 26\u2009000\u2009cm\u22121) and (b) [Ni(NH3)6]2+ (absorptions at 10\u2009750, 17\u2009500, and 28\u2009200\u2009cm\u22121).",
+      "type": "tutorial",
+      "page": 35
+    },
+    {
+      "number": "20.18",
+      "text": "Match each of the extinction coefficients, \u03b5max, <1, 10, 100, >104 (in dm3\u2009mol\u22121\u2009cm\u22121), with one of the species: [MnO4]\u2212 in H2O; Fe3+(aq) in 1.0\u2009M HClO4; Co2+(aq) in 1.0\u2009M HClO4; [CoCl4]2\u2212 in",
+      "type": "tutorial",
+      "page": 35
+    },
+    {
+      "number": "20.19",
+      "text": "The spectrum of [Co(NH3)6]3+ has a very weak band in the red and two moderate intensity bands in the visible to near-UV. How should these transitions be assigned?",
+      "type": "tutorial",
+      "page": 35
+    },
+    {
+      "number": "20.20",
+      "text": "Explain why [FeF6]3\u2212 is almost colourless whereas [CoF6]3\u2212 is coloured and exhibits only a single band in the visible region of the spectrum.",
+      "type": "tutorial",
+      "page": 35
+    },
+    {
+      "number": "20.21",
+      "text": "The Racah parameter B is 460\u2009cm\u22121 in [Co(CN)6]3\u2212 and 615\u2009cm\u22121 in [Co(NH3)6]3+. Consider the nature of bonding with the two ligands and explain the difference in nephelauxetic effect.",
+      "type": "tutorial",
+      "page": 35
+    },
+    {
+      "number": "20.22",
+      "text": "An approximately \u2018octahedral\u2019 complex of Co(III) with ammine and chlorido ligands gives two bands with \u03b5max between 60 and 80\u2009dm3\u2009mol\u22121\u2009cm\u22121, one weak peak with \u03b5max = 2\u2009dm3\u2009mol\u22121\u2009cm\u22121, and a strong band at higher energy with \u03b5max = 2\u00a0\u00d7 104\u2009dm3\u2009mol\u22121\u2009cm\u22121. What do you suggest for the origins of these transitions?",
+      "type": "tutorial",
+      "page": 35
+    },
+    {
+      "number": "20.23",
+      "text": "Ordinary bottle glass appears nearly colourless when viewed through the wall of the bottle but visibly coloured (green) when viewed from the end so that the light has a long path through the glass. The colour is associated with the presence of Fe3+ in the silicate matrix. Explain this observation.",
+      "type": "tutorial",
+      "page": 35
+    },
+    {
+      "number": "20.24",
+      "text": "Solutions of [Cr(OH2)6]3+ ions are pale greeny-blue but the chromate ion, [CrO4]2\u2212, is an intense yellow. Characterize the origins of the transitions and explain the relative intensities.",
+      "type": "tutorial",
+      "page": 35
+    },
+    {
+      "number": "20.25",
+      "text": "Classify the symmetry type of the d orbitals in a tetragonal C4v symmetry complex, such as [CoCl(NH3)5]2+, where the Cl lies on the z-axis. (a) Which orbitals will be displaced from their position in the octahedral molecular orbital diagram by \u03c0 interactions with the lone pairs of the Cl\u2212 ligand? (b) Which orbital will move because the Cl\u2212 ligand is not as strong a \u03c3 base as NH3? (c) Sketch the qualitative molecular orbital diagram for the C4v complex.",
+      "type": "tutorial",
+      "page": 35
+    },
+    {
+      "number": "20.26",
+      "text": "Consider the molecular orbital diagram for a tetrahedral complex (based on Fig. 20.8) and the relevant d-orbital configuration, and show that the purple colour of [MnO4]\u2212 ions cannot arise from a ligand-field transition. Given that the wavenumbers of the two transitions in [MnO4]\u2212 are 18\u2009500 and 32\u2009200\u2009cm\u22121, explain how to estimate \u0394T from an assignment of the two charge-transfer transitions, even though \u0394T cannot be observed from a direct d-d transition.",
+      "type": "tutorial",
+      "page": 35
+    },
+    {
+      "number": "20.1",
+      "text": "In a fused magma liquid from which silicate minerals crystallize, the metal ions can be four-coordinate. In olivine crystals, the M(II) co-ordination sites are octahedral. Partition coefficients, which are defined as Kp = [M(II)]olivine/[M(II)]melt, follow the order Ni(II) > Co(II) > Fe(II) > Mn(II). Account for this in terms of ligand-field theory. (See I.M. Dale and P. Henderson, 24th Int. Geol. Congress, Sect. 10, 1972, 105.)",
+      "type": "tutorial",
+      "page": 35
+    },
+    {
+      "number": "20.2",
+      "text": "In Problem 7.12 we looked at the successive formation constants for 1,2-diaminoethane complexes of three different metals. Using the same data, discuss the effect of the metal on the formation constant. How might the Irving\u2013Williams series provide insight into these formation constants?",
+      "type": "tutorial",
+      "page": 35
+    },
+    {
+      "number": "20.3",
+      "text": "By considering the splitting of the octahedral orbitals as the symmetry is lowered, draw the symmetry-adapted linear combinations and the molecular orbital energy-level diagram for \u03c3 bonding in a trans-[ML4X2] complex. Assume that the ligand X is lower in the spectrochemical series than L.",
+      "type": "tutorial",
+      "page": 35
+    },
+    {
+      "number": "20.4",
+      "text": "Referring to Resource section 5, draw the appropriate symmetry-adapted linear combinations and the molecular orbital diagram for \u03c3 bonding in a square-planar complex. The point group is D4h. Take note of the small overlap of the ligand with the z d 2 orbital. What is the effect of \u03c0 bonding?",
+      "type": "tutorial",
+      "page": 35
+    },
+    {
+      "number": "20.5",
+      "text": "Starting with Fig. 20.12, show how, using a crystal-field approach, an extreme tetragonal distortion leads to the orbital energy-level diagram in Fig. 20.10. Perform a similar analysis for two-coordinate linear complexes.",
+      "type": "tutorial",
+      "page": 35
+    },
+    {
+      "number": "20.6",
+      "text": "Consider a trigonal prismatic six-coordinate ML6 complex with D3h symmetry. Use the D3h character table (Resources 603 section 4) to divide the d orbitals of the metal into sets of defined symmetry type. Assume that the ligands are at the same angle relative to the xy-plane as in a tetrahedral complex.",
+      "type": "tutorial",
+      "page": 35
+    },
+    {
+      "number": "20.7",
+      "text": "In a trigonal bipyramidal complex the axial and equatorial sites have different steric and electronic interactions with the central metal ion. Consider a range of some common ligands and decide which coordination site in a trigonal bipyramidal complex they would favour. (See A.R. Rossi and R. Hoffmann, Inorg. Chem., 1975, 14, 365.)",
+      "type": "tutorial",
+      "page": 36
+    },
+    {
+      "number": "20.8",
+      "text": "Vanadium(IV) species that have the V=O group have quite distinct spectra. What is the d-electron configuration of V(IV)? The most symmetrical of such complexes are [VOL5] with C4v symmetry, with the O atom on the z-axis. What are the symmetry species of the five d orbitals in [VOL5] complexes? How many d\u2013d bands are expected in the spectra of these complexes? A band near 24\u2009000\u2009cm\u22121 in these complexes shows vibrational progressions of the V=O vibration, implicating an orbital involving V=O bonding. Which d\u2013d transition is a candidate? (See C.J. Ballhausen and H.B. Gray, Inorg. Chem., 1962, 1, 111.)",
+      "type": "tutorial",
+      "page": 36
+    },
+    {
+      "number": "20.9",
+      "text": "MLCT bands can be recognized by the fact that the energy is a sensitive function of the polarity of the solvent (because the excited state is more polar than the ground state). Two simplified molecular orbital diagrams are shown in Fig. 20.45. In (a) is a case with a ligand \u03c0 level higher than the metal d orbital. In (b) is a case in which the metal d orbital and the ligand level are at the same energy. Which of the two MLCT bands should be more solvent-sensitive? These two cases are realized by [W(CO)4(phen)] and [W(CO)4(iPr-DAB)], respectively, where DAB = 1,4-diaza- 1,3-butadiene. (See P.C. Servas, H.K. van Dijk, T.L. Snoeck, D.J. Stufkens, and A. Oskam, Inorg. Chem., 1985, 24, 4494.) Metal d Metal d Ligand \u03c0* Ligand \u03c0* LUMO LUMO HOMO HOMO (a) (b) FIGURE 20.45 Representation of the orbitals involved in MLCT transitions for cases in which the energy of the ligand \u03c0* orbital varies with respect to the energy of the metal d orbital. See Problem 20.9. Comment on the CT character of the transition as a function of the extent of backdonation by the metal atom.",
+      "type": "tutorial",
+      "page": 36
+    },
+    {
+      "number": "20.10",
+      "text": "Consider spin-crossover complexes and identify the features that a complex would need for it to be used in (a) a practical pressure sensor and (b) a practical information-storage device (see P. G\u00fctlich, Y. Garcia, and H.A. Goodwin, Chem. Soc. Rev., 2000, 29, 419).",
+      "type": "tutorial",
+      "page": 36
+    },
+    {
+      "number": "20.11",
+      "text": "Consider the octahedral [NiF6]3\u2212 ion. What spin state and magnetic moment could it have? How would the Jahn-Teller effect affect the two spin states, and how might this complicate an interpretation of the UV/vis absorption spectrum? How has evidence from the magnetic moment and absorption spectrum allowed a definitive assignment of the spin state? (See T.I. Court and M.F.A. Dove, J. Chem. Soc., Dalton Trans., 1973, 1995.)",
+      "type": "tutorial",
+      "page": 36
+    }
+  ]
+}

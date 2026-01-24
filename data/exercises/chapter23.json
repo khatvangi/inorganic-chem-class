@@ -1,0 +1,73 @@
+{
+  "chapter": 23,
+  "title": "The f-block elements",
+  "exercises": [],
+  "tutorial_problems": [
+    {
+      "number": "23.16",
+      "text": "Predict a structure type for BkN based on the ionic radii r(Bk3+) = 96\u2009pm and r(N3\u2212) = 146\u2009pm.",
+      "type": "tutorial",
+      "page": 29
+    },
+    {
+      "number": "23.17",
+      "text": "Discuss why the U\u2013O bond length in the uranyl ion [UO2]2+ typically has a value around 180\u2009pm, just slightly more than the Os\u2013O bond length in [OsO2]2+ (174\u2009pm), whereas the conventional ionic radius of U6+ (73\u2009pm) is much larger than that of Os6+ (54\u2009pm).",
+      "type": "tutorial",
+      "page": 29
+    },
+    {
+      "number": "23.1",
+      "text": "Lanthanoid coordination compounds rarely exhibit isomerism in solution. Suggest two factors that might cause this phenomenon, explaining your reasoning. (See D. Parker, R.S. Dickins, H. Puschmann, C. Crossland, and J.A.K. Howard, Chem. Rev., 2002, 102, 1977.)",
+      "type": "tutorial",
+      "page": 29
+    },
+    {
+      "number": "23.2",
+      "text": "Neither lanthanoid nor actinoid organometallic compounds obey the 18-electron rule. Discuss the reasons, using the structures of the tris(Cp) and tris(Cp*) Ln and An complexes as examples. (See W.J. Evans and B.L. Davis, Chem. Rev., 2002, 102, 2119.)",
+      "type": "tutorial",
+      "page": 29
+    },
+    {
+      "number": "23.3",
+      "text": "The catalytic activity of many organolanthanoids is controlled by the ionic radius of Ln3+. In general Ln(Cp*)2X complexes that are catalysts for olefin polymerization show decreasing reactivity as La is replaced by Lu. In contrast, some reactions proceed more rapidly as the catalyst is changed from La to Lu. Discuss the principles involved in tuning the catalytic activities of organolanthanoid catalysts in terms of rates and selectivity. (See C.J. Weiss and T.J. Marks, Dalton Trans., 2010, 39, 6576.)",
+      "type": "tutorial",
+      "page": 29
+    },
+    {
+      "number": "23.4",
+      "text": "\u2018Quantum cutting\u2019 is a process by which absorption of a single high-energy photon, corresponding to incident light in the UV spectral region, results in the emission of two photons of lower energy, in the visible region. The process is highly efficient and has important applications for improving the spectral range of solar photovoltaic cells, as well as providing more efficient domestic lighting. With reference to articles by Huang et al. (Chem. Soc. Rev. 2013, 42, 173) and Lorbeer et al. (Chem. Commun., 2010, 46, 571), explain why Gd, in conjunction with other lanthanoids, is important for developing this technology.",
+      "type": "tutorial",
+      "page": 29
+    },
+    {
+      "number": "23.5",
+      "text": "\u2018Single molecule magnets\u2019 (abbreviated SMMs) offer intriguing new possibilities for storing and processing data: lanthanoids, due to their large number of unpaired electrons, are attracting a great deal of interest. The triangular complex [Dy3(OH)2(o-van)3(H2O)5Cl]3+ (25) consists of three Dy3+, each coordinated by a molecule of vanillin and interlinked by hydroxide ions. With reference to the article by R. Sessoli and A.K. Powell (Coord. Chem. Rev., 2009, 253, 2328), explain why Dy(III) triangles are particularly interesting to those working in the SMM field. Dy Cl O H C 25",
+      "type": "tutorial",
+      "page": 29
+    },
+    {
+      "number": "23.6",
+      "text": "The existence of a maximum oxidation number of +6 for both uranium (Z = 92) and tungsten (Z = 74) prompted the placement of U under W in early periodic tables. When the element after uranium, neptunium (Z = 93), was discovered in 1940, its properties did not correspond to those of rhenium (Z = 75), and this cast doubt on the original placement of uranium. (See G.T. Seaborg and W.D. Loveland, The elements beyond uranium. Wiley-Interscience (1990), p. 9 et seq.) Using standard potential data from Resource section 2, discuss the differences in oxidation state stability between Np and Re.",
+      "type": "tutorial",
+      "page": 29
+    },
+    {
+      "number": "23.7",
+      "text": "In their review on new commercial applications of Ln chemistry (Acc. Chem. Res., 2016, 49, 844), Guillou and co- workers explain how the coordination of different Ln(III) ions within metal\u2013organic frameworks can be exploited to produce unique luminescent inks for anti-counterfeiting signatures. Discuss the principles of this technology.",
+      "type": "tutorial",
+      "page": 29
+    },
+    {
+      "number": "23.8",
+      "text": "The processing of spent nuclear fuel and separation of the lighter actinoid elements, U, Np, and Pu, is an important industrial process. Discuss the chemistry involved in the various methods used to extract and separate these elements.",
+      "type": "tutorial",
+      "page": 29
+    },
+    {
+      "number": "23.9",
+      "text": "The 24-membered U ring complex shown below is very unusual as it is rigid and contains both bridging azido and bridging nitrido ligands. Describe how this complex was synthesized and the significance of the bonding that is observed. (See W.J. Evans, S.A. Kozimor, and J.W. Ziller, Science, 2005, 309, 1835.) U N U N N N U N N N N U N U N N N U U N N N U N PART 3 Expanding our horizons: advances and applications Inorganic chemistry is advancing rapidly at its frontiers, especially where research impinges on other disciplines such as the life sciences, condensed-matter physics, materials science, and environmental chemistry. These swiftly developing fields also represent many areas of inorganic chemistry where new types of compounds are used in catalysis, electronics, and pharmaceuticals. The aim of this section of the book is to demonstrate the vigorous nature of contemporary inorganic chemistry by building on the introductory and descriptive material in Parts 1 and 2. These chapters open with a discussion in Chapter 24 of materials chemistry, focusing on solid-state compounds, their synthesis, structure, and electronic, magnetic, and optical properties. Important ap\u00ad plications of these solid materials include optoelectronics, renewable energy generation and storage, and heterogeneous catalysis using porous materials. Nanomaterials chemistry is also included here\u2014 an area that has developed enormously in the past decade. In Chapter 25 we highlight the important role that inorganic chemistry is playing in promoting environmentally sustainable technologies in industry. Green chemistry pioneers are striving to exploit the many properties of different elements and their compounds in order to improve energy efficiency, reduce waste, and minimize use of hazardous materials. The final two chapters focus on the relationships between inorganic chemistry and living organisms. Chapter 26 discusses the natural roles of different elements in biological systems and the various and extraordinarily subtle ways in which each one is exploited. Evolution has selected the most suitable element for each application, be it transport, signalling, sensing, catalysis or solid-state systems, and produced molecules and materials having exquisite structures and unique properties. Metalloenzymes are highly active and selective catalysts and it is important to establish their modes of action and gain insight to help design new catalysts for technology. Finally, Chapter 27 describes how medical science is exploiting the \u2018stranger\u2019 elements, such as platinum, gold, lithium, arsenic and synthetic technetium, to diagnose and treat illness.",
+      "type": "tutorial",
+      "page": 29
+    }
+  ]
+}

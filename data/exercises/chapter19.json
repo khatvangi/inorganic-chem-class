@@ -1,0 +1,127 @@
+{
+  "chapter": 19,
+  "title": "The d-block elements",
+  "exercises": [],
+  "tutorial_problems": [
+    {
+      "number": "19.1",
+      "text": "What is the highest group oxidation state observed for the first-row transition metals? Give an example of a group oxidation state oxo species of this metal ion. What is the highest group oxidation state observed in the second and the third row? Contrast the stability down the group.",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "19.2",
+      "text": "Use the information in Resource section 3 to construct Frost diagrams for the Group 6 elements Cr, Mo, and W in acidic conditions. Use these diagrams to predict (a) which oxidation state of each element is most oxidizing and (b) whether any of the oxidation states are susceptible to disproportionation.",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "19.3",
+      "text": "Sketch the following ions: (a) dichromate(VI), (b) vanadyl, (c) orthovanadate, (d) manganate(VI).",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "19.4",
+      "text": "Explain why TiO2, V2O5, and CrO3 are well-known compounds but FeO4 and Co2O9 have not been prepared.",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "19.5",
+      "text": "Which of the following is NOT true: (a)\u2002 The chemistry of molybdenum is more similar to that of tungsten than that of chromium. (b)\u2002 Higher oxidation states are most prevalent in the second and third rows of transition elements. (c)\u2002 Transition metals have high atomic volumes and are therefore not very dense. (d)\u2002 Enthalpies of atomization reach a maximum in the middle of a row.",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "19.6",
+      "text": "Look up the electron gain enthalpies for Cu, Ag, and Au and the ionization energies of the Group 1 metals. Discuss the likely stability of compounds M+M\u2032\u2212, where M = Group 1 metal, M\u2032 = Group 11 metal.",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "19.7",
+      "text": "Explain why isostructural HfO2 and ZrO2 have densities of 9.68\u2009g\u2009cm\u22123 and 5.73\u2009g\u2009cm\u22123, respectively.",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "19.8",
+      "text": "Use the information in Resource section 3 to construct a Frost diagram for mercury in acidic solution. Comment on the tendency for [Hg2]2+ to disproportionate.",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "19.9",
+      "text": "Many d-metal compounds are used as pigments. Apart from colour, what properties must a compound possess to be useful as a pigment?",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "19.1",
+      "text": "Describe and account for the trends in the ionic radii and the stability of high oxidation states upon moving from the second to the third row of the transition series.",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "19.2",
+      "text": "Discuss the benefits and the costs of using lightweight titanium alloys over the more conventional steel in (a) motor cars and (b) aeroplanes.",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "19.3",
+      "text": "TiO2 can be manufactured via the chloride process or the sulfate process. Outline the advantages and disadvantages of each of these processes in terms of the raw material required, the nature of the pigment produced, and the environmental impact of each process.",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "19.4",
+      "text": "Iron is essential to all life forms. Assess the solubility of Fe in +2 and +3 oxidation states; combine this with likely stable oxidation state under normal conditions to assess the bioavailability of iron. Consider how the atmosphere changed as oxygenic photosynthesis took over (Box 16.1) and comment on how this might have affected the bioavailability of iron.",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "19.5",
+      "text": "Silica-supported compounds of chromium have been used as catalysts for olefin polymerization for many years. Write a review of this application of chromium chemistry. Include a discussion of the Phillips and Union Carbide systems and discuss one published paper on the topic from the past two years.",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "19.6",
+      "text": "Gold, platinum, and palladium are all known as precious metals. Review their uses in technology and other areas and discuss why the prices of gold, platinum, and palladium have varied over time.",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "19.7",
+      "text": "Discuss the historical production and use of gold nanoparticles. Account for the colour of the nanoparticles.",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "19.8",
+      "text": "In their paper \u2018Shape control in gold nanoparticle synthesis\u2019 (Chem. Soc. Rev., 2008, 37, 1783), M. Grzelczak and co-workers discuss the synthesis of gold nanoparticles with a range of morphologies. Describe the different morphologies summarized in this paper and outline the proposed growth mechanisms for the nanoparticles when synthesized with and without the presence of silver ions.",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "19.9",
+      "text": "Discuss the side effects of protiodide and the risks of overdose.",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "19.10",
+      "text": "Consider the 6d elements Rf\u2013Cn. Make predictions of the key features of their chemistry, were sufficient quantities ever to be isolated.",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "19.11",
+      "text": "A paper published in 2014 had the title \u2018Identification of an iridium-containing compound with a formal oxidation state of IX\u2019 (Nature, 2014, 514, 475), and one published in 2016 had the title \u2018Oxidation state 10 exists\u2019 (Angew. Chem. Int. Ed., 2016, 55, 9004). Review these papers and comment on the veracity of their titles.",
+      "type": "tutorial",
+      "page": 30
+    }
+  ]
+}

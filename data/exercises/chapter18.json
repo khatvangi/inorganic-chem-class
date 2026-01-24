@@ -1,0 +1,157 @@
+{
+  "chapter": 18,
+  "title": "The Group 18 elements",
+  "exercises": [],
+  "tutorial_problems": [
+    {
+      "number": "18.1",
+      "text": "Explain why helium is present in low concentration in the atmosphere even though it is the second most abundant element in the universe.",
+      "type": "tutorial",
+      "page": 11
+    },
+    {
+      "number": "18.2",
+      "text": "Which of the noble gases would you choose as (a) the lowest-temperature liquid refrigerant, (b) an electric discharge light source requiring a safe gas with the lowest ionization energy, (c) the least expensive inert atmosphere?",
+      "type": "tutorial",
+      "page": 11
+    },
+    {
+      "number": "18.3",
+      "text": "By means of balanced chemical equations and a statement of conditions, describe a suitable synthesis of (a) xenon difluoride, (b) xenon hexafluoride, (c) xenon trioxide.",
+      "type": "tutorial",
+      "page": 11
+    },
+    {
+      "number": "18.4",
+      "text": "Given that the bond enthalpies of the Xe\u2013F and the F\u2013F bonds are 144 and 155\u2009kJ\u2009mol\u22121 respectively, calculate the enthalpy of formation for XeF2.",
+      "type": "tutorial",
+      "page": 11
+    },
+    {
+      "number": "18.5",
+      "text": "Draw the Lewis structures of (a) XeOF4, (b) XeO2F2, and (c) \u2212 XeO6 2 .",
+      "type": "tutorial",
+      "page": 11
+    },
+    {
+      "number": "18.6",
+      "text": "Give the formula and describe the structure of a noble-gas species that is isostructural with (a) \u2212 ICl4, (b) \u2212 IBr2 , (c) \u2212 BrO3, (d) ClF.",
+      "type": "tutorial",
+      "page": 11
+    },
+    {
+      "number": "18.7",
+      "text": "(a) Give a Lewis structure for \u2212 XeF7 . (b) Speculate on its possible structures by using the VSEPR model and analogy with other xenon fluoride anions.",
+      "type": "tutorial",
+      "page": 11
+    },
+    {
+      "number": "18.8",
+      "text": "When [XeF][RuF6] reacts with excess F2 at elevated temperature the compound [XeF5][RuF6] is formed. Predict the shape of the cation and anion.",
+      "type": "tutorial",
+      "page": 11
+    },
+    {
+      "number": "18.9",
+      "text": "Use molecular orbital theory to calculate the bond order of the diatomic species + E2 with E = He and Ne.",
+      "type": "tutorial",
+      "page": 11
+    },
+    {
+      "number": "18.10",
+      "text": "Use VSEPR to predict the structures of (a) + XeF3 , (b) \u2212 XeF3 , (c) + XeF5 , and (d) \u2212 XeF5 .",
+      "type": "tutorial",
+      "page": 11
+    },
+    {
+      "number": "18.11",
+      "text": "Identify the xenon compounds A, B, C, D, and E. C Xe E xs F2 D H2O A F2 B MeBF2",
+      "type": "tutorial",
+      "page": 11
+    },
+    {
+      "number": "18.12",
+      "text": "Predict the appearance of the 19F-NMR spectrum of XeF4.",
+      "type": "tutorial",
+      "page": 11
+    },
+    {
+      "number": "18.13",
+      "text": "Predict the appearance of the 129Xe-NMR spectrum of + XeOF3 .",
+      "type": "tutorial",
+      "page": 11
+    },
+    {
+      "number": "18.14",
+      "text": "Predict the appearance of the 19F-NMR spectrum of XeOF4.",
+      "type": "tutorial",
+      "page": 11
+    },
+    {
+      "number": "18.1",
+      "text": "In December 2015 the International Union of Pure and Applied Chemistry (IUPAC) and the International Union of Pure and Applied Physics (IUPAP) jointly announced their acceptance of the evidence that demonstrated the existence of element 118. What was the name and symbol of the element before it was given its new name of oganesson? Which two institutions collaborated to synthesize the new element? Outline the experiments that led to the synthesis of oganesson. Outline the achievements of the scientist after whom the element is named.",
+      "type": "tutorial",
+      "page": 11
+    },
+    {
+      "number": "18.2",
+      "text": "Argon has been found to react with CF3 2+ to form ArCF2 2+ (J. Phys. Chem. Lett. 2010, 1, 358). (a) What other Ar\u2013C species are formed during the reaction? (b) What are the Ar\u2013C and C\u2013F bond lengths in the product? Give the point group of the dication. (c) Why do He and Ne not form dications of this type with CF3 2+? (d) Why do Kr and Xe not form dications of this type?",
+      "type": "tutorial",
+      "page": 11
+    },
+    {
+      "number": "18.3",
+      "text": "The paper \u2018Exploring the effects on lipid bilayer induced by noble gases via molecular dynamics simulations\u2019 (Nature, 2015, 5, 17235) discusses the anaesthetic properties of noble gases. Which noble gases cause anaesthesia? What is the order of their potency? What is the mode of action of noble gas anaesthetics? Why is xenon the most potent noble gas anaesthetic?",
+      "type": "tutorial",
+      "page": 11
+    },
+    {
+      "number": "18.4",
+      "text": "In the paper \u2018Predicted chemical bonds between rare gases and Au\u2019 (J. Am. Chem. Soc., 1995, 117, 2067), P. Pyykkii used a computational study of the species RgAuRg+ and AuRg+ (where Rg refers to a \u2018rare\u2019 gas) to predict the bond energies and bond lengths of the Au\u2013Rg bond. Why did the author draw parallels between the Au\u2013Rg bonds and H\u2013Rg bonds? Give the values of bond energy and bond length for the series of Au\u2013Rg bonds. How would these values be expected to differ for Cu\u2013Rg+ species? List the values of the analogous Cu\u2013Rg+ bonds and rationalize the differences.",
+      "type": "tutorial",
+      "page": 11
+    },
+    {
+      "number": "18.5",
+      "text": "The paper \u2018Atypical compounds of gases which have been called \u201cnoble\u201d\u2019 (Chem. Soc. Rev., 2007, 36, 1632) provides a thorough account of the range of compounds formed by Group 18 elements. Among the compounds described are XeF5Cl, HXeOOXeH, and ClXeFXeCl+. Sketch the structures of these molecules. Outline the author\u2019s rationale for classing noble-gas atoms as Lewis bases and describe why XeF2 acts as a ligand with metal cations. Only one compound of xenon with mercury was described. Give the formula of this compound, outline its synthesis, and give the Hg\u2013Xe bond energy and bond length. 537",
+      "type": "tutorial",
+      "page": 11
+    },
+    {
+      "number": "18.6",
+      "text": "The first compound containing an Xe\u2013N bond was reported by R.D. LeBlond and K.K. DesMarteau (J. Chem. Soc., Chem. Commun., 1974, 14, 554). Summarize the method of synthesis and characterization. (The proposed structure was later confirmed in an X-ray crystal structure determination.)",
+      "type": "tutorial",
+      "page": 12
+    },
+    {
+      "number": "18.7",
+      "text": "(a) Use the references in the paper by O.S. Jina, X.Z. Sun, and M.W. George (J. Chem. Soc., Dalton Trans., 2003, 1773) to produce a review of the use of matrix isolation in the characterization of organometallic noble-gas complexes. (b) How did the methods used by these authors differ from the usual techniques of matrix isolation? (c) Place the complexes [MnCp(CO)2Xe], [RhCp(CO)Xe], [MnCp(CO)2Kr], [Mo(CO)5Kr], and [W(CO)5Kr] in order of increasing stability towards CO substitution.",
+      "type": "tutorial",
+      "page": 12
+    },
+    {
+      "number": "18.8",
+      "text": "In their paper \u2018Xenon as a complex ligand: the tetra xenon gold(II) cation in + \u2212 AuXe (Sb F ) 4 2 2 11 2\u2019, S. Seidel and K. Seppelt (Science, 2000, 290, 117) describe the first synthesis of a stable noble-gas coordination compound. Give details of the synthesis and characterization of the compound.",
+      "type": "tutorial",
+      "page": 12
+    },
+    {
+      "number": "18.9",
+      "text": "The synthesis and characterization of the \u2212 XeOF5  anion has been described by A. Ellern and K. Seppelt (Angew. Chem., Int. Ed. Engl., 1995, 34, 1586). (a) Summarize the similarities between XeOF4 and IF5. (b) Give possible reasons for the differences in structure between \u2212 XeOF5  and \u2212 IF6 . (c) Summarize how \u2212 XeOF5  was prepared.",
+      "type": "tutorial",
+      "page": 12
+    },
+    {
+      "number": "18.10",
+      "text": "In their paper \u2018Helium chemistry: theoretical predictions and experimental challenge\u2019 (J. Am. Chem. Soc., 1987, 109, 5917), W. Koch and co-workers used quantum mechanical calculations to demonstrate that helium can form strong bonds with carbon in cations. (a) Give the range of bond lengths calculated for these He\u2013C cations. (b) What are the requirements for an element to form a strong bond with He? (c) To which branch of science do the authors suggest that this work would be particularly relevant?",
+      "type": "tutorial",
+      "page": 12
+    },
+    {
+      "number": "18.11",
+      "text": "In their paper \u2018Observation of superflow in solid helium\u2019 (Science, 2004, 305, 1941), E. Kim and M. Chan described the observed superfluidity of solid helium. Define superfluidity, describe the experiment carried out by the authors to demonstrate the property, and summarize their explanation of superfluidity.",
+      "type": "tutorial",
+      "page": 12
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "chapter": 1,
+  "title": "Atomic structure",
+  "exercises": [
+    {
+      "number": "1.1",
+      "text": "What is the ratio of the energy of an electronic ground-state He+ ion to that of a Be3+ ion?",
+      "type": "exercise",
+      "page": 29
+    },
+    {
+      "number": "1.2",
+      "text": "According to the Born interpretation, the probability of finding an electron in a volume element dt is proportional to \u03c8\u20092d\u03c4. (a) What is the most probable location of an electron in an H atom in its ground state? (b) What is its most probable distance from the nucleus, and why is this different? (c) What is the most probable distance of a 2s electron from the nucleus?",
+      "type": "exercise",
+      "page": 29
+    },
+    {
+      "number": "1.3",
+      "text": "The ionization energy of H is 13.6\u2009eV. What is the difference in energy between the n = 1 and n = 6 levels?",
+      "type": "exercise",
+      "page": 29
+    },
+    {
+      "number": "1.4",
+      "text": "The ionization energies of rubidium and silver are 4.18 and 7.57\u2009eV, respectively. Calculate the ionization energies of an H atom with its electron in the same outermost orbitals as in these two atoms and account for the differences in values in these different elements.",
+      "type": "exercise",
+      "page": 29
+    },
+    {
+      "number": "1.5",
+      "text": "When 58.4 nm radiation from a helium discharge lamp is directed on a sample of krypton, electrons are ejected with a velocity of 1.59 \u00d7 106\u2009m\u2009s\u22121. The same radiation ejects electrons from Rb atoms with a velocity of 2.45 \u00d7 106\u2009m\u2009s\u22121. What are the ionization energies (in electronvolts, eV) of the two elements?",
+      "type": "exercise",
+      "page": 29
+    },
+    {
+      "number": "1.6",
+      "text": "Calculate the wavelength of the line in the atomic spectrum of hydrogen in which n1 = 1 and n2 = 3. What is the energy change for this transition?",
+      "type": "exercise",
+      "page": 29
+    },
+    {
+      "number": "1.7",
+      "text": "Calculate the wavenumber (\u001f\u03bd = 1/\u03bb) and wavelength of the first transition in the visible region of the atomic spectrum of hydrogen.",
+      "type": "exercise",
+      "page": 29
+    },
+    {
+      "number": "1.8",
+      "text": "Show that the following four lines in the Lyman series can be predicted from eqn 1.1: 91.127, 97.202, 102.52, and 121.57\u2009nm.",
+      "type": "exercise",
+      "page": 29
+    },
+    {
+      "number": "1.9",
+      "text": "What is the relation of the possible angular momentum quantum numbers to the principal quantum number?",
+      "type": "exercise",
+      "page": 29
+    },
+    {
+      "number": "1.10",
+      "text": "How many orbitals are there in a shell of principal quantum number n? (Hint: begin with n = 1, 2, and 3 and see if you can recognize the pattern.)",
+      "type": "exercise",
+      "page": 29
+    },
+    {
+      "number": "1.11",
+      "text": "Complete the following table: n l ml Orbital designation Number of orbitals 2 2p 3 2 4s 4 +3, +2, . . ., \u22123",
+      "type": "exercise",
+      "page": 29
+    },
+    {
+      "number": "1.12",
+      "text": "What are the values of the n, l, and ml quantum numbers that describe the 5f orbitals?",
+      "type": "exercise",
+      "page": 29
+    },
+    {
+      "number": "1.13",
+      "text": "Use sketches of 2s and 2p orbitals to distinguish between (a) the radial wavefunction and (b) the radial distribution function.",
+      "type": "exercise",
+      "page": 29
+    },
+    {
+      "number": "1.14",
+      "text": "Sketch the radial distribution functions for the 2p, 3p, and 3d orbitals and, with reference to your diagrams, explain why a 3p orbital is lower in energy than a 3d orbital.",
+      "type": "exercise",
+      "page": 29
+    },
+    {
+      "number": "1.15",
+      "text": "Predict how many nodes and how many nodal planes a 4p orbital will have.",
+      "type": "exercise",
+      "page": 29
+    },
+    {
+      "number": "1.16",
+      "text": "Draw pictures of the two d orbitals in the xy-plane as flat projections in the plane of the paper. Label each drawing with the appropriate mathematical function, and include a labelled pair of Cartesian coordinate axes. Label the orbital lobes correctly with + and \u2212 signs.",
+      "type": "exercise",
+      "page": 29
+    },
+    {
+      "number": "1.17",
+      "text": "Consider the process of shielding in atoms, using Be as an example. What is being shielded? What is it shielded from? What is doing the shielding?",
+      "type": "exercise",
+      "page": 29
+    },
+    {
+      "number": "1.18",
+      "text": "Calculate the screening constants for the outermost electron in the elements Li to F. Comment on the values you obtain. 32",
+      "type": "exercise",
+      "page": 29
+    }
+  ],
+  "tutorial_problems": [
+    {
+      "number": "1.19",
+      "text": "In general, ionization energies increase across a period from left to right. Explain why the second ionization energy of Cr is higher, not lower, than that of Mn.",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "1.20",
+      "text": "Compare the first ionization energy of Ca with that of Zn. Explain the difference in terms of the balance between shielding with increasing numbers of d electrons and the effect of increasing nuclear charge.",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "1.21",
+      "text": "Compare the first ionization energies of Sr, Ba, and Ra. Relate the irregularity to the lanthanoid contraction.",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "1.22",
+      "text": "The second ionization energies of some Period 4 elements are Ca Sc Ti V Cr Mn 1145 1235 1310 1365 1592 1509\u2009kJ\u2009mol\u22121 Identify the orbital from which ionization occurs and account for the trend in values.",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "1.23",
+      "text": "Give the ground-state electron configurations of (a) C, (b) F, (c) Ca, (d) Ga3+, (e) Bi, (f) Pb2+.",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "1.24",
+      "text": "Give the ground-state electron configurations of (a) Sc, (b) V3+, (c) Mn2+ (d) Cr2+, (e) Co3+, (f) Cr6+, (g) Cu, (h) Gd3+.",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "1.25",
+      "text": "Give the ground-state electron configurations of (a) W, (b) Rh3+, (c) Eu3+, (d) Eu2+, (e) V5+, (f) Mo4+.",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "1.26",
+      "text": "Identify the elements that have the ground-state electron configurations: (a) [Ne]3s23p4, (b) [Kr]5s2, (c) [Ar]4s23d3, (d) [Kr]5s24d5, (e) [Kr]5s24d105p1, (f) [Xe]6s24f6.",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "1.27",
+      "text": "Without consulting reference material, draw the form of the periodic table with the numbers of the groups and the periods and identify the s, p, and d blocks. Identify as many elements as you can. (As you progress through your study of inorganic chemistry, you should learn the positions of all the s-, p-, and d-block elements and associate their positions in the periodic table with their chemical properties.)",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "1.28",
+      "text": "Account for the trends across Period 3 in (a) ionization energy, (b) electron affinity, (c) electronegativity.",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "1.29",
+      "text": "Account for the fact that the two Group 5 elements niobium (Period 5) and tantalum (Period 6) have the same atomic radii.",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "1.30",
+      "text": "Identify the frontier orbitals of a Be atom in its ground state.",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "1.31",
+      "text": "Use the data in Tables 1.6 and 1.7 to test Mulliken\u2019s proposition that electronegativity values are proportional to I + Ea.",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "1.1",
+      "text": "In the paper \u2018What can the Bohr\u2013Sommerfeld model show students of chemistry in the 21st century?\u2019 (M. Niaz and L. Cardellini, J. Chem. Educ., 2011, 88, 240) the authors use the development of models of atomic structure to deliberate on the nature of science. What were the shortcomings of the Bohr model of the atom? How did Sommerfeld refine Bohr\u2019s model? How did Pauli resolve some of the new model\u2019s shortcomings? Discuss what these developments teach us about the nature of science.",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "1.2",
+      "text": "Survey the early and modern proposals for the construction of the periodic table. You should consider attempts to arrange the elements on helices and cones as well as the more practical two-dimensional surfaces. What, in your judgement, are the advantages and disadvantages of the various arrangements?",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "1.3",
+      "text": "In their 2009 paper \u2018Icon of chemistry: The periodic system of chemical elements in the new century\u2019 (Angew. Chem. Int. Ed., 2009, 48, 3404), S. Wang and W. Schwarz claim that the periodic system of elements has suffered from the \u2018invention of scientific facts\u2019. Summarize their key arguments in relation to the electron configurations of the transition elements.",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "1.4",
+      "text": "The decision about which elements should be identified as belonging to the f block has been a matter of some controversy. A view has been expressed by W.B. Jensen (J. Chem. Educ., 1982, 59, 635). Summarize the controversy and Jensen\u2019s arguments. An alternative view has been expressed by L. Lavalle (J. Chem. Educ., 2008, 85, 1482). Summarize the controversy and the arguments.",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "1.5",
+      "text": "During 1999 several papers appeared in the scientific literature claiming that d orbitals of Cu2O had been observed experimentally. In his paper \u2018Have orbitals really been observed?\u2019 (J. Chem. Educ., 2000, 77, 1494), Eric Scerri reviews these claims and discusses whether orbitals can be observed physically. Summarize his arguments briefly.",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "1.6",
+      "text": "At various times the following two sequences have been proposed for the elements to be included in Group 3: (a) Sc, Y, La, Ac, (b) Sc, Y, Lu, Lr. Because ionic radii strongly influence the chemical properties of the metallic elements, it might be thought that ionic radii could be used as one criterion for the periodic arrangement of the elements. Use this criterion to describe which of these sequences is preferred.",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "1.7",
+      "text": "In the paper \u2018Ionization energies of atoms and atomic ions\u2019 (P.F. Lang and B.C. Smith, J. Chem. Educ., 2003, 80, 938) the authors discuss the apparent irregularities in the first and second ionization energies of d- and f-block elements. Describe how these inconsistencies are rationalized.",
+      "type": "tutorial",
+      "page": 30
+    },
+    {
+      "number": "1.8",
+      "text": "The electron configuration of the transition metals is described by W.H.E. Schwarz in his paper \u2018The full story of the electron configurations of the transition elements\u2019 (J. Chem. Educ., 2010, 87, 444). Schwarz discusses five features that must be considered to fully understand the electron configurations of these elements. Discuss each of these five features and summarize the impact of each on our understanding of the electronic configurations.",
+      "type": "tutorial",
+      "page": 30
+    }
+  ]
+}
