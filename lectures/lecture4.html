@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 4: The structures of simple solids | CHEM 361</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+    <style>
+        :root {
+            --bg: #0a0f1a;
+            --bg-card: #131b2e;
+            --bg-elevated: #1a2540;
+            --text: #e8eaed;
+            --text-dim: #9aa0a6;
+            --accent: #8ab4f8;
+            --accent-green: #81c995;
+            --accent-yellow: #fdd663;
+            --accent-purple: #c58af9;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Crimson Pro', Georgia, serif;
+            background: var(--bg);
+            color: var(--text);
+            font-size: 1.15rem;
+            line-height: 1.95;
+        }
+
+        .lecture {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem 6rem;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            background: var(--bg-card);
+            border-bottom: 1px solid var(--bg-elevated);
+        }
+
+        .nav a {
+            color: var(--text-dim);
+            text-decoration: none;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+        }
+
+        .nav a:hover { color: var(--accent); }
+
+        .lecture-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #2a3a5a;
+        }
+
+        .lecture-header h1 {
+            font-size: 2.4rem;
+            font-weight: 500;
+            color: var(--accent);
+        }
+
+        .section { margin-bottom: 3rem; }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--accent-purple);
+            margin-bottom: 1.2rem;
+            font-weight: 500;
+        }
+
+        p { margin-bottom: 1.2rem; text-align: justify; }
+
+        .figure {
+            margin: 2rem 0;
+            background: var(--bg-card);
+            border-radius: 12px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .figure img {
+            max-width: 100%;
+            max-height: 500px;
+            object-fit: contain;
+            background: #f8f8f8;
+            padding: 1rem;
+        }
+
+        .figure-caption {
+            padding: 1rem;
+            background: var(--bg-elevated);
+            font-size: 0.95rem;
+            color: var(--text-dim);
+        }
+
+        .exercise-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .exercise {
+            background: var(--bg-card);
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 3px solid var(--accent-green);
+        }
+
+        .exercise strong {
+            color: var(--accent-green);
+            font-family: 'JetBrains Mono', monospace;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <a href="../index.html">← CHEM 361</a>
+        <a href="index.html">All Lectures</a>
+    </nav>
+
+    <main class="lecture">
+        <header class="lecture-header">
+            <h1>Lecture 4: The structures of simple solids</h1>
+        </header>
+
+
+        <section class="section" id="section-1">
+            <h2>The structures of</h2>
+            <p>4.1	 Unit cells and the description of crystal structures</p>
+        </section>
+
+        <section class="section" id="section-2">
+            <h2>The description of the structures of solids</h2>
+            <p>The arrangement of atoms or ions in simple solid structures</p>
+            <p>can often be represented by different arrangements of hard</p>
+            <p>spheres. The spheres used to describe metallic solids repre­</p>
+            <p>sent neutral atoms because each cation can still be consid­</p>
+            <p>ered as surrounded by its full complement of electrons. The</p>
+            <p>spheres used to describe ionic solids represent the cations</p>
+            <p>and anions because there has been a substantial transfer of</p>
+        </section>
+
+        <section class="section" id="section-3">
+            <h2>Unit cells and the description</h2>
+            <p>A crystal of an element or compound can be regarded as</p>
+            <p>constructed from regularly repeating structural elements,</p>
+            <p>which may be atoms, molecules, or ions. The ‘crystal lattice’</p>
+            <p>is the geometric pattern formed by the points that represent</p>
+            <p>the positions of these repeating structural elements.</p>
+        </section>
+
+        <section class="section" id="section-4">
+            <h2>KEY POINTS  The lattice defines a network of identical points that has</h2>
+            <p>the translational symmetry of a structure. A unit cell is a subdivision of</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter4/fig_4_1.png" alt="Figure 4.1">
+                <div class="figure-caption"><strong>Figure 4.1</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter4/fig_4_2.png" alt="Figure 4.2">
+                <div class="figure-caption"><strong>Figure 4.2</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter4/fig_4_3.png" alt="Figure 4.3">
+                <div class="figure-caption"><strong>Figure 4.3</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter4/fig_4_4.png" alt="Figure 4.4">
+                <div class="figure-caption"><strong>Figure 4.4</strong></div>
+            </div>            <p>a crystal that when stacked together following translations reproduces</p>
+            <p>A lattice is a three-dimensional, infinite array of points,</p>
+            <p>the lattice points, each of which is surrounded in an iden­</p>
+            <p>tical way by neighbouring points. The lattice defines the</p>
+            <p>repeating nature of the crystal. The crystal structure itself</p>
+            <p>is obtained by associating one or more identical structural</p>
+            <p>units, such as atoms, ions, or molecules, with each lattice</p>
+            <p>point. In many cases the structural unit may be centred on</p>
+        </section>
+
+        <section class="section" id="section-5">
+            <h2>KEY POINT  Structures may be drawn in projection, with atom posi­</h2>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter4/fig_4_8.png" alt="Figure 4.8">
+                <div class="figure-caption"><strong>Figure 4.8</strong></div>
+            </div>            <p>The position of an atom in a unit cell is normally described</p>
+            <p>in terms of fractional coordinates, coordinates expressed as</p>
+            <p>a fraction of the length of a side of the unit cell. Thus, the</p>
+            <p>position of an atom, relative to an origin (0,0,0), located</p>
+            <p>at xa parallel to a, yb parallel to b, and zc parallel to c is</p>
+            <p>denoted (x,y,z), with 0 ≤ x, y, z ≤ 1. Three-dimensional repre­</p>
+            <p>sentations of complex structures are often difficult to draw</p>
+            <p>and to interpret in two dimensions. A clearer method of rep­</p>
+            <p>resenting three-dimensional structures on a two-dimensional</p>
+        </section>
+
+        <section class="section" id="section-6">
+            <h2>The close packing of spheres</h2>
+        </section>
+
+        <section class="section" id="section-7">
+            <h2>KEY POINT  The close packing of identical spheres can result in a vari­</h2>
+            <p>ety of polytypes, of which hexagonal and cubic close-packed structures</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter4/fig_4_6.png" alt="Figure 4.6">
+                <div class="figure-caption"><strong>Figure 4.6</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter4/fig_4_7.png" alt="Figure 4.7">
+                <div class="figure-caption"><strong>Figure 4.7</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter4/fig_4_12.png" alt="Figure 4.12">
+                <div class="figure-caption"><strong>Figure 4.12</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter4/fig_4_5.png" alt="Figure 4.5">
+                <div class="figure-caption"><strong>Figure 4.5</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter4/fig_4_9.png" alt="Figure 4.9">
+                <div class="figure-caption"><strong>Figure 4.9</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter4/fig_4_10.png" alt="Figure 4.10">
+                <div class="figure-caption"><strong>Figure 4.10</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter4/fig_4_16.png" alt="Figure 4.16">
+                <div class="figure-caption"><strong>Figure 4.16</strong></div>
+            </div>            <p>Many metallic and ionic solids can be regarded as con­</p>
+            <p>structed from atoms and ions represented as hard spheres.</p>
+            <p>If there is no directional covalent bonding, these spheres</p>
+            <p>are free to pack together as closely as geometry allows and</p>
+            <p>hence adopt a close-packed structure, a structure in which</p>
+            <p>Consider first a single layer of identical spheres (Figs 4.11</p>
+            <p>and 4.12a). The greatest number of immediate neighbours</p>
+        </section>
+
+        <section class="section" id="section-8">
+            <h2>Holes in close-packed structures</h2>
+        </section>
+
+        <section class="section" id="section-9">
+            <h2>KEY POINTS  The structures of many solids can be discussed in terms</h2>
+            <p>of close-packed arrangements of one atom type in which the tetrahe­</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter4/fig_4_12.png" alt="Figure 4.12">
+                <div class="figure-caption"><strong>Figure 4.12</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter4/fig_4_15.png" alt="Figure 4.15">
+                <div class="figure-caption"><strong>Figure 4.15</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter4/fig_4_17.png" alt="Figure 4.17">
+                <div class="figure-caption"><strong>Figure 4.17</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter4/fig_4_18.png" alt="Figure 4.18">
+                <div class="figure-caption"><strong>Figure 4.18</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter4/fig_4_20.png" alt="Figure 4.20">
+                <div class="figure-caption"><strong>Figure 4.20</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter4/fig_4_19.png" alt="Figure 4.19">
+                <div class="figure-caption"><strong>Figure 4.19</strong></div>
+            </div>            <p>dral or octahedral holes are occupied by other atoms or ions. The ratio</p>
+            <p>FIGURE 4.16 The structure of solid C60 showing the packing of</p>
+            <p>EXAMPLE 4.3  Calculating the occupied space in a close-packed array</p>
+            <p>Calculate the percentage of unoccupied space in a close-packed</p>
+        </section>
+
+        <section class="section" id="section-10">
+            <h2>The structures of metals and alloys</h2>
+            <p>TABLE 4.2 The crystal structures adopted by metals under</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter4/fig_4_21.png" alt="Figure 4.21">
+                <div class="figure-caption"><strong>Figure 4.21</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter4/fig_4_14.png" alt="Figure 4.14">
+                <div class="figure-caption"><strong>Figure 4.14</strong></div>
+            </div>        </section>
+
+        <section class="section" id="section-11">
+            <h2>Nonclose-packed structures</h2>
+        </section>
+
+        <section class="section" id="section-12">
+            <h2>KEY POINTS  A common nonclose-packed metal structure is body-</h2>
+            <p>centred cubic; a primitive cubic structure is occasionally encountered.</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter4/fig_4_22.png" alt="Figure 4.22">
+                <div class="figure-caption"><strong>Figure 4.22</strong></div>
+            </div>            <p>Metals that have structures more complex than those described so far</p>
+            <p>can sometimes be regarded as slightly distorted versions of simple</p>
+            <p>Not all elemental metals have structure based on close pack­</p>
+            <p>ing and some other packing patterns use space nearly as</p>
+            <p>efficiently. One commonly adopted arrangement has the</p>
+            <p>translational symmetry of the body-centred cubic lattice</p>
+            <p>and is known as the body-centred cubic structure (cubic-I</p>
+            <p>or bcc), in which a sphere is at the centre of a cube with</p>
+        </section>
+
+        <section class="section" id="section-13">
+            <h2>Polytypism</h2>
+        </section>
+
+        <section class="section" id="section-14">
+            <h2>KEY POINT  Polytypes involving complex stacking arrangements of</h2>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter4/fig_4_23.png" alt="Figure 4.23">
+                <div class="figure-caption"><strong>Figure 4.23</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter4/fig_4_24.png" alt="Figure 4.24">
+                <div class="figure-caption"><strong>Figure 4.24</strong></div>
+            </div>            <p>Which of the common close-packed polytypes, hcp or ccp, a</p>
+            <p>metal adopts depends on the details of the electronic struc­</p>
+            <p>ture of its atoms, the extent of interaction between second-</p>
+            <p>nearest-neighbours, and the potential for some directional</p>
+            <p>character in the bonding. It has been observed that softer,</p>
+            <p>more malleable metals, such as copper and gold, adopt the</p>
+            <p>ccp arrangement while metals with hcp, such as cobalt and</p>
+            <p>magnesium, are harder and more brittle. This behaviour</p>
+            <p>is related to how easily planes of atoms can slip past each</p>
+        </section>
+
+        <section class="section" id="section-15">
+            <h2>Polymorphism of metals</h2>
+        </section>
+
+        <section class="section" id="section-16">
+            <h2>KEY POINTS  Polymorphism is a common consequence of the low di­</h2>
+            <p>rectionality of metallic bonding. At high temperatures a bcc structure</p>
+            <p>is common for metals that are close-packed at low temperatures on</p>
+            <p>account of the increased amplitude of atomic vibrations.</p>
+            <p>The lack of directionality in the interactions between metal</p>
+            <p>atoms accounts for the wide occurrence of polymorphism,</p>
+            <p>the ability to adopt different crystal forms under different</p>
+            <p>conditions of pressure and temperature. It is often, but not</p>
+            <p>universally, found that the most closely packed phases are</p>
+            <p>thermodynamically favoured at low temperatures and the</p>
+            <p>less closely packed structures are favoured at high temper­</p>
+        </section>
+
+        <section class="section" id="section-17">
+            <h2>Atomic radii of metals</h2>
+        </section>
+
+        <section class="section" id="section-18">
+            <h2>KEY POINT  The Goldschmidt correction converts atomic radii of metals</h2>
+            <p>to the value they would have in a close-packed structure with 12-fold</p>
+            <p>An informal definition of the atomic radius of a metal­</p>
+            <p>lic element was given in Section 1.7 as half the distance</p>
+            <p>between the centres of adjacent atoms in the solid.</p>
+            <p>However, it is found that this distance generally increases</p>
+            <p>with the coordination number of the lattice. The same</p>
+            <p>atom in structures with different coordination numbers</p>
+            <p>may therefore appear to have different radii, and an atom</p>
+            <p>of an element with coordination number 12 appears big­</p>
+        </section>
+
+        <section class="section" id="section-19">
+            <h2>Alloys and interstitials</h2>
+            <p>An alloy is a blend of metallic elements prepared by mix­</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter4/fig_4_25.png" alt="Figure 4.25">
+                <div class="figure-caption"><strong>Figure 4.25</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter4/fig_4_26.png" alt="Figure 4.26">
+                <div class="figure-caption"><strong>Figure 4.26</strong></div>
+            </div>            <p>ing the molten components and then cooling the mixture to</p>
+            <p>produce a metallic solid. Alloys may be homogeneous solid</p>
+            <p>solutions, in which the atoms of one metal are distributed</p>
+            <p>randomly among the atoms of the other, or they may be</p>
+            <p>compounds with a definite composition and internal struc­</p>
+            <p>ture. Alloys typically form from two electropositive metals,</p>
+            <p>so they are likely to be located towards the bottom left-hand</p>
+            <p>corner of a Ketelaar triangle (Fig. 4.25). The majority of</p>
+            <p>simple alloys can be classified as either ‘substitutional’ or</p>
+        </section>
+
+        <section class="section" id="section-20">
+            <h2>KEY POINT  A substitutional solid solution or alloy involves the re­</h2>
+            <p>placement of one type of metal atom in a structure by another.</p>
+            <p>Substitutional solid solutions are generally formed if three</p>
+            <p>• The atomic radii of the elements are within about 15 per</p>
+            <p>• The crystal structures of the two pure metals are the</p>
+            <p>same; this similarity indicates that the directional forces</p>
+            <p>between the two types of atom are compatible with each</p>
+            <p>• The electropositive characters of the two components</p>
+        </section>
+
+
+        <section class="section" id="exercises">
+            <h2>Exercises</h2>
+            <div class="exercise-list">
+
+                <div class="exercise">
+                    <strong>4.1</strong> What are the relationships between the unit cell parameters in the monoclinic crystal system? Draw a projection of a monoclinic cell viewed down the b axis and hence show that the packing of monoclinic unit cells will completely fill three-dimensional space.
+                </div>
+
+                <div class="exercise">
+                    <strong>4.2</strong> Draw a tetragonal unit cell and mark on it a set of points that would define (a) a face-centred lattice and (b) a body-centred lattice. Demonstrate, by considering two adjacent unit cells, that a tetragonal face-centred lattice of dimensions a and c can always be redrawn as a body-centred tetragonal...
+                </div>
+
+                <div class="exercise">
+                    <strong>4.3</strong> (a) Draw a cubic unit cell with lattice points at (½,0,0), (0,½,0), (0,0,½), and (½,½,½). What is the lattice type of this unit cell and how many lattice points are contained within the unit cell? (b) Draw an orthorhombic unit cell with lattice points at (0,0,0) and (½,½,0). What is the lattice type...
+                </div>
+
+                <div class="exercise">
+                    <strong>4.4</strong> Draw a cubic unit cell (a) in projection (showing the fractional heights of the atoms) and (b) as a three-dimensional representation that has atoms at the following positions: Ti at ( , , ) 1 2 1 2 1 2 , O at ( , , 1 2 1 2 0), (0,  , 1 2 1 2 ), and ( ,0, ) 1 2 1 2 , and Ba at (0,0,0). Remember that ...
+                </div>
+
+                <div class="exercise">
+                    <strong>4.5</strong> Which of the following schemes for the repeating pattern of close-packed planes are not ways of generating close-packed lattices? (a) CBACBA . . ., (b) ABAC . . ., (c) ABBA . . ., (d) ABCBC . . ., (e) ABABC . . ., (f) ABCBCA . . ..
+                </div>
+
+                <div class="exercise">
+                    <strong>4.6</strong> Determine the formulas of the compounds produced by (a) filling a quarter of the tetrahedral holes with cations M in a hexagonal close-packed array of anions X; (b) filling half the octahedral holes with cations M in a cubic close-packed array of anions X; (c) filling a sixth of the tetrahedral hole...
+                </div>
+
+                <div class="exercise">
+                    <strong>4.7</strong> Metallic copper adopts an fcc structure with density 8960 kg m−3. Draw the unit cell of copper and mark the shortest copper atom to copper atom distance. How many copper atoms are there in the unit cell? Use the density and mass of the unit cell to determine the lattice parameter for copper and henc...
+                </div>
+
+                <div class="exercise">
+                    <strong>4.8</strong> (a) Potassium reacts with C60 (Fig. 4.16) to give a compound in which all the octahedral and tetrahedral holes are filled by potassium ions. Derive a stoichiometry for this compound. (b) The reaction of C60 with excess potassium yields a material that has a body-centred arrangement of C60 molecules ...
+                </div>
+
+                <div class="exercise">
+                    <strong>4.9</strong> In the structure of MoS2, the S atoms are arranged in close- packed layers that repeat themselves in the sequence AAA . . .. The Mo atoms occupy holes with coordination number 6. Show that each Mo atom is surrounded by a trigonal prism of S atoms.
+                </div>
+
+                <div class="exercise">
+                    <strong>4.10</strong> Draw the bcc unit cell of tungsten metal and add a second neighbouring unit cell. What, approximately, is the CN of a site in the face of the original unit cell? What would be the stoichiometry of a compound in which all these sites were filled with carbon? Calculate the two shortest W-C distances f...
+                </div>
+
+                <div class="exercise">
+                    <strong>4.11</strong> Metallic lithium adopts a bcc structure with density of 535 kg m−3. What is the length of the edge of the unit cell?
+                </div>
+
+                <div class="exercise">
+                    <strong>4.12</strong> An alloy of copper and gold has the structure shown in Fig. 4.75. Calculate the composition of this unit cell. What is the lattice type of this structure? Given that 24-carat gold is pure gold, what carat gold does this alloy represent? coordination number of the cation and anion in each of these st...
+                </div>
+
+                <div class="exercise">
+                    <strong>4.16</strong> Consider the structure of caesium chloride. How many Cs+ ions occupy second-nearest-neighbour locations of a Cs+ ion? How many Cl− ions occupy the third-nearest-neighbour sites?
+                </div>
+
+                <div class="exercise">
+                    <strong>4.17</strong> The ReO3 structure is cubic with a rhenium atom at each corner of the unit cell and one oxygen atom on each unit cell edge midway between the rhenium atoms. Sketch this unit cell and determine (a) the coordination numbers of the ions and (b) the identity of the structure type that would be generated...
+                </div>
+
+                <div class="exercise">
+                    <strong>4.18</strong> Determine the composition of a compound based on the ReO3 structure, Exercise 4.17, where each of the oxide ions is replaced by a hydroxide ion [OH]−. Predict, based on commonly adopted oxidation states, which elements in the periodic table might have hydroxides that adopt this structure type.
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false},
+                    {left: '\\(', right: '\\)', display: false},
+                    {left: '\\[', right: '\\]', display: true}
+                ]
+            });
+        });
+    </script>
+</body>
+</html>

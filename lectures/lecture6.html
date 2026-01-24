@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 6: Oxidation and reduction | CHEM 361</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+    <style>
+        :root {
+            --bg: #0a0f1a;
+            --bg-card: #131b2e;
+            --bg-elevated: #1a2540;
+            --text: #e8eaed;
+            --text-dim: #9aa0a6;
+            --accent: #8ab4f8;
+            --accent-green: #81c995;
+            --accent-yellow: #fdd663;
+            --accent-purple: #c58af9;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Crimson Pro', Georgia, serif;
+            background: var(--bg);
+            color: var(--text);
+            font-size: 1.15rem;
+            line-height: 1.95;
+        }
+
+        .lecture {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem 6rem;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            background: var(--bg-card);
+            border-bottom: 1px solid var(--bg-elevated);
+        }
+
+        .nav a {
+            color: var(--text-dim);
+            text-decoration: none;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+        }
+
+        .nav a:hover { color: var(--accent); }
+
+        .lecture-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #2a3a5a;
+        }
+
+        .lecture-header h1 {
+            font-size: 2.4rem;
+            font-weight: 500;
+            color: var(--accent);
+        }
+
+        .section { margin-bottom: 3rem; }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--accent-purple);
+            margin-bottom: 1.2rem;
+            font-weight: 500;
+        }
+
+        p { margin-bottom: 1.2rem; text-align: justify; }
+
+        .figure {
+            margin: 2rem 0;
+            background: var(--bg-card);
+            border-radius: 12px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .figure img {
+            max-width: 100%;
+            max-height: 500px;
+            object-fit: contain;
+            background: #f8f8f8;
+            padding: 1rem;
+        }
+
+        .figure-caption {
+            padding: 1rem;
+            background: var(--bg-elevated);
+            font-size: 0.95rem;
+            color: var(--text-dim);
+        }
+
+        .exercise-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .exercise {
+            background: var(--bg-card);
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 3px solid var(--accent-green);
+        }
+
+        .exercise strong {
+            color: var(--accent-green);
+            font-family: 'JetBrains Mono', monospace;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <a href="../index.html">← CHEM 361</a>
+        <a href="index.html">All Lectures</a>
+    </nav>
+
+    <main class="lecture">
+        <header class="lecture-header">
+            <h1>Lecture 6: Oxidation and reduction</h1>
+        </header>
+
+
+        <section class="section" id="section-1">
+            <h2>Oxidation and reduction</h2>
+            <p>A large class of reactions of inorganic compounds can be</p>
+            <p>regarded as occurring by the transfer of electrons from one</p>
+            <p>species to another. Electron gain is called reduction and</p>
+            <p>electron loss is called oxidation; the joint process is called</p>
+            <p>a redox reaction. The species that supplies electrons is the</p>
+            <p>reducing agent (or ‘reductant’) and the species that removes</p>
+            <p>electrons is the oxidizing agent (or ‘oxidant’). Many redox</p>
+            <p>reactions release a great deal of energy and they are exploited</p>
+            <p>in combustion or battery technologies as well as biology.</p>
+        </section>
+
+        <section class="section" id="section-2">
+            <h2>Reduction potentials</h2>
+            <p>Because electrons are transferred between species in redox</p>
+            <p>reactions, electrochemical methods (using electrodes to</p>
+            <p>measure electron transfer reactions under controlled ther­</p>
+            <p>modynamic conditions) are of major importance and lead</p>
+            <p>to a scale of ‘standard potentials’ for inorganic species.</p>
+            <p>The tendency of an electron to migrate from one species</p>
+            <p>to another is expressed in terms of the differences between</p>
+            <p>their standard potentials. Techniques such as cyclic voltam­</p>
+            <p>metry (Chapter 8) are used to measure reduction potentials</p>
+            <p>under different conditions, and extract information about</p>
+        </section>
+
+        <section class="section" id="section-3">
+            <h2>Redox half-reactions</h2>
+        </section>
+
+        <section class="section" id="section-4">
+            <h2>KEY POINT  A redox reaction can be expressed as the difference of two</h2>
+            <p>It is convenient to think of a redox reaction as the combina­</p>
+            <p>tion of two conceptual half-reactions in which the electron</p>
+            <p>loss (oxidation) and gain (reduction) are displayed explic­</p>
+            <p>itly. In a reduction half-reaction, a substance gains electrons,</p>
+            <p>In an oxidation half-reaction, a substance loses electrons,</p>
+        </section>
+
+        <section class="section" id="section-5">
+            <h2>Standard potentials and spontaneity</h2>
+        </section>
+
+        <section class="section" id="section-6">
+            <h2>KEY POINT  A reaction is thermodynamically favourable (sponta­</h2>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter6/fig_6_1.png" alt="Figure 6.1">
+                <div class="figure-caption"><strong>Figure 6.1</strong></div>
+            </div>            <p>standard potentials corresponding to the half-reactions into which the</p>
+            <p>Thermodynamic arguments can be used to identify which</p>
+            <p>reactions are spontaneous (i.e. have a natural tendency to</p>
+            <p>occur). The thermodynamic criterion of spontaneity is that,</p>
+            <p>at constant temperature and pressure, the reaction Gibbs</p>
+            <p>energy change, ΔrG, is negative. It is usually sufficient to</p>
+        </section>
+
+        <section class="section" id="section-7">
+            <h2>Trends in standard potentials</h2>
+        </section>
+
+        <section class="section" id="section-8">
+            <h2>KEY POINT  The atomization and ionization of a metal and the hy­</h2>
+            <p>dration enthalpy of its ions all contribute to the value of the standard</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter6/fig_6_2.png" alt="Figure 6.2">
+                <div class="figure-caption"><strong>Figure 6.2</strong></div>
+            </div>            <p>The factors that contribute to the standard potential of the</p>
+            <p>couple M+/M can be identified by consideration of a ther­</p>
+            <p>modynamic cycle and the corresponding changes in Gibbs</p>
+            <p>The thermodynamic cycle shown in Fig. 6.2 has been sim­</p>
+            <p>plified by ignoring the reaction entropy, which is largely</p>
+        </section>
+
+        <section class="section" id="section-9">
+            <h2>The electrochemical series</h2>
+        </section>
+
+        <section class="section" id="section-10">
+            <h2>KEY POINTS  The oxidized member of a couple is a strong oxidizing</h2>
+            <p>⦵ is positive and large; the reduced member is a strong reduc­</p>
+            <p>which the reduced species (the Zn in Zn2+/Zn) is a reduc­</p>
+            <p>ing agent for H+ ions under standard conditions in aqueous</p>
+        </section>
+
+        <section class="section" id="section-11">
+            <h2>The Nernst equation</h2>
+        </section>
+
+        <section class="section" id="section-12">
+            <h2>KEY POINT  The cell potential at an arbitrary composition of the reac­</h2>
+            <p>To judge the tendency of a reaction to run in a particular</p>
+            <p>direction at an arbitrary composition, we need to know the</p>
+            <p>sign and value of ΔrG at that composition. For this informa­</p>
+        </section>
+
+        <section class="section" id="section-13">
+            <h2>Redox stability</h2>
+            <p>When assessing the thermodynamic stability of a species in</p>
+            <p>solution, we must bear in mind all possible reactants: the</p>
+            <p>solvent, other solutes, the species itself, and dissolved oxy­</p>
+            <p>gen. In the following discussion, we focus on the types of</p>
+            <p>reaction that result from the thermodynamic instability of a</p>
+            <p>solute. We also comment briefly on kinetic factors, but the</p>
+            <p>trends they show are generally less systematic than those</p>
+        </section>
+
+        <section class="section" id="section-14">
+            <h2>The influence of pH</h2>
+        </section>
+
+        <section class="section" id="section-15">
+            <h2>KEY POINT  Many redox reactions in aqueous solution involve transfer</h2>
+            <p>of H+ as well as electrons and the electrode potential therefore depends</p>
+            <p>For many reactions in aqueous solution the electrode poten­</p>
+            <p>tial varies with pH because reduced species of a redox couple</p>
+            <p>are usually much stronger Brønsted bases than the oxidized</p>
+            <p>species. For a redox couple in which there is transfer of νe</p>
+            <p>electrons and νH protons, it follows from eqn 6.6b that</p>
+        </section>
+
+        <section class="section" id="section-16">
+            <h2>Reactions with water</h2>
+            <p>Water may act as an oxidizing agent, when it is reduced</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter6/fig_6_3.png" alt="Figure 6.3">
+                <div class="figure-caption"><strong>Figure 6.3</strong></div>
+            </div>        </section>
+
+        <section class="section" id="section-17">
+            <h2>KEY POINT  For metals with large, negative standard potentials,</h2>
+            <p>reaction with aqueous acids leads to the production of H2 unless a</p>
+            <p>The reaction of a metal with water or aqueous acid is in</p>
+            <p>fact the oxidation of the metal by water or hydrogen ions,</p>
+            <p>because the overall reaction is one of the following processes</p>
+            <p>(and their analogues for more highly charged metal ions):</p>
+        </section>
+
+        <section class="section" id="section-18">
+            <h2>KEY POINT  Water can act as a reducing agent; that is, be oxidized by</h2>
+            <p>The strongly positive potential of the O2, 4 H+/2 H2O couple</p>
+            <p>(eqn 6.10) shows that acidified water is a poor reducing</p>
+            <p>agent except towards strong oxidizing agents. An example</p>
+            <p>It is reduced by water with the evolution of O2 and Co3+</p>
+            <p>4 Co3+(aq) + 2 H2O(l) → 4 Co2+(aq) + O2(g) + 4 H+(aq)</p>
+        </section>
+
+        <section class="section" id="section-19">
+            <h2>KEY POINT  The stability field of water shows the region of pH and</h2>
+            <p>reduction potential where couples are neither oxidized by nor reduce</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter6/fig_6_3.png" alt="Figure 6.3">
+                <div class="figure-caption"><strong>Figure 6.3</strong></div>
+            </div>            <p>A reducing agent that can reduce water to H2 rapidly, or an</p>
+            <p>oxidizing agent that can oxidize water to O2 rapidly, can­</p>
+            <p>not survive in aqueous solution. The stability field of water,</p>
+            <p>which is shown in Fig. 6.3, is the range of values of poten­</p>
+            <p>tial and pH for which water is thermodynamically stable</p>
+            <p>The upper and lower boundaries of the stability field are</p>
+            <p>identified by finding the dependence of E on pH for the rel­</p>
+        </section>
+
+        <section class="section" id="section-20">
+            <h2>Oxidation by atmospheric oxygen</h2>
+        </section>
+
+
+        <section class="section" id="exercises">
+            <h2>Exercises</h2>
+            <div class="exercise-list">
+
+                <div class="exercise">
+                    <strong>6.16</strong> Calculate the reduction potential at 25°C for the conversion of MnO4 − to MnO2(s) in aqueous solution at pH = 9.00 and 1 M MnO4 −(aq) given that E ⦵(MnO4 −/MnO2) = +1.69 V.
+                </div>
+
+                <div class="exercise">
+                    <strong>6.17</strong> Using the following aqueous acid solution reduction potentials E ⦵(Pd2+,Pd) = +0.915 V and E ⦵([PdCl4]2−,Pd) = +0.60 V, calculate the equilibrium constant for the reaction Pd2+(aq) +
+                </div>
+
+                <div class="exercise">
+                    <strong>6.18</strong> Calculate the equilibrium constant of the reaction Au+(aq) + Au (aq) e Au(s) 1.68V [Au(CN) ] (aq) e Au(s) 2CN (aq) 0.6V 2 E E ○ ○ + −→ = + + → + = − + − − − −− −−
+                </div>
+
+                <div class="exercise">
+                    <strong>6.19</strong> The ligand edta forms stable complexes with hard acid centres. How will complexation with edta affect the reduction of M2+ to the metal in the 3d series?
+                </div>
+
+                <div class="exercise">
+                    <strong>6.20</strong> Draw a Frost diagram for mercury in acid solution, given the following Latimer diagram:  →   →  + + Hg Hg Hg 2 0.911 2 2 0.796 Comment on the tendency of any of the species to act as an oxidizing agent, a reducing agent, or to undergo disproportionation.
+                </div>
+
+                <div class="exercise">
+                    <strong>6.21</strong> Use Fig. 6.12 to find the approximate potential of an aerated lake at pH = 6. With this information and Latimer diagrams from Resource section 3, predict the species at equilibrium for the elements (a) iron, (b) manganese, (c) sulfur.
+                </div>
+
+                <div class="exercise">
+                    <strong>6.22</strong> Explain why water with high concentrations of dissolved carbon dioxide and open to atmospheric oxygen is very corrosive towards iron.
+                </div>
+
+                <div class="exercise">
+                    <strong>6.23</strong> The species Fe2+ and H2S are important at the bottom of a lake where O2 is scarce. If the pH = 6, what is the maximum value of E characterizing the environment?
+                </div>
+
+                <div class="exercise">
+                    <strong>6.24</strong> In Fig. 6.11, which of the boundaries depend on the choice of Fe2+ concentration as 10−5 mol dm−3?
+                </div>
+
+                <div class="exercise">
+                    <strong>6.25</strong> Consult the Ellingham diagram in Fig. 6.16 and determine if there are any conditions under which aluminium might be expected to reduce MgO. Comment on these conditions.
+                </div>
+
+                <div class="exercise">
+                    <strong>6.26</strong> The standard potentials for phosphorus species in aqueous solution at pH = 0 and pH = 14 are provided in Resource section 3. (a)  Account for the difference in reduction potentials between pH 0 and pH 14. (b)  Construct a single Frost diagram showing both sets of data. (c)  Phosphine (PH3) can be pr...
+                </div>
+
+                <div class="exercise">
+                    <strong>6.27</strong> Given the following standard potentials in basic solution CrO (aq) 4H O(l) 3e Cr(OH) (s) 5OH (aq) 0.11V [Cu(NH ) ] (aq) e Cu(s) 2NH (aq) 0.10 V 4 2 2 3 3 2 3 E E ○ ○ + + → + = − + → + = − − − − + − −− −− and assuming that a reversible reaction can be established on a suitable catalyst, calculate E ⦵...
+                </div>
+
+                <div class="exercise">
+                    <strong>6.28</strong> Many of the tabulated data for standard potentials have been determined from thermochemical data rather than direct electrochemical measurements of cell potentials. Carry out a calculation to illustrate this approach for the half-reaction Sc2O3(s) + 3 H2O(l) + 6 e− → 2 Sc(s) + 6 OH−(aq). Sc3+(aq) OH...
+                </div>
+
+                <div class="exercise">
+                    <strong>6.29</strong> Standard potentials at 25°C for indium and thallium in aqueous solution (pH = 0) are given below. In3+(aq) + 3 e− → In(s) E ⦵ = −0.338 V In+(aq) + e− → In(s) E ⦵ = −0.126 V Tl3+(aq) + 3 e− → Tl(s) E ⦵ = +0.721 V Tl+(aq) + e− → Tl(s) E ⦵ = −0.336 V Use the data to construct a Frost diagram for the tw...
+                </div>
+
+                <div class="exercise">
+                    <strong>6.30</strong> Data shown below refer to redox couples for the Group 8 elements Fe and Ru. Fe2+(aq) + 2 e− → Fe(s) E ⦵ = −0.44 V Fe3+(aq) + e− → Fe2+(aq) E ⦵ = +0.77 V Ru2+(aq) + 2 e− → Ru(s) E ⦵ = +0.80 V Ru3+(aq) + 2e− → Ru2+(aq) E ⦵ = +0.25 V (a)  Comment on the relative stability of Fe2+ and Ru2+ in acidic aqu...
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false},
+                    {left: '\\(', right: '\\)', display: false},
+                    {left: '\\[', right: '\\]', display: true}
+                ]
+            });
+        });
+    </script>
+</body>
+</html>

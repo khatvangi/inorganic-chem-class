@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 21: Coordination chemistry: reactions of complexes | CHEM 361</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+    <style>
+        :root {
+            --bg: #0a0f1a;
+            --bg-card: #131b2e;
+            --bg-elevated: #1a2540;
+            --text: #e8eaed;
+            --text-dim: #9aa0a6;
+            --accent: #8ab4f8;
+            --accent-green: #81c995;
+            --accent-yellow: #fdd663;
+            --accent-purple: #c58af9;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Crimson Pro', Georgia, serif;
+            background: var(--bg);
+            color: var(--text);
+            font-size: 1.15rem;
+            line-height: 1.95;
+        }
+
+        .lecture {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem 6rem;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            background: var(--bg-card);
+            border-bottom: 1px solid var(--bg-elevated);
+        }
+
+        .nav a {
+            color: var(--text-dim);
+            text-decoration: none;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+        }
+
+        .nav a:hover { color: var(--accent); }
+
+        .lecture-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #2a3a5a;
+        }
+
+        .lecture-header h1 {
+            font-size: 2.4rem;
+            font-weight: 500;
+            color: var(--accent);
+        }
+
+        .section { margin-bottom: 3rem; }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--accent-purple);
+            margin-bottom: 1.2rem;
+            font-weight: 500;
+        }
+
+        p { margin-bottom: 1.2rem; text-align: justify; }
+
+        .figure {
+            margin: 2rem 0;
+            background: var(--bg-card);
+            border-radius: 12px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .figure img {
+            max-width: 100%;
+            max-height: 500px;
+            object-fit: contain;
+            background: #f8f8f8;
+            padding: 1rem;
+        }
+
+        .figure-caption {
+            padding: 1rem;
+            background: var(--bg-elevated);
+            font-size: 0.95rem;
+            color: var(--text-dim);
+        }
+
+        .exercise-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .exercise {
+            background: var(--bg-card);
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 3px solid var(--accent-green);
+        }
+
+        .exercise strong {
+            color: var(--accent-green);
+            font-family: 'JetBrains Mono', monospace;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <a href="../index.html">← CHEM 361</a>
+        <a href="index.html">All Lectures</a>
+    </nav>
+
+    <main class="lecture">
+        <header class="lecture-header">
+            <h1>Lecture 21: Coordination chemistry: reactions of complexes</h1>
+        </header>
+
+
+        <section class="section" id="section-1">
+            <h2>Coordination chemistry:</h2>
+        </section>
+
+        <section class="section" id="section-2">
+            <h2>Ligand substitution reactions</h2>
+            <p>The most fundamental reaction a complex can undergo is</p>
+            <p>ligand substitution, a reaction in which one Lewis base dis­</p>
+        </section>
+
+        <section class="section" id="section-3">
+            <h2>Rates of ligand substitution</h2>
+        </section>
+
+        <section class="section" id="section-4">
+            <h2>KEY POINTS  The rates of substitution reactions span a very wide</h2>
+            <p>range and correlate with the structures of the complexes; complexes</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter21/fig_21_1.png" alt="Figure 21.1">
+                <div class="figure-caption"><strong>Figure 21.1</strong></div>
+            </div>            <p>that react quickly are called labile; those that react slowly are called</p>
+            <p>Rates of reaction are as important as equilibria in coordina­</p>
+            <p>tion chemistry. The numerous isomers of the ammines of</p>
+            <p>Co(III) and Pt(II), which were so important to the develop­</p>
+            <p>ment of the subject, could not have been isolated if ligand</p>
+            <p>substitutions and interconversion of the isomers had been</p>
+            <p>fast. But what determines whether one complex will sur­</p>
+            <p>vive for long periods whereas another will undergo rapid</p>
+        </section>
+
+        <section class="section" id="section-5">
+            <h2>The classification of mechanisms</h2>
+            <p>The mechanism of a reaction is the sequence of elemen­</p>
+            <p>tary steps by which the reaction takes place. Once a suit­</p>
+            <p>able mechanism has been identified, attention turns to</p>
+            <p>the details of the activation process of the rate-determin­</p>
+            <p>ing step. In some cases the overall mechanism is poorly</p>
+            <p>resolved, and the only information available is the rate-</p>
+        </section>
+
+        <section class="section" id="section-6">
+            <h2>KEY POINTS  The mechanism of a nucleophilic substitution reaction</h2>
+            <p>is the sequence of elementary steps by which the reaction takes place</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter21/fig_21_2.png" alt="Figure 21.2">
+                <div class="figure-caption"><strong>Figure 21.2</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter21/fig_21_3.png" alt="Figure 21.3">
+                <div class="figure-caption"><strong>Figure 21.3</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter21/fig_21_4.png" alt="Figure 21.4">
+                <div class="figure-caption"><strong>Figure 21.4</strong></div>
+            </div>            <p>and is classified as associative, dissociative, or interchange; an associa­</p>
+            <p>tive mechanism is distinguished from an interchange mechanism by</p>
+            <p>demonstrating that the intermediate has a relatively long life.</p>
+            <p>The first stage in the kinetic analysis of a reaction is to study</p>
+            <p>how its rate changes as the concentrations of reactants are</p>
+            <p>varied. This type of investigation leads to the identification</p>
+            <p>of rate laws, the differential equations governing the rate</p>
+            <p>of change of the concentrations of reactants and products.</p>
+            <p>For example, the observation that the rate of formation of</p>
+        </section>
+
+        <section class="section" id="section-7">
+            <h2>KEY POINT  The rate-determining step is classified as associative or</h2>
+            <p>dissociative according to the dependence of its rate on the identity of</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter21/fig_21_5.png" alt="Figure 21.5">
+                <div class="figure-caption"><strong>Figure 21.5</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter21/fig_21_6.png" alt="Figure 21.6">
+                <div class="figure-caption"><strong>Figure 21.6</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter21/fig_21_7.png" alt="Figure 21.7">
+                <div class="figure-caption"><strong>Figure 21.7</strong></div>
+            </div>            <p>Now we consider the rate-determining step of a reaction</p>
+            <p>and the details of its formation. The step is called asso­</p>
+            <p>ciative, and denoted a, if its rate depends strongly on the</p>
+            <p>identity of the incoming group. Examples are found among</p>
+            <p>reactions of the d8 square-planar complexes of Pt(II), Pd(II),</p>
+        </section>
+
+        <section class="section" id="section-8">
+            <h2>Ligand substitution in square-planar complexes</h2>
+            <p>TABLE 21.2  A selection of nPt values for a range of nucleophiles</p>
+        </section>
+
+        <section class="section" id="section-9">
+            <h2>The nucleophilicity of the entering</h2>
+        </section>
+
+        <section class="section" id="section-10">
+            <h2>KEY POINTS  The nucleophilicity of an entering group is expressed in</h2>
+            <p>terms of the nucleophilicity parameter defined in terms of the substitu­</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter21/fig_21_8.png" alt="Figure 21.8">
+                <div class="figure-caption"><strong>Figure 21.8</strong></div>
+            </div>            <p>tion reactions of a specific square-planar platinum complex; the sensi­</p>
+            <p>tivity of other platinum complexes to changes in the entering group is</p>
+            <p>expressed in terms of the nucleophilic discrimination factor.</p>
+            <p>We start by considering the variation of the rate of the reac­</p>
+            <p>tion as the entering group Y is varied. The reactivity of Y</p>
+            <p>(for instance, I− in the reaction above) can be expressed in</p>
+        </section>
+
+        <section class="section" id="section-11">
+            <h2>The shape of the transition state</h2>
+            <p>Careful studies of the variation of the reaction rates of</p>
+            <p>square-planar complexes with changes in the composition</p>
+            <p>of the reactant complex and the conditions of the reaction</p>
+            <p>shed light on the general shape of the transition state. They</p>
+            <p>also confirm that substitution almost invariably has an</p>
+            <p>associative rate-determining stage; hence intermediates are</p>
+        </section>
+
+        <section class="section" id="section-12">
+            <h2>KEY POINT  A strong σ-donor ligand or π-acceptor ligand greatly</h2>
+            <p>accelerates substitution of a ligand that lies in the trans position in</p>
+            <p>The spectator ligands T that are trans to the leaving group in</p>
+            <p>square-planar complexes influence the rate of substitution.</p>
+            <p>This phenomenon is called the trans effect. It is generally</p>
+            <p>accepted that the trans effect arises from two separate influ­</p>
+            <p>ences, one arising in the ground state and the other in the</p>
+            <p>The trans influence is the extent to which the ligand T</p>
+            <p>weakens the bond trans to itself in the ground state of the</p>
+        </section>
+
+        <section class="section" id="section-13">
+            <h2>KEY POINT  Steric crowding at the reaction centre usually inhibits as­</h2>
+            <p>sociative reactions and facilitates dissociative reactions.</p>
+            <p>Steric crowding at the reaction centre by bulky groups that</p>
+            <p>can block the approach of attacking nucleophiles will inhibit</p>
+            <p>associative reactions. The rate constants for the replacement</p>
+            <p>of Cl− by H2O in cis-[PtClL(PEt3)2]+ complexes at 25°C illus­</p>
+        </section>
+
+        <section class="section" id="section-14">
+            <h2>KEY POINT  Substitution of a square-planar complex preserves the</h2>
+            <p>original geometry, which suggests a trigonal-pyramidal transition state.</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter21/fig_21_9.png" alt="Figure 21.9">
+                <div class="figure-caption"><strong>Figure 21.9</strong></div>
+            </div>            <p>Further insight into the nature of the transition state is</p>
+            <p>obtained from the observation that substitution of a square-</p>
+            <p>planar complex preserves the original geometry. That is, a</p>
+            <p>cis complex gives a cis product and a trans complex gives a</p>
+            <p>trans product. This behaviour is explained by the formation</p>
+            <p>of an approximately trigonal-bipyramidal transition state</p>
+            <p>with the entering, leaving, and trans groups in the trigonal</p>
+            <p>TABLE 21.4  The effect of the trans ligand in reactions of</p>
+        </section>
+
+        <section class="section" id="section-15">
+            <h2>KEY POINT  Negative volumes and entropies of activation support the</h2>
+            <p>view that the rate-determining step of square-planar Pt(II) complexes</p>
+            <p>Another clue to the nature of the transition state comes from</p>
+            <p>the entropies and volumes of activation for reactions of Pt(II)</p>
+            <p>and Au(III) complexes (Table 21.5). The entropy of activa­</p>
+            <p>tion is obtained from the temperature dependence of the rate</p>
+            <p>constant, and indicates the change in disorder (of reactants</p>
+            <p>and solvent) when the transition state forms. Likewise, the</p>
+            <p>volume of activation, which is obtained (using special equip­</p>
+            <p>ment) from the pressure dependence of the rate constant, is</p>
+        </section>
+
+        <section class="section" id="section-16">
+            <h2>KEY POINT  The first-order contribution to the rate law is a pseudo-</h2>
+            <p>first-order process in which the solvent participates.</p>
+            <p>Having considered factors that affect the second-order</p>
+            <p>pathway, we can now consider the first-order pathway for</p>
+            <p>the substitution of square-planar complexes. The first issue</p>
+            <p>we must address is the first-order pathway in the rate equa­</p>
+            <p>tion, and decide whether k1 in the rate law in eqn 21.2 and</p>
+        </section>
+
+        <section class="section" id="section-17">
+            <h2>Ligand substitution in octahedral complexes</h2>
+            <p>Octahedral complexes occur for different metals in a wide</p>
+            <p>range of oxidation states and with a great diversity of bond­</p>
+            <p>ing modes. We might therefore expect a huge variety of</p>
+            <p>mechanisms of substitution; however, almost all octahedral</p>
+            <p>complexes react by the interchange (I) mechanism. The only</p>
+            <p>real question is whether the rate-determining step is associa­</p>
+            <p>tive or dissociative. The analysis of rate laws for reactions</p>
+            <p>that take place by such a mechanism helps to formulate the</p>
+            <p>precise conditions for distinguishing these two possibilities</p>
+            <p>and identifying the substitution as Ia (interchange with an</p>
+        </section>
+
+        <section class="section" id="section-18">
+            <h2>Rate laws and their interpretation</h2>
+            <p>Rate laws provide an insight into the detailed mechanism of</p>
+            <p>a reaction in the sense that any proposed mechanism must</p>
+            <p>be consistent with the observed rate law. In the following</p>
+            <p>section we see how the rate laws found experimentally for</p>
+        </section>
+
+        <section class="section" id="section-19">
+            <h2>KEY POINTS  In the Eigen–Wilkins mechanism, an encounter complex</h2>
+            <p>is formed in a pre-equilibrium step and the encounter complex forms</p>
+            <p>As an example of a ligand substitution reaction, we consider</p>
+        </section>
+
+        <section class="section" id="section-20">
+            <h2>KEY POINT  The Fuoss–Eigen equation provides an estimate of the</h2>
+            <p>pre-equilibrium constant based on the strength of the Coulombic in­</p>
+            <p>teraction between the reactants and their distance of closest approach.</p>
+            <p>The equilibrium constant KE for the encounter pair can be</p>
+            <p>estimated by using a simple equation proposed indepen­</p>
+            <p>dently by R.M. Fuoss and M. Eigen. Both sought to take</p>
+            <p>the complex size and charge into account, expecting larger,</p>
+            <p>oppositely charged ions to meet more frequently than small</p>
+            <p>ions of the same charge. Fuoss used an approach based on</p>
+            <p>statistical thermodynamics and Eigen used one based on</p>
+            <p>kinetics. Their result, which is called the Fuoss–Eigen equa­</p>
+        </section>
+
+
+        <section class="section" id="exercises">
+            <h2>Exercises</h2>
+            <div class="exercise-list">
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false},
+                    {left: '\\(', right: '\\)', display: false},
+                    {left: '\\[', right: '\\]', display: true}
+                ]
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 3: Molecular symmetry | CHEM 361</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+    <style>
+        :root {
+            --bg: #0a0f1a;
+            --bg-card: #131b2e;
+            --bg-elevated: #1a2540;
+            --text: #e8eaed;
+            --text-dim: #9aa0a6;
+            --accent: #8ab4f8;
+            --accent-green: #81c995;
+            --accent-yellow: #fdd663;
+            --accent-purple: #c58af9;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Crimson Pro', Georgia, serif;
+            background: var(--bg);
+            color: var(--text);
+            font-size: 1.15rem;
+            line-height: 1.95;
+        }
+
+        .lecture {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem 6rem;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            background: var(--bg-card);
+            border-bottom: 1px solid var(--bg-elevated);
+        }
+
+        .nav a {
+            color: var(--text-dim);
+            text-decoration: none;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+        }
+
+        .nav a:hover { color: var(--accent); }
+
+        .lecture-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #2a3a5a;
+        }
+
+        .lecture-header h1 {
+            font-size: 2.4rem;
+            font-weight: 500;
+            color: var(--accent);
+        }
+
+        .section { margin-bottom: 3rem; }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--accent-purple);
+            margin-bottom: 1.2rem;
+            font-weight: 500;
+        }
+
+        p { margin-bottom: 1.2rem; text-align: justify; }
+
+        .figure {
+            margin: 2rem 0;
+            background: var(--bg-card);
+            border-radius: 12px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .figure img {
+            max-width: 100%;
+            max-height: 500px;
+            object-fit: contain;
+            background: #f8f8f8;
+            padding: 1rem;
+        }
+
+        .figure-caption {
+            padding: 1rem;
+            background: var(--bg-elevated);
+            font-size: 0.95rem;
+            color: var(--text-dim);
+        }
+
+        .exercise-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .exercise {
+            background: var(--bg-card);
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 3px solid var(--accent-green);
+        }
+
+        .exercise strong {
+            color: var(--accent-green);
+            font-family: 'JetBrains Mono', monospace;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <a href="../index.html">← CHEM 361</a>
+        <a href="index.html">All Lectures</a>
+    </nav>
+
+    <main class="lecture">
+        <header class="lecture-header">
+            <h1>Lecture 3: Molecular symmetry</h1>
+        </header>
+
+
+        <section class="section" id="section-1">
+            <h2>Molecular symmetry</h2>
+            <p>The systematic treatment of symmetry makes use of a</p>
+            <p>branch of mathematics called group theory. Group theory</p>
+            <p>is a rich and powerful subject, but we shall confine our use</p>
+            <p>of it at this stage to the classification of molecules in terms</p>
+            <p>of their symmetry properties, the construction of molecular</p>
+            <p>orbitals, and the analysis of molecular vibrations and the</p>
+            <p>selection rules that govern their excitation. We shall also see</p>
+            <p>that it is possible to draw some general conclusions about</p>
+            <p>the properties of molecules, such as polarity and chirality,</p>
+        </section>
+
+        <section class="section" id="section-2">
+            <h2>An introduction to symmetry analysis</h2>
+            <p>That some molecules are ‘more symmetrical’ than others is</p>
+            <p>intuitively obvious. Our aim, though, is to define the sym­</p>
+            <p>metries of individual molecules precisely, not just intuitively,</p>
+            <p>and to provide a scheme for specifying and reporting these</p>
+            <p>symmetries. It will become clear in later chapters that sym­</p>
+            <p>metry analysis is one of the most pervasive techniques in</p>
+            <p>3.1	 Symmetry operations, elements, and point groups</p>
+        </section>
+
+        <section class="section" id="section-3">
+            <h2>Symmetry operations, elements, and</h2>
+        </section>
+
+        <section class="section" id="section-4">
+            <h2>KEY POINTS  Symmetry operations are actions that leave the mol­</h2>
+            <p>ecule apparently unchanged; each symmetry operation is associated</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter3/fig_3_1.png" alt="Figure 3.1">
+                <div class="figure-caption"><strong>Figure 3.1</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter3/fig_3_2.png" alt="Figure 3.2">
+                <div class="figure-caption"><strong>Figure 3.2</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter3/fig_3_3.png" alt="Figure 3.3">
+                <div class="figure-caption"><strong>Figure 3.3</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter3/fig_3_4.png" alt="Figure 3.4">
+                <div class="figure-caption"><strong>Figure 3.4</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter3/fig_3_5.png" alt="Figure 3.5">
+                <div class="figure-caption"><strong>Figure 3.5</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter3/fig_3_6.png" alt="Figure 3.6">
+                <div class="figure-caption"><strong>Figure 3.6</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter3/fig_3_7.png" alt="Figure 3.7">
+                <div class="figure-caption"><strong>Figure 3.7</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter3/fig_3_8.png" alt="Figure 3.8">
+                <div class="figure-caption"><strong>Figure 3.8</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter3/fig_3_9.png" alt="Figure 3.9">
+                <div class="figure-caption"><strong>Figure 3.9</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter3/fig_3_10.png" alt="Figure 3.10">
+                <div class="figure-caption"><strong>Figure 3.10</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter3/fig_3_11.png" alt="Figure 3.11">
+                <div class="figure-caption"><strong>Figure 3.11</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter3/fig_3_12.png" alt="Figure 3.12">
+                <div class="figure-caption"><strong>Figure 3.12</strong></div>
+            </div>            <p>with a symmetry element. The point group of a molecule is identified</p>
+            <p>by noting its symmetry elements and comparing these elements with</p>
+            <p>A fundamental concept of the chemical application of group</p>
+            <p>theory is the symmetry operation, an action, such as rotation</p>
+            <p>through a certain angle, that leaves the molecule apparently</p>
+            <p>unchanged. An example is the rotation of an H2O molecule</p>
+            <p>by 180° around the bisector of the HOH angle (Fig. 3.1).</p>
+            <p>Associated with each symmetry operation there is a sym­</p>
+        </section>
+
+        <section class="section" id="section-5">
+            <h2>Character tables</h2>
+        </section>
+
+        <section class="section" id="section-6">
+            <h2>KEY POINT  The systematic analysis of the symmetry properties of</h2>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter3/fig_3_13.png" alt="Figure 3.13">
+                <div class="figure-caption"><strong>Figure 3.13</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter3/fig_3_10.png" alt="Figure 3.10">
+                <div class="figure-caption"><strong>Figure 3.10</strong></div>
+            </div>            <p>We have seen how the symmetry properties of a molecule</p>
+            <p>define its point group and how that point group is labelled</p>
+            <p>of each symmetry species. One column contains functions</p>
+            <p>defined by a single axis, such as translations (x,y,z), p orbit­</p>
+            <p>als (px,py,pz), or rotations around an axis (Rx,Ry,Rz), and the</p>
+            <p>other column contains quadratic functions such as those that</p>
+            <p>represent d orbitals (xy, etc.). The letter A used to label a</p>
+        </section>
+
+        <section class="section" id="section-7">
+            <h2>Applications of symmetry</h2>
+            <p>Important applications of symmetry in inorganic chemistry</p>
+            <p>include the construction and labelling of molecular orbitals</p>
+            <p>and the interpretation of spectroscopic data to determine struc­</p>
+            <p>ture. However, there are several simpler applications as some</p>
+            <p>molecular properties, such as polarity and chirality, can be</p>
+            <p>deduced with only the knowledge of the point group to which</p>
+            <p>a molecule belongs. Other properties, such as the classification</p>
+            <p>of molecular vibrations and the identification of their IR and</p>
+            <p>Raman activity, require us to know the detailed structure of the</p>
+            <p>character table. We illustrate both applications in this section.</p>
+        </section>
+
+        <section class="section" id="section-8">
+            <h2>Polar molecules</h2>
+        </section>
+
+        <section class="section" id="section-9">
+            <h2>KEY POINT  A molecule cannot be polar if it belongs to any group that</h2>
+            <p>includes a centre of inversion, any of the groups D and their derivatives,</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter3/fig_3_9.png" alt="Figure 3.9">
+                <div class="figure-caption"><strong>Figure 3.9</strong></div>
+            </div>            <p>the cubic groups (T, O), the icosahedral group (I), or their modifications.</p>
+            <p>A polar molecule is a molecule that has a permanent electric</p>
+            <p>dipole moment. A molecule cannot be polar if it has a centre</p>
+            <p>of inversion. Inversion implies that a molecule has matching</p>
+            <p>charge distributions at all diametrically opposite points about</p>
+            <p>a centre, which rules out a dipole moment. For similar rea­</p>
+            <p>sons, a dipole moment cannot lie perpendicular to any mirror</p>
+            <p>plane or axis of rotation that the molecule may possess. For</p>
+            <p>example, a mirror plane demands identical atoms on either</p>
+        </section>
+
+        <section class="section" id="section-10">
+            <h2>Chiral molecules</h2>
+        </section>
+
+        <section class="section" id="section-11">
+            <h2>KEY POINT  A molecule cannot be chiral if it possesses an improper</h2>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter3/fig_3_9.png" alt="Figure 3.9">
+                <div class="figure-caption"><strong>Figure 3.9</strong></div>
+            </div>            <p>A chiral molecule (from the Greek word for ‘hand’) is a</p>
+            <p>molecule that cannot be superimposed on its own mir­</p>
+            <p>ror image. An actual hand is chiral in the sense that the</p>
+            <p>mirror image of a left hand is a right hand, and the two</p>
+            <p>hands cannot be superimposed. A chiral molecule and its</p>
+            <p>mirror image partner are called enantiomers (from the</p>
+            <p>Greek word for ‘both parts’). Chiral molecules that do not</p>
+            <p>interconvert rapidly between enantiomeric forms are opti­</p>
+            <p>cally active in the sense that they can rotate the plane of</p>
+        </section>
+
+        <section class="section" id="section-12">
+            <h2>Molecular vibrations</h2>
+        </section>
+
+        <section class="section" id="section-13">
+            <h2>KEY POINTS  If a molecule has a centre of inversion, none of its vibra­</h2>
+            <p>tions can be both IR and Raman active; a vibrational mode is IR active</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter3/fig_3_14.png" alt="Figure 3.14">
+                <div class="figure-caption"><strong>Figure 3.14</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter3/fig_3_15.png" alt="Figure 3.15">
+                <div class="figure-caption"><strong>Figure 3.15</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter3/fig_3_16.png" alt="Figure 3.16">
+                <div class="figure-caption"><strong>Figure 3.16</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter3/fig_3_17.png" alt="Figure 3.17">
+                <div class="figure-caption"><strong>Figure 3.17</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter3/fig_3_4.png" alt="Figure 3.4">
+                <div class="figure-caption"><strong>Figure 3.4</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter3/fig_3_18.png" alt="Figure 3.18">
+                <div class="figure-caption"><strong>Figure 3.18</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter3/fig_3_19.png" alt="Figure 3.19">
+                <div class="figure-caption"><strong>Figure 3.19</strong></div>
+            </div>            <p>if it has the same symmetry as a component of the electric dipole vec­</p>
+            <p>tor; a vibrational mode is Raman active if it has the same symmetry as a</p>
+            <p>A knowledge of the symmetry of a molecule can assist</p>
+            <p>and greatly simplify the analysis of infrared (IR) and</p>
+            <p>Raman spectra (Section 8.5). It is convenient to consider</p>
+            <p>two aspects of symmetry. One is the information that can</p>
+            <p>be obtained directly by knowing to which point group a</p>
+            <p>molecule as a whole belongs. The other is the additional</p>
+        </section>
+
+        <section class="section" id="section-14">
+            <h2>The symmetries of molecular orbitals</h2>
+        </section>
+
+        <section class="section" id="section-15">
+            <h2>Symmetry-adapted linear combinations</h2>
+        </section>
+
+        <section class="section" id="section-16">
+            <h2>KEY POINT  Symmetry-adapted linear combinations of orbitals are</h2>
+            <p>combinations of atomic orbitals that conform to the symmetry of a</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter3/fig_3_20.png" alt="Figure 3.20">
+                <div class="figure-caption"><strong>Figure 3.20</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter3/fig_3_21.png" alt="Figure 3.21">
+                <div class="figure-caption"><strong>Figure 3.21</strong></div>
+            </div>            <p>molecule and are used to construct molecular orbitals of a given sym­</p>
+            <p>A fundamental principle of the MO theory of diatomic</p>
+            <p>molecules (Section 2.7) is that molecular orbitals are con­</p>
+            <p>structed from atomic orbitals of the same symmetry. Thus,</p>
+            <p>in a diatomic molecule, an s orbital may have a nonzero</p>
+            <p>overlap integral with another s orbital or with a pz orbital</p>
+            <p>on the second atom (where z is the internuclear direction;</p>
+            <p>Fig. 3.20), but not with a px or py orbital. Formally, whereas</p>
+        </section>
+
+        <section class="section" id="section-17">
+            <h2>The construction of molecular orbitals</h2>
+        </section>
+
+        <section class="section" id="section-18">
+            <h2>KEY POINT  Molecular orbitals are constructed from SALCs and atomic</h2>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter3/fig_3_21.png" alt="Figure 3.21">
+                <div class="figure-caption"><strong>Figure 3.21</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter3/fig_3_22.png" alt="Figure 3.22">
+                <div class="figure-caption"><strong>Figure 3.22</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter3/fig_3_23.png" alt="Figure 3.23">
+                <div class="figure-caption"><strong>Figure 3.23</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter3/fig_3_24.png" alt="Figure 3.24">
+                <div class="figure-caption"><strong>Figure 3.24</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter3/fig_3_25.png" alt="Figure 3.25">
+                <div class="figure-caption"><strong>Figure 3.25</strong></div>
+            </div>            <p>We have seen in Example 3.10 that the SALC ϕ1 of H1s</p>
+            <p>orbitals in NH3 has A1 symmetry. The N2s and N2pz orbit­</p>
+            <p>als also have A1 symmetry in this molecule, so all three can</p>
+            <p>EXAMPLE 3.10  Identifying the symmetry species of a SALC</p>
+            <p>Identify the symmetry species of the SALCs that may be constructed</p>
+            <p>Answer We start by establishing how the set of H1s orbitals</p>
+        </section>
+
+        <section class="section" id="section-19">
+            <h2>The vibrational analogy</h2>
+        </section>
+
+        <section class="section" id="section-20">
+            <h2>KEY POINT  The shapes of SALCs are analogous to stretching</h2>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter3/fig_3_26.png" alt="Figure 3.26">
+                <div class="figure-caption"><strong>Figure 3.26</strong></div>
+            </div>            <p>One of the great strengths of group theory is that it enables</p>
+            <p>disparate phenomena to be treated analogously. We have</p>
+            <p>already seen how symmetry arguments can be applied to</p>
+            <p>molecular vibrations, so it should come as no surprise that</p>
+            <p>SALCs have analogies in the normal modes of molecules. In</p>
+            <p>fact, the illustrations of SALCs in the Resource section can</p>
+            <p>be interpreted as contributions to the normal vibrational</p>
+            <p>modes of molecules. The following example illustrates how</p>
+        </section>
+
+
+        <section class="section" id="exercises">
+            <h2>Exercises</h2>
+            <div class="exercise-list">
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false},
+                    {left: '\\(', right: '\\)', display: false},
+                    {left: '\\[', right: '\\]', display: true}
+                ]
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 24: Materials chemistry and nanomaterials | CHEM 361</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+    <style>
+        :root {
+            --bg: #0a0f1a;
+            --bg-card: #131b2e;
+            --bg-elevated: #1a2540;
+            --text: #e8eaed;
+            --text-dim: #9aa0a6;
+            --accent: #8ab4f8;
+            --accent-green: #81c995;
+            --accent-yellow: #fdd663;
+            --accent-purple: #c58af9;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Crimson Pro', Georgia, serif;
+            background: var(--bg);
+            color: var(--text);
+            font-size: 1.15rem;
+            line-height: 1.95;
+        }
+
+        .lecture {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem 6rem;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            background: var(--bg-card);
+            border-bottom: 1px solid var(--bg-elevated);
+        }
+
+        .nav a {
+            color: var(--text-dim);
+            text-decoration: none;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+        }
+
+        .nav a:hover { color: var(--accent); }
+
+        .lecture-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #2a3a5a;
+        }
+
+        .lecture-header h1 {
+            font-size: 2.4rem;
+            font-weight: 500;
+            color: var(--accent);
+        }
+
+        .section { margin-bottom: 3rem; }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--accent-purple);
+            margin-bottom: 1.2rem;
+            font-weight: 500;
+        }
+
+        p { margin-bottom: 1.2rem; text-align: justify; }
+
+        .figure {
+            margin: 2rem 0;
+            background: var(--bg-card);
+            border-radius: 12px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .figure img {
+            max-width: 100%;
+            max-height: 500px;
+            object-fit: contain;
+            background: #f8f8f8;
+            padding: 1rem;
+        }
+
+        .figure-caption {
+            padding: 1rem;
+            background: var(--bg-elevated);
+            font-size: 0.95rem;
+            color: var(--text-dim);
+        }
+
+        .exercise-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .exercise {
+            background: var(--bg-card);
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 3px solid var(--accent-green);
+        }
+
+        .exercise strong {
+            color: var(--accent-green);
+            font-family: 'JetBrains Mono', monospace;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <a href="../index.html">← CHEM 361</a>
+        <a href="index.html">All Lectures</a>
+    </nav>
+
+    <main class="lecture">
+        <header class="lecture-header">
+            <h1>Lecture 24: Materials chemistry and nanomaterials</h1>
+        </header>
+
+
+        <section class="section" id="section-1">
+            <h2>Materials chemistry</h2>
+        </section>
+
+        <section class="section" id="section-2">
+            <h2>Synthesis of materials</h2>
+            <p>Much of synthetic inorganic chemistry, including the coor-</p>
+            <p>dination chemistry of the metals and organometallic chem-</p>
+            <p>istry, makes use of the conversion of molecules by the</p>
+            <p>replacement of one ligand by another in a solution-based</p>
+            <p>reaction. Processes of this type generally have relatively</p>
+            <p>small activation energies and can be undertaken at low tem­</p>
+            <p>peratures, typically between 0°C and 150°C, and in solvents</p>
+            <p>that permit the migration of reacting species. Rapid molecu­</p>
+            <p>lar migration in solvents also results in fairly short reaction</p>
+            <p>times. The formation of solid materials by reaction of solids,</p>
+        </section>
+
+        <section class="section" id="section-3">
+            <h2>The formation of bulk materials</h2>
+            <p>New materials can be obtained by two main methods. One</p>
+            <p>is the direct reaction of two or more solids which involves</p>
+            <p>breaking down their lattices and reforming the new struc­</p>
+            <p>ture; the other is the linking of polyhedral units from solu­</p>
+        </section>
+
+        <section class="section" id="section-4">
+            <h2>KEY POINTS  Many complex solids can be obtained by direct reaction</h2>
+            <p>of the components at high temperatures. Components may be mixed</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter24/fig_24_1.png" alt="Figure 24.1">
+                <div class="figure-caption"><strong>Figure 24.1</strong></div>
+            </div>            <p>initially on the atomic scale via solution and sol–gel processes.</p>
+            <p>The most widely used method for the synthesis of bulk inor­</p>
+            <p>ganic solids involves heating the solid reactants together at</p>
+            <p>a high temperature, typically between 500 and 1500°C,</p>
+            <p>for an extended period. Normally a complex oxide may be</p>
+            <p>obtained by heating a mixture of all the oxides of the vari­</p>
+            <p>ous metals present; alternatively, simple compounds that</p>
+            <p>decompose to give the oxides may be used instead of the</p>
+            <p>oxide itself. Thus, ternary oxides, such as BaTiO3, and qua­</p>
+        </section>
+
+        <section class="section" id="section-5">
+            <h2>KEY POINT  Frameworks formed from polyhedral species can be</h2>
+            <p>Many inorganic materials, especially framework struc­</p>
+            <p>tures, can be synthesized by crystallization from solution.</p>
+            <p>Although the methods used are very diverse, the following</p>
+            <p>are typical reactions that occur in water and lead to mate­</p>
+            <p>rials with extended structures consisting of metal centres</p>
+        </section>
+
+        <section class="section" id="section-6">
+            <h2>Defects and ion transport</h2>
+            <p>As discussed in Section 4.16, all solids contain a level of</p>
+            <p>defects—imperfections of structure or composition. It is also</p>
+            <p>possible to introduce defects (extrinsic defects) deliberately</p>
+            <p>into a material through mechanisms such as doping. These</p>
+            <p>defects, which are mainly interstitial (Frenkel-type) or vacan­</p>
+            <p>cies (Schottky-type), are important because they influence</p>
+            <p>electrical conductivity and chemical reactivity. Electrical con­</p>
+            <p>duction can arise from the motion of ions through the solid,</p>
+            <p>and this motion is often enhanced by the presence of defects.</p>
+            <p>Materials with high ionic conductivity have important appli­</p>
+        </section>
+
+        <section class="section" id="section-7">
+            <h2>Extended defects</h2>
+        </section>
+
+        <section class="section" id="section-8">
+            <h2>KEY POINT  Wadsley defects are shear planes that collect defects</h2>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter24/fig_24_2.png" alt="Figure 24.2">
+                <div class="figure-caption"><strong>Figure 24.2</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter24/fig_24_3.png" alt="Figure 24.3">
+                <div class="figure-caption"><strong>Figure 24.3</strong></div>
+            </div>            <p>The defects discussed in Chapter 4 were point defects. Such</p>
+            <p>defects entail a significant local distortion of the structure</p>
+            <p>and in some instances localized charge imbalances too, lead­</p>
+            <p>ing to high enthalpies of formation. Therefore, it should not</p>
+            <p>be surprising that defects may cluster together and some­</p>
+            <p>times form lines and planes, thus reducing the average</p>
+            <p>Tungsten oxides illustrate the formation of planes of</p>
+            <p>defects. As illustrated in Fig. 24.2, the idealized structure of</p>
+        </section>
+
+        <section class="section" id="section-9">
+            <h2>Atom and ion diffusion</h2>
+        </section>
+
+        <section class="section" id="section-10">
+            <h2>KEY POINT  The diffusion of ions in solids is strongly dependent on</h2>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter24/fig_24_4.png" alt="Figure 24.4">
+                <div class="figure-caption"><strong>Figure 24.4</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter24/fig_24_5.png" alt="Figure 24.5">
+                <div class="figure-caption"><strong>Figure 24.5</strong></div>
+            </div>            <p>Diffusion of atoms or ions in solids at room temperature is</p>
+            <p>very much slower than the diffusion processes that occur</p>
+            <p>in gases and liquids. This is why most solid-state reactions</p>
+            <p>are undertaken at high temperatures (Section 24.1), where</p>
+            <p>ion mobility increases significantly. However, there are some</p>
+            <p>striking exceptions to this generalization. Diffusion of atoms</p>
+            <p>or ions in solids is in fact very important in many areas of</p>
+            <p>solid-state technology, such as semiconductor manufacture,</p>
+            <p>the synthesis of new solids, fuel cells, sensors, metallurgy,</p>
+        </section>
+
+        <section class="section" id="section-11">
+            <h2>Solid electrolytes</h2>
+            <p>Any electrochemical cell, such as a battery, fuel cell, elec­</p>
+            <p>trochromic display, or electrochemical sensor, requires an</p>
+            <p>electrolyte. In many applications, an ionic solution (e.g.</p>
+            <p>dilute sulfuric acid in a lead–acid battery) is an accept­</p>
+            <p>able electrolyte, but because it is often desirable to avoid</p>
+            <p>a liquid phase because of the possibility of spillage, there</p>
+            <p>is considerable interest in the development of solid electro­</p>
+            <p>lytes. Two important and thoroughly studied solid electro­</p>
+            <p>lytes with mobile cations are silver tetraiodidomercurate(II),</p>
+        </section>
+
+        <section class="section" id="section-12">
+            <h2>KEY POINTS  Solid inorganic electrolytes often have a low-tempera­</h2>
+            <p>ture form in which the ions are ordered on a subset of sites in the struc­</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter24/fig_24_6.png" alt="Figure 24.6">
+                <div class="figure-caption"><strong>Figure 24.6</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter24/fig_24_7.png" alt="Figure 24.7">
+                <div class="figure-caption"><strong>Figure 24.7</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter24/fig_24_8.png" alt="Figure 24.8">
+                <div class="figure-caption"><strong>Figure 24.8</strong></div>
+            </div>            <p>ture; at higher temperatures the ions become disordered over the sites</p>
+            <p>While there is a rapidly growing number of different com­</p>
+            <p>positions and structures that exhibit high cation mobility</p>
+            <p>near or just above room temperature, the basis for this</p>
+            <p>property is readily illustrated through consideration of two</p>
+            <p>well-studied materials, Ag2HgI4 and sodium β-alumina.</p>
+            <p>Below 50°C, Ag2HgI4 has an ordered crystal structure</p>
+            <p>in which Ag+ and Hg2+ ions are tetrahedrally coordinated</p>
+        </section>
+
+        <section class="section" id="section-13">
+            <h2>KEY POINT  Anion mobility can occur at high temperatures in certain</h2>
+            <p>structures that contain high levels of anion vacancies.</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter24/fig_24_9.png" alt="Figure 24.9">
+                <div class="figure-caption"><strong>Figure 24.9</strong></div>
+            </div>            <p>Michael Faraday reported in 1834 that red-hot solid PbF2</p>
+            <p>(near 800°C) is a good conductor of electricity. Much later</p>
+            <p>it was recognized that the conductivity arises from the</p>
+            <p>mobility of F− ions through the solid. The property of anion</p>
+            <p>conductivity is shared by other crystals having the fluorite</p>
+            <p>structure. Ion transport in these solids is thought to be by</p>
+            <p>an interstitial mechanism in which an F− ion first migrates</p>
+            <p>from its normal position into an interstitial site (a Frenkel-</p>
+            <p>type defect, Section 4.16) and then moves to a vacant F− site.</p>
+        </section>
+
+        <section class="section" id="section-14">
+            <h2>KEY POINT  Solid materials can exhibit both ionic and electronic</h2>
+            <p>Most ionic conductors, such as sodium β′-alumina and</p>
+            <p>YSZ, have low electronic conductivity (i.e. conduction by</p>
+            <p>electron rather than ion motion). Their application as solid</p>
+            <p>FIGURE 24.9 An oxygen sensor based on the solid electrolyte</p>
+        </section>
+
+        <section class="section" id="section-15">
+            <h2>Metal oxides, nitrides, and fluorides</h2>
+            <p>In this section, we explore the binary compounds of O, N,</p>
+            <p>and F with metals. These compounds, particularly oxides,</p>
+            <p>are central to much solid-state chemistry on account of</p>
+            <p>their stability, ease of synthesis, and variety in composition</p>
+            <p>and structure. These attributes lead to the vast number of</p>
+            <p>compounds that have been synthesized and the ability to</p>
+            <p>tune the properties of a compound for a specific application</p>
+            <p>based on their electronic, magnetic, or optical characteris­</p>
+        </section>
+
+        <section class="section" id="section-16">
+            <h2>Monoxides of the 3d metals</h2>
+            <p>The monoxides of most of the 3d metals adopt the rock-</p>
+            <p>salt structure (Table 24.2), though these seemingly simple</p>
+            <p>compounds are usually obtained with significant deviations</p>
+        </section>
+
+        <section class="section" id="section-17">
+            <h2>KEY POINT  The nonstoichiometry of Fe1−xO arises from the creation</h2>
+            <p>of vacancies on the Fe2+ octahedral sites, with each vacancy charge-</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter24/fig_24_10.png" alt="Figure 24.10">
+                <div class="figure-caption"><strong>Figure 24.10</strong></div>
+            </div>            <p>compensated by the conversion of two Fe2+ ions to two Fe3+ ions.</p>
+            <p>The origin of nonstoichiometry in ‘FeO’ has been studied in</p>
+            <p>more detail than that in most other MO compounds. In fact,</p>
+            <p>it is found experimentally that stoichiometric FeO does not</p>
+            <p>exist but rather a range of iron-deficient compounds Fe1−xO,</p>
+            <p>0.13 > x > 0.04, can be obtained by quenching (cooling very</p>
+            <p>rapidly) iron(II) oxide from high temperatures. The com­</p>
+            <p>pound Fe1−xO is in fact metastable at room temperature,</p>
+            <p>meaning that it is thermodynamically unstable with respect</p>
+        </section>
+
+        <section class="section" id="section-18">
+            <h2>KEY POINTS  The 3d-metal monoxides MnO, FeO, CoO, and NiO are</h2>
+            <p>semiconductors; TiO and VO are metallic conductors.</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter24/fig_24_11.png" alt="Figure 24.11">
+                <div class="figure-caption"><strong>Figure 24.11</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter24/fig_24_12.png" alt="Figure 24.12">
+                <div class="figure-caption"><strong>Figure 24.12</strong></div>
+            </div>            <p>The 3d-metal monoxides MnO, Fe1−xO, CoO, and NiO have</p>
+            <p>low electrical conductivities that increase with temperature</p>
+            <p>(corresponding to semiconducting behaviour) or have such</p>
+            <p>large band gaps that they are insulators. The electron or</p>
+            <p>hole migration in these oxide semiconductors is attributed</p>
+            <p>to a hopping mechanism. In this model, the electron hops</p>
+            <p>from one localized metal atom site to the next. When it</p>
+            <p>lands on a new site it causes the surrounding ions to adjust</p>
+            <p>their locations and the electron or hole is trapped tempo­</p>
+        </section>
+
+        <section class="section" id="section-19">
+            <h2>KEY POINT  The 3d-metal monoxides MnO, FeO, CoO, and NiO order</h2>
+            <p>antiferromagnetically with Néel temperatures that increase from Mn</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter24/fig_24_13.png" alt="Figure 24.13">
+                <div class="figure-caption"><strong>Figure 24.13</strong></div>
+            </div>            <p>As well as having electronic properties that are the result</p>
+            <p>of interactions between the d electrons, d-metal monoxides</p>
+            <p>have magnetic properties that derive from cooperative inter­</p>
+            <p>action of the individual atomic magnetic moments (Section</p>
+            <p>20.8). The overall magnetic structure of MnO and the other</p>
+            <p>3d-series metal monoxides is shown in Fig. 24.13. The Néel</p>
+            <p>temperatures (TN, the temperature of the paramagnetic to</p>
+            <p>antiferromagnetic transition; Section 20.8) of the series of</p>
+        </section>
+
+        <section class="section" id="section-20">
+            <h2>Higher oxides and complex oxides</h2>
+            <p>Binary metal oxides that do not have a 1:1 metal:oxygen</p>
+            <p>ratio are known as higher oxides. Compounds contain­</p>
+            <p>ing ions of more than one metal are often termed complex</p>
+            <p>oxides or mixed oxides and include compounds containing</p>
+            <p>three elements (ternary oxides; for instance, LaFeO3), four</p>
+            <p>(quaternary; for instance, YBa2Cu3O7), or more elements.</p>
+            <p>This section describes the structures and properties of some</p>
+        </section>
+
+
+        <section class="section" id="exercises">
+            <h2>Exercises</h2>
+            <div class="exercise-list">
+
+                <div class="exercise">
+                    <strong>24.1</strong> Outline how you could prepare samples of (a) MgCr2O4, (b) LaFeO3, (c) Ta3N5, (d) LiMgH3, (e) KCuF3, (f) the zeolite A analogue with Ga replacing Al, Na12[Si12Ga12O48]⋅nH2O.
+                </div>
+
+                <div class="exercise">
+                    <strong>24.2</strong> Identify the likely products of the reactions (a)  Li CO CoO 2 3 2 +  →  ° (b)  2Sr OH WO MnO 2 3 2 ( ) + +  →  °
+                </div>
+
+                <div class="exercise">
+                    <strong>24.3</strong> When NiO is doped with small quantities of Li2O, the electronic conductivity of the solid increases. Provide a plausible chemical explanation for this observation. (Hint: Li+ occurs on Ni2+ sites.)
+                </div>
+
+                <div class="exercise">
+                    <strong>24.4</strong> The compound FexO generally has x < 1. Describe the probable metal ion defect that leads to x being less than 1.
+                </div>
+
+                <div class="exercise">
+                    <strong>24.5</strong> How might you distinguish experimentally the existence of a solid solution from a series of crystallographic shear- plane structures for a material that appears to have variable composition?
+                </div>
+
+                <div class="exercise">
+                    <strong>24.6</strong> Use ionic radii data (Resource section 1) to suggest possible dopants to increase anion conductivity in (a) PbF2 and (b) Bi2O3 (six-coordinate Bi3+).
+                </div>
+
+                <div class="exercise">
+                    <strong>24.7</strong> Draw one unit cell in the ReO3 structure, showing the M and O atoms. Does this structure appear to be sufficiently open to undergo Na+ ion intercalation? If so, where might the Na+ ions reside? Describe the likely structure type for a material where the Na:Re ratio is 1:1.
+                </div>
+
+                <div class="exercise">
+                    <strong>24.8</strong> ‘Double perovskites’ of the composition AA′BB′O6 have been widely studied in respect of their magnetic properties. For A = Rb and A′ = Sr suggest some possible ions for the B and B′ sites in a double perovskite.
+                </div>
+
+                <div class="exercise">
+                    <strong>24.9</strong> The iodostannate perovskites, ASnI3, have been studied as potential semiconductors for applications as photovoltaics. By reference to the known APbI3 phases that adopt the perovskite structure suggest which cations, A+, might form a perovskite in the ASnI3 system.
+                </div>
+
+                <div class="exercise">
+                    <strong>24.10</strong> Predict the Néel temperature for CrO.
+                </div>
+
+                <div class="exercise">
+                    <strong>24.11</strong> Write possible formulas for a sulfide and a fluoride that might adopt the spinel structure.
+                </div>
+
+                <div class="exercise">
+                    <strong>24.12</strong> Which of the materials (a) YBa2Cu4O8, (b) Ca1.8Na0.2CuO2Cl2, (c) Gd2Ba2Ti2Cu2O11, (d) SrCuO2.12, which all contain layers of the stoichiometry CuO2, might be expected to be high-temperature superconductors?
+                </div>
+
+                <div class="exercise">
+                    <strong>24.13</strong> Explain why the colour of Ta2O5 changes from white to red when it is heated under flowing NH3.
+                </div>
+
+                <div class="exercise">
+                    <strong>24.14</strong> State Zachariasen’s two generalizations that favour glass formation and apply them to the observation that cooling molten CaF2 leads to a crystalline solid whereas cooling molten SiO2 at a similar rate produces a glass.
+                </div>
+
+                <div class="exercise">
+                    <strong>24.15</strong> Classify the oxides (a) BeO, (b) TiO2, (c) La2O3, (d) B2O3, (e) GeO2 into glass-forming and non-glass-forming. 806
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false},
+                    {left: '\\(', right: '\\)', display: false},
+                    {left: '\\[', right: '\\]', display: true}
+                ]
+            });
+        });
+    </script>
+</body>
+</html>

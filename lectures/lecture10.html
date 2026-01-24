@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 10: Hydrogen | CHEM 361</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+    <style>
+        :root {
+            --bg: #0a0f1a;
+            --bg-card: #131b2e;
+            --bg-elevated: #1a2540;
+            --text: #e8eaed;
+            --text-dim: #9aa0a6;
+            --accent: #8ab4f8;
+            --accent-green: #81c995;
+            --accent-yellow: #fdd663;
+            --accent-purple: #c58af9;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Crimson Pro', Georgia, serif;
+            background: var(--bg);
+            color: var(--text);
+            font-size: 1.15rem;
+            line-height: 1.95;
+        }
+
+        .lecture {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem 6rem;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            background: var(--bg-card);
+            border-bottom: 1px solid var(--bg-elevated);
+        }
+
+        .nav a {
+            color: var(--text-dim);
+            text-decoration: none;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+        }
+
+        .nav a:hover { color: var(--accent); }
+
+        .lecture-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #2a3a5a;
+        }
+
+        .lecture-header h1 {
+            font-size: 2.4rem;
+            font-weight: 500;
+            color: var(--accent);
+        }
+
+        .section { margin-bottom: 3rem; }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--accent-purple);
+            margin-bottom: 1.2rem;
+            font-weight: 500;
+        }
+
+        p { margin-bottom: 1.2rem; text-align: justify; }
+
+        .figure {
+            margin: 2rem 0;
+            background: var(--bg-card);
+            border-radius: 12px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .figure img {
+            max-width: 100%;
+            max-height: 500px;
+            object-fit: contain;
+            background: #f8f8f8;
+            padding: 1rem;
+        }
+
+        .figure-caption {
+            padding: 1rem;
+            background: var(--bg-elevated);
+            font-size: 0.95rem;
+            color: var(--text-dim);
+        }
+
+        .exercise-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .exercise {
+            background: var(--bg-card);
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 3px solid var(--accent-green);
+        }
+
+        .exercise strong {
+            color: var(--accent-green);
+            font-family: 'JetBrains Mono', monospace;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <a href="../index.html">← CHEM 361</a>
+        <a href="index.html">All Lectures</a>
+    </nav>
+
+    <main class="lecture">
+        <header class="lecture-header">
+            <h1>Lecture 10: Hydrogen</h1>
+        </header>
+
+
+        <section class="section" id="section-1">
+            <h2>The element</h2>
+            <p>The hydrogen atom, with ground-state configuration 1s1,</p>
+            <p>has only one electron so it might be thought that the ele­</p>
+            <p>ment’s chemical properties will be limited, but this is far</p>
+            <p>from the case. Hydrogen has richly varied chemical proper­</p>
+            <p>ties and forms compounds with nearly every other element.</p>
+            <p>It ranges in character from being a strong Lewis base (the</p>
+            <p>hydride ion, H−) to being a strong Lewis acid (as the hydro­</p>
+            <p>gen cation, H+, the proton; Section 5.1). Under certain cir­</p>
+            <p>cumstances H atoms can form bonds to more than one other</p>
+            <p>atom simultaneously. The ‘hydrogen bond’ formed when an</p>
+        </section>
+
+        <section class="section" id="section-2">
+            <h2>KEY POINTS  The proton, H+, is always found in combination with</h2>
+            <p>a Lewis base and is highly polarizing; the hydride ion, H−, is highly</p>
+            <p>There are three isotopes of hydrogen: hydrogen itself (1H),</p>
+            <p>deuterium (D, 2H), and tritium (T, 3H); tritium is radioac­</p>
+            <p>tive. The lightest isotope, 1H (very occasionally called pro­</p>
+            <p>tium), is by far the most abundant. Deuterium has variable</p>
+            <p>natural abundance with an average value of about 16 atoms</p>
+            <p>in 100 000. Tritium occurs to the extent of only 1 atom in</p>
+            <p>1021. The different names and symbols for the three isotopes</p>
+            <p>reflect the significant differences in their masses and the</p>
+        </section>
+
+        <section class="section" id="section-3">
+            <h2>KEY POINTS  Hydrogen has unique atomic properties that place it in a</h2>
+            <p>special position in the periodic table. Dihydrogen is quite an inert mol­</p>
+            <p>ecule and its reactions require a catalyst or initiation by radicals.</p>
+            <p>Hydrogen’s unique properties distinguish it from all other</p>
+            <p>elements in the periodic table. It is often placed at the head</p>
+            <p>of Group 1 because like the alkali metals it has only one</p>
+            <p>electron in its valence shell. That position, however, does</p>
+            <p>not truly reflect the chemical or physical properties of the</p>
+            <p>element. In particular, its ionization energy is far higher than</p>
+            <p>the other Group 1 elements, so hydrogen is not a metal,</p>
+            <p>although it is predicted to exist naturally in a metallic state</p>
+        </section>
+
+        <section class="section" id="section-4">
+            <h2>Simple compounds</h2>
+            <p>The nature of the bonding in binary compounds of hydro­</p>
+            <p>gen, that is, with other elements E (EHn), is largely rational­</p>
+            <p>ized by noting that an H atom has a high ionization energy</p>
+            <p>(1310 kJ mol−1) and a low but positive electron affinity</p>
+            <p>(77 kJ mol−1). Although binary hydrogen compounds are</p>
+            <p>often known as ‘hydrides’ (we will use this term throughout</p>
+            <p>this chapter) very few actually contain a discrete H− anion.</p>
+            <p>1  In homolytic dissociation of H2 the H–H bond breaks symmetrically</p>
+            <p>to give two hydrogen atoms, whereas heterolytic dissociation of H2</p>
+        </section>
+
+        <section class="section" id="section-5">
+            <h2>KEY POINTS  Compounds formed between hydrogen and other ele­</h2>
+            <p>ments vary in their nature and stability. In combination with metals,</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter10/fig_10_2.png" alt="Figure 10.2">
+                <div class="figure-caption"><strong>Figure 10.2</strong></div>
+            </div>            <p>hydrogen is often regarded as a hydride anion; hydrogen compounds</p>
+            <p>with elements of similar electronegativity have low polarity.</p>
+            <p>The binary compounds of hydrogen fall into three classes</p>
+            <p>although there is a range of structural types, and some</p>
+            <p>elements form compounds with hydrogen that do not fall</p>
+            <p>1.	 Molecular hydrides exist as individual, discrete mol­</p>
+            <p>ecules; they are usually formed with p-block elements</p>
+            <p>of similar or higher electronegativity than H. Their E–H</p>
+        </section>
+
+        <section class="section" id="section-6">
+            <h2>KEY POINTS  In the s and p blocks, strengths of E–H bonds decrease</h2>
+            <p>down each group. In the d block, strengths of E–H bonds increase down</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter10/fig_10_3.png" alt="Figure 10.3">
+                <div class="figure-caption"><strong>Figure 10.3</strong></div>
+            </div>            <p>The standard Gibbs energies of formation of the hydro­</p>
+            <p>gen compounds of s- and p-block elements reveal a regu­</p>
+            <p>lar variation in stability (Table 10.1). With the possible</p>
+            <p>exception of BeH2 (for which good data are not available)</p>
+            <p>fore thermodynamically stable with respect to their ele­</p>
+            <p>ments at room temperature. The trend is erratic in Group</p>
+        </section>
+
+        <section class="section" id="section-7">
+            <h2>KEY POINT  The reactions of binary compounds of hydrogen fall into</h2>
+            <p>three classes depending on the polarity of the E–H bond.</p>
+            <p>In compounds where E and H have similar electronegativities,</p>
+            <p>cleavage of the E–H bond tends to be homolytic, producing,</p>
+            <p>initially, an H atom and a radical, each of which can go on to</p>
+            <p>Common examples of homonuclear cleavage include the</p>
+            <p>In compounds where E is more electronegative than H,</p>
+        </section>
+
+        <section class="section" id="section-8">
+            <h2>Nuclear properties</h2>
+        </section>
+
+        <section class="section" id="section-9">
+            <h2>KEY POINT  The three hydrogen isotopes H, D, and T have large differ­</h2>
+            <p>ences in their atomic masses and different nuclear spins, which give rise</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter10/fig_10_4.png" alt="Figure 10.4">
+                <div class="figure-caption"><strong>Figure 10.4</strong></div>
+            </div>            <p>to easily observed changes in IR, Raman, and NMR spectra of molecules</p>
+            <p>Neither 1H nor 2H (deuterium, D) is radioactive, but 3H</p>
+            <p>(tritium, T) decays by the loss of a β particle to yield a rare</p>
+        </section>
+
+        <section class="section" id="section-10">
+            <h2>Production of dihydrogen</h2>
+            <p>Hydrogen is important both as a raw material for the chemi­</p>
+            <p>cal industry and, increasingly, as a fuel. Although it is not pre­</p>
+            <p>sent in significant quantities in the Earth’s atmosphere or in</p>
+            <p>underground gas deposits, there is a high biological turnover,</p>
+            <p>because various microorganisms use H+ as an oxidant or H2</p>
+            <p>diamagnetic compounds relative to TMS. The tinted boxes</p>
+        </section>
+
+        <section class="section" id="section-11">
+            <h2>KEY POINTS  In the laboratory, H2 is easily produced by the reactions</h2>
+            <p>of electropositive elements with aqueous acid or alkali, or by hydrolysis</p>
+            <p>of saline hydrides. It is also produced by electrolysis.</p>
+            <p>There are many straightforward procedures for preparing</p>
+            <p>small quantities of pure H2. In the laboratory, H2 is pro­</p>
+            <p>duced by reaction of Al or Si with hot alkali solution.</p>
+            <p>or, at room temperature, by reaction of Zn with mineral acids:</p>
+        </section>
+
+        <section class="section" id="section-12">
+            <h2>KEY POINT  Most H2 for industry is produced by high-temperature re­</h2>
+            <p>action of H2O with CH4 or a similar reaction with coke.</p>
+            <p>Hydrogen is produced in huge quantities to satisfy the needs</p>
+            <p>of industry, in fact production is often integrated directly</p>
+            <p>(without transport) into chemical processes that require H2</p>
+            <p>as a feedstock. The main commercial process for the pro­</p>
+            <p>duction of H2 is currently hydrocarbon (steam) reforming,</p>
+            <p>the catalysed reaction of H2O (as steam) with hydrocarbons</p>
+            <p>(typically methane from natural gas) at high temperatures:</p>
+        </section>
+
+        <section class="section" id="section-13">
+            <h2>KEY POINTS  Production of H2 by electrolysis of water is costly and vi­</h2>
+            <p>able only in areas where electricity is cheap or if it is a by-product of an</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter10/fig_10_5.png" alt="Figure 10.5">
+                <div class="figure-caption"><strong>Figure 10.5</strong></div>
+            </div>            <p>economically important process. Environmental pressures are driving</p>
+            <p>technologies to produce H2 more efficiently from surplus or renewable</p>
+            <p>Electrolysis is used to produce H2 that is free from</p>
+        </section>
+
+        <section class="section" id="section-14">
+            <h2>Reactions of dihydrogen</h2>
+        </section>
+
+        <section class="section" id="section-15">
+            <h2>KEY POINTS  Molecular hydrogen is activated by homolytic or hetero­</h2>
+            <p>lytic dissociation on a metal or metal oxide surface or by coordination</p>
+            <p>to a d-block metal. Direct reactions of H2 with O2 and halogens involve a</p>
+            <p>Although H2 is quite an inert molecule, it reacts very rap­</p>
+            <p>idly under special conditions. Conditions for activating H2</p>
+            <p>1.	 Homolytic dissociation into H atoms, induced by adsorp­</p>
+        </section>
+
+        <section class="section" id="section-16">
+            <h2>Compounds of hydrogen</h2>
+            <p>Hydrogen forms compounds with most of the elements.</p>
+            <p>These compounds are classified into molecular hydrides,</p>
+            <p>saline hydrides (salts of the hydride anion), metallic hydrides</p>
+            <p>(interstitial compounds of d-block elements), and discrete</p>
+            <p>complexes of d-block elements in which hydride or dihy­</p>
+            <p>Molecular hydrides are formed with p-block elements and</p>
+            <p>Be. The bonding is covalent but variations in bond polarity</p>
+            <p>(depending on the electronegativity of the atoms to which</p>
+        </section>
+
+        <section class="section" id="section-17">
+            <h2>KEY POINTS  Molecular compounds of hydrogen are classified as</h2>
+            <p>electron-rich, electron-precise, or electron-deficient. Electron-deficient</p>
+            <p>hydrides provide some of the most intriguing examples of molecular</p>
+            <p>structure and bonding, as their simplest units tend to associate via</p>
+            <p>bridging hydrogen atoms to form dimers and higher polymers.</p>
+            <p>The systematic names of the molecular hydrogen com­</p>
+            <p>pounds are formed from the name of the element and the</p>
+            <p>suffix -ane, as in phosphane for PH3. The more traditional</p>
+            <p>names, however, such as phosphine and hydrogen sulfide</p>
+            <p>(H2S, sulfane) are still widely used (Table 10.3). The com­</p>
+            <p>mon names ammonia and water are universally used rather</p>
+        </section>
+
+        <section class="section" id="section-18">
+            <h2>KEY POINTS  Homolytic dissociation of an E–H bond to produce a</h2>
+            <p>­radical E· and hydrogen atom H occurs most readily for the hydrides of</p>
+            <p>the heavy p-block elements. Hydrogen attached to an electronegative</p>
+            <p>element has protonic character and the compound is typically a Brønsted</p>
+            <p>acid. Hydrogen attached to an electropositive element can be trans­</p>
+            <p>As was summarized briefly in Section 10.2, the reactions</p>
+            <p>of binary molecular hydrides are discussed in terms of</p>
+            <p>their ability to undergo homolytic dissociation and, when</p>
+            <p>the dissociation is heterolytic, in terms of their protonic or</p>
+        </section>
+
+        <section class="section" id="section-19">
+            <h2>KEY POINT  Hydrogen bonding is an important determinant of poly­</h2>
+            <p>molecular structure and influences the physical properties of molecular</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter10/fig_10_6.png" alt="Figure 10.6">
+                <div class="figure-caption"><strong>Figure 10.6</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter10/fig_10_7.png" alt="Figure 10.7">
+                <div class="figure-caption"><strong>Figure 10.7</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter10/fig_10_8.png" alt="Figure 10.8">
+                <div class="figure-caption"><strong>Figure 10.8</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter10/fig_10_9.png" alt="Figure 10.9">
+                <div class="figure-caption"><strong>Figure 10.9</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter10/fig_10_10.png" alt="Figure 10.10">
+                <div class="figure-caption"><strong>Figure 10.10</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter10/fig_10_11.png" alt="Figure 10.11">
+                <div class="figure-caption"><strong>Figure 10.11</strong></div>
+            </div>            <p>We saw in Section 5.8 that a hydrogen bond is an interac­</p>
+            <p>tion between a hydrogen atom covalently bonded to an</p>
+            <p>electronegative atom and the lone pair of a neighbour­</p>
+            <p>ing electronegative atom. Although individual hydrogen</p>
+            <p>bonds are usually much weaker than conventional bonds</p>
+            <p>(Table 10.4), their collective influence can be striking, as</p>
+            <p>is easily demonstrated by the fact that H2O under nor­</p>
+            <p>mal conditions is a liquid and not a gas. Normal boil­</p>
+        </section>
+
+        <section class="section" id="section-20">
+            <h2>KEY POINTS  Hydrogen compounds of the most electropositive</h2>
+            <p>metals may be regarded as ionic hydrides; they liberate H2 in contact</p>
+            <p>with Brønsted acids and transfer H− to electrophiles. As direct hydride</p>
+            <p>donors they react with halide compounds to form anionic hydride</p>
+            <p>The saline hydrides are ionic solids containing discrete H−</p>
+            <p>ions and are analogous to corresponding halide salts. The</p>
+            <p>ionic radius of H− varies from 126 pm in LiH to 154 pm</p>
+            <p>in CsH. This wide variability reflects the poor control that</p>
+            <p>the single charge of the proton has on its two surrounding</p>
+            <p>electrons and the resulting high compressibility and polariz­</p>
+        </section>
+
+
+        <section class="section" id="exercises">
+            <h2>Exercises</h2>
+            <div class="exercise-list">
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false},
+                    {left: '\\(', right: '\\)', display: false},
+                    {left: '\\[', right: '\\]', display: true}
+                ]
+            });
+        });
+    </script>
+</body>
+</html>

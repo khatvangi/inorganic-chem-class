@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 22: d-Metal organometallic chemistry | CHEM 361</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+    <style>
+        :root {
+            --bg: #0a0f1a;
+            --bg-card: #131b2e;
+            --bg-elevated: #1a2540;
+            --text: #e8eaed;
+            --text-dim: #9aa0a6;
+            --accent: #8ab4f8;
+            --accent-green: #81c995;
+            --accent-yellow: #fdd663;
+            --accent-purple: #c58af9;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Crimson Pro', Georgia, serif;
+            background: var(--bg);
+            color: var(--text);
+            font-size: 1.15rem;
+            line-height: 1.95;
+        }
+
+        .lecture {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem 6rem;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            background: var(--bg-card);
+            border-bottom: 1px solid var(--bg-elevated);
+        }
+
+        .nav a {
+            color: var(--text-dim);
+            text-decoration: none;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+        }
+
+        .nav a:hover { color: var(--accent); }
+
+        .lecture-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #2a3a5a;
+        }
+
+        .lecture-header h1 {
+            font-size: 2.4rem;
+            font-weight: 500;
+            color: var(--accent);
+        }
+
+        .section { margin-bottom: 3rem; }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--accent-purple);
+            margin-bottom: 1.2rem;
+            font-weight: 500;
+        }
+
+        p { margin-bottom: 1.2rem; text-align: justify; }
+
+        .figure {
+            margin: 2rem 0;
+            background: var(--bg-card);
+            border-radius: 12px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .figure img {
+            max-width: 100%;
+            max-height: 500px;
+            object-fit: contain;
+            background: #f8f8f8;
+            padding: 1rem;
+        }
+
+        .figure-caption {
+            padding: 1rem;
+            background: var(--bg-elevated);
+            font-size: 0.95rem;
+            color: var(--text-dim);
+        }
+
+        .exercise-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .exercise {
+            background: var(--bg-card);
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 3px solid var(--accent-green);
+        }
+
+        .exercise strong {
+            color: var(--accent-green);
+            font-family: 'JetBrains Mono', monospace;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <a href="../index.html">← CHEM 361</a>
+        <a href="index.html">All Lectures</a>
+    </nav>
+
+    <main class="lecture">
+        <header class="lecture-header">
+            <h1>Lecture 22: d-Metal organometallic chemistry</h1>
+        </header>
+
+
+        <section class="section" id="section-1">
+            <h2>Stable electron configurations</h2>
+            <p>We start by examining the bonding patterns so that we can</p>
+            <p>appreciate the importance of π bonds and understand the</p>
+            <p>origin of the restriction of the d-metal organometallic com­</p>
+        </section>
+
+        <section class="section" id="section-2">
+            <h2>KEY POINTS  Six σ-bonding interactions are possible in an octahedral</h2>
+            <p>complex and, when π-acceptor ligands are present, bonding combina­</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter22/fig_22_1.png" alt="Figure 22.1">
+                <div class="figure-caption"><strong>Figure 22.1</strong></div>
+            </div>            <p>tions can be made with the three orbitals of the t2g set, leading to nine</p>
+            <p>bonding molecular orbitals (MOs), and space for a total of 18 electrons.</p>
+            <p>In the 1920s, N.V. Sidgwick recognized that the metal atom</p>
+            <p>in a simple metal carbonyl, such as [Ni(CO)4] (2), has the</p>
+            <p>same valence electron count (18) as the noble gas that termi­</p>
+            <p>nates the long period to which the metal belongs. Sidgwick</p>
+            <p>coined the term ‘inert gas rule’ for this indication of stabil­</p>
+            <p>ity, but it is now usually referred to as the 18-electron rule.1</p>
+            <p>1  The 18-electron rule is sometimes referred to as the effective atomic</p>
+        </section>
+
+        <section class="section" id="section-3">
+            <h2>KEY POINT  With strong-field ligands, a square-planar complex has</h2>
+            <p>only eight bonding MOs, so a 16-electron configuration is the most en­</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter22/fig_22_2.png" alt="Figure 22.2">
+                <div class="figure-caption"><strong>Figure 22.2</strong></div>
+            </div>            <p>One other geometry already discussed in the context of</p>
+            <p>coordination chemistry is the square-planar arrangement of</p>
+            <p>four ligands (Section 20.1), where we noted that it occurred</p>
+            <p>generally for strong-field ligands and a d8 metal ion. Because</p>
+            <p>organometallic ligands often produce a strong field, many</p>
+            <p>square-planar organometallic compounds exist. Stable</p>
+            <p>square-planar complexes are normally found with a total of</p>
+            <p>16 valence electrons, which results in the population of all</p>
+        </section>
+
+        <section class="section" id="section-4">
+            <h2>Electron-count preference</h2>
+        </section>
+
+        <section class="section" id="section-5">
+            <h2>KEY POINT  On the left of the d block, steric requirements can mean</h2>
+            <p>that it is not possible to assemble enough ligands around a metal atom</p>
+            <p>The preference of a metal atom for one particular geom­</p>
+            <p>etry and electron count is not normally so strong that</p>
+            <p>other geometries do not occur. For instance, although</p>
+            <p>the chemistry of both Pd(II) and Rh(I) is dominated by</p>
+            <p>FIGURE 22.2 The energy levels of the molecular orbitals (MOs)</p>
+            <p>of a square-planar complex with strong-field ligands. The four</p>
+            <p>lowest MOs correspond to bonding interactions, and the highest</p>
+            <p>corresponds to an antibonding interaction; the MOs are labelled</p>
+        </section>
+
+        <section class="section" id="section-6">
+            <h2>Electron counting and oxidation states</h2>
+            <p>The dominance of 16- and 18-electron configurations in</p>
+            <p>organometallic chemistry makes it imperative to be able to</p>
+            <p>count the number of valence electrons on a central metal</p>
+            <p>atom because knowing that number allows us to predict</p>
+            <p>the stabilities of compounds and to suggest patterns of</p>
+            <p>reactivity. Although the concept of ‘oxidation state’ for</p>
+            <p>organometallic compounds is regarded by many as tenu­</p>
+            <p>ous at best, the vast majority of the research community</p>
+            <p>uses it as a convenient shorthand for describing electron</p>
+            <p>configurations. Oxidation states (and the correspond­</p>
+        </section>
+
+        <section class="section" id="section-7">
+            <h2>KEY POINT  All ligands are treated as neutral and are categorized</h2>
+            <p>according to how many electrons they are considered to donate.</p>
+            <p>For the sake of counting electrons, each metal atom and</p>
+            <p>ligand is treated as neutral. We include in the count all</p>
+            <p>valence electrons of the metal atom and all the electrons</p>
+            <p>donated by the ligands. If the complex is charged, we sim­</p>
+            <p>ply add or subtract the appropriate number of electrons to</p>
+            <p>the total. Ligands are defined as L type if they are neutral</p>
+            <p>two-electron donors (like CO, PMe3) and X type if, when</p>
+            <p>they are considered to be neutral, they are one-electron</p>
+            <p>radical donors (like halogen atoms, H, CH3). For example,</p>
+        </section>
+
+        <section class="section" id="section-8">
+            <h2>KEY POINT  Ligands are considered to donate electrons in pairs,</h2>
+            <p>resulting in the need to treat some ligands as neutral and others as</p>
+            <p>The donor-pair method requires a calculation of the</p>
+            <p>­oxidation number. The rules for calculating the oxidation</p>
+            <p>number of a metal in an organometallic compound are the</p>
+            <p>same as for conventional coordination compounds. Neutral</p>
+            <p>ligands, such as CO and phosphine, are considered to be</p>
+            <p>two-electron donors and are formally assigned an oxida­</p>
+            <p>tion number of 0. Ligands such as halogens, H, and CH3</p>
+            <p>are formally considered to take an electron from the metal</p>
+        </section>
+
+        <section class="section" id="section-9">
+            <h2>Nomenclature</h2>
+        </section>
+
+        <section class="section" id="section-10">
+            <h2>KEY POINT  The naming of organometallic compounds is similar</h2>
+            <p>to the naming of coordination compounds, but certain ligands have</p>
+            <p>multiple bonding modes, which are described using η and µ.</p>
+            <p>According to the recommended convention, we use the</p>
+            <p>same system of nomenclature for organometallic com­</p>
+            <p>pounds as set out for coordination complexes in Section 7.2.</p>
+            <p>Thus, ligands are listed in alphabetical order followed by</p>
+            <p>the name of the metal, all of which is written as one word.</p>
+            <p>The name of the metal should be followed by its oxidation</p>
+            <p>number in parentheses. The nomenclature used in research</p>
+            <p>journals, however, does not always obey these rules, and it</p>
+        </section>
+
+        <section class="section" id="section-11">
+            <h2>Carbon monoxide</h2>
+        </section>
+
+        <section class="section" id="section-12">
+            <h2>KEY POINT  The 3σ orbital of CO serves as a very weak donor and the</h2>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter22/fig_22_3.png" alt="Figure 22.3">
+                <div class="figure-caption"><strong>Figure 22.3</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter22/fig_22_4.png" alt="Figure 22.4">
+                <div class="figure-caption"><strong>Figure 22.4</strong></div>
+            </div>            <p>metallic chemistry, where it is known as the carbonyl</p>
+            <p>group. Carbon monoxide is particularly good at stabilizing</p>
+            <p>very low oxidation states, with many compounds (such as</p>
+            <p>[Fe(CO)5]) having the metal in its zero oxidation state. We</p>
+            <p>described the molecular orbital structure of CO in Section</p>
+            <p>2.9, and it would be sensible to review that section.</p>
+            <p>A simple picture of the bonding of CO to a metal atom is to</p>
+            <p>treat the lone pair on the carbon atom as a Lewis σ base (an</p>
+        </section>
+
+        <section class="section" id="section-13">
+            <h2>Phosphines</h2>
+        </section>
+
+        <section class="section" id="section-14">
+            <h2>KEY POINT  Phosphines bond to metals by a combination of σ dona­</h2>
+            <p>tion from the P atom and π backbonding from the metal atom.</p>
+            <p>Although phosphine complexes are not formally organo-</p>
+            <p>metallic because the ligands do not bond to the metal atom</p>
+            <p>through a carbon atom, they are best discussed here as their</p>
+            <p>bonding has many similarities to that of carbon monoxide.</p>
+            <p>Phosphine, PH3 (formally phosphane), is a reactive, nox­</p>
+            <p>ious, poisonous, and flammable gas (Section 15.10). Like</p>
+            <p>ammonia, phosphine can behave as a Lewis base and use its</p>
+            <p>lone pair to donate electron density to a Lewis acid, and so</p>
+            <p>act as a ligand. However, given the problems associated with</p>
+        </section>
+
+        <section class="section" id="section-15">
+            <h2>Hydrides and dihydrogen complexes</h2>
+        </section>
+
+        <section class="section" id="section-16">
+            <h2>KEY POINTS  The bonding of a hydrogen atom to a metal atom is a</h2>
+            <p>σ interaction, whereas the bonding of a dihydrogen ligand involves</p>
+            <p>A hydrogen atom directly bonded to a metal is commonly</p>
+            <p>found in organometallic complexes and is referred to as a</p>
+            <p>hydride ligand. The name ‘hydride’ can be misleading as it</p>
+            <p>implies a H− ligand. Although the formulation H− might be</p>
+            <p>appropriate for most hydrides, such as [CoH(PMe3)4], some</p>
+            <p>hydrides are appreciably acidic and behave as though they</p>
+            <p>contain H+; for example, [CoH(CO)4] is an acid with pKa =</p>
+            <p>8.3 (in acetonitrile). The acidity of organometallic carbonyls</p>
+        </section>
+
+        <section class="section" id="section-17">
+            <h2>KEY POINT  The metal–ligand bonding of η1-hydrocarbon ligands is a</h2>
+            <p>Alkyl groups are often found as ligands in d-metal orga­</p>
+            <p>nometallic chemistry, and their bonding presents no new</p>
+            <p>features: it is best considered a simple covalent σ interac­</p>
+            <p>tion between the metal atom and the carbon atom of the</p>
+            <p>organic fragment. Alkyl groups with a hydrogen atom on</p>
+            <p>a carbon atom adjacent to the one that bonds to the metal</p>
+            <p>are prone to decompose by a process known as β-hydrogen</p>
+            <p>elimination (Section 22.25) and hence those alkyl groups</p>
+            <p>that cannot react in this fashion, such as methyl, benzyl</p>
+        </section>
+
+        <section class="section" id="section-18">
+            <h2>KEY POINT  The bonding of an alkene or an alkyne to a metal atom is</h2>
+            <p>best described as a σ interaction from the multiple bond to the metal</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter22/fig_22_5.png" alt="Figure 22.5">
+                <div class="figure-caption"><strong>Figure 22.5</strong></div>
+            </div>            <p>atom, with a π backbonding interaction from the metal atom to the π*</p>
+            <p>Alkenes are routinely found bound to metal centres: the</p>
+            <p>first organometallic compound isolated, Zeise’s salt (1),</p>
+            <p>was a complex of ethene. Alkenes normally bond side-</p>
+            <p>on to a metal atom with both carbon atoms of the dou­</p>
+            <p>ble bond equidistant from the metal with the other groups</p>
+            <p>on the alkene approximately perpendicular to the plane</p>
+            <p>of the metal atom and the two carbon atoms (32). In this</p>
+        </section>
+
+        <section class="section" id="section-19">
+            <h2>Nonconjugated diene and polyene</h2>
+        </section>
+
+        <section class="section" id="section-20">
+            <h2>KEY POINT  The bonding of nonconjugated alkenes to a metal atom</h2>
+            <p>is best described as independent multiple alkenes bonding to a metal</p>
+            <p>Nonconjugated diene (–C=C–X–C=C–) and polyene ligands</p>
+            <p>can also bond to metal atoms. It is simplest to consider</p>
+            <p>them as linked alkenes, and hence they present no new</p>
+            <p>bonding concepts. As with the chelate effect in coordina­</p>
+            <p>tion complexes (Section 7.14), the resulting polyene com­</p>
+            <p>plexes are usually more stable than the equivalent complex</p>
+            <p>with individual ligands because the entropy of dissociation</p>
+            <p>of the complex is much smaller than when the liberated</p>
+        </section>
+
+
+        <section class="section" id="exercises">
+            <h2>Exercises</h2>
+            <div class="exercise-list">
+
+                <div class="exercise">
+                    <strong>22.1</strong> Name the species, draw the structures of, and give valence electron counts to the metal atoms in: (a) [Fe(CO)5], (b) [Mn2(CO)10], (c) [V(CO)6], (d) [Fe(CO)4]2−, (e) [La(η5-Cp*)3], (f) [Fe(η3-allyl)(CO)3Cl], (g) [Fe(CO)4(PEt3)], (h) [Rh(Me) (CO)2(PPh3)], (i) [Pd(Me)(Cl)(PPh3)2], (j) [Co(η5-C5H5)(η4-C...
+                </div>
+
+                <div class="exercise">
+                    <strong>22.2</strong> (a) Sketch an η2 interaction of 1,3-butadiene with a metal atom and (b) do the same for an η4 interaction.
+                </div>
+
+                <div class="exercise">
+                    <strong>22.3</strong> What hapticities are possible for the interaction of each of the following ligands with a single d-block metal atom such as cobalt? (a) C2H4, (b) cyclopentadienyl, (c) C6H6, (d) cyclooctadiene, (e) cyclooctatetraene.
+                </div>
+
+                <div class="exercise">
+                    <strong>22.4</strong> Draw plausible structures and give the electron count of (a) [Ni(η3-C3H5)2], (b) η4-cyclobutadiene-η5-cyclopentadienylcobalt, (c) [Co(η3-C3H5)(CO)2]. If the electron count deviates from 18, is the deviation explicable in terms of periodic trends?
+                </div>
+
+                <div class="exercise">
+                    <strong>22.5</strong> State the two common methods for the preparation of simple metal carbonyls and illustrate your answer with chemical equations. Is the selection of method based on thermodynamic or kinetic considerations?
+                </div>
+
+                <div class="exercise">
+                    <strong>22.6</strong> Suppose that you are given a series of metal tricarbonyl compounds having the respective symmetries C2v, D3h, and Cs. Without consulting reference material, which of these should display the greatest number of CO stretching bands in the IR spectrum? Check your answer and give the number of expected ...
+                </div>
+
+                <div class="exercise">
+                    <strong>22.7</strong> Provide plausible reasons for the differences in IR stretching frequencies between each of the following pairs: (a) [Mo(CO)3(PF3)3] 2040, 1991 cm−1 versus [Mo(CO)3(PMe3)3] 1945, 1851 cm−1, (b) [Mn(Cp)(CO)3] 2023, 1939 cm−1 versus [Mn(Cp*)(CO)3] 2017, 1928 cm−1.
+                </div>
+
+                <div class="exercise">
+                    <strong>22.8</strong> The compound [Ni3(C5H5)3(CO)2] has a single CO stretching absorption at 1761 cm−1. The IR data indicate that all C5H5 ligands are pentahapto and probably in identical environments. (a) On the basis of these data, propose a structure. 22  d-Metal organometallic chemistry 686 (b) Does the electron cou...
+                </div>
+
+                <div class="exercise">
+                    <strong>22.9</strong> Decide which of the two complexes (a) [W(CO)6] or (b) [Ir(CO)Cl(PPh3)2] should undergo the fastest exchange with 13CO. Justify your answer.
+                </div>
+
+                <div class="exercise">
+                    <strong>22.10</strong> Which metal carbonyl in each of (a) [Fe(CO)4]2− or [Co(CO)4]−, (b) [Mn(CO)5]− or [Re(CO)5]− should be the most basic towards a proton? Explain your answer.
+                </div>
+
+                <div class="exercise">
+                    <strong>22.11</strong> Using the 18-electron rule as a guide, indicate the probable number of carbonyl ligands in (a) [W(η6-C6H6)(CO)n], (b) [Rh(η5-C5H5)(CO)n], and (c) [Ru3(CO)n].
+                </div>
+
+                <div class="exercise">
+                    <strong>22.12</strong> Propose two syntheses for [MnMe(CO)5], both starting with [Mn2(CO)10], with one using Na and one using Br2. You may use other reagents of your choice.
+                </div>
+
+                <div class="exercise">
+                    <strong>22.13</strong> Give the probable structure of the product obtained when [Mo(CO)6] is allowed to react first with LiPh and then with the strong carbocation reagent, CH3OSO2CF3.
+                </div>
+
+                <div class="exercise">
+                    <strong>22.14</strong> Na[W(η5-C5H5)(CO)3] reacts with 3-chloroprop-1-ene to give a solid, A, which has the molecular formula [W(C3H5) (C5H5)(CO)3]. Compound A loses carbon monoxide on exposure to light and forms compound B, which has the formula [W(C3H5) (C5H5)(CO)2]. Treating compound A with hydrogen chloride and then p...
+                </div>
+
+                <div class="exercise">
+                    <strong>22.15</strong> Suggest syntheses of (a) [Mo(η7-C7H7)(CO)3]BF4 from [Mo(CO)6] and (b) [Ir(COMe)(CO)(Cl)2(PPh3)2] from [Ir(CO) Cl(PPh3)2].
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false},
+                    {left: '\\(', right: '\\)', display: false},
+                    {left: '\\[', right: '\\]', display: true}
+                ]
+            });
+        });
+    </script>
+</body>
+</html>

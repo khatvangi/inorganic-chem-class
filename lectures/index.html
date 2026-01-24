@@ -1,98 +1,270 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Coordination Chemistry Lectures</title>
-    <link rel="stylesheet" href="lecture.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Space+Grotesk:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="noise"></div>
-    <header>
-      <p class="eyebrow">Lecture Series</p>
-      <h1>Coordination Chemistry Lectures</h1>
-      <p class="subhead">
-        Web-based lectures with animations and interactive visuals. Each lecture is
-        designed for a 75-minute session with built-in activities.
-      </p>
-      <div class="nav">
-        <a class="primary" href="../index.html">Back to Games</a>
-      </div>
-    </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lectures | CHEM 361</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0a0f1a;
+            --bg-card: #131b2e;
+            --bg-elevated: #1a2540;
+            --text: #e8eaed;
+            --text-dim: #9aa0a6;
+            --accent: #8ab4f8;
+            --accent-green: #81c995;
+            --accent-purple: #c58af9;
+        }
 
-    <main>
-      <section class="section reveal">
-        <h2>Foundations</h2>
-        <div class="grid">
-          <div class="chart">
-            <h3>Atomic Structure</h3>
-            <p class="caption">Hydrogenic atoms, quantum numbers, orbitals, and energy levels.</p>
-            <a class="btn" href="lecture1-atomic-structure.html">Open lecture</a>
-          </div>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Crimson Pro', Georgia, serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            background: var(--bg-card);
+            border-bottom: 1px solid var(--bg-elevated);
+        }
+
+        .nav a {
+            color: var(--text-dim);
+            text-decoration: none;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+        }
+
+        .nav a:hover { color: var(--accent); }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 500;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: var(--text-dim);
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+        }
+
+        .part {
+            margin-bottom: 3rem;
+        }
+
+        .part h2 {
+            font-size: 1.3rem;
+            color: var(--accent-purple);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--bg-elevated);
+        }
+
+        .lecture-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .lecture-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem 1.5rem;
+            background: var(--bg-card);
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--text);
+            transition: all 0.2s;
+        }
+
+        .lecture-item:hover {
+            background: var(--bg-elevated);
+            transform: translateX(4px);
+        }
+
+        .lecture-num {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            color: var(--accent-green);
+            min-width: 3rem;
+        }
+
+        .lecture-title {
+            flex: 1;
+        }
+
+        .lecture-badge {
+            font-size: 0.75rem;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            background: var(--bg-elevated);
+            color: var(--text-dim);
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .lecture-badge.interactive {
+            background: rgba(138, 180, 248, 0.2);
+            color: var(--accent);
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <a href="../index.html">← CHEM 361</a>
+        <a href="../syllabus.html">Syllabus</a>
+    </nav>
+
+    <div class="container">
+        <h1>Lectures</h1>
+        <p class="subtitle">Inorganic Chemistry — Spring 2026</p>
+
+        <div class="part">
+            <h2>Part 1: Foundations</h2>
+            <div class="lecture-list">
+                <a href="lecture1-atomic-structure.html" class="lecture-item">
+                    <span class="lecture-num">01</span>
+                    <span class="lecture-title">Atomic Structure</span>
+                    <span class="lecture-badge interactive">Interactive</span>
+                </a>
+                <a href="lecture2.html" class="lecture-item">
+                    <span class="lecture-num">02</span>
+                    <span class="lecture-title">Molecular Structure and Bonding</span>
+                </a>
+                <a href="lecture3.html" class="lecture-item">
+                    <span class="lecture-num">03</span>
+                    <span class="lecture-title">Molecular Symmetry</span>
+                </a>
+                <a href="lecture4.html" class="lecture-item">
+                    <span class="lecture-num">04</span>
+                    <span class="lecture-title">The Structures of Simple Solids</span>
+                </a>
+                <a href="lecture5.html" class="lecture-item">
+                    <span class="lecture-num">05</span>
+                    <span class="lecture-title">Acids and Bases</span>
+                </a>
+                <a href="lecture6.html" class="lecture-item">
+                    <span class="lecture-num">06</span>
+                    <span class="lecture-title">Oxidation and Reduction</span>
+                </a>
+                <a href="lecture7.html" class="lecture-item">
+                    <span class="lecture-num">07</span>
+                    <span class="lecture-title">Introduction to Coordination Compounds</span>
+                </a>
+                <a href="lecture8.html" class="lecture-item">
+                    <span class="lecture-num">08</span>
+                    <span class="lecture-title">Physical Techniques in Inorganic Chemistry</span>
+                </a>
+            </div>
         </div>
-      </section>
 
-      <section class="section reveal">
-        <h2>Week 1</h2>
-        <div class="grid">
-          <div class="chart">
-            <h3>Nomenclature and Ligands</h3>
-            <p class="caption">Naming workflow, ligand ordering, oxidation states.</p>
-            <a class="btn" href="lecture-9-3-nomenclature.html">Open lecture</a>
-          </div>
-          <div class="chart">
-            <h3>Coordination Numbers and Structures</h3>
-            <p class="caption">CN mapping, geometry recognition, Kepert model.</p>
-            <a class="btn" href="lecture-9-5-coordination.html">Open lecture</a>
-          </div>
+        <div class="part">
+            <h2>Part 2: The Elements and Their Compounds</h2>
+            <div class="lecture-list">
+                <a href="lecture9.html" class="lecture-item">
+                    <span class="lecture-num">09</span>
+                    <span class="lecture-title">Periodic Trends</span>
+                </a>
+                <a href="lecture10.html" class="lecture-item">
+                    <span class="lecture-num">10</span>
+                    <span class="lecture-title">Hydrogen</span>
+                </a>
+                <a href="lecture11.html" class="lecture-item">
+                    <span class="lecture-num">11</span>
+                    <span class="lecture-title">The Group 1 Elements</span>
+                </a>
+                <a href="lecture12.html" class="lecture-item">
+                    <span class="lecture-num">12</span>
+                    <span class="lecture-title">The Group 2 Elements</span>
+                </a>
+                <a href="lecture13.html" class="lecture-item">
+                    <span class="lecture-num">13</span>
+                    <span class="lecture-title">The Group 13 Elements</span>
+                </a>
+                <a href="lecture14.html" class="lecture-item">
+                    <span class="lecture-num">14</span>
+                    <span class="lecture-title">The Group 14 Elements</span>
+                </a>
+                <a href="lecture15.html" class="lecture-item">
+                    <span class="lecture-num">15</span>
+                    <span class="lecture-title">The Group 15 Elements</span>
+                </a>
+                <a href="lecture16.html" class="lecture-item">
+                    <span class="lecture-num">16</span>
+                    <span class="lecture-title">The Group 16 Elements</span>
+                </a>
+                <a href="lecture17.html" class="lecture-item">
+                    <span class="lecture-num">17</span>
+                    <span class="lecture-title">The Group 17 Elements</span>
+                </a>
+                <a href="lecture18.html" class="lecture-item">
+                    <span class="lecture-num">18</span>
+                    <span class="lecture-title">The Group 18 Elements</span>
+                </a>
+            </div>
         </div>
-      </section>
 
-      <section class="section reveal">
-        <h2>Week 2</h2>
-        <div class="grid">
-          <div class="chart">
-            <h3>Isomerism</h3>
-            <p class="caption">Structural vs stereoisomerism, cis/trans, fac/mer.</p>
-            <a class="btn" href="lecture-9-4-isomerism.html">Open lecture</a>
-          </div>
-          <div class="chart">
-            <h3>Bonding and Ligand Field Theory</h3>
-            <p class="caption">CFT, LFT, MO effects, spectra, spin states.</p>
-            <a class="btn" href="lecture-10-bonding.html">Open lecture</a>
-          </div>
+        <div class="part">
+            <h2>Part 3: Transition Metal Chemistry</h2>
+            <div class="lecture-list">
+                <a href="lecture19.html" class="lecture-item">
+                    <span class="lecture-num">19</span>
+                    <span class="lecture-title">The d-Block Elements</span>
+                </a>
+                <a href="lecture20.html" class="lecture-item">
+                    <span class="lecture-num">20</span>
+                    <span class="lecture-title">d-Metal Complexes: Electronic Structure</span>
+                </a>
+                <a href="lecture21.html" class="lecture-item">
+                    <span class="lecture-num">21</span>
+                    <span class="lecture-title">Coordination Chemistry: Reactions</span>
+                </a>
+                <a href="lecture22.html" class="lecture-item">
+                    <span class="lecture-num">22</span>
+                    <span class="lecture-title">d-Metal Organometallic Chemistry</span>
+                </a>
+                <a href="lecture23.html" class="lecture-item">
+                    <span class="lecture-num">23</span>
+                    <span class="lecture-title">The f-Block Elements</span>
+                </a>
+            </div>
         </div>
-      </section>
 
-      <section class="section reveal">
-        <h2>Week 3</h2>
-        <div class="grid">
-          <div class="chart">
-            <h3>Coordination Reactions and Mechanisms</h3>
-            <p class="caption">Substitution pathways, rate laws, stereochemistry.</p>
-            <a class="btn" href="lecture-12-reactions.html">Open lecture</a>
-          </div>
+        <div class="part">
+            <h2>Part 4: Advanced Topics</h2>
+            <div class="lecture-list">
+                <a href="lecture24.html" class="lecture-item">
+                    <span class="lecture-num">24</span>
+                    <span class="lecture-title">Materials Chemistry and Nanomaterials</span>
+                </a>
+                <a href="lecture25.html" class="lecture-item">
+                    <span class="lecture-num">25</span>
+                    <span class="lecture-title">Green Chemistry</span>
+                </a>
+                <a href="lecture26.html" class="lecture-item">
+                    <span class="lecture-num">26</span>
+                    <span class="lecture-title">Biological Inorganic Chemistry</span>
+                </a>
+                <a href="lecture27.html" class="lecture-item">
+                    <span class="lecture-num">27</span>
+                    <span class="lecture-title">Inorganic Chemistry in Medicine</span>
+                </a>
+            </div>
         </div>
-      </section>
-
-      <section class="section reveal">
-        <h2>Week 4</h2>
-        <div class="grid">
-          <div class="chart">
-            <h3>The Crystalline Solid State</h3>
-            <p class="caption">Unit cells, packing, lattice systems.</p>
-            <a class="btn" href="lecture-7-solids.html">Open lecture</a>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <script src="lecture.js"></script>
-  </body>
+    </div>
+</body>
 </html>

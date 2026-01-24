@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 8: Physical techniques in inorganic chemistry | CHEM 361</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+    <style>
+        :root {
+            --bg: #0a0f1a;
+            --bg-card: #131b2e;
+            --bg-elevated: #1a2540;
+            --text: #e8eaed;
+            --text-dim: #9aa0a6;
+            --accent: #8ab4f8;
+            --accent-green: #81c995;
+            --accent-yellow: #fdd663;
+            --accent-purple: #c58af9;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Crimson Pro', Georgia, serif;
+            background: var(--bg);
+            color: var(--text);
+            font-size: 1.15rem;
+            line-height: 1.95;
+        }
+
+        .lecture {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem 6rem;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            background: var(--bg-card);
+            border-bottom: 1px solid var(--bg-elevated);
+        }
+
+        .nav a {
+            color: var(--text-dim);
+            text-decoration: none;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+        }
+
+        .nav a:hover { color: var(--accent); }
+
+        .lecture-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #2a3a5a;
+        }
+
+        .lecture-header h1 {
+            font-size: 2.4rem;
+            font-weight: 500;
+            color: var(--accent);
+        }
+
+        .section { margin-bottom: 3rem; }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--accent-purple);
+            margin-bottom: 1.2rem;
+            font-weight: 500;
+        }
+
+        p { margin-bottom: 1.2rem; text-align: justify; }
+
+        .figure {
+            margin: 2rem 0;
+            background: var(--bg-card);
+            border-radius: 12px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .figure img {
+            max-width: 100%;
+            max-height: 500px;
+            object-fit: contain;
+            background: #f8f8f8;
+            padding: 1rem;
+        }
+
+        .figure-caption {
+            padding: 1rem;
+            background: var(--bg-elevated);
+            font-size: 0.95rem;
+            color: var(--text-dim);
+        }
+
+        .exercise-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .exercise {
+            background: var(--bg-card);
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 3px solid var(--accent-green);
+        }
+
+        .exercise strong {
+            color: var(--accent-green);
+            font-family: 'JetBrains Mono', monospace;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <a href="../index.html">← CHEM 361</a>
+        <a href="index.html">All Lectures</a>
+    </nav>
+
+    <main class="lecture">
+        <header class="lecture-header">
+            <h1>Lecture 8: Physical techniques in inorganic chemistry</h1>
+        </header>
+
+
+        <section class="section" id="section-1">
+            <h2>Physical techniques in</h2>
+        </section>
+
+        <section class="section" id="section-2">
+            <h2>Diffraction methods</h2>
+            <p>Diffraction techniques, particularly those using X-rays, are</p>
+            <p>the most important methods available to the inorganic chem­</p>
+            <p>ist for the determination of structures. X-ray diffraction has</p>
+            <p>been used to establish the structures of at least a million dif­</p>
+            <p>ferent substances, including hundreds of thousands of purely</p>
+            <p>inorganic compounds and many organometallic compounds.</p>
+            <p>The method is used to locate the positions of the atoms and</p>
+            <p>ions that make up a solid compound and hence provides a</p>
+            <p>description of structures in terms of features such as bond</p>
+            <p>lengths, bond angles, and the relative positions of ions and</p>
+        </section>
+
+        <section class="section" id="section-3">
+            <h2>X-ray diffraction</h2>
+        </section>
+
+        <section class="section" id="section-4">
+            <h2>KEY POINTS  The scattering of radiation with wavelengths of about</h2>
+            <p>100 pm from crystals gives rise to diffraction; the interpretation of the</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter8/fig_8_1.png" alt="Figure 8.1">
+                <div class="figure-caption"><strong>Figure 8.1</strong></div>
+            </div>            <p>diffraction patterns provides quantitative structural information and in</p>
+            <p>many cases the complete molecular or ionic structure.</p>
+            <p>Diffraction is the interference between waves that occurs as</p>
+            <p>a result of an object in their path. X-rays are scattered elasti­</p>
+            <p>cally (with no change in energy) by the electrons in atoms,</p>
+            <p>and diffraction can occur for a periodic array of scattering</p>
+            <p>centres separated by distances similar to the wavelength of</p>
+            <p>the radiation (in the region 50–250 pm), such as exist in a</p>
+            <p>crystal (typical bond lengths are 100–300 pm). If we think</p>
+        </section>
+
+        <section class="section" id="section-5">
+            <h2>KEY POINT  Powder X-ray diffraction is used mainly for phase identi­</h2>
+            <p>fication and the determination of lattice parameters and lattice type.</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter8/fig_8_2.png" alt="Figure 8.2">
+                <div class="figure-caption"><strong>Figure 8.2</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter8/fig_8_3.png" alt="Figure 8.3">
+                <div class="figure-caption"><strong>Figure 8.3</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter8/fig_8_4.png" alt="Figure 8.4">
+                <div class="figure-caption"><strong>Figure 8.4</strong></div>
+            </div>            <p>A powdered (polycrystalline) sample contains an enormous</p>
+            <p>number of very small crystallites, typically 0.1–10 µm in</p>
+            <p>dimension and orientated at random. An X-ray beam strik­</p>
+            <p>ing a polycrystalline sample is scattered in all directions; at</p>
+            <p>some angles, those given by Bragg’s equation, constructive</p>
+            <p>interference occurs. As a result, each set of planes of atoms</p>
+            <p>separated by the lattice spacing d gives rise to a cone of</p>
+        </section>
+
+        <section class="section" id="section-6">
+            <h2>KEY POINT  Analysis of the X-ray diffraction patterns obtained from</h2>
+            <p>single crystals allows the structure of molecules and extended lattices</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter8/fig_8_6.png" alt="Figure 8.6">
+                <div class="figure-caption"><strong>Figure 8.6</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter8/fig_8_7.png" alt="Figure 8.7">
+                <div class="figure-caption"><strong>Figure 8.7</strong></div>
+            </div>            <p>to be determined, although hydrogen atoms are often not directly lo­</p>
+            <p>Analysis of the diffraction data obtained from single crystals</p>
+            <p>is the most important method of obtaining the structures</p>
+            <p>of inorganic solids. Provided a compound can be grown</p>
+            <p>as a crystal of sufficient size and quality, the data provide</p>
+            <p>definitive information about molecular and extended lattice</p>
+            <p>The collection of diffraction data from a single crystal</p>
+        </section>
+
+        <section class="section" id="section-7">
+            <h2>KEY POINT  High-intensity X-ray beams generated by synchro­</h2>
+            <p>tron sources allow the structures of very complex molecules to be</p>
+            <p>Much more intense X-ray beams, than are available from</p>
+            <p>laboratory sources, can be obtained by using synchrotron</p>
+            <p>radiation. Synchrotron radiation is produced by electrons</p>
+            <p>circulating close to the speed of light in a storage ring</p>
+            <p>and is typically several orders of magnitude more intense</p>
+            <p>than laboratory sources. Because of their size, synchrotron</p>
+            <p>X-ray sources are normally national or international facili­</p>
+            <p>ties. Diffraction equipment located at such an X-ray source</p>
+        </section>
+
+        <section class="section" id="section-8">
+            <h2>Neutron diffraction</h2>
+        </section>
+
+        <section class="section" id="section-9">
+            <h2>KEY POINT  The scattering of neutrons by crystals yields diffraction</h2>
+            <p>data that give additional information on structure, particularly the po­</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter8/fig_8_8.png" alt="Figure 8.8">
+                <div class="figure-caption"><strong>Figure 8.8</strong></div>
+            </div>            <p>Diffraction occurs from crystals for any particle with a</p>
+            <p>velocity such that its associated wavelength (through the de</p>
+            <p>Broglie relation, λ = h/mv) is comparable to the separations</p>
+            <p>of the atoms or ions in the crystal. Neutrons and electrons</p>
+            <p>(used in electron microscopes, Section 8.17) travelling at</p>
+            <p>suitable velocities have wavelengths of the order of 100–</p>
+            <p>200 pm and thus undergo diffraction by crystalline inor­</p>
+        </section>
+
+        <section class="section" id="section-10">
+            <h2>Absorption and emission spectroscopies</h2>
+            <p>The majority of physical techniques used to investigate inor­</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter8/fig_8_9.png" alt="Figure 8.9">
+                <div class="figure-caption"><strong>Figure 8.9</strong></div>
+            </div>            <p>ganic compounds involve the absorption and sometimes the</p>
+            <p>re-emission of electromagnetic radiation. The frequency of</p>
+            <p>the radiation absorbed provides useful information on the</p>
+            <p>energy levels of an inorganic compound, and the intensity</p>
+            <p>of the absorption can often be used to provide quantitative</p>
+            <p>analytical information. Absorption spectroscopy techniques</p>
+            <p>are normally nondestructive as after the measurement the</p>
+        </section>
+
+        <section class="section" id="section-11">
+            <h2>Ultraviolet–visible spectroscopy</h2>
+        </section>
+
+        <section class="section" id="section-12">
+            <h2>KEY POINTS  The energies and intensities of electronic transitions</h2>
+            <p>provide information on electronic structure and chemical environ­</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter8/fig_8_10.png" alt="Figure 8.10">
+                <div class="figure-caption"><strong>Figure 8.10</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter8/fig_8_11.png" alt="Figure 8.11">
+                <div class="figure-caption"><strong>Figure 8.11</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter8/fig_8_12.png" alt="Figure 8.12">
+                <div class="figure-caption"><strong>Figure 8.12</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter8/fig_8_15.png" alt="Figure 8.15">
+                <div class="figure-caption"><strong>Figure 8.15</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter8/fig_8_13.png" alt="Figure 8.13">
+                <div class="figure-caption"><strong>Figure 8.13</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter8/fig_8_14.png" alt="Figure 8.14">
+                <div class="figure-caption"><strong>Figure 8.14</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter8/fig_8_16.png" alt="Figure 8.16">
+                <div class="figure-caption"><strong>Figure 8.16</strong></div>
+            </div>            <p>ment; changes in spectral properties are used to monitor the progress</p>
+            <p>Ultraviolet–visible spectroscopy (UV–visible spectroscopy)</p>
+            <p>is the observation of the absorption of electromagnetic</p>
+            <p>radiation in the UV and visible regions of the spectrum. It</p>
+            <p>is sometimes known as electronic spectroscopy because the</p>
+            <p>energy is used to excite electrons to higher energy levels.</p>
+            <p>UV–visible spectroscopy is among the most widely used</p>
+            <p>techniques for studying inorganic compounds (Box 8.1)</p>
+        </section>
+
+        <section class="section" id="section-13">
+            <h2>Fluorescence or emission spectroscopy</h2>
+            <p>Fluorescence or emission spectroscopy, also sometimes</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter8/fig_8_17.png" alt="Figure 8.17">
+                <div class="figure-caption"><strong>Figure 8.17</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter8/fig_8_18.png" alt="Figure 8.18">
+                <div class="figure-caption"><strong>Figure 8.18</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter8/fig_8_19.png" alt="Figure 8.19">
+                <div class="figure-caption"><strong>Figure 8.19</strong></div>
+            </div>            <p>referred to as fluorimetry or spectrofluorimetry, concerns</p>
+            <p>the emitted electromagnetic radiation, usually in the visible</p>
+            <p>or near-infrared regions of the spectrum, from a compound</p>
+            <p>that has been electronically excited, normally with UV</p>
+            <p>radiation. The emitted photon is normally at a lower energy</p>
+            <p>than the exciting radiation because of losses to nonradia­</p>
+            <p>tive processes in the compound under investigation, such as</p>
+            <p>vibrational modes. The origins and relationships between</p>
+            <p>absorption and emission spectra of a compound are sum­</p>
+        </section>
+
+        <section class="section" id="section-14">
+            <h2>Infrared and Raman spectroscopy</h2>
+        </section>
+
+        <section class="section" id="section-15">
+            <h2>KEY POINTS  Infrared and Raman spectroscopy are often comple­</h2>
+            <p>mentary in that a particular type of vibration may be observed in one</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter8/fig_8_20.png" alt="Figure 8.20">
+                <div class="figure-caption"><strong>Figure 8.20</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter8/fig_8_21.png" alt="Figure 8.21">
+                <div class="figure-caption"><strong>Figure 8.21</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter8/fig_8_22.png" alt="Figure 8.22">
+                <div class="figure-caption"><strong>Figure 8.22</strong></div>
+            </div>            <p>method but not the other; the information is used in many ways, rang­</p>
+            <p>ing from the identification of functional groups to complete molecular</p>
+            <p>Vibrational spectroscopy is used to characterize compounds</p>
+            <p>in terms of the strength, stiffness, and number of bonds that</p>
+            <p>are present. It is also used to detect the presence of known</p>
+            <p>compounds (fingerprinting), to monitor changes in the con­</p>
+            <p>centration of a species during a reaction, to determine the</p>
+            <p>components of an unknown compound (such as the pres­</p>
+        </section>
+
+        <section class="section" id="section-16">
+            <h2>Resonance techniques</h2>
+            <p>Several techniques of structural investigation depend on</p>
+            <p>bringing energy-level separations into resonance with elec­</p>
+            <p>tromagnetic radiation, with the separations in some cases</p>
+            <p>controlled by the application of a magnetic field. Two of</p>
+            <p>these techniques involve magnetic resonance: in one, the</p>
+            <p>energy levels are those of magnetic nuclei (nuclei with</p>
+            <p>nonzero spin, I > 0); in the other, they are the energy levels</p>
+        </section>
+
+        <section class="section" id="section-17">
+            <h2>Nuclear magnetic resonance</h2>
+        </section>
+
+        <section class="section" id="section-18">
+            <h2>KEY POINTS  Nuclear magnetic resonance is suitable for studying com­</h2>
+            <p>pounds containing elements with magnetic nuclei, especially hydro­</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter8/fig_8_23.png" alt="Figure 8.23">
+                <div class="figure-caption"><strong>Figure 8.23</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter8/fig_8_24.png" alt="Figure 8.24">
+                <div class="figure-caption"><strong>Figure 8.24</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter8/fig_8_25.png" alt="Figure 8.25">
+                <div class="figure-caption"><strong>Figure 8.25</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter8/fig_8_26.png" alt="Figure 8.26">
+                <div class="figure-caption"><strong>Figure 8.26</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter8/fig_8_27.png" alt="Figure 8.27">
+                <div class="figure-caption"><strong>Figure 8.27</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter8/fig_8_28.png" alt="Figure 8.28">
+                <div class="figure-caption"><strong>Figure 8.28</strong></div>
+            </div>            <p>gen. The technique gives information on molecular structure, including</p>
+            <p>chemical environment, connectivity, and internuclear separations. It</p>
+            <p>also probes molecular dynamics and is an important tool for investigat­</p>
+            <p>ing rearrangement reactions occurring on a millisecond timescale.</p>
+            <p>Nuclear magnetic resonance (NMR) is the most powerful</p>
+            <p>and widely used spectroscopic method for the determina­</p>
+            <p>tion of molecular structures in solution and pure liquids.</p>
+            <p>In many cases it provides information about shape and</p>
+            <p>symmetry with greater certainty than is possible with other</p>
+        </section>
+
+        <section class="section" id="section-19">
+            <h2>Electron paramagnetic resonance</h2>
+        </section>
+
+        <section class="section" id="section-20">
+            <h2>KEY POINTS  Electron paramagnetic resonance spectroscopy is used</h2>
+            <p>to study compounds possessing unpaired electrons, particularly those</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter8/fig_8_29.png" alt="Figure 8.29">
+                <div class="figure-caption"><strong>Figure 8.29</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter8/fig_8_30.png" alt="Figure 8.30">
+                <div class="figure-caption"><strong>Figure 8.30</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter8/fig_8_31.png" alt="Figure 8.31">
+                <div class="figure-caption"><strong>Figure 8.31</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter8/fig_8_32.png" alt="Figure 8.32">
+                <div class="figure-caption"><strong>Figure 8.32</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter8/fig_8_33.png" alt="Figure 8.33">
+                <div class="figure-caption"><strong>Figure 8.33</strong></div>
+            </div>            <p>containing a d-block element; it is often the technique of choice for</p>
+            <p>identifying and studying metals such as Fe and Cu at the active sites of</p>
+            <p>Electron paramagnetic resonance (EPR; or electron spin</p>
+            <p>resonance, ESR) spectroscopy, the observation of resonant</p>
+            <p>absorption by unpaired electrons in a magnetic field, is a</p>
+            <p>technique for studying paramagnetic species such as organic</p>
+            <p>and main-group radicals. Its principal importance in inor­</p>
+            <p>ganic chemistry is for characterizing compounds containing</p>
+        </section>
+
+
+        <section class="section" id="exercises">
+            <h2>Exercises</h2>
+            <div class="exercise-list">
+
+                <div class="exercise">
+                    <strong>8.1</strong> The synthesis of the spinel Mg2TiO4 can be achieved by heating TiO2 with MgO at 1400°C over a period of several days. How would powder X-ray diffraction be able to demonstrate that the reaction had gone to completion?
+                </div>
+
+                <div class="exercise">
+                    <strong>8.2</strong> A student forgot to label their samples of MgO and CaO; both are white, insoluble powders. How could they identify which sample is which without destroying them?
+                </div>
+
+                <div class="exercise">
+                    <strong>8.3</strong> The minimum size of crystal that can typically be studied using a laboratory single-crystal diffractometer is 50 × 50 × 50 µm3. The X-ray flux from a synchrotron source is expected to be 106 times the intensity of a laboratory source. Calculate the minimum size of a cubic crystal that could be studi...
+                </div>
+
+                <div class="exercise">
+                    <strong>8.4</strong> Why are the reported errors on the N–H bond lengths determined in (NH4)2SeO4 by single-crystal X-ray diffraction much larger than those on the Se–O bond lengths?
+                </div>
+
+                <div class="exercise">
+                    <strong>8.5</strong> Strong hydrogen bonds can either be symmetric, as in the [F–H–F]− anion (with both F–H distances equal at 1.14 Å) or asymmetric as in KH2PO4 (where the O–H bond distance is 1.05 Å and H–O hydrogen bonding separation is 1.51 Å). How could you determine whether the hydrogen bond in the following compo...
+                </div>
+
+                <div class="exercise">
+                    <strong>8.6</strong> (a) Calculate the wavelength associated with a neutron moving at 2.60 km s−1. Is this wavelength suitable for diffraction studies (mn = 1.675 × 10−27 kg)? (b) For magnetic neutron diffraction studies long neutron wavelengths are often needed; calculate the velocity of a neutron that has an associate...
+                </div>
+
+                <div class="exercise">
+                    <strong>8.7</strong> Discuss why the length of an O–H bond obtained from X-ray diffraction experiments averages 85 pm whereas that obtained in neutron diffraction experiments averages 96 pm. Would you expect to see similar effects with C–H bond lengths measured by these techniques? 284
+                </div>
+
+                <div class="exercise">
+                    <strong>8.8</strong> Explain why a Raman band assigned to the symmetric N–C stretching mode in N(CH3)3 shows a shift to lower frequency when 14N is substituted by 15N but no such shift is observed for the N–Si symmetric stretch in N(SiH3)3.
+                </div>
+
+                <div class="exercise">
+                    <strong>8.9</strong> The ambidentate thiocyanate ligand (SCN−) can coordinate to a metal centre either through sulfur (SCN) or nitrogen (NCS), Chapter 7. Explain the following observed vibrational frequencies for the C–S bond (ν(CS)): K2[Co(SCN)4].4H2O, 850 cm−1; KSCN, 746 cm−1; K2[Pd(SCN)4], 730 cm−1. RbBi(SCN)4 shows ...
+                </div>
+
+                <div class="exercise">
+                    <strong>8.10</strong> Calculate the expected wavenumber for an N–D stretch given that N–H stretches are normally observed at 3400 cm−1.
+                </div>
+
+                <div class="exercise">
+                    <strong>8.11</strong> Suggest reasons for the order of stretching frequencies observed with isoelectronic diatomic species: CN− > CO > NO+. Predict a position for the carbide anion [C2]2−, which is found in calcium carbide CaC2, in this series.
+                </div>
+
+                <div class="exercise">
+                    <strong>8.12</strong> Use the data in Table 8.3 to estimate the O–O stretching wavenumber expected for a compound believed to contain the oxygenyl species O2 +. Would you expect to observe this stretching vibration in (i) the IR spectrum or (ii) the Raman spectrum?
+                </div>
+
+                <div class="exercise">
+                    <strong>8.13</strong> Predict the form of the 19F-NMR and the 77Se-NMR spectra of 77SeF4. For 77Se, I = 1 2 .
+                </div>
+
+                <div class="exercise">
+                    <strong>8.14</strong> The 31P-NMR spectrum of PF3Cl2 consists of a doublet of triplets. Explain this observation.
+                </div>
+
+                <div class="exercise">
+                    <strong>8.15</strong> Explain the observation that the 19F-NMR spectrum of the − [XeF ] 5  anion consists of a central peak symmetrically flanked by two peaks, each of which is roughly one-sixth of the intensity of the central peak. Predict the form of the 129Xe-NMR spectrum for this ion. 129Xe, I = ½, 26.5 per cent abun...
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false},
+                    {left: '\\(', right: '\\)', display: false},
+                    {left: '\\[', right: '\\]', display: true}
+                ]
+            });
+        });
+    </script>
+</body>
+</html>

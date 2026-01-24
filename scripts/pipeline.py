@@ -343,6 +343,347 @@ def extract_exercises_from_chapter(chapter_num: int, doc=None):
     return all_items
 
 
+def extract_chapter_text(chapter_num: int, doc=None):
+    """
+    Extract structured text from a chapter.
+    Returns sections with headers and paragraphs.
+    """
+    ch = get_chapter(chapter_num)
+    if not ch:
+        return None
+
+    close_doc = doc is None
+    if doc is None:
+        doc = fitz.open(TEXTBOOK_PATH)
+
+    start_page = ch["start_page"] - 1
+    end_page = ch["end_page"] - 5  # skip exercises at end
+
+    sections = []
+    current_section = None
+
+    for page_idx in range(start_page, end_page):
+        page = doc[page_idx]
+        blocks = page.get_text("dict")["blocks"]
+
+        for block in blocks:
+            if "lines" not in block:
+                continue
+
+            for line in block["lines"]:
+                text = "".join([span["text"] for span in line["spans"]]).strip()
+                if not text:
+                    continue
+
+                # detect section headers (larger font, specific patterns)
+                font_size = line["spans"][0]["size"] if line["spans"] else 10
+
+                # section header patterns
+                is_header = False
+                if font_size > 11 and re.match(r"^\d+\.\d+\s+[A-Z]", text):
+                    is_header = True
+                elif font_size > 12 and re.match(r"^[A-Z][a-z]+\s+[a-z]", text):
+                    is_header = True
+                elif text.startswith("KEY POINT"):
+                    is_header = True
+
+                if is_header:
+                    if current_section:
+                        sections.append(current_section)
+                    current_section = {
+                        "header": text,
+                        "paragraphs": [],
+                        "figures": []
+                    }
+                elif current_section:
+                    # check for figure references
+                    fig_matches = re.findall(r"Fig(?:ure)?\.?\s*(\d+\.\d+)", text)
+                    for fig_num in fig_matches:
+                        if fig_num not in current_section["figures"]:
+                            current_section["figures"].append(fig_num)
+
+                    current_section["paragraphs"].append(text)
+
+    if current_section:
+        sections.append(current_section)
+
+    if close_doc:
+        doc.close()
+
+    return sections
+
+
+def build_lecture(chapter_num: int):
+    """
+    Build an HTML lecture from extracted content.
+    """
+    ch = get_chapter(chapter_num)
+    if not ch:
+        print(f"Chapter {chapter_num} not found")
+        return
+
+    print(f"Building lecture for Chapter {chapter_num}: {ch['title']}")
+
+    # load figure mapping
+    fig_dir = FIGURES_DIR / f"chapter{chapter_num}"
+    mapping_path = fig_dir / "mapping.json"
+
+    figures = {}
+    if mapping_path.exists():
+        with open(mapping_path) as f:
+            mapping = json.load(f)
+        figures = mapping.get("figures", {})
+
+    # load exercises
+    ex_path = EXERCISES_DIR / f"chapter{chapter_num}.json"
+    exercises = []
+    tutorials = []
+    if ex_path.exists():
+        with open(ex_path) as f:
+            data = json.load(f)
+        exercises = data.get("exercises", [])
+        tutorials = data.get("tutorial_problems", [])
+
+    # extract text sections
+    doc = fitz.open(TEXTBOOK_PATH)
+    sections = extract_chapter_text(chapter_num, doc)
+    doc.close()
+
+    if not sections:
+        print(f"  No sections extracted")
+        return
+
+    print(f"  {len(sections)} sections, {len(figures)} figures, {len(exercises)} exercises")
+
+    # generate HTML
+    html = generate_lecture_html(chapter_num, ch["title"], sections, figures, exercises, tutorials)
+
+    # save
+    LECTURES_DIR.mkdir(exist_ok=True)
+    output_path = LECTURES_DIR / f"lecture{chapter_num}.html"
+    with open(output_path, "w") as f:
+        f.write(html)
+
+    print(f"  Saved to {output_path}")
+    return output_path
+
+
+def generate_lecture_html(chapter_num, title, sections, figures, exercises, tutorials):
+    """Generate the HTML for a lecture."""
+
+    # build figure HTML snippets
+    def figure_html(fig_num):
+        fig_key = fig_num
+        if fig_key in figures and figures[fig_key].get("extracted"):
+            fig_file = figures[fig_key]["file"]
+            return f'''
+            <div class="figure">
+                <img src="../assets/figures/chapter{chapter_num}/{fig_file}" alt="Figure {fig_num}">
+                <div class="figure-caption"><strong>Figure {fig_num}</strong></div>
+            </div>'''
+        return ""
+
+    # build sections HTML
+    sections_html = ""
+    for i, section in enumerate(sections[:20], 1):  # limit sections for readability
+        header = section["header"]
+        paragraphs = section["paragraphs"]
+
+        # clean header
+        header_clean = re.sub(r"^\d+\.\d+\s*", "", header)
+
+        sections_html += f'''
+        <section class="section" id="section-{i}">
+            <h2>{header_clean}</h2>
+'''
+        # add paragraphs, inserting figures where referenced
+        shown_figures = set()
+        for para in paragraphs[:10]:  # limit paragraphs
+            if len(para) > 50:  # skip short fragments
+                sections_html += f"            <p>{para}</p>\n"
+
+            # insert figures referenced in this paragraph
+            for fig_num in section["figures"]:
+                if fig_num not in shown_figures:
+                    fig_html_str = figure_html(fig_num)
+                    if fig_html_str:
+                        sections_html += fig_html_str
+                        shown_figures.add(fig_num)
+
+        sections_html += "        </section>\n"
+
+    # build exercises HTML
+    exercises_html = ""
+    if exercises or tutorials:
+        exercises_html = '''
+        <section class="section" id="exercises">
+            <h2>Exercises</h2>
+            <div class="exercise-list">
+'''
+        for ex in exercises[:15]:
+            exercises_html += f'''
+                <div class="exercise">
+                    <strong>{ex["number"]}</strong> {ex["text"][:300]}{"..." if len(ex["text"]) > 300 else ""}
+                </div>
+'''
+        exercises_html += "            </div>\n        </section>\n"
+
+    html = f'''<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture {chapter_num}: {title} | CHEM 361</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+    <style>
+        :root {{
+            --bg: #0a0f1a;
+            --bg-card: #131b2e;
+            --bg-elevated: #1a2540;
+            --text: #e8eaed;
+            --text-dim: #9aa0a6;
+            --accent: #8ab4f8;
+            --accent-green: #81c995;
+            --accent-yellow: #fdd663;
+            --accent-purple: #c58af9;
+        }}
+
+        * {{ margin: 0; padding: 0; box-sizing: border-box; }}
+
+        body {{
+            font-family: 'Crimson Pro', Georgia, serif;
+            background: var(--bg);
+            color: var(--text);
+            font-size: 1.15rem;
+            line-height: 1.95;
+        }}
+
+        .lecture {{
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem 6rem;
+        }}
+
+        .nav {{
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            background: var(--bg-card);
+            border-bottom: 1px solid var(--bg-elevated);
+        }}
+
+        .nav a {{
+            color: var(--text-dim);
+            text-decoration: none;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+        }}
+
+        .nav a:hover {{ color: var(--accent); }}
+
+        .lecture-header {{
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #2a3a5a;
+        }}
+
+        .lecture-header h1 {{
+            font-size: 2.4rem;
+            font-weight: 500;
+            color: var(--accent);
+        }}
+
+        .section {{ margin-bottom: 3rem; }}
+
+        h2 {{
+            font-size: 1.5rem;
+            color: var(--accent-purple);
+            margin-bottom: 1.2rem;
+            font-weight: 500;
+        }}
+
+        p {{ margin-bottom: 1.2rem; text-align: justify; }}
+
+        .figure {{
+            margin: 2rem 0;
+            background: var(--bg-card);
+            border-radius: 12px;
+            overflow: hidden;
+            text-align: center;
+        }}
+
+        .figure img {{
+            max-width: 100%;
+            max-height: 500px;
+            object-fit: contain;
+            background: #f8f8f8;
+            padding: 1rem;
+        }}
+
+        .figure-caption {{
+            padding: 1rem;
+            background: var(--bg-elevated);
+            font-size: 0.95rem;
+            color: var(--text-dim);
+        }}
+
+        .exercise-list {{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }}
+
+        .exercise {{
+            background: var(--bg-card);
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 3px solid var(--accent-green);
+        }}
+
+        .exercise strong {{
+            color: var(--accent-green);
+            font-family: 'JetBrains Mono', monospace;
+        }}
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <a href="../index.html">← CHEM 361</a>
+        <a href="index.html">All Lectures</a>
+    </nav>
+
+    <main class="lecture">
+        <header class="lecture-header">
+            <h1>Lecture {chapter_num}: {title}</h1>
+        </header>
+
+{sections_html}
+{exercises_html}
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {{
+            renderMathInElement(document.body, {{
+                delimiters: [
+                    {{left: '$$', right: '$$', display: true}},
+                    {{left: '$', right: '$', display: false}},
+                    {{left: '\\\\(', right: '\\\\)', display: false}},
+                    {{left: '\\\\[', right: '\\\\]', display: true}}
+                ]
+            }});
+        }});
+    </script>
+</body>
+</html>'''
+
+    return html
+
+
 def show_status():
     """Show extraction status for all chapters."""
     chapters = load_chapters()
@@ -423,6 +764,18 @@ def main():
             extract_exercises_from_chapter(int(target), doc)
 
         doc.close()
+
+    elif cmd == "build-lecture":
+        if len(sys.argv) < 3:
+            print("Usage: pipeline.py build-lecture <chapter_num|all>")
+            return
+
+        target = sys.argv[2]
+        if target == "all":
+            for ch in load_chapters():
+                build_lecture(ch["number"])
+        else:
+            build_lecture(int(target))
 
     elif cmd == "status":
         show_status()

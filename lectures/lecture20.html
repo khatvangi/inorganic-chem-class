@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 20: d-Metal complexes:electronic structure and properties | CHEM 361</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+    <style>
+        :root {
+            --bg: #0a0f1a;
+            --bg-card: #131b2e;
+            --bg-elevated: #1a2540;
+            --text: #e8eaed;
+            --text-dim: #9aa0a6;
+            --accent: #8ab4f8;
+            --accent-green: #81c995;
+            --accent-yellow: #fdd663;
+            --accent-purple: #c58af9;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Crimson Pro', Georgia, serif;
+            background: var(--bg);
+            color: var(--text);
+            font-size: 1.15rem;
+            line-height: 1.95;
+        }
+
+        .lecture {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem 6rem;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            background: var(--bg-card);
+            border-bottom: 1px solid var(--bg-elevated);
+        }
+
+        .nav a {
+            color: var(--text-dim);
+            text-decoration: none;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+        }
+
+        .nav a:hover { color: var(--accent); }
+
+        .lecture-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #2a3a5a;
+        }
+
+        .lecture-header h1 {
+            font-size: 2.4rem;
+            font-weight: 500;
+            color: var(--accent);
+        }
+
+        .section { margin-bottom: 3rem; }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--accent-purple);
+            margin-bottom: 1.2rem;
+            font-weight: 500;
+        }
+
+        p { margin-bottom: 1.2rem; text-align: justify; }
+
+        .figure {
+            margin: 2rem 0;
+            background: var(--bg-card);
+            border-radius: 12px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .figure img {
+            max-width: 100%;
+            max-height: 500px;
+            object-fit: contain;
+            background: #f8f8f8;
+            padding: 1rem;
+        }
+
+        .figure-caption {
+            padding: 1rem;
+            background: var(--bg-elevated);
+            font-size: 0.95rem;
+            color: var(--text-dim);
+        }
+
+        .exercise-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .exercise {
+            background: var(--bg-card);
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 3px solid var(--accent-green);
+        }
+
+        .exercise strong {
+            color: var(--accent-green);
+            font-family: 'JetBrains Mono', monospace;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <a href="../index.html">← CHEM 361</a>
+        <a href="index.html">All Lectures</a>
+    </nav>
+
+    <main class="lecture">
+        <header class="lecture-header">
+            <h1>Lecture 20: d-Metal complexes:electronic structure and properties</h1>
+        </header>
+
+
+        <section class="section" id="section-1">
+            <h2>Electronic structure</h2>
+            <p>There are two widely used models of the electronic struc­</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter20/fig_20_1.png" alt="Figure 20.1">
+                <div class="figure-caption"><strong>Figure 20.1</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter20/fig_20_2.png" alt="Figure 20.2">
+                <div class="figure-caption"><strong>Figure 20.2</strong></div>
+            </div>            <p>ture of d-metal complexes. One (‘crystal-field theory’)</p>
+            <p>emerged from an analysis of the spectra of d-metal ions in</p>
+            <p>solids; the other (‘ligand-field theory’) arose from an appli­</p>
+            <p>cation of molecular orbital theory. Crystal-field theory is</p>
+            <p>more primitive, and strictly speaking it applies only to ions</p>
+            <p>in crystals; however, it can be used to capture the essence</p>
+            <p>of the electronic structure of complexes in a straightfor­</p>
+            <p>ward manner. Ligand-field theory builds on crystal-field</p>
+            <p>theory: it gives a more complete description of the elec­</p>
+        </section>
+
+        <section class="section" id="section-2">
+            <h2>Crystal-field theory</h2>
+            <p>In crystal-field theory, a ligand is modelled as a point nega­</p>
+            <p>tive charge (or as the partial negative charge of an electric</p>
+            <p>dipole) that repels electrons in the d orbitals of the central</p>
+            <p>metal ion. The theory concentrates on the resultant splitting</p>
+            <p>of the d orbitals into groups with different energies, and</p>
+            <p>uses that splitting to rationalize and correlate the optical</p>
+            <p>spectra, thermodynamic stability, and magnetic properties</p>
+        </section>
+
+        <section class="section" id="section-3">
+            <h2>KEY POINTS  In the presence of an octahedral crystal field, d orbitals</h2>
+            <p>are split into a lower-energy triply degenerate set (t2g) and a higher-</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter20/fig_20_3.png" alt="Figure 20.3">
+                <div class="figure-caption"><strong>Figure 20.3</strong></div>
+            </div>            <p>energy doubly degenerate set (eg) separated by an energy ΔO ; the</p>
+            <p>ligand-field splitting parameter increases along the spectrochemical</p>
+            <p>series of ligands and also varies with the identity and charge of the</p>
+            <p>In the model of an octahedral complex used in crystal-field</p>
+            <p>theory, six negative charges representing the ligands are</p>
+            <p>placed at points in an octahedral array around the cen­</p>
+            <p>tral metal ion. These charges (which we shall refer to as</p>
+            <p>the ‘ligands’) interact strongly with the metal cation, and</p>
+        </section>
+
+        <section class="section" id="section-4">
+            <h2>KEY POINTS  The ground-state configuration of a complex reflects the</h2>
+            <p>relative values of the ligand-field splitting parameter and the pairing</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter20/fig_20_4.png" alt="Figure 20.4">
+                <div class="figure-caption"><strong>Figure 20.4</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter20/fig_20_5.png" alt="Figure 20.5">
+                <div class="figure-caption"><strong>Figure 20.5</strong></div>
+            </div>            <p>energy. For octahedral 3dn species with n = 4 − 7, high-spin and low-spin</p>
+            <p>complexes occur in the weak-field and strong-field cases, respectively.</p>
+            <p>Octahedral complexes of 4d- and 5d-series metals are typically low-spin.</p>
+            <p>Because the d orbitals in an octahedral complex do not all</p>
+            <p>have the same energy, the ground-state electron configura­</p>
+            <p>tion of a complex is not immediately obvious. To predict</p>
+            <p>it, we use the d-orbital energy-level diagram shown in Fig.</p>
+            <p>20.2 as a basis for applying the building-up principle. That</p>
+            <p>is, we identify the lowest-energy configuration subject to the</p>
+        </section>
+
+        <section class="section" id="section-5">
+            <h2>KEY POINTS  Magnetic measurements are used to determine the</h2>
+            <p>number of unpaired spins in a complex and hence to identify its</p>
+            <p>ground-state configuration. A spin-only calculation may fail for low-</p>
+            <p>The experimental distinction between high-spin and low-</p>
+            <p>spin octahedral complexes is based on the determination</p>
+            <p>of their magnetic properties. Compounds are classified as</p>
+            <p>diamagnetic if they are repelled by a magnetic field and</p>
+            <p>paramagnetic if they are attracted by a magnetic field. The</p>
+            <p>two classes are distinguished experimentally by magnet-</p>
+            <p>ometry (Chapter 8). The magnitude of the paramagnetism</p>
+        </section>
+
+        <section class="section" id="section-6">
+            <h2>KEY POINT  The experimental variation in hydration enthalpies re­</h2>
+            <p>flects a combination of the variation in radii of the ions (the linear</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter20/fig_20_7.png" alt="Figure 20.7">
+                <div class="figure-caption"><strong>Figure 20.7</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter20/fig_20_6.png" alt="Figure 20.6">
+                <div class="figure-caption"><strong>Figure 20.6</strong></div>
+            </div>            <p>trend) and the variation in LFSE (the saw-tooth variation).</p>
+            <p>The concept of ligand-field stabilization energy helps to</p>
+            <p>explain the double-humped variation in the hydration</p>
+            <p>enthalpies of the high-spin octahedral 3d-metal M2+ ions</p>
+            <p>(Fig. 20.7). The hydration enthalpy for the 2+ ions is the</p>
+        </section>
+
+        <section class="section" id="section-7">
+            <h2>KEY POINTS  In a tetrahedral complex, the e orbitals lie below the t2</h2>
+            <p>orbitals; only the high-spin case need be considered.</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter20/fig_20_8.png" alt="Figure 20.8">
+                <div class="figure-caption"><strong>Figure 20.8</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter20/fig_20_9.png" alt="Figure 20.9">
+                <div class="figure-caption"><strong>Figure 20.9</strong></div>
+            </div>            <p>Four-coordinate tetrahedral complexes are second only</p>
+            <p>in abundance to octahedral complexes for the 3d metals.</p>
+            <p>The same kind of arguments based on crystal-field theory</p>
+            <p>can be applied to these species as we used for octahedral</p>
+            <p>A tetrahedral crystal field splits d orbitals into two sets</p>
+        </section>
+
+        <section class="section" id="section-8">
+            <h2>KEY POINTS  A d8 configuration, coupled with a strong crystal field,</h2>
+            <p>favours the formation of square-planar complexes. This tendency is en­</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter20/fig_20_10.png" alt="Figure 20.10">
+                <div class="figure-caption"><strong>Figure 20.10</strong></div>
+            </div>            <p>hanced with the 4d and 5d metals because of their larger size and the</p>
+            <p>Although a tetrahedral arrangement of four ligands is the</p>
+            <p>least sterically demanding arrangement, some complexes</p>
+            <p>exist with four ligands in an apparently higher-energy</p>
+            <p>square-planar arrangement. If only electrostatic inter­</p>
+            <p>actions are considered, a square-planar arrangement of</p>
+        </section>
+
+        <section class="section" id="section-9">
+            <h2>KEY POINTS  A tetragonal distortion can be expected when the</h2>
+            <p>ground electronic configuration of a complex is orbitally degenerate;</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter20/fig_20_11.png" alt="Figure 20.11">
+                <div class="figure-caption"><strong>Figure 20.11</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter20/fig_20_12.png" alt="Figure 20.12">
+                <div class="figure-caption"><strong>Figure 20.12</strong></div>
+            </div>            <p>the complex will distort so as to remove the degeneracy and achieve a</p>
+            <p>Six-coordinate d9 complexes of copper(II) usually depart</p>
+            <p>considerably from octahedral geometry and show pro­</p>
+            <p>nounced tetragonal distortions (Fig. 20.11). High-spin d4</p>
+            <p>(for instance, Cr2+ and Mn3+) and low-spin d7 six-coordinate</p>
+            <p>complexes (for instance, Ni3+) may show a similar distor­</p>
+            <p>tion, but complexes of these ions are less common. These</p>
+            <p>distortions are manifestations of the Jahn–Teller effect: if</p>
+        </section>
+
+        <section class="section" id="section-10">
+            <h2>KEY POINTS  Consideration of the LFSE predicts that d3 and d8 ions</h2>
+            <p>strongly prefer an octahedral geometry over a tetrahedral one; for</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter20/fig_20_13.png" alt="Figure 20.13">
+                <div class="figure-caption"><strong>Figure 20.13</strong></div>
+            </div>            <p>other configurations the preference is less pronounced; LFSE has no</p>
+            <p>bearing on the geometry of d0, high-spin d5, and d10 ions.</p>
+            <p>FIGURE 20.11 (a) A tetragonally distorted complex where two</p>
+            <p>of the ligands have moved further away from the central ion. (b)</p>
+            <p>A tetragonally distorted complex where two of the ligands have</p>
+        </section>
+
+        <section class="section" id="section-11">
+            <h2>KEY POINT  The Irving–Williams series summarizes the relative sta­</h2>
+            <p>bilities of complexes formed by M2+ ions, and reflects a combination of</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter20/fig_20_14.png" alt="Figure 20.14">
+                <div class="figure-caption"><strong>Figure 20.14</strong></div>
+            </div>            <p>Figure 20.14 shows log Kf values (Section 7.12) for com­</p>
+            <p>plexes of the octahedral M2+ ions of the Group 2 metals and</p>
+            <p>3d series. The variation in formation constants shown there</p>
+            <p>Ba2+ < Sr2+ < Ca2+ < Mg2+ < Mn2+ < Fe2+ < Co2+ < Ni2+ < Cu2+ > Zn2+</p>
+            <p>The order is relatively insensitive to the choice of ligands,</p>
+            <p>but, since formation constants refer to forming complexes</p>
+            <p>from aqua ions, the ligand concerned has to be able to dis­</p>
+        </section>
+
+        <section class="section" id="section-12">
+            <h2>Ligand-field theory</h2>
+            <p>Crystal-field theory provides a simple conceptual model that</p>
+            <p>can be used to interpret magnetic, spectroscopic, and thermo­</p>
+            <p>chemical data by using empirical values of ΔO. However, the</p>
+            <p>theory is defective because it treats ligands as point charges or</p>
+            <p>dipoles and does not take into account the overlap of ligand</p>
+            <p>and metal-atom orbitals. One consequence of this oversim­</p>
+            <p>plification is that crystal-field theory cannot account for the</p>
+            <p>ligand spectrochemical series. Ligand-field theory, which is</p>
+            <p>an application of molecular orbital theory that concentrates</p>
+            <p>on the d orbitals of the central metal atom, provides a more</p>
+        </section>
+
+        <section class="section" id="section-13">
+            <h2>KEY POINT  In ligand-field theory, the building-up principle is used in</h2>
+            <p>conjunction with a molecular orbital energy-level diagram constructed</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter20/fig_20_15.png" alt="Figure 20.15">
+                <div class="figure-caption"><strong>Figure 20.15</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter20/fig_20_16.png" alt="Figure 20.16">
+                <div class="figure-caption"><strong>Figure 20.16</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter20/fig_20_17.png" alt="Figure 20.17">
+                <div class="figure-caption"><strong>Figure 20.17</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter20/fig_20_18.png" alt="Figure 20.18">
+                <div class="figure-caption"><strong>Figure 20.18</strong></div>
+            </div>            <p>from metal-atom orbitals and symmetry-adapted linear combinations</p>
+            <p>We begin by considering an octahedral complex in which</p>
+            <p>each ligand (L) has a single valence orbital directed towards</p>
+            <p>the central metal atom (M); each of these orbitals has local</p>
+            <p>σ symmetry with respect to the M–L axis. Examples of such</p>
+            <p>In an octahedral (Oh) environment, the orbitals of the</p>
+            <p>central metal atom divide by symmetry into four sets (Fig.</p>
+        </section>
+
+        <section class="section" id="section-14">
+            <h2>KEY POINTS  π-Donor ligands decrease ΔO whereas π-acceptor ligands</h2>
+            <p>increase ΔO; the spectrochemical series is largely a consequence of the</p>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter20/fig_20_19.png" alt="Figure 20.19">
+                <div class="figure-caption"><strong>Figure 20.19</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter20/fig_20_20.png" alt="Figure 20.20">
+                <div class="figure-caption"><strong>Figure 20.20</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter20/fig_20_21.png" alt="Figure 20.21">
+                <div class="figure-caption"><strong>Figure 20.21</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter20/fig_20_22.png" alt="Figure 20.22">
+                <div class="figure-caption"><strong>Figure 20.22</strong></div>
+            </div>
+            <div class="figure">
+                <img src="../assets/figures/chapter20/fig_20_10.png" alt="Figure 20.10">
+                <div class="figure-caption"><strong>Figure 20.10</strong></div>
+            </div>            <p>effects of π bonding when such bonding is feasible.</p>
+            <p>If the ligands in a complex have orbitals with local π sym­</p>
+            <p>metry with respect to the M–L axis (as two of the p orbit­</p>
+            <p>als of a halide ligand have), they may form bonding and</p>
+            <p>antibonding π orbitals with the metal orbitals (Fig. 20.19).</p>
+            <p>For an octahedral complex, the combinations that can be</p>
+            <p>formed from the ligand π orbitals include SALCs of t2g sym­</p>
+            <p>metry. These ligand combinations have net overlap with</p>
+            <p>the metal t2g orbitals, which are therefore no longer purely</p>
+        </section>
+
+        <section class="section" id="section-15">
+            <h2>Electronic spectra</h2>
+            <p>Now that we have considered the electronic structure of</p>
+            <p>d-metal complexes, we are in a position to understand their</p>
+            <p>electronic spectra and to use the data they provide to refine</p>
+            <p>the discussion of structure. The magnitudes of ligand-field</p>
+            <p>splittings are such that the energy of electronic transitions</p>
+            <p>corresponds to an absorption of ultraviolet and visible</p>
+            <p>20  d-Metal complexes: electronic structure and properties</p>
+            <p>light. However, the presence of electron–electron repulsions</p>
+            <p>within the metal orbitals means that the absorption fre­</p>
+        </section>
+
+        <section class="section" id="section-16">
+            <h2>Electronic spectra of atoms</h2>
+        </section>
+
+        <section class="section" id="section-17">
+            <h2>KEY POINT  Electron–electron repulsions result in multiple absorp­</h2>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter20/fig_20_23.png" alt="Figure 20.23">
+                <div class="figure-caption"><strong>Figure 20.23</strong></div>
+            </div>            <p>Figure 20.23 sets the stage for our discussion by show­</p>
+            <p>ing the electronic absorption spectrum of the d3 complex</p>
+            <p>[Cr(NH3)6]3+ in aqueous solution. The band at lowest energy</p>
+            <p>(longest wavelength) is very weak; later we shall see that it</p>
+            <p>is an example of a ‘spin-forbidden’ transition. Next are two</p>
+            <p>bands with intermediate intensities; these are ‘spin-allowed’</p>
+            <p>transitions between the t2g and eg orbitals of the complex,</p>
+            <p>which are mainly derived from the metal d orbitals. The</p>
+            <p>third feature in the spectrum is an intense charge-transfer</p>
+        </section>
+
+        <section class="section" id="section-18">
+            <h2>KEY POINTS  Different microstates exist for the same electronic con­</h2>
+            <p>figuration; for light atoms, Russell–Saunders coupling is used to de­</p>
+            <p>scribe the terms, which are specified by symbols in which the value of</p>
+            <p>L is indicated by one of the letters S, P, D, . . ., and the value of 2S + 1 is</p>
+            <p>In Chapter 1 we expressed the electronic structures of atoms</p>
+            <p>by giving their electronic configurations, the designation of</p>
+            <p>the number of electrons in each orbital (as in 1s22s1 for Li).</p>
+            <p>However, a configuration is an incomplete description of the</p>
+            <p>arrangement of electrons in atoms. In the configuration 2p2,</p>
+            <p>for instance, the two electrons might occupy orbitals with</p>
+        </section>
+
+        <section class="section" id="section-19">
+            <h2>KEY POINT  The allowed terms of a configuration are found by iden­</h2>
+            <p>tifying the values of L and S to which the microstates of an atom can</p>
+            <p>20  d-Metal complexes: electronic structure and properties</p>
+            <p>The Pauli principle restricts the microstates that can occur</p>
+            <p>in a configuration and consequently affects the terms that</p>
+            <p>can occur. For example, two electrons cannot both have the</p>
+            <p>same spin and be in a d orbital with ml = +2. Therefore,</p>
+            <p>the microstate (2+,2+) is forbidden and so are the values of</p>
+            <p>L and S to which such a microstate might contribute. We</p>
+        </section>
+
+        <section class="section" id="section-20">
+            <h2>KEY POINT  Hund’s rules indicate the ground term of a gas-phase</h2>
+
+            <div class="figure">
+                <img src="../assets/figures/chapter20/fig_20_24.png" alt="Figure 20.24">
+                <div class="figure-caption"><strong>Figure 20.24</strong></div>
+            </div>            <p>Once the values of L and S that can arise from a given config­</p>
+            <p>uration are known, it is possible to identify the term of low­</p>
+            <p>est energy by using Hund’s rules. The first of these empirical</p>
+            <p>rules was introduced in Section 1.4, where it was expressed</p>
+            <p>as ‘the lowest energy configuration is achieved if the electron</p>
+            <p>spins are parallel’. Because a high value of S stems from par­</p>
+            <p>1.	 For a given configuration, the term with the greatest</p>
+        </section>
+
+
+        <section class="section" id="exercises">
+            <h2>Exercises</h2>
+            <div class="exercise-list">
+
+                <div class="exercise">
+                    <strong>20.1</strong> Determine the configuration (in the form x y t e 2g g or x y e t2, as appropriate), the number of unpaired electrons, and the ligand- field stabilization energy in terms of ΔO or ΔT and P for each of the following complexes. Use the spectrochemical series to decide, where relevant, which are likely ...
+                </div>
+
+                <div class="exercise">
+                    <strong>20.2</strong> Both H− and P(C6H5)3 are ligands of similar field strength, high in the spectrochemical series. Recalling that phosphines act as π acceptors, is π-acceptor character required for strong-field behaviour? What orbital factors account for the field strength of each ligand?
+                </div>
+
+                <div class="exercise">
+                    <strong>20.3</strong> Estimate the spin-only contribution to the magnetic moment for each complex in Exercise 20.1.
+                </div>
+
+                <div class="exercise">
+                    <strong>20.4</strong> Match each of the magnetic moments, 3.8, 0, 1.8, 5.9 (in µB), with one of the species: [Fe(CN)6]3−, [Fe(H2O)6]3+, [CrO4]2−, [Cr(H2O)6]3+.
+                </div>
+
+                <div class="exercise">
+                    <strong>20.5</strong> Solutions of the complexes [Co(NH3)6]2+, [Co(OH2)6]2+ (both Oh), and [CoCl4]2− are coloured. One is pink (absorbs blue light), another is yellow (absorbs violet light), and the third is blue (absorbs red light). Considering the spectrochemical series and the relative magnitudes of ΔT and ΔO, assign ...
+                </div>
+
+                <div class="exercise">
+                    <strong>20.6</strong> For each of the following pairs of complexes, identify the one that has the larger LFSE: (a)  [Cr(OH2)6]2+ or [Mn(OH2)6]2+ (b)  [Fe(OH2)6]2+ or [Fe(OH2)6]3+ (c)  [Fe(OH2)6]3+ or [Fe(CN)6]3– (d)  [Fe(CN)6]3– or [Ru(CN)6]3– (e)  tetrahedral [FeCl4]2− or tetrahedral [CoCl4]2−
+                </div>
+
+                <div class="exercise">
+                    <strong>20.7</strong> Interpret the variation, including the overall trend across the 3d series, of the following values of oxide lattice enthalpies (in kJ mol−1). All the compounds have the rock-salt structure: CaO (3460), TiO (3878), VO (3913), MnO (3810), FeO (3921), CoO (3988), NiO (4071).
+                </div>
+
+                <div class="exercise">
+                    <strong>20.8</strong> Enthalpies of hydration and values of the ligand-field splitting parameter, ΔO, are given for some octahedrally coordinated ions. (a) Plot the enthalpies of hydration against the number of d electrons. (b) Calculate LFSE in terms of ΔO for high-spin configuration. Use the given values of ΔO to find ...
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false},
+                    {left: '\\(', right: '\\)', display: false},
+                    {left: '\\[', right: '\\]', display: true}
+                ]
+            });
+        });
+    </script>
+</body>
+</html>
