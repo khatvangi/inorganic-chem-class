@@ -538,6 +538,126 @@ body {
   color: #8a1f15;
 }
 
+.feedback.hint {
+  background: #fffbeb;
+  border-left: 3px solid #f59e0b;
+  color: #92400e;
+}
+
+.feedback.reveal {
+  background: #fef3c7;
+  border-left: 3px solid #d97706;
+  color: #78350f;
+}
+
+.feedback-header {
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+
+.feedback-header.success {
+  color: #166534;
+}
+
+.feedback-header.reveal {
+  color: #b45309;
+}
+
+.hint-item {
+  padding: 8px 0;
+  border-bottom: 1px dashed rgba(0,0,0,0.1);
+}
+
+.hint-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.hint-item strong {
+  color: #b45309;
+}
+
+.explanation {
+  margin-top: 10px;
+  padding: 10px 12px;
+  background: rgba(255,255,255,0.6);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.theory-section {
+  margin-top: 12px;
+  padding: 10px 12px;
+  background: #eff6ff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+}
+
+.theory-section a {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+.theory-section a:hover {
+  color: #1d4ed8;
+}
+
+.theory-icon {
+  font-size: 1.1rem;
+}
+
+.theory-link {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.theory-link a {
+  color: #2563eb;
+}
+
+.practice-prompt {
+  margin-top: 14px;
+  padding: 12px;
+  background: #f0fdf4;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.practice-btn {
+  background: #16a34a;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.practice-btn:hover {
+  background: #15803d;
+}
+
+.practice-added {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: #dcfce7;
+  color: #166534;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
 .progress {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
