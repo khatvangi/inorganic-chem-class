@@ -35,7 +35,7 @@
         }
 
         .lecture {
-            max-width: 950px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 3rem 2rem 6rem;
         }
@@ -98,83 +98,74 @@
 
         .key-point {
             background: var(--bg-card);
-            border-left: 4px solid var(--accent-purple);
-            padding: 1rem 1.5rem;
+            border-left: 4px solid var(--accent-yellow);
+            padding: 1.2rem 1.5rem;
             margin: 1.5rem 0;
             border-radius: 0 8px 8px 0;
         }
 
         .key-point strong {
-            color: var(--accent-purple);
-            font-weight: 600;
+            color: var(--accent-yellow);
         }
 
-        .figure-container {
+        /* Side-by-side figure layout */
+        .figure-pair {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 2rem 0;
             background: var(--bg-card);
             border-radius: 12px;
-            margin: 2rem 0;
             overflow: hidden;
-            border: 1px solid var(--bg-elevated);
         }
 
-        .figure-tabs {
-            display: flex;
+        .figure-interactive {
             background: var(--bg-elevated);
-            border-bottom: 1px solid var(--bg);
         }
 
-        .figure-tab {
-            padding: 0.75rem 1.5rem;
-            background: transparent;
-            border: none;
-            color: var(--text-dim);
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.85rem;
-            cursor: pointer;
-            transition: all 0.2s;
-        }
-
-        .figure-tab:hover {
-            color: var(--text);
-            background: rgba(138, 180, 248, 0.1);
-        }
-
-        .figure-tab.active {
-            color: var(--accent);
-            background: var(--bg-card);
-            border-bottom: 2px solid var(--accent);
-        }
-
-        .figure-content {
-            display: none;
-        }
-
-        .figure-content.active {
-            display: block;
-        }
-
-        .figure-container iframe {
+        .figure-interactive iframe {
             width: 100%;
-            height: 500px;
+            height: 450px;
             border: none;
             display: block;
         }
 
-        .figure-original {
-            padding: 1rem;
-            text-align: center;
-            background: #f5f5f5;
+        .figure-interactive .label {
+            padding: 0.5rem 1rem;
+            background: var(--bg-card);
+            color: var(--accent);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
         }
 
-        .figure-original img {
-            max-width: 100%;
-            height: auto;
-            max-height: 600px;
-            border-radius: 4px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        .figure-textbook {
+            background: #f8f8f8;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .figure-textbook .label {
+            padding: 0.5rem 1rem;
+            background: #e8e8e8;
+            color: #555;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .figure-textbook img {
+            flex: 1;
+            width: 100%;
+            object-fit: contain;
+            padding: 1rem;
+            max-height: 450px;
         }
 
         .figure-caption {
+            grid-column: 1 / -1;
             padding: 1rem 1.5rem;
             background: var(--bg-elevated);
             font-size: 0.95rem;
@@ -185,6 +176,21 @@
         .figure-caption strong {
             color: var(--accent);
             font-style: normal;
+        }
+
+        /* Single figure (no side-by-side) */
+        .figure-single {
+            margin: 2rem 0;
+            background: var(--bg-card);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .figure-single iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+            display: block;
         }
 
         .equation {
@@ -228,6 +234,7 @@
         .toc h3 {
             margin: 0 0 1rem 0;
             color: var(--text);
+            font-size: 1.1rem;
         }
 
         .toc ul {
@@ -237,22 +244,27 @@
         }
 
         .toc li {
-            margin: 0.5rem 0;
+            margin: 0.4rem 0;
         }
 
         .toc a {
-            color: var(--accent);
+            color: var(--text-dim);
             text-decoration: none;
+            font-size: 0.95rem;
         }
 
         .toc a:hover {
-            text-decoration: underline;
+            color: var(--accent);
         }
 
-        @media (max-width: 768px) {
-            .lecture { padding: 1.5rem 1rem 4rem; }
-            .lecture-header h1 { font-size: 2rem; }
-            .figure-container iframe { height: 400px; }
+        @media (max-width: 900px) {
+            .figure-pair {
+                grid-template-columns: 1fr;
+            }
+            .figure-interactive iframe,
+            .figure-textbook img {
+                max-height: 350px;
+            }
         }
     </style>
 </head>
@@ -262,55 +274,28 @@
         <a href="index.html">All Lectures</a>
     </nav>
 
-    <div class="lecture">
+    <main class="lecture">
         <header class="lecture-header">
-            <h1>Atomic Structure</h1>
-            <p class="subtitle">Chapter 1: The hydrogen atom, quantum numbers, and atomic orbitals</p>
+            <h1>Lecture 1: Atomic Structure</h1>
+            <p class="subtitle">The Hydrogen Atom and Atomic Orbitals</p>
         </header>
 
-        <div class="toc">
+        <nav class="toc">
             <h3>Contents</h3>
             <ul>
-                <li><a href="#intro">1.1 Introduction: Hydrogenic Atoms</a></li>
-                <li><a href="#born">1.2 The Born Interpretation</a></li>
-                <li><a href="#quantum">1.3 Quantum Numbers</a></li>
-                <li><a href="#energy">1.4 Energy Levels</a></li>
-                <li><a href="#radial">1.5 Radial Wavefunctions</a></li>
-                <li><a href="#shapes">1.6 Orbital Shapes</a></li>
-                <li><a href="#penetration">1.7 Penetration and Shielding</a></li>
+                <li><a href="#born">1.1 The Born Interpretation</a></li>
+                <li><a href="#quantum">1.2 Quantum Numbers and Energy Levels</a></li>
+                <li><a href="#radial">1.3 Radial Wavefunctions</a></li>
+                <li><a href="#distribution">1.4 Radial Distribution Functions</a></li>
+                <li><a href="#shapes">1.5 Orbital Shapes</a></li>
+                <li><a href="#penetration">1.6 Penetration and Shielding</a></li>
             </ul>
-        </div>
-
-        <section class="section" id="intro">
-            <h2>1.1 Introduction: Hydrogenic Atoms</h2>
-
-            <p>A <strong>hydrogenic atom</strong> is any atom or ion with a single electron, such as H, He⁺, Li²⁺, or Be³⁺. These species are important because the Schrödinger equation can be solved exactly for them, providing the foundation for understanding all atomic structure.</p>
-
-            <div class="key-point">
-                <strong>KEY POINT:</strong> The solutions to the Schrödinger equation for hydrogenic atoms give us atomic orbitals—mathematical functions that describe where electrons are likely to be found.
-            </div>
-
-            <p>The Schrödinger equation for a hydrogenic atom is:</p>
-
-            <div class="equation">
-                $$-\frac{\hbar^2}{2m_e}\nabla^2\psi + V(r)\psi = E\psi$$
-            </div>
-
-            <p>where the potential energy \(V(r) = -\frac{Ze^2}{4\pi\varepsilon_0 r}\) describes the Coulomb attraction between the electron and the nucleus of charge \(+Ze\).</p>
-
-            <p>The solutions factorize in spherical polar coordinates:</p>
-
-            <div class="equation">
-                $$\psi_{nlm}(r,\theta,\phi) = R_{nl}(r) \cdot Y_l^m(\theta,\phi)$$
-            </div>
-
-            <p>where \(R_{nl}(r)\) is the radial wavefunction and \(Y_l^m(\theta,\phi)\) is a spherical harmonic that describes the angular dependence.</p>
-        </section>
+        </nav>
 
         <section class="section" id="born">
-            <h2>1.2 The Born Interpretation</h2>
+            <h2>1.1 The Born Interpretation of the Wavefunction</h2>
 
-            <p>The wavefunction \(\psi\) itself has no direct physical meaning—it can be positive, negative, or complex. The <strong>Born interpretation</strong> tells us that the probability density is given by the square of the wavefunction:</p>
+            <p>The wavefunction \(\psi\) of an electron in an atom is a mathematical function that contains all dynamical information about the electron. However, the wavefunction itself does not have direct physical meaning—it can be positive, negative, or complex.</p>
 
             <div class="definition">
                 <span class="definition-term">Probability Density:</span>
@@ -318,21 +303,17 @@
                 <p style="margin-top: 0.5rem; margin-bottom: 0;">The probability of finding the electron in a small volume element \(d\tau\) at position \(\mathbf{r}\) is \(\rho \, d\tau\).</p>
             </div>
 
-            <div class="figure-container" data-figure="1.3">
-                <div class="figure-tabs">
-                    <button class="figure-tab active" data-view="interactive">Interactive</button>
-                    <button class="figure-tab" data-view="original">Original (Textbook)</button>
-                </div>
-                <div class="figure-content active" data-view="interactive">
+            <div class="figure-pair">
+                <div class="figure-interactive">
+                    <div class="label">Interactive</div>
                     <iframe src="../atomic_orbitals_interactive/fig_1_3.html" title="Figure 1.3: Born Interpretation"></iframe>
                 </div>
-                <div class="figure-content" data-view="original">
-                    <div class="figure-original">
-                        <img src="../assets/figures/atomic_orbitals_p-1.png" alt="Original Figure 1.3-1.4 from textbook">
-                    </div>
+                <div class="figure-textbook">
+                    <div class="label">Textbook (Weller)</div>
+                    <img src="../assets/figures/chapter1/fig_1_3.png" alt="Figure 1.3 from textbook">
                 </div>
                 <div class="figure-caption">
-                    <strong>Figure 1.3:</strong> The Born interpretation of the wavefunction. The wavefunction ψ can be positive or negative, but ρ = |ψ|² is always non-negative. At a node (where ψ = 0), there is zero probability of finding the electron.
+                    <strong>Figure 1.3:</strong> The Born interpretation. The wavefunction ψ (blue) can be positive or negative, but the probability density |ψ|² (purple) is always non-negative. At a node, there is zero probability of finding the electron.
                 </div>
             </div>
 
@@ -342,385 +323,280 @@
                 <li><strong>Destructive interference:</strong> opposite signs → reduced probability density</li>
             </ul>
 
-            <div class="figure-container" data-figure="1.4">
-                <div class="figure-tabs">
-                    <button class="figure-tab active" data-view="interactive">Interactive</button>
-                    <button class="figure-tab" data-view="original">Original (Textbook)</button>
-                </div>
-                <div class="figure-content active" data-view="interactive">
+            <div class="figure-pair">
+                <div class="figure-interactive">
+                    <div class="label">Interactive</div>
                     <iframe src="../atomic_orbitals_interactive/fig_1_4.html" title="Figure 1.4: Wave Interference"></iframe>
                 </div>
-                <div class="figure-content" data-view="original">
-                    <div class="figure-original">
-                        <img src="../assets/figures/atomic_orbitals_p-1.png" alt="Original Figure 1.3-1.4 from textbook">
-                    </div>
+                <div class="figure-textbook">
+                    <div class="label">Textbook (Weller)</div>
+                    <img src="../assets/figures/chapter1/fig_1_4.png" alt="Figure 1.4 from textbook">
                 </div>
                 <div class="figure-caption">
-                    <strong>Figure 1.4:</strong> Constructive and destructive interference of wavefunctions. Adjust the phase difference Δφ to see how interference affects the total probability density |ψ₁ + ψ₂|².
+                    <strong>Figure 1.4:</strong> Wavefunction interference. Constructive (same phase) and destructive (opposite phase) interference affects the total probability density.
                 </div>
             </div>
         </section>
 
         <section class="section" id="quantum">
-            <h2>1.3 Quantum Numbers</h2>
+            <h2>1.2 Quantum Numbers and Energy Levels</h2>
 
-            <p>Three quantum numbers emerge from solving the Schrödinger equation:</p>
-
-            <div class="definition">
-                <span class="definition-term">Principal quantum number n:</span>
-                <p>n = 1, 2, 3, ... Determines the energy and size of the orbital. Larger n means higher energy and more diffuse orbitals.</p>
-            </div>
-
-            <div class="definition">
-                <span class="definition-term">Angular momentum quantum number ℓ:</span>
-                <p>ℓ = 0, 1, 2, ..., (n−1). Determines the shape of the orbital. We use letters: s (ℓ=0), p (ℓ=1), d (ℓ=2), f (ℓ=3).</p>
-            </div>
-
-            <div class="definition">
-                <span class="definition-term">Magnetic quantum number m<sub>ℓ</sub>:</span>
-                <p>m<sub>ℓ</sub> = −ℓ, ..., 0, ..., +ℓ. Determines the orientation of the orbital in space. There are (2ℓ+1) orbitals in each subshell.</p>
-            </div>
-
-            <div class="figure-container" data-figure="1.6">
-                <div class="figure-tabs">
-                    <button class="figure-tab active" data-view="interactive">Interactive</button>
-                    <button class="figure-tab" data-view="original">Original (Textbook)</button>
-                </div>
-                <div class="figure-content active" data-view="interactive">
-                    <iframe src="../atomic_orbitals_interactive/fig_1_6.html" title="Figure 1.6: Shell Classification"></iframe>
-                </div>
-                <div class="figure-content" data-view="original">
-                    <div class="figure-original">
-                        <img src="../assets/figures/atomic_orbitals_p-3.png" alt="Original Figure 1.6 from textbook">
-                    </div>
-                </div>
-                <div class="figure-caption">
-                    <strong>Figure 1.6:</strong> Shell and subshell classification. The number of orbitals in shell n is n². Adjust n to see how subshells are organized.
-                </div>
-            </div>
-
-            <div class="key-point">
-                <strong>NODE COUNTING:</strong> The total number of nodes (where ψ = 0) is n − 1. These divide into:
-                <ul style="margin-top: 0.5rem;">
-                    <li>Radial nodes: n − ℓ − 1 (spherical surfaces where R = 0)</li>
-                    <li>Angular nodes: ℓ (planes or cones through the nucleus)</li>
-                </ul>
-            </div>
-
-            <div class="figure-container" data-figure="1.7">
-                <div class="figure-tabs">
-                    <button class="figure-tab active" data-view="interactive">Interactive</button>
-                    <button class="figure-tab" data-view="original">Original (Textbook)</button>
-                </div>
-                <div class="figure-content active" data-view="interactive">
-                    <iframe src="../atomic_orbitals_interactive/fig_1_7.html" title="Figure 1.7: Spherical Polar Coordinates"></iframe>
-                </div>
-                <div class="figure-content" data-view="original">
-                    <div class="figure-original">
-                        <img src="../assets/figures/atomic_orbitals_p-4.png" alt="Original Figure 1.7-1.9 from textbook">
-                    </div>
-                </div>
-                <div class="figure-caption">
-                    <strong>Figure 1.7:</strong> Spherical polar coordinates (r, θ, φ). The orbital wavefunction separates into radial R(r) and angular Y(θ,φ) parts.
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="energy">
-            <h2>1.4 Energy Levels</h2>
-
-            <p>The energy of a hydrogenic atom depends only on the principal quantum number n and the nuclear charge Z:</p>
-
-            <div class="equation">
-                $$E_n = -\frac{hcR_\infty Z^2}{n^2} = -\frac{13.6 \text{ eV} \cdot Z^2}{n^2}$$
-            </div>
-
-            <p>where R<sub>∞</sub> is the Rydberg constant. Key observations:</p>
+            <p>Each orbital is characterized by three quantum numbers:</p>
             <ul>
-                <li>All energies are negative (bound states)</li>
-                <li>Energy is proportional to Z² (He⁺ is 4× more tightly bound than H)</li>
-                <li>Energy spacing decreases as n increases (levels converge to E = 0)</li>
-                <li>In hydrogenic atoms, all orbitals with the same n are <strong>degenerate</strong> (same energy)</li>
+                <li><strong>Principal quantum number (n):</strong> n = 1, 2, 3, ... — determines the shell and overall size</li>
+                <li><strong>Angular momentum quantum number (l):</strong> l = 0, 1, ..., n−1 — determines the subshell shape (s, p, d, f)</li>
+                <li><strong>Magnetic quantum number (mₗ):</strong> mₗ = −l, ..., +l — determines orientation</li>
             </ul>
 
-            <div class="figure-container" data-figure="1.5">
-                <div class="figure-tabs">
-                    <button class="figure-tab active" data-view="interactive">Interactive</button>
-                    <button class="figure-tab" data-view="original">Original (Textbook)</button>
-                </div>
-                <div class="figure-content active" data-view="interactive">
+            <div class="key-point">
+                <strong>Spectroscopic notation:</strong> l = 0 → s, l = 1 → p, l = 2 → d, l = 3 → f
+            </div>
+
+            <h3>Energy Levels</h3>
+            <p>For a hydrogenic atom (one electron, nuclear charge Z), the energy depends only on n:</p>
+
+            <div class="equation">
+                $$E_n = -\frac{Z^2 R_H}{n^2} = -\frac{13.6 \, Z^2}{n^2} \text{ eV}$$
+            </div>
+
+            <div class="figure-pair">
+                <div class="figure-interactive">
+                    <div class="label">Interactive</div>
                     <iframe src="../atomic_orbitals_interactive/fig_1_5.html" title="Figure 1.5: Energy Levels"></iframe>
                 </div>
-                <div class="figure-content" data-view="original">
-                    <div class="figure-original">
-                        <img src="../assets/figures/atomic_orbitals_p-2.png" alt="Original Figure 1.5 from textbook">
-                    </div>
+                <div class="figure-textbook">
+                    <div class="label">Textbook (Weller)</div>
+                    <img src="../assets/figures/chapter1/fig_1_5.png" alt="Figure 1.5 from textbook">
                 </div>
                 <div class="figure-caption">
-                    <strong>Figure 1.5:</strong> Quantized energy levels for H (Z=1) and He⁺ (Z=2). The energy scales as −Z²/n², so He⁺ levels are four times deeper than H levels.
+                    <strong>Figure 1.5:</strong> Quantized energy levels for H (Z=1) and He⁺ (Z=2). The energy levels converge as n → ∞, approaching the ionization limit at E = 0.
+                </div>
+            </div>
+
+            <h3>Spherical Polar Coordinates</h3>
+            <p>Atomic orbitals are naturally described in spherical polar coordinates (r, θ, φ), where:</p>
+            <ul>
+                <li>r = radial distance from nucleus</li>
+                <li>θ = polar angle (from z-axis)</li>
+                <li>φ = azimuthal angle (in xy-plane)</li>
+            </ul>
+
+            <div class="figure-pair">
+                <div class="figure-interactive">
+                    <div class="label">Interactive</div>
+                    <iframe src="../atomic_orbitals_interactive/fig_1_6.html" title="Figure 1.6: Shell Classification"></iframe>
+                </div>
+                <div class="figure-textbook">
+                    <div class="label">Textbook (Weller)</div>
+                    <img src="../assets/figures/chapter1/fig_1_7.png" alt="Figure 1.7 from textbook">
+                </div>
+                <div class="figure-caption">
+                    <strong>Figure 1.6-1.7:</strong> Spherical polar coordinates and the classification of shells, subshells, and orbitals.
                 </div>
             </div>
         </section>
 
         <section class="section" id="radial">
-            <h2>1.5 Radial Wavefunctions</h2>
+            <h2>1.3 Radial Wavefunctions</h2>
 
-            <p>The radial wavefunction R<sub>nℓ</sub>(r) describes how the orbital's amplitude varies with distance from the nucleus. For s orbitals (ℓ = 0), R is non-zero at the nucleus. For all other orbitals (ℓ > 0), R = 0 at r = 0.</p>
+            <p>The wavefunction can be separated into radial and angular parts:</p>
+            <div class="equation">
+                $$\psi_{nlm}(r,\theta,\phi) = R_{nl}(r) \cdot Y_l^{m}(\theta,\phi)$$
+            </div>
 
-            <div class="figure-container" data-figure="1.8">
-                <div class="figure-tabs">
-                    <button class="figure-tab active" data-view="interactive">Interactive</button>
-                    <button class="figure-tab" data-view="original">Original (Textbook)</button>
-                </div>
-                <div class="figure-content active" data-view="interactive">
+            <p>The radial wavefunction R(r) describes how the wavefunction varies with distance from the nucleus.</p>
+
+            <h3>s Orbitals (l = 0)</h3>
+            <div class="figure-pair">
+                <div class="figure-interactive">
+                    <div class="label">Interactive</div>
                     <iframe src="../atomic_orbitals_interactive/fig_1_8.html" title="Figure 1.8: Radial Wavefunctions s"></iframe>
                 </div>
-                <div class="figure-content" data-view="original">
-                    <div class="figure-original">
-                        <img src="../assets/figures/atomic_orbitals_p-4.png" alt="Original Figure 1.8 from textbook">
-                    </div>
+                <div class="figure-textbook">
+                    <div class="label">Textbook (Weller)</div>
+                    <img src="../assets/figures/chapter1/fig_1_8.png" alt="Figure 1.8 from textbook">
                 </div>
                 <div class="figure-caption">
-                    <strong>Figure 1.8:</strong> Radial wavefunctions R<sub>n0</sub> for 1s, 2s, and 3s orbitals. Note how the number of radial nodes (n − 1) increases with n. The horizontal axis is the scaled radius Zr/a₀.
+                    <strong>Figure 1.8:</strong> Radial wavefunctions R<sub>n0</sub>(r) for 1s, 2s, and 3s orbitals. Note how the number of nodes increases with n: the ns orbital has (n−1) radial nodes.
                 </div>
             </div>
 
-            <div class="figure-container" data-figure="1.9">
-                <div class="figure-tabs">
-                    <button class="figure-tab active" data-view="interactive">Interactive</button>
-                    <button class="figure-tab" data-view="original">Original (Textbook)</button>
-                </div>
-                <div class="figure-content active" data-view="interactive">
+            <h3>p Orbitals (l = 1)</h3>
+            <div class="figure-pair">
+                <div class="figure-interactive">
+                    <div class="label">Interactive</div>
                     <iframe src="../atomic_orbitals_interactive/fig_1_9.html" title="Figure 1.9: Radial Wavefunctions p"></iframe>
                 </div>
-                <div class="figure-content" data-view="original">
-                    <div class="figure-original">
-                        <img src="../assets/figures/atomic_orbitals_p-4.png" alt="Original Figure 1.9 from textbook">
-                    </div>
+                <div class="figure-textbook">
+                    <div class="label">Textbook (Weller)</div>
+                    <img src="../assets/figures/chapter1/fig_1_9.png" alt="Figure 1.9 from textbook">
                 </div>
                 <div class="figure-caption">
-                    <strong>Figure 1.9:</strong> Radial wavefunctions R<sub>n1</sub> for 2p and 3p orbitals. These vanish at the nucleus (r = 0) because ℓ ≠ 0.
+                    <strong>Figure 1.9:</strong> Radial wavefunctions for 2p and 3p orbitals. All p orbitals (l=1) are zero at the nucleus because R(0) = 0 when l > 0.
                 </div>
             </div>
 
-            <h3>Radial Distribution Function</h3>
+            <div class="key-point">
+                <strong>Node counting:</strong> An orbital with quantum numbers n, l has:
+                <ul style="margin-top: 0.5rem;">
+                    <li>Radial nodes: n − l − 1</li>
+                    <li>Angular nodes: l</li>
+                    <li>Total nodes: n − 1</li>
+                </ul>
+            </div>
+        </section>
 
-            <p>The <strong>radial distribution function</strong> P(r) gives the probability of finding the electron at distance r from the nucleus (regardless of direction):</p>
+        <section class="section" id="distribution">
+            <h2>1.4 Radial Distribution Functions</h2>
+
+            <p>While |R(r)|² gives the probability density at distance r, we often want to know the probability of finding the electron <em>at</em> a distance r (in a thin shell). This is given by the radial distribution function:</p>
 
             <div class="equation">
-                $$P(r) = r^2 |R_{nl}(r)|^2$$
+                $$P(r) = r^2 |R(r)|^2$$
             </div>
 
-            <p>For the 1s orbital, P(r) has a maximum at r = a₀/Z, where a₀ = 52.9 pm is the Bohr radius.</p>
+            <p>The factor r² accounts for the increasing volume of spherical shells as r increases.</p>
 
-            <div class="figure-container" data-figure="1.11">
-                <div class="figure-tabs">
-                    <button class="figure-tab active" data-view="interactive">Interactive</button>
-                    <button class="figure-tab" data-view="original">Original (Textbook)</button>
-                </div>
-                <div class="figure-content active" data-view="interactive">
+            <div class="figure-pair">
+                <div class="figure-interactive">
+                    <div class="label">Interactive</div>
                     <iframe src="../atomic_orbitals_interactive/fig_1_11.html" title="Figure 1.11: Radial Distribution 1s"></iframe>
                 </div>
-                <div class="figure-content" data-view="original">
-                    <div class="figure-original">
-                        <img src="../assets/figures/atomic_orbitals_p-5.png" alt="Original Figure 1.10-1.11 from textbook">
-                    </div>
+                <div class="figure-textbook">
+                    <div class="label">Textbook (Weller)</div>
+                    <img src="../assets/figures/chapter1/fig_1_11.png" alt="Figure 1.11 from textbook">
                 </div>
                 <div class="figure-caption">
-                    <strong>Figure 1.11:</strong> Radial distribution function P(r) for the 1s orbital. The most probable radius is r<sub>max</sub> = a₀/Z.
+                    <strong>Figure 1.11:</strong> Radial distribution function for the 1s orbital. The maximum at r = a₀ is the most probable radius—where you're most likely to find the electron.
                 </div>
             </div>
 
-            <div class="figure-container" data-figure="1.12">
-                <div class="figure-tabs">
-                    <button class="figure-tab active" data-view="interactive">Interactive</button>
-                    <button class="figure-tab" data-view="original">Original (Textbook)</button>
-                </div>
-                <div class="figure-content active" data-view="interactive">
+            <div class="figure-pair">
+                <div class="figure-interactive">
+                    <div class="label">Interactive</div>
                     <iframe src="../atomic_orbitals_interactive/fig_1_12.html" title="Figure 1.12: Radial Distribution 2s vs 2p"></iframe>
                 </div>
-                <div class="figure-content" data-view="original">
-                    <div class="figure-original">
-                        <img src="../assets/figures/atomic_orbitals_p-6.png" alt="Original Figure 1.12-1.14 from textbook">
-                    </div>
+                <div class="figure-textbook">
+                    <div class="label">Textbook (Weller)</div>
+                    <img src="../assets/figures/chapter1/fig_1_12.png" alt="Figure 1.12 from textbook">
                 </div>
                 <div class="figure-caption">
-                    <strong>Figure 1.12:</strong> Radial distributions for 2s and 2p. The 2s orbital has an inner maximum close to the nucleus due to its additional radial node structure.
+                    <strong>Figure 1.12:</strong> Radial distributions for 2s and 2p orbitals. Although 2p has its main peak closer to the nucleus, the 2s orbital has significant probability very close to the nucleus (better penetration).
+                </div>
+            </div>
+
+            <h3>Radial Nodes</h3>
+            <div class="figure-pair">
+                <div class="figure-interactive">
+                    <div class="label">Interactive</div>
+                    <iframe src="../atomic_orbitals_interactive/fig_1_10.html" title="Figure 1.10: s Orbital Nodes"></iframe>
+                </div>
+                <div class="figure-textbook">
+                    <div class="label">Textbook (Weller)</div>
+                    <img src="../assets/figures/chapter1/fig_1_10.png" alt="Figure 1.10 from textbook">
+                </div>
+                <div class="figure-caption">
+                    <strong>Figure 1.10:</strong> Radial nodes in s orbitals. The 1s has no nodes, 2s has 1 node, 3s has 2 nodes. At a radial node, P(r) = 0.
                 </div>
             </div>
         </section>
 
         <section class="section" id="shapes">
-            <h2>1.6 Orbital Shapes</h2>
+            <h2>1.5 Orbital Shapes (Boundary Surfaces)</h2>
 
-            <p>A <strong>boundary surface</strong> is a surface that encloses a region where there is a high probability (typically 90%) of finding the electron. The shape of this surface is determined by the angular part of the wavefunction.</p>
+            <p>We visualize orbitals by plotting <strong>boundary surfaces</strong> that enclose a region where the electron has high probability (typically 90%) of being found.</p>
 
             <h3>s Orbitals</h3>
-            <p>s orbitals (ℓ = 0) are spherically symmetric—they have the same amplitude at a given distance from the nucleus regardless of direction. They have no angular nodes.</p>
-
-            <div class="figure-container" data-figure="1.13">
-                <div class="figure-tabs">
-                    <button class="figure-tab active" data-view="interactive">Interactive</button>
-                    <button class="figure-tab" data-view="original">Original (Textbook)</button>
-                </div>
-                <div class="figure-content active" data-view="interactive">
+            <div class="figure-pair">
+                <div class="figure-interactive">
+                    <div class="label">Interactive 3D</div>
                     <iframe src="../atomic_orbitals_interactive/fig_1_13.html" title="Figure 1.13: s Orbital"></iframe>
                 </div>
-                <div class="figure-content" data-view="original">
-                    <div class="figure-original">
-                        <img src="../assets/figures/atomic_orbitals_p-6.png" alt="Original Figure 1.13 from textbook">
-                    </div>
+                <div class="figure-textbook">
+                    <div class="label">Textbook (Weller)</div>
+                    <img src="../assets/figures/chapter1/fig_1_13.png" alt="Figure 1.13 from textbook">
                 </div>
                 <div class="figure-caption">
-                    <strong>Figure 1.13:</strong> Boundary surface of an s orbital showing 90% probability. s orbitals are spherical with no angular nodes.
+                    <strong>Figure 1.13:</strong> The spherical boundary surface of an s orbital. All s orbitals are spherically symmetric (no angular dependence).
                 </div>
             </div>
 
             <h3>p Orbitals</h3>
-            <p>p orbitals (ℓ = 1) have one angular node—a nodal plane passing through the nucleus. The three p orbitals (p<sub>x</sub>, p<sub>y</sub>, p<sub>z</sub>) are oriented along the Cartesian axes.</p>
-
-            <div class="figure-container" data-figure="1.14">
-                <div class="figure-tabs">
-                    <button class="figure-tab active" data-view="interactive">Interactive</button>
-                    <button class="figure-tab" data-view="original">Original (Textbook)</button>
-                </div>
-                <div class="figure-content active" data-view="interactive">
+            <div class="figure-pair">
+                <div class="figure-interactive">
+                    <div class="label">Interactive 3D</div>
                     <iframe src="../atomic_orbitals_interactive/fig_1_14.html" title="Figure 1.14: p Orbitals"></iframe>
                 </div>
-                <div class="figure-content" data-view="original">
-                    <div class="figure-original">
-                        <img src="../assets/figures/atomic_orbitals_p-6.png" alt="Original Figure 1.14 from textbook">
-                    </div>
+                <div class="figure-textbook">
+                    <div class="label">Textbook (Weller)</div>
+                    <img src="../assets/figures/chapter1/fig_1_14.png" alt="Figure 1.14 from textbook">
                 </div>
                 <div class="figure-caption">
-                    <strong>Figure 1.14:</strong> Boundary surfaces of p orbitals. Each has one nodal plane through the nucleus. The different colors represent opposite phases (signs) of the wavefunction.
+                    <strong>Figure 1.14:</strong> The boundary surfaces of p orbitals (p<sub>x</sub>, p<sub>y</sub>, p<sub>z</sub>). Each has one nodal plane through the nucleus. The lobes have opposite phase (+ and −).
                 </div>
             </div>
 
             <h3>d Orbitals</h3>
-            <p>d orbitals (ℓ = 2) have two angular nodes. There are five d orbitals with different orientations: d<sub>xy</sub>, d<sub>yz</sub>, d<sub>xz</sub>, d<sub>x²−y²</sub>, and d<sub>z²</sub>.</p>
-
-            <div class="figure-container" data-figure="1.15">
-                <div class="figure-tabs">
-                    <button class="figure-tab active" data-view="interactive">Interactive</button>
-                    <button class="figure-tab" data-view="original">Original (Textbook)</button>
-                </div>
-                <div class="figure-content active" data-view="interactive">
+            <div class="figure-pair">
+                <div class="figure-interactive">
+                    <div class="label">Interactive 3D</div>
                     <iframe src="../atomic_orbitals_interactive/fig_1_15.html" title="Figure 1.15: d Orbitals"></iframe>
                 </div>
-                <div class="figure-content" data-view="original">
-                    <div class="figure-original">
-                        <img src="../assets/figures/penetration_p-1.png" alt="Original Figure 1.15-1.16 from textbook">
-                    </div>
+                <div class="figure-textbook">
+                    <div class="label">Textbook (Weller)</div>
+                    <img src="../assets/figures/chapter1/fig_1_13_1_14.png" alt="Figures 1.13-1.14 from textbook">
                 </div>
                 <div class="figure-caption">
-                    <strong>Figure 1.15:</strong> Boundary surfaces of d orbitals. Each has two nodal planes (or conic surfaces for d<sub>z²</sub>). These orbitals become important in transition metal chemistry.
+                    <strong>Figure 1.15:</strong> The d orbitals. Four have four-lobed cloverleaf shapes (d<sub>xy</sub>, d<sub>xz</sub>, d<sub>yz</sub>, d<sub>x²−y²</sub>), while d<sub>z²</sub> has a different shape with a torus.
                 </div>
             </div>
 
             <h3>f Orbitals</h3>
-            <p>f orbitals (ℓ = 3) have three angular nodes and complex shapes. There are seven f orbitals, which become important in lanthanide and actinide chemistry.</p>
-
-            <div class="figure-container" data-figure="1.16">
-                <div class="figure-tabs">
-                    <button class="figure-tab active" data-view="interactive">Interactive</button>
-                    <button class="figure-tab" data-view="original">Original (Textbook)</button>
-                </div>
-                <div class="figure-content active" data-view="interactive">
-                    <iframe src="../atomic_orbitals_interactive/fig_1_16.html" title="Figure 1.16: f Orbitals"></iframe>
-                </div>
-                <div class="figure-content" data-view="original">
-                    <div class="figure-original">
-                        <img src="../assets/figures/penetration_p-1.png" alt="Original Figure 1.16 from textbook">
-                    </div>
-                </div>
+            <div class="figure-single">
+                <iframe src="../atomic_orbitals_interactive/fig_1_16.html" title="Figure 1.16: f Orbitals"></iframe>
                 <div class="figure-caption">
-                    <strong>Figure 1.16:</strong> Boundary surfaces of f orbitals. These have three nodal surfaces and play a key role in the chemistry of the f-block elements.
+                    <strong>Figure 1.16:</strong> The seven f orbitals with their complex multilobed shapes. These become important in lanthanide and actinide chemistry.
                 </div>
             </div>
         </section>
 
         <section class="section" id="penetration">
-            <h2>1.7 Penetration and Shielding</h2>
+            <h2>1.6 Penetration and Shielding</h2>
 
-            <p>In many-electron atoms, electrons experience both attraction to the nucleus and repulsion from other electrons. The <strong>effective nuclear charge</strong> Z<sub>eff</sub> accounts for the screening effect of inner electrons:</p>
-
-            <div class="equation">
-                $$Z_{\text{eff}} = Z - \sigma$$
-            </div>
-
-            <p>where σ is the shielding constant. The closer Z<sub>eff</sub> is to Z, the more the electron experiences the full nuclear charge.</p>
+            <p>In many-electron atoms, the simple picture changes because electrons experience:</p>
+            <ul>
+                <li><strong>Attraction</strong> to the nucleus</li>
+                <li><strong>Repulsion</strong> from other electrons (shielding)</li>
+            </ul>
 
             <div class="key-point">
-                <strong>Penetration:</strong> The ability of an electron to approach the nucleus and experience the full nuclear charge. s electrons penetrate more than p, which penetrate more than d, which penetrate more than f.
+                <strong>Penetration:</strong> An electron that has significant probability close to the nucleus is said to "penetrate" the inner electron density. Better penetration means less shielding and lower energy.
             </div>
 
-            <p>This explains why, in many-electron atoms, orbitals with the same n but different ℓ are no longer degenerate. The penetration effect leads to the ordering: ns < np < nd < nf in energy for a given n.</p>
-
-            <div class="figure-container" data-figure="1.10">
-                <div class="figure-tabs">
-                    <button class="figure-tab active" data-view="interactive">Interactive</button>
-                    <button class="figure-tab" data-view="original">Original (Textbook)</button>
-                </div>
-                <div class="figure-content active" data-view="interactive">
-                    <iframe src="../atomic_orbitals_interactive/fig_1_10.html" title="Figure 1.10: s Orbital Nodes"></iframe>
-                </div>
-                <div class="figure-content" data-view="original">
-                    <div class="figure-original">
-                        <img src="../assets/figures/atomic_orbitals_p-5.png" alt="Original Figure 1.10 from textbook">
-                    </div>
-                </div>
-                <div class="figure-caption">
-                    <strong>Figure 1.10:</strong> The 1s, 2s, and 3s orbitals showing radial nodes. The 2s and 3s orbitals have inner maxima that allow them to penetrate closer to the nucleus than 2p or 3p.
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2>Summary</h2>
+            <p>Orbitals with l = 0 (s orbitals) penetrate more effectively than p orbitals, which penetrate more than d orbitals. This explains why:</p>
             <ul>
-                <li>Hydrogenic atoms have exact solutions to the Schrödinger equation</li>
-                <li>Three quantum numbers (n, ℓ, m<sub>ℓ</sub>) define each orbital</li>
-                <li>Energy depends on −Z²/n² for hydrogenic atoms</li>
-                <li>Orbital shapes are determined by spherical harmonics</li>
-                <li>The radial distribution function gives the probability of finding the electron at distance r</li>
-                <li>Boundary surfaces typically enclose 90% probability</li>
-                <li>Penetration and shielding explain energy ordering in many-electron atoms</li>
+                <li>4s fills before 3d in transition metals</li>
+                <li>The effective nuclear charge Z<sub>eff</sub> differs for different subshells</li>
             </ul>
+
+            <div class="definition">
+                <span class="definition-term">Effective Nuclear Charge:</span>
+                $$Z_{\text{eff}} = Z - \sigma$$
+                <p style="margin-top: 0.5rem; margin-bottom: 0;">where σ is the shielding constant. Better penetrating orbitals experience larger Z<sub>eff</sub> and are more tightly bound.</p>
+            </div>
         </section>
-    </div>
+
+    </main>
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            // render math
             renderMathInElement(document.body, {
                 delimiters: [
-                    {left: "$$", right: "$$", display: true},
-                    {left: "$", right: "$", display: false},
-                    {left: "\\(", right: "\\)", display: false},
-                    {left: "\\[", right: "\\]", display: true}
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false},
+                    {left: '\\(', right: '\\)', display: false},
+                    {left: '\\[', right: '\\]', display: true}
                 ]
-            });
-
-            // figure tab switching
-            document.querySelectorAll('.figure-container').forEach(container => {
-                const tabs = container.querySelectorAll('.figure-tab');
-                const contents = container.querySelectorAll('.figure-content');
-
-                tabs.forEach(tab => {
-                    tab.addEventListener('click', () => {
-                        const view = tab.dataset.view;
-
-                        // update tabs
-                        tabs.forEach(t => t.classList.remove('active'));
-                        tab.classList.add('active');
-
-                        // update content
-                        contents.forEach(c => {
-                            c.classList.toggle('active', c.dataset.view === view);
-                        });
-                    });
-                });
             });
         });
     </script>
