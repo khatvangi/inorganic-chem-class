@@ -86,12 +86,13 @@ const loadQuestion = () => {
 
   // render options
   ui.options.innerHTML = "";
-  q.options.forEach(opt => {
-    const btn = createElement("button", "option-button", opt);
+  const letters = ["A", "B", "C", "D"];
+  q.options.forEach((opt, index) => {
+    // show option with letter prefix for clarity
+    const letter = letters[index];
+    const btn = createElement("button", "option-button", `${letter}. ${opt}`);
     btn.dataset.value = opt;
-
-    const letterMatch = opt.match(/^([A-D])[\).]/);
-    const letter = letterMatch ? letterMatch[1] : opt.charAt(0);
+    btn.dataset.letter = letter;
 
     btn.onclick = () => checkAnswer(letter, btn, q);
     ui.options.appendChild(btn);
@@ -163,7 +164,7 @@ const checkAnswer = (userChoice, btn, question) => {
 
   } else {
     // wrong answer
-    btn.classList.add("incorrect");
+    btn.classList.add("wrong");
     btn.disabled = true; // disable this wrong option
     state.streak = 0;
     ui.streak.textContent = state.streak;
@@ -174,7 +175,7 @@ const checkAnswer = (userChoice, btn, question) => {
 
       // highlight correct answer
       Array.from(ui.options.children).forEach(b => {
-        if (b.innerText.startsWith(correctLetter)) {
+        if (b.dataset.letter === correctLetter) {
           b.classList.add("correct");
         }
       });
