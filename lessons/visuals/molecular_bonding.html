@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Molecular Bonding: From VB Theory to Molecular Orbitals</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-deep: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-hover: #1a1a25;
+            --accent-gold: #d4a855;
+            --accent-blue: #4a9eff;
+            --accent-purple: #9966ff;
+            --accent-red: #ff6b6b;
+            --accent-green: #4ecdc4;
+            --text-primary: #e8e6e3;
+            --text-muted: #8a8a8a;
+            --border: #2a2a35;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Crimson Pro', Georgia, serif;
+            background: var(--bg-deep);
+            color: var(--text-primary);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: var(--accent-gold);
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.02em;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        /* Story Section */
+        .story-section {
+            background: linear-gradient(135deg, var(--bg-card) 0%, #0d0d14 100%);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .story-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent-gold), var(--accent-purple), var(--accent-blue));
+        }
+
+        .story-section h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.8rem;
+            color: var(--accent-gold);
+            margin-bottom: 1rem;
+        }
+
+        .story-section p {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .story-section .highlight {
+            color: var(--accent-blue);
+            font-weight: 600;
+        }
+
+        .story-section .key-insight {
+            background: rgba(212, 168, 85, 0.1);
+            border-left: 3px solid var(--accent-gold);
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            font-style: italic;
+        }
+
+        .demo-box {
+            background: rgba(74, 158, 255, 0.05);
+            border: 2px solid var(--accent-blue);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            text-align: center;
+        }
+
+        .demo-box .demo-text {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.1rem;
+            color: var(--accent-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        .chemical-formula {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--accent-green);
+            font-weight: 500;
+        }
+
+        /* Interactive Grid */
+        .interactive-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        @media (max-width: 1000px) {
+            .interactive-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .panel {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+        }
+
+        .panel h3 {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            color: var(--accent-gold);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        /* Canvas Container */
+        .canvas-container {
+            width: 100%;
+            height: 400px;
+            border-radius: 8px;
+            overflow: hidden;
+            background: radial-gradient(ellipse at center, #1a1a25 0%, var(--bg-deep) 100%);
+            border: 1px solid var(--border);
+            margin-bottom: 1rem;
+        }
+
+        .canvas-container canvas {
+            display: block;
+        }
+
+        /* Slider Control */
+        .slider-control {
+            margin: 1.5rem 0;
+        }
+
+        .slider-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .slider-value {
+            color: var(--accent-blue);
+            font-size: 1rem;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            height: 6px;
+            border-radius: 3px;
+            background: var(--bg-deep);
+            outline: none;
+            -webkit-appearance: none;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--accent-blue);
+            cursor: pointer;
+        }
+
+        input[type="range"]::-moz-range-thumb {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--accent-blue);
+            cursor: pointer;
+            border: none;
+        }
+
+        /* Molecule Buttons */
+        .molecule-buttons {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+
+        .mol-btn {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.95rem;
+            padding: 0.6rem 1rem;
+            background: var(--bg-deep);
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .mol-btn:hover {
+            background: var(--bg-hover);
+            border-color: var(--accent-blue);
+        }
+
+        .mol-btn.active {
+            background: var(--accent-blue);
+            border-color: var(--accent-blue);
+            color: var(--bg-deep);
+        }
+
+        /* MO Diagram Display */
+        #mo-diagram-container {
+            width: 100%;
+            height: 600px;
+            border-radius: 8px;
+            overflow: hidden;
+            background: var(--bg-deep);
+            border: 1px solid var(--border);
+        }
+
+        /* Info Box */
+        .info-box {
+            background: var(--bg-deep);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .info-row:last-child {
+            border-bottom: none;
+        }
+
+        .info-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .info-value {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1rem;
+            color: var(--accent-blue);
+            font-weight: 500;
+        }
+
+        .info-value.paramagnetic {
+            color: var(--accent-red);
+        }
+
+        .info-value.diamagnetic {
+            color: var(--accent-green);
+        }
+
+        /* Textbook Image */
+        .textbook-image {
+            width: 100%;
+            max-width: 600px;
+            margin: 1.5rem auto;
+            display: block;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        /* Explanation Boxes */
+        .explanation {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .explanation h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            color: var(--accent-gold);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .explanation p {
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .explanation ul {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .explanation li {
+            line-height: 1.8;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Hybridization Visual */
+        .hybridization-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .hybrid-card {
+            background: var(--bg-deep);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+            transition: all 0.2s ease;
+        }
+
+        .hybrid-card:hover {
+            border-color: var(--accent-blue);
+            background: var(--bg-hover);
+        }
+
+        .hybrid-type {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.2rem;
+            color: var(--accent-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        .hybrid-geometry {
+            font-size: 0.95rem;
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .hybrid-angle {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        /* Practice Questions */
+        .practice-section {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .practice-section h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            color: var(--accent-gold);
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .question {
+            background: var(--bg-deep);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .question:hover {
+            border-color: var(--accent-blue);
+        }
+
+        .question-text {
+            font-size: 1.1rem;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .answer.revealed {
+            max-height: 500px;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .answer p {
+            color: var(--accent-green);
+            line-height: 1.6;
+        }
+
+        /* Summary Table */
+        .summary-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+
+        .summary-table th,
+        .summary-table td {
+            padding: 0.75rem;
+            text-align: left;
+            border: 1px solid var(--border);
+        }
+
+        .summary-table th {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--accent-gold);
+            background: var(--bg-deep);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .summary-table td {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+        }
+
+        .summary-table tr:hover {
+            background: var(--bg-hover);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border);
+            margin-top: 2rem;
+        }
+
+        footer a {
+            color: var(--accent-gold);
+            text-decoration: none;
+            margin: 0 0.5rem;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Molecular Bonding</h1>
+            <p class="subtitle">Why is O₂ magnetic? The journey from valence bond theory to molecular orbitals</p>
+        </header>
+
+        <!-- Section 1: The Question -->
+        <section class="story-section">
+            <h2>The Question</h2>
+            <p>
+                Consider <span class="chemical-formula">O₂</span>, the molecule you breathe. Simple valence bond theory tells us:
+                oxygen has 6 valence electrons, forms a double bond (one σ, one π), and all electrons should be paired.
+            </p>
+            <div class="demo-box">
+                <div class="demo-text">Liquid O₂ suspended between magnet poles</div>
+                <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.5rem;">
+                    The blue liquid clings to the magnet. <span class="highlight">O₂ is paramagnetic.</span>
+                </p>
+            </div>
+            <div class="key-insight">
+                If all electrons are paired as VB theory predicts, O₂ should be <strong>diamagnetic</strong> (repelled by a magnet).
+                But it's <strong>paramagnetic</strong> (attracted to a magnet). Something fundamental is wrong with our picture.
+            </div>
+            <p>
+                This single experimental fact forces us to rebuild our understanding of chemical bonding from the ground up.
+                The answer lies in <span class="highlight">molecular orbital theory</span>.
+            </p>
+        </section>
+
+        <!-- Section 2: VB Theory - What It Gets Right -->
+        <section class="story-section">
+            <h2>Valence Bond Theory: What It Gets Right</h2>
+            <p>
+                VB theory correctly predicts <span class="highlight">bond angles</span> through hybridization.
+                When atomic orbitals mix, they create new hybrid orbitals with specific geometries:
+            </p>
+
+            <div class="hybridization-grid">
+                <div class="hybrid-card">
+                    <div class="hybrid-type">sp</div>
+                    <div class="hybrid-geometry">Linear</div>
+                    <div class="hybrid-angle">180°</div>
+                </div>
+                <div class="hybrid-card">
+                    <div class="hybrid-type">sp²</div>
+                    <div class="hybrid-geometry">Trigonal Planar</div>
+                    <div class="hybrid-angle">120°</div>
+                </div>
+                <div class="hybrid-card">
+                    <div class="hybrid-type">sp³</div>
+                    <div class="hybrid-geometry">Tetrahedral</div>
+                    <div class="hybrid-angle">109.5°</div>
+                </div>
+                <div class="hybrid-card">
+                    <div class="hybrid-type">sp³d</div>
+                    <div class="hybrid-geometry">Trigonal Bipyramidal</div>
+                    <div class="hybrid-angle">90°, 120°</div>
+                </div>
+                <div class="hybrid-card">
+                    <div class="hybrid-type">sp³d²</div>
+                    <div class="hybrid-geometry">Octahedral</div>
+                    <div class="hybrid-angle">90°</div>
+                </div>
+            </div>
+
+            <p>
+                VB theory also correctly identifies:
+            </p>
+            <ul>
+                <li><strong>Sigma (σ) bonds:</strong> Head-on overlap of s-s, s-p, or p-p orbitals</li>
+                <li><strong>Pi (π) bonds:</strong> Side-by-side overlap of parallel p orbitals</li>
+                <li><strong>Bond order:</strong> Single (1σ), double (1σ + 1π), triple (1σ + 2π)</li>
+            </ul>
+        </section>
+
+        <!-- Section 3: Where VB Fails -->
+        <section class="story-section">
+            <h2>Where Valence Bond Theory Fails</h2>
+            <p>
+                VB theory cannot explain:
+            </p>
+            <ul>
+                <li><strong>The O₂ paradox:</strong> Predicts all electrons paired → diamagnetic. Reality: paramagnetic with 2 unpaired electrons.</li>
+                <li><strong>Fractional bond orders:</strong> Some molecules have bond orders that aren't integers (e.g., O₂⁻ has BO = 1.5)</li>
+                <li><strong>Photoelectron spectra:</strong> Shows electrons at energy levels VB theory doesn't predict</li>
+                <li><strong>Electronic transitions:</strong> Cannot explain UV-vis absorption patterns</li>
+            </ul>
+            <p>
+                The problem is fundamental: VB theory treats electrons as <em>localized</em> between two atoms.
+                Reality is more complex—electrons are <span class="highlight">delocalized</span> over the entire molecule.
+            </p>
+        </section>
+
+        <!-- Section 4: Building Molecular Orbitals -->
+        <section class="story-section">
+            <h2>Building Molecular Orbitals: The Key Insight</h2>
+            <p>
+                Molecular orbitals form when atomic orbitals on different atoms <span class="highlight">interfere</span>—like waves.
+                When two waves meet, they can add <strong>constructively</strong> or <strong>destructively</strong>.
+            </p>
+        </section>
+
+        <div class="interactive-grid">
+            <div class="panel">
+                <h3>Interactive: Orbital Overlap</h3>
+                <div id="orbital-overlap-container" class="canvas-container"></div>
+                <div class="slider-control">
+                    <div class="slider-label">
+                        <span>Atomic Separation</span>
+                        <span class="slider-value" id="separation-value">3.0 Å</span>
+                    </div>
+                    <input type="range" id="separation-slider" min="1" max="60" value="30" step="1">
+                </div>
+            </div>
+
+            <div class="panel">
+                <h3>Constructive vs Destructive Interference</h3>
+                <img src="figures/ch2/fig_2_08_constructive_interference.png" alt="Constructive interference" class="textbook-image">
+                <p style="text-align: center; color: var(--text-muted); font-size: 0.9rem; margin-top: 0.5rem;">
+                    Constructive: waves in phase → bonding MO (lower energy)
+                </p>
+                <img src="figures/ch2/fig_2_09_destructive_interference.png" alt="Destructive interference" class="textbook-image" style="margin-top: 1rem;">
+                <p style="text-align: center; color: var(--text-muted); font-size: 0.9rem; margin-top: 0.5rem;">
+                    Destructive: waves out of phase → antibonding MO (higher energy, node between nuclei)
+                </p>
+            </div>
+        </div>
+
+        <div class="explanation">
+            <h3>The Math Behind It</h3>
+            <p>
+                <strong>Bonding MO:</strong> ψ<sub>bonding</sub> = ψ<sub>A</sub> + ψ<sub>B</sub>
+            </p>
+            <p style="margin-left: 1rem; color: var(--text-muted);">
+                Constructive interference → electron density <em>between</em> nuclei → lower energy → stabilizes bond
+            </p>
+            <p style="margin-top: 1rem;">
+                <strong>Antibonding MO:</strong> ψ<sub>antibonding</sub> = ψ<sub>A</sub> − ψ<sub>B</sub>
+            </p>
+            <p style="margin-left: 1rem; color: var(--text-muted);">
+                Destructive interference → <em>node</em> between nuclei → higher energy → destabilizes bond
+            </p>
+            <div class="key-insight" style="margin-top: 1.5rem;">
+                <strong>Bond Order = (# bonding electrons − # antibonding electrons) / 2</strong>
+            </div>
+            <img src="figures/ch2/fig_2_10_mo_diagram_h2.png" alt="MO diagram for H2" class="textbook-image" style="margin-top: 1rem;">
+            <p style="text-align: center; color: var(--text-muted); font-size: 0.9rem; margin-top: 0.5rem;">
+                H₂: 2 bonding electrons, 0 antibonding → BO = (2−0)/2 = 1 ✓
+            </p>
+        </div>
+
+        <!-- Section 5: Homonuclear Diatomics -->
+        <section class="story-section">
+            <h2>Homonuclear Diatomics: The Period 2 Series</h2>
+            <p>
+                Now we can systematically build MO diagrams for all Period 2 diatomic molecules. Watch what happens
+                as we fill the molecular orbitals with electrons.
+            </p>
+            <p style="margin-top: 1rem;">
+                <strong>Key pattern:</strong> There's a change in MO ordering at <span class="chemical-formula">O₂</span>.
+                Li₂ through N₂ have <em>s-p mixing</em>; O₂ through Ne₂ do not.
+            </p>
+        </section>
+
+        <div class="panel" style="margin-bottom: 2rem;">
+            <h3>Interactive: Build MO Diagrams</h3>
+            <div class="molecule-buttons">
+                <button class="mol-btn active" data-mol="Li2">Li₂</button>
+                <button class="mol-btn" data-mol="Be2">Be₂</button>
+                <button class="mol-btn" data-mol="B2">B₂</button>
+                <button class="mol-btn" data-mol="C2">C₂</button>
+                <button class="mol-btn" data-mol="N2">N₂</button>
+                <button class="mol-btn" data-mol="O2">O₂</button>
+                <button class="mol-btn" data-mol="F2">F₂</button>
+                <button class="mol-btn" data-mol="Ne2">Ne₂</button>
+            </div>
+            <div id="mo-diagram-container"></div>
+            <div class="info-box">
+                <div class="info-row">
+                    <span class="info-label">Molecule:</span>
+                    <span class="info-value" id="current-molecule">Li₂</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Bond Order:</span>
+                    <span class="info-value" id="bond-order">1.0</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Magnetic Property:</span>
+                    <span class="info-value diamagnetic" id="magnetic-prop">Diamagnetic</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Unpaired Electrons:</span>
+                    <span class="info-value" id="unpaired-count">0</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="explanation">
+            <h3>The AHA! Moment: Why O₂ is Paramagnetic</h3>
+            <img src="figures/ch2/fig_2_18_mo_diagram_li2_to_n2.png" alt="MO energy ordering" class="textbook-image">
+            <p style="text-align: center; color: var(--text-muted); font-size: 0.9rem; margin-top: 0.5rem;">
+                Two different MO orderings due to s-p mixing
+            </p>
+            <p style="margin-top: 1.5rem;">
+                Look at the <span class="chemical-formula">O₂</span> MO diagram above. The 1π<sub>g</sub>* antibonding orbitals
+                are <em>degenerate</em> (same energy). By Hund's rule, electrons fill these orbitals with parallel spins:
+            </p>
+            <div class="key-insight">
+                O₂ has <strong>two unpaired electrons</strong> in the 1π<sub>g</sub>* orbitals.
+                This makes it <strong>paramagnetic</strong>. VB theory cannot explain this!
+            </div>
+            <p>
+                <strong>Bond order of O₂:</strong> (10 bonding − 6 antibonding) / 2 = 2
+            </p>
+            <p style="color: var(--text-muted); margin-left: 1rem;">
+                (Not 10 and 6 total, but rather: σ2s, σ2s*, σ2p, π2p×2, π2p*×2)
+            </p>
+        </div>
+
+        <!-- Section 6: Heteronuclear Diatomics -->
+        <section class="story-section">
+            <h2>Heteronuclear Diatomics: When Atoms Differ</h2>
+            <p>
+                When two <em>different</em> atoms form a bond, their atomic orbitals have different energies.
+                The more electronegative atom has <span class="highlight">lower energy orbitals</span>.
+            </p>
+            <p style="margin-top: 1rem;">
+                Key consequence: <strong>The more electronegative atom contributes more to the bonding MO.</strong>
+                This creates polar bonds—unequal sharing of electrons.
+            </p>
+        </section>
+
+        <div class="interactive-grid">
+            <div class="panel">
+                <h3>Example: HF</h3>
+                <img src="figures/ch2/fig_2_21_mo_diagram_hf.png" alt="MO diagram for HF" class="textbook-image">
+                <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 1rem;">
+                    Fluorine is much more electronegative than hydrogen. The F 2p orbital is lower in energy
+                    than the H 1s orbital. The bonding MO is mostly F character → polar bond.
+                </p>
+            </div>
+
+            <div class="panel">
+                <h3>Example: CO</h3>
+                <img src="figures/ch2/fig_2_22_mo_diagram_co.png" alt="MO diagram for CO" class="textbook-image">
+                <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 1rem;">
+                    Carbon monoxide is <em>isoelectronic</em> with N₂ (same number of electrons).
+                    Bond order = 3 (triple bond), but there's a twist...
+                </p>
+            </div>
+        </div>
+
+        <div class="explanation">
+            <h3>CO as a Ligand: The Counterintuitive Result</h3>
+            <img src="figures/ch2/fig_2_23_co_frontier_orbitals.png" alt="CO frontier orbitals" class="textbook-image">
+            <p style="margin-top: 1rem;">
+                You might expect CO to bind to metals through the oxygen (more electronegative). <strong>Wrong!</strong>
+            </p>
+            <p>
+                The HOMO (highest occupied molecular orbital) in CO is a σ orbital with a <em>lone pair on carbon</em>.
+                This is the orbital that donates to metals. CO binds through <span class="chemical-formula">C</span>, not O.
+            </p>
+            <div class="key-insight">
+                Reactivity is determined by <strong>frontier orbitals</strong> (HOMO and LUMO), not just electronegativity.
+                You must look at the actual MO diagram to predict chemistry.
+            </div>
+        </div>
+
+        <!-- Section 7: The Big Picture -->
+        <section class="story-section">
+            <h2>The Big Picture: Why MO Theory Matters</h2>
+            <p>
+                Molecular orbital theory gives us:
+            </p>
+            <ul>
+                <li><strong>Correct predictions</strong> of bond order (including fractional values)</li>
+                <li><strong>Magnetic properties</strong> from electron configuration</li>
+                <li><strong>Explanations</strong> for photoelectron spectra and electronic transitions</li>
+                <li><strong>Understanding</strong> of reactivity through frontier orbitals</li>
+            </ul>
+            <div class="key-insight" style="margin-top: 1.5rem;">
+                Remember the Cu²⁺ question from Day 1? Why is [Cu(H₂O)₆]²⁺ blue? The answer involves
+                <strong>d-orbital splitting</strong>—which is really a coordination chemistry MO problem.
+                We're building toward <span class="highlight">Crystal Field Theory</span> and
+                <span class="highlight">Ligand Field Theory</span>.
+            </div>
+        </section>
+
+        <!-- Section 8: Summary Table -->
+        <div class="explanation">
+            <h3>Summary: Period 2 Homonuclear Diatomics</h3>
+            <table class="summary-table">
+                <thead>
+                    <tr>
+                        <th>Molecule</th>
+                        <th>Electrons</th>
+                        <th>Bond Order</th>
+                        <th>Magnetic</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Li₂</td>
+                        <td>6</td>
+                        <td>1.0</td>
+                        <td>Diamagnetic</td>
+                        <td>σ2s² σ2s*⁰</td>
+                    </tr>
+                    <tr>
+                        <td>Be₂</td>
+                        <td>8</td>
+                        <td>0.0</td>
+                        <td>—</td>
+                        <td>Does not exist (BO=0)</td>
+                    </tr>
+                    <tr>
+                        <td>B₂</td>
+                        <td>10</td>
+                        <td>1.0</td>
+                        <td style="color: var(--accent-red);">Paramagnetic</td>
+                        <td>Two unpaired e⁻ in π orbitals</td>
+                    </tr>
+                    <tr>
+                        <td>C₂</td>
+                        <td>12</td>
+                        <td>2.0</td>
+                        <td>Diamagnetic</td>
+                        <td>π orbitals filled</td>
+                    </tr>
+                    <tr>
+                        <td>N₂</td>
+                        <td>14</td>
+                        <td>3.0</td>
+                        <td>Diamagnetic</td>
+                        <td>Very stable triple bond</td>
+                    </tr>
+                    <tr>
+                        <td>O₂</td>
+                        <td>16</td>
+                        <td>2.0</td>
+                        <td style="color: var(--accent-red);">Paramagnetic</td>
+                        <td>Two unpaired e⁻ in π*</td>
+                    </tr>
+                    <tr>
+                        <td>F₂</td>
+                        <td>18</td>
+                        <td>1.0</td>
+                        <td>Diamagnetic</td>
+                        <td>Weak bond (low BO)</td>
+                    </tr>
+                    <tr>
+                        <td>Ne₂</td>
+                        <td>20</td>
+                        <td>0.0</td>
+                        <td>—</td>
+                        <td>Does not exist (BO=0)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Section 9: Practice -->
+        <div class="practice-section">
+            <h3>Practice: Test Your Understanding</h3>
+
+            <div class="question" onclick="toggleAnswer(this)">
+                <div class="question-text">
+                    <strong>Question 1:</strong> What is the bond order of O₂⁻ (superoxide)?
+                </div>
+                <div class="answer">
+                    <p>
+                        <strong>Answer:</strong> O₂⁻ has 17 electrons (one more than O₂). The extra electron goes into
+                        the antibonding π* orbital. Bond order = (10 − 7) / 2 = <strong>1.5</strong>
+                    </p>
+                    <p>
+                        This explains why superoxide is even <em>more</em> reactive than O₂—weaker bond!
+                    </p>
+                </div>
+            </div>
+
+            <div class="question" onclick="toggleAnswer(this)">
+                <div class="question-text">
+                    <strong>Question 2:</strong> Is NO (nitric oxide) paramagnetic or diamagnetic?
+                </div>
+                <div class="answer">
+                    <p>
+                        <strong>Answer:</strong> NO has 15 electrons (odd number). It must have at least one unpaired electron,
+                        so it is <strong>paramagnetic</strong>.
+                    </p>
+                    <p>
+                        The unpaired electron is in a π* antibonding orbital. Bond order = (10 − 5) / 2 = 2.5
+                    </p>
+                </div>
+            </div>
+
+            <div class="question" onclick="toggleAnswer(this)">
+                <div class="question-text">
+                    <strong>Question 3:</strong> Why does CO bind to metals through carbon, not oxygen?
+                </div>
+                <div class="answer">
+                    <p>
+                        <strong>Answer:</strong> The HOMO (highest occupied molecular orbital) in CO is a σ orbital
+                        with significant electron density on <strong>carbon</strong>. This is the orbital that acts as
+                        a Lewis base and donates to metal centers.
+                    </p>
+                    <p>
+                        Although oxygen is more electronegative, the frontier orbital character determines reactivity,
+                        not electronegativity alone.
+                    </p>
+                </div>
+            </div>
+
+            <div class="question" onclick="toggleAnswer(this)">
+                <div class="question-text">
+                    <strong>Question 4:</strong> Why is N₂ so unreactive despite being a strong Lewis base?
+                </div>
+                <div class="answer">
+                    <p>
+                        <strong>Answer:</strong> N₂ has a very high bond order (3.0) and a very strong triple bond.
+                        Although the HOMO is a σ bonding orbital that could donate electrons, the energy cost of
+                        breaking or weakening the N≡N bond is prohibitively high.
+                    </p>
+                    <p>
+                        This is why nitrogen fixation (converting N₂ to NH₃) requires extreme conditions or specialized enzymes.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            CHEM 361 · Inorganic Chemistry · McNeese State University<br>
+            <a href="intro-day1.html">Day 1 Intro</a> ·
+            <a href="quantum_numbers_explorer.html">Quantum Numbers</a> ·
+            <a href="../index.html">Course Hub</a>
+        </footer>
+    </div>
+
+    <script>
+        // Global state
+        let currentMolecule = 'Li2';
+        let separation = 3.0;
+        let overlapSketch, moDiagramSketch;
+
+        // Molecule data
+        const moleculeData = {
+            'Li2': { electrons: 6, bondOrder: 1.0, magnetic: 'Diamagnetic', unpaired: 0, hasMixing: true },
+            'Be2': { electrons: 8, bondOrder: 0.0, magnetic: 'Does not exist', unpaired: 0, hasMixing: true },
+            'B2': { electrons: 10, bondOrder: 1.0, magnetic: 'Paramagnetic', unpaired: 2, hasMixing: true },
+            'C2': { electrons: 12, bondOrder: 2.0, magnetic: 'Diamagnetic', unpaired: 0, hasMixing: true },
+            'N2': { electrons: 14, bondOrder: 3.0, magnetic: 'Diamagnetic', unpaired: 0, hasMixing: true },
+            'O2': { electrons: 16, bondOrder: 2.0, magnetic: 'Paramagnetic', unpaired: 2, hasMixing: false },
+            'F2': { electrons: 18, bondOrder: 1.0, magnetic: 'Diamagnetic', unpaired: 0, hasMixing: false },
+            'Ne2': { electrons: 20, bondOrder: 0.0, magnetic: 'Does not exist', unpaired: 0, hasMixing: false }
+        };
+
+        // MO labels (with s-p mixing)
+        const moLevelsMixing = [
+            { label: '1σg', bonding: true, capacity: 2, energy: 1 },
+            { label: '1σu*', bonding: false, capacity: 2, energy: 2 },
+            { label: '1πu', bonding: true, capacity: 4, energy: 3 },
+            { label: '2σg', bonding: true, capacity: 2, energy: 4 },
+            { label: '1πg*', bonding: false, capacity: 4, energy: 5 },
+            { label: '2σu*', bonding: false, capacity: 2, energy: 6 }
+        ];
+
+        // MO labels (without s-p mixing)
+        const moLevelsNoMixing = [
+            { label: '1σg', bonding: true, capacity: 2, energy: 1 },
+            { label: '1σu*', bonding: false, capacity: 2, energy: 2 },
+            { label: '2σg', bonding: true, capacity: 2, energy: 3 },
+            { label: '1πu', bonding: true, capacity: 4, energy: 4 },
+            { label: '1πg*', bonding: false, capacity: 4, energy: 5 },
+            { label: '2σu*', bonding: false, capacity: 2, energy: 6 }
+        ];
+
+        // Molecule button handlers
+        document.querySelectorAll('.mol-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                currentMolecule = btn.dataset.mol;
+                document.querySelectorAll('.mol-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                updateMoleculeInfo();
+            });
+        });
+
+        // Separation slider handler
+        const separationSlider = document.getElementById('separation-slider');
+        const separationValue = document.getElementById('separation-value');
+        separationSlider.addEventListener('input', (e) => {
+            separation = e.target.value / 10;
+            separationValue.textContent = separation.toFixed(1) + ' Å';
+        });
+
+        function updateMoleculeInfo() {
+            const data = moleculeData[currentMolecule];
+            const display = currentMolecule.replace('2', '₂');
+
+            document.getElementById('current-molecule').textContent = display;
+            document.getElementById('bond-order').textContent = data.bondOrder.toFixed(1);
+            document.getElementById('unpaired-count').textContent = data.unpaired;
+
+            const magProp = document.getElementById('magnetic-prop');
+            magProp.textContent = data.magnetic;
+            magProp.className = 'info-value';
+            if (data.magnetic === 'Paramagnetic') {
+                magProp.classList.add('paramagnetic');
+            } else if (data.magnetic === 'Diamagnetic') {
+                magProp.classList.add('diamagnetic');
+            }
+        }
+
+        // Toggle answer visibility
+        function toggleAnswer(element) {
+            const answer = element.querySelector('.answer');
+            answer.classList.toggle('revealed');
+        }
+
+        // Orbital Overlap Sketch
+        new p5((p) => {
+            overlapSketch = p;
+            let time = 0;
+
+            p.setup = () => {
+                const container = document.getElementById('orbital-overlap-container');
+                const canvas = p.createCanvas(container.offsetWidth, 400);
+                canvas.parent('orbital-overlap-container');
+            };
+
+            p.draw = () => {
+                p.background(10, 10, 15);
+                time += 0.01;
+
+                const w = p.width;
+                const h = p.height;
+                const centerY = h / 2;
+
+                // Calculate positions based on separation
+                const baseOffset = 100;
+                const offset = baseOffset + (separation - 3) * 20;
+                const centerX = w / 2;
+                const leftX = centerX - offset;
+                const rightX = centerX + offset;
+
+                // Draw atomic orbitals as Gaussian blobs
+                drawOrbitalWave(p, leftX, centerY, 60, true, 210);
+                drawOrbitalWave(p, rightX, centerY, 60, true, 210);
+
+                // Draw interference patterns if close enough
+                if (separation < 4) {
+                    const opacity = p.map(separation, 1, 4, 200, 0);
+
+                    // Bonding region (constructive)
+                    p.noStroke();
+                    p.fill(78, 236, 196, opacity * 0.3);
+                    const bondingWidth = p.map(separation, 1, 4, 120, 20);
+                    p.ellipse(centerX, centerY - 80, bondingWidth, 40);
+                    p.fill(78, 236, 196);
+                    p.textSize(12);
+                    p.textAlign(p.CENTER);
+                    p.text('Bonding MO', centerX, centerY - 110);
+                    p.text('(constructive)', centerX, centerY - 95);
+
+                    // Antibonding region (destructive)
+                    p.fill(255, 107, 107, opacity * 0.3);
+                    p.ellipse(centerX, centerY + 80, bondingWidth, 40);
+
+                    // Node line
+                    if (separation < 3) {
+                        p.stroke(255, 107, 107, opacity);
+                        p.strokeWeight(2);
+                        p.line(centerX, centerY + 60, centerX, centerY + 100);
+                    }
+
+                    p.fill(255, 107, 107);
+                    p.noStroke();
+                    p.textSize(12);
+                    p.text('Antibonding MO*', centerX, centerY + 110);
+                    p.text('(destructive, node)', centerX, centerY + 125);
+                }
+
+                // Labels
+                p.fill(212, 168, 85);
+                p.noStroke();
+                p.textSize(14);
+                p.textAlign(p.CENTER);
+                p.text('Atom A', leftX, h - 20);
+                p.text('Atom B', rightX, h - 20);
+
+                // Energy axis
+                p.stroke(138, 138, 138, 100);
+                p.strokeWeight(1);
+                p.line(30, 50, 30, h - 50);
+                p.fill(138, 138, 138);
+                p.textSize(11);
+                p.push();
+                p.translate(15, h/2);
+                p.rotate(-p.PI/2);
+                p.text('Energy', 0, 0);
+                p.pop();
+            };
+
+            function drawOrbitalWave(p, x, y, radius, positive, hue) {
+                // Draw orbital as series of concentric circles
+                p.noFill();
+                for (let i = 0; i < 8; i++) {
+                    const r = radius - i * 6;
+                    const alpha = 30 - i * 3;
+                    p.stroke(hue, 200, 255, alpha);
+                    p.strokeWeight(2);
+                    p.ellipse(x, y, r * 2, r * 2);
+                }
+
+                // Center
+                p.fill(hue, 200, 255, 100);
+                p.noStroke();
+                p.ellipse(x, y, 12, 12);
+            }
+
+            p.windowResized = () => {
+                const container = document.getElementById('orbital-overlap-container');
+                p.resizeCanvas(container.offsetWidth, 400);
+            };
+        });
+
+        // MO Diagram Sketch
+        new p5((p) => {
+            moDiagramSketch = p;
+
+            p.setup = () => {
+                const container = document.getElementById('mo-diagram-container');
+                const canvas = p.createCanvas(container.offsetWidth, 600);
+                canvas.parent('mo-diagram-container');
+                p.textFont('JetBrains Mono');
+            };
+
+            p.draw = () => {
+                p.background(10, 10, 15);
+
+                const w = p.width;
+                const h = p.height;
+                const data = moleculeData[currentMolecule];
+                const moLevels = data.hasMixing ? moLevelsMixing : moLevelsNoMixing;
+
+                // Draw MO diagram
+                const leftX = w * 0.15;
+                const rightX = w * 0.85;
+                const centerX = w / 2;
+                const levelHeight = (h - 100) / 7;
+
+                // Atomic orbital levels (left and right)
+                p.stroke(100);
+                p.strokeWeight(2);
+
+                // Left atom levels
+                p.line(leftX - 40, 80, leftX + 40, 80);
+                p.line(leftX - 40, h - 80, leftX + 40, h - 80);
+
+                // Right atom levels
+                p.line(rightX - 40, 80, rightX + 40, 80);
+                p.line(rightX - 40, h - 80, rightX + 40, h - 80);
+
+                // Labels
+                p.fill(138, 138, 138);
+                p.noStroke();
+                p.textSize(11);
+                p.textAlign(p.CENTER);
+                p.text('Atom A', leftX, h - 50);
+                p.text('Atom B', rightX, h - 50);
+                p.text('Molecular Orbitals', centerX, 30);
+
+                // Draw MO levels and fill with electrons
+                let electronsToPlace = data.electrons;
+
+                moLevels.forEach((level, i) => {
+                    const y = h - 100 - (level.energy * levelHeight);
+
+                    // MO level line
+                    const lineColor = level.bonding ? [74, 158, 255] : [255, 107, 107];
+                    p.stroke(lineColor[0], lineColor[1], lineColor[2]);
+                    p.strokeWeight(2);
+                    p.line(centerX - 60, y, centerX + 60, y);
+
+                    // Label
+                    p.fill(lineColor[0], lineColor[1], lineColor[2]);
+                    p.noStroke();
+                    p.textSize(12);
+                    p.textAlign(p.LEFT);
+                    p.text(level.label, centerX + 70, y + 5);
+
+                    // Connecting lines from atomic orbitals
+                    p.stroke(100, 100);
+                    p.strokeWeight(1);
+                    if (i === 0) {
+                        // Lowest bonding - connect from 2s
+                        p.line(leftX + 40, h - 80, centerX - 60, y);
+                        p.line(rightX - 40, h - 80, centerX + 60, y);
+                    } else if (i === 1) {
+                        // Lowest antibonding
+                        p.line(leftX + 40, h - 80, centerX - 60, y);
+                        p.line(rightX - 40, h - 80, centerX + 60, y);
+                    } else if (i >= 2 && i <= 3) {
+                        // π or σ from 2p
+                        p.line(leftX + 40, 80, centerX - 60, y);
+                        p.line(rightX - 40, 80, centerX + 60, y);
+                    } else {
+                        // π* or σ* from 2p
+                        p.line(leftX + 40, 80, centerX - 60, y);
+                        p.line(rightX - 40, 80, centerX + 60, y);
+                    }
+
+                    // Draw electrons
+                    const electronsHere = Math.min(electronsToPlace, level.capacity);
+                    electronsToPlace -= electronsHere;
+
+                    if (level.capacity === 2) {
+                        // Single orbital - can hold 2 electrons
+                        if (electronsHere >= 1) {
+                            drawElectron(p, centerX - 20, y - 5, true);
+                        }
+                        if (electronsHere >= 2) {
+                            drawElectron(p, centerX - 20, y - 5, false);
+                        }
+                    } else {
+                        // Degenerate orbitals (π) - 2 orbitals, 4 capacity
+                        // Fill according to Hund's rule
+                        if (electronsHere >= 1) {
+                            drawElectron(p, centerX - 35, y - 5, true);
+                        }
+                        if (electronsHere >= 2) {
+                            drawElectron(p, centerX + 15, y - 5, true);
+                        }
+                        if (electronsHere >= 3) {
+                            drawElectron(p, centerX - 35, y - 5, false);
+                        }
+                        if (electronsHere >= 4) {
+                            drawElectron(p, centerX + 15, y - 5, false);
+                        }
+                    }
+                });
+
+                // Energy axis
+                p.stroke(138, 138, 138, 80);
+                p.strokeWeight(1);
+                p.line(w * 0.05, 80, w * 0.05, h - 80);
+                p.fill(138, 138, 138);
+                p.textSize(11);
+                p.push();
+                p.translate(20, h/2);
+                p.rotate(-p.PI/2);
+                p.text('Energy', 0, 0);
+                p.pop();
+            };
+
+            function drawElectron(p, x, y, spinUp) {
+                // Arrow for electron
+                p.noStroke();
+                p.fill(212, 168, 85);
+
+                if (spinUp) {
+                    // Up arrow
+                    p.triangle(x, y - 8, x - 4, y + 2, x + 4, y + 2);
+                    p.rect(x - 1.5, y + 2, 3, 10);
+                } else {
+                    // Down arrow
+                    p.triangle(x, y + 8, x - 4, y - 2, x + 4, y - 2);
+                    p.rect(x - 1.5, y - 12, 3, 10);
+                }
+            }
+
+            p.windowResized = () => {
+                const container = document.getElementById('mo-diagram-container');
+                p.resizeCanvas(container.offsetWidth, 600);
+            };
+        });
+
+        // Initial update
+        updateMoleculeInfo();
+    </script>
+</body>
+</html>
