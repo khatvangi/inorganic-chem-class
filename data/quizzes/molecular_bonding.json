@@ -1,0 +1,512 @@
+[
+  {
+    "question": "What is the bond order of O₂ according to molecular orbital theory?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "1.5"
+    ],
+    "answer": "B",
+    "explanation": "O₂ has the electron configuration (σ2s)²(σ*2s)²(σ2p)²(π2p)⁴(π*2p)². Bond order = ½(8 bonding − 4 antibonding) = 2. This matches the experimentally observed double bond.",
+    "hints": [
+      "Count all bonding and antibonding electrons in the MO diagram for O₂.",
+      "Bond order = ½(bonding electrons − antibonding electrons). O₂ has 12 valence electrons."
+    ],
+    "topic": "Bond order calculation",
+    "module": "molecular_bonding"
+  },
+  {
+    "question": "Why is O₂ paramagnetic?",
+    "options": [
+      "It has an odd number of total electrons",
+      "It has two unpaired electrons in degenerate π* orbitals",
+      "Its σ bonding orbital is singly occupied",
+      "Oxygen atoms each contribute one unpaired electron to the bond"
+    ],
+    "answer": "B",
+    "explanation": "MO theory shows that the last two electrons in O₂ enter the two degenerate π*2p orbitals. By Hund's rule, they occupy these orbitals with parallel spins, giving two unpaired electrons. This was the first major success of MO theory — neither Lewis structures nor VB theory predicted this paramagnetism.",
+    "hints": [
+      "Think about what happens when two electrons must fill two degenerate orbitals.",
+      "Hund's rule applies to degenerate molecular orbitals just as it does to atomic orbitals."
+    ],
+    "topic": "O₂ paramagnetism",
+    "module": "molecular_bonding"
+  },
+  {
+    "question": "Which theory correctly predicts that O₂ is paramagnetic?",
+    "options": [
+      "Lewis dot structure theory",
+      "Valence bond theory",
+      "Molecular orbital theory",
+      "VSEPR theory"
+    ],
+    "answer": "C",
+    "explanation": "Both Lewis structures and VB theory predict a double bond in O₂ with all electrons paired, which would make it diamagnetic. MO theory correctly predicts two unpaired electrons in the degenerate π* orbitals. As JD Lee states, this was 'the first success of molecular orbital theory.'",
+    "hints": [
+      "Draw the Lewis structure of O₂ — does it show any unpaired electrons?",
+      "The answer involves a theory that considers electrons as delocalized over the entire molecule."
+    ],
+    "topic": "VB vs MO theory",
+    "module": "molecular_bonding"
+  },
+  {
+    "question": "What is the formula for bond order in MO theory?",
+    "options": [
+      "½ × (bonding electrons + antibonding electrons)",
+      "½ × (bonding electrons − antibonding electrons)",
+      "bonding electrons − antibonding electrons",
+      "bonding electrons / antibonding electrons"
+    ],
+    "answer": "B",
+    "explanation": "Bond order b = ½(n − n*), where n is the number of electrons in bonding MOs and n* is the number in antibonding MOs. A bond order of zero means the molecule does not exist (e.g., He₂).",
+    "hints": [
+      "The formula involves both bonding and antibonding electron counts.",
+      "A factor of ½ is needed because two electrons constitute one bond."
+    ],
+    "topic": "Bond order calculation",
+    "module": "molecular_bonding"
+  },
+  {
+    "question": "What is the bond order of He₂, and what does this predict about its stability?",
+    "options": [
+      "Bond order 1; He₂ is stable",
+      "Bond order 0.5; He₂ is weakly bound",
+      "Bond order 0; He₂ does not form a stable molecule",
+      "Bond order 2; He₂ has a double bond"
+    ],
+    "answer": "C",
+    "explanation": "He₂ would have the configuration (σ1s)²(σ*1s)². Bond order = ½(2 − 2) = 0. A bond order of zero means no net bonding — the molecule is not stable. He₂ does not exist under normal conditions.",
+    "hints": [
+      "Each He atom has 2 electrons, so He₂ has 4 total electrons filling σ1s and σ*1s.",
+      "If antibonding exactly cancels bonding, what is the net bond order?"
+    ],
+    "topic": "Bond order calculation",
+    "module": "molecular_bonding"
+  },
+  {
+    "question": "In the MO diagram for N₂, which orbital is the HOMO (highest occupied molecular orbital)?",
+    "options": [
+      "σ2p (σg)",
+      "π2p (πu) — the degenerate pair",
+      "σ*2p (σu)",
+      "π*2p (πg)"
+    ],
+    "answer": "A",
+    "explanation": "Due to s–p mixing in N₂, the σ2p orbital is pushed above the π2p pair. The filling order is (σ2s)(σ*2s)(π2p)⁴(σ2p)². The HOMO is the σ2p orbital. This is confirmed by photoelectron spectroscopy of N₂.",
+    "hints": [
+      "s–p mixing affects the orbital ordering for early Period 2 diatomics.",
+      "In N₂, the σ2p level lies above the π2p levels — the last electrons go into σ2p."
+    ],
+    "topic": "s-p mixing",
+    "module": "molecular_bonding"
+  },
+  {
+    "question": "For which Period 2 homonuclear diatomics does s–p mixing significantly affect the MO energy level ordering?",
+    "options": [
+      "O₂ and F₂ only",
+      "Li₂ through N₂",
+      "All Period 2 diatomics equally",
+      "Only B₂ and C₂"
+    ],
+    "answer": "B",
+    "explanation": "s–p mixing is significant for the early Period 2 diatomics (Li₂ through N₂), where the 2s and 2p energy gap is relatively small. For O₂ and F₂, the increased nuclear charge widens the 2s–2p gap, reducing s–p mixing. The result is that σ2p lies above π2p for Li₂–N₂, but below π2p for O₂–F₂.",
+    "hints": [
+      "s–p mixing depends on the energy gap between 2s and 2p orbitals.",
+      "As nuclear charge increases across Period 2, the 2s–2p gap widens."
+    ],
+    "topic": "s-p mixing",
+    "module": "molecular_bonding"
+  },
+  {
+    "question": "What type of experimental evidence directly supports MO energy level diagrams?",
+    "options": [
+      "X-ray crystallography",
+      "Photoelectron spectroscopy (PES)",
+      "Infrared spectroscopy",
+      "Mass spectrometry"
+    ],
+    "answer": "B",
+    "explanation": "Photoelectron spectroscopy measures ionization energies of electrons in different molecular orbitals. The PES spectrum of N₂ provides what Housecroft calls 'a vivid portrayal of the molecular orbital energy levels,' directly confirming the ordering predicted by MO theory, including the effects of s–p mixing.",
+    "hints": [
+      "This technique ejects electrons from molecules using UV photons and measures their kinetic energies.",
+      "It gives direct evidence of how many energy levels exist and their relative energies."
+    ],
+    "topic": "Photoelectron spectroscopy",
+    "module": "molecular_bonding"
+  },
+  {
+    "question": "In the LCAO approach, what happens when two atomic orbitals combine constructively (in-phase)?",
+    "options": [
+      "An antibonding molecular orbital is formed",
+      "A bonding molecular orbital is formed",
+      "A non-bonding orbital is formed",
+      "The orbitals cancel completely"
+    ],
+    "answer": "B",
+    "explanation": "In LCAO (Linear Combination of Atomic Orbitals), in-phase (constructive) overlap increases electron density between the nuclei, creating a bonding MO that is lower in energy than the parent atomic orbitals. Out-of-phase (destructive) combination creates an antibonding MO with a node between the nuclei.",
+    "hints": [
+      "Think of wave interference: what happens when two waves add in phase?",
+      "Increased electron density between nuclei means lower energy — more attraction."
+    ],
+    "topic": "LCAO principle",
+    "module": "molecular_bonding"
+  },
+  {
+    "question": "How many molecular orbitals are formed when two atomic orbitals combine?",
+    "options": [
+      "One — a bonding orbital",
+      "Two — one bonding and one antibonding",
+      "Three — bonding, non-bonding, and antibonding",
+      "It depends on the type of atomic orbitals"
+    ],
+    "answer": "B",
+    "explanation": "A fundamental rule of MO theory: the number of molecular orbitals formed equals the number of atomic orbitals combined. Two atomic orbitals produce two MOs — one bonding (lower energy) and one antibonding (higher energy). The antibonding orbital is always raised in energy more than the bonding orbital is lowered.",
+    "hints": [
+      "Conservation of orbitals: orbitals in = orbitals out.",
+      "One combination adds wave functions (bonding), the other subtracts (antibonding)."
+    ],
+    "topic": "LCAO principle",
+    "module": "molecular_bonding"
+  },
+  {
+    "question": "What is a σ (sigma) bond?",
+    "options": [
+      "A bond formed by side-on overlap of p orbitals",
+      "A bond formed by head-on (end-on) overlap of orbitals along the internuclear axis",
+      "Any bond between two s orbitals",
+      "A bond that has a nodal plane containing the internuclear axis"
+    ],
+    "answer": "B",
+    "explanation": "A σ bond is formed by head-on overlap of atomic orbitals along the internuclear axis. It has cylindrical symmetry about that axis. σ bonds can form from s–s, s–p, or p–p (head-on) overlap. A π bond, by contrast, forms from side-on overlap and has a nodal plane containing the internuclear axis.",
+    "hints": [
+      "Think about the symmetry of electron density around the bond axis.",
+      "This type of bond has no nodal plane along the internuclear axis."
+    ],
+    "topic": "Sigma and pi bonds",
+    "module": "molecular_bonding"
+  },
+  {
+    "question": "A π (pi) bond differs from a σ bond because it:",
+    "options": [
+      "Has cylindrical symmetry about the internuclear axis",
+      "Is always stronger than a σ bond",
+      "Has a nodal plane containing the internuclear axis",
+      "Can only form between d orbitals"
+    ],
+    "answer": "C",
+    "explanation": "A π bond is formed by the side-on (lateral) overlap of p orbitals (or d orbitals). The defining characteristic is a nodal plane that contains the internuclear axis — there is zero electron density along the bond axis itself. π bonds are generally weaker than σ bonds because the lateral overlap is less effective.",
+    "hints": [
+      "Where is the electron density in a π bond relative to the bond axis?",
+      "A π bond has a specific type of nodal surface that a σ bond lacks."
+    ],
+    "topic": "Sigma and pi bonds",
+    "module": "molecular_bonding"
+  },
+  {
+    "question": "What is the bond order of N₂?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "2.5"
+    ],
+    "answer": "C",
+    "explanation": "N₂ has 10 valence electrons: (σ2s)²(σ*2s)²(π2p)⁴(σ2p)². Bond order = ½(8 − 2) = 3. This triple bond makes N₂ one of the strongest diatomic molecules (bond dissociation energy ≈ 945 kJ/mol).",
+    "hints": [
+      "N has 5 valence electrons, so N₂ has 10 total to fill into MOs.",
+      "Count: σ2s(2) + π2p(4) + σ2p(2) = 8 bonding; σ*2s(2) = 2 antibonding."
+    ],
+    "topic": "Bond order calculation",
+    "module": "molecular_bonding"
+  },
+  {
+    "question": "What is the bond order of F₂?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "0"
+    ],
+    "answer": "A",
+    "explanation": "F₂ has 14 valence electrons: (σ2s)²(σ*2s)²(σ2p)²(π2p)⁴(π*2p)⁴. Bond order = ½(8 − 6) = 1. This single bond is consistent with the relatively weak F–F bond (159 kJ/mol) and long bond length.",
+    "hints": [
+      "F has 7 valence electrons, so F₂ has 14 to distribute among MOs.",
+      "The π*2p orbitals are fully occupied in F₂, adding to the antibonding count."
+    ],
+    "topic": "Bond order calculation",
+    "module": "molecular_bonding"
+  },
+  {
+    "question": "Which of the following species is expected to be diamagnetic?",
+    "options": [
+      "O₂",
+      "B₂",
+      "N₂",
+      "O₂⁻"
+    ],
+    "answer": "C",
+    "explanation": "N₂ has all electrons paired: (σ2s)²(σ*2s)²(π2p)⁴(σ2p)². No unpaired electrons → diamagnetic. O₂ has 2 unpaired electrons in π*, B₂ has 2 unpaired electrons in π, and O₂⁻ has 1 unpaired electron in π*.",
+    "hints": [
+      "A molecule is diamagnetic only if ALL its electrons are paired.",
+      "Fill the MO diagram for each species and check for unpaired electrons."
+    ],
+    "topic": "Magnetic properties",
+    "module": "molecular_bonding"
+  },
+  {
+    "question": "The superoxide ion O₂⁻ has a bond order of:",
+    "options": [
+      "2",
+      "1",
+      "1.5",
+      "0.5"
+    ],
+    "answer": "C",
+    "explanation": "O₂⁻ has 13 valence electrons: (σ2s)²(σ*2s)²(σ2p)²(π2p)⁴(π*2p)³. Bond order = ½(8 − 5) = 1.5. Adding one electron to O₂ weakens the bond (lower bond order) and lengthens it.",
+    "hints": [
+      "O₂⁻ has one more electron than O₂. Where does it go?",
+      "The extra electron enters a π* (antibonding) orbital."
+    ],
+    "topic": "Bond order calculation",
+    "module": "molecular_bonding"
+  },
+  {
+    "question": "In a heteronuclear diatomic molecule AB where B is more electronegative, which atom contributes more to the bonding molecular orbitals?",
+    "options": [
+      "Atom A (less electronegative)",
+      "Atom B (more electronegative)",
+      "Both contribute equally",
+      "It depends on the bond order"
+    ],
+    "answer": "B",
+    "explanation": "In a heteronuclear diatomic, the bonding MO has a greater contribution from the more electronegative atom — the bonding electrons are more likely to be found near that atom. Conversely, the antibonding MO has a greater contribution from the less electronegative atom.",
+    "hints": [
+      "More electronegative atoms have lower-energy atomic orbitals.",
+      "The bonding MO is closer in energy to the lower atomic orbital, so it resembles it more."
+    ],
+    "topic": "Heteronuclear diatomics",
+    "module": "molecular_bonding"
+  },
+  {
+    "question": "In carbon monoxide (CO), the HOMO has which symmetry and is localized mainly on which atom?",
+    "options": [
+      "π symmetry, mainly on oxygen",
+      "σ symmetry, mainly on carbon",
+      "σ symmetry, mainly on oxygen",
+      "π symmetry, mainly on carbon"
+    ],
+    "answer": "B",
+    "explanation": "The HOMO of CO has σ symmetry and is essentially a lone pair lobe projecting from the carbon atom. This is why CO acts as a σ-donor through carbon when it binds to transition metals. The LUMO consists of the empty π* orbitals, enabling CO to act simultaneously as a π-acceptor.",
+    "hints": [
+      "CO binds to metals through the carbon end — which orbital enables this?",
+      "The HOMO projects outward from one end of the molecule as a lobe."
+    ],
+    "topic": "CO frontier orbitals",
+    "module": "molecular_bonding"
+  },
+  {
+    "question": "CO acts as both a σ-donor and π-acceptor when binding to transition metals. Which orbitals are involved in π-backbonding?",
+    "options": [
+      "Filled metal d orbitals donate into empty CO π* orbitals",
+      "Empty metal d orbitals accept from filled CO π orbitals",
+      "Filled CO σ orbital donates into empty metal d orbitals",
+      "Filled metal s orbitals donate into empty CO σ* orbitals"
+    ],
+    "answer": "A",
+    "explanation": "In π-backbonding, electrons flow from filled metal d orbitals into the empty π* (antibonding) orbitals of CO. This synergistic bonding — σ-donation from CO to metal plus π-backdonation from metal to CO — strengthens the M–C bond while weakening the C–O bond.",
+    "hints": [
+      "Back-bonding involves electron flow FROM the metal TO the ligand.",
+      "Which empty orbitals on CO have the right symmetry (π) to overlap with metal d orbitals?"
+    ],
+    "topic": "CO frontier orbitals",
+    "module": "molecular_bonding"
+  },
+  {
+    "question": "In the MO diagram for HF, which atomic orbitals of F participate most in bonding with H 1s?",
+    "options": [
+      "F 2s only",
+      "F 2p only (specifically the pz along the bond axis)",
+      "All three F 2p orbitals equally",
+      "F 2s and all F 2p orbitals equally"
+    ],
+    "answer": "B",
+    "explanation": "In HF, the H 1s orbital has the correct symmetry to overlap with the F 2pz orbital (along the bond axis). The F 2px and 2py orbitals are non-bonding — they have no net overlap with H 1s due to symmetry. The F 2s orbital is too low in energy to mix significantly with H 1s.",
+    "hints": [
+      "Only orbitals with matching symmetry along the bond axis can overlap.",
+      "The F 2s orbital is much lower in energy than H 1s — poor energy match."
+    ],
+    "topic": "Heteronuclear diatomics",
+    "module": "molecular_bonding"
+  },
+  {
+    "question": "As you go from Li₂ to N₂ across Period 2, the bond order generally:",
+    "options": [
+      "Stays constant at 1",
+      "Increases from 1 to 3",
+      "Decreases from 3 to 1",
+      "Alternates between 1 and 2"
+    ],
+    "answer": "B",
+    "explanation": "Li₂ has bond order 1, Be₂ has bond order 0, B₂ has bond order 1, C₂ has bond order 2, N₂ has bond order 3. The general trend is increasing bond order as more bonding MOs are filled. N₂ reaches the maximum with a triple bond before antibonding orbitals begin filling for O₂ and F₂.",
+    "hints": [
+      "Each additional pair of bonding electrons adds to the bond order.",
+      "The trend reverses after N₂ as π* orbitals begin to fill."
+    ],
+    "topic": "Periodic trends in bonding",
+    "module": "molecular_bonding"
+  },
+  {
+    "question": "Be₂ does not exist as a stable molecule. What is its predicted bond order?",
+    "options": [
+      "0.5",
+      "1",
+      "0",
+      "−1"
+    ],
+    "answer": "C",
+    "explanation": "Be₂ would have the configuration (σ2s)²(σ*2s)². Bond order = ½(2 − 2) = 0. With no net bonding, the molecule has no driving force to form. This is analogous to He₂.",
+    "hints": [
+      "Be has 2 valence electrons (2s²), so Be₂ has 4 valence electrons.",
+      "Both the bonding and antibonding σ orbitals from the 2s combination are filled."
+    ],
+    "topic": "Bond order calculation",
+    "module": "molecular_bonding"
+  },
+  {
+    "question": "B₂ is paramagnetic with two unpaired electrons. Which orbital ordering explains this?",
+    "options": [
+      "σ2p is filled before π2p (no s–p mixing)",
+      "π2p is filled before σ2p (with s–p mixing), and Hund's rule applies",
+      "σ*2s has unpaired electrons",
+      "The 2s and 2p orbitals are degenerate in B"
+    ],
+    "answer": "B",
+    "explanation": "With s–p mixing, the π2p orbitals lie below σ2p for B₂. After filling (σ2s)²(σ*2s)², the next 2 electrons enter the degenerate π2p pair. By Hund's rule, one electron goes into each π orbital with parallel spins → 2 unpaired electrons → paramagnetic. Without s–p mixing, σ2p would fill first and B₂ would be diamagnetic — which contradicts experiment.",
+    "hints": [
+      "s–p mixing pushes σ2p above π2p for early Period 2 diatomics.",
+      "Two electrons entering two degenerate orbitals: Hund's rule says one in each, parallel spins."
+    ],
+    "topic": "s-p mixing",
+    "module": "molecular_bonding"
+  },
+  {
+    "question": "What does a bond order of zero predict about a molecule?",
+    "options": [
+      "The molecule has a very strong bond",
+      "The molecule exists but with a very long bond",
+      "The molecule does not form a stable bond",
+      "The molecule has equal numbers of σ and π bonds"
+    ],
+    "answer": "C",
+    "explanation": "A bond order of zero means the antibonding effect exactly cancels the bonding effect — there is no net stabilization from forming the bond. Examples include He₂ and Be₂, neither of which exists as stable diatomic molecules.",
+    "hints": [
+      "Bond order reflects the net bonding in a molecule.",
+      "Zero bonding − zero antibonding = zero, but also equal bonding and antibonding = zero."
+    ],
+    "topic": "Bond order calculation",
+    "module": "molecular_bonding"
+  },
+  {
+    "question": "Which relationship between bond order, bond length, and bond strength is correct?",
+    "options": [
+      "Higher bond order → longer bond → weaker bond",
+      "Higher bond order → shorter bond → stronger bond",
+      "Higher bond order → shorter bond → weaker bond",
+      "Bond order has no relationship to bond length or strength"
+    ],
+    "answer": "B",
+    "explanation": "As bond order increases, more electron density is concentrated between the nuclei, pulling them closer together (shorter bond) and requiring more energy to break (stronger bond). For example, N₂ (bond order 3) has a shorter, stronger bond than O₂ (bond order 2), which in turn is shorter and stronger than F₂ (bond order 1).",
+    "hints": [
+      "More bonding electrons between nuclei pull the atoms closer together.",
+      "Compare N₂ (bond order 3, 110 pm) with O₂ (bond order 2, 121 pm)."
+    ],
+    "topic": "Bond properties",
+    "module": "molecular_bonding"
+  },
+  {
+    "question": "The Ketelaar triangle classifies bonding into three types based on electronegativity differences. Which three types are represented at the vertices?",
+    "options": [
+      "σ bonding, π bonding, and metallic bonding",
+      "Ionic, covalent, and metallic bonding",
+      "Single, double, and triple bonding",
+      "Polar covalent, nonpolar covalent, and coordinate bonding"
+    ],
+    "answer": "B",
+    "explanation": "The Ketelaar (or van Arkel–Ketelaar) triangle places ionic bonding, covalent bonding, and metallic bonding at its three vertices. The position of a compound within the triangle depends on the average electronegativity and the electronegativity difference of the constituent atoms.",
+    "hints": [
+      "This triangle captures ALL the major categories of chemical bonding.",
+      "One vertex describes bonding in NaCl, another in diamond, and the third in iron metal."
+    ],
+    "topic": "Ketelaar triangle",
+    "module": "molecular_bonding"
+  },
+  {
+    "question": "An antibonding MO is labeled with a star (*). Compared to the parent atomic orbitals, this orbital:",
+    "options": [
+      "Is lower in energy and has a node between the nuclei",
+      "Is higher in energy and has a node between the nuclei",
+      "Is lower in energy and has increased electron density between the nuclei",
+      "Has the same energy as the parent atomic orbitals"
+    ],
+    "answer": "B",
+    "explanation": "An antibonding molecular orbital is formed by out-of-phase (destructive) combination of atomic orbitals. It has a nodal plane between the nuclei (reduced electron density) and is higher in energy than the parent atomic orbitals. Electrons in antibonding orbitals destabilize the molecule.",
+    "hints": [
+      "The star (*) notation always indicates antibonding character.",
+      "Destructive interference creates a node — a region of zero electron density between the atoms."
+    ],
+    "topic": "LCAO principle",
+    "module": "molecular_bonding"
+  },
+  {
+    "question": "In MO theory, 'gerade' (g) and 'ungerade' (u) labels describe:",
+    "options": [
+      "Whether the orbital is bonding or antibonding",
+      "The symmetry of the MO with respect to an inversion center",
+      "The energy of the orbital relative to the atomic orbitals",
+      "Whether the orbital is σ or π type"
+    ],
+    "answer": "B",
+    "explanation": "Gerade (g, German for 'even') means the MO is symmetric with respect to inversion through the center of the molecule. Ungerade (u, 'uneven') means the orbital changes sign upon inversion. For homonuclear diatomics: σ bonding = g, σ* antibonding = u, π bonding = u, π* antibonding = g.",
+    "hints": [
+      "These labels come from the German words for 'even' and 'odd.'",
+      "They describe what happens to the orbital's sign when you invert through the molecular center."
+    ],
+    "topic": "MO symmetry labels",
+    "module": "molecular_bonding"
+  },
+  {
+    "question": "What is the bond order of O₂²⁻ (peroxide ion)?",
+    "options": [
+      "0",
+      "1",
+      "1.5",
+      "2"
+    ],
+    "answer": "B",
+    "explanation": "O₂²⁻ has 14 valence electrons (12 from O₂ + 2 extra). Configuration: (σ2s)²(σ*2s)²(σ2p)²(π2p)⁴(π*2p)⁴. Bond order = ½(8 − 6) = 1. The peroxide ion has a single bond, consistent with its longer O–O distance (149 pm vs. 121 pm for O₂).",
+    "hints": [
+      "O₂²⁻ has two more electrons than O₂. They fill the remaining π* orbitals.",
+      "Filling all π* orbitals brings the antibonding count up significantly."
+    ],
+    "topic": "Bond order calculation",
+    "module": "molecular_bonding"
+  },
+  {
+    "question": "For effective MO formation, which condition must the combining atomic orbitals satisfy?",
+    "options": [
+      "They must be on the same atom",
+      "They must have similar energy and appropriate symmetry for overlap",
+      "They must both be s orbitals",
+      "They must have identical quantum numbers"
+    ],
+    "answer": "B",
+    "explanation": "Two conditions are required for effective LCAO: (1) the atomic orbitals must have compatible symmetry to allow net overlap, and (2) they must be similar in energy. If the energy difference is too large, the interaction is weak and the resulting MO barely differs from the parent AO. This is why H 1s interacts with F 2p but not with F 2s in HF.",
+    "hints": [
+      "Orbitals that are very different in energy mix poorly.",
+      "Symmetry determines whether the overlap integral is zero or non-zero."
+    ],
+    "topic": "LCAO principle",
+    "module": "molecular_bonding"
+  }
+]
