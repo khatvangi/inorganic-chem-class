@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Test Bank | CHEM 361</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+    --bg: #faf8f4;
+    --bg-warm: #f5f0e8;
+    --bg-card: #ffffff;
+    --ink: #1a1a1a;
+    --ink-light: #4a4540;
+    --ink-muted: #8a8078;
+    --accent: #b44a1e;
+    --accent-light: #e8d5c4;
+    --teal: #1a5c5a;
+    --teal-light: #e0f0ef;
+    --stroke: #e0dbd3;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Crimson Pro', Georgia, serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+.topbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(250, 248, 244, 0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--stroke);
+    padding: 0.75rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar-left {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--ink-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.topbar-left a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.hero {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 4rem 2rem 2rem;
+    border-bottom: 2px solid var(--accent);
+    margin-bottom: 2rem;
+}
+
+.hero-eyebrow {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+}
+
+.hero h1 {
+    font-family: 'Crimson Pro', serif;
+    font-size: clamp(2.2rem, 5vw, 3.2rem);
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 0.75rem;
+}
+
+.hero-sub {
+    font-size: 1.15rem;
+    color: var(--ink-light);
+    font-style: italic;
+    max-width: 560px;
+}
+
+.content {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 2rem 4rem;
+}
+
+/* -- unit sections -- */
+.unit-head {
+    margin: 2.5rem 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--stroke);
+}
+
+.unit-head h2 {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--teal);
+}
+
+.unit-head .unit-count {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    color: var(--ink-muted);
+}
+
+/* -- topic cards -- */
+.topic-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: var(--bg-card);
+    border: 1px solid var(--stroke);
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 0.75rem;
+    text-decoration: none;
+    color: var(--ink);
+    transition: all 0.15s;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+}
+
+.topic-card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transform: translateY(-1px);
+}
+
+.topic-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #fff;
+    background: var(--teal);
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.topic-num.done {
+    background: #2e7d32;
+}
+
+.topic-info {
+    flex: 1;
+}
+
+.topic-title {
+    font-family: 'Crimson Pro', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.topic-meta {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.75rem;
+    color: var(--ink-muted);
+    margin-top: 0.15rem;
+}
+
+.topic-progress {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    color: var(--ink-muted);
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.topic-progress .score {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--teal);
+}
+
+.topic-card.disabled {
+    opacity: 0.45;
+    pointer-events: none;
+}
+
+.topic-card.disabled .topic-num {
+    background: var(--ink-muted);
+}
+
+/* -- overall stats bar -- */
+.stats-bar {
+    display: flex;
+    gap: 1.5rem;
+    margin: 1.5rem 0 0;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.82rem;
+    color: var(--ink-muted);
+}
+
+.stats-bar .stat-val {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600;
+    color: var(--teal);
+    font-size: 1.1rem;
+}
+
+/* -- responsive -- */
+@media (max-width: 600px) {
+    .hero { padding: 2.5rem 1rem 1.5rem; }
+    .content { padding: 0 1rem 3rem; }
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+    <div class="topbar-left">
+        <a href="../index.html">CHEM 361</a> / Test Bank
+    </div>
+</div>
+
+<div class="hero">
+    <div class="hero-eyebrow">CHEM 361 &mdash; Inorganic Chemistry</div>
+    <h1>Interactive Test Bank</h1>
+    <p class="hero-sub">
+        Practice problems drawn from 7 textbooks with inline figures, instant feedback, and detailed explanations. Select a topic to begin.
+    </p>
+    <div class="stats-bar">
+        <div>Topics completed: <span class="stat-val" id="statTopics">0 / 17</span></div>
+        <div>Total score: <span class="stat-val" id="statScore">—</span></div>
+    </div>
+</div>
+
+<div class="content">
+
+    <!-- ═══ UNIT 1 ═══ -->
+    <div class="unit-head">
+        <h2>Unit 1 &mdash; Atomic Structure &amp; Bonding</h2>
+        <span class="unit-count">4 topics &middot; 57 questions</span>
+    </div>
+
+    <a class="topic-card" href="quantum_numbers.html" data-slug="quantum_numbers" data-total="15">
+        <div class="topic-num">1</div>
+        <div class="topic-info">
+            <div class="topic-title">Quantum Numbers &amp; Atomic Orbitals</div>
+            <div class="topic-meta">15 questions &middot; Housecroft Ch 1, Atkins Ch 1, JD Lee Ch 2</div>
+        </div>
+        <div class="topic-progress"><span class="score" data-score></span></div>
+    </a>
+
+    <a class="topic-card disabled" href="electron_configuration.html" data-slug="electron_configuration" data-total="15">
+        <div class="topic-num">2</div>
+        <div class="topic-info">
+            <div class="topic-title">Electron Configuration &amp; Periodic Properties</div>
+            <div class="topic-meta">15 questions &middot; Housecroft Ch 1, Atkins Ch 1</div>
+        </div>
+        <div class="topic-progress"><span class="score" data-score></span></div>
+    </a>
+
+    <a class="topic-card disabled" href="mo_theory.html" data-slug="mo_theory" data-total="15">
+        <div class="topic-num">3</div>
+        <div class="topic-info">
+            <div class="topic-title">Molecular Orbital Theory</div>
+            <div class="topic-meta">15 questions &middot; Housecroft Ch 2, Atkins Ch 2, JD Lee Ch 4</div>
+        </div>
+        <div class="topic-progress"><span class="score" data-score></span></div>
+    </a>
+
+    <a class="topic-card disabled" href="bond_properties.html" data-slug="bond_properties" data-total="12">
+        <div class="topic-num">4</div>
+        <div class="topic-info">
+            <div class="topic-title">Bond Order, Length &amp; Enthalpy</div>
+            <div class="topic-meta">12 questions &middot; Housecroft Ch 2, Atkins Ch 2</div>
+        </div>
+        <div class="topic-progress"><span class="score" data-score></span></div>
+    </a>
+
+    <!-- ═══ UNIT 2 ═══ -->
+    <div class="unit-head">
+        <h2>Unit 2 &mdash; Molecular Properties</h2>
+        <span class="unit-count">4 topics &middot; 54 questions</span>
+    </div>
+
+    <a class="topic-card disabled" href="symmetry.html" data-slug="symmetry" data-total="15">
+        <div class="topic-num">5</div>
+        <div class="topic-info">
+            <div class="topic-title">Molecular Symmetry &amp; Point Groups</div>
+            <div class="topic-meta">15 questions &middot; Housecroft Ch 3, Atkins Ch 3</div>
+        </div>
+        <div class="topic-progress"><span class="score" data-score></span></div>
+    </a>
+
+    <a class="topic-card disabled" href="solid_state.html" data-slug="solid_state" data-total="15">
+        <div class="topic-num">6</div>
+        <div class="topic-info">
+            <div class="topic-title">Solid State &amp; Crystal Structures</div>
+            <div class="topic-meta">15 questions &middot; Housecroft Ch 4, Atkins Ch 4</div>
+        </div>
+        <div class="topic-progress"><span class="score" data-score></span></div>
+    </a>
+
+    <a class="topic-card disabled" href="acids_bases.html" data-slug="acids_bases" data-total="12">
+        <div class="topic-num">7</div>
+        <div class="topic-info">
+            <div class="topic-title">Acids, Bases &amp; Solvents</div>
+            <div class="topic-meta">12 questions &middot; Housecroft Ch 5 &amp; 7, Atkins Ch 5</div>
+        </div>
+        <div class="topic-progress"><span class="score" data-score></span></div>
+    </a>
+
+    <a class="topic-card disabled" href="redox.html" data-slug="redox" data-total="12">
+        <div class="topic-num">8</div>
+        <div class="topic-info">
+            <div class="topic-title">Redox Chemistry &amp; Electrochemistry</div>
+            <div class="topic-meta">12 questions &middot; Housecroft Ch 6, Atkins Ch 6</div>
+        </div>
+        <div class="topic-progress"><span class="score" data-score></span></div>
+    </a>
+
+    <!-- ═══ UNIT 3 ═══ -->
+    <div class="unit-head">
+        <h2>Unit 3 &mdash; Coordination Chemistry</h2>
+        <span class="unit-count">4 topics &middot; 54 questions</span>
+    </div>
+
+    <a class="topic-card disabled" href="coordination.html" data-slug="coordination" data-total="15">
+        <div class="topic-num">9</div>
+        <div class="topic-info">
+            <div class="topic-title">Coordination Chemistry</div>
+            <div class="topic-meta">15 questions &middot; Housecroft Ch 21, Atkins Ch 7&ndash;8</div>
+        </div>
+        <div class="topic-progress"><span class="score" data-score></span></div>
+    </a>
+
+    <a class="topic-card disabled" href="isomerism.html" data-slug="isomerism" data-total="12">
+        <div class="topic-num">10</div>
+        <div class="topic-info">
+            <div class="topic-title">Isomerism in Coordination Compounds</div>
+            <div class="topic-meta">12 questions &middot; Housecroft Ch 21, Atkins Ch 8</div>
+        </div>
+        <div class="topic-progress"><span class="score" data-score></span></div>
+    </a>
+
+    <a class="topic-card disabled" href="crystal_field.html" data-slug="crystal_field" data-total="15">
+        <div class="topic-num">11</div>
+        <div class="topic-info">
+            <div class="topic-title">Crystal Field &amp; Ligand Field Theory</div>
+            <div class="topic-meta">15 questions &middot; Housecroft Ch 22, Atkins Ch 20</div>
+        </div>
+        <div class="topic-progress"><span class="score" data-score></span></div>
+    </a>
+
+    <a class="topic-card disabled" href="spectroscopy.html" data-slug="spectroscopy" data-total="12">
+        <div class="topic-num">12</div>
+        <div class="topic-info">
+            <div class="topic-title">Electronic Spectroscopy &amp; Magnetism</div>
+            <div class="topic-meta">12 questions &middot; Housecroft Ch 23, Atkins Ch 20</div>
+        </div>
+        <div class="topic-progress"><span class="score" data-score></span></div>
+    </a>
+
+    <!-- ═══ UNIT 4 ═══ -->
+    <div class="unit-head">
+        <h2>Unit 4 &mdash; Advanced Topics</h2>
+        <span class="unit-count">3 topics &middot; 39 questions</span>
+    </div>
+
+    <a class="topic-card disabled" href="organometallics.html" data-slug="organometallics" data-total="15">
+        <div class="topic-num">13</div>
+        <div class="topic-info">
+            <div class="topic-title">Organometallic Chemistry</div>
+            <div class="topic-meta">15 questions &middot; Housecroft Ch 24, Atkins Ch 22</div>
+        </div>
+        <div class="topic-progress"><span class="score" data-score></span></div>
+    </a>
+
+    <a class="topic-card disabled" href="catalysis.html" data-slug="catalysis" data-total="12">
+        <div class="topic-num">14</div>
+        <div class="topic-info">
+            <div class="topic-title">Homogeneous &amp; Heterogeneous Catalysis</div>
+            <div class="topic-meta">12 questions &middot; Housecroft Ch 26, Atkins Ch 25&ndash;26</div>
+        </div>
+        <div class="topic-progress"><span class="score" data-score></span></div>
+    </a>
+
+    <a class="topic-card disabled" href="nomenclature.html" data-slug="nomenclature" data-total="12">
+        <div class="topic-num">15</div>
+        <div class="topic-info">
+            <div class="topic-title">IUPAC Nomenclature</div>
+            <div class="topic-meta">12 questions &middot; Housecroft Ch 21 &amp; 24</div>
+        </div>
+        <div class="topic-progress"><span class="score" data-score></span></div>
+    </a>
+
+    <!-- ═══ UNIT 5 ═══ -->
+    <div class="unit-head">
+        <h2>Unit 5 &mdash; Descriptive Chemistry</h2>
+        <span class="unit-count">2 topics &middot; 30 questions</span>
+    </div>
+
+    <a class="topic-card disabled" href="descriptive_main.html" data-slug="descriptive_main" data-total="15">
+        <div class="topic-num">16</div>
+        <div class="topic-info">
+            <div class="topic-title">Descriptive Chemistry &mdash; Main Group</div>
+            <div class="topic-meta">15 questions &middot; Housecroft Ch 9&ndash;15, JD Lee, House</div>
+        </div>
+        <div class="topic-progress"><span class="score" data-score></span></div>
+    </a>
+
+    <a class="topic-card disabled" href="descriptive_tm.html" data-slug="descriptive_tm" data-total="15">
+        <div class="topic-num">17</div>
+        <div class="topic-info">
+            <div class="topic-title">Descriptive Chemistry &mdash; Transition Metals</div>
+            <div class="topic-meta">15 questions &middot; Housecroft Ch 16&ndash;17 &amp; 20, Atkins Ch 19</div>
+        </div>
+        <div class="topic-progress"><span class="score" data-score></span></div>
+    </a>
+
+</div>
+
+<script>
+// read localStorage progress for each topic and update the hub
+document.querySelectorAll('.topic-card[data-slug]').forEach(card => {
+    const slug = card.dataset.slug;
+    const total = parseInt(card.dataset.total);
+    try {
+        const raw = localStorage.getItem('testbank_' + slug);
+        if (raw) {
+            const data = JSON.parse(raw);
+            const scoreEl = card.querySelector('[data-score]');
+            if (scoreEl) {
+                scoreEl.textContent = data.correct + ' / ' + data.total;
+            }
+            if (data.answered >= data.total) {
+                card.querySelector('.topic-num').classList.add('done');
+            }
+        }
+    } catch(e) {}
+});
+
+// compute overall stats
+let topicsCompleted = 0;
+let totalCorrect = 0;
+let totalAnswered = 0;
+document.querySelectorAll('.topic-card[data-slug]').forEach(card => {
+    const slug = card.dataset.slug;
+    try {
+        const raw = localStorage.getItem('testbank_' + slug);
+        if (raw) {
+            const data = JSON.parse(raw);
+            totalCorrect += data.correct || 0;
+            totalAnswered += data.answered || 0;
+            if (data.answered >= data.total) topicsCompleted++;
+        }
+    } catch(e) {}
+});
+document.getElementById('statTopics').textContent = topicsCompleted + ' / 17';
+if (totalAnswered > 0) {
+    document.getElementById('statScore').textContent = totalCorrect + ' / ' + totalAnswered;
+}
+</script>
+
+</body>
+</html>
