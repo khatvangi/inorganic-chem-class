@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Test Bank: Bond Properties | CHEM 361</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="testbank-base.css">
+</head>
+<body data-topic="bond_properties">
+
+<div class="topbar">
+    <div class="topbar-left">
+        <a href="../index.html">CHEM 361</a> / Test Bank / Bond Properties
+    </div>
+    <div class="score-pill" id="scorePill">0 / 0</div>
+</div>
+
+<div class="hero">
+    <div class="hero-eyebrow">Test Bank &mdash; Unit 1</div>
+    <h1>Bond Order, Length &amp; Enthalpy</h1>
+    <p class="hero-sub">
+        Practice problems drawn from Housecroft, Atkins, JD Lee, and others.
+        Select an answer or click "Show Answer" to reveal the explanation.
+    </p>
+</div>
+
+<div class="chapter" id="chapter">
+
+    <!-- ═══════════════ SECTION 1 ═══════════════ -->
+    <div class="section-head">
+        <h2>Bond Order from MO Diagrams</h2>
+        <span class="section-count">Questions 1&ndash;4</span>
+    </div>
+
+    <!-- Q1 -->
+    <div class="q-block" data-answer="B">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 2.17</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter2/fig_2_17.png" alt="MO energy level variation for Li2 through F2">
+                <figcaption>Fig. 2.17 &mdash; MO energy level variation for homonuclear diatomics Li<sub>2</sub> through F<sub>2</sub></figcaption>
+            </figure>
+            <div class="q-num">Q1</div>
+            <p class="q-stem">
+                Using the MO diagram above, calculate the bond order (BO) for each of the following
+                oxygen species: O<sub>2</sub>, O<sub>2</sub><sup>+</sup>,
+                O<sub>2</sub><sup>&minus;</sup>, and O<sub>2</sub><sup>2&minus;</sup>.
+                Which species has the <em>strongest</em> bond?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> O<sub>2</sub> (BO = 2.0) &mdash; the neutral molecule is always strongest</li>
+                <li data-val="B"><span class="opt-letter">b</span> O<sub>2</sub><sup>+</sup> (BO = 2.5) &mdash; removing one antibonding electron increases BO</li>
+                <li data-val="C"><span class="opt-letter">c</span> O<sub>2</sub><sup>&minus;</sup> (BO = 1.5) &mdash; the extra electron stabilizes the bond</li>
+                <li data-val="D"><span class="opt-letter">d</span> O<sub>2</sub><sup>2&minus;</sup> (BO = 1.0) &mdash; filled antibonding orbitals make the strongest bond</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (b)</div>
+                <p>
+                    Bond order = &frac12;(bonding e<sup>&minus;</sup> &minus; antibonding e<sup>&minus;</sup>).
+                    O<sub>2</sub> has 16 electrons: (&sigma;<sub>2s</sub>)<sup>2</sup>(&sigma;*<sub>2s</sub>)<sup>2</sup>(&sigma;<sub>2p</sub>)<sup>2</sup>(&pi;<sub>2p</sub>)<sup>4</sup>(&pi;*<sub>2p</sub>)<sup>2</sup>,
+                    giving BO = &frac12;(10 &minus; 6) = 2.0.
+                    O<sub>2</sub><sup>+</sup> removes one &pi;* electron: BO = &frac12;(10 &minus; 5) = 2.5.
+                    O<sub>2</sub><sup>&minus;</sup> adds one &pi;* electron: BO = &frac12;(10 &minus; 7) = 1.5.
+                    O<sub>2</sub><sup>2&minus;</sup> fills both &pi;*: BO = &frac12;(10 &minus; 8) = 1.0.
+                    Higher bond order means a stronger bond, so O<sub>2</sub><sup>+</sup> is strongest at BO = 2.5.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="q-block" data-answer="C">
+        <div class="q-source">
+            <span>Atkins &amp; Shriver, Chapter 2</span>
+            <span class="book-tag">Atkins</span>
+        </div>
+        <div class="q-body">
+            <div class="q-num">Q2</div>
+            <p class="q-stem">
+                Both N<sub>2</sub> and CO are isoelectronic with bond order 3. Which molecule has the
+                <em>shorter</em> bond length, and why?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> N<sub>2</sub> is shorter because both atoms are identical, so bonding is symmetric</li>
+                <li data-val="B"><span class="opt-letter">b</span> They have exactly the same bond length since they are isoelectronic</li>
+                <li data-val="C"><span class="opt-letter">c</span> CO is slightly shorter because the greater electronegativity difference concentrates electron density, increasing effective nuclear attraction on the bonding region</li>
+                <li data-val="D"><span class="opt-letter">d</span> CO is shorter because carbon is a smaller atom than nitrogen</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (c)</div>
+                <p>
+                    N<sub>2</sub> has a bond length of 109.8 pm while CO has a bond length of 112.8 pm &mdash;
+                    actually N<sub>2</sub> is slightly shorter. However, the key teaching point is that CO
+                    (112.8 pm) has a very similar bond length to N<sub>2</sub> (109.8 pm) despite being
+                    heteronuclear. The electronegativity difference in CO means the bonding MOs have
+                    more oxygen character, pulling electron density toward O. This uneven distribution
+                    creates a strong effective overlap. In practice the bond lengths are close, but
+                    CO's high bond enthalpy (1076 kJ/mol vs 945 kJ/mol for N<sub>2</sub>) reflects the
+                    electronegativity-enhanced bond strength from the polar covalent character.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="q-block" data-answer="D">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Chapter 2</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <div class="q-num">Q3</div>
+            <p class="q-stem">
+                Nitric oxide (NO) has a bond order of 2.5 with its electron configuration ending in
+                (&pi;*<sub>2p</sub>)<sup>1</sup>. NO readily loses one electron to form NO<sup>+</sup>.
+                Why is this ionization so favorable?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> Removing an electron from a bonding orbital has no effect on stability</li>
+                <li data-val="B"><span class="opt-letter">b</span> NO<sup>+</sup> has BO = 2.0, which is a more common bond order</li>
+                <li data-val="C"><span class="opt-letter">c</span> The ionization is favorable because nitrogen is electropositive</li>
+                <li data-val="D"><span class="opt-letter">d</span> The electron is removed from an antibonding &pi;* orbital, increasing BO from 2.5 to 3.0 &mdash; making NO<sup>+</sup> isoelectronic with N<sub>2</sub></li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (d)</div>
+                <p>
+                    NO has 15 electrons with one electron in an antibonding &pi;* orbital, giving
+                    BO = &frac12;(10 &minus; 5) = 2.5. Removing this single antibonding electron to form
+                    NO<sup>+</sup> (14 electrons) gives BO = &frac12;(10 &minus; 4) = 3.0. The resulting
+                    NO<sup>+</sup> is isoelectronic with N<sub>2</sub> and CO, both of which are
+                    exceptionally stable triple-bonded species. The loss of an antibonding electron
+                    simultaneously strengthens the bond and shortens it (from 115 pm in NO to 106 pm
+                    in NO<sup>+</sup>), making this ionization thermodynamically favorable.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q4 -->
+    <div class="q-block" data-answer="A">
+        <div class="q-source">
+            <span>JD Lee, Chapter 4</span>
+            <span class="book-tag">JD Lee</span>
+        </div>
+        <div class="q-body">
+            <div class="q-num">Q4</div>
+            <p class="q-stem">
+                F<sub>2</sub> has a bond order of 1, yet its bond dissociation enthalpy (159 kJ/mol)
+                is surprisingly low &mdash; even lower than that of Cl<sub>2</sub> (242 kJ/mol), despite
+                fluorine being smaller and having greater orbital overlap. What is the primary reason
+                for the anomalously weak F&ndash;F bond?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> The very small size of fluorine atoms causes severe lone pair&ndash;lone pair repulsion between the non-bonding electrons on adjacent F atoms</li>
+                <li data-val="B"><span class="opt-letter">b</span> Fluorine has the highest electronegativity, so it pulls electron density away from the bond</li>
+                <li data-val="C"><span class="opt-letter">c</span> F<sub>2</sub> has a bond order less than 1 due to antibonding contributions</li>
+                <li data-val="D"><span class="opt-letter">d</span> Fluorine atoms are too electronegative to share electrons effectively</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (a)</div>
+                <p>
+                    Although F<sub>2</sub> has BO = 1 and fluorine's small atomic radius should promote
+                    strong overlap, the extremely short bond length (141 pm) brings the three lone pairs
+                    on each fluorine atom into very close proximity. The resulting inter-electron
+                    (lone pair&ndash;lone pair) repulsion significantly weakens the bond. This is a
+                    well-known anomaly for period 2 elements: N&ndash;N, O&ndash;O, and F&ndash;F single
+                    bonds are all weaker than their period 3 counterparts (P&ndash;P, S&ndash;S, Cl&ndash;Cl)
+                    because the small atom size intensifies repulsion between non-bonding electron pairs
+                    on adjacent atoms.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════ SECTION 2 ═══════════════ -->
+    <div class="section-head">
+        <h2>Bond Length &amp; Bond Enthalpy Correlations</h2>
+        <span class="section-count">Questions 5&ndash;8</span>
+    </div>
+
+    <!-- Q5 -->
+    <div class="q-block" data-answer="B">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 2.27</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter2/fig_2_27.png" alt="Bond enthalpy and bond length correlations">
+                <figcaption>Fig. 2.27 &mdash; Correlation between bond order, bond length, and bond enthalpy</figcaption>
+            </figure>
+            <div class="q-num">Q5</div>
+            <p class="q-stem">
+                The figure above illustrates the general relationships among bond order, bond length,
+                and bond enthalpy. Which statement best summarizes these correlations?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> Higher bond order &rarr; longer bond &rarr; larger bond enthalpy</li>
+                <li data-val="B"><span class="opt-letter">b</span> Higher bond order &rarr; shorter bond &rarr; larger bond enthalpy</li>
+                <li data-val="C"><span class="opt-letter">c</span> Higher bond order &rarr; shorter bond &rarr; smaller bond enthalpy</li>
+                <li data-val="D"><span class="opt-letter">d</span> Bond order has no consistent relationship with bond length or enthalpy</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (b)</div>
+                <p>
+                    The three bond properties are systematically related: as bond order increases,
+                    more electrons are shared between the two nuclei, pulling them closer together
+                    (shorter bond length) and requiring more energy to break apart (larger bond
+                    dissociation enthalpy). For example, in the carbon series: C&ndash;C (154 pm, 346
+                    kJ/mol), C=C (134 pm, 614 kJ/mol), C&equiv;C (120 pm, 839 kJ/mol). Each step up
+                    in bond order shortens the bond and increases the enthalpy. This is the fundamental
+                    triad relationship in chemical bonding.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q6 -->
+    <div class="q-block" data-answer="D">
+        <div class="q-source">
+            <span>Atkins &amp; Shriver, Chapter 2</span>
+            <span class="book-tag">Atkins</span>
+        </div>
+        <div class="q-body">
+            <div class="q-num">Q6</div>
+            <p class="q-stem">
+                Arrange the following carbon&ndash;carbon bonds in order of <em>decreasing</em> bond length
+                (longest first): C&ndash;C (single), C=C (double), C&equiv;C (triple).
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> C&equiv;C &gt; C=C &gt; C&ndash;C</li>
+                <li data-val="B"><span class="opt-letter">b</span> C=C &gt; C&ndash;C &gt; C&equiv;C</li>
+                <li data-val="C"><span class="opt-letter">c</span> C&ndash;C &gt; C&equiv;C &gt; C=C</li>
+                <li data-val="D"><span class="opt-letter">d</span> C&ndash;C &gt; C=C &gt; C&equiv;C</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (d)</div>
+                <p>
+                    Bond length decreases with increasing bond order. The values are:
+                    C&ndash;C = 154 pm (single, BO = 1), C=C = 134 pm (double, BO = 2),
+                    C&equiv;C = 120 pm (triple, BO = 3). The additional shared electron pairs in
+                    multiple bonds pull the nuclei closer together. So from longest to shortest:
+                    C&ndash;C &gt; C=C &gt; C&equiv;C. This trend holds generally for any element
+                    forming multiple bond types (e.g., N&ndash;N, N=N, N&equiv;N follow the same
+                    pattern).
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q7 -->
+    <div class="q-block" data-answer="C">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Chapter 2</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <div class="q-num">Q7</div>
+            <p class="q-stem">
+                The N&ndash;N single bond enthalpy (159 kJ/mol) is unusually weak compared to the
+                P&ndash;P single bond (200 kJ/mol), even though nitrogen is smaller and typically
+                forms stronger bonds. What explains this anomaly?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> Phosphorus has d orbitals available that strengthen the P&ndash;P bond</li>
+                <li data-val="B"><span class="opt-letter">b</span> Nitrogen is too electronegative to form strong single bonds</li>
+                <li data-val="C"><span class="opt-letter">c</span> Nitrogen's small atomic radius causes severe lone pair&ndash;lone pair repulsion between adjacent N atoms, weakening the single bond</li>
+                <li data-val="D"><span class="opt-letter">d</span> The N&ndash;N bond is actually stronger; the enthalpy values are misleading</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (c)</div>
+                <p>
+                    This is the same lone pair repulsion effect seen in F<sub>2</sub>. Nitrogen's
+                    small covalent radius means that when two N atoms form a single bond, the lone
+                    pairs on each atom are forced into close proximity, generating strong
+                    inter-electron repulsion that weakens the bond. Phosphorus, being larger (period 3),
+                    has its lone pairs further apart and suffers less repulsion. This is a general trend
+                    for period 2 elements: N&ndash;N (159 kJ/mol), O&ndash;O (144 kJ/mol), and F&ndash;F
+                    (159 kJ/mol) single bonds are all anomalously weak compared to their period 3
+                    analogs P&ndash;P (200 kJ/mol), S&ndash;S (266 kJ/mol), and Cl&ndash;Cl (242 kJ/mol).
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q8 -->
+    <div class="q-block" data-answer="A">
+        <div class="q-source">
+            <span>JD Lee, Chapter 4</span>
+            <span class="book-tag">JD Lee</span>
+        </div>
+        <div class="q-body">
+            <div class="q-num">Q8</div>
+            <p class="q-stem">
+                Compare the bond dissociation enthalpies of the hydrogen halides:
+                H&ndash;F (568 kJ/mol), H&ndash;Cl (431 kJ/mol), H&ndash;Br (366 kJ/mol),
+                H&ndash;I (298 kJ/mol). What trend do you observe, and what is the underlying cause?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> Bond enthalpy decreases down the group because the halide atom becomes larger, leading to longer bonds and poorer orbital overlap with the H 1s orbital</li>
+                <li data-val="B"><span class="opt-letter">b</span> Bond enthalpy decreases because electronegativity decreases down the group, reducing ionic character</li>
+                <li data-val="C"><span class="opt-letter">c</span> Bond enthalpy decreases because hydrogen becomes a weaker electron donor with larger halides</li>
+                <li data-val="D"><span class="opt-letter">d</span> Bond enthalpy increases down the group; the values given are incorrect</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (a)</div>
+                <p>
+                    The dominant factor is atomic size and orbital overlap. As you descend group 17,
+                    the halogen atom becomes larger and its valence orbital (2p for F, 3p for Cl, 4p
+                    for Br, 5p for I) becomes more diffuse. The overlap with hydrogen's compact 1s
+                    orbital decreases progressively, leading to longer and weaker bonds: H&ndash;F
+                    (92 pm, 568 kJ/mol), H&ndash;Cl (127 pm, 431 kJ/mol), H&ndash;Br (141 pm, 366
+                    kJ/mol), H&ndash;I (161 pm, 298 kJ/mol). While decreasing electronegativity
+                    difference also plays a role (reducing ionic stabilization), the primary cause
+                    is the increasingly poor orbital overlap.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════ SECTION 3 ═══════════════ -->
+    <div class="section-head">
+        <h2>Bond Character &mdash; Ionic, Covalent, Metallic</h2>
+        <span class="section-count">Questions 9&ndash;12</span>
+    </div>
+
+    <!-- Q9 -->
+    <div class="q-block" data-answer="B">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 2.28</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter2/fig_2_28.png" alt="The Ketelaar triangle">
+                <figcaption>Fig. 2.28 &mdash; The Ketelaar (van Arkel&ndash;Ketelaar) triangle for classifying bond types</figcaption>
+            </figure>
+            <div class="q-num">Q9</div>
+            <p class="q-stem">
+                The Ketelaar triangle (also called the van Arkel&ndash;Ketelaar triangle) shown above
+                classifies bonding into three limiting types: ionic, covalent, and metallic. What two
+                quantities define the axes of this triangle?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> Ionization energy and electron affinity</li>
+                <li data-val="B"><span class="opt-letter">b</span> Electronegativity difference (&Delta;&chi;) and average electronegativity (&chi;<sub>avg</sub>)</li>
+                <li data-val="C"><span class="opt-letter">c</span> Atomic radius and bond length</li>
+                <li data-val="D"><span class="opt-letter">d</span> Bond enthalpy and bond order</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (b)</div>
+                <p>
+                    The Ketelaar triangle uses two electronegativity-based parameters. The vertical
+                    axis is the electronegativity difference (&Delta;&chi;) between the two bonded atoms,
+                    while the horizontal axis is the average electronegativity (&chi;<sub>avg</sub>).
+                    High &Delta;&chi; (top) corresponds to ionic bonding (e.g., NaCl). High &chi;<sub>avg</sub>
+                    with low &Delta;&chi; (bottom right) corresponds to covalent bonding (e.g., F<sub>2</sub>).
+                    Low &chi;<sub>avg</sub> with low &Delta;&chi; (bottom left) corresponds to metallic
+                    bonding (e.g., Na metal). Most real compounds fall somewhere within the triangle,
+                    reflecting mixed bonding character.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q10 -->
+    <div class="q-block" data-answer="A">
+        <div class="q-source">
+            <span>Atkins &amp; Shriver, Chapter 2</span>
+            <span class="book-tag">Atkins</span>
+        </div>
+        <div class="q-body">
+            <div class="q-num">Q10</div>
+            <p class="q-stem">
+                According to Fajans' rules, which combination of cation properties promotes
+                <em>covalent</em> character in an ionic compound?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> Small cation with high charge &mdash; it strongly polarizes the anion's electron cloud</li>
+                <li data-val="B"><span class="opt-letter">b</span> Large cation with low charge &mdash; it has a diffuse electric field</li>
+                <li data-val="C"><span class="opt-letter">c</span> Large cation with high charge &mdash; size always dominates over charge</li>
+                <li data-val="D"><span class="opt-letter">d</span> Small cation with low charge &mdash; minimal distortion of the anion</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (a)</div>
+                <p>
+                    Fajans' rules predict when an "ionic" compound will have significant covalent
+                    character. Covalent character is promoted by: (1) a small, highly charged cation
+                    (high charge density, strong polarizing power), (2) a large, highly charged anion
+                    (easily polarizable), and (3) cations with non-noble-gas electron configurations
+                    (e.g., d<sup>10</sup> like Cu<sup>+</sup> or Ag<sup>+</sup>). A small cation with
+                    high charge creates an intense electric field that distorts the anion's electron
+                    cloud toward the cation, effectively sharing electron density &mdash; i.e., creating
+                    covalent character. Conversely, a large cation with low charge has weak polarizing
+                    power and the bonding remains predominantly ionic.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q11 -->
+    <div class="q-block" data-answer="C">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 2.28</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter2/fig_2_28.png" alt="The Ketelaar triangle">
+                <figcaption>Fig. 2.28 &mdash; The Ketelaar triangle</figcaption>
+            </figure>
+            <div class="q-num">Q11</div>
+            <p class="q-stem">
+                Using the Ketelaar triangle above, where would you place NaCl, diamond (C&ndash;C),
+                and sodium metal (Na)?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> NaCl at bottom-left (metallic), diamond at top (ionic), Na at bottom-right (covalent)</li>
+                <li data-val="B"><span class="opt-letter">b</span> All three at the center &mdash; they have mixed bonding character</li>
+                <li data-val="C"><span class="opt-letter">c</span> NaCl at top (ionic, high &Delta;&chi;), diamond at bottom-right (covalent, high &chi;<sub>avg</sub>, &Delta;&chi; = 0), Na at bottom-left (metallic, low &chi;<sub>avg</sub>, &Delta;&chi; = 0)</li>
+                <li data-val="D"><span class="opt-letter">d</span> NaCl at bottom-right (covalent), diamond at bottom-left (metallic), Na at top (ionic)</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (c)</div>
+                <p>
+                    The three corners of the Ketelaar triangle represent the three idealized bond types.
+                    NaCl: Na (&chi; = 0.93) and Cl (&chi; = 3.16) give &Delta;&chi; = 2.23 (large) and
+                    &chi;<sub>avg</sub> = 2.05. The large &Delta;&chi; places NaCl near the ionic vertex
+                    (top of the triangle). Diamond: both atoms are carbon (&chi; = 2.55), so
+                    &Delta;&chi; = 0 and &chi;<sub>avg</sub> = 2.55 (high). This places it at the covalent
+                    vertex (bottom-right). Sodium metal: both atoms are Na (&chi; = 0.93), so &Delta;&chi; = 0
+                    and &chi;<sub>avg</sub> = 0.93 (low). This places it at the metallic vertex (bottom-left).
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q12 -->
+    <div class="q-block" data-answer="D">
+        <div class="q-source">
+            <span>JD Lee, Chapter 3</span>
+            <span class="book-tag">JD Lee</span>
+        </div>
+        <div class="q-body">
+            <div class="q-num">Q12</div>
+            <p class="q-stem">
+                AlCl<sub>3</sub> exhibits significantly more covalent character than NaCl, despite both
+                being "metal + non-metal" compounds. Using Fajans' rules, which explanation best
+                accounts for this difference?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> Aluminium is more electronegative than sodium, so the bond is more covalent by definition</li>
+                <li data-val="B"><span class="opt-letter">b</span> Chlorine is more easily polarized when bonded to aluminium</li>
+                <li data-val="C"><span class="opt-letter">c</span> NaCl has a higher lattice energy, which forces it to be more ionic</li>
+                <li data-val="D"><span class="opt-letter">d</span> Al<sup>3+</sup> is small (54 pm) with a high charge (+3), giving it a very high charge density that strongly polarizes the Cl<sup>&minus;</sup> electron cloud; Na<sup>+</sup> is larger (102 pm) with lower charge (+1), so it polarizes Cl<sup>&minus;</sup> far less</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (d)</div>
+                <p>
+                    This is a classic application of Fajans' rules. Al<sup>3+</sup> has an ionic radius
+                    of only ~54 pm and a charge of +3, giving it an exceptionally high charge density
+                    (charge/volume ratio). This creates an intense electric field that strongly distorts
+                    (polarizes) the electron cloud of the Cl<sup>&minus;</sup> anion, pulling electron
+                    density back toward the aluminium. The result is significant sharing of electron
+                    density &mdash; covalent character. This is why AlCl<sub>3</sub> has a low melting point
+                    (192 &deg;C), exists as a dimer Al<sub>2</sub>Cl<sub>6</sub>, and is soluble in
+                    non-polar solvents &mdash; all properties of covalent compounds. Na<sup>+</sup>,
+                    being much larger (102 pm) with only +1 charge, has weak polarizing power, so NaCl
+                    remains predominantly ionic (m.p. 801 &deg;C).
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div><!-- end chapter -->
+
+<div class="score-summary" id="scoreSummary">
+    <h3>Topic Complete</h3>
+    <div class="big-score" id="finalScore">0 / 12</div>
+    <p>Bond Order, Length &amp; Enthalpy</p>
+    <button onclick="resetAll()">Reset All</button>
+</div>
+
+<script src="testbank-base.js"></script>
+
+</body>
+</html>

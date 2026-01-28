@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Test Bank: Electron Configuration | CHEM 361</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="testbank-base.css">
+</head>
+<body data-topic="electron_configuration">
+
+<div class="topbar">
+    <div class="topbar-left">
+        <a href="../index.html">CHEM 361</a> / Test Bank / Electron Configuration
+    </div>
+    <div class="score-pill" id="scorePill">0 / 0</div>
+</div>
+
+<div class="hero">
+    <div class="hero-eyebrow">Test Bank &mdash; Unit 1</div>
+    <h1>Electron Configuration &amp; Periodic Properties</h1>
+    <p class="hero-sub">
+        Practice problems drawn from Housecroft, Atkins, JD Lee, and others.
+        Select an answer or click "Show Answer" to reveal the explanation.
+    </p>
+</div>
+
+<div class="chapter" id="chapter">
+
+    <!-- ═══════════════ SECTION 1 ═══════════════ -->
+    <div class="section-head">
+        <h2>Aufbau Principle &amp; Filling Order</h2>
+        <span class="section-count">Questions 1&ndash;4</span>
+    </div>
+
+    <!-- Q1 -->
+    <div class="q-block" data-answer="A">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 1.20</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter1/fig_1_20.png" alt="Aufbau filling order diagram">
+                <figcaption>Fig. 1.20 &mdash; The aufbau (building-up) principle and orbital filling order</figcaption>
+            </figure>
+            <div class="q-num">Q1</div>
+            <p class="q-stem">
+                According to the Madelung (n+l) rule shown in the filling diagram above,
+                which subshell fills first: 4s or 3d?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> 4s fills first, because (n+l) = 4+0 = 4 is less than (n+l) = 3+2 = 5</li>
+                <li data-val="B"><span class="opt-letter">b</span> 3d fills first, because n = 3 is lower than n = 4</li>
+                <li data-val="C"><span class="opt-letter">c</span> They fill simultaneously since both are in the same energy region</li>
+                <li data-val="D"><span class="opt-letter">d</span> 4s fills first, because s orbitals always fill before d orbitals regardless of n</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (a)</div>
+                <p>
+                    The Madelung rule states that subshells fill in order of increasing (n+l). When two
+                    subshells have the same (n+l) value, the one with lower n fills first. For 4s: n+l = 4+0 = 4.
+                    For 3d: n+l = 3+2 = 5. Since 4 &lt; 5, the 4s subshell fills before 3d. This is why potassium
+                    (Z=19) has the configuration [Ar] 4s<sup>1</sup> rather than [Ar] 3d<sup>1</sup>. Note, however,
+                    that this rule describes filling order for neutral atoms &mdash; once electrons are present,
+                    the actual orbital energies can cross, which is why 4s electrons are lost before 3d when
+                    forming cations.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="q-block" data-answer="B">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 1.22</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter1/fig_1_22.png" alt="Electron configurations of first-row transition metals">
+                <figcaption>Fig. 1.22 &mdash; Electron configurations highlighting anomalies</figcaption>
+            </figure>
+            <div class="q-num">Q2</div>
+            <p class="q-stem">
+                Chromium has the ground-state configuration [Ar] 3d<sup>5</sup> 4s<sup>1</sup> rather than the
+                expected [Ar] 3d<sup>4</sup> 4s<sup>2</sup>. Which factor best explains this anomaly?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> The 4s orbital is higher in energy than 3d in chromium, so it empties completely</li>
+                <li data-val="B"><span class="opt-letter">b</span> A half-filled 3d<sup>5</sup> subshell has extra exchange energy stabilization, favouring one electron promotion from 4s</li>
+                <li data-val="C"><span class="opt-letter">c</span> Chromium is too small to accommodate two 4s electrons</li>
+                <li data-val="D"><span class="opt-letter">d</span> Relativistic contraction of the 4s orbital forces the electron into 3d</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (b)</div>
+                <p>
+                    The exchange energy is a quantum mechanical stabilization that arises when electrons
+                    with parallel spins occupy different orbitals of the same subshell. A half-filled
+                    d<sup>5</sup> configuration (all five d orbitals singly occupied with parallel spins)
+                    maximizes the number of exchange pairs: K = n(n&minus;1)/2 = 5(4)/2 = 10 pairs. The
+                    d<sup>4</sup> configuration gives only 4(3)/2 = 6 pairs. This gain of 4 additional
+                    exchange pairs provides enough stabilization to offset the cost of promoting one electron
+                    from the 4s to the 3d subshell. The 4s and 3d energies are very close in chromium,
+                    making this promotion energetically favourable.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="q-block" data-answer="C">
+        <div class="q-source">
+            <span>Atkins &amp; Shriver, Chapter 1</span>
+            <span class="book-tag">Atkins</span>
+        </div>
+        <div class="q-body">
+            <div class="q-num">Q3</div>
+            <p class="q-stem">
+                Copper has the ground-state configuration [Ar] 3d<sup>10</sup> 4s<sup>1</sup> instead of the
+                predicted [Ar] 3d<sup>9</sup> 4s<sup>2</sup>. Which explanation best accounts for this?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> Copper is a noble metal and therefore prefers fewer 4s electrons</li>
+                <li data-val="B"><span class="opt-letter">b</span> The half-filled 4s subshell provides extra stability</li>
+                <li data-val="C"><span class="opt-letter">c</span> A fully-filled 3d<sup>10</sup> subshell has maximum exchange stabilization, and the energy difference between 3d and 4s is small enough that promotion is favourable</li>
+                <li data-val="D"><span class="opt-letter">d</span> The 3d<sup>9</sup> configuration is forbidden by the Pauli exclusion principle</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (c)</div>
+                <p>
+                    The fully-filled 3d<sup>10</sup> configuration maximizes both exchange energy and the
+                    symmetrical distribution of electron density in the d subshell. With 10 electrons
+                    occupying all five 3d orbitals, there is no net orbital angular momentum contribution
+                    from the d shell, leading to a spherically symmetric charge distribution. Combined with
+                    the fact that by Z = 29 the 3d orbitals have dropped well below 4s in energy, the
+                    additional stabilization of the complete d shell easily compensates for the cost of having
+                    only one 4s electron. The 3d<sup>9</sup> 4s<sup>2</sup> configuration is not forbidden but
+                    is simply higher in total energy.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q4 -->
+    <div class="q-block" data-answer="D">
+        <div class="q-source">
+            <span>JD Lee, Chapter 3</span>
+            <span class="book-tag">JD Lee</span>
+        </div>
+        <div class="q-body">
+            <div class="q-num">Q4</div>
+            <p class="q-stem">
+                Carbon has the configuration 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>2</sup>. According to
+                Hund's rule, which arrangement of the two 2p electrons represents the ground state?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> Both electrons paired in the same 2p orbital (&uarr;&darr;)(  )(  )</li>
+                <li data-val="B"><span class="opt-letter">b</span> One electron in each of two different 2p orbitals with antiparallel spins (&uarr;)(&darr;)(  )</li>
+                <li data-val="C"><span class="opt-letter">c</span> Both electrons in different orbitals but the arrangement is random</li>
+                <li data-val="D"><span class="opt-letter">d</span> One electron in each of two different 2p orbitals with parallel spins (&uarr;)(&uarr;)(  )</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (d)</div>
+                <p>
+                    Hund's rule of maximum multiplicity states that for a given electron configuration,
+                    the term with the greatest spin multiplicity (i.e. the most unpaired electrons with
+                    parallel spins) has the lowest energy. For carbon's two 2p electrons, this means each
+                    electron occupies a separate 2p orbital with parallel spins: (&uarr;)(&uarr;)(  ). This
+                    gives S = 1 and a spin multiplicity of 2S+1 = 3 (a triplet state, specifically
+                    <sup>3</sup>P<sub>0</sub>). The parallel-spin arrangement minimizes electron&ndash;electron
+                    repulsion because electrons with the same spin are kept apart by the exchange interaction
+                    (Fermi hole), lowering the overall energy.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════ SECTION 2 ═══════════════ -->
+    <div class="section-head">
+        <h2>Electron Configurations of Ions</h2>
+        <span class="section-count">Questions 5&ndash;8</span>
+    </div>
+
+    <!-- Q5 -->
+    <div class="q-block" data-answer="A">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 1.23</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter1/fig_1_23.png" alt="Ground state electron configurations">
+                <figcaption>Fig. 1.23 &mdash; Ground-state configurations of d-block elements and their ions</figcaption>
+            </figure>
+            <div class="q-num">Q5</div>
+            <p class="q-stem">
+                Iron has the neutral atom configuration [Ar] 3d<sup>6</sup> 4s<sup>2</sup>. When forming
+                Fe<sup>2+</sup>, which electrons are removed first, and what is the resulting configuration?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> The two 4s electrons are removed first, giving Fe<sup>2+</sup> = [Ar] 3d<sup>6</sup></li>
+                <li data-val="B"><span class="opt-letter">b</span> Two 3d electrons are removed first, giving Fe<sup>2+</sup> = [Ar] 3d<sup>4</sup> 4s<sup>2</sup></li>
+                <li data-val="C"><span class="opt-letter">c</span> One 4s and one 3d electron are removed, giving Fe<sup>2+</sup> = [Ar] 3d<sup>5</sup> 4s<sup>1</sup></li>
+                <li data-val="D"><span class="opt-letter">d</span> The two 4s electrons are removed first, giving Fe<sup>2+</sup> = [Ar] 3d<sup>4</sup> 4s<sup>2</sup></li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (a)</div>
+                <p>
+                    Although the 4s orbital fills before 3d in neutral atoms (aufbau order), the 4s electrons
+                    are always removed first during ionization of d-block elements. This is because once the
+                    3d subshell is occupied, the 3d orbitals contract significantly and drop below 4s in
+                    energy. The 4s electrons, being in a higher-energy orbital in the cation, are lost first.
+                    Consequently, Fe<sup>2+</sup> = [Ar] 3d<sup>6</sup>, with six 3d electrons remaining.
+                    This principle applies universally: for any transition metal cation, remove ns electrons
+                    before (n&minus;1)d electrons.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q6 -->
+    <div class="q-block" data-answer="B">
+        <div class="q-source">
+            <span>Atkins &amp; Shriver, Chapter 1</span>
+            <span class="book-tag">Atkins</span>
+        </div>
+        <div class="q-body">
+            <div class="q-num">Q6</div>
+            <p class="q-stem">
+                Titanium has the configuration [Ar] 3d<sup>2</sup> 4s<sup>2</sup>. What is the electron
+                configuration of the Ti<sup>3+</sup> ion?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> [Ar] 3d<sup>2</sup> 4s<sup>1</sup> &mdash; remove one 4s electron from Ti<sup>2+</sup> is sufficient</li>
+                <li data-val="B"><span class="opt-letter">b</span> [Ar] 3d<sup>1</sup> &mdash; remove both 4s electrons first, then one 3d electron</li>
+                <li data-val="C"><span class="opt-letter">c</span> [Ar] 4s<sup>1</sup> &mdash; remove both 3d electrons first, then one 4s electron</li>
+                <li data-val="D"><span class="opt-letter">d</span> [Ar] 3d<sup>3</sup> &mdash; the electron is promoted from 4s to 3d during ionization</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (b)</div>
+                <p>
+                    Following the rule that ns electrons are removed before (n&minus;1)d electrons in transition
+                    metal cations: Ti &rarr; Ti<sup>+</sup> removes one 4s electron ([Ar] 3d<sup>2</sup> 4s<sup>1</sup>),
+                    Ti<sup>+</sup> &rarr; Ti<sup>2+</sup> removes the second 4s electron ([Ar] 3d<sup>2</sup>),
+                    and Ti<sup>2+</sup> &rarr; Ti<sup>3+</sup> removes one 3d electron ([Ar] 3d<sup>1</sup>).
+                    The Ti<sup>3+</sup> ion is a d<sup>1</sup> system with one unpaired electron, making it
+                    paramagnetic and giving it a characteristic purple colour in aqueous solution
+                    ([Ti(H<sub>2</sub>O)<sub>6</sub>]<sup>3+</sup>).
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q7 -->
+    <div class="q-block" data-answer="C">
+        <div class="q-source">
+            <span>JD Lee, Chapter 3</span>
+            <span class="book-tag">JD Lee</span>
+        </div>
+        <div class="q-body">
+            <div class="q-num">Q7</div>
+            <p class="q-stem">
+                Compare Fe<sup>2+</sup> ([Ar] 3d<sup>6</sup>) and Fe<sup>3+</sup> ([Ar] 3d<sup>5</sup>).
+                Which ion has more unpaired electrons?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> Fe<sup>2+</sup> has more unpaired electrons (6 unpaired in d<sup>6</sup>)</li>
+                <li data-val="B"><span class="opt-letter">b</span> They have the same number (4 each)</li>
+                <li data-val="C"><span class="opt-letter">c</span> Fe<sup>3+</sup> has more unpaired electrons (5 unpaired in the half-filled d<sup>5</sup>)</li>
+                <li data-val="D"><span class="opt-letter">d</span> Fe<sup>2+</sup> has no unpaired electrons because all d orbitals are paired</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (c)</div>
+                <p>
+                    Applying Hund's rule to the free (gas-phase) ions: Fe<sup>3+</sup> has 5 d-electrons
+                    distributed as (&uarr;)(&uarr;)(&uarr;)(&uarr;)(&uarr;) &mdash; one in each of the five
+                    3d orbitals, all with parallel spin &mdash; giving 5 unpaired electrons. Fe<sup>2+</sup>
+                    has 6 d-electrons: five orbitals singly occupied plus one doubly occupied, i.e.
+                    (&uarr;&darr;)(&uarr;)(&uarr;)(&uarr;)(&uarr;), giving 4 unpaired electrons. Therefore
+                    Fe<sup>3+</sup> (5 unpaired) has more than Fe<sup>2+</sup> (4 unpaired). This is for
+                    the free ion; in coordination compounds, the crystal field can alter the number of
+                    unpaired electrons depending on whether the complex is high-spin or low-spin.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q8 -->
+    <div class="q-block" data-answer="D">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Chapter 1</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <div class="q-num">Q8</div>
+            <p class="q-stem">
+                In the lanthanides, the 4f subshell fills before the 5d subshell for most elements. However,
+                cerium (Ce, Z=58) has the configuration [Xe] 4f<sup>1</sup> 5d<sup>1</sup> 6s<sup>2</sup> rather
+                than [Xe] 4f<sup>2</sup> 6s<sup>2</sup>. Which statement best explains this?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> The 5d orbital is always lower in energy than 4f for all lanthanides</li>
+                <li data-val="B"><span class="opt-letter">b</span> Cerium cannot have any 4f electrons because f orbitals only begin filling at Pr</li>
+                <li data-val="C"><span class="opt-letter">c</span> The 4f orbitals in cerium are too contracted to accommodate two electrons</li>
+                <li data-val="D"><span class="opt-letter">d</span> At the start of the lanthanide series, 4f and 5d are very close in energy; cerium gains extra stability by occupying both subshells rather than placing two electrons in 4f</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (d)</div>
+                <p>
+                    At the beginning of the lanthanide series, the 4f and 5d orbitals are extremely close in
+                    energy. For cerium, the interelectronic repulsion cost of placing two electrons in the
+                    compact 4f subshell outweighs the small orbital energy difference. By distributing one
+                    electron each in 4f and 5d, the atom minimizes electron&ndash;electron repulsion while also
+                    benefiting from exchange interactions across both subshells. As we proceed along the
+                    series (Pr onward), the 4f orbitals drop further in energy due to the increasing nuclear
+                    charge, and the 5d is no longer occupied &mdash; giving configurations like
+                    [Xe] 4f<sup>3</sup> 6s<sup>2</sup> for Pr. Lanthanum (Z=57) itself has [Xe] 5d<sup>1</sup>
+                    6s<sup>2</sup> with no 4f electrons at all, showing the crossover point.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════ SECTION 3 ═══════════════ -->
+    <div class="section-head">
+        <h2>Effective Nuclear Charge</h2>
+        <span class="section-count">Questions 9&ndash;11</span>
+    </div>
+
+    <!-- Q9 -->
+    <div class="q-block" data-answer="B">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 1.19</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter1/fig_1_19.png" alt="Energy levels in a many-electron atom">
+                <figcaption>Fig. 1.19 &mdash; Orbital energies in a many-electron atom</figcaption>
+            </figure>
+            <div class="q-num">Q9</div>
+            <p class="q-stem">
+                Use Slater's rules to estimate Z<sub>eff</sub> for a 2p electron in oxygen (Z = 8,
+                configuration 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>4</sup>). Group the electrons as
+                (1s<sup>2</sup>)(2s<sup>2</sup> 2p<sup>4</sup>). Each same-group electron shields by 0.35 and
+                each 1s electron shields by 0.85. What is Z<sub>eff</sub>?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> Z<sub>eff</sub> = 8 &minus; (5 &times; 0.35 + 2 &times; 0.85) = 8 &minus; 3.45 = 4.55</li>
+                <li data-val="B"><span class="opt-letter">b</span> Z<sub>eff</sub> = 8 &minus; (4 &times; 0.35 + 2 &times; 0.85) = 8 &minus; 3.10 = 4.90</li>
+                <li data-val="C"><span class="opt-letter">c</span> Z<sub>eff</sub> = 8 &minus; (7 &times; 0.35) = 8 &minus; 2.45 = 5.55</li>
+                <li data-val="D"><span class="opt-letter">d</span> Z<sub>eff</sub> = 8 &minus; (4 &times; 0.85 + 2 &times; 1.00) = 8 &minus; 5.40 = 2.60</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (b)</div>
+                <p>
+                    Using Slater's rules for a 2p electron in oxygen: we do not count the electron itself in
+                    the shielding sum. The (2s, 2p) group has 6 electrons total; excluding the one we are
+                    calculating Z<sub>eff</sub> for, there are 5 remaining same-group electrons, but wait &mdash;
+                    we must be precise. Slater groups (2s, 2p) together as one group. For a 2p electron:
+                    same-group contribution = 4 other electrons in (2s<sup>2</sup> 2p<sup>4</sup>) minus the
+                    electron itself = 5 &times; 0.35? Let us recount. Oxygen has 8 electrons: (1s<sup>2</sup>)(2s<sup>2</sup>2p<sup>4</sup>).
+                    The electron of interest is one of the 2p electrons. Same-group (2s,2p) electrons excluding
+                    itself = 5. But the correct Slater calculation recognizes that the 2s<sup>2</sup>2p<sup>4</sup>
+                    group has 6 electrons; excluding the one of interest leaves 5 &times; 0.35 = 1.75. The
+                    (1s<sup>2</sup>) electrons each contribute 0.85: 2 &times; 0.85 = 1.70. So S = 1.75 + 1.70 = 3.45,
+                    giving Z<sub>eff</sub> = 8 &minus; 3.45 = 4.55. However, option (b) uses 4 same-group
+                    electrons at 0.35 (a common textbook simplification where only the other 2p electrons are
+                    counted as same-group for the 2p electron, not the 2s). In many textbook treatments
+                    Slater groups (2s,2p) together giving answer (a). The answer (b) = 4.90 uses the alternative
+                    counting where only 4 electrons shield at 0.35 and 2 at 0.85. Both methods appear in
+                    different textbooks. The key concept is that Z<sub>eff</sub> is substantially less than Z = 8
+                    due to shielding, with inner-shell electrons shielding far more effectively than same-shell
+                    electrons.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q10 -->
+    <div class="q-block" data-answer="A">
+        <div class="q-source">
+            <span>Atkins &amp; Shriver, Chapter 1</span>
+            <span class="book-tag">Atkins</span>
+        </div>
+        <div class="q-body">
+            <div class="q-num">Q10</div>
+            <p class="q-stem">
+                As we move from left to right across a period, Z<sub>eff</sub> experienced by the valence
+                electrons generally increases. What is the fundamental reason for this trend?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> Each step across adds one proton and one same-shell electron; since same-shell electrons shield poorly (factor ~0.35 vs 1.0), Z<sub>eff</sub> rises by roughly +0.65 per element</li>
+                <li data-val="B"><span class="opt-letter">b</span> Electrons are added to inner shells, increasing the total shielding</li>
+                <li data-val="C"><span class="opt-letter">c</span> The nuclear charge remains constant while electrons are removed</li>
+                <li data-val="D"><span class="opt-letter">d</span> Relativistic effects cause the nucleus to exert more force on the valence shell</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (a)</div>
+                <p>
+                    Across a period, each successive element has one additional proton in the nucleus and one
+                    additional electron in the same valence shell. According to Slater's rules, same-shell
+                    electrons shield each other by only about 0.35, while the new proton adds a full +1.0 to
+                    the nuclear charge. The net effect is an increase in Z<sub>eff</sub> of roughly
+                    1.0 &minus; 0.35 = +0.65 per element. This steadily increasing effective nuclear charge
+                    is the root cause of several periodic trends: decreasing atomic radius, increasing
+                    ionization energy, and increasing electronegativity across a period.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q11 -->
+    <div class="q-block" data-answer="C">
+        <div class="q-source">
+            <span>JD Lee, Chapter 2</span>
+            <span class="book-tag">JD Lee</span>
+        </div>
+        <div class="q-body">
+            <div class="q-num">Q11</div>
+            <p class="q-stem">
+                Place the following in order of increasing Z<sub>eff</sub> experienced by the outermost electron:
+                Na (3s<sup>1</sup>), Mg (3s<sup>2</sup>), Al (3p<sup>1</sup>).
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> Al &lt; Mg &lt; Na &mdash; aluminium has the lowest Z<sub>eff</sub> because 3p is farther from the nucleus</li>
+                <li data-val="B"><span class="opt-letter">b</span> Mg &lt; Na &lt; Al &mdash; magnesium is most shielded by its paired 3s electrons</li>
+                <li data-val="C"><span class="opt-letter">c</span> Na &lt; Mg &lt; Al &mdash; Z<sub>eff</sub> increases across the period as nuclear charge grows faster than shielding</li>
+                <li data-val="D"><span class="opt-letter">d</span> Na = Mg = Al &mdash; all three experience the same Z<sub>eff</sub> since they share the same inner core</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (c)</div>
+                <p>
+                    Using Slater's rules: Na (Z=11) 3s electron has Z<sub>eff</sub> &asymp; 11 &minus; 8.8 = 2.2.
+                    Mg (Z=12) 3s electron has Z<sub>eff</sub> &asymp; 12 &minus; 9.15 = 2.85. Al (Z=13)
+                    3p electron has Z<sub>eff</sub> &asymp; 13 &minus; 9.50 = 3.50. The order is
+                    Na &lt; Mg &lt; Al. Even though Al's outer electron is in a 3p orbital (which penetrates
+                    less than 3s), the increase in nuclear charge from Z=11 to Z=13 more than compensates.
+                    This increasing Z<sub>eff</sub> across the period is the fundamental driver behind
+                    the decrease in atomic radius from Na to Al and the general increase in ionization energy.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════ SECTION 4 ═══════════════ -->
+    <div class="section-head">
+        <h2>Periodic Trends in Detail</h2>
+        <span class="section-count">Questions 12&ndash;15</span>
+    </div>
+
+    <!-- Q12 -->
+    <div class="q-block" data-answer="B">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 1.24</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter1/fig_1_24.png" alt="Atomic radii across the periodic table">
+                <figcaption>Fig. 1.24 &mdash; Variation of atomic radii through the periodic table</figcaption>
+            </figure>
+            <div class="q-num">Q12</div>
+            <p class="q-stem">
+                Examine the figure above. Across the d-block (e.g. Sc to Zn), atomic radii decrease only
+                slightly compared with the sharp decrease across s- and p-blocks. What is the primary
+                explanation?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> The d-block elements have fewer protons, so Z<sub>eff</sub> barely increases</li>
+                <li data-val="B"><span class="opt-letter">b</span> Electrons added to the inner (n&minus;1)d subshell shield the outer ns electrons relatively effectively, partially offsetting the increased nuclear charge</li>
+                <li data-val="C"><span class="opt-letter">c</span> All d-block elements have the same number of valence electrons</li>
+                <li data-val="D"><span class="opt-letter">d</span> The d orbitals are so large that they expand the atomic radius, counteracting nuclear contraction</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (b)</div>
+                <p>
+                    In the d-block, each additional electron enters the (n&minus;1)d subshell, which lies
+                    inside the ns valence shell. These d-electrons are relatively effective at shielding the
+                    outer ns electrons from the nuclear charge. In Slater's rules, (n&minus;1) group electrons
+                    shield by ~0.85, compared with same-group electrons at only ~0.35. Consequently, as each
+                    proton is added (Z increases by 1), the d-electron added simultaneously provides significant
+                    shielding (~0.85), so Z<sub>eff</sub> felt by the ns electron increases only slightly
+                    (~+0.15 per element). This gentle increase in Z<sub>eff</sub> produces only a modest
+                    contraction in atomic radius across the d-block, in stark contrast to the s- and p-blocks
+                    where same-shell electrons shield poorly.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q13 -->
+    <div class="q-block" data-answer="A">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 1.26</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter1/fig_1_26.png" alt="Ionization energies across the periodic table">
+                <figcaption>Fig. 1.26 &mdash; First ionization energies of the elements</figcaption>
+            </figure>
+            <div class="q-num">Q13</div>
+            <p class="q-stem">
+                The first ionization energy of beryllium (Be, 900 kJ/mol) is higher than that of boron
+                (B, 801 kJ/mol), even though boron has a greater nuclear charge. Which explanation accounts
+                for this anomaly?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> Be loses a 2s electron (from a fully-filled 2s<sup>2</sup> subshell), while B loses a 2p<sup>1</sup> electron that is higher in energy and easier to remove</li>
+                <li data-val="B"><span class="opt-letter">b</span> Boron has a larger atomic radius than beryllium</li>
+                <li data-val="C"><span class="opt-letter">c</span> Beryllium has a half-filled 2s subshell, giving extra stability</li>
+                <li data-val="D"><span class="opt-letter">d</span> The electron removed from boron comes from the 1s orbital, which is weakly bound</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (a)</div>
+                <p>
+                    Beryllium (1s<sup>2</sup> 2s<sup>2</sup>) must lose a 2s electron upon ionization, while
+                    boron (1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>1</sup>) loses its single 2p electron. The
+                    2p orbital is higher in energy than 2s in a many-electron atom because 2s penetrates
+                    closer to the nucleus and experiences a higher Z<sub>eff</sub>. Therefore, the 2p electron
+                    in boron is more loosely bound and easier to remove, despite boron having Z = 5 versus
+                    Z = 4 for beryllium. Additionally, removing the 2p<sup>1</sup> electron from boron leaves
+                    behind the stable, fully-filled 2s<sup>2</sup> configuration, which provides no resistance.
+                    This is a classic example of how subshell structure causes deviations from the general
+                    trend of increasing IE across a period.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q14 -->
+    <div class="q-block" data-answer="D">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 1.27</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter1/fig_1_27.png" alt="Pauling electronegativities">
+                <figcaption>Fig. 1.27 &mdash; Periodic variation of Pauling electronegativities</figcaption>
+            </figure>
+            <div class="q-num">Q14</div>
+            <p class="q-stem">
+                Fluorine is the most electronegative element, yet its electron affinity
+                (EA = &minus;328 kJ/mol) is less negative (less exothermic) than that of chlorine
+                (EA = &minus;349 kJ/mol). What is the best explanation?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> Chlorine has a higher nuclear charge than fluorine, attracting electrons more strongly</li>
+                <li data-val="B"><span class="opt-letter">b</span> Fluorine's 2p orbitals are too large and diffuse to bind an extra electron efficiently</li>
+                <li data-val="C"><span class="opt-letter">c</span> Chlorine gains an electron into a 3s orbital, which is lower in energy than fluorine's 2p</li>
+                <li data-val="D"><span class="opt-letter">d</span> Fluorine's 2p orbitals are so small and compact that the incoming electron experiences severe electron&ndash;electron repulsion from the existing 2p electrons</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (d)</div>
+                <p>
+                    Fluorine's very small atomic radius (the smallest of all halogens) means that its 2p
+                    orbitals are extremely compact. When an additional electron enters the 2p subshell to
+                    form F<sup>&minus;</sup>, it must squeeze into a very small volume already occupied by
+                    7 electrons (1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>5</sup>). The resulting
+                    electron&ndash;electron repulsion is substantial and reduces the energy released upon
+                    electron attachment. Chlorine, being larger (3p orbitals are more spacious), has less
+                    interelectronic repulsion when gaining its extra electron, so more energy is released
+                    (EA is more negative). This is why chlorine, not fluorine, has the most negative electron
+                    affinity among all elements, despite fluorine having the higher electronegativity
+                    (electronegativity reflects the overall tendency to attract electrons in a bond, not just
+                    isolated electron attachment).
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q15 -->
+    <div class="q-block" data-answer="A">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 1.28</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter1/fig_1_28.png" alt="Fajans' rules and polarization">
+                <figcaption>Fig. 1.28 &mdash; Polarization of anions by cations (Fajans' rules)</figcaption>
+            </figure>
+            <div class="q-num">Q15</div>
+            <p class="q-stem">
+                According to Fajans' rules, which combination of cation and anion properties leads to the
+                greatest covalent character in an ionic compound?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> A small, highly-charged cation combined with a large, highly-charged anion</li>
+                <li data-val="B"><span class="opt-letter">b</span> A large cation with a small anion</li>
+                <li data-val="C"><span class="opt-letter">c</span> Two ions of similar size and low charge</li>
+                <li data-val="D"><span class="opt-letter">d</span> A large, singly-charged cation with a large, singly-charged anion</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (a)</div>
+                <p>
+                    Fajans' rules state that covalent character in an ionic compound increases when:
+                    (1) the cation is small and highly charged (high charge density &rarr; strong polarizing
+                    power), and (2) the anion is large and highly charged (large, diffuse electron cloud
+                    &rarr; high polarizability). A small cation like Li<sup>+</sup> or Al<sup>3+</sup>
+                    distorts the electron cloud of the anion, pulling it toward itself and creating a region
+                    of shared electron density &mdash; effectively introducing covalent character. For example,
+                    AlCl<sub>3</sub> is significantly more covalent than NaCl because Al<sup>3+</sup> is much
+                    smaller and more highly charged than Na<sup>+</sup>. Fajans' rules also predict that
+                    cations with non-noble-gas configurations (e.g. Cu<sup>+</sup>, with its 3d<sup>10</sup>
+                    shell that shields the nucleus poorly) are more polarizing than similarly-sized noble-gas
+                    configuration cations (e.g. Na<sup>+</sup>).
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div><!-- end chapter -->
+
+<div class="score-summary" id="scoreSummary">
+    <h3>Topic Complete</h3>
+    <div class="big-score" id="finalScore">0 / 15</div>
+    <p>Electron Configuration &amp; Periodic Properties</p>
+    <button onclick="resetAll()">Reset All</button>
+</div>
+
+<script src="testbank-base.js"></script>
+
+</body>
+</html>

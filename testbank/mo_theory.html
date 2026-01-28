@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Test Bank: MO Theory | CHEM 361</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="testbank-base.css">
+</head>
+<body data-topic="mo_theory">
+
+<div class="topbar">
+    <div class="topbar-left">
+        <a href="../index.html">CHEM 361</a> / Test Bank / MO Theory
+    </div>
+    <div class="score-pill" id="scorePill">0 / 0</div>
+</div>
+
+<div class="hero">
+    <div class="hero-eyebrow">Test Bank &mdash; Unit 1</div>
+    <h1>Molecular Orbital Theory</h1>
+    <p class="hero-sub">
+        Practice problems drawn from Housecroft, Atkins, JD Lee, and others.
+        Select an answer or click "Show Answer" to reveal the explanation.
+    </p>
+</div>
+
+<div class="chapter" id="chapter">
+
+    <!-- ═══════════════ SECTION 1 ═══════════════ -->
+    <div class="section-head">
+        <h2>LCAO &amp; MO Fundamentals</h2>
+        <span class="section-count">Questions 1&ndash;3</span>
+    </div>
+
+    <!-- Q1 -->
+    <div class="q-block" data-answer="C">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 2.10</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter2/fig_2_10.png" alt="In-phase and out-of-phase combination of atomic orbitals">
+                <figcaption>Fig. 2.10 &mdash; In-phase and out-of-phase combination of atomic orbitals</figcaption>
+            </figure>
+            <div class="q-num">Q1</div>
+            <p class="q-stem">
+                When two atomic orbitals on adjacent atoms combine according to the LCAO method,
+                two molecular orbitals result. Referring to the figure above, what happens when
+                the orbitals combine in-phase versus out-of-phase?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> In-phase gives an antibonding MO; out-of-phase gives a bonding MO</li>
+                <li data-val="B"><span class="opt-letter">b</span> Both combinations produce bonding MOs of equal energy</li>
+                <li data-val="C"><span class="opt-letter">c</span> In-phase gives a bonding MO (constructive interference, increased electron density between nuclei); out-of-phase gives an antibonding MO (destructive interference, a node between nuclei)</li>
+                <li data-val="D"><span class="opt-letter">d</span> In-phase gives a non-bonding MO; out-of-phase gives an antibonding MO</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (c)</div>
+                <p>
+                    When two atomic orbitals combine in-phase (same sign of the wavefunction), constructive
+                    interference occurs and electron density builds up between the two nuclei, producing a
+                    bonding MO that is lower in energy than the original atomic orbitals. Out-of-phase
+                    combination (opposite signs) leads to destructive interference, creating a node between
+                    the nuclei &mdash; this is an antibonding MO, higher in energy than the original AOs.
+                    The number of molecular orbitals always equals the number of atomic orbitals combined.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="q-block" data-answer="B">
+        <div class="q-source">
+            <span>Atkins &amp; Shriver, Chapter 2</span>
+            <span class="book-tag">Atkins</span>
+        </div>
+        <div class="q-body">
+            <div class="q-num">Q2</div>
+            <p class="q-stem">
+                The bond order of a diatomic molecule is calculated using the formula
+                BO = (number of bonding electrons &minus; number of antibonding electrons) / 2.
+                A molecule with a bond order of zero is predicted to:
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> Have a single bond and be stable</li>
+                <li data-val="B"><span class="opt-letter">b</span> Be unstable and not exist as a bound species under normal conditions</li>
+                <li data-val="C"><span class="opt-letter">c</span> Have a very strong triple bond</li>
+                <li data-val="D"><span class="opt-letter">d</span> Be paramagnetic with one unpaired electron</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (b)</div>
+                <p>
+                    Bond order = (bonding e<sup>&minus;</sup> &minus; antibonding e<sup>&minus;</sup>) / 2.
+                    When BO = 0, the stabilizing effect of bonding electrons is exactly cancelled by the
+                    destabilizing effect of antibonding electrons (in fact, antibonding MOs are slightly
+                    more destabilizing than bonding MOs are stabilizing). The molecule has no net bond
+                    and does not exist as a stable species. A classic example is He<sub>2</sub>:
+                    (&sigma;<sub>1s</sub>)<sup>2</sup>(&sigma;*<sub>1s</sub>)<sup>2</sup>, giving
+                    BO = (2 &minus; 2)/2 = 0.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="q-block" data-answer="A">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 2.12</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter2/fig_2_12.png" alt="Sigma and pi overlap">
+                <figcaption>Fig. 2.12 &mdash; Head-on (sigma) vs. lateral (pi) overlap of p orbitals</figcaption>
+            </figure>
+            <div class="q-num">Q3</div>
+            <p class="q-stem">
+                Referring to the figure, a &sigma; bond formed from head-on overlap of two p orbitals
+                is generally stronger than a &pi; bond formed from lateral (side-on) overlap. Why?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> Head-on overlap concentrates electron density directly along the internuclear axis, giving greater orbital overlap and a larger stabilization energy</li>
+                <li data-val="B"><span class="opt-letter">b</span> Lateral overlap places more electron density along the internuclear axis than head-on overlap</li>
+                <li data-val="C"><span class="opt-letter">c</span> Pi bonds involve s orbitals, which are smaller and overlap less effectively</li>
+                <li data-val="D"><span class="opt-letter">d</span> Sigma bonds always involve d orbitals and therefore have higher overlap integrals</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (a)</div>
+                <p>
+                    In head-on (&sigma;) overlap, the lobes of two p orbitals point directly at each other
+                    along the internuclear axis. This concentrates electron density between the nuclei and
+                    maximizes the overlap integral S, producing a large stabilization energy. In lateral (&pi;)
+                    overlap, the p lobes are parallel and overlap above and below the axis &mdash; the overlap
+                    region is more diffuse and less effective. As a result, &pi; bonds are individually weaker
+                    than &sigma; bonds, though a triple bond (one &sigma; + two &pi;) is collectively very strong.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════ SECTION 2 ═══════════════ -->
+    <div class="section-head">
+        <h2>Homonuclear Diatomics</h2>
+        <span class="section-count">Questions 4&ndash;8</span>
+    </div>
+
+    <!-- Q4 -->
+    <div class="q-block" data-answer="D">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 2.17</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter2/fig_2_17.png" alt="MO diagram of O2">
+                <figcaption>Fig. 2.17 &mdash; MO diagram for O<sub>2</sub></figcaption>
+            </figure>
+            <div class="q-num">Q4</div>
+            <p class="q-stem">
+                Molecular oxygen (O<sub>2</sub>) is experimentally observed to be paramagnetic.
+                Looking at the MO diagram above, which feature of the electronic configuration
+                explains this paramagnetism?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> All electrons are paired in bonding MOs, so O<sub>2</sub> is actually diamagnetic</li>
+                <li data-val="B"><span class="opt-letter">b</span> There is one unpaired electron in the &sigma;*<sub>2p</sub> orbital</li>
+                <li data-val="C"><span class="opt-letter">c</span> The bond order is zero, and all electrons are in antibonding orbitals</li>
+                <li data-val="D"><span class="opt-letter">d</span> There are two unpaired electrons, one in each of the degenerate &pi;*<sub>2p</sub> orbitals (Hund's rule)</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (d)</div>
+                <p>
+                    O<sub>2</sub> has 16 electrons. After filling the bonding MOs, two electrons remain
+                    to occupy the two degenerate &pi;*<sub>2p</sub> antibonding orbitals. By Hund's rule,
+                    these two electrons enter the two &pi;* orbitals with parallel spins rather than pairing
+                    in one orbital. This gives O<sub>2</sub> two unpaired electrons, making it paramagnetic
+                    &mdash; a fact that Lewis structures (which predict all electrons paired) fail to explain.
+                    The bond order is (8 &minus; 4)/2 = 2, consistent with a double bond.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q5 -->
+    <div class="q-block" data-answer="B">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 2.11</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter2/fig_2_11.png" alt="Photoelectron spectrum of N2">
+                <figcaption>Fig. 2.11 &mdash; Photoelectron spectrum (PES) of N<sub>2</sub></figcaption>
+            </figure>
+            <div class="q-num">Q5</div>
+            <p class="q-stem">
+                The photoelectron spectrum of N<sub>2</sub> shown above reveals peaks at different
+                ionization energies corresponding to electrons in different MOs. How does PES
+                provide experimental support for MO theory?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> PES shows that all electrons in N<sub>2</sub> have identical energies, confirming a single bonding MO</li>
+                <li data-val="B"><span class="opt-letter">b</span> Each peak corresponds to ionization from a specific MO; the number and spacing of peaks match the predicted MO energy level diagram, including the effect of s-p mixing on the &sigma;<sub>2p</sub> level</li>
+                <li data-val="C"><span class="opt-letter">c</span> PES only measures core electrons and tells nothing about valence MOs</li>
+                <li data-val="D"><span class="opt-letter">d</span> PES disproves MO theory by showing more peaks than predicted</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (b)</div>
+                <p>
+                    Photoelectron spectroscopy ionizes electrons from occupied MOs. Each peak in the spectrum
+                    corresponds to a distinct MO energy level &mdash; the ionization energy equals the negative
+                    of the orbital energy (Koopmans' theorem). For N<sub>2</sub>, the PES shows that
+                    the &sigma;<sub>2p</sub> MO is higher in energy than the &pi;<sub>2p</sub> MOs, confirming
+                    the effect of s-p mixing. The vibrational fine structure of each peak also reveals whether
+                    the electron was in a bonding (many vibrational states, changed bond length upon ionization)
+                    or weakly bonding/non-bonding orbital. This direct experimental evidence validates the MO
+                    energy ordering predicted by theory.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q6 -->
+    <div class="q-block" data-answer="C">
+        <div class="q-source">
+            <span>JD Lee, Chapter 4</span>
+            <span class="book-tag">JD Lee</span>
+        </div>
+        <div class="q-body">
+            <div class="q-num">Q6</div>
+            <p class="q-stem">
+                The phenomenon of s-p mixing (also called s-p hybridization in MO context) alters
+                the expected energy ordering of molecular orbitals in homonuclear diatomics. Which
+                of the following correctly describes when s-p mixing occurs and its effect?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> It occurs in O<sub>2</sub> and F<sub>2</sub>, raising the &pi;<sub>2p</sub> above the &sigma;<sub>2p</sub></li>
+                <li data-val="B"><span class="opt-letter">b</span> It occurs in all diatomics equally and has no effect on energy ordering</li>
+                <li data-val="C"><span class="opt-letter">c</span> It is significant in Li<sub>2</sub> through N<sub>2</sub> (where the 2s&ndash;2p energy gap is small), and it pushes the &sigma;<sub>2p</sub> above the &pi;<sub>2p</sub> in energy</li>
+                <li data-val="D"><span class="opt-letter">d</span> It only occurs in heteronuclear diatomics like CO and HF</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (c)</div>
+                <p>
+                    s-p mixing arises because the &sigma;<sub>2s</sub> and &sigma;<sub>2p</sub> MOs have
+                    the same symmetry (&sigma;<sub>g</sub>). When the 2s and 2p atomic orbital energies are
+                    close together (as in Li through N), these &sigma; MOs interact and repel each other in
+                    energy: the &sigma;<sub>2s</sub> is pushed down and the &sigma;<sub>2p</sub> is pushed up.
+                    This reverses the expected ordering so that &sigma;<sub>2p</sub> lies above
+                    &pi;<sub>2p</sub>. In O<sub>2</sub> and F<sub>2</sub>, the 2s&ndash;2p gap is large enough
+                    that s-p mixing is negligible, and the "normal" ordering (&sigma;<sub>2p</sub> below
+                    &pi;<sub>2p</sub>) is restored.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q7 -->
+    <div class="q-block" data-answer="A">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 2.18</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter2/fig_2_18.png" alt="MO diagrams comparing N2 species">
+                <figcaption>Fig. 2.18 &mdash; MO energy levels for N<sub>2</sub> and related species</figcaption>
+            </figure>
+            <div class="q-num">Q7</div>
+            <p class="q-stem">
+                Calculate the bond orders of N<sub>2</sub> (10 valence electrons) and
+                N<sub>2</sub><sup>+</sup> (9 valence electrons). Which species has the shorter bond?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> N<sub>2</sub> has BO = 3 and N<sub>2</sub><sup>+</sup> has BO = 2.5; N<sub>2</sub> has the shorter bond</li>
+                <li data-val="B"><span class="opt-letter">b</span> Both have BO = 3 and identical bond lengths</li>
+                <li data-val="C"><span class="opt-letter">c</span> N<sub>2</sub><sup>+</sup> has BO = 3.5 and the shorter bond</li>
+                <li data-val="D"><span class="opt-letter">d</span> N<sub>2</sub> has BO = 2 and N<sub>2</sub><sup>+</sup> has BO = 2.5; N<sub>2</sub><sup>+</sup> has the shorter bond</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (a)</div>
+                <p>
+                    For N<sub>2</sub> (10 valence electrons):
+                    (&sigma;<sub>2s</sub>)<sup>2</sup>(&sigma;*<sub>2s</sub>)<sup>2</sup>(&pi;<sub>2p</sub>)<sup>4</sup>(&sigma;<sub>2p</sub>)<sup>2</sup>.
+                    Bonding = 8, antibonding = 2, so BO = (8 &minus; 2)/2 = 3.
+                    For N<sub>2</sub><sup>+</sup> (9 valence electrons), one electron is removed from the
+                    highest occupied MO (&sigma;<sub>2p</sub>): bonding = 7, antibonding = 2, so
+                    BO = (7 &minus; 2)/2 = 2.5. Higher bond order correlates with shorter, stronger bonds.
+                    N<sub>2</sub> bond length is 109.8 pm; N<sub>2</sub><sup>+</sup> is 111.6 pm &mdash;
+                    confirming that the triple bond in N<sub>2</sub> is shorter.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q8 -->
+    <div class="q-block" data-answer="B">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 2.19</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter2/fig_2_19.png" alt="MO diagram for He2 and He2+">
+                <figcaption>Fig. 2.19 &mdash; MO diagrams for He<sub>2</sub> and He<sub>2</sub><sup>+</sup></figcaption>
+            </figure>
+            <div class="q-num">Q8</div>
+            <p class="q-stem">
+                He<sub>2</sub> does not exist as a stable molecule, yet He<sub>2</sub><sup>+</sup> has
+                been detected experimentally. Using bond order arguments and the MO diagram above,
+                explain why.
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> He<sub>2</sub> has BO = 1 but the bond is too weak; He<sub>2</sub><sup>+</sup> has BO = 0</li>
+                <li data-val="B"><span class="opt-letter">b</span> He<sub>2</sub> has BO = 0 (2 bonding, 2 antibonding electrons &mdash; no net bond); He<sub>2</sub><sup>+</sup> has BO = 0.5 (2 bonding, 1 antibonding electron), giving a weak but real bond</li>
+                <li data-val="C"><span class="opt-letter">c</span> Both have BO = 0, but He<sub>2</sub><sup>+</sup> is stabilized by its positive charge alone</li>
+                <li data-val="D"><span class="opt-letter">d</span> He<sub>2</sub> has BO = 0.5 and He<sub>2</sub><sup>+</sup> has BO = 1</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (b)</div>
+                <p>
+                    He<sub>2</sub> has 4 electrons: (&sigma;<sub>1s</sub>)<sup>2</sup>(&sigma;*<sub>1s</sub>)<sup>2</sup>.
+                    BO = (2 &minus; 2)/2 = 0 &mdash; the antibonding electrons completely cancel the bonding,
+                    and in fact antibonding MOs are slightly more destabilizing than bonding MOs are stabilizing,
+                    so the molecule is energetically unfavorable. He<sub>2</sub><sup>+</sup> has 3 electrons:
+                    (&sigma;<sub>1s</sub>)<sup>2</sup>(&sigma;*<sub>1s</sub>)<sup>1</sup>.
+                    BO = (2 &minus; 1)/2 = 0.5 &mdash; there is a net bonding interaction, producing a weak but
+                    detectable bond. He<sub>2</sub><sup>+</sup> has been observed with a bond dissociation
+                    energy of about 230 kJ/mol.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════ SECTION 3 ═══════════════ -->
+    <div class="section-head">
+        <h2>Heteronuclear Diatomics</h2>
+        <span class="section-count">Questions 9&ndash;12</span>
+    </div>
+
+    <!-- Q9 -->
+    <div class="q-block" data-answer="C">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 2.20</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter2/fig_2_20.png" alt="MO diagram for HF">
+                <figcaption>Fig. 2.20 &mdash; MO diagram for HF</figcaption>
+            </figure>
+            <div class="q-num">Q9</div>
+            <p class="q-stem">
+                In the MO diagram for HF shown above, the bonding MO has a greater contribution
+                from the F 2p orbital than from the H 1s orbital. Why?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> Hydrogen is more electronegative than fluorine, so its orbital dominates</li>
+                <li data-val="B"><span class="opt-letter">b</span> The F 2p orbital is higher in energy and therefore contributes more to the bonding MO</li>
+                <li data-val="C"><span class="opt-letter">c</span> Fluorine is much more electronegative; its 2p orbitals are lower in energy and closer in energy to the bonding MO, so they contribute more to it</li>
+                <li data-val="D"><span class="opt-letter">d</span> Both atoms contribute equally to all MOs in heteronuclear diatomics</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (c)</div>
+                <p>
+                    In heteronuclear diatomics, the bonding MO is weighted toward the more electronegative
+                    atom. Fluorine (&chi; = 4.0) is far more electronegative than hydrogen (&chi; = 2.1), so
+                    the F 2p orbitals lie at lower energy. The bonding MO, being lower in energy, has a larger
+                    coefficient on F &mdash; meaning the bonding electron density is polarized toward fluorine.
+                    Conversely, the antibonding MO is weighted toward H. This asymmetry is the MO explanation
+                    for the polar nature of the H&ndash;F bond (partial negative charge on F).
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q10 -->
+    <div class="q-block" data-answer="B">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 2.22</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter2/fig_2_22.png" alt="MO diagram for CO">
+                <figcaption>Fig. 2.22 &mdash; MO diagram for CO</figcaption>
+            </figure>
+            <div class="q-num">Q10</div>
+            <p class="q-stem">
+                CO is isoelectronic with N<sub>2</sub> (both have 14 electrons). However, the MO diagram
+                for CO differs from that of N<sub>2</sub>. What is the key difference and why?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> CO has fewer MOs because carbon has fewer orbitals than nitrogen</li>
+                <li data-val="B"><span class="opt-letter">b</span> The MO diagram is asymmetric: oxygen's AOs lie at lower energy than carbon's due to its greater electronegativity, so the bonding MOs are polarized toward O and antibonding MOs toward C</li>
+                <li data-val="C"><span class="opt-letter">c</span> CO has a bond order of 2 instead of 3 because heteronuclear bonding is always weaker</li>
+                <li data-val="D"><span class="opt-letter">d</span> There is no difference; isoelectronic species always have identical MO diagrams</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (b)</div>
+                <p>
+                    Although CO and N<sub>2</sub> are isoelectronic, CO is heteronuclear: the oxygen AOs are
+                    lower in energy than the carbon AOs because oxygen is more electronegative. This makes the
+                    MO diagram asymmetric &mdash; unlike the symmetric N<sub>2</sub> diagram. The bonding MOs
+                    have larger coefficients on O (polarized toward the more electronegative atom), while the
+                    antibonding MOs and the HOMO lone pair have larger coefficients on C. Despite this asymmetry,
+                    CO retains a bond order of 3 and is in fact the strongest diatomic bond known
+                    (1076 kJ/mol), even stronger than N<sub>2</sub> (945 kJ/mol).
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q11 -->
+    <div class="q-block" data-answer="A">
+        <div class="q-source">
+            <span>Atkins &amp; Shriver, Chapter 2</span>
+            <span class="book-tag">Atkins</span>
+        </div>
+        <div class="q-body">
+            <div class="q-num">Q11</div>
+            <p class="q-stem">
+                In carbon monoxide (CO), the highest occupied molecular orbital (HOMO) is a lone pair.
+                On which atom is this HOMO lone pair predominantly localized, and what is the chemical
+                significance of this?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> On carbon &mdash; despite C being less electronegative, the antibonding character of the HOMO weights it toward C; this is why CO binds to transition metals through the carbon end</li>
+                <li data-val="B"><span class="opt-letter">b</span> On oxygen &mdash; the more electronegative atom always holds the HOMO</li>
+                <li data-val="C"><span class="opt-letter">c</span> Equally shared between C and O because the bond order is 3</li>
+                <li data-val="D"><span class="opt-letter">d</span> On carbon, because carbon is more electronegative than oxygen</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (a)</div>
+                <p>
+                    The HOMO of CO (sometimes labeled 3&sigma; or 5&sigma;) is a lone pair that is largely
+                    localized on carbon. This may seem counterintuitive since oxygen is more electronegative,
+                    but the HOMO has antibonding character with respect to the 2s interaction, and antibonding
+                    MOs are weighted toward the less electronegative atom. This carbon-centered lone pair is
+                    the reason CO acts as a strong &sigma;-donor ligand in coordination chemistry: it donates
+                    the C lone pair into empty metal d orbitals. CO always binds to metals M&ndash;C&equiv;O,
+                    never M&ndash;O&equiv;C (except in rare isocarbonyl cases).
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q12 -->
+    <div class="q-block" data-answer="D">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 2.24</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter2/fig_2_24.png" alt="MO diagram for NO">
+                <figcaption>Fig. 2.24 &mdash; MO diagram for NO</figcaption>
+            </figure>
+            <div class="q-num">Q12</div>
+            <p class="q-stem">
+                Nitric oxide (NO) has 15 electrons. Why is NO described as a radical, and what is
+                its bond order?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> NO has zero unpaired electrons and a bond order of 3</li>
+                <li data-val="B"><span class="opt-letter">b</span> NO has two unpaired electrons in the &pi;* orbitals and a bond order of 2</li>
+                <li data-val="C"><span class="opt-letter">c</span> NO has one unpaired electron in a bonding &pi; orbital and a bond order of 3</li>
+                <li data-val="D"><span class="opt-letter">d</span> NO has one unpaired electron in a &pi;* orbital and a bond order of 2.5; the odd electron count makes it a radical</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (d)</div>
+                <p>
+                    NO has 15 electrons &mdash; an odd number, guaranteeing at least one unpaired electron.
+                    The electronic configuration places 8 electrons in bonding MOs and 3 in antibonding MOs
+                    (the extra electron relative to N<sub>2</sub> enters a &pi;* orbital). Bond order =
+                    (8 &minus; 3)/2 = 2.5. The single unpaired electron in &pi;* makes NO a radical (a species
+                    with an unpaired electron). This radical character underlies NO's biological importance as
+                    a signaling molecule. Removing the antibonding electron to form NO<sup>+</sup> increases
+                    the bond order to 3 and makes the ion isoelectronic with N<sub>2</sub> and CO.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════ SECTION 4 ═══════════════ -->
+    <div class="section-head">
+        <h2>Applications &amp; Frontier Orbitals</h2>
+        <span class="section-count">Questions 13&ndash;15</span>
+    </div>
+
+    <!-- Q13 -->
+    <div class="q-block" data-answer="B">
+        <div class="q-source">
+            <span>Atkins &amp; Shriver, Chapter 2</span>
+            <span class="book-tag">Atkins</span>
+        </div>
+        <div class="q-body">
+            <div class="q-num">Q13</div>
+            <p class="q-stem">
+                The concept of "frontier orbitals" is central to understanding chemical reactivity.
+                What are frontier orbitals, and why are they important?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> They are the core 1s orbitals, which determine the atom's identity</li>
+                <li data-val="B"><span class="opt-letter">b</span> They are the HOMO (highest occupied molecular orbital) and LUMO (lowest unoccupied molecular orbital); chemical reactions involve electron transfer or sharing between the HOMO of one species and the LUMO of another</li>
+                <li data-val="C"><span class="opt-letter">c</span> They are the orbitals at the boundary between s and p subshells</li>
+                <li data-val="D"><span class="opt-letter">d</span> They are the non-bonding orbitals that do not participate in any reactions</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (b)</div>
+                <p>
+                    Frontier molecular orbital (FMO) theory, developed by Kenichi Fukui (Nobel Prize 1981),
+                    identifies the HOMO and LUMO as the key orbitals controlling reactivity. A nucleophile
+                    donates electrons from its HOMO into the LUMO of the electrophile. The energy gap between
+                    HOMO and LUMO determines the kinetic accessibility of a reaction &mdash; a smaller gap
+                    generally means easier reaction. In coordination chemistry, frontier orbitals explain
+                    ligand binding: a ligand's HOMO donates into a metal's LUMO (&sigma; donation), and the
+                    metal's filled d orbitals (acting as HOMO) can donate into the ligand's LUMO (&pi; back-bonding).
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q14 -->
+    <div class="q-block" data-answer="C">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 2.23</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter2/fig_2_23.png" alt="CO as a ligand: sigma donation and pi back-bonding">
+                <figcaption>Fig. 2.23 &mdash; CO as a ligand: &sigma; donation and &pi; back-bonding</figcaption>
+            </figure>
+            <div class="q-num">Q14</div>
+            <p class="q-stem">
+                CO is one of the strongest-field ligands in coordination chemistry. Referring to the
+                figure above, which combination of orbital interactions explains why CO binds so
+                strongly to transition metals?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> CO donates from its &pi; bonding orbitals into the metal's s orbital only</li>
+                <li data-val="B"><span class="opt-letter">b</span> The metal donates electrons to CO's &sigma; bonding orbital, weakening the C&ndash;O bond</li>
+                <li data-val="C"><span class="opt-letter">c</span> CO &sigma;-donates the carbon lone pair (HOMO) into an empty metal d orbital, and the metal &pi;-back-donates from its filled d orbitals into the CO &pi;* (LUMO); these two interactions are synergistic</li>
+                <li data-val="D"><span class="opt-letter">d</span> CO binds only through electrostatic attraction between the C&ndash;O dipole and the metal cation</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (c)</div>
+                <p>
+                    CO binds to metals through a synergistic two-way interaction. First, the carbon lone pair
+                    (the HOMO of CO, localized on C) donates into an empty metal d orbital &mdash; this is
+                    &sigma; donation, which increases electron density on the metal. Second, filled metal
+                    d orbitals with appropriate symmetry donate electron density back into the empty &pi;*
+                    antibonding orbitals of CO &mdash; this is &pi; back-bonding (or back-donation). The
+                    two processes reinforce each other: &sigma; donation increases electron density on the
+                    metal, which enhances &pi; back-bonding, which in turn makes CO a better &sigma; donor.
+                    A consequence of &pi; back-bonding is that electron density enters CO's antibonding
+                    orbitals, weakening and lengthening the C&equiv;O bond (the CO stretching frequency
+                    in IR decreases from 2143 cm<sup>&minus;1</sup> in free CO).
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q15 -->
+    <div class="q-block" data-answer="A">
+        <div class="q-source">
+            <span>JD Lee, Chapter 4; Housecroft Fig. 2.28</span>
+            <span class="book-tag">JD Lee</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter2/fig_2_28.png" alt="MO diagram for ICl">
+                <figcaption>Fig. 2.28 &mdash; MO approach to interhalogen bonding (ICl)</figcaption>
+            </figure>
+            <div class="q-num">Q15</div>
+            <p class="q-stem">
+                Using an MO perspective, predict the bond character of ICl. Consider the relative
+                electronegativities of iodine (&chi; = 2.7) and chlorine (&chi; = 3.2).
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> Polar covalent: the bonding MOs are polarized toward Cl (more electronegative), giving Cl a partial negative charge; the bond is covalent but with significant ionic character</li>
+                <li data-val="B"><span class="opt-letter">b</span> Purely ionic: I donates an electron completely to Cl, forming I<sup>+</sup>Cl<sup>&minus;</sup></li>
+                <li data-val="C"><span class="opt-letter">c</span> Purely covalent: both atoms contribute equally to all MOs because they are both halogens</li>
+                <li data-val="D"><span class="opt-letter">d</span> Non-bonding: the electronegativity difference is too small to form a bond</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (a)</div>
+                <p>
+                    ICl is a heteronuclear diatomic between two halogens with different electronegativities.
+                    Chlorine (&chi; = 3.2) is more electronegative than iodine (&chi; = 2.7), so the Cl
+                    atomic orbitals lie at lower energy. In the MO diagram, the bonding MOs have larger
+                    coefficients on Cl, meaning bonding electron density is polarized toward chlorine. This
+                    gives Cl a partial negative charge (&delta;&minus;) and I a partial positive charge
+                    (&delta;+). The bond is polar covalent &mdash; not purely ionic (the electronegativity
+                    difference of 0.5 is moderate) and not purely covalent (the atoms are not identical).
+                    The MO approach naturally explains the polarity: no additional assumptions about "percent
+                    ionic character" are needed, as the unequal orbital coefficients directly produce the
+                    charge asymmetry.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div><!-- end chapter -->
+
+<div class="score-summary" id="scoreSummary">
+    <h3>Topic Complete</h3>
+    <div class="big-score" id="finalScore">0 / 15</div>
+    <p>Molecular Orbital Theory</p>
+    <button onclick="resetAll()">Reset All</button>
+</div>
+
+<script src="testbank-base.js"></script>
+
+</body>
+</html>
