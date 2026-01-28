@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Test Bank: Quantum Numbers | CHEM 361</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+    --bg: #faf8f4;
+    --bg-warm: #f5f0e8;
+    --bg-card: #ffffff;
+    --ink: #1a1a1a;
+    --ink-light: #4a4540;
+    --ink-muted: #8a8078;
+    --accent: #b44a1e;
+    --accent-light: #e8d5c4;
+    --teal: #1a5c5a;
+    --teal-light: #e0f0ef;
+    --correct-bg: #e8f5e9;
+    --correct-text: #2e7d32;
+    --correct-border: #81c784;
+    --wrong-bg: #fce4ec;
+    --wrong-text: #c62828;
+    --wrong-border: #ef9a9a;
+    --stroke: #e0dbd3;
+    --source-bg: #f0ece4;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Crimson Pro', Georgia, serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+/* -- top bar -- */
+.topbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(250, 248, 244, 0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--stroke);
+    padding: 0.75rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar-left {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--ink-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.topbar-left a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.score-pill {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    background: var(--teal);
+    color: #fff;
+    padding: 0.35rem 1rem;
+    border-radius: 20px;
+}
+
+/* -- hero -- */
+.hero {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 4rem 2rem 2rem;
+    border-bottom: 2px solid var(--accent);
+    margin-bottom: 3rem;
+}
+
+.hero-eyebrow {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+}
+
+.hero h1 {
+    font-family: 'Crimson Pro', serif;
+    font-size: clamp(2.2rem, 5vw, 3.2rem);
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 0.75rem;
+    color: var(--ink);
+}
+
+.hero-sub {
+    font-size: 1.15rem;
+    color: var(--ink-light);
+    font-style: italic;
+    max-width: 560px;
+}
+
+/* -- chapter content area -- */
+.chapter {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 2rem 4rem;
+}
+
+/* -- section dividers -- */
+.section-head {
+    margin: 3rem 0 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--stroke);
+}
+
+.section-head h2 {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--teal);
+}
+
+.section-head .section-count {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--ink-muted);
+}
+
+/* -- question block -- */
+.q-block {
+    background: var(--bg-card);
+    border: 1px solid var(--stroke);
+    border-radius: 12px;
+    margin-bottom: 1.75rem;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    transition: box-shadow 0.2s;
+}
+
+.q-block:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+/* source attribution bar */
+.q-source {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--ink-muted);
+    background: var(--source-bg);
+    padding: 0.5rem 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 0.03em;
+}
+
+.q-source .book-tag {
+    background: var(--accent-light);
+    color: var(--accent);
+    padding: 0.15rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.q-body {
+    padding: 1.5rem 1.25rem;
+}
+
+/* figure inside question */
+.q-figure {
+    margin: 0 0 1.25rem;
+    text-align: center;
+}
+
+.q-figure img {
+    max-width: 100%;
+    max-height: 340px;
+    border-radius: 8px;
+    border: 1px solid var(--stroke);
+    background: #fff;
+}
+
+.q-figure figcaption {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.78rem;
+    color: var(--ink-muted);
+    margin-top: 0.4rem;
+    font-style: italic;
+}
+
+/* question number + text */
+.q-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--accent);
+    margin-bottom: 0.4rem;
+}
+
+.q-stem {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+    color: var(--ink);
+}
+
+/* options as styled list */
+.q-options {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.q-options li {
+    padding: 0.65rem 1rem;
+    margin-bottom: 0.4rem;
+    border: 1.5px solid var(--stroke);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.15s;
+    font-size: 1rem;
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+}
+
+.q-options li:hover {
+    background: var(--bg-warm);
+    border-color: var(--ink-muted);
+}
+
+.q-options li .opt-letter {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--ink-muted);
+    min-width: 1.4rem;
+}
+
+.q-options li.selected {
+    border-color: var(--teal);
+    background: var(--teal-light);
+}
+
+.q-options li.correct {
+    border-color: var(--correct-border);
+    background: var(--correct-bg);
+    color: var(--correct-text);
+}
+
+.q-options li.wrong {
+    border-color: var(--wrong-border);
+    background: var(--wrong-bg);
+    color: var(--wrong-text);
+}
+
+.q-options li.disabled {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+/* reveal button */
+.q-reveal-btn {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--teal);
+    background: none;
+    border: 1.5px solid var(--teal);
+    border-radius: 6px;
+    padding: 0.4rem 1rem;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.q-reveal-btn:hover {
+    background: var(--teal);
+    color: #fff;
+}
+
+/* answer/explanation panel */
+.q-answer {
+    display: none;
+    margin-top: 1rem;
+    padding: 1rem 1.25rem;
+    background: var(--bg-warm);
+    border-radius: 8px;
+    border-left: 3px solid var(--teal);
+}
+
+.q-answer.visible {
+    display: block;
+}
+
+.q-answer .answer-label {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--teal);
+    margin-bottom: 0.3rem;
+}
+
+.q-answer p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--ink-light);
+}
+
+/* -- score summary at bottom -- */
+.score-summary {
+    max-width: 780px;
+    margin: 0 auto 4rem;
+    padding: 2rem;
+    background: var(--teal);
+    color: #fff;
+    border-radius: 12px;
+    text-align: center;
+    font-family: 'Source Sans 3', sans-serif;
+    display: none;
+}
+
+.score-summary h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.score-summary .big-score {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.score-summary button {
+    margin-top: 1rem;
+    padding: 0.6rem 2rem;
+    border: 2px solid #fff;
+    background: none;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 600;
+}
+
+.score-summary button:hover {
+    background: rgba(255,255,255,0.15);
+}
+
+/* -- responsive -- */
+@media (max-width: 600px) {
+    .hero { padding: 2.5rem 1rem 1.5rem; }
+    .chapter { padding: 0 1rem 3rem; }
+    .q-body { padding: 1rem; }
+    .q-figure img { max-height: 220px; }
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+    <div class="topbar-left">
+        <a href="../index.html">CHEM 361</a> / Test Bank / Quantum Numbers
+    </div>
+    <div class="score-pill" id="scorePill">0 / 0</div>
+</div>
+
+<div class="hero">
+    <div class="hero-eyebrow">Test Bank &mdash; Unit 1</div>
+    <h1>Quantum Numbers &amp; Atomic Orbitals</h1>
+    <p class="hero-sub">
+        Practice problems drawn from Housecroft, Atkins, JD Lee, and others.
+        Select an answer or click "Show Answer" to reveal the explanation.
+    </p>
+</div>
+
+<div class="chapter" id="chapter">
+
+    <!-- ═══════════════ SECTION 1 ═══════════════ -->
+    <div class="section-head">
+        <h2>Wavefunctions &amp; Probability</h2>
+        <span class="section-count">Questions 1&ndash;3</span>
+    </div>
+
+    <!-- Q1 -->
+    <div class="q-block" data-answer="B">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 1.3</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter1/fig_1_3.png" alt="Born interpretation of the wavefunction">
+                <figcaption>Fig. 1.3 &mdash; The Born interpretation of the wavefunction</figcaption>
+            </figure>
+            <div class="q-num">Q1</div>
+            <p class="q-stem">
+                According to the Born interpretation shown above, what physical meaning
+                does &psi;&sup2; (or |&psi;|&sup2;) have at a given point in space?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> The energy of the electron at that point</li>
+                <li data-val="B"><span class="opt-letter">b</span> The probability density of finding the electron at that point</li>
+                <li data-val="C"><span class="opt-letter">c</span> The velocity of the electron at that point</li>
+                <li data-val="D"><span class="opt-letter">d</span> The charge density of the nucleus</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (b)</div>
+                <p>
+                    The Born interpretation states that &psi;&sup2; (or |&psi;|&sup2; for complex wavefunctions)
+                    gives the probability density &mdash; the probability of finding the electron per unit volume at
+                    that point. Where &psi;&sup2; = 0, there is zero probability of finding the electron; these
+                    locations are called nodes.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="q-block" data-answer="C">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 1.8</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter1/fig_1_8.png" alt="Radial wavefunctions of 1s, 2s, 3s">
+                <figcaption>Fig. 1.8 &mdash; Radial wavefunctions R(r) for the 1s, 2s, and 3s orbitals</figcaption>
+            </figure>
+            <div class="q-num">Q2</div>
+            <p class="q-stem">
+                Examine the radial wavefunctions above. The 3s orbital crosses zero (R(r) = 0)
+                at specific values of r. How many radial nodes does the 3s orbital have?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> 0</li>
+                <li data-val="B"><span class="opt-letter">b</span> 1</li>
+                <li data-val="C"><span class="opt-letter">c</span> 2</li>
+                <li data-val="D"><span class="opt-letter">d</span> 3</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (c)</div>
+                <p>
+                    The number of radial nodes is given by (n &minus; l &minus; 1). For the 3s orbital:
+                    n = 3, l = 0, so radial nodes = 3 &minus; 0 &minus; 1 = 2. You can see this directly
+                    in the figure &mdash; R(r) crosses zero twice before approaching zero at large r.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="q-block" data-answer="A">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 1.11</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter1/fig_1_11.png" alt="Radial distribution function">
+                <figcaption>Fig. 1.11 &mdash; The radial distribution function 4&pi;r&sup2;R&sup2;</figcaption>
+            </figure>
+            <div class="q-num">Q3</div>
+            <p class="q-stem">
+                The radial distribution function 4&pi;r&sup2;R(r)&sup2; differs from the probability
+                density &psi;&sup2;. What does the radial distribution function represent?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> The probability of finding the electron at distance r from the nucleus (in a thin spherical shell)</li>
+                <li data-val="B"><span class="opt-letter">b</span> The probability density at a specific point in space</li>
+                <li data-val="C"><span class="opt-letter">c</span> The total energy of the electron at distance r</li>
+                <li data-val="D"><span class="opt-letter">d</span> The angular momentum of the electron</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (a)</div>
+                <p>
+                    While &psi;&sup2; gives the probability density at a point, the radial distribution
+                    function 4&pi;r&sup2;R(r)&sup2; gives the probability of finding the electron anywhere in a
+                    thin spherical shell at distance r. The peak of this function gives the most probable
+                    distance &mdash; for 1s, this equals the Bohr radius a<sub>0</sub>.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════ SECTION 2 ═══════════════ -->
+    <div class="section-head">
+        <h2>Quantum Numbers &amp; Orbital Classification</h2>
+        <span class="section-count">Questions 4&ndash;8</span>
+    </div>
+
+    <!-- Q4 -->
+    <div class="q-block" data-answer="D">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 1.5</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter1/fig_1_5.png" alt="Quantized energy levels of hydrogen">
+                <figcaption>Fig. 1.5 &mdash; Quantized energy levels of the hydrogen atom</figcaption>
+            </figure>
+            <div class="q-num">Q4</div>
+            <p class="q-stem">
+                Looking at the energy level diagram for hydrogen above, all orbitals with the same
+                value of n have the same energy. This degeneracy is a special property of which system?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> All atoms in the periodic table</li>
+                <li data-val="B"><span class="opt-letter">b</span> All atoms with filled electron shells</li>
+                <li data-val="C"><span class="opt-letter">c</span> Noble gas atoms only</li>
+                <li data-val="D"><span class="opt-letter">d</span> The hydrogen atom (one-electron systems)</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (d)</div>
+                <p>
+                    In hydrogen (and any one-electron system), energy depends only on n, so 2s and 2p
+                    are degenerate. In many-electron atoms, electron&ndash;electron repulsion breaks this degeneracy:
+                    orbitals with lower l penetrate closer to the nucleus and are stabilized, so
+                    E(2s) &lt; E(2p).
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q5 -->
+    <div class="q-block" data-answer="B">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 1.6</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter1/fig_1_6.png" alt="Subshell classification">
+                <figcaption>Fig. 1.6 &mdash; Classification of orbitals into subshells</figcaption>
+            </figure>
+            <div class="q-num">Q5</div>
+            <p class="q-stem">
+                For a given value of l, how many orbitals belong to that subshell?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> l + 1</li>
+                <li data-val="B"><span class="opt-letter">b</span> 2l + 1</li>
+                <li data-val="C"><span class="opt-letter">c</span> 2l</li>
+                <li data-val="D"><span class="opt-letter">d</span> l&sup2;</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (b)</div>
+                <p>
+                    The magnetic quantum number m<sub>l</sub> ranges from &minus;l to +l, giving (2l + 1) values.
+                    Each value of m<sub>l</sub> corresponds to one orbital. So: s (l=0) has 1 orbital,
+                    p (l=1) has 3, d (l=2) has 5, f (l=3) has 7.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q6 -->
+    <div class="q-block" data-answer="C">
+        <div class="q-source">
+            <span>Atkins &amp; Shriver, Chapter 1</span>
+            <span class="book-tag">Atkins</span>
+        </div>
+        <div class="q-body">
+            <div class="q-num">Q6</div>
+            <p class="q-stem">
+                Which set of quantum numbers is <em>not</em> permitted for an electron in an atom?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> n=3, l=2, m<sub>l</sub>=&minus;1, m<sub>s</sub>=+&frac12;</li>
+                <li data-val="B"><span class="opt-letter">b</span> n=2, l=1, m<sub>l</sub>=0, m<sub>s</sub>=&minus;&frac12;</li>
+                <li data-val="C"><span class="opt-letter">c</span> n=2, l=2, m<sub>l</sub>=0, m<sub>s</sub>=+&frac12;</li>
+                <li data-val="D"><span class="opt-letter">d</span> n=4, l=3, m<sub>l</sub>=&minus;3, m<sub>s</sub>=&minus;&frac12;</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (c)</div>
+                <p>
+                    The orbital angular momentum quantum number l can only take values 0, 1, ..., (n&minus;1).
+                    For n=2, the maximum l is 1. So l=2 is not permitted when n=2. This would require
+                    at least n=3.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q7 -->
+    <div class="q-block" data-answer="A">
+        <div class="q-source">
+            <span>JD Lee, Chapter 2</span>
+            <span class="book-tag">JD Lee</span>
+        </div>
+        <div class="q-body">
+            <div class="q-num">Q7</div>
+            <p class="q-stem">
+                The total number of nodes (radial + angular) in any orbital is given by:
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> n &minus; 1</li>
+                <li data-val="B"><span class="opt-letter">b</span> n</li>
+                <li data-val="C"><span class="opt-letter">c</span> n + l</li>
+                <li data-val="D"><span class="opt-letter">d</span> n &minus; l</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (a)</div>
+                <p>
+                    Total nodes = (n &minus; 1). This splits into (n &minus; l &minus; 1) radial nodes plus
+                    l angular nodes. For example, a 3d orbital (n=3, l=2) has 2 &minus; 0 = 0 radial nodes
+                    and 2 angular nodes, totaling 2 = (3 &minus; 1).
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q8 -->
+    <div class="q-block" data-answer="D">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 1.14</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter1/fig_1_14.png" alt="Boundary surfaces of p orbitals">
+                <figcaption>Fig. 1.14 &mdash; Boundary surfaces of the p orbitals (note the nodal plane)</figcaption>
+            </figure>
+            <div class="q-num">Q8</div>
+            <p class="q-stem">
+                The p orbitals shown above each possess a nodal plane passing through the nucleus.
+                This nodal plane is an example of which type of node?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> A radial node (spherical surface where R(r) = 0)</li>
+                <li data-val="B"><span class="opt-letter">b</span> A temporal node (where &psi; changes with time)</li>
+                <li data-val="C"><span class="opt-letter">c</span> A Bohr node (where the Bohr model predicts zero density)</li>
+                <li data-val="D"><span class="opt-letter">d</span> An angular node (planar or conical surface where Y(&theta;,&phi;) = 0)</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (d)</div>
+                <p>
+                    The nodal plane of a p orbital is an angular node &mdash; it arises from the angular
+                    part Y(&theta;,&phi;) of the wavefunction. Each p orbital has l = 1 angular node
+                    (one plane). Similarly, d orbitals (l = 2) have 2 angular nodal surfaces, which may be
+                    planar or conical.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════ SECTION 3 ═══════════════ -->
+    <div class="section-head">
+        <h2>Many-Electron Atoms &amp; Penetration</h2>
+        <span class="section-count">Questions 9&ndash;11</span>
+    </div>
+
+    <!-- Q9 -->
+    <div class="q-block" data-answer="B">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Figs. 1.17 &amp; 1.18</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter1/fig_1_18.png" alt="Penetration of 2s electron">
+                <figcaption>Fig. 1.18 &mdash; Penetration of the 2s electron through the inner 1s shell</figcaption>
+            </figure>
+            <div class="q-num">Q9</div>
+            <p class="q-stem">
+                In a many-electron atom, the 2s orbital is lower in energy than the 2p orbital,
+                even though both have n = 2. The figure above illustrates the reason. What is it?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> The 2s orbital has more angular nodes</li>
+                <li data-val="B"><span class="opt-letter">b</span> The 2s orbital penetrates closer to the nucleus, experiencing less shielding</li>
+                <li data-val="C"><span class="opt-letter">c</span> The 2s orbital has a higher angular momentum</li>
+                <li data-val="D"><span class="opt-letter">d</span> The 2p orbital is attracted more strongly by the nucleus</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (b)</div>
+                <p>
+                    The 2s radial distribution function has a small inner peak close to the nucleus.
+                    This means the 2s electron "penetrates" through the 1s shell and experiences a higher
+                    effective nuclear charge Z<sub>eff</sub> than the 2p electron. Greater penetration
+                    &rarr; less shielding &rarr; lower energy. The general rule: for a given n, lower l
+                    means greater penetration.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q10 -->
+    <div class="q-block" data-answer="C">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 1.19</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter1/fig_1_19.png" alt="Energy levels of many-electron atoms">
+                <figcaption>Fig. 1.19 &mdash; Energy levels in a many-electron atom (note the splitting of subshells)</figcaption>
+            </figure>
+            <div class="q-num">Q10</div>
+            <p class="q-stem">
+                Compare the energy level diagram above for a many-electron atom with the hydrogen atom
+                diagram (Fig. 1.5). What is the key difference?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> The many-electron atom has fewer energy levels</li>
+                <li data-val="B"><span class="opt-letter">b</span> In the many-electron atom, all subshells with the same n remain degenerate</li>
+                <li data-val="C"><span class="opt-letter">c</span> In the many-electron atom, subshells with different l values have different energies</li>
+                <li data-val="D"><span class="opt-letter">d</span> The many-electron atom has no d orbitals</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (c)</div>
+                <p>
+                    In hydrogen, energy depends only on n (2s = 2p). In many-electron atoms,
+                    electron&ndash;electron repulsion lifts this degeneracy: orbitals with lower l
+                    penetrate more and are stabilized, so E(ns) &lt; E(np) &lt; E(nd). This is why
+                    the aufbau filling order is not simply by n alone.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q11 -->
+    <div class="q-block" data-answer="A">
+        <div class="q-source">
+            <span>Atkins &amp; Shriver, Chapter 1</span>
+            <span class="book-tag">Atkins</span>
+        </div>
+        <div class="q-body">
+            <div class="q-num">Q11</div>
+            <p class="q-stem">
+                According to Slater's rules, which of the following correctly describes the
+                shielding experienced by a 3d electron?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> Electrons in the same (3d) group shield each other by 0.35, while all electrons in lower shells shield by 1.00</li>
+                <li data-val="B"><span class="opt-letter">b</span> All electrons shield equally regardless of shell</li>
+                <li data-val="C"><span class="opt-letter">c</span> Only 1s electrons contribute to shielding of 3d</li>
+                <li data-val="D"><span class="opt-letter">d</span> The 3d electron experiences no shielding</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (a)</div>
+                <p>
+                    Slater's rules assign different shielding contributions depending on the relative
+                    positions of electrons. For d and f electrons: same-group electrons shield by 0.35,
+                    while all electrons in lower groups (closer to the nucleus) shield by 1.00. This
+                    gives the effective nuclear charge Z<sub>eff</sub> = Z &minus; S.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════ SECTION 4 ═══════════════ -->
+    <div class="section-head">
+        <h2>Periodic Trends</h2>
+        <span class="section-count">Questions 12&ndash;15</span>
+    </div>
+
+    <!-- Q12 -->
+    <div class="q-block" data-answer="B">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 1.24</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter1/fig_1_24.png" alt="Atomic radii across the periodic table">
+                <figcaption>Fig. 1.24 &mdash; Variation of atomic radii through the periodic table</figcaption>
+            </figure>
+            <div class="q-num">Q12</div>
+            <p class="q-stem">
+                Examine the atomic radius trends in the figure. Across a period (left to right),
+                atomic radii generally decrease. What is the primary reason?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> Electrons are added to inner shells, which are smaller</li>
+                <li data-val="B"><span class="opt-letter">b</span> Increasing nuclear charge pulls the same valence shell inward (poor shielding by same-shell electrons)</li>
+                <li data-val="C"><span class="opt-letter">c</span> Relativistic effects contract the orbitals</li>
+                <li data-val="D"><span class="opt-letter">d</span> Electron-electron repulsion pushes electrons closer to the nucleus</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (b)</div>
+                <p>
+                    Across a period, protons are added to the nucleus while electrons are added to the
+                    same valence shell. Same-shell electrons shield each other poorly (Slater: only 0.35),
+                    so Z<sub>eff</sub> increases steadily, pulling the valence shell inward and decreasing the
+                    atomic radius.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q13 -->
+    <div class="q-block" data-answer="D">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 1.26</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter1/fig_1_26.png" alt="Ionization energies of the elements">
+                <figcaption>Fig. 1.26 &mdash; First, second, and third ionization energies</figcaption>
+            </figure>
+            <div class="q-num">Q13</div>
+            <p class="q-stem">
+                The first ionization energy of oxygen (1314 kJ/mol) is lower than that of nitrogen (1402 kJ/mol),
+                despite oxygen having a higher nuclear charge. Which explanation accounts for this?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> Oxygen has a higher electronegativity</li>
+                <li data-val="B"><span class="opt-letter">b</span> Nitrogen has a larger atomic radius</li>
+                <li data-val="C"><span class="opt-letter">c</span> Oxygen has a half-filled 2p subshell, which is extra stable</li>
+                <li data-val="D"><span class="opt-letter">d</span> Oxygen has a doubly-occupied 2p orbital; the electron-electron repulsion makes it easier to remove one electron</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (d)</div>
+                <p>
+                    Nitrogen's 2p<sup>3</sup> configuration has one electron in each 2p orbital (half-filled,
+                    all parallel spins). Oxygen's 2p<sup>4</sup> forces one 2p orbital to be doubly occupied.
+                    The electron&ndash;electron repulsion in this paired orbital destabilizes the electron,
+                    making it easier to remove &mdash; hence the lower IE.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q14 -->
+    <div class="q-block" data-answer="A">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 1.27</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter1/fig_1_27.png" alt="Pauling electronegativities">
+                <figcaption>Fig. 1.27 &mdash; Periodic variation of Pauling electronegativities</figcaption>
+            </figure>
+            <div class="q-num">Q14</div>
+            <p class="q-stem">
+                The Pauling electronegativity scale is defined relative to which element?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> Fluorine (&chi; = 4.0, the highest electronegativity)</li>
+                <li data-val="B"><span class="opt-letter">b</span> Hydrogen (&chi; = 1.0)</li>
+                <li data-val="C"><span class="opt-letter">c</span> Carbon (&chi; = 2.5)</li>
+                <li data-val="D"><span class="opt-letter">d</span> Caesium (&chi; = 0.7, the lowest electronegativity)</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (a)</div>
+                <p>
+                    Pauling defined his electronegativity scale by analyzing bond dissociation energies
+                    of heteronuclear diatomics. Fluorine was assigned the highest value (&chi; = 4.0) as
+                    the reference point. All other electronegativities are measured relative to this
+                    anchor. The scale ranges from Cs (~0.7) to F (4.0).
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q15 -->
+    <div class="q-block" data-answer="B">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 1.12</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter1/fig_1_12.png" alt="Radial distribution 2s vs 2p">
+                <figcaption>Fig. 1.12 &mdash; Radial distribution functions: comparing 2s and 2p</figcaption>
+            </figure>
+            <div class="q-num">Q15</div>
+            <p class="q-stem">
+                Compare the radial distribution functions of the 2s and 2p orbitals in the figure.
+                Which orbital has greater probability of being found very close to the nucleus?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> 2p, because it has higher angular momentum</li>
+                <li data-val="B"><span class="opt-letter">b</span> 2s, because it has a small inner peak near the nucleus</li>
+                <li data-val="C"><span class="opt-letter">c</span> Both have equal probability near the nucleus</li>
+                <li data-val="D"><span class="opt-letter">d</span> Neither orbital has any probability near the nucleus</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (b)</div>
+                <p>
+                    The 2s radial distribution function shows a small but significant inner peak close to
+                    the nucleus. The 2p function has zero probability at r = 0 (it starts from zero).
+                    This inner peak is why 2s "penetrates" through inner electron shells and experiences a
+                    higher Z<sub>eff</sub> &mdash; directly explaining why E(2s) &lt; E(2p) in many-electron atoms.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div><!-- end chapter -->
+
+<div class="score-summary" id="scoreSummary">
+    <h3>Topic Complete</h3>
+    <div class="big-score" id="finalScore">0 / 15</div>
+    <p>Quantum Numbers &amp; Atomic Orbitals</p>
+    <button onclick="resetAll()">Reset All</button>
+</div>
+
+<script>
+let totalAnswered = 0;
+let totalCorrect = 0;
+
+document.querySelectorAll('.q-options li').forEach(li => {
+    li.addEventListener('click', function() {
+        const block = this.closest('.q-block');
+        if (block.classList.contains('answered')) return;
+
+        // mark block as answered
+        block.classList.add('answered');
+        totalAnswered++;
+
+        const correctVal = block.dataset.answer;
+        const selectedVal = this.dataset.val;
+        const isCorrect = selectedVal === correctVal;
+
+        if (isCorrect) {
+            this.classList.add('correct');
+            totalCorrect++;
+        } else {
+            this.classList.add('wrong');
+            // highlight the correct one
+            block.querySelectorAll('.q-options li').forEach(opt => {
+                if (opt.dataset.val === correctVal) opt.classList.add('correct');
+            });
+        }
+
+        // disable all options
+        block.querySelectorAll('.q-options li').forEach(opt => opt.classList.add('disabled'));
+
+        // auto-reveal answer
+        const answerDiv = block.querySelector('.q-answer');
+        answerDiv.classList.add('visible');
+
+        // hide the reveal button
+        const revealBtn = block.querySelector('.q-reveal-btn');
+        if (revealBtn) revealBtn.style.display = 'none';
+
+        updateScore();
+    });
+});
+
+function revealAnswer(btn) {
+    const block = btn.closest('.q-block');
+    const answerDiv = block.querySelector('.q-answer');
+    answerDiv.classList.add('visible');
+    btn.style.display = 'none';
+}
+
+function updateScore() {
+    document.getElementById('scorePill').textContent = totalCorrect + ' / ' + totalAnswered;
+
+    // show summary if all answered
+    const totalQ = document.querySelectorAll('.q-block').length;
+    if (totalAnswered >= totalQ) {
+        const summary = document.getElementById('scoreSummary');
+        summary.style.display = 'block';
+        document.getElementById('finalScore').textContent = totalCorrect + ' / ' + totalQ;
+    }
+}
+
+function resetAll() {
+    totalAnswered = 0;
+    totalCorrect = 0;
+    document.querySelectorAll('.q-block').forEach(block => {
+        block.classList.remove('answered');
+        block.querySelectorAll('.q-options li').forEach(li => {
+            li.classList.remove('correct', 'wrong', 'selected', 'disabled');
+        });
+        block.querySelector('.q-answer').classList.remove('visible');
+        const btn = block.querySelector('.q-reveal-btn');
+        if (btn) btn.style.display = '';
+    });
+    document.getElementById('scorePill').textContent = '0 / 0';
+    document.getElementById('scoreSummary').style.display = 'none';
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}
+</script>
+
+</body>
+</html>
