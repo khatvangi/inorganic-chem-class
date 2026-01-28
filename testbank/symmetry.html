@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Test Bank: Symmetry | CHEM 361</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="testbank-base.css">
+</head>
+<body data-topic="symmetry">
+
+<div class="topbar">
+    <div class="topbar-left">
+        <a href="../index.html">CHEM 361</a> / Test Bank / Symmetry
+    </div>
+    <div class="score-pill" id="scorePill">0 / 0</div>
+</div>
+
+<div class="hero">
+    <div class="hero-eyebrow">Test Bank &mdash; Unit 2</div>
+    <h1>Molecular Symmetry &amp; Point Groups</h1>
+    <p class="hero-sub">
+        Practice problems drawn from Housecroft, Atkins, JD Lee, and others.
+        Select an answer or click "Show Answer" to reveal the explanation.
+    </p>
+</div>
+
+<div class="chapter" id="chapter">
+
+    <!-- ═══════════════ SECTION 1 ═══════════════ -->
+    <div class="section-head">
+        <h2>Symmetry Elements &amp; Operations</h2>
+        <span class="section-count">Questions 1&ndash;4</span>
+    </div>
+
+    <!-- Q1 -->
+    <div class="q-block" data-answer="C">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 3.1</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter3/fig_3_1.png" alt="C2 rotation of the H2O molecule">
+                <figcaption>Fig. 3.1 &mdash; The C<sub>2</sub> rotation of the H<sub>2</sub>O molecule</figcaption>
+            </figure>
+            <div class="q-num">Q1</div>
+            <p class="q-stem">
+                Examine the figure above showing the C<sub>2</sub> axis in H<sub>2</sub>O. Which of the
+                following is the <em>complete</em> set of symmetry elements possessed by the
+                H<sub>2</sub>O molecule?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> E, C<sub>2</sub></li>
+                <li data-val="B"><span class="opt-letter">b</span> E, C<sub>2</sub>, &sigma;<sub>v</sub></li>
+                <li data-val="C"><span class="opt-letter">c</span> E, C<sub>2</sub>, &sigma;<sub>v</sub>, &sigma;<sub>v</sub>&prime;</li>
+                <li data-val="D"><span class="opt-letter">d</span> E, C<sub>2</sub>, &sigma;<sub>v</sub>, &sigma;<sub>v</sub>&prime;, &sigma;<sub>h</sub></li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (c)</div>
+                <p>
+                    H<sub>2</sub>O possesses the identity E, a C<sub>2</sub> axis (bisecting the HOH angle),
+                    and two vertical mirror planes: &sigma;<sub>v</sub> (the molecular plane) and
+                    &sigma;<sub>v</sub>&prime; (perpendicular to the molecular plane, containing the C<sub>2</sub> axis).
+                    There is no horizontal mirror plane &sigma;<sub>h</sub> because that would require a plane
+                    perpendicular to C<sub>2</sub> through the O atom, which does not leave the molecule unchanged.
+                    This set of elements defines the C<sub>2v</sub> point group.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="q-block" data-answer="B">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Chapter 3</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <div class="q-num">Q2</div>
+            <p class="q-stem">
+                What is the distinction between a <em>symmetry element</em> and a <em>symmetry operation</em>?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> They are synonymous terms used interchangeably in group theory</li>
+                <li data-val="B"><span class="opt-letter">b</span> A symmetry element is a geometric feature (point, line, or plane); a symmetry operation is the action performed with respect to that element</li>
+                <li data-val="C"><span class="opt-letter">c</span> A symmetry operation is a physical object; a symmetry element is a mathematical abstraction</li>
+                <li data-val="D"><span class="opt-letter">d</span> A symmetry element applies only to molecules; a symmetry operation applies only to crystals</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (b)</div>
+                <p>
+                    A symmetry <em>element</em> is a geometric entity &mdash; a point, line, or plane &mdash;
+                    with respect to which a symmetry operation is carried out. For example, a mirror plane
+                    (&sigma;) is the element; reflection through that plane is the operation. Similarly,
+                    C<sub>n</sub> is a rotational axis (element), and rotation by 360&deg;/n about that axis is the
+                    operation. Every symmetry operation leaves at least one point unchanged, which is why
+                    molecular symmetry groups are called <em>point groups</em>.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="q-block" data-answer="D">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 3.8</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter3/fig_3_8.png" alt="Improper rotation axes S1 and S2">
+                <figcaption>Fig. 3.8 &mdash; (a) S<sub>1</sub> is equivalent to &sigma;; (b) S<sub>2</sub> is equivalent to <em>i</em></figcaption>
+            </figure>
+            <div class="q-num">Q3</div>
+            <p class="q-stem">
+                An improper rotation S<sub>n</sub> consists of a rotation by 360&deg;/n followed by a reflection
+                through a plane perpendicular to the rotation axis. Which of the following molecules
+                possesses an S<sub>4</sub> axis?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> H<sub>2</sub>O (bent, C<sub>2v</sub>)</li>
+                <li data-val="B"><span class="opt-letter">b</span> NH<sub>3</sub> (trigonal pyramidal, C<sub>3v</sub>)</li>
+                <li data-val="C"><span class="opt-letter">c</span> BF<sub>3</sub> (trigonal planar, D<sub>3h</sub>)</li>
+                <li data-val="D"><span class="opt-letter">d</span> CH<sub>4</sub> (tetrahedral, T<sub>d</sub>)</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (d)</div>
+                <p>
+                    Methane (CH<sub>4</sub>) belongs to the T<sub>d</sub> point group, which contains three
+                    S<sub>4</sub> axes. Each S<sub>4</sub> axis bisects two HCH bond angles: rotating by 90&deg;
+                    and then reflecting through the perpendicular plane maps the molecule onto itself.
+                    Note from the figure that S<sub>1</sub> &equiv; &sigma; and S<sub>2</sub> &equiv; <em>i</em>, so
+                    these are not counted separately. Neither H<sub>2</sub>O, NH<sub>3</sub>, nor BF<sub>3</sub>
+                    possess an S<sub>4</sub> axis.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q4 -->
+    <div class="q-block" data-answer="B">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 3.2</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter3/fig_3_2.png" alt="C3 rotation of NH3">
+                <figcaption>Fig. 3.2 &mdash; The C<sub>3</sub> rotation operations for a molecule such as NH<sub>3</sub></figcaption>
+            </figure>
+            <div class="q-num">Q4</div>
+            <p class="q-stem">
+                How many symmetry operations does the C<sub>3v</sub> point group contain in total?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> 3</li>
+                <li data-val="B"><span class="opt-letter">b</span> 6</li>
+                <li data-val="C"><span class="opt-letter">c</span> 9</li>
+                <li data-val="D"><span class="opt-letter">d</span> 12</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (b)</div>
+                <p>
+                    The C<sub>3v</sub> point group has 6 symmetry operations: E (identity),
+                    C<sub>3</sub> (rotation by 120&deg;), C<sub>3</sub><sup>2</sup> (rotation by 240&deg;),
+                    and three vertical mirror planes &sigma;<sub>v</sub>, &sigma;<sub>v</sub>&prime;,
+                    &sigma;<sub>v</sub>&Prime;. The order of the group (h = 6) equals the total number of
+                    symmetry operations, which is also the sum of the squares of the dimensions of its
+                    irreducible representations (1&sup2; + 1&sup2; + 2&sup2; = 6).
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════ SECTION 2 ═══════════════ -->
+    <div class="section-head">
+        <h2>Point Group Determination</h2>
+        <span class="section-count">Questions 5&ndash;8</span>
+    </div>
+
+    <!-- Q5 -->
+    <div class="q-block" data-answer="A">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 3.10</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter3/fig_3_10.png" alt="Point group decision tree">
+                <figcaption>Fig. 3.10 &mdash; Decision tree for identifying a molecular point group</figcaption>
+            </figure>
+            <div class="q-num">Q5</div>
+            <p class="q-stem">
+                Using the decision flowchart above, determine the point group of NH<sub>3</sub>
+                (trigonal pyramidal). Which of the following correctly traces the logic?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> Not linear &rarr; not cubic &rarr; highest C<sub>n</sub> is C<sub>3</sub> &rarr; no perpendicular C<sub>2</sub> axes &rarr; has &sigma;<sub>v</sub> &rarr; C<sub>3v</sub></li>
+                <li data-val="B"><span class="opt-letter">b</span> Not linear &rarr; not cubic &rarr; highest C<sub>n</sub> is C<sub>3</sub> &rarr; has perpendicular C<sub>2</sub> axes &rarr; D<sub>3h</sub></li>
+                <li data-val="C"><span class="opt-letter">c</span> Not linear &rarr; not cubic &rarr; highest C<sub>n</sub> is C<sub>3</sub> &rarr; has &sigma;<sub>h</sub> &rarr; C<sub>3h</sub></li>
+                <li data-val="D"><span class="opt-letter">d</span> Not linear &rarr; cubic &rarr; T<sub>d</sub></li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (a)</div>
+                <p>
+                    NH<sub>3</sub> is not linear and not a special cubic group. The highest-order rotation
+                    axis is C<sub>3</sub> (through the N atom and the centre of the H<sub>3</sub> triangle).
+                    There are no C<sub>2</sub> axes perpendicular to C<sub>3</sub>, so it cannot be a D group.
+                    There is no &sigma;<sub>h</sub>, but there are three &sigma;<sub>v</sub> planes, each
+                    containing the N&ndash;H bond and the C<sub>3</sub> axis. This leads unambiguously to C<sub>3v</sub>.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q6 -->
+    <div class="q-block" data-answer="C">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 3.3</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter3/fig_3_4.png" alt="Symmetry elements of a square-planar molecule">
+                <figcaption>Fig. 3.3 &mdash; Symmetry elements of a square-planar molecule such as XeF<sub>4</sub></figcaption>
+            </figure>
+            <div class="q-num">Q6</div>
+            <p class="q-stem">
+                XeF<sub>4</sub> is square planar. What point group does it belong to?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> C<sub>4v</sub></li>
+                <li data-val="B"><span class="opt-letter">b</span> D<sub>2h</sub></li>
+                <li data-val="C"><span class="opt-letter">c</span> D<sub>4h</sub></li>
+                <li data-val="D"><span class="opt-letter">d</span> T<sub>d</sub></li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (c)</div>
+                <p>
+                    XeF<sub>4</sub> has a C<sub>4</sub> principal axis perpendicular to the molecular plane,
+                    four C<sub>2</sub> axes perpendicular to C<sub>4</sub> (two through opposite F atoms,
+                    two bisecting F&ndash;Xe&ndash;F angles), a &sigma;<sub>h</sub> (the molecular plane),
+                    two sets of &sigma;<sub>v</sub> planes, and a centre of inversion. The presence of
+                    C<sub>4</sub> with perpendicular C<sub>2</sub> axes and a &sigma;<sub>h</sub> defines the
+                    D<sub>4h</sub> point group.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q7 -->
+    <div class="q-block" data-answer="B">
+        <div class="q-source">
+            <span>Atkins &amp; Shriver, Chapter 6</span>
+            <span class="book-tag">Atkins</span>
+        </div>
+        <div class="q-body">
+            <div class="q-num">Q7</div>
+            <p class="q-stem">
+                The complex ion [PtCl<sub>4</sub>]<sup>2&minus;</sup> adopts a square-planar geometry.
+                What is its point group?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> T<sub>d</sub></li>
+                <li data-val="B"><span class="opt-letter">b</span> D<sub>4h</sub></li>
+                <li data-val="C"><span class="opt-letter">c</span> C<sub>4v</sub></li>
+                <li data-val="D"><span class="opt-letter">d</span> O<sub>h</sub></li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (b)</div>
+                <p>
+                    Like XeF<sub>4</sub>, the square-planar [PtCl<sub>4</sub>]<sup>2&minus;</sup> ion belongs to
+                    D<sub>4h</sub>. The key symmetry elements are the C<sub>4</sub> axis perpendicular to the
+                    molecular plane, four perpendicular C<sub>2</sub> axes, a horizontal mirror plane
+                    &sigma;<sub>h</sub>, and a centre of inversion. Square-planar MX<sub>4</sub> species (where all
+                    X are identical) always belong to D<sub>4h</sub>, regardless of whether the central atom
+                    is a transition metal or a main-group element.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q8 -->
+    <div class="q-block" data-answer="A">
+        <div class="q-source">
+            <span>JD Lee, Chapter 3</span>
+            <span class="book-tag">JD Lee</span>
+        </div>
+        <div class="q-body">
+            <div class="q-num">Q8</div>
+            <p class="q-stem">
+                Chloroform (CHCl<sub>3</sub>) has a trigonal pyramidal arrangement of Cl atoms around
+                the central carbon, with H at the apex. What is its point group?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> C<sub>3v</sub></li>
+                <li data-val="B"><span class="opt-letter">b</span> C<sub>3h</sub></li>
+                <li data-val="C"><span class="opt-letter">c</span> D<sub>3h</sub></li>
+                <li data-val="D"><span class="opt-letter">d</span> C<sub>s</sub></li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (a)</div>
+                <p>
+                    CHCl<sub>3</sub> has a C<sub>3</sub> axis along the C&ndash;H bond direction. There are
+                    three vertical mirror planes, each containing one C&ndash;Cl bond and the C<sub>3</sub> axis.
+                    There is no &sigma;<sub>h</sub> and no perpendicular C<sub>2</sub> axes. Following the
+                    decision tree: not linear, not cubic, highest C<sub>n</sub> = C<sub>3</sub>, no perpendicular
+                    C<sub>2</sub>, has &sigma;<sub>v</sub> &rarr; C<sub>3v</sub>. This is the same point group
+                    as NH<sub>3</sub>, which shares the same pyramidal topology.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════ SECTION 3 ═══════════════ -->
+    <div class="section-head">
+        <h2>Group Theory Applications</h2>
+        <span class="section-count">Questions 9&ndash;12</span>
+    </div>
+
+    <!-- Q9 -->
+    <div class="q-block" data-answer="D">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 3.15</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter3/fig_3_15.png" alt="Counting procedure for displacements in a nonlinear molecule">
+                <figcaption>Fig. 3.15 &mdash; The counting procedure for atomic displacements in a nonlinear molecule</figcaption>
+            </figure>
+            <div class="q-num">Q9</div>
+            <p class="q-stem">
+                Using the C<sub>2v</sub> character table, the reducible representation for the O&ndash;H
+                stretching modes of H<sub>2</sub>O is generated by considering how many O&ndash;H bonds
+                remain unmoved under each symmetry operation. What does this reducible representation
+                reduce to?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> A<sub>1</sub> only</li>
+                <li data-val="B"><span class="opt-letter">b</span> B<sub>1</sub> + B<sub>2</sub></li>
+                <li data-val="C"><span class="opt-letter">c</span> A<sub>2</sub> + B<sub>1</sub></li>
+                <li data-val="D"><span class="opt-letter">d</span> A<sub>1</sub> + B<sub>1</sub></li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (d)</div>
+                <p>
+                    For the two O&ndash;H stretching modes of H<sub>2</sub>O in C<sub>2v</sub>, we count
+                    bonds unmoved: under E both bonds are unmoved (&chi; = 2), under C<sub>2</sub> neither is
+                    unmoved (&chi; = 0), under &sigma;<sub>v</sub> both are unmoved (&chi; = 2), under
+                    &sigma;<sub>v</sub>&prime; neither is unmoved (&chi; = 0). The reducible representation
+                    &Gamma; = (2, 0, 2, 0) decomposes into A<sub>1</sub> + B<sub>1</sub>. The A<sub>1</sub> mode is
+                    the symmetric stretch; the B<sub>1</sub> mode is the antisymmetric stretch. Both are IR-active
+                    and Raman-active since C<sub>2v</sub> has no centre of inversion.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q10 -->
+    <div class="q-block" data-answer="B">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 3.17</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter3/fig_3_17.png" alt="Stretches and bends of the CO2 molecule">
+                <figcaption>Fig. 3.17 &mdash; The stretching and bending modes of CO<sub>2</sub></figcaption>
+            </figure>
+            <div class="q-num">Q10</div>
+            <p class="q-stem">
+                CO<sub>2</sub> is a linear molecule with D<sub>&infin;h</sub> symmetry. How many IR-active
+                stretching modes does it have?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> 0 &mdash; neither stretch is IR-active</li>
+                <li data-val="B"><span class="opt-letter">b</span> 1 &mdash; only the antisymmetric stretch is IR-active</li>
+                <li data-val="C"><span class="opt-letter">c</span> 2 &mdash; both symmetric and antisymmetric stretches are IR-active</li>
+                <li data-val="D"><span class="opt-letter">d</span> 3 &mdash; both stretches and one bend are IR-active</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (b)</div>
+                <p>
+                    For a vibration to be IR-active, it must cause a change in the dipole moment. In the
+                    symmetric stretch (&nu;<sub>1</sub>) of CO<sub>2</sub>, both C=O bonds extend equally &mdash;
+                    the dipole moment remains zero, so it is IR-inactive (but Raman-active). The antisymmetric
+                    stretch (&nu;<sub>3</sub>) causes one bond to extend while the other compresses, producing an
+                    oscillating dipole &mdash; it is IR-active. Since CO<sub>2</sub> is centrosymmetric, the mutual
+                    exclusion rule applies: a mode that is IR-active is Raman-inactive, and vice versa.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q11 -->
+    <div class="q-block" data-answer="C">
+        <div class="q-source">
+            <span>Atkins &amp; Shriver, Chapter 6</span>
+            <span class="book-tag">Atkins</span>
+        </div>
+        <div class="q-body">
+            <div class="q-num">Q11</div>
+            <p class="q-stem">
+                What does the <em>mutual exclusion rule</em> state about IR and Raman activity
+                in centrosymmetric molecules?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> All vibrational modes are both IR-active and Raman-active</li>
+                <li data-val="B"><span class="opt-letter">b</span> No vibrational modes are active in either IR or Raman</li>
+                <li data-val="C"><span class="opt-letter">c</span> No vibrational mode can be simultaneously IR-active and Raman-active</li>
+                <li data-val="D"><span class="opt-letter">d</span> All symmetric vibrations are IR-active and all antisymmetric vibrations are Raman-active</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (c)</div>
+                <p>
+                    In a molecule with a centre of inversion (<em>i</em>), each vibrational mode is either
+                    symmetric (g, <em>gerade</em>) or antisymmetric (u, <em>ungerade</em>) with respect to
+                    inversion. IR activity requires a change in dipole moment (u symmetry), while Raman activity
+                    requires a change in polarizability (g symmetry). Since no mode can be both g and u
+                    simultaneously, no mode can be active in both IR and Raman. This is a powerful diagnostic:
+                    if a molecule has coincident IR and Raman bands, it lacks a centre of inversion.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q12 -->
+    <div class="q-block" data-answer="A">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Chapter 3</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter3/fig_3_24.png" alt="Molecular orbitals of NH3">
+                <figcaption>Fig. 3.24 &mdash; Molecular orbitals computed for NH<sub>3</sub> with symmetry labels</figcaption>
+            </figure>
+            <div class="q-num">Q12</div>
+            <p class="q-stem">
+                In an octahedral complex (O<sub>h</sub> symmetry), the five d orbitals split into two sets.
+                What are the irreducible representation labels for these two sets?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> t<sub>2g</sub> (d<sub>xy</sub>, d<sub>xz</sub>, d<sub>yz</sub>) and e<sub>g</sub> (d<sub>z&sup2;</sub>, d<sub>x&sup2;&minus;y&sup2;</sub>)</li>
+                <li data-val="B"><span class="opt-letter">b</span> a<sub>1g</sub> (d<sub>z&sup2;</sub>) and t<sub>1u</sub> (d<sub>xy</sub>, d<sub>xz</sub>, d<sub>yz</sub>, d<sub>x&sup2;&minus;y&sup2;</sub>)</li>
+                <li data-val="C"><span class="opt-letter">c</span> e (d<sub>xy</sub>, d<sub>xz</sub>) and t<sub>2</sub> (d<sub>yz</sub>, d<sub>z&sup2;</sub>, d<sub>x&sup2;&minus;y&sup2;</sub>)</li>
+                <li data-val="D"><span class="opt-letter">d</span> a<sub>1g</sub> + a<sub>2g</sub> + e<sub>g</sub> + t<sub>2g</sub></li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (a)</div>
+                <p>
+                    In O<sub>h</sub> symmetry, the five d orbitals transform as two irreducible representations:
+                    the triply degenerate t<sub>2g</sub> set (d<sub>xy</sub>, d<sub>xz</sub>, d<sub>yz</sub>) and
+                    the doubly degenerate e<sub>g</sub> set (d<sub>z&sup2;</sub>, d<sub>x&sup2;&minus;y&sup2;</sub>).
+                    The t<sub>2g</sub> orbitals point between the ligand axes and are lower in energy in a
+                    crystal field, while e<sub>g</sub> orbitals point directly at the ligands and are higher in
+                    energy. The energy gap between them is the crystal field splitting parameter &Delta;<sub>o</sub>.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════ SECTION 4 ═══════════════ -->
+    <div class="section-head">
+        <h2>Symmetry &amp; Bonding</h2>
+        <span class="section-count">Questions 13&ndash;15</span>
+    </div>
+
+    <!-- Q13 -->
+    <div class="q-block" data-answer="B">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Chapter 3</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <div class="q-num">Q13</div>
+            <p class="q-stem">
+                CO<sub>2</sub> (D<sub>&infin;h</sub>) has no permanent dipole moment, while SO<sub>2</sub>
+                (C<sub>2v</sub>) does. Using symmetry arguments, which of the following best explains this
+                difference?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> CO<sub>2</sub> has weaker bonds than SO<sub>2</sub></li>
+                <li data-val="B"><span class="opt-letter">b</span> CO<sub>2</sub> is linear and centrosymmetric &mdash; the bond dipoles cancel by symmetry; SO<sub>2</sub> is bent with C<sub>2v</sub> symmetry and no inversion centre, so the dipoles do not cancel</li>
+                <li data-val="C"><span class="opt-letter">c</span> S is more electronegative than C, creating a larger dipole</li>
+                <li data-val="D"><span class="opt-letter">d</span> CO<sub>2</sub> has lone pairs that cancel the bond dipoles</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (b)</div>
+                <p>
+                    In linear CO<sub>2</sub>, the two C=O bond dipoles are equal in magnitude and exactly
+                    opposite in direction &mdash; they cancel by the D<sub>&infin;h</sub> symmetry of the molecule,
+                    giving a net zero dipole moment. In bent SO<sub>2</sub> (C<sub>2v</sub>), the two S=O bond
+                    dipoles are directed at an angle to each other and do not cancel. Formally, only molecules
+                    belonging to the point groups C<sub>n</sub>, C<sub>nv</sub>, or C<sub>s</sub> can have a
+                    permanent dipole moment &mdash; any higher symmetry forces cancellation.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q14 -->
+    <div class="q-block" data-answer="C">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 3.21</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter3/fig_3_21.png" alt="Orbital overlap and symmetry">
+                <figcaption>Fig. 3.21 &mdash; Constructive and zero net overlap of atomic orbitals</figcaption>
+            </figure>
+            <div class="q-num">Q14</div>
+            <p class="q-stem">
+                In a tetrahedral molecule (T<sub>d</sub> symmetry), which d orbitals have the correct
+                symmetry to participate in &sigma; bonding with ligand group orbitals?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> d<sub>z&sup2;</sub> and d<sub>x&sup2;&minus;y&sup2;</sub> (e symmetry)</li>
+                <li data-val="B"><span class="opt-letter">b</span> d<sub>xy</sub> and d<sub>xz</sub> only</li>
+                <li data-val="C"><span class="opt-letter">c</span> d<sub>xy</sub>, d<sub>xz</sub>, and d<sub>yz</sub> (t<sub>2</sub> symmetry)</li>
+                <li data-val="D"><span class="opt-letter">d</span> All five d orbitals participate equally</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (c)</div>
+                <p>
+                    In T<sub>d</sub> symmetry, the five d orbitals split into e (d<sub>z&sup2;</sub>,
+                    d<sub>x&sup2;&minus;y&sup2;</sub>) and t<sub>2</sub> (d<sub>xy</sub>, d<sub>xz</sub>, d<sub>yz</sub>).
+                    The four ligand &sigma; group orbitals transform as a<sub>1</sub> + t<sub>2</sub>. Since only
+                    orbitals of matching symmetry can form bonding combinations, the d orbitals that participate
+                    in &sigma; bonding are the t<sub>2</sub> set. The e set is non-bonding with respect to &sigma;
+                    interactions, which is opposite to the octahedral case where e<sub>g</sub> is the &sigma;-bonding set.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q15 -->
+    <div class="q-block" data-answer="D">
+        <div class="q-source">
+            <span>Atkins &amp; Shriver, Chapter 6</span>
+            <span class="book-tag">Atkins</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter3/fig_3_6.png" alt="Inversion vs C2 rotation">
+                <figcaption>Fig. 3.6 &mdash; Distinguishing inversion (a) from a C<sub>2</sub> rotation (b)</figcaption>
+            </figure>
+            <div class="q-num">Q15</div>
+            <p class="q-stem">
+                What is the relationship between molecular symmetry and optical activity (chirality)?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> A molecule is chiral if it possesses a C<sub>2</sub> axis</li>
+                <li data-val="B"><span class="opt-letter">b</span> A molecule is chiral if it possesses a &sigma;<sub>h</sub> plane</li>
+                <li data-val="C"><span class="opt-letter">c</span> A molecule is chiral if it possesses a centre of inversion <em>i</em></li>
+                <li data-val="D"><span class="opt-letter">d</span> A molecule is chiral if and only if it possesses no improper rotation axis S<sub>n</sub> (including &sigma; = S<sub>1</sub> and <em>i</em> = S<sub>2</sub>)</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (d)</div>
+                <p>
+                    A molecule is optically active (chiral) if and only if it is not superimposable on its
+                    mirror image. The necessary and sufficient symmetry condition is the absence of any
+                    improper rotation axis S<sub>n</sub>. This includes S<sub>1</sub> (which is a mirror plane
+                    &sigma;) and S<sub>2</sub> (which is a centre of inversion <em>i</em>). Chiral molecules
+                    therefore belong only to point groups C<sub>1</sub>, C<sub>n</sub>, D<sub>n</sub>, T, O, or I
+                    &mdash; groups that contain only proper rotations.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div><!-- end chapter -->
+
+<div class="score-summary" id="scoreSummary">
+    <h3>Topic Complete</h3>
+    <div class="big-score" id="finalScore">0 / 15</div>
+    <p>Molecular Symmetry &amp; Point Groups</p>
+    <button onclick="resetAll()">Reset All</button>
+</div>
+
+<script src="testbank-base.js"></script>
+
+</body>
+</html>

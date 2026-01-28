@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Test Bank: Solid State | CHEM 361</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="testbank-base.css">
+</head>
+<body data-topic="solid_state">
+
+<div class="topbar">
+    <div class="topbar-left">
+        <a href="../index.html">CHEM 361</a> / Test Bank / Solid State
+    </div>
+    <div class="score-pill" id="scorePill">0 / 0</div>
+</div>
+
+<div class="hero">
+    <div class="hero-eyebrow">Test Bank &mdash; Unit 2</div>
+    <h1>Solid State &amp; Crystal Structures</h1>
+    <p class="hero-sub">
+        Practice problems drawn from Housecroft, Atkins, JD Lee, and others.
+        Select an answer or click "Show Answer" to reveal the explanation.
+    </p>
+</div>
+
+<div class="chapter" id="chapter">
+
+    <!-- ═══════════════ SECTION 1 ═══════════════ -->
+    <div class="section-head">
+        <h2>Unit Cells &amp; Packing</h2>
+        <span class="section-count">Questions 1&ndash;4</span>
+    </div>
+
+    <!-- Q1 -->
+    <div class="q-block" data-answer="C">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Chapter 4</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter4/fig_4_1.png" alt="Unit cells: simple cubic, BCC, and FCC">
+                <figcaption>Fig. 4.1 &mdash; The three cubic unit cells</figcaption>
+            </figure>
+            <div class="q-num">Q1</div>
+            <p class="q-stem">
+                Consider the three cubic unit cells shown above. How many atoms per unit cell
+                are present in simple cubic, BCC, and FCC structures, respectively?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> 1, 2, 2</li>
+                <li data-val="B"><span class="opt-letter">b</span> 2, 4, 1</li>
+                <li data-val="C"><span class="opt-letter">c</span> 1, 2, 4</li>
+                <li data-val="D"><span class="opt-letter">d</span> 1, 4, 2</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (c)</div>
+                <p>
+                    In a simple cubic cell, 8 corner atoms each contribute 1/8, totaling 1 atom.
+                    In BCC, the 8 corners contribute 1 atom plus 1 body-centre atom = 2. In FCC,
+                    the 8 corners contribute 1 atom and 6 face-centre atoms each contribute 1/2,
+                    giving 1 + 3 = 4 atoms per unit cell. Counting shared atoms correctly is
+                    essential for density calculations.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="q-block" data-answer="B">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 4.5</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter4/fig_4_5.png" alt="Close-packed layers in CCP">
+                <figcaption>Fig. 4.5 &mdash; Close-packed arrangement showing the CCP (FCC) structure</figcaption>
+            </figure>
+            <div class="q-num">Q2</div>
+            <p class="q-stem">
+                What is the packing efficiency of a face-centred cubic (FCC) arrangement,
+                also called cubic close-packed (CCP)?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> 52%</li>
+                <li data-val="B"><span class="opt-letter">b</span> 74%</li>
+                <li data-val="C"><span class="opt-letter">c</span> 68%</li>
+                <li data-val="D"><span class="opt-letter">d</span> 91%</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (b)</div>
+                <p>
+                    The FCC (CCP) structure has a packing efficiency of 74.05%, the maximum
+                    possible for identical spheres. This is calculated by placing 4 atoms of
+                    radius r in a cube with edge length a = 2&radic;2 &middot; r, then computing
+                    the fraction of volume occupied: (4 &times; 4/3 &pi;r&sup3;) / a&sup3;. The HCP
+                    structure also achieves 74% packing. BCC achieves 68% and simple cubic only 52%.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="q-block" data-answer="D">
+        <div class="q-source">
+            <span>JD Lee, Chapter 3</span>
+            <span class="book-tag">JD Lee</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter4/fig_4_4.png" alt="HCP and CCP structures compared">
+                <figcaption>Fig. 4.4 &mdash; Comparison of HCP and CCP close-packed structures</figcaption>
+            </figure>
+            <div class="q-num">Q3</div>
+            <p class="q-stem">
+                What is the coordination number of an atom in the HCP structure compared
+                to the CCP structure?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> HCP = 8, CCP = 12</li>
+                <li data-val="B"><span class="opt-letter">b</span> HCP = 6, CCP = 8</li>
+                <li data-val="C"><span class="opt-letter">c</span> HCP = 12, CCP = 8</li>
+                <li data-val="D"><span class="opt-letter">d</span> Both are 12</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (d)</div>
+                <p>
+                    Both HCP and CCP are close-packed structures with a coordination number of 12.
+                    Each atom touches 6 neighbours in its own layer, 3 in the layer above, and 3 in
+                    the layer below. The difference lies in the stacking sequence: HCP uses ABAB&hellip;
+                    while CCP uses ABCABC&hellip; The coordination environment is identical in both cases.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q4 -->
+    <div class="q-block" data-answer="A">
+        <div class="q-source">
+            <span>Atkins &amp; Shriver, Chapter 3</span>
+            <span class="book-tag">Atkins</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter4/fig_4_2.png" alt="BCC unit cell geometry">
+                <figcaption>Fig. 4.2 &mdash; Body-centred cubic unit cell showing the body diagonal</figcaption>
+            </figure>
+            <div class="q-num">Q4</div>
+            <p class="q-stem">
+                In a BCC unit cell, atoms touch along the body diagonal. What is the relationship
+                between the atomic radius r and the unit cell edge length a?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> a = 4r / &radic;3</li>
+                <li data-val="B"><span class="opt-letter">b</span> a = 2r</li>
+                <li data-val="C"><span class="opt-letter">c</span> a = 2&radic;2 &middot; r</li>
+                <li data-val="D"><span class="opt-letter">d</span> a = 4r / &radic;2</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (a)</div>
+                <p>
+                    In BCC, the body diagonal connects a corner atom through the body-centre atom
+                    to the opposite corner. The body diagonal length equals a&radic;3, and it spans
+                    4 atomic radii (corner&ndash;centre&ndash;corner contact). Therefore a&radic;3 = 4r,
+                    giving a = 4r/&radic;3. For comparison, in FCC atoms touch along the face diagonal,
+                    giving a = 2&radic;2 &middot; r, and in simple cubic a = 2r.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════ SECTION 2 ═══════════════ -->
+    <div class="section-head">
+        <h2>Crystal Structure Types</h2>
+        <span class="section-count">Questions 5&ndash;8</span>
+    </div>
+
+    <!-- Q5 -->
+    <div class="q-block" data-answer="B">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 4.14</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter4/fig_4_14.png" alt="NaCl (rock salt) crystal structure">
+                <figcaption>Fig. 4.14 &mdash; The NaCl (rock salt) structure</figcaption>
+            </figure>
+            <div class="q-num">Q5</div>
+            <p class="q-stem">
+                In the NaCl (rock salt) structure shown above, what are the coordination numbers
+                of the Na<sup>+</sup> and Cl<sup>&minus;</sup> ions?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> Na<sup>+</sup> = 4 (tetrahedral), Cl<sup>&minus;</sup> = 4 (tetrahedral)</li>
+                <li data-val="B"><span class="opt-letter">b</span> Na<sup>+</sup> = 6 (octahedral), Cl<sup>&minus;</sup> = 6 (octahedral)</li>
+                <li data-val="C"><span class="opt-letter">c</span> Na<sup>+</sup> = 8 (cubic), Cl<sup>&minus;</sup> = 8 (cubic)</li>
+                <li data-val="D"><span class="opt-letter">d</span> Na<sup>+</sup> = 6 (octahedral), Cl<sup>&minus;</sup> = 4 (tetrahedral)</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (b)</div>
+                <p>
+                    In the NaCl structure, both Na<sup>+</sup> and Cl<sup>&minus;</sup> have a coordination
+                    number of 6 in an octahedral arrangement. Each Na<sup>+</sup> is surrounded by 6
+                    Cl<sup>&minus;</sup> ions and vice versa. The structure can be described as two
+                    interpenetrating FCC lattices offset by half a unit cell edge. This 6:6 coordination
+                    is characteristic of ions with radius ratios in the range 0.414&ndash;0.732.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q6 -->
+    <div class="q-block" data-answer="C">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 4.15</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter4/fig_4_15.png" alt="CsCl crystal structure">
+                <figcaption>Fig. 4.15 &mdash; The CsCl structure</figcaption>
+            </figure>
+            <div class="q-num">Q6</div>
+            <p class="q-stem">
+                The CsCl structure has 8:8 coordination, whereas NaCl has 6:6 coordination.
+                Why does Cs<sup>+</sup> adopt 8-coordination while Na<sup>+</sup> adopts 6-coordination?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> Cs<sup>+</sup> has a higher charge than Na<sup>+</sup></li>
+                <li data-val="B"><span class="opt-letter">b</span> Cl<sup>&minus;</sup> is larger when paired with Cs<sup>+</sup></li>
+                <li data-val="C"><span class="opt-letter">c</span> The r<sup>+</sup>/r<sup>&minus;</sup> ratio for CsCl exceeds 0.732, favouring 8-coordination</li>
+                <li data-val="D"><span class="opt-letter">d</span> CsCl is covalent, not ionic</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (c)</div>
+                <p>
+                    Radius ratio rules predict the coordination geometry of ionic crystals. When
+                    r<sup>+</sup>/r<sup>&minus;</sup> &gt; 0.732, the cation is large enough to accommodate 8
+                    anions in a cubic arrangement. Cs<sup>+</sup> (r = 181 pm) with Cl<sup>&minus;</sup>
+                    (r = 167 pm) gives a ratio of ~1.08, well above the 0.732 threshold. Na<sup>+</sup>
+                    (r = 116 pm) with Cl<sup>&minus;</sup> gives ~0.69, which falls in the octahedral
+                    (6-coordinate) range of 0.414&ndash;0.732.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q7 -->
+    <div class="q-block" data-answer="B">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 4.16</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter4/fig_4_16.png" alt="Zinc blende and wurtzite structures">
+                <figcaption>Fig. 4.16 &mdash; The zinc blende (sphalerite) structure</figcaption>
+            </figure>
+            <div class="q-num">Q7</div>
+            <p class="q-stem">
+                Zinc sulfide exists in two polymorphs: zinc blende (sphalerite) and wurtzite.
+                Both have 4:4 tetrahedral coordination. What is the key structural difference
+                between them?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> Zinc blende has octahedral coordination, wurtzite has tetrahedral</li>
+                <li data-val="B"><span class="opt-letter">b</span> Zinc blende is based on CCP anion packing, wurtzite on HCP anion packing</li>
+                <li data-val="C"><span class="opt-letter">c</span> Zinc blende has 6:6 coordination, wurtzite has 4:4</li>
+                <li data-val="D"><span class="opt-letter">d</span> Zinc blende is ionic, wurtzite is covalent</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (b)</div>
+                <p>
+                    Both zinc blende and wurtzite have tetrahedral 4:4 coordination with the same
+                    stoichiometry (ZnS). The difference lies in how the anion sublattice is packed:
+                    zinc blende has S<sup>2&minus;</sup> in a CCP (ABCABC&hellip;) arrangement, while wurtzite
+                    has S<sup>2&minus;</sup> in an HCP (ABAB&hellip;) arrangement. In both cases, Zn<sup>2+</sup>
+                    occupies half the tetrahedral holes. This parallels the CCP/HCP relationship seen
+                    in elemental close-packed metals.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q8 -->
+    <div class="q-block" data-answer="D">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 4.17</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter4/fig_4_17.png" alt="Fluorite (CaF2) structure">
+                <figcaption>Fig. 4.17 &mdash; The fluorite (CaF<sub>2</sub>) structure</figcaption>
+            </figure>
+            <div class="q-num">Q8</div>
+            <p class="q-stem">
+                In the fluorite (CaF<sub>2</sub>) structure, what are the coordination numbers of
+                Ca<sup>2+</sup> and F<sup>&minus;</sup>, and where are the ions located?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> Ca<sup>2+</sup> = 6 (octahedral); F<sup>&minus;</sup> = 3 (trigonal)</li>
+                <li data-val="B"><span class="opt-letter">b</span> Ca<sup>2+</sup> = 4 (tetrahedral); F<sup>&minus;</sup> = 8 (cubic)</li>
+                <li data-val="C"><span class="opt-letter">c</span> Ca<sup>2+</sup> = 6 (octahedral); F<sup>&minus;</sup> = 6 (octahedral)</li>
+                <li data-val="D"><span class="opt-letter">d</span> Ca<sup>2+</sup> = 8 (cubic); F<sup>&minus;</sup> = 4 (tetrahedral)</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (d)</div>
+                <p>
+                    In the fluorite structure, Ca<sup>2+</sup> ions form an FCC lattice with 8-fold cubic
+                    coordination (surrounded by 8 F<sup>&minus;</sup> ions at the corners of a cube).
+                    Each F<sup>&minus;</sup> sits in a tetrahedral hole and is coordinated by 4 Ca<sup>2+</sup>
+                    ions, giving 4-fold tetrahedral coordination. The stoichiometry requires an 8:4 ratio
+                    because there are twice as many anions as cations. The anti-fluorite structure (e.g.,
+                    Na<sub>2</sub>O) reverses the cation/anion positions.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════ SECTION 3 ═══════════════ -->
+    <div class="section-head">
+        <h2>Lattice Energy &amp; Ionic Model</h2>
+        <span class="section-count">Questions 9&ndash;12</span>
+    </div>
+
+    <!-- Q9 -->
+    <div class="q-block" data-answer="A">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 4.22</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter4/fig_4_22.png" alt="Born-Haber cycle for NaCl">
+                <figcaption>Fig. 4.22 &mdash; A Born&ndash;Haber cycle for NaCl</figcaption>
+            </figure>
+            <div class="q-num">Q9</div>
+            <p class="q-stem">
+                The Born&ndash;Land&eacute; equation calculates lattice energy from first principles.
+                Which combination of factors does it depend upon?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> Ion charges, inter-ionic distance, Madelung constant, and Born exponent</li>
+                <li data-val="B"><span class="opt-letter">b</span> Ion charges and electronegativity only</li>
+                <li data-val="C"><span class="opt-letter">c</span> Crystal field splitting energy and Madelung constant</li>
+                <li data-val="D"><span class="opt-letter">d</span> Ionization energy and electron affinity only</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (a)</div>
+                <p>
+                    The Born&ndash;Land&eacute; equation is: U = &minus;(N<sub>A</sub> |z<sup>+</sup>| |z<sup>&minus;</sup>|
+                    e&sup2; A) / (4&pi;&epsilon;<sub>0</sub> r<sub>0</sub>) &times; (1 &minus; 1/n), where A is the
+                    Madelung constant (depends on crystal structure), r<sub>0</sub> is the equilibrium inter-ionic
+                    distance, z<sup>+</sup> and z<sup>&minus;</sup> are the ion charges, and n is the Born exponent
+                    (related to compressibility). This equation captures both the Coulombic attraction and
+                    short-range repulsion between ions.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q10 -->
+    <div class="q-block" data-answer="B">
+        <div class="q-source">
+            <span>Atkins &amp; Shriver, Chapter 3</span>
+            <span class="book-tag">Atkins</span>
+        </div>
+        <div class="q-body">
+            <div class="q-num">Q10</div>
+            <p class="q-stem">
+                Rank the following sodium halides by their lattice energy from highest to lowest:
+                NaF, NaCl, NaBr.
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> NaBr &gt; NaCl &gt; NaF</li>
+                <li data-val="B"><span class="opt-letter">b</span> NaF &gt; NaCl &gt; NaBr</li>
+                <li data-val="C"><span class="opt-letter">c</span> NaCl &gt; NaF &gt; NaBr</li>
+                <li data-val="D"><span class="opt-letter">d</span> All three have essentially the same lattice energy</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (b)</div>
+                <p>
+                    Lattice energy is inversely proportional to the inter-ionic distance r<sub>0</sub>.
+                    Since all three have the same charges (+1/&minus;1) and the same NaCl structure type
+                    (same Madelung constant), the key variable is ion size. F<sup>&minus;</sup> is the smallest
+                    halide, giving the shortest Na&ndash;F distance and therefore the largest lattice energy.
+                    Experimental values: NaF (930 kJ/mol), NaCl (786 kJ/mol), NaBr (747 kJ/mol).
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q11 -->
+    <div class="q-block" data-answer="C">
+        <div class="q-source">
+            <span>JD Lee, Chapter 3</span>
+            <span class="book-tag">JD Lee</span>
+        </div>
+        <div class="q-body">
+            <div class="q-num">Q11</div>
+            <p class="q-stem">
+                The lattice energy of MgO (3850 kJ/mol) is much larger than that of NaF
+                (930 kJ/mol), despite both crystallising in the NaCl structure type with
+                similar inter-ionic distances. Why?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> MgO has a larger Madelung constant</li>
+                <li data-val="B"><span class="opt-letter">b</span> MgO has a higher Born exponent</li>
+                <li data-val="C"><span class="opt-letter">c</span> MgO has doubly-charged ions (2+/2&minus;) compared to singly-charged ions in NaF</li>
+                <li data-val="D"><span class="opt-letter">d</span> MgO is more covalent than NaF</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (c)</div>
+                <p>
+                    The Born&ndash;Land&eacute; equation shows that lattice energy is proportional to
+                    |z<sup>+</sup>||z<sup>&minus;</sup>|. For NaF: |+1|&times;|&minus;1| = 1. For MgO:
+                    |+2|&times;|&minus;2| = 4. So the charge product is four times larger in MgO. Combined
+                    with a slightly shorter inter-ionic distance (Mg<sup>2+</sup> is smaller than Na<sup>+</sup>),
+                    this explains why MgO has a lattice energy roughly four times that of NaF. This charge
+                    effect also accounts for the very high melting point of MgO (2850 &deg;C).
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q12 -->
+    <div class="q-block" data-answer="D">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Chapter 4</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <div class="q-num">Q12</div>
+            <p class="q-stem">
+                What is the Madelung constant, and how does it relate to crystal structure?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> A constant equal to 1 for all crystal structures, representing the average ion charge</li>
+                <li data-val="B"><span class="opt-letter">b</span> A measure of the covalent character of an ionic bond</li>
+                <li data-val="C"><span class="opt-letter">c</span> The ratio of cation to anion radius in a given crystal</li>
+                <li data-val="D"><span class="opt-letter">d</span> A dimensionless constant that accounts for all ion&ndash;ion Coulombic interactions in the crystal lattice; its value depends on the structure type</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (d)</div>
+                <p>
+                    The Madelung constant A is a purely geometric factor that sums all pairwise
+                    Coulombic interactions (both attractive and repulsive) in an infinite ionic lattice,
+                    expressed relative to the nearest-neighbour distance. Its value depends only on the
+                    crystal structure type, not on the specific ions. For example, A = 1.7476 for the
+                    NaCl structure and A = 1.7627 for the CsCl structure. A larger Madelung constant
+                    means the ions in that arrangement achieve a more favourable electrostatic energy.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════ SECTION 4 ═══════════════ -->
+    <div class="section-head">
+        <h2>Defects &amp; Band Theory</h2>
+        <span class="section-count">Questions 13&ndash;15</span>
+    </div>
+
+    <!-- Q13 -->
+    <div class="q-block" data-answer="A">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 4.44</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter4/fig_4_44.png" alt="Schottky and Frenkel defects">
+                <figcaption>Fig. 4.44 &mdash; Schottky and Frenkel defects in ionic crystals</figcaption>
+            </figure>
+            <div class="q-num">Q13</div>
+            <p class="q-stem">
+                The figure above illustrates two types of point defects in ionic crystals. What
+                is the key difference between a Schottky defect and a Frenkel defect?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> Schottky: paired cation and anion vacancies; Frenkel: an ion displaced from its lattice site to an interstitial site</li>
+                <li data-val="B"><span class="opt-letter">b</span> Schottky: an extra atom in an interstitial site; Frenkel: a missing atom at a lattice site</li>
+                <li data-val="C"><span class="opt-letter">c</span> Schottky defects occur only in metals; Frenkel defects occur only in ionic compounds</li>
+                <li data-val="D"><span class="opt-letter">d</span> Both are identical but occur at different temperatures</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (a)</div>
+                <p>
+                    A Schottky defect consists of a matched pair of cation and anion vacancies (maintaining
+                    electrical neutrality and stoichiometry). A Frenkel defect involves an ion leaving its
+                    normal lattice site and moving to an interstitial position, creating a vacancy&ndash;interstitial
+                    pair. Schottky defects are common in NaCl (similar-sized ions), while Frenkel defects are
+                    common in AgBr (where the small Ag<sup>+</sup> can fit into interstitial sites). Both
+                    defects increase in concentration with temperature.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q14 -->
+    <div class="q-block" data-answer="B">
+        <div class="q-source">
+            <span>Atkins &amp; Shriver, Chapter 3</span>
+            <span class="book-tag">Atkins</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter4/fig_4_46.png" alt="Band theory: metals, semiconductors, insulators">
+                <figcaption>Fig. 4.46 &mdash; Band structures of metals, semiconductors, and insulators</figcaption>
+            </figure>
+            <div class="q-num">Q14</div>
+            <p class="q-stem">
+                How does band theory explain the difference between metals, semiconductors,
+                and insulators?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> Metals have no bands; semiconductors have one band; insulators have two bands</li>
+                <li data-val="B"><span class="opt-letter">b</span> The size of the band gap between valence and conduction bands determines the material class: zero or overlapping for metals, small for semiconductors, large for insulators</li>
+                <li data-val="C"><span class="opt-letter">c</span> Only the number of electrons determines whether a material is a metal or insulator</li>
+                <li data-val="D"><span class="opt-letter">d</span> Metals have only s-bands; insulators have only p-bands</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (b)</div>
+                <p>
+                    In band theory, atomic orbitals combine to form continuous energy bands. The key
+                    parameter is the band gap (E<sub>g</sub>) between the filled valence band and the empty
+                    conduction band. In metals, these bands overlap or the valence band is partially filled,
+                    allowing free electron movement. In semiconductors, E<sub>g</sub> is small (typically
+                    0.5&ndash;3 eV), so thermal excitation can promote electrons across the gap. In insulators,
+                    E<sub>g</sub> is large (&gt;4 eV), making thermal excitation negligible at room temperature.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q15 -->
+    <div class="q-block" data-answer="C">
+        <div class="q-source">
+            <span>Housecroft &amp; Sharpe, Fig. 4.47</span>
+            <span class="book-tag">Housecroft</span>
+        </div>
+        <div class="q-body">
+            <figure class="q-figure">
+                <img src="../assets/figures/chapter4/fig_4_47.png" alt="n-type and p-type semiconductors">
+                <figcaption>Fig. 4.47 &mdash; Doping to create n-type and p-type semiconductors</figcaption>
+            </figure>
+            <div class="q-num">Q15</div>
+            <p class="q-stem">
+                What determines whether a doped semiconductor is n-type or p-type?
+            </p>
+            <ul class="q-options">
+                <li data-val="A"><span class="opt-letter">a</span> n-type has fewer electrons than the host; p-type has more electrons</li>
+                <li data-val="B"><span class="opt-letter">b</span> n-type uses transition metal dopants; p-type uses main-group dopants</li>
+                <li data-val="C"><span class="opt-letter">c</span> n-type has a dopant with more valence electrons (donor), introducing electrons into the conduction band; p-type has a dopant with fewer valence electrons (acceptor), creating holes in the valence band</li>
+                <li data-val="D"><span class="opt-letter">d</span> n-type and p-type refer to the crystal structure, not the dopant</li>
+            </ul>
+            <button class="q-reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+            <div class="q-answer">
+                <div class="answer-label">Answer: (c)</div>
+                <p>
+                    In n-type semiconductors, the dopant has more valence electrons than the host
+                    (e.g., phosphorus in silicon: P has 5 valence electrons vs. Si with 4). The extra
+                    electron occupies a donor level just below the conduction band and is easily promoted,
+                    providing negative charge carriers. In p-type semiconductors, the dopant has fewer
+                    valence electrons (e.g., boron in silicon: B has 3 valence electrons). This creates an
+                    acceptor level just above the valence band, generating positive "holes" as the dominant
+                    charge carriers.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div><!-- end chapter -->
+
+<div class="score-summary" id="scoreSummary">
+    <h3>Topic Complete</h3>
+    <div class="big-score" id="finalScore">0 / 15</div>
+    <p>Solid State &amp; Crystal Structures</p>
+    <button onclick="resetAll()">Reset All</button>
+</div>
+
+<script src="testbank-base.js"></script>
+
+</body>
+</html>
